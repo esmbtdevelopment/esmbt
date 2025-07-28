@@ -79,31 +79,31 @@ const Navbar = () => {
             <div className="hidden md:flex items-center space-x-8">
               <div className="relative group hover:cursor-pointer">
                 <button className="flex items-center space-x-1 text-white">
-                  <span>Kurumsal</span>
+                  <span>Corporate</span>
                   <FaChevronDown className="text-xs" />
                 </button>
               </div>
 
               <div className="relative group hover:cursor-pointer">
                 <button className="flex items-center space-x-1 text-white">
-                  <span>Ürünler</span>
+                  <span>Products</span>
                   <FaChevronDown className="text-xs" />
                 </button>
               </div>
 
               <div className="relative group ">
                 <button className="hover:cursor-pointer flex items-center space-x-1 text-white">
-                  <span>Hizmetler</span>
+                  <span>Services</span>
                   <FaChevronDown className="text-xs" />
                 </button>
               </div>
 
               <a href="#" className="text-white hover:cursor-pointer">
-                Referanslar
+                References
               </a>
 
               <a href="#" className="text-white hover:cursor-pointer">
-                İletişim
+                Contact
               </a>
             </div>
 
