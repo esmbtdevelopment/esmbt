@@ -62,7 +62,7 @@ function Services() {
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
                 <div className="relative">
                   <Image
-                    src="/images/logo.webp"
+                    src="/images/logo with shadow.webp"
                     width={300}
                     height={300}
                     alt="ESM Information Technologies"
@@ -91,9 +91,9 @@ function Services() {
                       {/* Service Icon Container with counter-rotation */}
                       <div className="animation-spin-reverse">
                         <div
-                          className={`size-20 flex items-center justify-center rounded-full shadow-lg transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:shadow-xl relative ${
+                          className={`size-20 text-sky-500 flex items-center justify-center rounded-full shadow-lg transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:shadow-xl relative ${
                             activeTab === index &&
-                            "bg-sky-500 text-white shadow-blue-500/50 scale-110"
+                            "bg-gradient-to-r from-sky-700 via-sky-500 to-sky-300 text-white shadow-blue-500/50 scale-110"
                           }`}
                         >
                           {/* Service Icon */}
@@ -125,38 +125,13 @@ function Services() {
           </div>
 
           {/* Right Side - Tab View */}
-          <div className="lg:pl-8">
+          <div className="h-full w-full">
             <Tabs
               tabs={services.map((service, index) => ({
                 id: service.id,
                 icon: service.icon,
                 label: service.title,
-                content: (
-                  <div className="space-y-6">
-                    <div className="flex items-start space-x-6">
-                      <div className="flex-shrink-0">
-                        <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
-                          <span className="text-2xl text-blue-600">
-                            {service.icon}
-                          </span>
-                        </div>
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-2xl font-bold text-gray-900 font-sora mb-4">
-                          {service.title}
-                        </h3>
-                        <p className="text-gray-600 text-lg leading-relaxed">
-                          {service.description}
-                        </p>
-                        <div className="mt-6">
-                          <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-xl">
-                            Learn More
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ),
+                content: service.description,
               }))}
               activeTab={activeTab}
               onTabChange={setActiveTab}
