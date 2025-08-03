@@ -2,31 +2,28 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Tabs from "./Tabs";
-import {
-  FaChartLine,
-  FaCogs,
-  FaFileInvoiceDollar,
-  FaUniversity,
-} from "react-icons/fa";
-
+import { FaChartLine, FaUniversity } from "react-icons/fa";
+import { RiGlobalLine, RiTeamLine } from "react-icons/ri";
+import { AiOutlineCloudServer } from "react-icons/ai";
+import { RxChevronRight } from "react-icons/rx";
 function Services() {
   const [activeTab, setActiveTab] = useState(0);
 
   const services = [
     {
       id: 1,
-      icon: <FaCogs />,
+      icon: <RiTeamLine />,
       title: "SAP Consulting & Implementation",
       description:
-        "End-to-end SAP integration, optimization, and expert consulting services",
+        "Transform your business operations with our comprehensive SAP consulting and implementation services. Our certified experts provide end-to-end SAP integration, system optimization, and strategic consulting to maximize your investment. We specialize in SAP S/4HANA migration, module customization, workflow automation, and change management. From initial assessment and planning to go-live support and post-implementation optimization, we ensure seamless digital transformation that drives operational efficiency, reduces costs, and accelerates business growth.",
       angle: 0,
     },
     {
       id: 2,
-      icon: <FaFileInvoiceDollar />,
+      icon: <AiOutlineCloudServer />,
       title: "E-Transformation Solutions",
       description:
-        "SAP-native e-Invoice, e-Archive, e-Ledger, and e-Declaration compliance",
+        "Navigate the digital compliance landscape with our cutting-edge e-transformation solutions. We deliver fully integrated SAP-native electronic documentation systems including e-Invoice, e-Archive, e-Ledger, and e-Declaration modules that ensure complete regulatory compliance. Our solutions automate document processing, provide real-time reporting, and integrate seamlessly with existing SAP environments. With advanced security features, audit trails, and automated compliance monitoring, we help businesses reduce manual processes, eliminate compliance risks, and achieve faster processing times while meeting all local and international regulatory requirements.",
       angle: 90,
     },
     {
@@ -34,7 +31,7 @@ function Services() {
       icon: <FaChartLine />,
       title: "Financial Management Tools",
       description:
-        "VAT processing, IFRS 16, loan tracking, and inflation accounting solutions",
+        "Elevate your financial operations with our sophisticated management tools designed for modern businesses. Our comprehensive suite includes advanced VAT processing systems, IFRS 16 lease accounting compliance, intelligent loan tracking mechanisms, and automated inflation accounting solutions. These integrated tools provide real-time financial visibility, automated reporting, risk assessment capabilities, and strategic financial planning support. With built-in analytics, forecasting models, and regulatory compliance features, our solutions help CFOs make data-driven decisions, reduce financial risks, and optimize cash flow management while ensuring full compliance with accounting standards.",
       angle: 180,
     },
     {
@@ -42,7 +39,7 @@ function Services() {
       icon: <FaUniversity />,
       title: "Banking & Treasury Operations",
       description:
-        "Bulk payments, e-Account statements, virtual POS, and stock financing",
+        "Streamline your banking and treasury operations with our advanced financial technology solutions. Our platform encompasses bulk payment processing, automated e-Account statement management, secure virtual POS systems, and comprehensive stock financing tools. We provide end-to-end cash management, liquidity optimization, payment automation, and treasury risk management capabilities. With real-time transaction monitoring, multi-bank connectivity, fraud detection systems, and regulatory reporting features, our solutions enhance operational efficiency, reduce processing costs, improve cash visibility, and ensure secure financial transactions across all banking relationships.",
       angle: 270,
     },
   ];
@@ -51,7 +48,7 @@ function Services() {
     <section className="relative py-20 bg-gradient-to-br from-gray-50 to-white overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-16 text-center font-sora">
-          Our Services
+          Our Core <span className="text-sky-600">Services</span>
         </h2>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[800px]">
@@ -125,7 +122,13 @@ function Services() {
           </div>
 
           {/* Right Side - Tab View */}
-          <div className="h-full w-full">
+          <div className="flex flex-col gap-10 justify-start items-start h-full w-full">
+            <div className="font-sora">
+              <p className="text-lg text-gray-500 font-montserrat leading-relaxed">
+                We offer comprehensive SAP solutions designed for financial
+                transformation and regulatory compliance.
+              </p>
+            </div>
             <Tabs
               tabs={services.map((service, index) => ({
                 id: service.id,
@@ -136,6 +139,56 @@ function Services() {
               activeTab={activeTab}
               onTabChange={setActiveTab}
             />
+            <div className="divider"></div>
+            <button className="font-montserrat self-end flex items-center gap-2 cursor-pointer hover:text-sky-600 transition-colors">
+              View All Services <RxChevronRight />
+            </button>
+          </div>
+        </div>
+
+        {/* Additional Services Section */}
+        <div className="mt-20">
+          <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl p-8 md:p-12 text-white">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <h3 className="text-3xl font-bold mb-6 font-sora">
+                  Advanced Financial Solutions
+                </h3>
+                <div className="space-y-4 text-gray-200 font-montserrat">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-sky-400 rounded-full"></div>
+                    <span>IFRS 16 Compliance & Adaptation</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-sky-400 rounded-full"></div>
+                    <span>Collateral Management Systems</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-sky-400 rounded-full"></div>
+                    <span>SAP Data Masking & Protection</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-sky-400 rounded-full"></div>
+                    <span>Inflation Accounting Solutions</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-sky-400 rounded-full"></div>
+                    <span>Loan & Collection Tracking</span>
+                  </div>
+                </div>
+              </div>
+              <div className="text-center">
+                <div className="inline-block p-8 bg-white/10 rounded-2xl backdrop-blur-sm">
+                  <RiGlobalLine className="text-6xl text-sky-400 mb-4 mx-auto" />
+                  <h4 className="text-2xl font-bold mb-2 font-sora">
+                    SAP-Native
+                  </h4>
+                  <p className="text-gray-300 font-montserrat">
+                    All solutions embedded within SAP environments
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
