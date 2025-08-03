@@ -199,7 +199,7 @@ const Customers = () => {
                   ))}
                 </div>
                 <blockquote className="text-gray-700 mb-6 font-montserrat italic">
-                  "{testimonial.quote}"
+                  &ldquo;{testimonial.quote}&rdquo;
                 </blockquote>
                 <div className="border-t border-gray-100 pt-4">
                   <div className="font-semibold text-gray-900 font-sora">

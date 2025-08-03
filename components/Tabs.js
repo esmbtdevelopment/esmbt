@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useCallback } from "react";
 import { RxChevronLeft, RxChevronRight } from "react-icons/rx";
 
 const Tabs = ({
@@ -44,7 +44,7 @@ const Tabs = ({
   };
 
   // Auto-switching logic
-  const startAutoSwitch = () => {
+  const startAutoSwitch = useCallback(() => {
     if (autoSwitchTimerRef.current) {
       clearInterval(autoSwitchTimerRef.current);
     }
@@ -55,14 +55,14 @@ const Tabs = ({
         onTabChange(nextTab);
       }
     }, autoSwitchInterval);
-  };
+  }, [activeTab, tabs.length, onTabChange, autoSwitchInterval]);
 
-  const stopAutoSwitch = () => {
+  const stopAutoSwitch = useCallback(() => {
     if (autoSwitchTimerRef.current) {
       clearInterval(autoSwitchTimerRef.current);
       autoSwitchTimerRef.current = null;
     }
-  };
+  }, []);
 
   const handleUserInteraction = (tabIndex) => {
     // Stop auto switching
@@ -83,16 +83,16 @@ const Tabs = ({
     }, userInactivityDelay);
   };
 
-  const clearAllTimers = () => {
+  const clearAllTimers = useCallback(() => {
     stopAutoSwitch();
     if (inactivityTimerRef.current) {
       clearTimeout(inactivityTimerRef.current);
       inactivityTimerRef.current = null;
     }
-  };
+  }, [stopAutoSwitch]);
 
   // Scroll to active tab if it's not in view
-  const scrollToActiveTab = () => {
+  const scrollToActiveTab = useCallback(() => {
     const container = scrollContainerRef.current;
     if (!container) return;
 
@@ -120,7 +120,7 @@ const Tabs = ({
         behavior: "smooth",
       });
     }
-  };
+  }, [activeTab]);
 
   // Check overflow on mount and when tabs change
   useEffect(() => {
@@ -139,7 +139,7 @@ const Tabs = ({
         resizeObserver.disconnect();
       };
     }
-  }, [tabs]);
+  }, [tabs, scrollToActiveTab]);
 
   // Auto-switching lifecycle
   useEffect(() => {
@@ -158,6 +158,8 @@ const Tabs = ({
     tabs.length,
     autoSwitchInterval,
     onTabChange,
+    startAutoSwitch,
+    stopAutoSwitch,
   ]);
 
   // Scroll to active tab when it changes
@@ -168,14 +170,14 @@ const Tabs = ({
     }, 100);
 
     return () => clearTimeout(timeoutId);
-  }, [activeTab]);
+  }, [activeTab, scrollToActiveTab]);
 
   // Cleanup on unmount
   useEffect(() => {
     return () => {
       clearAllTimers();
     };
-  }, []);
+  }, [clearAllTimers]);
 
   return (
     <div className={`w-full  ${className}`}>
