@@ -16,6 +16,8 @@ import {
   FaUsers,
   FaFileInvoiceDollar,
   FaUniversity,
+  FaArrowRight,
+  FaChevronRight,
 } from "react-icons/fa";
 
 const About = () => {
@@ -28,25 +30,25 @@ const About = () => {
 
   const services = [
     {
-      icon: <FaCogs className="text-3xl text-sky-500" />,
+      icon: <FaCogs className="text-3xl" />,
       title: "SAP Consulting & Implementation",
       description:
         "End-to-end SAP integration, optimization, and expert consulting services",
     },
     {
-      icon: <FaFileInvoiceDollar className="text-3xl text-sky-500" />,
+      icon: <FaFileInvoiceDollar className="text-3xl" />,
       title: "E-Transformation Solutions",
       description:
         "SAP-native e-Invoice, e-Archive, e-Ledger, and e-Declaration compliance",
     },
     {
-      icon: <FaChartLine className="text-3xl text-sky-500" />,
+      icon: <FaChartLine className="text-3xl" />,
       title: "Financial Management Tools",
       description:
         "VAT processing, IFRS 16, loan tracking, and inflation accounting solutions",
     },
     {
-      icon: <FaUniversity className="text-3xl text-sky-500" />,
+      icon: <FaUniversity className="text-3xl" />,
       title: "Banking & Treasury Operations",
       description:
         "Bulk payments, e-Account statements, virtual POS, and stock financing",
@@ -194,35 +196,80 @@ const About = () => {
           </div>
         </div>
 
-        {/* Services Grid */}
-        <div>
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4 font-sora">
-              Our Core Service Areas
-            </h3>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto font-montserrat">
-              Comprehensive SAP solutions designed for financial transformation
-              and regulatory compliance
-            </p>
-          </div>
+        {/* Services Section - Split Layout */}
+        <div className="">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Side - Image */}
+            <div className="relative group">
+              <div className="relative overflow-hidden rounded-l-2xl">
+                <Image
+                  src="/images/esm-wall.webp"
+                  alt="ESM Technology Services"
+                  width={600}
+                  height={1200}
+                  className="w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/20 to-transparent"></div>
+              </div>
+              {/* Floating accent */}
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-sky-500 to-blue-600 rounded-full opacity-20 blur-xl"></div>
+              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-blue-500 to-sky-600 rounded-full opacity-15 blur-xl"></div>
+            </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="group bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-sky-200 hover:transform hover:scale-105"
-              >
-                <div className="mb-6 group-hover:transform group-hover:scale-110 transition-transform">
-                  {service.icon}
-                </div>
-                <h4 className="text-xl font-semibold text-gray-900 mb-4 font-sora">
-                  {service.title}
-                </h4>
-                <p className="text-gray-600 font-montserrat">
-                  {service.description}
+            {/* Right Side - Content */}
+            <div className="space-y-8">
+              {/* Header */}
+              <div className="space-y-4">
+                <h3 className="text-4xl font-bold text-gray-700 font-sora leading-tight">
+                  Our Core Service Areas
+                </h3>
+                <p className="text-lg text-gray-500 font-montserrat leading-relaxed">
+                  We offer comprehensive SAP solutions designed for financial
+                  transformation and regulatory compliance.
                 </p>
               </div>
-            ))}
+
+              {/* Services List */}
+              <div className="space-y-6">
+                {services.map((service, index) => (
+                  <div
+                    key={index}
+                    className="group flex items-start space-x-4 p-6 bg-gradient-to-tr from-gray-400/10 to-transparent border border-white/10 rounded-lg text-gray-500 hover:text-gray-600 transition-all duration-300 hover:transform hover:translate-x-2"
+                    style={{
+                      animationDelay: `${index * 150}ms`,
+                    }}
+                  >
+                    {/* Icon */}
+                    <div className="flex-shrink-0 w-14 h-14 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                      {service.icon}
+                    </div>
+
+                    {/* Content */}
+                    <div className="flex-1 min-w-0">
+                      <h4 className="text-lg font-semibold text-gray-700 mb-2 font-sora group-hover:text-gray-800 transition-colors">
+                        {service.title}
+                      </h4>
+                      <p className="text-gray-500 font-montserrat leading-relaxed">
+                        {service.description}
+                      </p>
+                    </div>
+
+                    {/* Arrow indicator */}
+                    <div className="flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <FaChevronRight className="text-gray-400" />
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Call to Action */}
+              <div className="pt-6 border-t border-gray-600 flex justify-end items-end">
+                <button className="btn btn-ghost text-white font-semibold font-montserrat">
+                  Learn More About Our Services
+                  <FaArrowRight className="ml-2" />
+                </button>
+              </div>
+            </div>
           </div>
         </div>
 

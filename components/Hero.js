@@ -50,7 +50,7 @@ export default function Hero() {
   };
 
   return (
-    <div className="relative w-full h-screen font-sora">
+    <div className="relative w-full h-screen font-manrope">
       <Swiper
         spaceBetween={0}
         centeredSlides={true}

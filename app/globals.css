@@ -2,8 +2,8 @@
 @plugin "daisyui";
 
 @plugin "daisyui/theme" {
-  name: "light-causal";
-  default: false;
+  name: "light-esm";
+  default: true;
   prefersdark: false;
   color-scheme: "light";
   --color-base-100: oklch(98% 0.001 106.423);
@@ -36,6 +36,12 @@
   --noise: 1;
 }
 
+@theme {
+  --font-sora: "var(--font-sora)";
+  --font-manrope: "var(--font-manrope)";
+  --font-montserrat: "var(--font-montserrat)";
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -45,5 +51,30 @@ body {
 html,
 body {
   height: 100%;
-  font-family: var(--font-sora), sans-serif;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.animation-spin-slow {
+  animation: spin-slow 15s linear infinite;
+}
+
+.animation-spin-reverse {
+  animation: spin-reverse 15s linear infinite;
 }

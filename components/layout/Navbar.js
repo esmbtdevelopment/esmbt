@@ -70,8 +70,8 @@ const Navbar = () => {
                 width={75}
                 height={75}
               />
-              <span className="text-2xl text-white font-extrabold tracking-widest">
-                ESMBT
+              <span className="text-2xl from-sky-400 to-sky-600 bg-clip-text text-transparent bg-gradient-to-r font-extrabold tracking-widest">
+                ESM
               </span>
             </div>
 
