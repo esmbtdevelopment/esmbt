@@ -248,7 +248,7 @@ const Tabs = ({
             <button
               key={tab.id || index}
               onClick={() => handleUserInteraction(index)}
-              className={`btn border-2 transition-all duration-300  flex-col  hover:text-white h-fit py-3 md:py-5 px-2 md:px-4 flex-shrink-0 min-w-0  ${
+              className={`btn border-2 transition-all duration-300 hover:text-sky-400 flex-col h-fit py-3 md:py-5 px-2 md:px-4 flex-shrink-0 min-w-0  ${
                 activeTab === index
                   ? "border-sky-500 bg-sky-50 text-sky-600"
                   : "border-gray-200 bg-white text-gray-600 hover:border-sky-200"
@@ -266,7 +266,7 @@ const Tabs = ({
       </div>
 
       {/* Tab Content */}
-      <div className="size-full max-h-80 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-4 md:p-8 lg:p-12">
+      <div className="size-full max-h-fit lg:max-h-80 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-4 md:p-8 lg:p-12">
         {tabs[activeTab] && (
           <div
             key={activeTab}
