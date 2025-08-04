@@ -92,12 +92,12 @@ const Customers = () => {
     <section className="relative py-10 bg-gradient-to-br from-gray-50 to-white">
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-sora">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6 font-sora px-4">
             Trusted by Industry
             <span className="text-sky-600 block">Leaders</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-montserrat">
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-montserrat px-4">
             From telecommunications giants to innovative startups, enterprises
             across industries trust ESM for their SAP and digital transformation
             needs.

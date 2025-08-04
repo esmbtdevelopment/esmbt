@@ -80,12 +80,12 @@ const About = () => {
     <section className="relative py-20 bg-gradient-to-br from-gray-50 to-white overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-sora">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6 font-sora">
             Specialized SAP Consulting for
             <span className="text-sky-600 block">Financial Transformation</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-montserrat">
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-montserrat px-4">
             ESM Information Technologies is a specialized SAP consulting and
             technology firm focused on driving financial transformation and
             digital compliance for enterprises.
@@ -93,21 +93,21 @@ const About = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-16 md:mb-20">
           {stats.map((stat, index) => (
             <div
               key={index}
               className="text-center group hover:transform hover:scale-105 transition-all duration-300"
             >
-              <div className="flex justify-center mb-4">
-                <div className="w-16 h-16 bg-gradient-to-br from-sky-500 to-blue-600 rounded-full flex items-center justify-center text-white text-2xl group-hover:shadow-lg transition-shadow">
+              <div className="flex justify-center mb-3 md:mb-4">
+                <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-sky-500 to-blue-600 rounded-full flex items-center justify-center text-white text-lg md:text-2xl group-hover:shadow-lg transition-shadow">
                   {stat.icon}
                 </div>
               </div>
-              <div className="text-3xl md:text-4xl font-bold text-gray-900 mb-2 font-sora">
+              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-1 md:mb-2 font-sora">
                 {stat.number}
               </div>
-              <div className="text-gray-600 font-medium font-montserrat">
+              <div className="text-sm md:text-base text-gray-600 font-medium font-montserrat">
                 {stat.label}
               </div>
             </div>
@@ -115,27 +115,27 @@ const About = () => {
         </div>
 
         {/* Main Content */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16 md:mb-20">
           {/* Left Content */}
-          <div>
-            <h3 className="text-3xl font-bold text-gray-900 mb-6 font-sora">
+          <div className="px-4 lg:px-0">
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-6 font-sora">
               Empowering Enterprises Through SAP Excellence
             </h3>
-            <div className="space-y-6 text-gray-600 font-montserrat">
-              <p className="text-lg leading-relaxed">
+            <div className="space-y-4 md:space-y-6 text-gray-600 font-montserrat">
+              <p className="text-base md:text-lg leading-relaxed">
                 We deliver end-to-end SAP integration and optimization services,
                 empowering organizations to streamline financial operations,
                 enhance regulatory compliance, and digitize core processes with
                 confidence.
               </p>
-              <p className="text-lg leading-relaxed">
+              <p className="text-base md:text-lg leading-relaxed">
                 Our expertise spans expert SAP consulting, implementation, and
                 support tailored to financial transformation, IFRS adaptation,
                 and process automation. We provide comprehensive SAP-native
                 solutions that simplify complex financial tasks and reduce
                 operational costs.
               </p>
-              <p className="text-lg leading-relaxed">
+              <p className="text-base md:text-lg leading-relaxed">
                 With a deep focus on automation, compliance, and SAP-native
                 design, we enable enterprises to meet evolving digital and
                 regulatory demands while maintaining the highest standards of
@@ -144,19 +144,22 @@ const About = () => {
             </div>
 
             {/* Values */}
-            <div className="mt-10 space-y-6">
+            <div className="mt-8 md:mt-10 space-y-4 md:space-y-6">
               {values.map((value, index) => (
-                <div key={index} className="flex items-start space-x-4">
+                <div
+                  key={index}
+                  className="flex items-start space-x-3 md:space-x-4"
+                >
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-sky-100 rounded-lg flex items-center justify-center text-sky-600">
+                    <div className="w-10 h-10 md:w-12 md:h-12 bg-sky-100 rounded-lg flex items-center justify-center text-sky-600">
                       {value.icon}
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-900 mb-2 font-sora">
+                    <h4 className="text-base md:text-lg font-semibold text-gray-900 mb-1 md:mb-2 font-sora">
                       {value.title}
                     </h4>
-                    <p className="text-gray-600 font-montserrat">
+                    <p className="text-sm md:text-base text-gray-600 font-montserrat">
                       {value.description}
                     </p>
                   </div>
@@ -166,7 +169,7 @@ const About = () => {
           </div>
 
           {/* Right Image */}
-          <div className="relative">
+          <div className="relative mt-8 lg:mt-0 px-4 lg:px-0">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src="/images/teamwork.jpg"
@@ -178,16 +181,16 @@ const About = () => {
               <div className="absolute inset-0 bg-gradient-to-tr from-sky-600/20 to-transparent"></div>
             </div>
             {/* Floating Card */}
-            <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-6 border border-gray-100">
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                  <RiRocketLine className="text-green-600 text-xl" />
+            <div className="absolute -bottom-3 -left-2 md:-bottom-6 md:-left-6 bg-white rounded-xl shadow-xl p-3 md:p-6 border border-gray-100">
+              <div className="flex items-center space-x-2 md:space-x-4">
+                <div className="w-8 h-8 md:w-12 md:h-12 bg-green-100 rounded-full flex items-center justify-center">
+                  <RiRocketLine className="text-green-600 text-sm md:text-xl" />
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-gray-900 font-sora">
+                  <div className="text-xl md:text-2xl font-bold text-gray-900 font-sora">
                     100%
                   </div>
-                  <div className="text-sm text-gray-600 font-montserrat">
+                  <div className="text-xs md:text-sm text-gray-600 font-montserrat">
                     SAP Compliance
                   </div>
                 </div>

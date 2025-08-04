@@ -241,32 +241,36 @@ const Tabs = ({
 
         <div
           ref={scrollContainerRef}
-          className="flex w-full border-b border-gray-200 mb-6 gap-4 overflow-x-auto py-2 scrollbar-hide"
+          className="flex w-full border-b border-gray-200 mb-4 md:mb-6 gap-2 md:gap-4 overflow-x-auto py-2 scrollbar-hide"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {tabs.map((tab, index) => (
             <button
               key={tab.id || index}
               onClick={() => handleUserInteraction(index)}
-              className={`btn btn-primary btn-outline flex-col border-none hover:text-white h-fit py-5 flex-shrink-0 ${
+              className={`btn border-2 transition-all duration-300  flex-col  hover:text-white h-fit py-3 md:py-5 px-2 md:px-4 flex-shrink-0 min-w-0  ${
                 activeTab === index
-                  ? "text-sky-600 border-sky-600"
-                  : "text-gray-500 border-transparent hover:text-gray-700 hover:border-gray-300"
+                  ? "border-sky-500 bg-sky-50 text-sky-600"
+                  : "border-gray-200 bg-white text-gray-600 hover:border-sky-200"
               }`}
             >
-              <span className="text-3xl mr-2">{tab.icon}</span>
-              <span className="text-md">{tab.label}</span>
+              <span className="text-xl md:text-3xl mb-1 md:mr-2">
+                {tab.icon}
+              </span>
+              <span className="text-xs md:text-md font-medium text-center leading-tight">
+                {tab.label}
+              </span>
             </button>
           ))}
         </div>
       </div>
 
       {/* Tab Content */}
-      <div className="size-full max-h-80 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 md:p-12">
+      <div className="size-full max-h-80 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-4 md:p-8 lg:p-12">
         {tabs[activeTab] && (
           <div
             key={activeTab}
-            className="animate-fade-in font-montserrat tracking-wide"
+            className="animate-fade-in font-montserrat tracking-wide text-sm md:text-base"
           >
             {tabs[activeTab].content}
           </div>

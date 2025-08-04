@@ -47,13 +47,19 @@ function Services() {
   return (
     <section className="relative py-20 bg-gradient-to-br from-gray-50 to-white overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-16 text-center font-sora">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-8 md:mb-16 text-center font-sora">
           Our Core <span className="text-sky-600">Services</span>
         </h2>
+        <div className="block lg:hidden font-sora mb-8">
+          <p className="text-lg text-gray-500 font-montserrat leading-relaxed">
+            We offer comprehensive SAP solutions designed for financial
+            transformation and regulatory compliance.
+          </p>
+        </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[800px]">
-          {/* Left Side - Circular Services */}
-          <div className="flex justify-center items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[600px] lg:min-h-[800px]">
+          {/* Left Side - Circular Services (Hidden on mobile, replaced by simple grid) */}
+          <div className="hidden lg:flex justify-center items-center">
             <div className="relative w-full max-w-2xl">
               {/* Central Circle with Image */}
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
@@ -122,14 +128,15 @@ function Services() {
           </div>
 
           {/* Right Side - Tab View */}
-          <div className="flex flex-col gap-10 justify-start items-start h-full w-full">
-            <div className="font-sora">
+          <div className="flex flex-col gap-6 lg:gap-10 justify-start items-start h-full w-full max-w-full overflow-hidden">
+            <div className="hidden lg:block font-sora">
               <p className="text-lg text-gray-500 font-montserrat leading-relaxed">
                 We offer comprehensive SAP solutions designed for financial
                 transformation and regulatory compliance.
               </p>
             </div>
             <Tabs
+              className="w-full min-w-0"
               tabs={services.map((service, index) => ({
                 id: service.id,
                 icon: service.icon,

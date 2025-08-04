@@ -51,12 +51,12 @@ const Partners = () => {
     <section className="relative py-10 bg-white">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-sora">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6 font-sora px-4">
             Strategic Technology
             <span className="text-blue-600 block">Partnerships</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-montserrat">
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-montserrat px-4">
             We collaborate with industry-leading technology partners to deliver
             comprehensive SAP and digital transformation solutions.
           </p>
