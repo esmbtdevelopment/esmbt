@@ -182,7 +182,7 @@ const ModernFeedbacks = () => {
 
                 {/* Professional testimonial text */}
                 <blockquote className="text-gray-800 text-lg md:text-xl leading-relaxed mb-10 font-montserrat italic border-l-4 border-sky-200 pl-6">
-                  "{currentTestimonial.quote}"
+                  &ldquo;{currentTestimonial.quote}&rdquo;
                 </blockquote>
 
                 {/* Professional author info */}
