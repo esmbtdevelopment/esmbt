@@ -2,6 +2,7 @@ import { Sora, Manrope, Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { Toaster } from "react-hot-toast";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -39,6 +40,26 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
+        <Toaster
+          position="top-right"
+          toastOptions={{
+            duration: 4000,
+            style: {
+              background: "#363636",
+              color: "#fff",
+            },
+            success: {
+              style: {
+                background: "#10b981",
+              },
+            },
+            error: {
+              style: {
+                background: "#ef4444",
+              },
+            },
+          }}
+        />
       </body>
     </html>
   );

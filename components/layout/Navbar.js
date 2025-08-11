@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   FaPhone,
   FaEnvelope,
@@ -12,14 +12,86 @@ import {
   FaMediumM,
   FaChevronDown,
   FaTimes,
+  FaBuilding,
+  FaUsers,
+  FaHandshake,
+  FaCogs,
+  FaCloud,
+  FaCode,
+  FaShieldAlt,
+  FaChartLine,
 } from "react-icons/fa";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
+  const [mobileActiveDropdown, setMobileActiveDropdown] = useState(null);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const navRef = useRef(null);
+
+  const handleMouseEnter = (dropdown) => {
+    setActiveDropdown(dropdown);
+  };
+
+  const handleMouseLeave = () => {
+    setActiveDropdown(null);
+  };
+
+  const toggleMobileDropdown = (dropdown) => {
+    setMobileActiveDropdown(mobileActiveDropdown === dropdown ? null : dropdown);
+  };
+
+  // Handle scroll for sticky navbar background
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setIsScrolled(scrollPosition > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  // Close mobile menu when switching to desktop view
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setIsMobileMenuOpen(false);
+        setMobileActiveDropdown(null);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const dropdownContent = {
+    corporate: [
+      { title: "About Us", description: "Learn about our company", icon: FaBuilding },
+      { title: "Our Team", description: "Meet our experts", icon: FaUsers },
+      { title: "Mission & Vision", description: "Our goals and values", icon: FaHandshake },
+    ],
+    products: [
+      { title: "Enterprise Solutions", description: "Comprehensive business tools", icon: FaCogs },
+      { title: "Cloud Platform", description: "Scalable cloud services", icon: FaCloud },
+      { title: "Custom Development", description: "Tailored software solutions", icon: FaCode },
+    ],
+    services: [
+      { title: "Consulting", description: "Expert business guidance", icon: FaChartLine },
+      { title: "Implementation", description: "Full deployment support", icon: FaCogs },
+      { title: "Security Services", description: "Advanced protection", icon: FaShieldAlt },
+    ],
+  };
   return (
-    <nav className="w-full absolute top-0 left-0 z-50">
+    <nav ref={navRef} className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 ${
+      isScrolled ? 'bg-gray-900/95 backdrop-blur-lg shadow-lg' : 'bg-transparent'
+    }`}>
       {/* Top Contact Bar - Hidden on mobile */}
-      <div className="hidden md:block bg-sky-800/30 py-2.5 text-white">
+      <div className="hidden bg-sky-800/30 py-2.5 text-white">
         <div className="container mx-auto px-4 flex justify-between items-center">
           {/* Contact Information */}
           <div className="flex items-center space-x-6 text-sm">
@@ -62,7 +134,9 @@ const Navbar = () => {
       </div>
 
       {/* Main Navigation */}
-      <div className="bg-transparent border-b border-white/10 py-2.5">
+      <div className={`transition-all duration-300 py-2.5 ${
+        isScrolled ? 'border-b border-gray-700/50' : 'bg-transparent border-b border-white/10'
+      }`}>
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
@@ -70,43 +144,147 @@ const Navbar = () => {
               <Image
                 src="/images/logo.webp"
                 alt="ESMBT"
-                width={75}
-                height={75}
+                width={80}
+                height={80}
               />
               <span className="text-2xl from-sky-400 to-sky-600 bg-clip-text text-transparent bg-gradient-to-r font-extrabold tracking-widest">
                 ESM
               </span>
             </div>
 
-            {/* Navigation Menu */}
-            <div className="hidden md:flex items-center space-x-8">
-              <div className="relative group hover:cursor-pointer">
-                <button className="flex items-center space-x-1 text-white">
-                  <span>Corporate</span>
-                  <FaChevronDown className="text-xs" />
+                        {/* Navigation Menu */}
+            <div className="hidden md:flex items-center space-x-8 relative">
+              {/* Corporate Dropdown */}
+              <div 
+                className="relative"
+                onMouseEnter={() => handleMouseEnter('corporate')}
+                onMouseLeave={handleMouseLeave}
+              >
+                <button className="relative flex items-center space-x-1 text-white hover:cursor-pointer transition-all duration-300 px-4 py-2 rounded-lg hover:bg-white/10 hover:backdrop-blur-sm">
+                  <span className="uppercase tracking-widest">Corporate</span>
+                  <FaChevronDown 
+                    className={`text-xs transition-transform duration-200 ${
+                      activeDropdown === 'corporate' ? 'rotate-180' : 'rotate-0'
+                    }`} 
+                  />
                 </button>
+                
+                {/* Corporate Dropdown Menu */}
+                {activeDropdown === 'corporate' && (
+                  <div 
+                    className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden z-50 animate-in fade-in-0 zoom-in-95 duration-200"
+                    onMouseEnter={() => handleMouseEnter('corporate')}
+                    onMouseLeave={handleMouseLeave}
+                  >
+                    {dropdownContent.corporate.map((item, index) => (
+                      <a
+                        key={index}
+                        href="#"
+                        className="flex items-center p-4 hover:bg-sky-50 transition-colors border-b border-gray-100 last:border-b-0"
+                      >
+                        <item.icon className="text-sky-600 text-lg mr-3" />
+                        <div>
+                          <h3 className="font-semibold text-gray-800">{item.title}</h3>
+                          <p className="text-sm text-gray-600">{item.description}</p>
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                )}
               </div>
 
-              <div className="relative group hover:cursor-pointer">
-                <button className="flex items-center space-x-1 text-white">
-                  <span>Products</span>
-                  <FaChevronDown className="text-xs" />
+              {/* Products Dropdown */}
+              <div 
+                className="relative"
+                onMouseEnter={() => handleMouseEnter('products')}
+                onMouseLeave={handleMouseLeave}
+              >
+                <button className="relative flex items-center space-x-1 text-white hover:cursor-pointer transition-all duration-300 px-4 py-2 rounded-lg hover:bg-white/10 hover:backdrop-blur-sm">
+                  <span className="uppercase tracking-widest">Products</span>
+                  <FaChevronDown 
+                    className={`text-xs transition-transform duration-200 ${
+                      activeDropdown === 'products' ? 'rotate-180' : 'rotate-0'
+                    }`} 
+                  />
                 </button>
+                
+                {/* Products Dropdown Menu */}
+                {activeDropdown === 'products' && (
+                  <div 
+                    className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden z-50 animate-in fade-in-0 zoom-in-95 duration-200"
+                    onMouseEnter={() => handleMouseEnter('products')}
+                    onMouseLeave={handleMouseLeave}
+                  >
+                    {dropdownContent.products.map((item, index) => (
+                      <a
+                        key={index}
+                        href="#"
+                        className="flex items-center p-4 hover:bg-sky-50 transition-colors border-b border-gray-100 last:border-b-0"
+                      >
+                        <item.icon className="text-sky-600 text-lg mr-3" />
+                        <div>
+                          <h3 className="font-semibold text-gray-800">{item.title}</h3>
+                          <p className="text-sm text-gray-600">{item.description}</p>
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                )}
               </div>
 
-              <div className="relative group ">
-                <button className="hover:cursor-pointer flex items-center space-x-1 text-white">
-                  <span>Services</span>
-                  <FaChevronDown className="text-xs" />
+              {/* Services Dropdown */}
+              <div 
+                className="relative"
+                onMouseEnter={() => handleMouseEnter('services')}
+                onMouseLeave={handleMouseLeave}
+              >
+                <button className="relative flex items-center space-x-1 text-white hover:cursor-pointer transition-all duration-300 px-4 py-2 rounded-lg hover:bg-white/10 hover:backdrop-blur-sm">
+                  <span className="uppercase tracking-widest">Services</span>
+                  <FaChevronDown 
+                    className={`text-xs transition-transform duration-200 ${
+                      activeDropdown === 'services' ? 'rotate-180' : 'rotate-0'
+                    }`} 
+                  />
                 </button>
+                
+                {/* Services Dropdown Menu */}
+                {activeDropdown === 'services' && (
+                  <div 
+                    className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden z-50 animate-in fade-in-0 zoom-in-95 duration-200"
+                    onMouseEnter={() => handleMouseEnter('services')}
+                    onMouseLeave={handleMouseLeave}
+                  >
+                    {dropdownContent.services.map((item, index) => (
+                      <a
+                        key={index}
+                        href="#"
+                        className="flex items-center p-4 hover:bg-sky-50 transition-colors border-b border-gray-100 last:border-b-0"
+                      >
+                        <item.icon className="text-sky-600 text-lg mr-3" />
+                        <div>
+                          <h3 className="font-semibold text-gray-800">{item.title}</h3>
+                          <p className="text-sm text-gray-600">{item.description}</p>
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                )}
               </div>
 
-              <a href="#" className="text-white hover:cursor-pointer">
+              <a
+                href="#"
+                className="text-white hover:cursor-pointer uppercase tracking-widest transition-all duration-300 px-4 py-2 rounded-lg hover:bg-white/10 hover:backdrop-blur-sm"
+              >
                 References
               </a>
 
-              <a href="#" className="text-white hover:cursor-pointer">
-                Contact
+              {/* Modern Contact Button with Darker Gradient */}
+              <a
+                href="#"
+                className="relative px-6 py-3 bg-gradient-to-r from-slate-700 to-slate-900 hover:from-slate-800 hover:to-black text-white rounded-full shadow-lg hover:shadow-xl transform transition-all duration-300 uppercase tracking-widest font-semibold border border-slate-600"
+              >
+                <span className="relative z-10">Contact Us</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-slate-600 to-slate-800 rounded-full opacity-0 hover:opacity-30 transition-opacity duration-300"></div>
               </a>
             </div>
 
@@ -143,21 +321,114 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-gray-900/95 backdrop-blur-sm">
           <div className="container mx-auto px-4 py-4">
-            <div className="flex flex-col space-y-4">
+            <div className="flex flex-col space-y-2">
+              {/* Mobile Corporate Dropdown */}
               <div className="border-b border-gray-700 pb-4">
-                <h4 className="text-white font-semibold mb-2">Corporate</h4>
+                <button
+                  onClick={() => toggleMobileDropdown('corporate')}
+                  className="flex items-center justify-between w-full text-white font-semibold py-2"
+                >
+                  <span>Corporate</span>
+                  <FaChevronDown 
+                    className={`text-xs transition-transform duration-200 ${
+                      mobileActiveDropdown === 'corporate' ? 'rotate-180' : 'rotate-0'
+                    }`} 
+                  />
+                </button>
+                {mobileActiveDropdown === 'corporate' && (
+                  <div className="mt-3 space-y-2 pl-4">
+                    {dropdownContent.corporate.map((item, index) => (
+                      <a
+                        key={index}
+                        href="#"
+                        className="flex items-center p-3 text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-lg transition-colors"
+                      >
+                        <item.icon className="text-sky-400 text-sm mr-3" />
+                        <div>
+                          <h4 className="font-medium text-sm">{item.title}</h4>
+                          <p className="text-xs text-gray-400">{item.description}</p>
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                )}
               </div>
+
+              {/* Mobile Products Dropdown */}
               <div className="border-b border-gray-700 pb-4">
-                <h4 className="text-white font-semibold mb-2">Products</h4>
+                <button
+                  onClick={() => toggleMobileDropdown('products')}
+                  className="flex items-center justify-between w-full text-white font-semibold py-2"
+                >
+                  <span>Products</span>
+                  <FaChevronDown 
+                    className={`text-xs transition-transform duration-200 ${
+                      mobileActiveDropdown === 'products' ? 'rotate-180' : 'rotate-0'
+                    }`} 
+                  />
+                </button>
+                {mobileActiveDropdown === 'products' && (
+                  <div className="mt-3 space-y-2 pl-4">
+                    {dropdownContent.products.map((item, index) => (
+                      <a
+                        key={index}
+                        href="#"
+                        className="flex items-center p-3 text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-lg transition-colors"
+                      >
+                        <item.icon className="text-sky-400 text-sm mr-3" />
+                        <div>
+                          <h4 className="font-medium text-sm">{item.title}</h4>
+                          <p className="text-xs text-gray-400">{item.description}</p>
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                )}
               </div>
+
+              {/* Mobile Services Dropdown */}
               <div className="border-b border-gray-700 pb-4">
-                <h4 className="text-white font-semibold mb-2">Services</h4>
+                <button
+                  onClick={() => toggleMobileDropdown('services')}
+                  className="flex items-center justify-between w-full text-white font-semibold py-2"
+                >
+                  <span>Services</span>
+                  <FaChevronDown 
+                    className={`text-xs transition-transform duration-200 ${
+                      mobileActiveDropdown === 'services' ? 'rotate-180' : 'rotate-0'
+                    }`} 
+                  />
+                </button>
+                {mobileActiveDropdown === 'services' && (
+                  <div className="mt-3 space-y-2 pl-4">
+                    {dropdownContent.services.map((item, index) => (
+                      <a
+                        key={index}
+                        href="#"
+                        className="flex items-center p-3 text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-lg transition-colors"
+                      >
+                        <item.icon className="text-sky-400 text-sm mr-3" />
+                        <div>
+                          <h4 className="font-medium text-sm">{item.title}</h4>
+                          <p className="text-xs text-gray-400">{item.description}</p>
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                )}
               </div>
-              <a href="#" className="text-white py-2">
+
+              <a href="#" className="text-white py-3 transition-colors">
                 References
               </a>
-              <a href="#" className="text-white py-2">
-                Contact
+              
+              {/* Mobile Contact Button with Darker Gradient */}
+              <a 
+                href="#" 
+                className="relative mt-2 px-6 py-3 bg-gradient-to-r from-slate-700 to-slate-900 hover:from-slate-800 hover:to-black text-white rounded-full text-center font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 uppercase tracking-wide border border-slate-600"
+              >
+                <span className="relative z-10">Contact Us</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-slate-600 to-slate-800 rounded-full opacity-0 hover:opacity-30 transition-opacity duration-300"></div>
               </a>
 
               {/* Mobile Contact Info */}

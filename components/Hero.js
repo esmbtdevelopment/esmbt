@@ -14,7 +14,7 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import Image from "next/image";
-
+import { PiChatTeardropTextThin } from "react-icons/pi";
 export default function Hero() {
   const [activeIndex, setActiveIndex] = useState(0);
   const swiperRef = useRef(null);
@@ -23,29 +23,37 @@ export default function Hero() {
     {
       title: "ESMBT Products",
       tabTitle: "ESMBT Products",
+      description: "Professional and reliable solutions for your business",
       icon: <SiThunderbird />,
+      image: "/images/teamwork.jpg",
     },
     {
       title: "SAP Solutions",
       tabTitle: "SAP Solutions",
+      description: "We serve as a trusted partner for SAP solutions, providing comprehensive support and implementation services to businesses across various industries.",
       icon: <RiTeamLine className="text-2xl" />,
+      image: "/images/hero-sap.webp",
     },
     {
       title: "Mobile Solutions",
       tabTitle: "Mobile Solutions",
+      description: "We offer a range of mobile solutions to help businesses streamline their operations and improve efficiency.",
       icon: <CiMobile2 />,
+      image: "/images/hero-mobile.webp",
     },
     {
       title: "Corporate Solutions",
       tabTitle: "Corporate Solutions",
+      description: "Make your business more efficient and effective with our corporate solutions.",
       icon: <GrUserWorker />,
+      image: "/images/hero-financial.webp",
     },
   ];
 
   const handleTabClick = (index) => {
     setActiveIndex(index);
     if (swiperRef.current) {
-      swiperRef.current.slideTo(index);
+      swiperRef.current.slideTo(index, 1200, true); // 1200ms smooth transition
     }
   };
 
@@ -54,9 +62,12 @@ export default function Hero() {
       <Swiper
         spaceBetween={0}
         centeredSlides={true}
+        speed={1200}
+        slidesPerView={1}
         autoplay={{
-          delay: 4000,
+          delay: 5000,
           disableOnInteraction: false,
+          pauseOnMouseEnter: true,
         }}
         pagination={false}
         navigation={false}
@@ -74,24 +85,55 @@ export default function Hero() {
             key={index}
             className="relative flex items-center justify-center"
           >
-            <div className="bg-black/40 absolute w-full h-full z-10"></div>
+            <div className="bg-black/20 absolute w-full h-full z-10"></div>
             <Image
-              src={"/images/teamwork.jpg"}
+              src={slide.image}
               width={1920}
               height={1080}
-              className="absolute top-0 left-0 w-full h-full object-cover z-0"
+              className={`absolute top-0 left-0 w-full h-full object-cover z-0 transition-transform duration-[8000ms] ease-out ${
+                activeIndex === index 
+                  ? 'scale-110' 
+                  : 'scale-100'
+              }`}
               alt="teamwork"
             />
-            <div className="z-20 relative text-white flex flex-col items-center justify-center h-full gap-4 md:gap-6 px-4">
-              <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-center">
+            <div 
+              className={`z-20 relative text-white flex flex-col items-start ml-10 justify-center h-full gap-4 md:gap-6 px-4 transition-all duration-1000 ${
+                activeIndex === index 
+                  ? 'opacity-100 translate-y-0 scale-100' 
+                  : 'opacity-0 translate-y-8 scale-95'
+              }`}
+              style={{
+                transitionDelay: activeIndex === index ? '300ms' : '0ms',
+              }}
+            >
+              <h1 
+                className={`text-3xl md:text-4xl lg:text-6xl transition-all duration-1000 font-bold font-sora tracking-wide ${
+                  activeIndex === index 
+                    ? 'opacity-100 translate-y-0' 
+                    : 'opacity-0 translate-y-12'
+                }`}
+                style={{
+                  transitionDelay: activeIndex === index ? '500ms' : '0ms',
+                }}
+              >
                 {slide.title}
               </h1>
-              <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full max-w-md">
-                <button className="bg-transparent border border-white px-4 sm:px-6 py-2 sm:py-3 rounded-md hover:bg-white hover:text-black transition-colors text-base sm:text-lg w-full sm:w-auto">
-                  Content
-                </button>
-                <button className="bg-transparent border border-white px-4 sm:px-6 py-2 sm:py-3 rounded-md hover:bg-white hover:text-black transition-colors text-base sm:text-lg w-full sm:w-auto">
-                  Contact
+              <p className="max-w-2xl font-manrope font-light text-gray-100/80 text-lg md:text-2xl tracking-wider">
+                {slide.description}
+              </p>
+              <div 
+                className={`flex flex-col sm:flex-row gap-3 sm:gap-4 w-full max-w-md transition-all duration-1000 ${
+                  activeIndex === index 
+                    ? 'opacity-100 translate-y-0' 
+                    : 'opacity-0 translate-y-8'
+                }`}
+                style={{
+                  transitionDelay: activeIndex === index ? '700ms' : '0ms',
+                }}
+              >
+                <button className="btn btn-ghost btn-outline hover:bg-white btn-xl rounded-lg font-light text-lg tracking-wider  transition-all duration-300 hover:text-black max-w-xs w-full flex items-center gap-2">
+                   Hear from us
                 </button>
               </div>
             </div>
@@ -100,27 +142,49 @@ export default function Hero() {
       </Swiper>
 
       {/* Custom Navigation Tabs */}
-      <div className="absolute bottom-4 md:bottom-10 left-1/2 -translate-x-1/2 bg-transparent border border-white/10 rounded-lg z-30 w-full max-w-xs sm:max-w-2xl md:max-w-4xl mx-4 font-montserrat">
-        <div className="grid grid-cols-2 md:flex">
+      <div className="absolute bottom-4 md:bottom-10 left-1/2 -translate-x-1/2 bg-black/20 backdrop-blur-md border border-white/20 rounded-xl z-30 w-full max-w-xs sm:max-w-2xl md:max-w-4xl mx-4 font-montserrat shadow-2xl">
+        <div className="grid grid-cols-2 md:flex relative">
+          {/* Active tab indicator */}
+          <div 
+            className={`absolute inset-y-0 bg-gradient-to-r from-sky-400/40 to-blue-600/40 backdrop-blur-sm rounded-lg transition-all duration-700 ease-out ${
+              activeIndex === 0 ? 'left-0 w-1/4 md:w-1/4' :
+              activeIndex === 1 ? 'left-1/2 w-1/2 md:left-1/4 md:w-1/4' :
+              activeIndex === 2 ? 'left-0 w-1/2 md:left-2/4 md:w-1/4' :
+              'left-1/2 w-1/2 md:left-3/4 md:w-1/4'
+            }`}
+            style={{
+              transform: `translateX(${activeIndex === 2 && window.innerWidth < 768 ? '0%' : activeIndex === 3 && window.innerWidth < 768 ? '0%' : '0%'})`,
+            }}
+          />
+          
           {slides.map((slide, index) => (
             <button
               key={index}
               onClick={() => handleTabClick(index)}
-              className={`flex-1 flex flex-col md:flex-row items-center justify-center gap-1 md:gap-3 py-3 md:py-6 px-2 md:px-4 text-white transition-colors bg-gradient-to-tr from-gray-100/30 ${
-                activeIndex === index
-                  ? "from-sky-100/30 to-sky-300/70"
-                  : "to-transparent"
+              className={`relative flex-1 flex flex-col md:flex-row items-center justify-center gap-1 md:gap-3 py-3 md:py-6 px-2 md:px-4 text-white transition-all duration-500 hover:scale-105 hover:brightness-110 ${
+                index === 0 && "rounded-tl-xl md:rounded-l-xl md:rounded-tr-none"
+              } ${index === 1 && "rounded-tr-xl md:rounded-tr-none"} ${
+                index === 2 && "rounded-bl-xl md:rounded-bl-none"
               } ${
-                index === 0 &&
-                "rounded-tl-lg md:rounded-l-lg md:rounded-tr-none"
-              } ${index === 1 && "rounded-tr-lg md:rounded-tr-none"} ${
-                index === 2 && "rounded-bl-lg md:rounded-bl-none"
-              } ${
-                index === slides.length - 1 && "rounded-br-lg md:rounded-r-lg"
+                index === slides.length - 1 && "rounded-br-xl md:rounded-r-xl"
               }`}
             >
-              <span className="text-lg md:text-2xl">{slide.icon}</span>
-              <span className="font-medium text-xs md:text-base text-center">
+              <span 
+                className={`text-lg md:text-2xl transition-all duration-500 ${
+                  activeIndex === index 
+                    ? 'scale-110 text-white drop-shadow-lg' 
+                    : 'scale-100 text-white/70'
+                }`}
+              >
+                {slide.icon}
+              </span>
+              <span 
+                className={`font-medium text-xs md:text-base text-center transition-all duration-500 ${
+                  activeIndex === index 
+                    ? 'text-white font-semibold drop-shadow-md' 
+                    : 'text-white/70'
+                }`}
+              >
                 {slide.tabTitle}
               </span>
             </button>
