@@ -45,11 +45,58 @@ function Services() {
   ];
 
   return (
-    <section className="relative py-20 bg-gradient-to-br from-gray-50 to-white overflow-hidden">
+    <section className="relative py-20 bg-gradient-to-br from-white via-blue-50/20 to-sky-50/30 overflow-hidden" id="services">
+      {/* Creative Background Elements */}
+      <div className="absolute inset-0 opacity-30">
+        {/* Animated background grid */}
+        <div className="absolute inset-0">
+          <svg width="100%" height="100%" className="opacity-10">
+            <defs>
+              <pattern id="serviceGrid" width="60" height="60" patternUnits="userSpaceOnUse">
+                <circle cx="30" cy="30" r="1" fill="#0284c7"/>
+                <circle cx="0" cy="0" r="1" fill="#0ea5e9"/>
+                <circle cx="60" cy="60" r="1" fill="#0284c7"/>
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#serviceGrid)"/>
+          </svg>
+        </div>
+        
+        {/* Floating tech elements */}
+        <div className="absolute top-20 right-20 w-40 h-40 border border-sky-200/50 rounded-full animate-spin-slow"></div>
+        <div className="absolute bottom-20 left-20 w-32 h-32 bg-gradient-to-r from-blue-100/30 to-sky-100/30 rounded-2xl transform rotate-45 animate-pulse" style={{animationDelay: '2s'}}></div>
+        
+        {/* Data connection lines */}
+        <div className="absolute top-1/4 left-1/4">
+          <svg width="200" height="200" className="animate-pulse opacity-20">
+            <path d="M0,100 Q100,0 200,100" stroke="#0284c7" strokeWidth="2" fill="none" strokeDasharray="10,5">
+              <animate attributeName="stroke-dashoffset" values="0;-15" dur="3s" repeatCount="indefinite"/>
+            </path>
+          </svg>
+        </div>
+      </div>
+      
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-8 md:mb-16 text-center font-sora">
-          Our Core <span className="text-sky-600">Services</span>
-        </h2>
+        {/* Enhanced Header */}
+        <div className="text-center mb-16 md:mb-20 relative">
+          {/* Floating badge */}
+          <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-white to-sky-50 border border-sky-200 rounded-full px-6 py-3 mb-8 shadow-lg backdrop-blur-sm">
+            <div className="w-3 h-3 bg-gradient-to-r from-sky-500 to-blue-600 rounded-full animate-pulse"></div>
+            <span className="text-sky-700 font-bold font-montserrat">SAP-Native Solutions</span>
+            <div className="w-3 h-3 bg-slate-700 rounded-full"></div>
+          </div>
+          
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 text-center font-sora leading-tight">
+            Our Core <span className="relative inline-block text-sky-600">
+              Services
+              {/* Decorative underline */}
+              <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-sky-400 via-blue-500 to-sky-600 rounded-full animate-pulse"></div>
+            </span>
+          </h2>
+          
+          {/* Decorative elements */}
+          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-4 w-20 h-1 bg-gradient-to-r from-transparent via-sky-400 to-transparent"></div>
+        </div>
         <div className="block lg:hidden font-sora mb-8">
           <p className="text-lg text-gray-500 font-montserrat leading-relaxed">
             We offer comprehensive SAP solutions designed for financial
@@ -153,46 +200,105 @@ function Services() {
           </div>
         </div>
 
-        {/* Additional Services Section */}
-        <div className="mt-20">
-          <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl p-8 md:p-12 text-white">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
-                <h3 className="text-3xl font-bold mb-6 font-sora">
-                  Advanced Financial Solutions
-                </h3>
-                <div className="space-y-4 text-gray-200 font-montserrat">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-sky-400 rounded-full"></div>
-                    <span>IFRS 16 Compliance & Adaptation</span>
+        {/* Enhanced Additional Services Section */}
+        <div className="mt-24">
+          <div className="relative overflow-hidden rounded-[2.5rem]">
+            {/* Creative layered background */}
+            <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-sky-900/20 via-blue-900/30 to-sky-900/20"></div>
+            
+            {/* Animated background elements */}
+            <div className="absolute top-8 right-8 w-32 h-32 border-2 border-sky-400/20 rounded-full animate-spin-slow"></div>
+            <div className="absolute bottom-8 left-8 w-24 h-24 bg-sky-400/10 rounded-2xl rotate-45 animate-pulse" style={{animationDelay: '1s'}}></div>
+            <div className="absolute top-1/2 right-1/4 w-4 h-4 bg-yellow-400/60 rounded-full animate-ping" style={{animationDelay: '2s'}}></div>
+            
+            {/* Tech grid overlay */}
+            <div className="absolute inset-0 opacity-5">
+              <svg width="100%" height="100%">
+                <defs>
+                  <pattern id="techGrid" width="50" height="50" patternUnits="userSpaceOnUse">
+                    <path d="M0,25 L50,25 M25,0 L25,50" stroke="#0ea5e9" strokeWidth="1"/>
+                    <circle cx="25" cy="25" r="2" fill="#0284c7"/>
+                  </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#techGrid)"/>
+              </svg>
+            </div>
+            
+            <div className="relative p-12 md:p-16 text-white">
+              <div className="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                  {/* Header with accent */}
+                  <div className="flex items-center space-x-3 mb-8">
+                    <div className="w-1 h-16 bg-gradient-to-b from-yellow-400 to-orange-500 rounded-full"></div>
+                    <div>
+                      <div className="text-sm font-bold text-yellow-400 font-montserrat mb-2">PREMIUM SOLUTIONS</div>
+                      <h3 className="text-3xl md:text-4xl font-bold font-sora">
+                        Advanced Financial Solutions
+                      </h3>
+                    </div>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-sky-400 rounded-full"></div>
-                    <span>Collateral Management Systems</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-sky-400 rounded-full"></div>
-                    <span>SAP Data Masking & Protection</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-sky-400 rounded-full"></div>
-                    <span>Inflation Accounting Solutions</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-sky-400 rounded-full"></div>
-                    <span>Loan & Collection Tracking</span>
+                  
+                  <div className="space-y-6 text-gray-200 font-montserrat">
+                    {[
+                      "IFRS 16 Compliance & Adaptation",
+                      "Collateral Management Systems", 
+                      "SAP Data Masking & Protection",
+                      "Inflation Accounting Solutions",
+                      "Loan & Collection Tracking"
+                    ].map((item, index) => (
+                      <div key={index} className="group flex items-center space-x-4 p-4 rounded-xl hover:bg-white/5 transition-all duration-300 cursor-pointer">
+                        <div className="w-2 h-2 bg-white/40 rounded-full group-hover:bg-white transition-colors duration-300"></div>
+                        <span className="text-lg group-hover:text-white transition-colors">{item}</span>
+                        <div className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity">
+                          <span className="text-sky-400">→</span>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
-              </div>
-              <div className="text-center">
-                <div className="inline-block p-8 bg-white/10 rounded-2xl backdrop-blur-sm">
-                  <RiGlobalLine className="text-6xl text-sky-400 mb-4 mx-auto" />
-                  <h4 className="text-2xl font-bold mb-2 font-sora">
-                    SAP-Native
-                  </h4>
-                  <p className="text-gray-300 font-montserrat">
-                    All solutions embedded within SAP environments
-                  </p>
+                
+                <div className="text-center">
+                  <div className="relative inline-block">
+                    {/* Glowing backdrop */}
+                    <div className="absolute inset-0 bg-sky-500/20 rounded-3xl blur-2xl scale-110"></div>
+                    
+                    <div className="relative p-12 bg-white/5 rounded-3xl backdrop-blur-sm border border-white/10">
+                      {/* Animated icon */}
+                      <div className="relative mb-8">
+                        <div className="w-20 h-20 bg-gradient-to-r from-sky-400 to-blue-500 rounded-3xl flex items-center justify-center mx-auto animate-pulse">
+                          <RiGlobalLine className="text-4xl text-white" />
+                        </div>
+                        {/* Orbiting elements */}
+                        <div className="absolute inset-0 animate-spin-slow">
+                          <div className="absolute -top-2 left-1/2 w-3 h-3 bg-yellow-400 rounded-full transform -translate-x-1/2"></div>
+                          <div className="absolute top-1/2 -right-2 w-2 h-2 bg-green-400 rounded-full transform -translate-y-1/2"></div>
+                          <div className="absolute -bottom-2 left-1/2 w-2 h-2 bg-orange-400 rounded-full transform -translate-x-1/2"></div>
+                          <div className="absolute top-1/2 -left-2 w-3 h-3 bg-purple-400 rounded-full transform -translate-y-1/2"></div>
+                        </div>
+                      </div>
+                      
+                      <h4 className="text-2xl md:text-3xl font-bold mb-4 font-sora text-white">
+                        100% SAP-Native
+                      </h4>
+                      <p className="text-gray-300 font-montserrat text-lg leading-relaxed">
+                        All solutions seamlessly embedded within SAP environments for maximum compatibility and performance
+                      </p>
+                      
+                      {/* Trust badges */}
+                      <div className="flex justify-center space-x-4 mt-8">
+                        <div className="px-4 py-2 bg-green-400/20 rounded-full text-green-400 text-sm font-bold">
+                          Certified
+                        </div>
+                        <div className="px-4 py-2 bg-blue-400/20 rounded-full text-blue-400 text-sm font-bold">
+                          Secure
+                        </div>
+                        <div className="px-4 py-2 bg-yellow-400/20 rounded-full text-yellow-400 text-sm font-bold">
+                          Proven
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { RiStarLine, RiTrophyLine, RiShieldCheckLine } from "react-icons/ri";
+import ModernFeedbacks from "./ModernFeedbacks";
 
 const Customers = () => {
   const customers = [
@@ -179,61 +180,10 @@ const Customers = () => {
           </div>
         </div>
 
-        {/* Testimonials */}
-        <div className="mb-20">
-          <h3 className="text-3xl font-bold text-gray-900 text-center mb-12 font-sora">
-            What Our Clients Say
-          </h3>
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-xl p-8 shadow-lg border border-gray-100"
-              >
-                <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <RiStarLine
-                      key={i}
-                      className="text-yellow-400 text-xl fill-current"
-                    />
-                  ))}
-                </div>
-                <blockquote className="text-gray-700 mb-6 font-montserrat italic">
-                  &ldquo;{testimonial.quote}&rdquo;
-                </blockquote>
-                <div className="border-t border-gray-100 pt-4">
-                  <div className="font-semibold text-gray-900 font-sora">
-                    {testimonial.author}
-                  </div>
-                  <div className="text-sm text-gray-600 font-montserrat">
-                    {testimonial.company}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        {/* Modern Feedbacks Section */}
+        <ModernFeedbacks />
 
-        {/* Success Stories CTA */}
-        <div className="text-center">
-          <div className="bg-gradient-to-r from-sky-600 to-blue-700 rounded-2xl p-8 md:p-12 text-white">
-            <h3 className="text-3xl font-bold mb-4 font-sora">
-              Join Our Success Stories
-            </h3>
-            <p className="text-xl mb-8 opacity-90 font-montserrat">
-              Become the next enterprise to transform your financial operations
-              with ESM
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-sky-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-colors font-montserrat">
-                Start Your Journey
-              </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-sky-600 transition-colors font-montserrat">
-                View Case Studies
-              </button>
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
   );

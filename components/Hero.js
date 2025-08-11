@@ -25,14 +25,14 @@ export default function Hero() {
       tabTitle: "ESMBT Products",
       description: "Professional and reliable solutions for your business",
       icon: <SiThunderbird />,
-      image: "/images/teamwork.jpg",
+      image: "/images/hero-sap.webp",
     },
     {
       title: "SAP Solutions",
       tabTitle: "SAP Solutions",
       description: "We serve as a trusted partner for SAP solutions, providing comprehensive support and implementation services to businesses across various industries.",
       icon: <RiTeamLine className="text-2xl" />,
-      image: "/images/hero-sap.webp",
+      image: "/images/hero-esm.webp",
     },
     {
       title: "Mobile Solutions",
@@ -98,7 +98,7 @@ export default function Hero() {
               alt="teamwork"
             />
             <div 
-              className={`z-20 relative text-white flex flex-col items-start ml-10 justify-center h-full gap-4 md:gap-6 px-4 transition-all duration-1000 ${
+              className={`z-20 relative text-white flex flex-col items-start ml-0 md:ml-52 justify-center h-full gap-4 md:gap-6 px-4 transition-all duration-1000 ${
                 activeIndex === index 
                   ? 'opacity-100 translate-y-0 scale-100' 
                   : 'opacity-0 translate-y-8 scale-95'
@@ -146,15 +146,13 @@ export default function Hero() {
         <div className="grid grid-cols-2 md:flex relative">
           {/* Active tab indicator */}
           <div 
-            className={`absolute inset-y-0 bg-gradient-to-r from-sky-400/40 to-blue-600/40 backdrop-blur-sm rounded-lg transition-all duration-700 ease-out ${
-              activeIndex === 0 ? 'left-0 w-1/4 md:w-1/4' :
-              activeIndex === 1 ? 'left-1/2 w-1/2 md:left-1/4 md:w-1/4' :
-              activeIndex === 2 ? 'left-0 w-1/2 md:left-2/4 md:w-1/4' :
-              'left-1/2 w-1/2 md:left-3/4 md:w-1/4'
+            className={`absolute bg-gradient-to-r from-sky-400/40 to-blue-600/40 backdrop-blur-sm rounded-lg transition-all duration-700 ease-out ${
+              // Mobile (2x2 grid) positioning
+              activeIndex === 0 ? 'top-0 left-0 w-1/2 h-1/2 md:inset-y-0 md:left-0 md:w-1/4 md:h-full' :
+              activeIndex === 1 ? 'top-0 left-1/2 w-1/2 h-1/2 md:inset-y-0 md:left-1/4 md:w-1/4 md:h-full' :
+              activeIndex === 2 ? 'bottom-0 left-0 w-1/2 h-1/2 md:inset-y-0 md:left-2/4 md:w-1/4 md:h-full' :
+              'bottom-0 left-1/2 w-1/2 h-1/2 md:inset-y-0 md:left-3/4 md:w-1/4 md:h-full'
             }`}
-            style={{
-              transform: `translateX(${activeIndex === 2 && window.innerWidth < 768 ? '0%' : activeIndex === 3 && window.innerWidth < 768 ? '0%' : '0%'})`,
-            }}
           />
           
           {slides.map((slide, index) => (
@@ -162,11 +160,12 @@ export default function Hero() {
               key={index}
               onClick={() => handleTabClick(index)}
               className={`relative flex-1 flex flex-col md:flex-row items-center justify-center gap-1 md:gap-3 py-3 md:py-6 px-2 md:px-4 text-white transition-all duration-500 hover:scale-105 hover:brightness-110 ${
-                index === 0 && "rounded-tl-xl md:rounded-l-xl md:rounded-tr-none"
-              } ${index === 1 && "rounded-tr-xl md:rounded-tr-none"} ${
-                index === 2 && "rounded-bl-xl md:rounded-bl-none"
+                // Mobile (2x2 grid) rounded corners
+                index === 0 && "rounded-tl-xl md:rounded-l-xl md:rounded-tr-none md:rounded-bl-none"
+              } ${index === 1 && "rounded-tr-xl md:rounded-tr-none md:rounded-tl-none"} ${
+                index === 2 && "rounded-bl-xl md:rounded-bl-none md:rounded-tl-none"
               } ${
-                index === slides.length - 1 && "rounded-br-xl md:rounded-r-xl"
+                index === slides.length - 1 && "rounded-br-xl md:rounded-r-xl md:rounded-bl-none md:rounded-tr-none"
               }`}
             >
               <span 

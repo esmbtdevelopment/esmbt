@@ -77,41 +77,92 @@ const About = () => {
   ];
 
   return (
-    <section className="relative py-20 bg-gradient-to-br from-gray-50 to-white overflow-hidden">
+    <section className="relative py-20 bg-gradient-to-br from-white via-sky-50/30 to-blue-50/20 overflow-hidden" id="about">
+      {/* Creative Background Elements */}
+      <div className="absolute inset-0 opacity-20">
+        {/* Large decorative circles */}
+        <div className="absolute -top-24 -right-24 w-96 h-96 bg-gradient-to-br from-sky-200/40 to-blue-300/30 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-24 -left-24 w-80 h-80 bg-gradient-to-tr from-blue-200/40 to-sky-300/30 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
+        
+        {/* Geometric patterns */}
+        <div className="absolute top-1/4 left-10">
+          <svg width="120" height="120" className="animate-spin-slow opacity-30">
+            <defs>
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#0284c7" />
+                <stop offset="100%" stopColor="#0ea5e9" />
+              </linearGradient>
+            </defs>
+            <polygon points="60,10 110,50 110,110 60,150 10,110 10,50" 
+                     fill="none" stroke="url(#grad1)" strokeWidth="2"/>
+            <circle cx="60" cy="80" r="15" fill="none" stroke="url(#grad1)" strokeWidth="1"/>
+          </svg>
+        </div>
+        
+        {/* Floating elements */}
+        <div className="absolute bottom-1/3 right-16 w-24 h-24 border-4 border-sky-300/50 rounded-full animate-bounce" style={{animationDelay: '1s'}}></div>
+        <div className="absolute top-1/3 right-1/4 w-16 h-16 bg-gradient-to-r from-blue-200/60 to-sky-200/60 rounded-2xl transform rotate-45 animate-pulse" style={{animationDelay: '3s'}}></div>
+      </div>
+      
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6 font-sora">
+        <div className="text-center mb-16 md:mb-20 relative">
+          {/* Floating badge */}
+          <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-sky-100 to-blue-100 border border-sky-200 rounded-full px-6 py-3 mb-6 backdrop-blur-sm">
+            <div className="w-3 h-3 bg-gradient-to-r from-sky-500 to-blue-600 rounded-full animate-pulse"></div>
+            <span className="text-sky-700 font-semibold font-montserrat text-sm">15+ Years of SAP Excellence</span>
+          </div>
+          
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 md:mb-8 font-sora leading-tight">
             Specialized SAP Consulting for
-            <span className="text-sky-600 block">Financial Transformation</span>
+            <span className="relative inline-block">
+              <span className="text-sky-600 block">Financial Transformation</span>
+              {/* Decorative underline */}
+              <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-sky-400 via-blue-500 to-sky-600 rounded-full transform scale-x-0 animate-pulse"></div>
+            </span>
           </h2>
-          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-montserrat px-4">
-            ESM Information Technologies is a specialized SAP consulting and
-            technology firm focused on driving financial transformation and
-            digital compliance for enterprises.
-          </p>
+          
+          <div className="relative max-w-4xl mx-auto">
+            <p className="text-xl md:text-2xl text-gray-600 leading-relaxed font-montserrat px-4">
+              ESM Information Technologies is a specialized SAP consulting and
+              technology firm focused on driving financial transformation and
+              digital compliance for enterprises.
+            </p>
+            {/* Decorative elements */}
+            <div className="absolute -top-4 -left-4 w-8 h-8 border-l-4 border-t-4 border-sky-400 opacity-30"></div>
+            <div className="absolute -bottom-4 -right-4 w-8 h-8 border-r-4 border-b-4 border-blue-400 opacity-30"></div>
+          </div>
         </div>
 
         {/* Stats Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-16 md:mb-20">
-          {stats.map((stat, index) => (
-            <div
-              key={index}
-              className="text-center group hover:transform hover:scale-105 transition-all duration-300"
-            >
-              <div className="flex justify-center mb-3 md:mb-4">
-                <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-sky-500 to-blue-600 rounded-full flex items-center justify-center text-white text-lg md:text-2xl group-hover:shadow-lg transition-shadow">
-                  {stat.icon}
+        <div className="relative mb-20 md:mb-24">
+          {/* Background for stats */}
+          <div className="absolute inset-0 bg-gradient-to-r from-white via-sky-50/50 to-blue-50/50 rounded-3xl transform -skew-y-1"></div>
+          <div className="relative py-12 px-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+              {stats.map((stat, index) => (
+                <div
+                  key={index}
+                  className="text-center group cursor-pointer"
+                >
+                  <div className="relative mb-6">
+                    <div className="w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br from-white to-sky-50 rounded-3xl flex items-center justify-center text-sky-600 text-2xl md:text-3xl mx-auto shadow-lg border border-sky-100 group-hover:shadow-2xl group-hover:scale-110 transition-all duration-500 group-hover:rotate-3">
+                      {stat.icon}
+                    </div>
+
+                    {/* Pulse ring */}
+                    <div className="absolute inset-0 border-2 border-sky-300 rounded-3xl opacity-0 group-hover:opacity-30 group-hover:scale-125 transition-all duration-700 animate-pulse"></div>
+                  </div>
+                  <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-2 md:mb-3 font-sora group-hover:text-sky-600 transition-colors duration-300">
+                    {stat.number}
+                  </div>
+                  <div className="text-base md:text-lg text-gray-600 font-semibold font-montserrat group-hover:text-gray-800 transition-colors">
+                    {stat.label}
+                  </div>
                 </div>
-              </div>
-              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-1 md:mb-2 font-sora">
-                {stat.number}
-              </div>
-              <div className="text-sm md:text-base text-gray-600 font-medium font-montserrat">
-                {stat.label}
-              </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
 
         {/* Main Content */}
@@ -200,22 +251,73 @@ const About = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-sky-600 to-blue-700 rounded-2xl p-8 md:p-12 text-white">
-            <h3 className="text-3xl font-bold mb-4 font-sora">
-              Transform Your Financial Operations
+        <div className="hidden relative mt-20">
+          {/* Creative background */}
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 rounded-[3rem] transform rotate-1"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-sky-600 via-blue-700 to-sky-800 rounded-[3rem] opacity-90"></div>
+          
+          {/* Decorative elements */}
+          <div className="absolute top-6 right-6 w-32 h-32 border-2 border-white/20 rounded-full animate-pulse"></div>
+          <div className="absolute bottom-6 left-6 w-24 h-24 bg-white/10 rounded-2xl transform rotate-45 animate-bounce" style={{animationDelay: '1s'}}></div>
+          <div className="absolute top-1/2 left-8 w-4 h-4 bg-yellow-400 rounded-full animate-ping" style={{animationDelay: '2s'}}></div>
+          
+          <div className="relative p-12 md:p-16 text-white text-center">
+            {/* Floating badge */}
+            <div className="inline-flex items-center space-x-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 mb-6 backdrop-blur-sm">
+              <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
+              <span className="text-white/90 font-semibold font-montserrat text-sm">Ready to Transform?</span>
+            </div>
+            
+            <h3 className="text-4xl md:text-5xl font-bold mb-6 font-sora leading-tight">
+              Transform Your Financial
+              <span className="block text-yellow-400">Operations Today</span>
             </h3>
-            <p className="text-xl mb-8 opacity-90 font-montserrat">
+            
+            <p className="text-xl md:text-2xl mb-10 opacity-90 font-montserrat max-w-2xl mx-auto leading-relaxed">
               Discover how our SAP expertise can streamline your compliance and
-              automation needs
+              automation needs with cutting-edge solutions
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-sky-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-colors font-montserrat">
-                Schedule SAP Consultation
+            
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+              <button className="group relative bg-white text-sky-600 px-10 py-5 rounded-2xl font-bold hover:bg-gray-50 transition-all duration-300 font-montserrat text-lg shadow-2xl hover:shadow-white/10 hover:scale-105 overflow-hidden">
+                {/* Shine effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000"></div>
+                <span className="relative flex items-center space-x-2">
+                  <span>Schedule SAP Consultation</span>
+                  <span className="text-xl group-hover:translate-x-1 transition-transform">→</span>
+                </span>
               </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-sky-600 transition-colors font-montserrat">
-                View Our Solutions
+              
+              <button className="group relative border-2 border-white text-white px-10 py-5 rounded-2xl font-bold hover:bg-white hover:text-sky-600 transition-all duration-500 font-montserrat text-lg hover:scale-105 overflow-hidden">
+                {/* Background slide effect */}
+                <div className="absolute inset-0 bg-white transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500"></div>
+                <span className="relative flex items-center space-x-2">
+                  <span>View Our Solutions</span>
+                  <span className="text-xl group-hover:translate-x-1 transition-transform">→</span>
+                </span>
               </button>
+            </div>
+            
+            {/* Trust indicators at bottom */}
+            <div className="flex items-center justify-center space-x-8 mt-10 pt-8 border-t border-white/20">
+              <div className="flex items-center space-x-2">
+                <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center">
+                  <span className="text-white text-sm">✓</span>
+                </div>
+                <span className="text-white/80 font-montserrat text-sm">500+ Projects</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center">
+                  <span className="text-white text-sm">⚡</span>
+                </div>
+                <span className="text-white/80 font-montserrat text-sm">24h Response</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center">
+                  <span className="text-white text-sm">★</span>
+                </div>
+                <span className="text-white/80 font-montserrat text-sm">SAP Certified</span>
+              </div>
             </div>
           </div>
         </div>
