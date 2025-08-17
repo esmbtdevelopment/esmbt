@@ -82,8 +82,8 @@ const About = () => {
       <div className="absolute inset-0 opacity-20">
         {/* Large decorative circles */}
         <div className="absolute -top-24 -right-24 w-96 h-96 bg-gradient-to-br from-sky-200/40 to-blue-300/30 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-24 -left-24 w-80 h-80 bg-gradient-to-tr from-blue-200/40 to-sky-300/30 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
-        
+        <div className="absolute -bottom-24 -left-24 w-80 h-80 bg-gradient-to-tr from-blue-200/40 to-sky-300/30 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+
         {/* Geometric patterns */}
         <div className="absolute top-1/4 left-10">
           <svg width="120" height="120" className="animate-spin-slow opacity-30">
@@ -93,37 +93,29 @@ const About = () => {
                 <stop offset="100%" stopColor="#0ea5e9" />
               </linearGradient>
             </defs>
-            <polygon points="60,10 110,50 110,110 60,150 10,110 10,50" 
-                     fill="none" stroke="url(#grad1)" strokeWidth="2"/>
-            <circle cx="60" cy="80" r="15" fill="none" stroke="url(#grad1)" strokeWidth="1"/>
+            <polygon points="60,10 110,50 110,110 60,150 10,110 10,50"
+              fill="none" stroke="url(#grad1)" strokeWidth="2" />
+            <circle cx="60" cy="80" r="15" fill="none" stroke="url(#grad1)" strokeWidth="1" />
           </svg>
         </div>
-        
+
         {/* Floating elements */}
-        <div className="absolute bottom-1/3 right-16 w-24 h-24 border-4 border-sky-300/50 rounded-full animate-bounce" style={{animationDelay: '1s'}}></div>
-        <div className="absolute top-1/3 right-1/4 w-16 h-16 bg-gradient-to-r from-blue-200/60 to-sky-200/60 rounded-2xl transform rotate-45 animate-pulse" style={{animationDelay: '3s'}}></div>
+        <div className="absolute bottom-1/3 right-16 w-24 h-24 border-4 border-sky-300/50 rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/3 right-1/4 w-16 h-16 bg-gradient-to-r from-blue-200/60 to-sky-200/60 rounded-2xl transform rotate-45 animate-pulse" style={{ animationDelay: '3s' }}></div>
       </div>
-      
+
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16 md:mb-20 relative">
-          {/* Floating badge */}
-          <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-sky-100 to-blue-100 border border-sky-200 rounded-full px-6 py-3 mb-6 backdrop-blur-sm">
-            <div className="w-3 h-3 bg-gradient-to-r from-sky-500 to-blue-600 rounded-full animate-pulse"></div>
-            <span className="text-sky-700 font-semibold font-montserrat text-sm">15+ Years of SAP Excellence</span>
-          </div>
-          
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 md:mb-8 font-sora leading-tight">
-            Specialized SAP Consulting for
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 md:mb-8 font-sora leading-tight">
+            Specialized SAP Consulting for <br />
             <span className="relative inline-block">
               <span className="text-sky-600 block">Financial Transformation</span>
-              {/* Decorative underline */}
-              <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-sky-400 via-blue-500 to-sky-600 rounded-full transform scale-x-0 animate-pulse"></div>
             </span>
           </h2>
-          
+
           <div className="relative max-w-4xl mx-auto">
-            <p className="text-xl md:text-2xl text-gray-600 leading-relaxed font-montserrat px-4">
+            <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-montserrat px-4">
               ESM Information Technologies is a specialized SAP consulting and
               technology firm focused on driving financial transformation and
               digital compliance for enterprises.
@@ -134,59 +126,29 @@ const About = () => {
           </div>
         </div>
 
-        {/* Stats Section */}
-        <div className="relative mb-20 md:mb-24">
-          {/* Background for stats */}
-          <div className="absolute inset-0 bg-gradient-to-r from-white via-sky-50/50 to-blue-50/50 rounded-3xl transform -skew-y-1"></div>
-          <div className="relative py-12 px-6">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
-              {stats.map((stat, index) => (
-                <div
-                  key={index}
-                  className="text-center group cursor-pointer"
-                >
-                  <div className="relative mb-6">
-                    <div className="w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br from-white to-sky-50 rounded-3xl flex items-center justify-center text-sky-600 text-2xl md:text-3xl mx-auto shadow-lg border border-sky-100 group-hover:shadow-2xl group-hover:scale-110 transition-all duration-500 group-hover:rotate-3">
-                      {stat.icon}
-                    </div>
-
-                    {/* Pulse ring */}
-                    <div className="absolute inset-0 border-2 border-sky-300 rounded-3xl opacity-0 group-hover:opacity-30 group-hover:scale-125 transition-all duration-700 animate-pulse"></div>
-                  </div>
-                  <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-2 md:mb-3 font-sora group-hover:text-sky-600 transition-colors duration-300">
-                    {stat.number}
-                  </div>
-                  <div className="text-base md:text-lg text-gray-600 font-semibold font-montserrat group-hover:text-gray-800 transition-colors">
-                    {stat.label}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
 
         {/* Main Content */}
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16 md:mb-20">
           {/* Left Content */}
           <div className="px-4 lg:px-0">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-6 font-sora">
+            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6 font-sora">
               Empowering Enterprises Through SAP Excellence
             </h3>
             <div className="space-y-4 md:space-y-6 text-gray-600 font-montserrat">
-              <p className="text-base md:text-lg leading-relaxed">
+              <p className="text-sm md:text-base leading-relaxed">
                 We deliver end-to-end SAP integration and optimization services,
                 empowering organizations to streamline financial operations,
                 enhance regulatory compliance, and digitize core processes with
                 confidence.
               </p>
-              <p className="text-base md:text-lg leading-relaxed">
+              <p className="text-sm md:text-base leading-relaxed">
                 Our expertise spans expert SAP consulting, implementation, and
                 support tailored to financial transformation, IFRS adaptation,
                 and process automation. We provide comprehensive SAP-native
                 solutions that simplify complex financial tasks and reduce
                 operational costs.
               </p>
-              <p className="text-base md:text-lg leading-relaxed">
+              <p className="text-sm md:text-base leading-relaxed">
                 With a deep focus on automation, compliance, and SAP-native
                 design, we enable enterprises to meet evolving digital and
                 regulatory demands while maintaining the highest standards of
@@ -202,15 +164,15 @@ const About = () => {
                   className="flex items-start space-x-3 md:space-x-4"
                 >
                   <div className="flex-shrink-0">
-                    <div className="w-10 h-10 md:w-12 md:h-12 bg-sky-100 rounded-lg flex items-center justify-center text-sky-600">
+                    <div className="w-6 h-6 md:w-8 md:h-8 bg-sky-100 rounded-lg flex items-center justify-center text-sky-600">
                       {value.icon}
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-base md:text-lg font-semibold text-gray-900 mb-1 md:mb-2 font-sora">
+                    <h4 className="text-sm md:text-base font-semibold text-gray-900 mb-1 md:mb-2 font-sora">
                       {value.title}
                     </h4>
-                    <p className="text-sm md:text-base text-gray-600 font-montserrat">
+                    <p className="text-xs md:text-sm text-gray-600 font-montserrat">
                       {value.description}
                     </p>
                   </div>
@@ -229,16 +191,15 @@ const About = () => {
                 height={400}
                 className="w-full h-auto object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-tr from-sky-600/20 to-transparent"></div>
             </div>
             {/* Floating Card */}
-            <div className="absolute -bottom-3 -left-2 md:-bottom-6 md:-left-6 bg-white rounded-xl shadow-xl p-3 md:p-6 border border-gray-100">
+            <div className="absolute -bottom-3 -left-2 md:-bottom-6 md:-left-6 bg-white rounded-box rounded-tr-xl shadow-xl p-3 md:p-4 border border-gray-100">
               <div className="flex items-center space-x-2 md:space-x-4">
-                <div className="w-8 h-8 md:w-12 md:h-12 bg-green-100 rounded-full flex items-center justify-center">
-                  <RiRocketLine className="text-green-600 text-sm md:text-xl" />
+                <div className="w-8 h-8 md:w-12 md:h-12 bg-sky-100 rounded-full flex items-center justify-center">
+                  <RiRocketLine className="text-sky-600 text-sm md:text-xl" />
                 </div>
                 <div>
-                  <div className="text-xl md:text-2xl font-bold text-gray-900 font-sora">
+                  <div className="text-base md:text-lg font-bold text-gray-900 font-sora">
                     100%
                   </div>
                   <div className="text-xs md:text-sm text-gray-600 font-montserrat">
@@ -255,29 +216,29 @@ const About = () => {
           {/* Creative background */}
           <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 rounded-[3rem] transform rotate-1"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-sky-600 via-blue-700 to-sky-800 rounded-[3rem] opacity-90"></div>
-          
+
           {/* Decorative elements */}
           <div className="absolute top-6 right-6 w-32 h-32 border-2 border-white/20 rounded-full animate-pulse"></div>
-          <div className="absolute bottom-6 left-6 w-24 h-24 bg-white/10 rounded-2xl transform rotate-45 animate-bounce" style={{animationDelay: '1s'}}></div>
-          <div className="absolute top-1/2 left-8 w-4 h-4 bg-yellow-400 rounded-full animate-ping" style={{animationDelay: '2s'}}></div>
-          
+          <div className="absolute bottom-6 left-6 w-24 h-24 bg-white/10 rounded-2xl transform rotate-45 animate-bounce" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute top-1/2 left-8 w-4 h-4 bg-yellow-400 rounded-full animate-ping" style={{ animationDelay: '2s' }}></div>
+
           <div className="relative p-12 md:p-16 text-white text-center">
             {/* Floating badge */}
             <div className="inline-flex items-center space-x-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 mb-6 backdrop-blur-sm">
               <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
               <span className="text-white/90 font-semibold font-montserrat text-sm">Ready to Transform?</span>
             </div>
-            
+
             <h3 className="text-4xl md:text-5xl font-bold mb-6 font-sora leading-tight">
               Transform Your Financial
               <span className="block text-yellow-400">Operations Today</span>
             </h3>
-            
+
             <p className="text-xl md:text-2xl mb-10 opacity-90 font-montserrat max-w-2xl mx-auto leading-relaxed">
               Discover how our SAP expertise can streamline your compliance and
               automation needs with cutting-edge solutions
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <button className="group relative bg-white text-sky-600 px-10 py-5 rounded-2xl font-bold hover:bg-gray-50 transition-all duration-300 font-montserrat text-lg shadow-2xl hover:shadow-white/10 hover:scale-105 overflow-hidden">
                 {/* Shine effect */}
@@ -287,7 +248,7 @@ const About = () => {
                   <span className="text-xl group-hover:translate-x-1 transition-transform">→</span>
                 </span>
               </button>
-              
+
               <button className="group relative border-2 border-white text-white px-10 py-5 rounded-2xl font-bold hover:bg-white hover:text-sky-600 transition-all duration-500 font-montserrat text-lg hover:scale-105 overflow-hidden">
                 {/* Background slide effect */}
                 <div className="absolute inset-0 bg-white transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500"></div>
@@ -297,7 +258,7 @@ const About = () => {
                 </span>
               </button>
             </div>
-            
+
             {/* Trust indicators at bottom */}
             <div className="flex items-center justify-center space-x-8 mt-10 pt-8 border-t border-white/20">
               <div className="flex items-center space-x-2">

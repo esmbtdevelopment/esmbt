@@ -108,7 +108,7 @@ export default function Hero() {
               }}
             >
               <h1 
-                className={`text-3xl md:text-4xl lg:text-6xl transition-all duration-1000 font-bold font-sora tracking-wide ${
+                className={`text-2xl md:text-3xl lg:text-4xl transition-all duration-1000 font-bold font-sora tracking-wide ${
                   activeIndex === index 
                     ? 'opacity-100 translate-y-0' 
                     : 'opacity-0 translate-y-12'
@@ -119,7 +119,7 @@ export default function Hero() {
               >
                 {slide.title}
               </h1>
-              <p className="max-w-2xl font-manrope font-light text-gray-100/80 text-lg md:text-2xl tracking-wider">
+              <p className="max-w-2xl font-manrope font-light text-gray-100/80 text-lg md:text-xl tracking-wider">
                 {slide.description}
               </p>
               <div 
@@ -132,7 +132,7 @@ export default function Hero() {
                   transitionDelay: activeIndex === index ? '700ms' : '0ms',
                 }}
               >
-                <button className="btn btn-ghost btn-outline hover:bg-white btn-xl rounded-lg font-light text-lg tracking-wider  transition-all duration-300 hover:text-black max-w-xs w-full flex items-center gap-2">
+                <button className="btn btn-ghost btn-outline max-w-3xs hover:bg-white btn-md rounded-lg font-light text-lg tracking-wider  transition-all duration-300 hover:text-black w-full flex items-center gap-2">
                    Hear from us
                 </button>
               </div>

@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { RiHandHeartLine, RiGlobalLine } from "react-icons/ri";
+import Slider from "./Slider";
 
 const Partners = () => {
   const partners = [
@@ -47,23 +48,64 @@ const Partners = () => {
     },
   ];
 
+  // Render function for individual partner items
+  const renderPartner = (partner, index) => (
+    <div className="group bg-gray-50 rounded-xl p-8 hover:scale-105 transition-all duration-300 border border-gray-100">
+      <div className="flex flex-col items-center text-center h-full">
+        <div className="relative w-24 h-16 mb-4 flex items-center justify-center">
+          <Image
+            src={partner.logo}
+            alt={`${partner.name} logo`}
+            fill
+            className="object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+          />
+        </div>
+        <h3 className="text-lg font-semibold text-gray-900 mb-2 font-sora">
+          {partner.name}
+        </h3>
+        <p className="text-sm text-gray-600 font-montserrat">
+          {partner.description}
+        </p>
+      </div>
+    </div>
+  );
+
   return (
     <section className="relative py-10 bg-white">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6 font-sora px-4">
-            Strategic Technology
-            <span className="text-blue-600 block">Partnerships</span>
-          </h2>
-          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-montserrat px-4">
-            We collaborate with industry-leading technology partners to deliver
-            comprehensive SAP and digital transformation solutions.
-          </p>
+        <div className="flex flex-row justify-between">
+          <div className="flex flex-col mb-12 md:mb-16 w-1/2">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6 font-sora px-4">
+              Strategic Technology
+              <span className="text-blue-600 block">Partnerships</span>
+            </h2>
+            <p className="text-lg md:text-xl text-gray-600 max-w-3xl leading-relaxed font-montserrat px-4">
+              We collaborate with industry-leading technology partners to deliver
+              comprehensive SAP and digital transformation solutions.
+            </p>
+          </div>
+
+          {/* Partners Slider */}
+          <div className="w-1/2">
+            <Slider
+              items={partners}
+              renderItem={renderPartner}
+              itemsPerSlide={{
+                mobile: 1,
+                tablet: 1,
+                desktop: 1,
+                large: 1
+              }}
+              autoSlideInterval={4000}
+              showNavigation={false}
+              showIndicators={true}
+            />
+          </div>
         </div>
 
         {/* Partnership Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mb-16">
+        <div className="hidden mb-16">
           <div className="text-center">
             <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
               <RiHandHeartLine />
@@ -101,32 +143,6 @@ const Partners = () => {
           </div>
         </div>
 
-        {/* Partners Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {partners.map((partner, index) => (
-            <div
-              key={index}
-              className="group bg-gray-50 rounded-xl p-8 hover:bg-white hover:shadow-lg transition-all duration-300 border border-gray-100"
-            >
-              <div className="flex flex-col items-center text-center h-full">
-                <div className="relative w-24 h-16 mb-4 flex items-center justify-center">
-                  <Image
-                    src={partner.logo}
-                    alt={`${partner.name} logo`}
-                    fill
-                    className="object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
-                  />
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2 font-sora">
-                  {partner.name}
-                </h3>
-                <p className="text-sm text-gray-600 font-montserrat">
-                  {partner.description}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
 
         {/* Partnership Benefits */}
         <div className="mt-20">
