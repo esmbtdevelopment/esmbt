@@ -61,7 +61,7 @@ const Contact = () => {
         {/* Section Header */}
         <div className="text-center mb-36">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-sora">
-            Let's Transform Your Business Together
+            Let&apos;s Transform Your Business Together
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed font-montserrat">
             Ready to modernize your SAP operations? Our experts are here to guide
@@ -72,7 +72,7 @@ const Contact = () => {
         <div className="flex flex-col lg:flex-row justify-end gap-8 pb-10 pr-10">
           {/* Left Column - Contact Form */}
           <div className="w-full absolute bottom-0 -z-10">
-            <Image src="/images/contact.jpg" alt="Contact" width={1300} height={1300} className="" />
+            <Image src="/images/contact.jpg" alt="Contact" width={1150} height={1150} className="" />
           </div>
           <div className="max-w-xl">
             <ContactForm />
@@ -81,7 +81,7 @@ const Contact = () => {
           <div className="flex flex-col gap-8 w-full max-w-md backdrop-blur-3xl shadow-lg">
             {/* Contact Information */}
             <div className="bg-gray-50 rounded-tr-[76px] p-6 border border-gray-200">
-              <h3 className="text-xl font-bold text-gray-900 font-sora mb-6">
+              <h3 className="text-lg font-bold text-gray-900 font-sora mb-6">
                 Get in Touch
               </h3>
               <div className="space-y-4">
@@ -91,13 +91,13 @@ const Contact = () => {
                       {info.icon}
                     </div>
                     <div>
-                      <h4 className="font-medium text-gray-900 font-montserrat mb-1">
+                      <h4 className="font-medium text-gray-900 font-montserrat mb-1 text-sm">
                         {info.label}
                       </h4>
-                      <p className="text-sky-600 font-medium font-montserrat mb-1">
+                      <p className="text-sky-600 font-medium font-montserrat mb-1 text-sm">
                         {info.value}
                       </p>
-                      <p className="text-sm text-gray-600 font-montserrat">
+                      <p className="text-xs text-gray-600 font-montserrat">
                         {info.description}
                       </p>
                     </div>
@@ -108,20 +108,20 @@ const Contact = () => {
 
             {/* Process Steps */}
             <div className="bg-gray-900 rounded-br-[76px] p-6">
-              <h3 className="text-xl font-bold text-white font-sora mb-6">
+              <h3 className="text-lg font-bold text-white font-sora mb-6">
                 What Happens Next?
               </h3>
               <div className="space-y-4">
                 {processSteps.map((step, index) => (
                   <div key={index} className="flex items-start space-x-3">
-                    <div className="w-8 h-8 bg-sky-600 rounded-lg flex items-center justify-center font-bold text-sm flex-shrink-0 text-white">
+                    <div className="w-6 h-6 bg-sky-600 rounded-lg flex items-center justify-center font-bold text-sm flex-shrink-0 text-white">
                       {step.number}
                     </div>
                     <div>
-                      <h4 className="font-medium text-white mb-1 font-montserrat">
+                      <h4 className="font-medium text-white mb-1 font-montserrat text-sm">
                         {step.title}
                       </h4>
-                      <p className="text-gray-300 font-montserrat text-sm">
+                      <p className="text-gray-300 font-montserrat text-xs">
                         {step.description}
                       </p>
                     </div>
@@ -134,10 +134,10 @@ const Contact = () => {
                 <div className="grid grid-cols-3 gap-4">
                   {stats.map((stat, index) => (
                     <div key={index} className="text-center">
-                      <div className="text-lg font-bold text-white font-sora mb-1">
+                      <div className="text-base font-bold text-white font-sora mb-1">
                         {stat.number}
                       </div>
-                      <div className="text-xs text-gray-300 font-montserrat">
+                      <div className="text-xs text-gray-300 font-montserrat font-bold">
                         {stat.label}
                       </div>
                     </div>

@@ -94,10 +94,10 @@ const Customers = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-left mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-sora">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 font-sora">
             Trusted by Industry Leaders
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl leading-relaxed font-montserrat">
+          <p className="text-sm text-gray-600 max-w-2xl leading-relaxed font-montserrat">
             From telecommunications giants to innovative startups, enterprises
             across industries trust ESM for their SAP and digital transformation
             needs.
@@ -107,7 +107,7 @@ const Customers = () => {
         {/* Customer Stats */}
         <div className="hidden grid grid-cols-4 gap-6 mb-16">
           <div className="text-center">
-            <div className="text-2xl font-bold text-gray-900 mb-1 font-sora">200+</div>
+            <div className="text-xl font-bold text-gray-900 mb-1 font-sora">200+</div>
             <div className="text-sm text-gray-600 font-montserrat">Enterprise Clients</div>
           </div>
           <div className="text-center">
@@ -126,9 +126,6 @@ const Customers = () => {
 
         {/* Customer Logos Grid */}
         <div className="mb-16">
-          <h3 className="text-xl font-bold text-gray-900 text-center mb-8 font-sora">
-            Companies That Trust ESM
-          </h3>
           <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {customers.map((customer, index) => (
               <div
@@ -143,7 +140,7 @@ const Customers = () => {
                     className="object-contain filter grayscale"
                   />
                 </div>
-                <div className="text-xs text-gray-500 text-center font-montserrat">
+                <div className="text-xs text-gray-500 text-center font-montserrat font-bold">
                   {customer.industry}
                 </div>
               </div>

@@ -57,19 +57,19 @@ const About = () => {
 
   const values = [
     {
-      icon: <RiLightbulbLine className="text-2xl" />,
+      icon: <RiLightbulbLine className="text-xl" />,
       title: "SAP-Native Design",
       description:
         "All solutions built specifically for SAP environments with seamless integration",
     },
     {
-      icon: <RiShieldCheckLine className="text-2xl" />,
+      icon: <RiShieldCheckLine className="text-xl" />,
       title: "Regulatory Compliance",
       description:
         "Expert guidance on digital tax requirements and evolving regulatory demands",
     },
     {
-      icon: <RiTeamLine className="text-2xl" />,
+      icon: <RiTeamLine className="text-xl" />,
       title: "Financial Transformation",
       description:
         "Specialized focus on streamlining financial operations and process automation",

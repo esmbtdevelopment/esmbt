@@ -81,10 +81,10 @@ const ContactForm = () => {
     return (
         <div className="bg-white rounded-tl-[76px] rounded-box shadow-lg p-10 border border-gray-200">
             <div className="mb-8">
-                <h3 className="text-2xl font-bold text-gray-900 font-sora mb-2">
+                <h3 className="text-lg font-bold text-gray-900 font-sora mb-2">
                     Request a Consultation
                 </h3>
-                <p className="text-gray-600 font-montserrat">
+                <p className="text-gray-600 font-montserrat text-sm">
                     Connect with our SAP specialists for enterprise solutions
                 </p>
             </div>
@@ -92,7 +92,7 @@ const ContactForm = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                     <div className="relative">
-                        <label className="block text-sm font-semibold text-gray-700 mb-2 font-montserrat">
+                        <label className="block text-xs font-semibold text-gray-700 mb-2 font-montserrat">
                             Full Name *
                         </label>
                         <div className="relative">
@@ -103,14 +103,14 @@ const ContactForm = () => {
                                 value={formData.name}
                                 onChange={handleInputChange}
                                 placeholder="Enter your full name"
-                                className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-sky-500 font-montserrat"
+                                className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-sky-500 font-montserrat text-sm"
                                 required
                             />
                         </div>
                     </div>
 
                     <div className="relative">
-                        <label className="block text-sm font-semibold text-gray-700 mb-2 font-montserrat">
+                        <label className="block text-xs font-semibold text-gray-700 mb-2 font-montserrat">
                             Company
                         </label>
                         <div className="relative">
@@ -121,14 +121,14 @@ const ContactForm = () => {
                                 value={formData.company}
                                 onChange={handleInputChange}
                                 placeholder="Your company name"
-                                className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-sky-500 font-montserrat"
+                                className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-sky-500 font-montserrat text-sm"
                             />
                         </div>
                     </div>
                 </div>
 
                 <div className="relative">
-                    <label className="block text-sm font-semibold text-gray-700 mb-2 font-montserrat">
+                    <label className="block text-xs font-semibold text-gray-700 mb-2 font-montserrat">
                         Email Address *
                     </label>
                     <div className="relative">
@@ -139,14 +139,14 @@ const ContactForm = () => {
                             value={formData.email}
                             onChange={handleInputChange}
                             placeholder="your.email@company.com"
-                            className="w-full pl-12 pr-4 py-4 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-sky-200 focus:border-sky-500 transition-all duration-300 font-montserrat hover:border-sky-300 bg-white/50 backdrop-blur-sm"
+                            className="w-full pl-12 pr-4 py-3 border-2 text-sm border-gray-200 rounded-xl focus:ring-4 focus:ring-sky-200 focus:border-sky-500 transition-all duration-300 font-montserrat hover:border-sky-300 bg-white/50 backdrop-blur-sm"
                             required
                         />
                     </div>
                 </div>
 
                 <div className="relative">
-                    <label className="block text-sm font-semibold text-gray-700 mb-2 font-montserrat">
+                    <label className="block text-xs font-semibold text-gray-700 mb-2 font-montserrat">
                         Phone Number
                     </label>
                     <div className="relative">
@@ -157,13 +157,13 @@ const ContactForm = () => {
                             value={formData.phone}
                             onChange={handleInputChange}
                             placeholder="+1 (555) 000-0000"
-                            className="w-full pl-12 pr-4 py-4 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-sky-200 focus:border-sky-500 transition-all duration-300 font-montserrat hover:border-sky-300 bg-white/50 backdrop-blur-sm"
+                            className="w-full pl-12 pr-4 py-4 border-2 text-sm border-gray-200 rounded-xl focus:ring-4 focus:ring-sky-200 focus:border-sky-500 transition-all duration-300 font-montserrat hover:border-sky-300 bg-white/50 backdrop-blur-sm"
                         />
                     </div>
                 </div>
 
                 <div className="relative">
-                    <label className="block text-sm font-semibold text-gray-700 mb-2 font-montserrat">
+                    <label className="block text-xs font-semibold text-gray-700 mb-2 font-montserrat">
                         Project Details
                     </label>
                     <textarea
@@ -172,12 +172,12 @@ const ContactForm = () => {
                         onChange={handleInputChange}
                         placeholder="Tell us about your project requirements, SAP modules involved, timeline, and any specific challenges you're facing..."
                         rows="5"
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-sky-500 resize-none font-montserrat"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-sky-500 resize-none font-montserrat text-sm"
                     />
                 </div>
 
                 {/* Privacy Notice */}
-                <div className="bg-gray-50 rounded-lg p-4 text-sm text-gray-600 font-montserrat">
+                <div className="bg-gray-50 rounded-lg p-4 text-xs text-gray-600 font-montserrat">
                     <p>
                         By clicking Confirm, you confirm that you have read and
                         understood the{" "}
@@ -199,7 +199,7 @@ const ContactForm = () => {
                 <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-sky-600 text-white font-medium py-3 px-6 rounded-lg hover:bg-sky-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2 font-montserrat"
+                    className="w-full bg-sky-600 text-white font-medium hover:cursor-pointer py-3 px-6 rounded-lg hover:bg-sky-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2 font-montserrat"
                 >
                     {isSubmitting ? (
                         <>

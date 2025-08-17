@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { RiHandHeartLine, RiGlobalLine } from "react-icons/ri";
-import Slider from "./Slider";
+import Slider from "../Slider";
 
 const Partners = () => {
   const partners = [
