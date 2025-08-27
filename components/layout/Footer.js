@@ -44,7 +44,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 items-center mb-12 lg:mb-16 border-b border-gray-700 pb-8 lg:pb-12">
           {/* Left side - Description */}
-          <div className="max-w-md text-center lg:text-left order-2 lg:order-1">
+          <div className="max-w-md text-center lg:text-left order-2 lg:order-1 space-y-4">
             <p className="text-sm md:text-base text-gray-300 leading-relaxed font-montserrat">
               Specialized SAP consulting and technology firm focused on driving
               financial transformation and digital compliance for enterprises.
@@ -186,7 +186,8 @@ const Footer = () => {
       <div className="border-t border-gray-700 bg-gray-900">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between text-center md:text-left">
-            <div className="text-gray-400 text-xs md:text-sm mb-4 md:mb-0 font-montserrat">
+            <div className="text-gray-400 text-xs md:text-sm mb-4 md:mb-0 font-montserrat flex items-center gap-2">
+              <Image src="/images/badges/sap-partner.png" alt="SAP Partner" width={50} height={50} className="grayscale hover:grayscale-0 transition-all duration-300" />
               © 2024 ESM Information Technologies. All rights reserved.
             </div>
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-xs md:text-sm">

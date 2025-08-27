@@ -238,6 +238,17 @@ const Navbar = () => {
                 <span className="relative z-10 text-xs">Contact Us</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-slate-600 to-slate-800 rounded-full opacity-0 hover:opacity-30 transition-opacity duration-300"></div>
               </a>
+
+              {/* Cloud Portal Button */}
+              <a
+                href="https://portal.taxten.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative px-4 py-2 text-xs md:text-sm bg-gradient-to-r from-slate-700 to-slate-900 hover:from-slate-800 hover:to-black text-white rounded-full shadow-lg hover:shadow-xl transform transition-all duration-300 uppercase tracking-widest font-semibold border border-slate-600"
+              >
+                <span className="relative z-10 text-xs">Cloud Portal</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-slate-600 to-slate-800 rounded-full opacity-0 hover:opacity-30 transition-opacity duration-300"></div>
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -377,6 +388,17 @@ const Navbar = () => {
                 className="relative mt-2 px-6 py-3 bg-gradient-to-r from-slate-700 to-slate-900 hover:from-slate-800 hover:to-black text-white rounded-full text-center font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 uppercase tracking-wide border border-slate-600"
               >
                 <span className="relative z-10">Contact Us</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-slate-600 to-slate-800 rounded-full opacity-0 hover:opacity-30 transition-opacity duration-300"></div>
+              </a>
+
+              {/* Mobile Cloud Portal Button with Same Styling */}
+              <a
+                href="https://portal.taxten.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative mt-2 px-6 py-3 bg-gradient-to-r from-slate-700 to-slate-900 hover:from-slate-800 hover:to-black text-white rounded-full text-center font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 uppercase tracking-wide border border-slate-600"
+              >
+                <span className="relative z-10">Cloud Portal</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-slate-600 to-slate-800 rounded-full opacity-0 hover:opacity-30 transition-opacity duration-300"></div>
               </a>
 

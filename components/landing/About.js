@@ -193,20 +193,8 @@ const About = () => {
               />
             </div>
             {/* Floating Card */}
-            <div className="absolute -bottom-3 -left-2 md:-bottom-6 md:-left-6 bg-white rounded-box rounded-tr-xl shadow-xl p-3 md:p-4 border border-gray-100">
-              <div className="flex items-center space-x-2 md:space-x-4">
-                <div className="w-8 h-8 md:w-12 md:h-12 bg-sky-100 rounded-full flex items-center justify-center">
-                  <RiRocketLine className="text-sky-600 text-sm md:text-xl" />
-                </div>
-                <div>
-                  <div className="text-base md:text-lg font-bold text-gray-900 font-sora">
-                    100%
-                  </div>
-                  <div className="text-xs md:text-sm text-gray-600 font-montserrat">
-                    SAP Compliance
-                  </div>
-                </div>
-              </div>
+            <div className="absolute -bottom-3 -left-2 md:-bottom-6 md:-left-6 hover:scale-105 transition-all duration-300">
+              <Image src="/images/badges/sap-partner.png" alt="SAP Partner" width={100} height={100} />
             </div>
           </div>
         </div>

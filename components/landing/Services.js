@@ -107,7 +107,7 @@ function Services() {
             >
               <div className="flex flex-row w-full justify-between gap-8 md:gap-16 items-center p-8">
                 {/* Service Content */}
-                <div className={`space-y-6 max-w-5xl w-2/3`}>
+                <div className={`space-y-6 max-w-5xl w-1/2`}>
                   {/* Service Header */}
                   <h3 className="text-lg md:text-xl font-bold text-gray-900 font-sora leading-tight">
                     {service.title}
@@ -122,7 +122,7 @@ function Services() {
                 </div>
 
                 {/* Service Visual */}
-                <div className={`flex items-center justify-center w-1/3`}>
+                <div className={`flex items-center justify-center w-1/2`}>
                   <div className="relative z-10 text-5xl md:text-6xl text-sky-600">
                     {service.icon}
                   </div>
