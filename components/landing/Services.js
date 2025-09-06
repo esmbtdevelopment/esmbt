@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import {
   FaChartLine,
   FaUniversity,
@@ -27,54 +28,58 @@ function Services() {
   const services = [
     {
       id: 1,
-      icon: <RiTeamLine />,
-      title: "SAP Consulting & Implementation",
+      slug: "e-invoice",
+      icon: <FaFileInvoiceDollar />,
+      title: "E-Invoice",
       description:
-        "Ready to make SAP actually work for your team? We've been there - we know how complex SAP implementations can get. That's why we focus on making the process smooth and the results immediate.",
+        "E-Invoice is not just a digital transformation tool, but also an investment in the future of your business. It ensures seamless compliance while saving time and costs. Transform your invoicing process with secure, automated digital solutions that streamline operations and enhance business efficiency.",
       features: [
-        { name: "S/4HANA Migration", icon: <FaExchangeAlt /> },
-        { name: "Module Customization", icon: <FaCogs /> },
-        { name: "Workflow Automation", icon: <FaRobot /> },
-        { name: "Change Management", icon: <FaProjectDiagram /> }
+        { name: "Legal Compliance", icon: <FaShieldAlt /> },
+        { name: "Cost Reduction", icon: <FaCoins /> },
+        { name: "Automated Processing", icon: <FaRobot /> },
+        { name: "Real-time Tracking", icon: <FaChartLine /> }
       ],
     },
     {
       id: 2,
-      icon: <AiOutlineCloudServer />,
-      title: "E-Transformation Solutions",
+      slug: "e-archive-invoice",
+      icon: <FaArchive />,
+      title: "E-Archive Invoice",
       description:
-        "Compliance headaches keeping you up at night? We get it. Digital transformation shouldn&apos;t feel like rocket science. Our e-transformation solutions turn those stacks of paperwork into streamlined digital processes.",
+        "E-Archive Invoice provides secure, long-term storage solutions for your digital invoices with full legal compliance. Never worry about document retention again - our robust archiving system ensures your invoices are safely stored, easily accessible, and always audit-ready.",
       features: [
-        { name: "e-Invoice Systems", icon: <FaFileInvoiceDollar /> },
-        { name: "e-Archive Solutions", icon: <FaArchive /> },
-        { name: "e-Ledger Integration", icon: <FaBook /> },
-        { name: "Compliance Monitoring", icon: <FaShieldAlt /> }
+        { name: "Secure Storage", icon: <FaShieldAlt /> },
+        { name: "Legal Compliance", icon: <FaBalanceScale /> },
+        { name: "Easy Retrieval", icon: <FaChartArea /> },
+        { name: "Audit Ready", icon: <FaCogs /> }
       ],
     },
     {
       id: 3,
-      icon: <FaChartLine />,
-      title: "Financial Management Tools",
+      slug: "e-export",
+      icon: <FaUniversity />,
+      title: "E-Export",
       description:
-        "Financial reporting eating up your entire month-end? Let&apos;s change that. Our financial management tools are designed by people who&apos;ve actually worked in finance departments - we know what really matters.",
+        "E-Export simplifies international trade with digital export documentation and compliance solutions. Expand your global reach with confidence, knowing that all export procedures are digitally managed, compliant, and efficient for seamless international business operations.",
       features: [
-        { name: "VAT Processing", icon: <FaCalculator /> },
-        { name: "IFRS 16 Compliance", icon: <FaBalanceScale /> },
-        { name: "Loan Tracking", icon: <FaChartArea /> },
-        { name: "Inflation Accounting", icon: <SlGraph /> }
+        { name: "Export Documentation", icon: <FaFileInvoiceDollar /> },
+        { name: "Compliance Management", icon: <FaShieldAlt /> },
+        { name: "International Standards", icon: <FaUniversity /> },
+        { name: "Process Automation", icon: <FaRobot /> }
       ],
     },
     {
       id: 4,
-      icon: <FaUniversity />,
-      title: "Banking & Treasury Operations",
+      slug: "e-commerce",
+      icon: <RiTeamLine />,
+      title: "E-Commerce",
       description:
-        "Managing cash flow across multiple banks feeling like a juggling act? We&apos;ve built solutions that bring all your banking operations into one clear view.",
+        "E-Commerce solutions that power your online business growth with integrated digital sales platforms. From inventory management to customer experience, our comprehensive e-commerce tools help you build, manage, and scale your online presence effectively.",
       features: [
-        { name: "Bulk Payment Processing", icon: <FaMoneyCheckAlt /> },
-        { name: "Virtual POS Systems", icon: <FaCreditCard /> },
-        { name: "Cash Management", icon: <FaCoins /> },
-        { name: "Treasury Risk Management", icon: <FaUserShield /> }
+        { name: "Online Store Management", icon: <FaCogs /> },
+        { name: "Payment Integration", icon: <FaCreditCard /> },
+        { name: "Inventory Control", icon: <FaArchive /> },
+        { name: "Customer Analytics", icon: <FaChartLine /> }
       ],
     },
   ];
@@ -118,7 +123,9 @@ function Services() {
                   <p className="text-gray-600 font-montserrat text-sm md:text-base leading-relaxed">
                     {service.description}
                   </p>
-                  <button className="btn btn-outline btn-info font-montserrat font-semibold text-sm md:text-base">Learn More <FaChevronRight /></button>
+                  <Link href={`/services/${service.slug}`}>
+                    <button className="btn btn-outline btn-info font-montserrat font-semibold text-sm md:text-base">Learn More <FaChevronRight /></button>
+                  </Link>
                 </div>
 
                 {/* Service Visual */}
