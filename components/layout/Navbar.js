@@ -22,19 +22,40 @@ import {
   FaChartLine,
 } from "react-icons/fa";
 
+// Custom hook to check if we're on the client side
+const useIsClient = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  return isClient;
+};
+
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [mobileActiveDropdown, setMobileActiveDropdown] = useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
   const navRef = useRef(null);
+  const dropdownTimeoutRef = useRef(null);
+  const isClient = useIsClient();
 
   const handleMouseEnter = (dropdown) => {
+    // Clear any existing timeout
+    if (dropdownTimeoutRef.current) {
+      clearTimeout(dropdownTimeoutRef.current);
+    }
     setActiveDropdown(dropdown);
   };
 
-  const handleMouseLeave = () => {
-    setActiveDropdown(null);
+  const handleMouseLeave = (dropdownToClose) => {
+    // Add a delay before closing to allow users to move to dropdown content
+    dropdownTimeoutRef.current = setTimeout(() => {
+      // Only close if this specific dropdown is still active
+      setActiveDropdown(current => current === dropdownToClose ? null : current);
+    }, 150); // 150ms delay gives users time to navigate
   };
 
   const toggleMobileDropdown = (dropdown) => {
@@ -43,6 +64,8 @@ const Navbar = () => {
 
   // Handle scroll for sticky navbar background
   useEffect(() => {
+    if (!isClient) return;
+
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       setIsScrolled(scrollPosition > 50);
@@ -52,10 +75,21 @@ const Navbar = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
+  }, [isClient]);
+
+  // Cleanup timeout on component unmount
+  useEffect(() => {
+    return () => {
+      if (dropdownTimeoutRef.current) {
+        clearTimeout(dropdownTimeoutRef.current);
+      }
+    };
   }, []);
 
   // Close mobile menu when switching to desktop view
   useEffect(() => {
+    if (!isClient) return;
+
     const handleResize = () => {
       if (window.innerWidth >= 768) {
         setIsMobileMenuOpen(false);
@@ -67,7 +101,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [isClient]);
 
   const dropdownContent = {
     corporate: [
@@ -81,9 +115,10 @@ const Navbar = () => {
       { title: "Custom Development", description: "Tailored software solutions", icon: FaCode },
     ],
     services: [
-      { title: "Consulting", description: "Expert business guidance", icon: FaChartLine },
-      { title: "Implementation", description: "Full deployment support", icon: FaCogs },
-      { title: "Security Services", description: "Advanced protection", icon: FaShieldAlt },
+      { title: "E-Invoice Solutions", description: "Digital invoicing and compliance", icon: FaChartLine, link: "/services" },
+      { title: "E-Commerce Platform", description: "Complete online business tools", icon: FaCogs, link: "/services" },
+      { title: "Digital Transformation", description: "Full business digitalization", icon: FaShieldAlt, link: "/services" },
+      { title: "View All Services", description: "Explore our complete service portfolio", icon: FaChartLine, link: "/services", highlight: true },
     ],
   };
   return (
@@ -95,7 +130,7 @@ const Navbar = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-3 hover:cursor-pointer" onClick={() => window.location.href = '/'}>
               <Image
                 src="/images/logo.webp"
                 alt="ESMBT"
@@ -113,7 +148,7 @@ const Navbar = () => {
               <div
                 className="relative"
                 onMouseEnter={() => handleMouseEnter('corporate')}
-                onMouseLeave={handleMouseLeave}
+                onMouseLeave={() => handleMouseLeave('corporate')}
               >
                 <button className="relative flex items-center space-x-1 text-white hover:cursor-pointer transition-all duration-300 px-4 py-2 rounded-lg hover:bg-white/10 hover:backdrop-blur-sm">
                   <span className="uppercase tracking-widest text-xs md:text-sm">Corporate</span>
@@ -126,9 +161,9 @@ const Navbar = () => {
                 {/* Corporate Dropdown Menu */}
                 {activeDropdown === 'corporate' && (
                   <div
-                    className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden z-50 animate-in fade-in-0 zoom-in-95 duration-200"
+                    className="absolute top-full left-0 mt-1 w-80 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden z-50 animate-in fade-in-0 zoom-in-95 duration-200"
                     onMouseEnter={() => handleMouseEnter('corporate')}
-                    onMouseLeave={handleMouseLeave}
+                    onMouseLeave={() => handleMouseLeave('corporate')}
                   >
                     {dropdownContent.corporate.map((item, index) => (
                       <a
@@ -151,7 +186,7 @@ const Navbar = () => {
               <div
                 className="relative"
                 onMouseEnter={() => handleMouseEnter('products')}
-                onMouseLeave={handleMouseLeave}
+                onMouseLeave={() => handleMouseLeave('products')}
               >
                 <button className="relative flex items-center space-x-1 text-white hover:cursor-pointer transition-all duration-300 px-4 py-2 rounded-lg hover:bg-white/10 hover:backdrop-blur-sm">
                   <span className="uppercase tracking-widest text-xs md:text-sm">Products</span>
@@ -164,9 +199,9 @@ const Navbar = () => {
                 {/* Products Dropdown Menu */}
                 {activeDropdown === 'products' && (
                   <div
-                    className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden z-50 animate-in fade-in-0 zoom-in-95 duration-200"
+                    className="absolute top-full left-0 mt-1 w-80 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden z-50 animate-in fade-in-0 zoom-in-95 duration-200"
                     onMouseEnter={() => handleMouseEnter('products')}
-                    onMouseLeave={handleMouseLeave}
+                    onMouseLeave={() => handleMouseLeave('products')}
                   >
                     {dropdownContent.products.map((item, index) => (
                       <a
@@ -189,7 +224,7 @@ const Navbar = () => {
               <div
                 className="relative"
                 onMouseEnter={() => handleMouseEnter('services')}
-                onMouseLeave={handleMouseLeave}
+                onMouseLeave={() => handleMouseLeave('services')}
               >
                 <button className="relative flex items-center space-x-1 text-white hover:cursor-pointer transition-all duration-300 px-4 py-2 rounded-lg hover:bg-white/10 hover:backdrop-blur-sm">
                   <span className="uppercase tracking-widest text-xs md:text-sm">Services</span>
@@ -202,20 +237,21 @@ const Navbar = () => {
                 {/* Services Dropdown Menu */}
                 {activeDropdown === 'services' && (
                   <div
-                    className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden z-50 animate-in fade-in-0 zoom-in-95 duration-200"
+                    className="absolute top-full left-0 mt-1 w-80 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden z-50 animate-in fade-in-0 zoom-in-95 duration-200"
                     onMouseEnter={() => handleMouseEnter('services')}
-                    onMouseLeave={handleMouseLeave}
+                    onMouseLeave={() => handleMouseLeave('services')}
                   >
                     {dropdownContent.services.map((item, index) => (
                       <a
                         key={index}
-                        href="#"
-                        className="flex items-center p-4 hover:bg-sky-50 transition-colors border-b border-gray-100 last:border-b-0"
+                        href={item.link || "#"}
+                        className={`flex items-center p-4 hover:bg-sky-50 transition-colors border-b border-gray-100 last:border-b-0 ${item.highlight ? 'bg-sky-50 border-sky-200' : ''
+                          }`}
                       >
-                        <item.icon className="text-sky-600 text-lg mr-3" />
+                        <item.icon className={`text-lg mr-3 ${item.highlight ? 'text-sky-700' : 'text-sky-600'}`} />
                         <div>
-                          <h3 className="font-semibold text-gray-800">{item.title}</h3>
-                          <p className="text-sm text-gray-600">{item.description}</p>
+                          <h3 className={`font-semibold ${item.highlight ? 'text-sky-800' : 'text-gray-800'}`}>{item.title}</h3>
+                          <p className={`text-sm ${item.highlight ? 'text-sky-600' : 'text-gray-600'}`}>{item.description}</p>
                         </div>
                       </a>
                     ))}
@@ -364,13 +400,14 @@ const Navbar = () => {
                     {dropdownContent.services.map((item, index) => (
                       <a
                         key={index}
-                        href="#"
-                        className="flex items-center p-3 text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-lg transition-colors"
+                        href={item.link || "#"}
+                        className={`flex items-center p-3 text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-lg transition-colors ${item.highlight ? 'bg-gray-800/30 border border-sky-600/30' : ''
+                          }`}
                       >
-                        <item.icon className="text-sky-400 text-sm mr-3" />
+                        <item.icon className={`text-sm mr-3 ${item.highlight ? 'text-sky-300' : 'text-sky-400'}`} />
                         <div>
-                          <h4 className="font-medium text-sm">{item.title}</h4>
-                          <p className="text-xs text-gray-400">{item.description}</p>
+                          <h4 className={`font-medium text-sm ${item.highlight ? 'text-white' : ''}`}>{item.title}</h4>
+                          <p className={`text-xs ${item.highlight ? 'text-sky-200' : 'text-gray-400'}`}>{item.description}</p>
                         </div>
                       </a>
                     ))}
