@@ -55,7 +55,7 @@ const ContactForm = () => {
         // Simulate form submission (replace with actual API call)
         try {
             await new Promise((resolve) => setTimeout(resolve, 2000));
-            toast.success("Message sent successfully! We'll get back to you soon.");
+            toast.success("Message sent successfully! We&apos;ll get back to you soon.");
 
             // Reset form
             setFormData({
@@ -170,7 +170,7 @@ const ContactForm = () => {
                         name="message"
                         value={formData.message}
                         onChange={handleInputChange}
-                        placeholder="Tell us about your project requirements, SAP modules involved, timeline, and any specific challenges you're facing..."
+                        placeholder="Tell us about your project requirements, SAP modules involved, timeline, and any specific challenges you&apos;re facing..."
                         rows="4"
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-sky-500 resize-none font-montserrat text-sm"
                     />

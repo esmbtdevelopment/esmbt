@@ -110,7 +110,7 @@ function ServicesPage() {
                         </h2>
                         <p className="text-base sm:text-lg text-gray-600 font-montserrat leading-relaxed max-w-3xl mx-auto px-4">
                             Comprehensive digital transformation solutions tailored for your business needs.
-                            From compliance to commerce, we've got you covered.
+                            From compliance to commerce, we&apos;ve got you covered.
                         </p>
                     </div>
 
