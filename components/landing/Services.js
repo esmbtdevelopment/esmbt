@@ -24,12 +24,13 @@ import {
 import { RiTeamLine } from "react-icons/ri";
 import { AiOutlineCloudServer } from "react-icons/ai";
 import { SlGraph } from "react-icons/sl";
+import Image from "next/image";
 function Services() {
   const services = [
     {
       id: 1,
       slug: "e-invoice",
-      icon: <FaFileInvoiceDollar />,
+      icon: <Image src="/images/services/landing/invoice.webp" alt="E-Invoice" width={1000} height={1000} />,
       title: "E-Invoice",
       description:
         "E-Invoice is not just a digital transformation tool, but also an investment in the future of your business. It ensures seamless compliance while saving time and costs. Transform your invoicing process with secure, automated digital solutions that streamline operations and enhance business efficiency.",
@@ -43,7 +44,7 @@ function Services() {
     {
       id: 2,
       slug: "e-archive-invoice",
-      icon: <FaArchive />,
+      icon: <Image src="/images/services/landing/archive.webp" alt="E-Invoice" width={500} height={500} />,
       title: "E-Archive Invoice",
       description:
         "E-Archive Invoice provides secure, long-term storage solutions for your digital invoices with full legal compliance. Never worry about document retention again - our robust archiving system ensures your invoices are safely stored, easily accessible, and always audit-ready.",
@@ -57,7 +58,7 @@ function Services() {
     {
       id: 3,
       slug: "e-export",
-      icon: <FaUniversity />,
+      icon: <Image src="/images/services/landing/export.webp" alt="E-Invoice" width={500} height={500} />,
       title: "E-Export",
       description:
         "E-Export simplifies international trade with digital export documentation and compliance solutions. Expand your global reach with confidence, knowing that all export procedures are digitally managed, compliant, and efficient for seamless international business operations.",
@@ -71,7 +72,7 @@ function Services() {
     {
       id: 4,
       slug: "e-commerce",
-      icon: <RiTeamLine />,
+      icon: <Image src="/images/services/landing/e commerce.webp" alt="E-Invoice" width={500} height={500} />,
       title: "E-Commerce",
       description:
         "E-Commerce solutions that power your online business growth with integrated digital sales platforms. From inventory management to customer experience, our comprehensive e-commerce tools help you build, manage, and scale your online presence effectively.",
@@ -108,7 +109,7 @@ function Services() {
           {services.map((service) => (
             <article
               key={service.id}
-              className={`flex flex-col gap-4 items-center bg-gradient-to-r from-sky-50 to-blue-50 rounded-lg`}
+              className={`flex flex-col gap-4 items-center bg-gradient-to-r from-sky-50 to-blue-50 rounded-lg relative`}
             >
               <div className="flex flex-row w-full justify-between gap-8 md:gap-16 items-center p-8">
                 {/* Service Content */}
@@ -129,10 +130,8 @@ function Services() {
                 </div>
 
                 {/* Service Visual */}
-                <div className={`flex items-center justify-center w-1/2`}>
-                  <div className="relative z-10 text-5xl md:text-6xl text-sky-600">
-                    {service.icon}
-                  </div>
+                <div className={`flex items-end justify-end rounded-lg w-1/2`}>
+                  {service.icon}
                 </div>
               </div>
               {/* What You Get List */}

@@ -23,6 +23,7 @@ import {
     FaStar
 } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 
 // Detailed service data
 const serviceData = {
@@ -30,7 +31,7 @@ const serviceData = {
         id: "e-invoice",
         title: "E-Invoice",
         subtitle: "Digital Invoice Solutions",
-        icon: <FaFileInvoiceDollar />,
+        icon: <Image src="/images/services/hero/invoice.webp" alt="E-Invoice" width={1000} height={1000} />,
         heroDescription: "Transform your invoicing process with secure, automated digital solutions that ensure compliance while reducing costs and improving efficiency.",
         fullDescription: "E-Invoice is not just a digital transformation tool, but also an investment in the future of your business. Our comprehensive e-invoicing solution ensures seamless compliance with local and international regulations while dramatically reducing processing time and operational costs. Built with enterprise-grade security and scalability in mind.",
         benefits: [
@@ -78,7 +79,7 @@ const serviceData = {
         id: "e-archive-invoice",
         title: "E-Archive Invoice",
         subtitle: "Secure Invoice Storage Solutions",
-        icon: <FaArchive />,
+        icon: <Image src="/images/services/hero/archive.webp" alt="E-Invoice" width={1000} height={1000} />,
         heroDescription: "Secure, long-term storage solutions for your digital invoices with full legal compliance and easy retrieval capabilities.",
         fullDescription: "E-Archive Invoice provides a comprehensive digital archiving solution that ensures your invoices are securely stored, legally compliant, and always accessible. Our robust archiving system eliminates the need for physical document storage while maintaining full audit trails and regulatory compliance.",
         benefits: [
@@ -126,7 +127,7 @@ const serviceData = {
         id: "e-export",
         title: "E-Export",
         subtitle: "Digital Export Solutions",
-        icon: <FaGlobe />,
+        icon: <Image src="/images/services/hero/export.webp" alt="E-Invoice" width={1000} height={1000} />,
         heroDescription: "Simplify international trade with comprehensive digital export documentation and compliance management solutions.",
         fullDescription: "E-Export streamlines your international trade operations with digital export documentation, automated compliance checks, and seamless integration with customs authorities. Expand your global reach with confidence, knowing all export procedures are digitally managed and compliant.",
         benefits: [
@@ -174,7 +175,7 @@ const serviceData = {
         id: "e-commerce",
         title: "E-Commerce",
         subtitle: "Online Commerce Platform",
-        icon: <FaShoppingCart />,
+        icon: <Image src="/images/services/hero/e-commerce.webp" alt="E-Invoice" width={1000} height={1000} />,
         heroDescription: "Comprehensive e-commerce solutions that power your online business growth with integrated digital sales platforms.",
         fullDescription: "Our E-Commerce platform provides everything you need to build, manage, and scale your online business. From inventory management to customer experience optimization, our comprehensive tools help you succeed in the digital marketplace with professional-grade features and seamless integrations.",
         benefits: [
@@ -222,7 +223,7 @@ const serviceData = {
         id: "e-delivery-note",
         title: "E-Delivery Note",
         subtitle: "Digital Delivery Documentation",
-        icon: <FaTruck />,
+        icon: <Image src="/images/services/hero/delivery.webp" alt="E-Invoice" width={1000} height={1000} />,
         heroDescription: "Digitize your delivery documentation process with real-time tracking and automated record-keeping for legal compliance.",
         fullDescription: "E-Delivery Note eliminates paper-based delivery documentation and embraces digital efficiency. Our solution provides real-time delivery confirmation, automated record-keeping, and ensures legal compliance while reducing administrative overhead and improving delivery accuracy.",
         benefits: [
@@ -270,7 +271,7 @@ const serviceData = {
         id: "e-ledger",
         title: "E-Ledger",
         subtitle: "Digital Financial Ledger",
-        icon: <FaBook />,
+        icon: <Image src="/images/services/hero/ledger.webp" alt="E-Invoice" width={1000} height={1000} />,
         heroDescription: "Transform financial record-keeping with digital ledger solutions ensuring legal compliance and financial transparency.",
         fullDescription: "E-Ledger provides a comprehensive digital bookkeeping solution that maintains accurate, auditable financial records with automated processes. Our system ensures regulatory compliance while providing real-time financial insights and reducing the complexity of financial management.",
         benefits: [
@@ -318,7 +319,7 @@ const serviceData = {
         id: "e-adisyon",
         title: "E-Adisyon (E-Order Receipt)",
         subtitle: "Digital Restaurant Receipts",
-        icon: <FaReceipt />,
+        icon: <Image src="/images/services/hero/cashier.webp" alt="E-Invoice" width={1000} height={1000} />,
         heroDescription: "Revolutionize restaurant operations with digital order receipt solutions that improve efficiency and customer experience.",
         fullDescription: "E-Adisyon transforms restaurant order management with electronic receipt solutions. Streamline your food service operations, reduce waste, improve customer service, and ensure compliance with digital receipt systems designed specifically for the hospitality industry.",
         benefits: [
@@ -366,7 +367,7 @@ const serviceData = {
         id: "digigarson-pos",
         title: "DigiGarson Cafe&Restaurant POS Software",
         subtitle: "Complete Restaurant Management",
-        icon: <FaCashRegister />,
+        icon: <Image src="/images/services/hero/restaurant.webp" alt="E-Invoice" width={1000} height={1000} />,
         heroDescription: "Comprehensive POS and management solutions specifically designed for food & beverage businesses.",
         fullDescription: "DigiGarson provides an all-in-one restaurant management platform that combines point-of-sale functionality with comprehensive business management tools. From order taking to inventory management, our integrated platform helps restaurants operate more efficiently and profitably.",
         benefits: [
@@ -423,7 +424,7 @@ export default function ServiceDetailPage({ params }) {
     return (
         <div className="min-h-screen bg-gray-50">
             {/* Hero Section */}
-            <section className="bg-gradient-to-r from-gray-900 via-gray-800 to-sky-900 text-white py-20 pt-32">
+            <section className="bg-gradient-to-r from-gray-900 via-gray-800 to-sky-900 text-white py-20 pt-32 relative">
                 <div className="container mx-auto px-6 md:px-12">
                     <div className="max-w-6xl mx-auto">
                         {/* Back Button */}
@@ -438,9 +439,6 @@ export default function ServiceDetailPage({ params }) {
                         <div className="grid lg:grid-cols-2 gap-12 items-center">
                             <div>
                                 <div className="flex items-center mb-6">
-                                    <div className="text-4xl text-sky-400 mr-4">
-                                        {service.icon}
-                                    </div>
                                     <div>
                                         <h1 className="text-4xl md:text-5xl font-bold font-sora mb-2">
                                             {service.title}
@@ -465,14 +463,9 @@ export default function ServiceDetailPage({ params }) {
                             </div>
 
                             {/* Hero Visual */}
-                            <div className="text-center lg:text-right">
-                                <div className="inline-block p-8 bg-white/10 backdrop-blur-sm rounded-2xl">
-                                    <div className="text-8xl text-sky-400 mb-4">
-                                        {service.icon}
-                                    </div>
-                                    <div className="text-2xl font-bold text-white mb-2">
-                                        {service.roi}
-                                    </div>
+                            <div className="absolute right-32 -bottom-40 w-[40%] h-full drop-shadow-2xl">
+                                <div className="mb-4">
+                                    {service.icon}
                                 </div>
                             </div>
                         </div>
