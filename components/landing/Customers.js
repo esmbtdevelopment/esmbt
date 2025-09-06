@@ -105,7 +105,7 @@ const Customers = () => {
         </div>
 
         {/* Customer Stats */}
-        <div className="hidden grid grid-cols-4 gap-6 mb-16">
+        <div className="hidden mb-16">
           <div className="text-center">
             <div className="text-xl font-bold text-gray-900 mb-1 font-sora">200+</div>
             <div className="text-sm text-gray-600 font-montserrat">Enterprise Clients</div>
@@ -125,19 +125,19 @@ const Customers = () => {
         </div>
 
         {/* Customer Logos Grid */}
-        <div className="mb-16">
-          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        <div className="mb-12 sm:mb-16">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4">
             {customers.map((customer, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg p-4 border border-gray-200 flex flex-col items-center justify-center"
+                className="bg-white rounded-lg p-3 sm:p-4 border border-gray-200 flex flex-col items-center justify-center hover:shadow-lg transition-shadow duration-300"
               >
-                <div className="relative w-16 h-10 mb-2 flex items-center justify-center">
+                <div className="relative w-12 h-8 sm:w-16 sm:h-10 mb-2 flex items-center justify-center">
                   <Image
                     src={customer.logo}
                     alt={`${customer.name} logo`}
                     fill
-                    className="object-contain filter grayscale"
+                    className="object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
                   />
                 </div>
                 <div className="text-xs text-gray-500 text-center font-montserrat font-bold">

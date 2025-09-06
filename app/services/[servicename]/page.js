@@ -424,47 +424,47 @@ export default function ServiceDetailPage({ params }) {
     return (
         <div className="min-h-screen bg-gray-50">
             {/* Hero Section */}
-            <section className="bg-gradient-to-r from-gray-900 via-gray-800 to-sky-900 text-white py-20 pt-32 relative">
-                <div className="container mx-auto px-6 md:px-12">
-                    <div className="max-w-6xl mx-auto">
+            <section className="bg-gradient-to-r from-gray-900 via-gray-800 to-sky-900 text-white py-16 sm:py-20 pt-24 sm:pt-32 relative overflow-hidden">
+                <div className="container mx-auto px-4 sm:px-6 md:px-12">
+                    <div className="max-w-6xl mx-auto relative z-10">
                         {/* Back Button */}
                         <Link
                             href="/services"
-                            className="inline-flex items-center text-sky-400 hover:text-sky-300 mb-8 transition-colors duration-300"
+                            className="inline-flex items-center text-sky-400 hover:text-sky-300 mb-6 sm:mb-8 transition-colors duration-300"
                         >
-                            <FaArrowLeft className="mr-2" />
-                            <span>Back to Services</span>
+                            <FaArrowLeft className="mr-2 text-sm" />
+                            <span className="text-sm sm:text-base">Back to Services</span>
                         </Link>
 
-                        <div className="grid lg:grid-cols-2 gap-12 items-center">
+                        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                             <div>
-                                <div className="flex items-center mb-6">
+                                <div className="flex items-center mb-4 sm:mb-6">
                                     <div>
-                                        <h1 className="text-4xl md:text-5xl font-bold font-sora mb-2">
+                                        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold font-sora mb-2 leading-tight">
                                             {service.title}
                                         </h1>
-                                        <p className="text-xl text-sky-300 font-montserrat">
+                                        <p className="text-lg sm:text-xl text-sky-300 font-montserrat">
                                             {service.subtitle}
                                         </p>
                                     </div>
                                 </div>
-                                <p className="text-xl text-gray-300 font-montserrat leading-relaxed mb-8">
+                                <p className="text-base sm:text-lg lg:text-xl text-gray-300 font-montserrat leading-relaxed mb-6 sm:mb-8">
                                     {service.heroDescription}
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4">
-                                    <button className="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
-                                        <span>Get Started</span>
+                                    <button className="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
+                                        <span className="text-sm sm:text-base">Get Started</span>
                                         <FaChevronRight className="text-sm" />
                                     </button>
-                                    <button className="border-2 border-sky-500 text-sky-400 hover:bg-sky-500 hover:text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
-                                        Request Demo
+                                    <button className="border-2 border-sky-500 text-sky-400 hover:bg-sky-500 hover:text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
+                                        <span className="text-sm sm:text-base">Request Demo</span>
                                     </button>
                                 </div>
                             </div>
 
                             {/* Hero Visual */}
-                            <div className="absolute right-32 -bottom-40 w-[40%] h-full drop-shadow-2xl">
-                                <div className="mb-4">
+                            <div className="relative lg:absolute lg:right-8 xl:right-32 lg:-bottom-40 lg:w-[40%] lg:h-full drop-shadow-2xl mt-8 lg:mt-0">
+                                <div className="mb-4 flex justify-center lg:justify-end">
                                     {service.icon}
                                 </div>
                             </div>
@@ -474,23 +474,23 @@ export default function ServiceDetailPage({ params }) {
             </section>
 
             {/* Service Overview */}
-            <section className="py-16 md:py-24 bg-white">
-                <div className="container mx-auto px-6 md:px-12">
+            <section className="py-12 sm:py-16 md:py-24 bg-white">
+                <div className="container mx-auto px-4 sm:px-6 md:px-12">
                     <div className="max-w-6xl mx-auto">
-                        <div className="grid lg:grid-cols-2 gap-12 items-center">
+                        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                             <div>
-                                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-sora">
+                                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora">
                                     Why Choose {service.title}?
                                 </h2>
-                                <p className="text-lg text-gray-600 font-montserrat leading-relaxed mb-8">
+                                <p className="text-base sm:text-lg text-gray-600 font-montserrat leading-relaxed mb-6 sm:mb-8">
                                     {service.fullDescription}
                                 </p>
                             </div>
-                            <div className="space-y-4">
+                            <div className="space-y-3 sm:space-y-4">
                                 {service.benefits.map((benefit, index) => (
                                     <div key={index} className="flex items-start">
-                                        <FaCheck className="text-sky-500 mt-1 mr-3 flex-shrink-0" />
-                                        <span className="text-gray-700 font-montserrat">{benefit}</span>
+                                        <FaCheck className="text-sky-500 mt-1 mr-3 flex-shrink-0 text-sm" />
+                                        <span className="text-gray-700 font-montserrat text-sm sm:text-base">{benefit}</span>
                                     </div>
                                 ))}
                             </div>
@@ -500,28 +500,28 @@ export default function ServiceDetailPage({ params }) {
             </section>
 
             {/* Features Grid */}
-            <section className="py-16 md:py-24 bg-gray-50">
-                <div className="container mx-auto px-6 md:px-12">
+            <section className="py-12 sm:py-16 md:py-24 bg-gray-50">
+                <div className="container mx-auto px-4 sm:px-6 md:px-12">
                     <div className="max-w-6xl mx-auto">
-                        <div className="text-center mb-16">
-                            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-sora">
+                        <div className="text-center mb-12 sm:mb-16">
+                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora">
                                 <span className="relative inline-block text-sky-600">
                                     Key Features
                                     <div className="absolute -bottom-1 left-0 right-0 h-1 bg-sky-600"></div>
                                 </span>
                             </h2>
-                            <p className="text-lg text-gray-600 font-montserrat leading-relaxed max-w-3xl mx-auto">
+                            <p className="text-base sm:text-lg text-gray-600 font-montserrat leading-relaxed max-w-3xl mx-auto px-4">
                                 Comprehensive features designed to transform your business operations and drive growth.
                             </p>
                         </div>
 
-                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
                             {service.features.map((feature, index) => (
-                                <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
-                                    <div className="text-3xl text-sky-500 mb-4">
+                                <div key={index} className="bg-white rounded-xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                                    <div className="text-2xl sm:text-3xl text-sky-500 mb-3 sm:mb-4">
                                         {feature.icon}
                                     </div>
-                                    <h3 className="text-xl font-bold text-gray-900 mb-3 font-sora">
+                                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3 font-sora">
                                         {feature.title}
                                     </h3>
                                     <p className="text-gray-600 font-montserrat text-sm leading-relaxed">
@@ -535,25 +535,25 @@ export default function ServiceDetailPage({ params }) {
             </section>
 
             {/* Implementation Process */}
-            <section className="py-16 md:py-24 bg-white">
-                <div className="container mx-auto px-6 md:px-12">
+            <section className="py-12 sm:py-16 md:py-24 bg-white">
+                <div className="container mx-auto px-4 sm:px-6 md:px-12">
                     <div className="max-w-6xl mx-auto">
-                        <div className="text-center mb-16">
-                            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-sora">
+                        <div className="text-center mb-12 sm:mb-16">
+                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora">
                                 Implementation Process
                             </h2>
-                            <p className="text-lg text-gray-600 font-montserrat leading-relaxed max-w-3xl mx-auto">
+                            <p className="text-base sm:text-lg text-gray-600 font-montserrat leading-relaxed max-w-3xl mx-auto px-4">
                                 Our proven implementation methodology ensures smooth deployment and maximum ROI.
                             </p>
                         </div>
 
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                             {service.implementation.map((step, index) => (
-                                <div key={index} className="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-sky-50 transition-colors duration-300">
-                                    <div className="w-8 h-8 bg-sky-500 text-white rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">
+                                <div key={index} className="flex items-center p-3 sm:p-4 bg-gray-50 rounded-lg hover:bg-sky-50 transition-colors duration-300">
+                                    <div className="w-6 h-6 sm:w-8 sm:h-8 bg-sky-500 text-white rounded-full flex items-center justify-center font-bold mr-3 sm:mr-4 flex-shrink-0 text-sm">
                                         {index + 1}
                                     </div>
-                                    <span className="text-gray-700 font-montserrat font-medium">{step}</span>
+                                    <span className="text-gray-700 font-montserrat font-medium text-sm sm:text-base">{step}</span>
                                 </div>
                             ))}
                         </div>
@@ -562,39 +562,39 @@ export default function ServiceDetailPage({ params }) {
             </section>
 
             {/* Industries & CTA */}
-            <section className="py-16 md:py-24 bg-gradient-to-r from-gray-900 to-gray-800">
-                <div className="container mx-auto px-6 md:px-12">
+            <section className="py-12 sm:py-16 md:py-24 bg-gradient-to-r from-gray-900 to-gray-800">
+                <div className="container mx-auto px-4 sm:px-6 md:px-12">
                     <div className="max-w-6xl mx-auto text-center text-white">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-6 font-sora">
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 font-sora">
                             Perfect for Your Industry
                         </h2>
-                        <p className="text-xl text-gray-300 mb-8 font-montserrat">
+                        <p className="text-lg sm:text-xl text-gray-300 mb-6 sm:mb-8 font-montserrat px-4">
                             Trusted by businesses across multiple industries
                         </p>
 
-                        <div className="flex flex-wrap justify-center gap-4 mb-12">
+                        <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8 sm:mb-12 px-4">
                             {service.industries.map((industry, index) => (
-                                <span key={index} className="bg-white/10 text-white px-4 py-2 rounded-full text-sm font-montserrat">
+                                <span key={index} className="bg-white/10 text-white px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-montserrat">
                                     {industry}
                                 </span>
                             ))}
                         </div>
 
-                        <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 md:p-12">
-                            <h3 className="text-2xl md:text-3xl font-bold mb-4 font-sora">
+                        <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 md:p-12">
+                            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 font-sora">
                                 Ready to Get Started?
                             </h3>
-                            <p className="text-gray-300 font-montserrat text-lg mb-8 leading-relaxed">
+                            <p className="text-gray-300 font-montserrat text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed px-4">
                                 Join thousands of businesses that have transformed their operations with {service.title}.
                                 Get started with a free consultation today.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <button className="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
-                                    <span>Start Free Trial</span>
+                                <button className="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
+                                    <span className="text-sm sm:text-base">Start Free Trial</span>
                                     <FaChevronRight className="text-sm" />
                                 </button>
-                                <button className="border-2 border-sky-500 text-sky-400 hover:bg-sky-500 hover:text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
-                                    Contact Sales
+                                <button className="border-2 border-sky-500 text-sky-400 hover:bg-sky-500 hover:text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
+                                    <span className="text-sm sm:text-base">Contact Sales</span>
                                 </button>
                             </div>
                         </div>

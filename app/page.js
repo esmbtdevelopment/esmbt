@@ -8,7 +8,7 @@ import Contact from "@/components/contact/Contact";
 export default function Home() {
   return (
     <main className="w-full">
-      <div className="h-screen overflow-hidden">
+      <div className="min-h-screen overflow-hidden">
         <Hero />
       </div>
       <About />

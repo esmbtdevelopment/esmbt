@@ -77,15 +77,15 @@ const About = () => {
   ];
 
   return (
-    <section className="relative py-20 bg-gradient-to-br from-white via-sky-50/30 to-blue-50/20 overflow-hidden" id="about">
+    <section className="relative py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-white via-sky-50/30 to-blue-50/20 overflow-hidden" id="about">
       {/* Creative Background Elements */}
-      <div className="absolute inset-0 opacity-20">
+      <div className="absolute inset-0 opacity-10 sm:opacity-20">
         {/* Large decorative circles */}
-        <div className="absolute -top-24 -right-24 w-96 h-96 bg-gradient-to-br from-sky-200/40 to-blue-300/30 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-24 -left-24 w-80 h-80 bg-gradient-to-tr from-blue-200/40 to-sky-300/30 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute -top-12 -right-12 sm:-top-24 sm:-right-24 w-48 h-48 sm:w-96 sm:h-96 bg-gradient-to-br from-sky-200/40 to-blue-300/30 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-12 -left-12 sm:-bottom-24 sm:-left-24 w-40 h-40 sm:w-80 sm:h-80 bg-gradient-to-tr from-blue-200/40 to-sky-300/30 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
 
-        {/* Geometric patterns */}
-        <div className="absolute top-1/4 left-10">
+        {/* Geometric patterns - hidden on mobile */}
+        <div className="hidden sm:block absolute top-1/4 left-10">
           <svg width="120" height="120" className="animate-spin-slow opacity-30">
             <defs>
               <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -99,56 +99,56 @@ const About = () => {
           </svg>
         </div>
 
-        {/* Floating elements */}
-        <div className="absolute bottom-1/3 right-16 w-24 h-24 border-4 border-sky-300/50 rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/3 right-1/4 w-16 h-16 bg-gradient-to-r from-blue-200/60 to-sky-200/60 rounded-2xl transform rotate-45 animate-pulse" style={{ animationDelay: '3s' }}></div>
+        {/* Floating elements - hidden on mobile */}
+        <div className="hidden lg:block absolute bottom-1/3 right-16 w-24 h-24 border-4 border-sky-300/50 rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
+        <div className="hidden lg:block absolute top-1/3 right-1/4 w-16 h-16 bg-gradient-to-r from-blue-200/60 to-sky-200/60 rounded-2xl transform rotate-45 animate-pulse" style={{ animationDelay: '3s' }}></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16 md:mb-20 relative">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 md:mb-8 font-sora leading-tight">
-            Specialized SAP Consulting for <br />
+        <div className="text-center mb-12 sm:mb-16 lg:mb-20 relative">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 lg:mb-8 font-sora leading-tight">
+            Specialized SAP Consulting for <br className="hidden sm:block" />
             <span className="relative inline-block">
               <span className="text-sky-600 block">Financial Transformation</span>
             </span>
           </h2>
 
           <div className="relative max-w-4xl mx-auto">
-            <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-montserrat px-4">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed font-montserrat px-4">
               ESM Information Technologies is a specialized SAP consulting and
               technology firm focused on driving financial transformation and
               digital compliance for enterprises.
             </p>
-            {/* Decorative elements */}
-            <div className="absolute -top-4 -left-4 w-8 h-8 border-l-4 border-t-4 border-sky-400 opacity-30"></div>
-            <div className="absolute -bottom-4 -right-4 w-8 h-8 border-r-4 border-b-4 border-blue-400 opacity-30"></div>
+            {/* Decorative elements - hidden on mobile */}
+            <div className="hidden sm:block absolute -top-4 -left-4 w-8 h-8 border-l-4 border-t-4 border-sky-400 opacity-30"></div>
+            <div className="hidden sm:block absolute -bottom-4 -right-4 w-8 h-8 border-r-4 border-b-4 border-blue-400 opacity-30"></div>
           </div>
         </div>
 
 
         {/* Main Content */}
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16 md:mb-20">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-16 items-center mb-12 sm:mb-16 lg:mb-20">
           {/* Left Content */}
           <div className="px-4 lg:px-0">
-            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6 font-sora">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora">
               Empowering Enterprises Through SAP Excellence
             </h3>
-            <div className="space-y-4 md:space-y-6 text-gray-600 font-montserrat">
-              <p className="text-sm md:text-base leading-relaxed">
+            <div className="space-y-3 sm:space-y-4 lg:space-y-6 text-gray-600 font-montserrat">
+              <p className="text-sm sm:text-base leading-relaxed">
                 We deliver end-to-end SAP integration and optimization services,
                 empowering organizations to streamline financial operations,
                 enhance regulatory compliance, and digitize core processes with
                 confidence.
               </p>
-              <p className="text-sm md:text-base leading-relaxed">
+              <p className="text-sm sm:text-base leading-relaxed">
                 Our expertise spans expert SAP consulting, implementation, and
                 support tailored to financial transformation, IFRS adaptation,
                 and process automation. We provide comprehensive SAP-native
                 solutions that simplify complex financial tasks and reduce
                 operational costs.
               </p>
-              <p className="text-sm md:text-base leading-relaxed">
+              <p className="text-sm sm:text-base leading-relaxed">
                 With a deep focus on automation, compliance, and SAP-native
                 design, we enable enterprises to meet evolving digital and
                 regulatory demands while maintaining the highest standards of
@@ -157,22 +157,22 @@ const About = () => {
             </div>
 
             {/* Values */}
-            <div className="mt-8 md:mt-10 space-y-4 md:space-y-6">
+            <div className="mt-6 sm:mt-8 lg:mt-10 space-y-3 sm:space-y-4 lg:space-y-6">
               {values.map((value, index) => (
                 <div
                   key={index}
-                  className="flex items-start space-x-3 md:space-x-4"
+                  className="flex items-start space-x-3 sm:space-x-4"
                 >
                   <div className="flex-shrink-0">
-                    <div className="w-6 h-6 md:w-8 md:h-8 bg-sky-100 rounded-lg flex items-center justify-center text-sky-600">
+                    <div className="w-6 h-6 sm:w-8 sm:h-8 bg-sky-100 rounded-lg flex items-center justify-center text-sky-600">
                       {value.icon}
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-sm md:text-base font-semibold text-gray-900 mb-1 md:mb-2 font-sora">
+                    <h4 className="text-sm sm:text-base font-semibold text-gray-900 mb-1 sm:mb-2 font-sora">
                       {value.title}
                     </h4>
-                    <p className="text-xs md:text-sm text-gray-600 font-montserrat">
+                    <p className="text-xs sm:text-sm text-gray-600 font-montserrat">
                       {value.description}
                     </p>
                   </div>
@@ -182,7 +182,7 @@ const About = () => {
           </div>
 
           {/* Right Image */}
-          <div className="relative mt-8 lg:mt-0 px-4 lg:px-0">
+          <div className="relative mt-6 lg:mt-0 px-4 lg:px-0">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src="/images/teamwork.jpg"
@@ -193,8 +193,14 @@ const About = () => {
               />
             </div>
             {/* Floating Card */}
-            <div className="absolute -bottom-3 -left-2 md:-bottom-6 md:-left-6 hover:scale-105 transition-all duration-300">
-              <Image src="/images/badges/sap-partner.png" alt="SAP Partner" width={100} height={100} />
+            <div className="absolute -bottom-2 -left-2 sm:-bottom-3 sm:-left-2 md:-bottom-6 md:-left-6 hover:scale-105 transition-all duration-300">
+              <Image
+                src="/images/badges/sap-partner.png"
+                alt="SAP Partner"
+                width={80}
+                height={80}
+                className="sm:w-[100px] sm:h-[100px]"
+              />
             </div>
           </div>
         </div>

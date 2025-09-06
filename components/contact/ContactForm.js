@@ -79,31 +79,31 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="bg-white rounded-tl-[76px] rounded-box shadow-lg p-10 border border-gray-200">
-            <div className="mb-8">
-                <h3 className="text-lg font-bold text-gray-900 font-sora mb-2">
+        <div className="bg-white/95 backdrop-blur-sm rounded-tl-[76px] rounded-box shadow-lg p-8 lg:p-10 border border-gray-200">
+            <div className="mb-6 sm:mb-8">
+                <h3 className="text-base sm:text-lg font-bold text-gray-900 font-sora mb-2">
                     Request a Consultation
                 </h3>
-                <p className="text-gray-600 font-montserrat text-sm">
+                <p className="text-gray-600 font-montserrat text-xs sm:text-sm">
                     Connect with our SAP specialists for enterprise solutions
                 </p>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+                <div className="grid sm:grid-cols-2 gap-4">
                     <div className="relative">
                         <label className="block text-xs font-semibold text-gray-700 mb-2 font-montserrat">
                             Full Name *
                         </label>
                         <div className="relative">
-                            <FaUser className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+                            <FaUser className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm" />
                             <input
                                 type="text"
                                 name="name"
                                 value={formData.name}
                                 onChange={handleInputChange}
                                 placeholder="Enter your full name"
-                                className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-sky-500 font-montserrat text-sm"
+                                className="w-full pl-10 sm:pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-sky-500 font-montserrat text-sm"
                                 required
                             />
                         </div>
@@ -114,14 +114,14 @@ const ContactForm = () => {
                             Company
                         </label>
                         <div className="relative">
-                            <FaBuilding className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+                            <FaBuilding className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm" />
                             <input
                                 type="text"
                                 name="company"
                                 value={formData.company}
                                 onChange={handleInputChange}
                                 placeholder="Your company name"
-                                className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-sky-500 font-montserrat text-sm"
+                                className="w-full pl-10 sm:pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-sky-500 font-montserrat text-sm"
                             />
                         </div>
                     </div>
@@ -132,14 +132,14 @@ const ContactForm = () => {
                         Email Address *
                     </label>
                     <div className="relative">
-                        <FaEnvelope className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+                        <FaEnvelope className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm" />
                         <input
                             type="email"
                             name="email"
                             value={formData.email}
                             onChange={handleInputChange}
                             placeholder="your.email@company.com"
-                            className="w-full pl-12 pr-4 py-3 border-2 text-sm border-gray-200 rounded-xl focus:ring-4 focus:ring-sky-200 focus:border-sky-500 transition-all duration-300 font-montserrat hover:border-sky-300 bg-white/50 backdrop-blur-sm"
+                            className="w-full pl-10 sm:pl-12 pr-4 py-3 border-2 text-sm border-gray-200 rounded-xl focus:ring-4 focus:ring-sky-200 focus:border-sky-500 transition-all duration-300 font-montserrat hover:border-sky-300 bg-white/50 backdrop-blur-sm"
                             required
                         />
                     </div>
@@ -150,14 +150,14 @@ const ContactForm = () => {
                         Phone Number
                     </label>
                     <div className="relative">
-                        <FaPhone className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+                        <FaPhone className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm" />
                         <input
                             type="tel"
                             name="phone"
                             value={formData.phone}
                             onChange={handleInputChange}
                             placeholder="+1 (555) 000-0000"
-                            className="w-full pl-12 pr-4 py-4 border-2 text-sm border-gray-200 rounded-xl focus:ring-4 focus:ring-sky-200 focus:border-sky-500 transition-all duration-300 font-montserrat hover:border-sky-300 bg-white/50 backdrop-blur-sm"
+                            className="w-full pl-10 sm:pl-12 pr-4 py-3 sm:py-4 border-2 text-sm border-gray-200 rounded-xl focus:ring-4 focus:ring-sky-200 focus:border-sky-500 transition-all duration-300 font-montserrat hover:border-sky-300 bg-white/50 backdrop-blur-sm"
                         />
                     </div>
                 </div>
@@ -171,7 +171,7 @@ const ContactForm = () => {
                         value={formData.message}
                         onChange={handleInputChange}
                         placeholder="Tell us about your project requirements, SAP modules involved, timeline, and any specific challenges you're facing..."
-                        rows="5"
+                        rows="4"
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-sky-500 resize-none font-montserrat text-sm"
                     />
                 </div>

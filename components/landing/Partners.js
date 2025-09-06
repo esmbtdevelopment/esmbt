@@ -74,20 +74,20 @@ const Partners = () => {
     <section className="relative py-10 bg-white">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="flex flex-row justify-between">
-          <div className="flex flex-col mb-12 md:mb-16 w-1/2">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6 font-sora px-4">
+        <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-16">
+          <div className="flex flex-col mb-8 lg:mb-12 w-full lg:w-1/2">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6 font-sora px-4">
               Strategic Technology
               <span className="text-blue-600 block">Partnerships</span>
             </h2>
-            <p className="text-lg md:text-xl text-gray-600 max-w-3xl leading-relaxed font-montserrat px-4">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl leading-relaxed font-montserrat px-4">
               We collaborate with industry-leading technology partners to deliver
               comprehensive SAP and digital transformation solutions.
             </p>
           </div>
 
           {/* Partners Slider */}
-          <div className="w-1/2">
+          <div className="w-full lg:w-1/2">
             <Slider
               items={partners}
               renderItem={renderPartner}
@@ -145,15 +145,15 @@ const Partners = () => {
 
 
         {/* Partnership Benefits */}
-        <div className="mt-20">
-          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 md:p-12">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="mt-12 sm:mt-16 lg:mt-20">
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-6 sm:p-8 md:p-12">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               <div>
-                <h3 className="text-3xl font-bold text-gray-900 mb-6 font-sora">
+                <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora">
                   Why We Partner
                 </h3>
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-4">
+                <div className="space-y-4 sm:space-y-6">
+                  <div className="flex items-start space-x-3 sm:space-x-4">
                     <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <svg
                         className="w-3 h-3 text-white"
@@ -168,16 +168,16 @@ const Partners = () => {
                       </svg>
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold text-gray-900 mb-1 font-sora">
+                      <h4 className="text-base sm:text-lg font-semibold text-gray-900 mb-1 font-sora">
                         Enhanced Capabilities
                       </h4>
-                      <p className="text-gray-600 font-montserrat">
+                      <p className="text-sm sm:text-base text-gray-600 font-montserrat">
                         Access to cutting-edge technologies and specialized
                         expertise
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-start space-x-4">
+                  <div className="flex items-start space-x-3 sm:space-x-4">
                     <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <svg
                         className="w-3 h-3 text-white"
@@ -192,15 +192,15 @@ const Partners = () => {
                       </svg>
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold text-gray-900 mb-1 font-sora">
+                      <h4 className="text-base sm:text-lg font-semibold text-gray-900 mb-1 font-sora">
                         Comprehensive Solutions
                       </h4>
-                      <p className="text-gray-600 font-montserrat">
+                      <p className="text-sm sm:text-base text-gray-600 font-montserrat">
                         End-to-end solutions through strategic collaborations
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-start space-x-4">
+                  <div className="flex items-start space-x-3 sm:space-x-4">
                     <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <svg
                         className="w-3 h-3 text-white"
@@ -215,25 +215,25 @@ const Partners = () => {
                       </svg>
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold text-gray-900 mb-1 font-sora">
+                      <h4 className="text-base sm:text-lg font-semibold text-gray-900 mb-1 font-sora">
                         Global Reach
                       </h4>
-                      <p className="text-gray-600 font-montserrat">
+                      <p className="text-sm sm:text-base text-gray-600 font-montserrat">
                         International standards and best practices
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="text-center">
-                <div className="inline-block p-8 bg-white rounded-2xl shadow-lg">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+              <div className="text-center mt-8 lg:mt-0">
+                <div className="inline-block p-6 sm:p-8 bg-white rounded-2xl shadow-lg">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center text-white text-xl sm:text-2xl mx-auto mb-3 sm:mb-4">
                     <RiHandHeartLine />
                   </div>
-                  <h4 className="text-2xl font-bold text-gray-900 mb-2 font-sora">
+                  <h4 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 font-sora">
                     Partnership Excellence
                   </h4>
-                  <p className="text-gray-600 font-montserrat">
+                  <p className="text-sm sm:text-base text-gray-600 font-montserrat">
                     Building success through collaboration
                   </p>
                 </div>

@@ -105,47 +105,49 @@ function Services() {
         </div>
 
         {/* Services List */}
-        <div className="flex flex-col gap-16 md:gap-24">
+        <div className="flex flex-col gap-8 md:gap-16 lg:gap-24">
           {services.map((service) => (
             <article
               key={service.id}
               className={`flex flex-col gap-4 items-center bg-gradient-to-r from-sky-50 to-blue-50 rounded-lg relative`}
             >
-              <div className="flex flex-row w-full justify-between gap-8 md:gap-16 items-center p-8">
+              <div className="flex flex-col lg:flex-row w-full justify-between gap-6 lg:gap-16 items-center p-4 sm:p-6 lg:p-8">
                 {/* Service Content */}
-                <div className={`space-y-6 max-w-5xl w-1/2`}>
+                <div className={`space-y-4 lg:space-y-6 max-w-5xl w-full lg:w-1/2`}>
                   {/* Service Header */}
-                  <h3 className="text-lg md:text-xl font-bold text-gray-900 font-sora leading-tight">
+                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 font-sora leading-tight">
                     {service.title}
                   </h3>
                   <div className="w-10 h-1 bg-sky-600 mt-1"></div>
 
                   {/* Service Description */}
-                  <p className="text-gray-600 font-montserrat text-sm md:text-base leading-relaxed">
+                  <p className="text-gray-600 font-montserrat text-sm sm:text-base lg:text-lg leading-relaxed">
                     {service.description}
                   </p>
                   <Link href={`/services/${service.slug}`}>
-                    <button className="btn btn-outline btn-info font-montserrat font-semibold text-sm md:text-base">Learn More <FaChevronRight /></button>
+                    <button className="btn btn-outline btn-info font-montserrat font-semibold text-sm sm:text-base w-full sm:w-auto">
+                      Learn More <FaChevronRight />
+                    </button>
                   </Link>
                 </div>
 
                 {/* Service Visual */}
-                <div className={`flex items-end justify-end rounded-lg w-1/2`}>
+                <div className={`flex items-center justify-center lg:items-end lg:justify-end rounded-lg w-full lg:w-1/2 max-w-md lg:max-w-none`}>
                   {service.icon}
                 </div>
               </div>
               {/* What You Get List */}
-              <div className="w-full bg-gradient-to-r from-sky-100 to-blue-100   rounded-b-lg p-4">
-                <ul className="flex flex-row justify-between">
+              <div className="w-full bg-gradient-to-r from-sky-100 to-blue-100 rounded-b-lg p-3 sm:p-4">
+                <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
                   {service.features.map((feature, featIndex) => (
                     <li
                       key={featIndex}
-                      className="flex items-center gap-3 hover:cursor-pointer text-white rounded-lg p-4 bg-white hover:bg-sky-50 transition-all duration-300"
+                      className="flex items-center gap-2 sm:gap-3 hover:cursor-pointer text-white rounded-lg p-3 sm:p-4 bg-white hover:bg-sky-50 transition-all duration-300"
                     >
-                      <div className="flex items-center justify-center w-8 h-8 bg-sky-100 rounded-lg text-sky-600 text-sm">
+                      <div className="flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 bg-sky-100 rounded-lg text-sky-600 text-xs sm:text-sm flex-shrink-0">
                         {feature.icon}
                       </div>
-                      <span className="text-gray-600 font-montserrat font-semibold text-sm md:text-base">{feature.name}</span>
+                      <span className="text-gray-600 font-montserrat font-semibold text-xs sm:text-sm lg:text-base">{feature.name}</span>
                     </li>
                   ))}
                 </ul>
