@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { use } from "react";
 import { notFound } from "next/navigation";
 import {
     FaFileInvoiceDollar,
@@ -9,7 +9,7 @@ import {
     FaTruck,
     FaBook,
     FaReceipt,
-    FaCash,
+    FaCashRegister,
     FaChevronRight,
     FaShieldAlt,
     FaCloud,
@@ -366,7 +366,7 @@ const serviceData = {
         id: "digigarson-pos",
         title: "DigiGarson Cafe&Restaurant POS Software",
         subtitle: "Complete Restaurant Management",
-        icon: <FaCash />,
+        icon: <FaCashRegister />,
         heroDescription: "Comprehensive POS and management solutions specifically designed for food & beverage businesses.",
         fullDescription: "DigiGarson provides an all-in-one restaurant management platform that combines point-of-sale functionality with comprehensive business management tools. From order taking to inventory management, our integrated platform helps restaurants operate more efficiently and profitably.",
         benefits: [
@@ -381,7 +381,7 @@ const serviceData = {
             {
                 title: "POS System",
                 description: "Full-featured point-of-sale system with order management, payment processing, and receipt generation.",
-                icon: <FaCash />
+                icon: <FaCashRegister />
             },
             {
                 title: "Inventory Management",
@@ -413,7 +413,7 @@ const serviceData = {
 };
 
 export default function ServiceDetailPage({ params }) {
-    const { servicename } = params;
+    const { servicename } = use(params);
     const service = serviceData[servicename];
 
     if (!service) {

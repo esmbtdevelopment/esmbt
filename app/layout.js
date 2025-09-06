@@ -9,6 +9,7 @@ const sora = Sora({
   variable: "--font-sora",
   display: "swap",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  preload: true,
 });
 
 const manrope = Manrope({
@@ -16,6 +17,7 @@ const manrope = Manrope({
   variable: "--font-manrope",
   display: "swap",
   weight: ["300", "400", "500", "600", "700", "800"],
+  preload: true,
 });
 
 const montserrat = Montserrat({
@@ -23,6 +25,7 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
   display: "swap",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  preload: true,
 });
 
 export const metadata = {
@@ -36,6 +39,7 @@ export default function RootLayout({ children }) {
     <html lang="en" data-theme="light-esm">
       <body
         className={`${sora.variable} ${manrope.variable} ${montserrat.variable} antialiased font-manrope`}
+        suppressHydrationWarning={true}
       >
         <Navbar />
         {children}
