@@ -105,9 +105,9 @@ const Navbar = () => {
 
   const dropdownContent = {
     corporate: [
-      { title: "About Us", description: "Learn about our company", icon: FaBuilding },
-      { title: "Our Team", description: "Meet our experts", icon: FaUsers },
-      { title: "Mission & Vision", description: "Our goals and values", icon: FaHandshake },
+      { title: "About Us", description: "Learn about our company", icon: FaBuilding, link: "/corporate/about-us" },
+      { title: "Our Team", description: "Meet our experts", icon: FaUsers, link: "/corporate/our-team" },
+      { title: "Mission & Vision", description: "Our goals and values", icon: FaHandshake, link: "/corporate/vision-and-mission" },
     ],
     products: [
       { title: "Enterprise Solutions", description: "Comprehensive business tools", icon: FaCogs },
@@ -168,7 +168,7 @@ const Navbar = () => {
                     {dropdownContent.corporate.map((item, index) => (
                       <a
                         key={index}
-                        href="#"
+                        href={item.link || "#"}
                         className="flex items-center p-4 hover:bg-sky-50 transition-colors border-b border-gray-100 last:border-b-0"
                       >
                         <item.icon className="text-sky-600 text-lg mr-3" />
@@ -338,7 +338,7 @@ const Navbar = () => {
                     {dropdownContent.corporate.map((item, index) => (
                       <a
                         key={index}
-                        href="#"
+                        href={item.link || "#"}
                         className="flex items-center p-3 text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-lg transition-colors"
                       >
                         <item.icon className="text-sky-400 text-sm mr-3" />
