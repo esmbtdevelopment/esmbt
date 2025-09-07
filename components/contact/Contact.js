@@ -88,7 +88,7 @@ const Contact = () => {
           {/* Contact Info & Process */}
           <div className="flex flex-col gap-6 lg:gap-8 w-full max-w-md backdrop-blur-3xl shadow-lg">
             {/* Contact Information */}
-            <div className="bg-gray-50/95 backdrop-blur-sm rounded-tr-[76px] p-4 sm:p-6 border border-gray-200">
+            <div className="bg-gray-50/95 backdrop-blur-sm rounded-tr-none md:rounded-tr-[76px] rounded-br-[76px] md:rounded-br-none p-4 sm:p-6 border border-gray-200">
               <h3 className="text-base sm:text-lg font-bold text-gray-900 font-sora mb-4 sm:mb-6">
                 Get in Touch
               </h3>

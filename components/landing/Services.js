@@ -4,47 +4,40 @@ import Link from "next/link";
 import {
   FaChartLine,
   FaUniversity,
-  FaExchangeAlt,
   FaCogs,
   FaRobot,
-  FaProjectDiagram,
   FaFileInvoiceDollar,
   FaArchive,
-  FaBook,
   FaShieldAlt,
-  FaCalculator,
   FaBalanceScale,
   FaChartArea,
-  FaMoneyCheckAlt,
   FaCreditCard,
   FaCoins,
-  FaUserShield,
   FaChevronRight
 } from "react-icons/fa";
 import { RiTeamLine } from "react-icons/ri";
-import { AiOutlineCloudServer } from "react-icons/ai";
-import { SlGraph } from "react-icons/sl";
 import Image from "next/image";
 function Services() {
   const services = [
     {
       id: 1,
-      slug: "e-invoice",
-      icon: <Image src="/images/services/landing/invoice.webp" alt="E-Invoice" width={1000} height={1000} />,
-      title: "E-Invoice",
+      slug: "e-commerce",
+      icon: <Image src="/images/services/landing/e-commerce.jpg" className="rounded-tr-3xl rounded-bl-3xl object-cover drop-shadow-2xl" alt="E-Commerce" width={500} height={500} />,
+      title: "E-Commerce",
       description:
-        "E-Invoice is not just a digital transformation tool, but also an investment in the future of your business. It ensures seamless compliance while saving time and costs. Transform your invoicing process with secure, automated digital solutions that streamline operations and enhance business efficiency.",
+        "E-Commerce solutions that power your online business growth with integrated digital sales platforms. From inventory management to customer experience, our comprehensive e-commerce tools help you build, manage, and scale your online presence effectively.",
       features: [
-        { name: "Legal Compliance", icon: <FaShieldAlt /> },
-        { name: "Cost Reduction", icon: <FaCoins /> },
-        { name: "Automated Processing", icon: <FaRobot /> },
-        { name: "Real-time Tracking", icon: <FaChartLine /> }
+        { name: "Online Store Management", icon: <FaCogs /> },
+        { name: "Payment Integration", icon: <FaCreditCard /> },
+        { name: "Inventory Control", icon: <FaArchive /> },
+        { name: "Customer Analytics", icon: <FaChartLine /> }
       ],
     },
+
     {
       id: 2,
       slug: "e-archive-invoice",
-      icon: <Image src="/images/services/landing/archive.webp" alt="E-Invoice" width={500} height={500} />,
+      icon: <Image src="/images/services/landing/archive.jpg" className="rounded-tr-3xl rounded-bl-3xl object-cover drop-shadow-2xl" alt="E-Archive Invoice" width={500} height={500} />,
       title: "E-Archive Invoice",
       description:
         "E-Archive Invoice provides secure, long-term storage solutions for your digital invoices with full legal compliance. Never worry about document retention again - our robust archiving system ensures your invoices are safely stored, easily accessible, and always audit-ready.",
@@ -57,8 +50,22 @@ function Services() {
     },
     {
       id: 3,
+      slug: "e-invoice",
+      icon: <Image src="/images/services/landing/invoice.jpg" className="rounded-tr-3xl rounded-bl-3xl object-cover drop-shadow-2xl" alt="E-Invoice" width={500} height={500} />,
+      title: "E-Invoice",
+      description:
+        "E-Invoice is not just a digital transformation tool, but also an investment in the future of your business. It ensures seamless compliance while saving time and costs. Transform your invoicing process with secure, automated digital solutions that streamline operations and enhance business efficiency.",
+      features: [
+        { name: "Legal Compliance", icon: <FaShieldAlt /> },
+        { name: "Cost Reduction", icon: <FaCoins /> },
+        { name: "Automated Processing", icon: <FaRobot /> },
+        { name: "Real-time Tracking", icon: <FaChartLine /> }
+      ],
+    },
+    {
+      id: 4,
       slug: "e-export",
-      icon: <Image src="/images/services/landing/export.webp" alt="E-Invoice" width={500} height={500} />,
+      icon: <Image src="/images/services/landing/truck.jpg" className="rounded-tr-3xl rounded-bl-3xl object-cover drop-shadow-2xl" alt="E-Export" width={500} height={500} />,
       title: "E-Export",
       description:
         "E-Export simplifies international trade with digital export documentation and compliance solutions. Expand your global reach with confidence, knowing that all export procedures are digitally managed, compliant, and efficient for seamless international business operations.",
@@ -68,21 +75,7 @@ function Services() {
         { name: "International Standards", icon: <FaUniversity /> },
         { name: "Process Automation", icon: <FaRobot /> }
       ],
-    },
-    {
-      id: 4,
-      slug: "e-commerce",
-      icon: <Image src="/images/services/landing/e commerce.webp" alt="E-Invoice" width={500} height={500} />,
-      title: "E-Commerce",
-      description:
-        "E-Commerce solutions that power your online business growth with integrated digital sales platforms. From inventory management to customer experience, our comprehensive e-commerce tools help you build, manage, and scale your online presence effectively.",
-      features: [
-        { name: "Online Store Management", icon: <FaCogs /> },
-        { name: "Payment Integration", icon: <FaCreditCard /> },
-        { name: "Inventory Control", icon: <FaArchive /> },
-        { name: "Customer Analytics", icon: <FaChartLine /> }
-      ],
-    },
+    }
   ];
 
   return (

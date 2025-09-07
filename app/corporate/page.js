@@ -19,6 +19,7 @@ import {
     RiGlobalLine,
     RiAwardLine,
 } from "react-icons/ri";
+import { goToContact } from "@/utils/navigation";
 
 export default function CorporatePage() {
     const corporatePages = [
@@ -194,15 +195,15 @@ export default function CorporatePage() {
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
-                                <Link
-                                    href="/contact"
+                                <button
+                                    onClick={goToContact}
                                     className="group relative bg-white text-sky-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-bold hover:bg-gray-50 transition-all duration-300 font-montserrat shadow-2xl hover:scale-105 text-sm sm:text-base"
                                 >
                                     <span className="flex items-center justify-center space-x-2">
                                         <span>Contact Us Today</span>
                                         <FaArrowRight className="text-xs sm:text-sm group-hover:translate-x-1 transition-transform" />
                                     </span>
-                                </Link>
+                                </button>
 
                                 <Link
                                     href="/services"

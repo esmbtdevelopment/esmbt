@@ -25,6 +25,7 @@ import {
     RiRocketLine,
     RiAwardLine,
 } from "react-icons/ri";
+import { goToContact, goToReferences } from "@/utils/navigation";
 
 export default function VisionMissionPage() {
     const missionPoints = [
@@ -401,15 +402,21 @@ export default function VisionMissionPage() {
                         Let&apos;s build the future together.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                        <button className="group bg-white text-sky-600 px-8 py-4 rounded-2xl font-bold hover:bg-gray-50 transition-all duration-300 font-montserrat shadow-2xl hover:scale-105">
+                        <button
+                            onClick={goToContact}
+                            className="group bg-white text-sky-600 px-8 py-4 rounded-2xl font-bold hover:bg-gray-50 transition-all duration-300 font-montserrat shadow-2xl hover:scale-105"
+                        >
                             <span className="flex items-center space-x-2">
                                 <span>Partner With Us</span>
                                 <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
                             </span>
                         </button>
-                        <button className="group border-2 border-white text-white px-8 py-4 rounded-2xl font-bold hover:bg-white hover:text-sky-600 transition-all duration-300 font-montserrat hover:scale-105">
+                        <button
+                            onClick={goToReferences}
+                            className="group border-2 border-white text-white px-8 py-4 rounded-2xl font-bold hover:bg-white hover:text-sky-600 transition-all duration-300 font-montserrat hover:scale-105"
+                        >
                             <span className="flex items-center space-x-2">
-                                <span>Join Our Team</span>
+                                <span>View Our References</span>
                                 <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
                             </span>
                         </button>

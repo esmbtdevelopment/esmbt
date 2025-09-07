@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import {
@@ -12,14 +13,20 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 import { RiSpaceShipFill } from "react-icons/ri";
+import { scrollToSection, isOnLandingPage } from "@/utils/navigation";
 
 const Footer = () => {
+  const handleSectionNavigation = (sectionId) => {
+    const onLandingPage = isOnLandingPage();
+    scrollToSection(sectionId, onLandingPage);
+  };
+
   const quickLinks = [
-    { name: "About Us", href: "#about" },
-    { name: "Our Services", href: "#services" },
-    { name: "Partners", href: "#partners" },
-    { name: "Customers", href: "#customers" },
-    { name: "Contact", href: "#contact" },
+    { name: "About Us", sectionId: "about" },
+    { name: "Our Services", href: "/services" }, // External page
+    { name: "Partners", sectionId: "partners" },
+    { name: "Customers", sectionId: "customers" },
+    { name: "Contact", sectionId: "contact" },
   ];
 
   const services = [
@@ -131,12 +138,21 @@ const Footer = () => {
             <ul className="space-y-2 md:space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a
-                    href={link.href}
-                    className="text-sm md:text-base text-gray-300 hover:text-sky-400 transition-colors duration-300 flex items-center justify-center md:justify-start group font-montserrat"
-                  >
-                    {link.name}
-                  </a>
+                  {link.sectionId ? (
+                    <button
+                      onClick={() => handleSectionNavigation(link.sectionId)}
+                      className="text-sm md:text-base text-gray-300 hover:text-sky-400 transition-colors duration-300 flex items-center justify-center md:justify-start group font-montserrat"
+                    >
+                      {link.name}
+                    </button>
+                  ) : (
+                    <a
+                      href={link.href}
+                      className="text-sm md:text-base text-gray-300 hover:text-sky-400 transition-colors duration-300 flex items-center justify-center md:justify-start group font-montserrat"
+                    >
+                      {link.name}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>

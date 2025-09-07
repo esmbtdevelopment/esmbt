@@ -21,6 +21,7 @@ import {
     RiGlobalLine,
     RiAwardLine,
 } from "react-icons/ri";
+import { goToContact, goToReferences } from "@/utils/navigation";
 
 export default function AboutUsPage() {
     const values = [
@@ -345,11 +346,17 @@ export default function AboutUsPage() {
                         Join hundreds of enterprises that have chosen ESM Information Technologies for their SAP transformation journey.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                        <button className="bg-white text-sky-600 px-8 py-4 rounded-2xl font-bold hover:bg-gray-50 transition-all duration-300 font-montserrat shadow-2xl hover:scale-105">
+                        <button
+                            onClick={goToContact}
+                            className="bg-white text-sky-600 px-8 py-4 rounded-2xl font-bold hover:bg-gray-50 transition-all duration-300 font-montserrat shadow-2xl hover:scale-105"
+                        >
                             Contact Our Team
                         </button>
-                        <button className="border-2 border-white text-white px-8 py-4 rounded-2xl font-bold hover:bg-white hover:text-sky-600 transition-all duration-300 font-montserrat hover:scale-105">
-                            View Our Services
+                        <button
+                            onClick={goToReferences}
+                            className="border-2 border-white text-white px-8 py-4 rounded-2xl font-bold hover:bg-white hover:text-sky-600 transition-all duration-300 font-montserrat hover:scale-105"
+                        >
+                            View Our References
                         </button>
                     </div>
                 </div>

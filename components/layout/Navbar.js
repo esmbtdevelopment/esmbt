@@ -21,6 +21,7 @@ import {
   FaShieldAlt,
   FaChartLine,
 } from "react-icons/fa";
+import { goToContact, goToReferences } from "@/utils/navigation";
 
 // Custom hook to check if we're on the client side
 const useIsClient = () => {
@@ -115,9 +116,9 @@ const Navbar = () => {
       { title: "Custom Development", description: "Tailored software solutions", icon: FaCode },
     ],
     services: [
-      { title: "E-Invoice Solutions", description: "Digital invoicing and compliance", icon: FaChartLine, link: "/services" },
-      { title: "E-Commerce Platform", description: "Complete online business tools", icon: FaCogs, link: "/services" },
-      { title: "Digital Transformation", description: "Full business digitalization", icon: FaShieldAlt, link: "/services" },
+      { title: "E-Invoice Solutions", description: "Digital invoicing and compliance", icon: FaChartLine, link: "/services/e-invoice" },
+      { title: "E-Commerce Platform", description: "Complete online business tools", icon: FaCogs, link: "/services/e-commerce" },
+      { title: "Digital Transformation", description: "Full business digitalization", icon: FaShieldAlt, link: "/services/services" },
       { title: "View All Services", description: "Explore our complete service portfolio", icon: FaChartLine, link: "/services", highlight: true },
     ],
   };
@@ -259,21 +260,21 @@ const Navbar = () => {
                 )}
               </div>
 
-              <a
-                href="#"
+              <button
+                onClick={goToReferences}
                 className="text-white hover:cursor-pointer uppercase tracking-widest transition-all duration-300 px-4 py-2 rounded-lg hover:bg-white/10 hover:backdrop-blur-sm text-xs md:text-sm"
               >
                 References
-              </a>
+              </button>
 
               {/* Modern Contact Button with Darker Gradient */}
-              <a
-                href="#"
+              <button
+                onClick={goToContact}
                 className="relative px-4 py-2 text-xs md:text-sm bg-gradient-to-r from-slate-700 to-slate-900 hover:from-slate-800 hover:to-black text-white rounded-full shadow-lg hover:shadow-xl transform transition-all duration-300 uppercase tracking-widest font-semibold border border-slate-600"
               >
                 <span className="relative z-10 text-xs">Contact Us</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-slate-600 to-slate-800 rounded-full opacity-0 hover:opacity-30 transition-opacity duration-300"></div>
-              </a>
+              </button>
 
               {/* Cloud Portal Button */}
               <a
@@ -415,18 +416,27 @@ const Navbar = () => {
                 )}
               </div>
 
-              <a href="#" className="text-white py-3 transition-colors">
+              <button
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  goToReferences();
+                }}
+                className="text-white py-3 transition-colors text-left w-full"
+              >
                 References
-              </a>
+              </button>
 
               {/* Mobile Contact Button with Darker Gradient */}
-              <a
-                href="#"
+              <button
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  goToContact();
+                }}
                 className="relative mt-2 px-6 py-3 bg-gradient-to-r from-slate-700 to-slate-900 hover:from-slate-800 hover:to-black text-white rounded-full text-center font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 uppercase tracking-wide border border-slate-600"
               >
                 <span className="relative z-10">Contact Us</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-slate-600 to-slate-800 rounded-full opacity-0 hover:opacity-30 transition-opacity duration-300"></div>
-              </a>
+              </button>
 
               {/* Mobile Cloud Portal Button with Same Styling */}
               <a

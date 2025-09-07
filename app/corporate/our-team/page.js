@@ -15,6 +15,7 @@ import {
     FaShieldAlt,
     FaGlobe,
 } from "react-icons/fa";
+import { goToContact, goToReferences } from "@/utils/navigation";
 
 export default function OurTeamPage() {
     const leadership = [
@@ -366,11 +367,17 @@ export default function OurTeamPage() {
                         individuals to join our team of experts.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                        <button className="bg-white text-sky-600 px-8 py-4 rounded-2xl font-bold hover:bg-gray-50 transition-all duration-300 font-montserrat shadow-2xl hover:scale-105">
-                            View Open Positions
+                        <button
+                            onClick={goToContact}
+                            className="bg-white text-sky-600 px-8 py-4 rounded-2xl font-bold hover:bg-gray-50 transition-all duration-300 font-montserrat shadow-2xl hover:scale-105"
+                        >
+                            Contact Us
                         </button>
-                        <button className="border-2 border-white text-white px-8 py-4 rounded-2xl font-bold hover:bg-white hover:text-sky-600 transition-all duration-300 font-montserrat hover:scale-105">
-                            Send Your Resume
+                        <button
+                            onClick={goToReferences}
+                            className="border-2 border-white text-white px-8 py-4 rounded-2xl font-bold hover:bg-white hover:text-sky-600 transition-all duration-300 font-montserrat hover:scale-105"
+                        >
+                            View Our References
                         </button>
                     </div>
                 </div>

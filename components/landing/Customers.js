@@ -90,7 +90,7 @@ const Customers = () => {
   ];
 
   return (
-    <section className="relative py-16 bg-gray-50">
+    <section id="customers" className="relative py-16 bg-gray-50">
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-left mb-12">

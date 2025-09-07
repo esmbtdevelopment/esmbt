@@ -193,13 +193,13 @@ const About = () => {
               />
             </div>
             {/* Floating Card */}
-            <div className="absolute -bottom-2 -left-2 sm:-bottom-3 sm:-left-2 md:-bottom-6 md:-left-6 hover:scale-105 transition-all duration-300">
+            <div className="absolute -bottom-2 -left-0 sm:-bottom-3 sm:-left-2 md:-bottom-6 md:-left-6 hover:scale-105 transition-all duration-300">
               <Image
                 src="/images/badges/sap-partner.png"
                 alt="SAP Partner"
-                width={80}
-                height={80}
-                className="sm:w-[100px] sm:h-[100px]"
+                width={100}
+                height={100}
+                className="w-16 md:w-28"
               />
             </div>
           </div>

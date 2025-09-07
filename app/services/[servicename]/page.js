@@ -31,7 +31,7 @@ const serviceData = {
         id: "e-invoice",
         title: "E-Invoice",
         subtitle: "Digital Invoice Solutions",
-        icon: <Image src="/images/services/hero/invoice.webp" alt="E-Invoice" width={1000} height={1000} />,
+        icon: <Image src="/images/services/hero/invoice.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="E-Invoice" width={1000} height={1000} />,
         heroDescription: "Transform your invoicing process with secure, automated digital solutions that ensure compliance while reducing costs and improving efficiency.",
         fullDescription: "E-Invoice is not just a digital transformation tool, but also an investment in the future of your business. Our comprehensive e-invoicing solution ensures seamless compliance with local and international regulations while dramatically reducing processing time and operational costs. Built with enterprise-grade security and scalability in mind.",
         benefits: [
@@ -79,7 +79,7 @@ const serviceData = {
         id: "e-archive-invoice",
         title: "E-Archive Invoice",
         subtitle: "Secure Invoice Storage Solutions",
-        icon: <Image src="/images/services/hero/archive.webp" alt="E-Invoice" width={1000} height={1000} />,
+        icon: <Image src="/images/services/hero/archive.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="E-Invoice" width={1000} height={1000} />,
         heroDescription: "Secure, long-term storage solutions for your digital invoices with full legal compliance and easy retrieval capabilities.",
         fullDescription: "E-Archive Invoice provides a comprehensive digital archiving solution that ensures your invoices are securely stored, legally compliant, and always accessible. Our robust archiving system eliminates the need for physical document storage while maintaining full audit trails and regulatory compliance.",
         benefits: [
@@ -127,7 +127,7 @@ const serviceData = {
         id: "e-export",
         title: "E-Export",
         subtitle: "Digital Export Solutions",
-        icon: <Image src="/images/services/hero/export.webp" alt="E-Invoice" width={1000} height={1000} />,
+        icon: <Image src="/images/services/hero/export.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="E-Invoice" width={1000} height={1000} />,
         heroDescription: "Simplify international trade with comprehensive digital export documentation and compliance management solutions.",
         fullDescription: "E-Export streamlines your international trade operations with digital export documentation, automated compliance checks, and seamless integration with customs authorities. Expand your global reach with confidence, knowing all export procedures are digitally managed and compliant.",
         benefits: [
@@ -175,7 +175,7 @@ const serviceData = {
         id: "e-commerce",
         title: "E-Commerce",
         subtitle: "Online Commerce Platform",
-        icon: <Image src="/images/services/hero/e-commerce.webp" alt="E-Invoice" width={1000} height={1000} />,
+        icon: <Image src="/images/services/hero/e-commerce.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="E-Invoice" width={1000} height={1000} />,
         heroDescription: "Comprehensive e-commerce solutions that power your online business growth with integrated digital sales platforms.",
         fullDescription: "Our E-Commerce platform provides everything you need to build, manage, and scale your online business. From inventory management to customer experience optimization, our comprehensive tools help you succeed in the digital marketplace with professional-grade features and seamless integrations.",
         benefits: [
@@ -223,7 +223,7 @@ const serviceData = {
         id: "e-delivery-note",
         title: "E-Delivery Note",
         subtitle: "Digital Delivery Documentation",
-        icon: <Image src="/images/services/hero/delivery.webp" alt="E-Invoice" width={1000} height={1000} />,
+        icon: <Image src="/images/services/hero/digital-transformation.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="E-Invoice" width={1000} height={1000} />,
         heroDescription: "Digitize your delivery documentation process with real-time tracking and automated record-keeping for legal compliance.",
         fullDescription: "E-Delivery Note eliminates paper-based delivery documentation and embraces digital efficiency. Our solution provides real-time delivery confirmation, automated record-keeping, and ensures legal compliance while reducing administrative overhead and improving delivery accuracy.",
         benefits: [
@@ -271,7 +271,7 @@ const serviceData = {
         id: "e-ledger",
         title: "E-Ledger",
         subtitle: "Digital Financial Ledger",
-        icon: <Image src="/images/services/hero/ledger.webp" alt="E-Invoice" width={1000} height={1000} />,
+        icon: <Image src="/images/services/hero/ledger.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="E-Invoice" width={1000} height={1000} />,
         heroDescription: "Transform financial record-keeping with digital ledger solutions ensuring legal compliance and financial transparency.",
         fullDescription: "E-Ledger provides a comprehensive digital bookkeeping solution that maintains accurate, auditable financial records with automated processes. Our system ensures regulatory compliance while providing real-time financial insights and reducing the complexity of financial management.",
         benefits: [
@@ -319,7 +319,7 @@ const serviceData = {
         id: "e-adisyon",
         title: "E-Adisyon (E-Order Receipt)",
         subtitle: "Digital Restaurant Receipts",
-        icon: <Image src="/images/services/hero/cashier.webp" alt="E-Invoice" width={1000} height={1000} />,
+        icon: <Image src="/images/services/hero/dashboard.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="E-Invoice" width={1000} height={1000} />,
         heroDescription: "Revolutionize restaurant operations with digital order receipt solutions that improve efficiency and customer experience.",
         fullDescription: "E-Adisyon transforms restaurant order management with electronic receipt solutions. Streamline your food service operations, reduce waste, improve customer service, and ensure compliance with digital receipt systems designed specifically for the hospitality industry.",
         benefits: [
@@ -367,7 +367,7 @@ const serviceData = {
         id: "digigarson-pos",
         title: "DigiGarson Cafe&Restaurant POS Software",
         subtitle: "Complete Restaurant Management",
-        icon: <Image src="/images/services/hero/restaurant.webp" alt="E-Invoice" width={1000} height={1000} />,
+        icon: <Image src="/images/services/hero/restaurant.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="E-Invoice" width={1000} height={1000} />,
         heroDescription: "Comprehensive POS and management solutions specifically designed for food & beverage businesses.",
         fullDescription: "DigiGarson provides an all-in-one restaurant management platform that combines point-of-sale functionality with comprehensive business management tools. From order taking to inventory management, our integrated platform helps restaurants operate more efficiently and profitably.",
         benefits: [
@@ -463,13 +463,16 @@ export default function ServiceDetailPage({ params }) {
                             </div>
 
                             {/* Hero Visual */}
-                            <div className="relative lg:absolute lg:right-8 xl:right-32 lg:-bottom-40 lg:w-[40%] lg:h-full drop-shadow-2xl mt-8 lg:mt-0">
-                                <div className="mb-4 flex justify-center lg:justify-end">
-                                    {service.icon}
-                                </div>
+                            <div className="drop-shadow-4xl p-4 w-full h-full">
+                                {service.icon}
                             </div>
                         </div>
                     </div>
+                </div>
+                {/* Background Elements */}
+                <div className="absolute inset-0 opacity-20">
+                    <div className="absolute -top-24 -right-24 w-96 h-96 bg-gradient-to-br from-sky-200/40 to-blue-300/30 rounded-full blur-3xl animate-pulse"></div>
+                    <div className="absolute -bottom-24 -left-24 w-80 h-80 bg-gradient-to-tr from-blue-200/40 to-sky-300/30 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
                 </div>
             </section>
 
