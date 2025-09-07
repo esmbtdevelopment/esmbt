@@ -362,7 +362,7 @@ export default function OurTeamPage() {
                         Join Our Growing Team
                     </h2>
                     <p className="text-lg lg:text-xl mb-10 opacity-90 font-montserrat max-w-2xl mx-auto">
-                        Are you passionate about SAP and digital transformation? We're always looking for talented
+                        Are you passionate about SAP and digital transformation? We&apos;re always looking for talented
                         individuals to join our team of experts.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-6 justify-center">

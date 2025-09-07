@@ -398,7 +398,7 @@ export default function VisionMissionPage() {
                     </h2>
                     <p className="text-lg lg:text-xl mb-10 opacity-90 font-montserrat max-w-2xl mx-auto">
                         Join us on our mission to transform businesses and lead the digital transformation era.
-                        Let's build the future together.
+                        Let&apos;s build the future together.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-6 justify-center">
                         <button className="group bg-white text-sky-600 px-8 py-4 rounded-2xl font-bold hover:bg-gray-50 transition-all duration-300 font-montserrat shadow-2xl hover:scale-105">
