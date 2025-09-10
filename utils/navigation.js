@@ -21,7 +21,9 @@ export const scrollToSection = (sectionId, isCurrentlyOnLandingPage = false) => 
         }
     } else {
         // User is not on landing page, navigate there with hash
-        window.location.href = `/#${sectionId}`;
+        // Get current locale from pathname
+        const currentLocale = getCurrentLocale();
+        window.location.href = `/${currentLocale}#${sectionId}`;
     }
 };
 
@@ -31,7 +33,9 @@ export const scrollToSection = (sectionId, isCurrentlyOnLandingPage = false) => 
  */
 export const isOnLandingPage = () => {
     if (typeof window === 'undefined') return false;
-    return window.location.pathname === '/';
+    const pathname = window.location.pathname;
+    // Check for both root and locale-based landing pages
+    return pathname === '/' || pathname.match(/^\/[a-z]{2}$/);
 };
 
 /**
@@ -48,6 +52,17 @@ export const goToContact = () => {
 export const goToReferences = () => {
     const onLandingPage = isOnLandingPage();
     scrollToSection('customers', onLandingPage);
+};
+
+/**
+ * Get current locale from pathname
+ * @returns {string} - Current locale (en, tr) or 'en' as fallback
+ */
+export const getCurrentLocale = () => {
+    if (typeof window === 'undefined') return 'en';
+    const pathname = window.location.pathname;
+    const localeMatch = pathname.match(/^\/([a-z]{2})/);
+    return localeMatch ? localeMatch[1] : 'en';
 };
 
 /**

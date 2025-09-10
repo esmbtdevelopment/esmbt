@@ -1,0 +1,605 @@
+{
+  "partners": {
+    "title": "İş Ortaklarımız",
+    "subtitle": "Stratejik İş Ortaklıkları",
+    "description": "Sektör liderleriyle iş birliği yaparak üstün çözümler sunuyoruz",
+    "partnersList": {
+      "turkcell": "Önde gelen telekomünikasyon ortağı",
+      "sovos": "Küresel vergi uyumluluk çözümleri",
+      "uyumsoft": "Kurumsal yazılım çözümleri",
+      "payflex": "Ödeme ve finansal teknoloji",
+      "nesBilgi": "Bilgi teknolojileri hizmetleri",
+      "ideaTeknoloji": "Teknoloji inovasyon ortağı",
+      "eplatform": "Dijital platform çözümleri",
+      "edoksis": "Belge yönetim sistemleri"
+    }
+  },
+  "customers": {
+    "title": "Müşterilerimiz",
+    "subtitle": "Sektör Liderlerinin Tercihi",
+    "description": "Kapsamlı çözümlerimizle farklı sektörlerdeki müşterilere hizmet veriyoruz",
+    "industries": {
+      "telecommunications": "Telekomünikasyon",
+      "ecommerceDelivery": "E-ticaret & Teslimat",
+      "retail": "Perakende",
+      "municipalServices": "Belediye Hizmetleri",
+      "technology": "Teknoloji",
+      "transportation": "Ulaşım",
+      "cosmetics": "Kozmetik",
+      "industrialTechnology": "Endüstriyel Teknoloji",
+      "medicalTechnology": "Tıbbi Teknoloji",
+      "consumerProducts": "Tüketici Ürünleri",
+      "textiles": "Tekstil"
+    }
+  },
+  "contact": {
+    "title": "Bizimle İletişime Geçin",
+    "subtitle": "İşinizi Birlikte Dönüştürelim",
+    "description": "SAP operasyonlarınızı modernize etmeye hazır mısınız? Uzmanlarımız, dijital dönüşüm yolculuğunuzun her adımında size rehberlik etmeye hazır.",
+    "info": {
+      "location": {
+        "label": "Konumumuz",
+        "value": "Amerika Birleşik Devletleri",
+        "description": "Ülke genelinde SAP danışmanlık hizmetleri"
+      },
+      "phone": {
+        "label": "Telefon Numarası",
+        "value": "+1 202 555 0100",
+        "description": "Pzt–Cuma, 09:00-18:00 EST arasında ulaşılabilir"
+      },
+      "email": {
+        "label": "E-posta Adresi",
+        "value": "info@esmbt.com",
+        "description": "24 saat içinde yanıt veriyoruz"
+      }
+    },
+    "process": {
+      "title": "Sürecimiz",
+      "steps": {
+        "step1": {
+          "title": "Uzman size ulaşacak",
+          "description": "Bir uzman, özel ihtiyaçlarınızı ve gereksinimlerinizi görüşmek için sizinle iletişime geçecektir."
+        },
+        "step2": {
+          "title": "Gizlilik sözleşmesi imzalama",
+          "description": "Tüm hassas bilgilerin güvenli ve gizli tutulmasını sağlamak için bir NDA imzalayacağız."
+        },
+        "step3": {
+          "title": "Özelleştirilmiş teklif",
+          "description": "Projenin kapsamı, zaman çizelgesi ve bütçesi doğrultusunda size özel bir teklif hazırlayacağız."
+        }
+      }
+    },
+    "form": {
+      "title": "Danışmanlık Talebi",
+      "fields": {
+        "name": {
+          "label": "Ad Soyad",
+          "placeholder": "Adınızı ve soyadınızı girin"
+        },
+        "company": {
+          "label": "Şirket",
+          "placeholder": "Şirket adınızı girin"
+        },
+        "email": {
+          "label": "E-posta Adresi",
+          "placeholder": "E-posta adresinizi girin"
+        },
+        "phone": {
+          "label": "Telefon Numarası",
+          "placeholder": "Telefon numaranızı girin"
+        },
+        "message": {
+          "label": "Mesaj",
+          "placeholder": "Proje gereksinimlerinizi bize anlatın..."
+        },
+        "attachment": {
+          "label": "Dosya Ekle (Opsiyonel)",
+          "placeholder": "Dosya seçin..."
+        }
+      },
+      "submit": "Mesaj Gönder",
+      "submitting": "Gönderiliyor...",
+      "success": "Mesaj başarıyla gönderildi!",
+      "error": "Mesaj gönderilemedi. Lütfen tekrar deneyin.",
+      "privacyNotice": "Onayla butonuna tıklayarak Gizlilik Politikasını okuduğunuzu ve anladığınızı onaylarsınız. Bu site reCAPTCHA ile korunmaktadır; Google Gizlilik Politikası ve Hizmet Şartları geçerlidir.",
+      "description": "Kurumsal çözümler için SAP uzmanlarımızla iletişime geçin",
+      "errorRequiredFields": "Lütfen tüm gerekli alanları doldurun",
+      "errorInvalidEmail": "Lütfen geçerli bir e-posta adresi girin"
+    }
+  },
+  "footer": {
+    "quickLinks": {
+      "title": "Hızlı Erişim",
+      "aboutUs": "Hakkımızda",
+      "services": "Hizmetlerimiz",
+      "partners": "İş Ortaklarımız",
+      "customers": "Müşterilerimiz",
+      "contact": "İletişim"
+    },
+    "services": {
+      "title": "Hizmetler",
+      "sapConsulting": "SAP Danışmanlığı",
+      "eTransformation": "E-Dönüşüm",
+      "financialManagement": "Finansal Yönetim",
+      "bankingSolutions": "Bankacılık Çözümleri",
+      "digitalCompliance": "Dijital Uyum"
+    },
+    "solutions": {
+      "title": "Çözümler",
+      "eInvoice": "E-Fatura",
+      "eArchive": "E-Arşiv",
+      "eLedger": "E-Defter",
+      "ifrs16": "IFRS 16",
+      "vatProcessing": "KDV Süreçleri"
+    },
+    "contact": {
+      "title": "İletişim Bilgileri",
+      "phone": "+1 202 555 0100",
+      "email": "info@esmbt.com",
+      "address": "Amerika Birleşik Devletleri"
+    },
+    "newsletter": {
+      "title": "Güncel Kalın",
+      "subtitle": "SAP çözümleri ve dijital dönüşüm trendleri hakkında en son gelişmeleri alın.",
+      "placeholder": "E-posta adresinizi girin",
+      "button": "Abone Ol"
+    },
+    "copyright": "© 2024 ESM Bilgi Teknolojileri. Tüm hakları saklıdır.",
+    "description": "SAP danışmanlık ve dijital dönüşüm çözümlerinde lider sağlayıcı.",
+    "privacyPolicy": "Gizlilik Politikası",
+    "termsOfService": "Hizmet Şartları",
+    "cookiePolicy": "Çerez Politikası"
+  },
+  "corporate": {
+    "title": "Kurumsal",
+    "aboutUs": {
+      "features": {
+        "overview": "Şirket Genel Bakışı",
+        "values": "Değerlerimiz",
+        "principles": "Temel İlkeler"
+      },
+      "values": {
+        "excellence": {
+          "title": "Mükemmellik",
+          "description": "Müşterilerimize olağanüstü sonuçlar sunmak için en yüksek kalite SAP çözümleri ve hizmetleri sağlamaya kararlıyız."
+        },
+        "innovation": {
+          "title": "İnovasyon",
+          "description": "İş büyümesini destekleyen en son çözümleri sunmak için sürekli olarak yeni teknolojileri ve yöntemleri benimsiyoruz."
+        },
+        "partnership": {
+          "title": "İş Ortaklığı",
+          "description": "Müşterilerimizle kalıcı ortaklıklar kuruyor, iş hedeflerine ve uzun vadeli başarıya birlikte ulaşıyoruz."
+        }
+      },
+      "achievements": {
+        "sapPartner": {
+          "title": "SAP Sertifikalı İş Ortağı",
+          "description": "Sertifikalı danışmanlar ve kanıtlanmış başarı geçmişiyle resmi SAP iş ortağı"
+        },
+        "international": {
+          "title": "Uluslararası Varlık",
+          "description": "Yerelleştirilmiş uzmanlık ve destekle dünya çapında hizmet"
+        },
+        "experience": {
+          "title": "15+ Yıllık Deneyim",
+          "description": "SAP danışmanlığı ve dijital dönüşümde on yılı aşkın uzmanlık"
+        }
+      },
+      "services": {
+        "sapConsulting": {
+          "title": "SAP Danışmanlık & Uygulama",
+          "description": "Planlamadan dağıtıma ve optimizasyona kadar kapsamlı SAP çözümleri"
+        },
+        "compliance": {
+          "title": "Dijital Uyum Çözümleri",
+          "description": "E-Fatura, E-Arşiv, E-Defter ve yasal uyum otomasyonu"
+        },
+        "financial": {
+          "title": "Finansal Yönetim",
+          "description": "KDV süreçleri ve IFRS çözümleri dahil gelişmiş finansal araçlar"
+        },
+        "transformation": {
+          "title": "Dijital Dönüşüm",
+          "description": "Tam iş dijitalleşmesi ve süreç otomasyonu hizmetleri"
+        }
+      },
+      "timeline": {
+        "founded": {
+          "year": "2008",
+          "title": "Kuruluş",
+          "description": "ESM Bilgi Teknolojileri, işletmeleri teknoloji ile dönüştürme vizyonuyla kuruldu"
+        },
+        "partnership": {
+          "year": "2012",
+          "title": "SAP İş Ortaklığı",
+          "description": "Resmi SAP iş ortağı olduk, kurumsal çözümler alanında yetkinliğimizi genişlettik"
+        },
+        "compliance": {
+          "year": "2016",
+          "title": "Dijital Uyum Lideri",
+          "description": "Türkiye’de e-dönüşüm çözümlerine öncülük ederek pazar lideri olduk"
+        },
+        "expansion": {
+          "year": "2020",
+          "title": "Uluslararası Büyüme",
+          "description": "Hizmetlerimizi küresel ölçekte genişlettik, birçok ülkede müşteri edindik"
+        },
+        "innovation": {
+          "year": "2024",
+          "title": "İnovasyon Merkezi",
+          "description": "SAP-yerel dijital çözümler için lider inovasyon merkezi olarak konumlandık"
+        }
+      }
+    },
+    "team": {
+      "features": {
+        "leadership": "Liderlik Ekibi",
+        "specialists": "SAP Uzmanları",
+        "experts": "Teknik Uzmanlar"
+      }
+    },
+    "vision": {
+      "title": "Vizyon & Misyon",
+      "subtitle": "Amacımız",
+      "description": "Misyonumuzu, vizyonumuzu ve şirketimizi yönlendiren hedefleri keşfedin",
+      "features": {
+        "mission": "Şirket Misyonu",
+        "future": "Gelecek Vizyonu",
+        "goals": "Stratejik Hedefler"
+      },
+      "mission": {
+        "title": "Misyonumuz",
+        "description": "Şirketleri yenilikçi SAP çözümleri ve dijital dönüşümle güçlendirmek, uyumu sağlarken operasyonel mükemmelliği artırmak.",
+        "points": {
+          "sapExcellence": {
+            "title": "SAP Mükemmelliği",
+            "description": "İş operasyonlarını dönüştüren dünya standartlarında SAP danışmanlık ve uygulama hizmetleri sunmak"
+          },
+          "regulatoryCompliance": {
+            "title": "Yasal Uyum",
+            "description": "Müşterilerimizin tüm dijital uyum gereksinimlerini yenilikçi e-dönüşüm çözümleriyle karşılamak"
+          },
+          "clientPartnership": {
+            "title": "Müşteri Ortaklığı",
+            "description": "Benzersiz iş ihtiyaçlarını anlayarak kalıcı iş ortaklıkları kurmak ve özel çözümler sunmak"
+          },
+          "businessGrowth": {
+            "title": "İş Büyümesi",
+            "description": "Teknoloji odaklı çözümler ve stratejik dijital dönüşümle sürdürülebilir büyümeyi sağlamak"
+          }
+        }
+      },
+      "vision": {
+        "title": "Vizyonumuz",
+        "description": "Bölgede yenilik, mükemmellik ve dönüştürücü dijital çözümlerle tanınan lider SAP danışmanlık ortağı olmak.",
+        "goals": {
+          "innovation": {
+            "title": "İnovasyon Liderliği",
+            "description": "En yeni SAP çözümleri ve dijital dönüşüm metodolojilerine öncülük etmek"
+          },
+          "excellence": {
+            "title": "Hizmet Mükemmelliği",
+            "description": "Hizmet sunumu ve müşteri memnuniyetinde en yüksek standartları sürdürmek"
+          },
+          "growth": {
+            "title": "Sürdürülebilir Büyüme",
+            "description": "Kalite ve yeniliğe bağlı kalarak etkimizi genişletmek"
+          },
+          "partnership": {
+            "title": "Stratejik Ortaklıklar",
+            "description": "Teknoloji liderleri ve sektör uzmanlarıyla güçlü iş birlikleri kurmak"
+          }
+        }
+      }
+    },
+    "badge": "Kurumsal Bilgi",
+    "hero": {
+      "title": "Hoş Geldiniz",
+      "companyName": "ESM Bilgi Teknolojileri",
+      "description": "Şirketimizi keşfedin, ekibimizle tanışın ve SAP mükemmelliği ile dijital dönüşüme olan bağlılığımızı yönlendiren vizyonumuzu öğrenin."
+    },
+    "explore": {
+      "title": "Şirketimizi Keşfedin",
+      "description": "ESM Bilgi Teknolojilerini kapsamlı kurumsal bilgilerimizle tanıyın"
+    },
+    "stats": {
+      "yearsOfExcellence": "Yıllık Deneyim",
+      "successfulProjects": "Başarılı Projeler",
+      "enterpriseClients": "Kurumsal Müşteriler",
+      "expertTeamMembers": "Uzman Ekip Üyeleri"
+    },
+    "viewOurServices": "Hizmetlerimizi Görüntüle",
+    "description": "İşinizi SAP uzmanlığımızla dönüştürmeye hazır mısınız? Dijital dönüşüm ihtiyaçlarınızı görüşmek için bugün bizimle iletişime geçin."
+  },
+  "metadata": {
+    "title": "ESM - Dijital Dönüşüm & Teknoloji Çözümleri",
+    "description": "SAP çözümleri, dijital dönüşüm danışmanlığı ve kurumsal yazılım geliştirme hizmetleri."
+  },
+  "navigation": {
+    "home": "Ana Sayfa",
+    "services": "Hizmetler",
+    "corporate": "Kurumsal",
+    "about": "Hakkımızda",
+    "team": "Ekibimiz",
+    "vision": "Vizyon & Misyon",
+    "contact": "İletişim",
+    "backToServices": "Hizmetlere Geri Dön",
+    "references": "Referanslar",
+    "products": "Ürünler",
+    "enterpriseSolutions": "Kurumsal Çözümler",
+    "cloudPlatform": "Bulut Platformu",
+    "customDevelopment": "Özel Geliştirme",
+    "eInvoiceSolutions": "E-Fatura Çözümleri",
+    "eCommercePlatform": "E-Ticaret Platformu",
+    "digitalTransformation": "Dijital Dönüşüm",
+    "viewAllServices": "Tüm Hizmetleri Görüntüle",
+    "dropdown": {
+      "corporate": {
+        "aboutDescription": "Şirketimiz hakkında bilgi edinin",
+        "teamDescription": "Uzmanlarımızla tanışın",
+        "visionDescription": "Hedeflerimiz ve değerlerimiz"
+      },
+      "products": {
+        "enterpriseDescription": "Kapsamlı iş araçları",
+        "cloudDescription": "Ölçeklenebilir bulut hizmetleri",
+        "customDescription": "Özel yazılım çözümleri"
+      },
+      "services": {
+        "eInvoiceDescription": "Dijital faturalama ve uyum",
+        "eCommerceDescription": "Tam çevrimiçi iş araçları",
+        "digitalTransformationDescription": "Tam iş dijitalleşmesi",
+        "viewAllDescription": "Tam hizmet portföyümüzü keşfedin"
+      }
+    }
+  },
+  "common": {
+    "hearFromUs": "Bizden Haber Alın",
+    "learnMore": "Daha Fazla Bilgi",
+    "getFreeConsultation": "Ücretsiz Danışmanlık Alın",
+    "startWithEInvoice": "E-Fatura ile Başlayın",
+    "contactUsToday": "Bugün Bizimle İletişime Geçin",
+    "expertiseWeBring": "Sunduğumuz Uzmanlık",
+    "yearsOfExpertise": "yıllık uzmanlık",
+    "projects": "projeler",
+    "professionals": "uzmanlar",
+    "readyToWorkWithUs": "Bizimle Çalışmaya Hazır mısınız?",
+    "whoWeAre": "Biz Kimiz",
+    "ourExpertise": "Uzmanlığımız",
+    "bonusExpertise": "BONUS UZMANLIK",
+    "evenMoreWaysWeCanHelp": "Size Daha Fazla Nasıl Yardımcı Olabiliriz",
+    "sapNative": "100% SAP-Native",
+    "everythingWeBuild": "Yaptığımız her şey SAP ile doğal olarak çalışır - garip entegrasyonlara gerek yok"
+  },
+  "hero": {
+    "title": "Dijital Dönüşüm & Teknoloji Çözümleri",
+    "subtitle": "SAP çözümleri, dijital dönüşüm danışmanlığı ve kurumsal yazılım geliştirme hizmetleri.",
+    "cta": {
+      "consultation": "SAP Danışmanlığı Planla",
+      "solutions": "Çözümlerimizi Görüntüle"
+    },
+    "slides": {
+      "products": {
+        "title": "ESMBT Ürünleri",
+        "tabTitle": "ESMBT Ürünleri",
+        "description": "İşiniz için profesyonel ve güvenilir çözümler"
+      },
+      "sap": {
+        "title": "SAP Çözümleri",
+        "tabTitle": "SAP Çözümleri",
+        "description": "SAP çözümlerinde güvenilir bir ortak olarak çeşitli sektörlerde işletmelere kapsamlı destek ve uygulama hizmetleri sunuyoruz."
+      },
+      "mobile": {
+        "title": "Mobil Çözümler",
+        "tabTitle": "Mobil Çözümler",
+        "description": "İşletmelerin operasyonlarını kolaylaştırmak ve verimliliği artırmak için çeşitli mobil çözümler sunuyoruz."
+      },
+      "eadisyon": {
+        "title": "E-Adisyon",
+        "description": "E-Adisyon, restoran sipariş yönetimini dijital fiş çözümleriyle dönüştürür. Elektronik sipariş fişleriyle operasyonlarınızı kolaylaştırın, israfı azaltın ve müşteri deneyimini iyileştirin.",
+        "features": {
+          "digitalReceipts": "Dijital Fişler",
+          "orderManagement": "Sipariş Yönetimi",
+          "customerExperience": "Müşteri Deneyimi",
+          "costEfficiency": "Maliyet Verimliliği"
+        }
+      },
+      "corporate": {
+        "title": "Kurumsal Çözümler",
+        "tabTitle": "Kurumsal Çözümler",
+        "description": "Kurumsal çözümlerimiz ile işinizi daha verimli ve etkili hale getirin."
+      }
+    }
+  },
+  "serviceDetails": {
+    "eInvoice": {
+      "title": "E-Fatura",
+      "subtitle": "Dijital Fatura Çözümleri",
+      "heroDescription": "Güvenli, otomatik dijital çözümlerle faturalama sürecinizi dönüştürün; uyumluluğu sağlarken maliyetleri azaltır ve verimliliği artırır.",
+      "fullDescription": "E-Fatura yalnızca bir dijital dönüşüm aracı değil, aynı zamanda işletmenizin geleceğine yapılan bir yatırımdır. Kapsamlı e-fatura çözümümüz, yerel ve uluslararası düzenlemelerle sorunsuz uyumluluk sağlar ve işlem süresini ve operasyonel maliyetleri önemli ölçüde azaltır. Kurumsal düzeyde güvenlik ve ölçeklenebilirlik gözetilerek geliştirilmiştir.",
+      "benefits": {
+        "0": "Fatura işleme süresini %80'e kadar azaltın",
+        "1": "Vergi düzenlemelerine %100 uyumluluk sağlayın",
+        "2": "Otomasyon ile operasyonel maliyetleri düşürün",
+        "3": "Gerçek zamanlı fatura takibi ve durum güncellemeleri",
+        "4": "Mevcut ERP sistemleri ile sorunsuz entegrasyon",
+        "5": "Dijital imzalarla artırılmış güvenlik"
+      },
+      "features": {
+        "automatedProcessing": {
+          "title": "Otomatik İşlem",
+          "description": "Akıllı otomasyon, fatura oluşturma, doğrulama ve gönderimi manuel müdahale olmadan yönetir."
+        },
+        "legalCompliance": {
+          "title": "Yasal Uyum",
+          "description": "Dahili uyum kontrolleri, tüm faturaların yerel vergi otoritelerinin gereksinimlerini karşılamasını sağlar."
+        },
+        "realTimeTracking": {
+          "title": "Gerçek Zamanlı Takip",
+          "description": "Detaylı takip ve teslimat onayları ile fatura durumunu gerçek zamanlı izleyin."
+        }
+      },
+      "implementation": {
+        "0": "İlk danışmanlık ve gereksinim analizi",
+        "1": "Sistem entegrasyon planlaması ve kurulum",
+        "2": "Veri göçü ve test aşaması",
+        "3": "Personel eğitimi ve bilgi transferi",
+        "4": "Canlıya alma desteği ve izleme",
+        "5": "Sürekli bakım ve güncellemeler"
+      }
+    }
+  },
+  "about": {
+    "title": "Finansal Dönüşüm için Uzman SAP Danışmanlığı",
+    "subtitle": "Finansal Dönüşüm",
+    "description": "ESM Bilgi Teknolojileri, kurumsal işletmeler için finansal dönüşüm ve dijital uyum sağlama konusunda uzmanlaşmış bir SAP danışmanlığı ve teknoloji firmasıdır.",
+    "teamImageAlt": "ESM SAP Danışmanlık Ekibi",
+    "mainTitle": "SAP Mükemmelliğiyle İşletmeleri Güçlendirme",
+    "paragraph1": "Uçtan uca SAP entegrasyonu ve optimizasyon hizmetleri sunuyoruz; işletmelerin finansal operasyonlarını kolaylaştırmalarına, yasal uyumluluğu artırmalarına ve temel süreçleri güvenle dijitalleştirmelerine yardımcı oluyoruz.",
+    "paragraph2": "Uzmanlığımız finansal dönüşüme yönelik SAP danışmanlığı, uygulama ve destek hizmetlerini kapsar; IFRS uyarlamaları ve süreç otomasyonu dahil olmak üzere karmaşık finansal görevleri basitleştiren SAP-yerel çözümler sunuyoruz.",
+    "paragraph3": "Otomasyon, uyum ve SAP-yerel tasarıma odaklanarak, işletmelerin değişen dijital ve düzenleyici taleplere uyum sağlamalarına yardımcı oluyoruz ve en yüksek veri güvenliği ile operasyonel verimliliği koruyoruz.",
+    "stats": {
+      "experience": "Yıllık Deneyim",
+      "implementations": "SAP Uygulamaları",
+      "clients": "Kurumsal Müşteriler",
+      "specialists": "SAP Uzmanları"
+    },
+    "values": {
+      "sapNative": {
+        "title": "SAP-yerel Tasarım",
+        "description": "Tüm çözümler, SAP ortamları için özel olarak geliştirilmiş olup sorunsuz entegrasyon sağlar"
+      },
+      "compliance": {
+        "title": "Yasal Uyum",
+        "description": "Dijital vergi gereksinimleri ve değişen düzenleyici talepler konusunda uzman rehberlik"
+      },
+      "transformation": {
+        "title": "Finansal Dönüşüm",
+        "description": "Finansal operasyonların ve süreç otomasyonunun kolaylaştırılmasına odaklanmış uzmanlık"
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "Müşteri Yorumları",
+    "title": "Kurumsal Liderler",
+    "subtitle": "Uzmanlığımıza Güvenin",
+    "excellent": "Mükemmel",
+    "verifiedClient": "Doğrulanmış Müşteri",
+    "viewAllCaseStudies": "Tüm Vaka Çalışmalarını Görüntüle"
+  },
+  "services": {
+    "title": "Hizmetlerimiz",
+    "subtitle": "Kapsamlı SAP Çözümleri",
+    "description": "İş ihtiyaçlarınıza göre özelleştirilmiş uçtan uca SAP danışmanlığı ve dijital dönüşüm hizmetleri sunuyoruz.",
+    "landing": {
+      "ecommerce": {
+        "title": "E-Ticaret",
+        "description": "Envanter yönetiminden müşteri deneyimine kadar entegre dijital satış platformlarıyla çevrimiçi işinizi büyütmeye yönelik e-ticaret çözümleri.",
+        "features": {
+          "storeManagement": "Çevrimiçi Mağaza Yönetimi",
+          "paymentIntegration": "Ödeme Entegrasyonu",
+          "inventoryControl": "Envanter Kontrolü",
+          "customerAnalytics": "Müşteri Analitiği"
+        }
+      },
+      "earchive": {
+        "title": "E-Arşiv Fatura",
+        "description": "E-Arşiv Fatura, dijital faturalarınız için tam yasal uyumluluğa sahip güvenli, uzun süreli saklama çözümleri sunar. Belgelerinizi güvenle saklayın ve denetime hazır tutun.",
+        "features": {
+          "secureStorage": "Güvenli Saklama",
+          "legalCompliance": "Yasal Uyum",
+          "easyRetrieval": "Kolay Erişim",
+          "auditReady": "Denetime Hazır"
+        }
+      },
+      "einvoice": {
+        "title": "E-Fatura",
+        "description": "E-Fatura, yalnızca bir dijital dönüşüm aracı değil, ayrıca işletmenizin geleceğine yapılan bir yatırımdır. Süreçleri otomatikleştirerek zaman ve maliyet tasarrufu sağlar.",
+        "features": {
+          "legalCompliance": "Yasal Uyum",
+          "costReduction": "Maliyet Azaltma",
+          "automatedProcessing": "Otomatik İşleme",
+          "realTimeTracking": "Gerçek Zamanlı Takip"
+        }
+      },
+      "eexport": {
+        "title": "E-Export",
+        "description": "E-Export, dijital ihracat dokümantasyonu ve uyum çözümleriyle uluslararası ticareti kolaylaştırır. Tüm ihracat prosedürlerinin dijital olarak yönetildiğinden emin olun.",
+        "features": {
+          "exportDocumentation": "İhracat Dokümantasyonu",
+          "complianceManagement": "Uyum Yönetimi",
+          "internationalStandards": "Uluslararası Standartlar",
+          "processAutomation": "Süreç Otomasyonu"
+        }
+      },
+      "edelivery": {
+        "title": "E-Teslimat Notu",
+        "description": "Elektronik teslimat notları ile teslimat süreçlerinizi dijitalleştirerek doğru takip, daha az evrak işi ve lojistik verimlilik sağlayın.",
+        "features": {
+          "digitalTracking": "Dijital Takip",
+          "logisticsOptimization": "Lojistik Optimizasyonu",
+          "paperlessProcess": "Kağıtsız Süreç",
+          "realTimeUpdates": "Gerçek Zamanlı Güncellemeler"
+        }
+      },
+      "eledger": {
+        "title": "E-Defter",
+        "description": "Gelişmiş e-defter sistemimiz ile dijital defter tutmayı sağlayın. Doğru finansal kayıt, muhasebe süreçlerinin kolaylaştırılması ve tam denetim izi sağlayın.",
+        "features": {
+          "financialReporting": "Finansal Raporlama",
+          "auditTrails": "Denetim İzleri",
+          "automatedEntries": "Otomatik Kayıtlar",
+          "complianceManagement": "Uyum Yönetimi"
+        }
+      },
+      "restaurant": {
+        "title": "Restoran Yönetimi",
+        "description": "Sipariş almadan envanter yönetimine kadar her şeyi kapsayan eksiksiz restoran yönetim çözümü. Entegre POS sistemleri, mutfak yönetimi ve müşteri hizmetleri araçları ile operasyonlarınızı optimize edin.",
+        "features": {
+          "posSystem": "POS Sistemi",
+          "kitchenManagement": "Mutfak Yönetimi",
+          "inventoryTracking": "Envanter Takibi",
+          "customerService": "Müşteri Hizmetleri"
+        }
+      },
+      "eadisyon": {
+        "title": "E-Adisyon",
+        "description": "E-Adisyon, restoran sipariş yönetimini dijital fiş çözümleriyle dönüştürür. Elektronik sipariş fişleriyle operasyonlarınızı kolaylaştırın, israfı azaltın ve müşteri deneyimini iyileştirin.",
+        "features": {
+          "digitalReceipts": "Dijital Fişler",
+          "orderManagement": "Sipariş Yönetimi",
+          "customerExperience": "Müşteri Deneyimi",
+          "costEfficiency": "Maliyet Verimliliği"
+        }
+      }
+    },
+    "categories": {
+      "consulting": {
+        "title": "SAP Danışmanlık & Uygulama",
+        "description": "Uçtan uca SAP entegrasyonu, optimizasyonu ve uzman danışmanlık hizmetleri"
+      },
+      "transformation": {
+        "title": "E-Dönüşüm Çözümleri",
+        "description": "SAP-yerel e-Fatura, e-Arşiv, e-Defter ve e-Beyan uyumluluğu"
+      },
+      "financial": {
+        "title": "Finansal Yönetim Araçları",
+        "description": "KDV süreçleri, IFRS 16, kredi takibi ve enflasyon muhasebesi çözümleri"
+      },
+      "banking": {
+        "title": "Bankacılık & Hazine Operasyonları",
+        "description": "Toplu ödemeler, e-Hesap ekstresi, sanal POS ve stok finansmanı"
+      }
+    },
+    "additionalServices": {
+      "title": "Ek Hizmetler",
+      "description": "Uzman ekibimiz, işletmenizin ihtiyaçlarına uygun dijital çözümleri uygulamanıza yardımcı olmaya hazır. Ücretsiz danışmanlıkla başlayın.",
+      "item1": "IFRS 16 Uyum & Adaptasyon",
+      "item2": "Teminat Yönetim Sistemleri",
+      "item3": "SAP Veri Maskeleme & Koruma",
+      "item4": "Enflasyon Muhasebesi Çözümleri",
+      "item5": "Kredi & Tahsilat Takibi"
+    }
+  }
+}

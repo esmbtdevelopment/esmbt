@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import { useTranslations, useLocale } from 'next-intl';
 import {
   FaChartLine,
   FaUniversity,
@@ -17,63 +18,63 @@ import {
 } from "react-icons/fa";
 import { RiTeamLine } from "react-icons/ri";
 import Image from "next/image";
+
 function Services() {
+  const t = useTranslations('services');
+  const tCommon = useTranslations('common');
+  const locale = useLocale();
   const services = [
     {
       id: 1,
       slug: "e-commerce",
-      icon: <Image src="/images/services/landing/e-commerce.jpg" className="rounded-tr-3xl rounded-bl-3xl object-cover drop-shadow-2xl" alt="E-Commerce" width={500} height={500} />,
-      title: "E-Commerce",
-      description:
-        "E-Commerce solutions that power your online business growth with integrated digital sales platforms. From inventory management to customer experience, our comprehensive e-commerce tools help you build, manage, and scale your online presence effectively.",
+      icon: <Image src="/images/services/landing/e-commerce.jpg" className="rounded-tr-3xl rounded-bl-3xl object-cover drop-shadow-2xl" alt={t('landing.ecommerce.title')} width={500} height={500} />,
+      title: t('landing.ecommerce.title'),
+      description: t('landing.ecommerce.description'),
       features: [
-        { name: "Online Store Management", icon: <FaCogs /> },
-        { name: "Payment Integration", icon: <FaCreditCard /> },
-        { name: "Inventory Control", icon: <FaArchive /> },
-        { name: "Customer Analytics", icon: <FaChartLine /> }
+        { name: t('landing.ecommerce.features.storeManagement'), icon: <FaCogs /> },
+        { name: t('landing.ecommerce.features.paymentIntegration'), icon: <FaCreditCard /> },
+        { name: t('landing.ecommerce.features.inventoryControl'), icon: <FaArchive /> },
+        { name: t('landing.ecommerce.features.customerAnalytics'), icon: <FaChartLine /> }
       ],
     },
 
     {
       id: 2,
       slug: "e-archive-invoice",
-      icon: <Image src="/images/services/landing/archive.jpg" className="rounded-tr-3xl rounded-bl-3xl object-cover drop-shadow-2xl" alt="E-Archive Invoice" width={500} height={500} />,
-      title: "E-Archive Invoice",
-      description:
-        "E-Archive Invoice provides secure, long-term storage solutions for your digital invoices with full legal compliance. Never worry about document retention again - our robust archiving system ensures your invoices are safely stored, easily accessible, and always audit-ready.",
+      icon: <Image src="/images/services/landing/archive.jpg" className="rounded-tr-3xl rounded-bl-3xl object-cover drop-shadow-2xl" alt={t('landing.earchive.title')} width={500} height={500} />,
+      title: t('landing.earchive.title'),
+      description: t('landing.earchive.description'),
       features: [
-        { name: "Secure Storage", icon: <FaShieldAlt /> },
-        { name: "Legal Compliance", icon: <FaBalanceScale /> },
-        { name: "Easy Retrieval", icon: <FaChartArea /> },
-        { name: "Audit Ready", icon: <FaCogs /> }
+        { name: t('landing.earchive.features.secureStorage'), icon: <FaShieldAlt /> },
+        { name: t('landing.earchive.features.legalCompliance'), icon: <FaBalanceScale /> },
+        { name: t('landing.earchive.features.easyRetrieval'), icon: <FaChartArea /> },
+        { name: t('landing.earchive.features.auditReady'), icon: <FaCogs /> }
       ],
     },
     {
       id: 3,
       slug: "e-invoice",
-      icon: <Image src="/images/services/landing/invoice.jpg" className="rounded-tr-3xl rounded-bl-3xl object-cover drop-shadow-2xl" alt="E-Invoice" width={500} height={500} />,
-      title: "E-Invoice",
-      description:
-        "E-Invoice is not just a digital transformation tool, but also an investment in the future of your business. It ensures seamless compliance while saving time and costs. Transform your invoicing process with secure, automated digital solutions that streamline operations and enhance business efficiency.",
+      icon: <Image src="/images/services/landing/invoice.jpg" className="rounded-tr-3xl rounded-bl-3xl object-cover drop-shadow-2xl" alt={t('landing.einvoice.title')} width={500} height={500} />,
+      title: t('landing.einvoice.title'),
+      description: t('landing.einvoice.description'),
       features: [
-        { name: "Legal Compliance", icon: <FaShieldAlt /> },
-        { name: "Cost Reduction", icon: <FaCoins /> },
-        { name: "Automated Processing", icon: <FaRobot /> },
-        { name: "Real-time Tracking", icon: <FaChartLine /> }
+        { name: t('landing.einvoice.features.legalCompliance'), icon: <FaShieldAlt /> },
+        { name: t('landing.einvoice.features.costReduction'), icon: <FaCoins /> },
+        { name: t('landing.einvoice.features.automatedProcessing'), icon: <FaRobot /> },
+        { name: t('landing.einvoice.features.realTimeTracking'), icon: <FaChartLine /> }
       ],
     },
     {
       id: 4,
       slug: "e-export",
-      icon: <Image src="/images/services/landing/truck.jpg" className="rounded-tr-3xl rounded-bl-3xl object-cover drop-shadow-2xl" alt="E-Export" width={500} height={500} />,
-      title: "E-Export",
-      description:
-        "E-Export simplifies international trade with digital export documentation and compliance solutions. Expand your global reach with confidence, knowing that all export procedures are digitally managed, compliant, and efficient for seamless international business operations.",
+      icon: <Image src="/images/services/landing/truck.jpg" className="rounded-tr-3xl rounded-bl-3xl object-cover drop-shadow-2xl" alt={t('landing.eexport.title')} width={500} height={500} />,
+      title: t('landing.eexport.title'),
+      description: t('landing.eexport.description'),
       features: [
-        { name: "Export Documentation", icon: <FaFileInvoiceDollar /> },
-        { name: "Compliance Management", icon: <FaShieldAlt /> },
-        { name: "International Standards", icon: <FaUniversity /> },
-        { name: "Process Automation", icon: <FaRobot /> }
+        { name: t('landing.eexport.features.exportDocumentation'), icon: <FaFileInvoiceDollar /> },
+        { name: t('landing.eexport.features.complianceManagement'), icon: <FaShieldAlt /> },
+        { name: t('landing.eexport.features.internationalStandards'), icon: <FaUniversity /> },
+        { name: t('landing.eexport.features.processAutomation'), icon: <FaRobot /> }
       ],
     }
   ];
@@ -85,15 +86,13 @@ function Services() {
         <div className="text-left mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-sora">
             <span className="relative inline-block text-sky-600">
-              Expertise
+              {tCommon('expertiseWeBring')}
               <div className="absolute -bottom-1 left-0 right-0 h-1 bg-sky-600"></div>
             </span>
-            &nbsp; We Bring To The Table
           </h2>
 
           <p className="text-base text-gray-600 font-montserrat leading-relaxed max-w-2xl">
-            We&apos;ve spent years mastering SAP solutions that actually work for your business.
-            Here&apos;s what we bring to every partnership - practical expertise that transforms how you handle finances and compliance.
+            {t('description')}
           </p>
         </div>
 
@@ -117,9 +116,9 @@ function Services() {
                   <p className="text-gray-600 font-montserrat text-sm sm:text-base lg:text-lg leading-relaxed">
                     {service.description}
                   </p>
-                  <Link href={`/services/${service.slug}`}>
+                  <Link href={`/${locale}/services/${service.slug}`}>
                     <button className="btn btn-outline btn-info font-montserrat font-semibold text-sm sm:text-base w-full sm:w-auto">
-                      Learn More <FaChevronRight />
+                      {tCommon('learnMore')} <FaChevronRight />
                     </button>
                   </Link>
                 </div>
@@ -156,23 +155,17 @@ function Services() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="mb-8">
-                  <div className="text-xs font-bold text-yellow-400 font-montserrat mb-2">BONUS EXPERTISE</div>
+                  <div className="text-xs font-bold text-yellow-400 font-montserrat mb-2">{tCommon('bonusExpertise')}</div>
                   <h3 className="text-2xl md:text-3xl font-bold font-sora">
-                    Even More Ways We Can Help
+                    {tCommon('evenMoreWaysWeCanHelp')}
                   </h3>
                 </div>
 
                 <ul className="space-y-4">
-                  {[
-                    "IFRS 16 Compliance & Adaptation",
-                    "Collateral Management Systems",
-                    "SAP Data Masking & Protection",
-                    "Inflation Accounting Solutions",
-                    "Loan & Collection Tracking"
-                  ].map((item, index) => (
+                  {[1, 2, 3, 4, 5].map((index) => (
                     <li key={index} className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
-                      <span className="text-gray-200">{item}</span>
+                      <span className="text-gray-200">{t(`additionalServices.item${index}`)}</span>
                     </li>
                   ))}
                 </ul>
@@ -182,9 +175,9 @@ function Services() {
                 <div className="w-32 h-32 bg-gradient-to-r from-sky-400 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-6">
                   <RiTeamLine className="text-4xl text-white" />
                 </div>
-                <h4 className="text-xl font-bold mb-3 font-sora">100% SAP-Native</h4>
+                <h4 className="text-xl font-bold mb-3 font-sora">{tCommon('sapNative')}</h4>
                 <p className="text-gray-300 font-montserrat">
-                  Everything we build works natively with SAP - no awkward integrations needed
+                  {tCommon('everythingWeBuild')}
                 </p>
               </div>
             </div>

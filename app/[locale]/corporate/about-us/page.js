@@ -24,21 +24,24 @@ import {
 import { goToContact, goToReferences } from "@/utils/navigation";
 
 export default function AboutUsPage() {
+    const t = useTranslations('corporate.aboutUs');
+    const tCommon = useTranslations('common');
+
     const values = [
         {
             icon: <RiLightbulbLine className="text-2xl" />,
-            title: "Innovation",
-            description: "We continuously innovate to deliver cutting-edge SAP solutions that drive business transformation and competitive advantage."
+            title: t('values.innovation.title'),
+            description: t('values.innovation.description')
         },
         {
             icon: <RiShieldCheckLine className="text-2xl" />,
-            title: "Excellence",
-            description: "Our commitment to excellence ensures every project meets the highest standards of quality, reliability, and performance."
+            title: t('values.excellence.title'),
+            description: t('values.excellence.description')
         },
         {
             icon: <RiTeamLine className="text-2xl" />,
-            title: "Partnership",
-            description: "We build lasting partnerships with our clients, working collaboratively to achieve their business objectives and long-term success."
+            title: t('values.partnership.title'),
+            description: t('values.partnership.description')
         },
         {
             icon: <RiGlobalLine className="text-2xl" />,
@@ -204,19 +207,17 @@ export default function AboutUsPage() {
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto text-center mb-12 sm:mb-16">
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora px-2">
-                            Who We Are
+                            {tCommon('whoWeAre')}
                         </h2>
                         <p className="text-base sm:text-lg text-gray-600 font-montserrat leading-relaxed px-2">
-                            ESM Information Technologies is a specialized SAP consulting and technology firm dedicated to
-                            driving financial transformation and digital compliance for enterprises worldwide. We combine
-                            deep SAP expertise with innovative thinking to deliver solutions that transform how businesses operate.
+                            {t('description')}
                         </p>
                     </div>
 
                     <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
                         <div className="order-2 lg:order-1">
                             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora">
-                                Our Expertise
+                                {tCommon('ourExpertise')}
                             </h3>
                             <div className="space-y-4 sm:space-y-6">
                                 {services.map((service, index) => (

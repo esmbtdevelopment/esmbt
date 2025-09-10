@@ -14,35 +14,38 @@ import {
 } from "react-icons/fa";
 import { RiSpaceShipFill } from "react-icons/ri";
 import { scrollToSection, isOnLandingPage } from "@/utils/navigation";
+import { useTranslations } from 'next-intl';
 
 const Footer = () => {
+  const t = useTranslations('footer');
+
   const handleSectionNavigation = (sectionId) => {
     const onLandingPage = isOnLandingPage();
     scrollToSection(sectionId, onLandingPage);
   };
 
   const quickLinks = [
-    { name: "About Us", sectionId: "about" },
-    { name: "Our Services", href: "/services" }, // External page
-    { name: "Partners", sectionId: "partners" },
-    { name: "Customers", sectionId: "customers" },
-    { name: "Contact", sectionId: "contact" },
+    { name: t('quickLinks.aboutUs'), sectionId: "about" },
+    { name: t('quickLinks.services'), href: "/services" }, // External page
+    { name: t('quickLinks.partners'), sectionId: "partners" },
+    { name: t('quickLinks.customers'), sectionId: "customers" },
+    { name: t('quickLinks.contact'), sectionId: "contact" },
   ];
 
   const services = [
-    { name: "SAP Consulting", href: "#sap-consulting" },
-    { name: "E-Transformation", href: "#e-transformation" },
-    { name: "Financial Management", href: "#financial-management" },
-    { name: "Banking Solutions", href: "#banking-solutions" },
-    { name: "Digital Compliance", href: "#compliance" },
+    { name: t('services.sapConsulting'), href: "#sap-consulting" },
+    { name: t('services.eTransformation'), href: "#e-transformation" },
+    { name: t('services.financialManagement'), href: "#financial-management" },
+    { name: t('services.bankingSolutions'), href: "#banking-solutions" },
+    { name: t('services.digitalCompliance'), href: "#compliance" },
   ];
 
   const solutions = [
-    { name: "e-Invoice", href: "#e-invoice" },
-    { name: "e-Archive", href: "#e-archive" },
-    { name: "e-Ledger", href: "#e-ledger" },
-    { name: "IFRS 16", href: "#ifrs-16" },
-    { name: "VAT Processing", href: "#vat-processing" },
+    { name: t('solutions.eInvoice'), href: "#e-invoice" },
+    { name: t('solutions.eArchive'), href: "#e-archive" },
+    { name: t('solutions.eLedger'), href: "#e-ledger" },
+    { name: t('solutions.ifrs16'), href: "#ifrs-16" },
+    { name: t('solutions.vatProcessing'), href: "#vat-processing" },
   ];
 
   return (
@@ -133,7 +136,7 @@ const Footer = () => {
           {/* About Us / Quick Links */}
           <div>
             <h3 className="text-lg md:text-xl font-bold mb-4 md:mb-6 font-sora">
-              About Us
+              {t('quickLinks.title')}
             </h3>
             <ul className="space-y-2 md:space-y-3">
               {quickLinks.map((link, index) => (
@@ -161,7 +164,7 @@ const Footer = () => {
           {/* Links / Solutions */}
           <div>
             <h3 className="text-lg md:text-xl font-bold mb-4 md:mb-6 font-sora">
-              Links
+              {t('solutions.title')}
             </h3>
             <ul className="space-y-2 md:space-y-3">
               {solutions.map((solution, index) => (
@@ -180,7 +183,7 @@ const Footer = () => {
           {/* Our Services */}
           <div>
             <h3 className="text-lg md:text-xl font-bold mb-4 md:mb-6 font-sora">
-              Our Services
+              {t('services.title')}
             </h3>
             <ul className="space-y-2 md:space-y-3">
               {services.map((service, index) => (
@@ -204,26 +207,26 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between text-center md:text-left">
             <div className="text-gray-400 text-xs md:text-sm mb-4 md:mb-0 font-montserrat flex items-center gap-2">
               <Image src="/images/badges/sap-partner.png" alt="SAP Partner" width={50} height={50} className="grayscale hover:grayscale-0 transition-all duration-300" />
-              © 2024 ESM Information Technologies. All rights reserved.
+              {t('copyright')}
             </div>
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-xs md:text-sm">
               <a
                 href="#privacy"
                 className="text-gray-400 hover:text-sky-400 transition-colors duration-300 font-montserrat"
               >
-                Privacy Policy
+                {t('privacyPolicy')}
               </a>
               <a
                 href="#terms"
                 className="text-gray-400 hover:text-sky-400 transition-colors duration-300 font-montserrat"
               >
-                Terms of Service
+                {t('termsOfService')}
               </a>
               <a
                 href="#cookies"
                 className="text-gray-400 hover:text-sky-400 transition-colors duration-300 font-montserrat"
               >
-                Cookie Policy
+                {t('cookiePolicy')}
               </a>
             </div>
           </div>

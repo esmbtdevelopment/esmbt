@@ -1,50 +1,53 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 import { RiHandHeartLine, RiGlobalLine } from "react-icons/ri";
 import Slider from "../Slider";
 
 const Partners = () => {
+  const t = useTranslations('partners');
+
   const partners = [
     {
       name: "Turkcell",
       logo: "/partners/Turkcell.png",
-      description: "Leading telecommunications partner",
+      description: t('partnersList.turkcell'),
     },
     {
       name: "Sovos Digital Planet",
       logo: "/partners/Sovos Digital Planet.png",
-      description: "Global tax compliance solutions",
+      description: t('partnersList.sovos'),
     },
     {
       name: "Uyumsoft",
       logo: "/partners/Uyumsoft.png",
-      description: "Enterprise software solutions",
+      description: t('partnersList.uyumsoft'),
     },
     {
       name: "Payflex",
       logo: "/partners/Payflex.png",
-      description: "Payment and financial technology",
+      description: t('partnersList.payflex'),
     },
     {
       name: "Nes Bilgi",
       logo: "/partners/Nes Bilgi.png",
-      description: "Information technology services",
+      description: t('partnersList.nesBilgi'),
     },
     {
       name: "Idea Teknoloji",
       logo: "/partners/Idea Teknoloji.png",
-      description: "Technology innovation partner",
+      description: t('partnersList.ideaTeknoloji'),
     },
     {
       name: "ePlatform",
       logo: "/partners/eplatform.png",
-      description: "Digital platform solutions",
+      description: t('partnersList.eplatform'),
     },
     {
       name: "Edoksis",
       logo: "/partners/Edoksis.png",
-      description: "Document management systems",
+      description: t('partnersList.edoksis'),
     },
   ];
 
@@ -77,12 +80,11 @@ const Partners = () => {
         <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-16">
           <div className="flex flex-col mb-8 lg:mb-12 w-full lg:w-1/2">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6 font-sora px-4">
-              Strategic Technology
-              <span className="text-blue-600 block">Partnerships</span>
+              {t('subtitle')}
+              <span className="text-blue-600 block">{t('title')}</span>
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl leading-relaxed font-montserrat px-4">
-              We collaborate with industry-leading technology partners to deliver
-              comprehensive SAP and digital transformation solutions.
+              {t('description')}
             </p>
           </div>
 

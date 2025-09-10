@@ -1,5 +1,6 @@
 "use client";
 import React, { useRef, useState } from "react";
+import { useTranslations } from 'next-intl';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { RiTeamLine } from "react-icons/ri";
@@ -15,36 +16,39 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import Image from "next/image";
 import { PiChatTeardropTextThin } from "react-icons/pi";
+
 export default function Hero() {
   const [activeIndex, setActiveIndex] = useState(0);
   const swiperRef = useRef(null);
+  const t = useTranslations('hero');
+  const tCommon = useTranslations('common');
 
   const slides = [
     {
-      title: "ESMBT Products",
-      tabTitle: "ESMBT Products",
-      description: "Professional and reliable solutions for your business",
+      title: t('slides.products.title'),
+      tabTitle: t('slides.products.tabTitle'),
+      description: t('slides.products.description'),
       icon: <SiThunderbird />,
       image: "/images/hero-sap.webp",
     },
     {
-      title: "SAP Solutions",
-      tabTitle: "SAP Solutions",
-      description: "We serve as a trusted partner for SAP solutions, providing comprehensive support and implementation services to businesses across various industries.",
+      title: t('slides.sap.title'),
+      tabTitle: t('slides.sap.tabTitle'),
+      description: t('slides.sap.description'),
       icon: <RiTeamLine className="text-2xl" />,
       image: "/images/hero-esm.webp",
     },
     {
-      title: "Mobile Solutions",
-      tabTitle: "Mobile Solutions",
-      description: "We offer a range of mobile solutions to help businesses streamline their operations and improve efficiency.",
+      title: t('slides.mobile.title'),
+      tabTitle: t('slides.mobile.tabTitle'),
+      description: t('slides.mobile.description'),
       icon: <CiMobile2 />,
       image: "/images/hero-mobile.webp",
     },
     {
-      title: "Corporate Solutions",
-      tabTitle: "Corporate Solutions",
-      description: "Make your business more efficient and effective with our corporate solutions.",
+      title: t('slides.corporate.title'),
+      tabTitle: t('slides.corporate.tabTitle'),
+      description: t('slides.corporate.description'),
       icon: <GrUserWorker />,
       image: "/images/hero-financial.webp",
     },
@@ -91,15 +95,15 @@ export default function Hero() {
               width={1920}
               height={1080}
               className={`absolute top-0 left-0 w-full h-full object-cover z-0 transition-transform duration-[8000ms] ease-out ${activeIndex === index
-                  ? 'scale-110'
-                  : 'scale-100'
+                ? 'scale-110'
+                : 'scale-100'
                 }`}
               alt="teamwork"
             />
             <div
               className={`z-20 relative text-white flex flex-col items-start ml-0 md:ml-52 justify-center min-h-screen gap-4 md:gap-6 px-4 md:px-8 transition-all duration-1000 ${activeIndex === index
-                  ? 'opacity-100 translate-y-0 scale-100'
-                  : 'opacity-0 translate-y-8 scale-95'
+                ? 'opacity-100 translate-y-0 scale-100'
+                : 'opacity-0 translate-y-8 scale-95'
                 }`}
               style={{
                 transitionDelay: activeIndex === index ? '300ms' : '0ms',
@@ -107,8 +111,8 @@ export default function Hero() {
             >
               <h1
                 className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl transition-all duration-1000 font-bold font-sora tracking-wide leading-tight ${activeIndex === index
-                    ? 'opacity-100 translate-y-0'
-                    : 'opacity-0 translate-y-12'
+                  ? 'opacity-100 translate-y-0'
+                  : 'opacity-0 translate-y-12'
                   }`}
                 style={{
                   transitionDelay: activeIndex === index ? '500ms' : '0ms',
@@ -121,15 +125,15 @@ export default function Hero() {
               </p>
               <div
                 className={`flex flex-col sm:flex-row gap-3 sm:gap-4 w-full max-w-md transition-all duration-1000 ${activeIndex === index
-                    ? 'opacity-100 translate-y-0'
-                    : 'opacity-0 translate-y-8'
+                  ? 'opacity-100 translate-y-0'
+                  : 'opacity-0 translate-y-8'
                   }`}
                 style={{
                   transitionDelay: activeIndex === index ? '700ms' : '0ms',
                 }}
               >
                 <button className="btn btn-ghost btn-outline hover:bg-white btn-md rounded-lg font-light text-base sm:text-lg tracking-wider transition-all duration-300 hover:text-black w-full sm:w-auto flex items-center justify-center gap-2">
-                  Hear from us
+                  {tCommon('hearFromUs')}
                 </button>
               </div>
             </div>
@@ -164,16 +168,16 @@ export default function Hero() {
             >
               <span
                 className={`text-base sm:text-lg md:text-2xl transition-all duration-500 ${activeIndex === index
-                    ? 'scale-110 text-white drop-shadow-lg'
-                    : 'scale-100 text-white/70'
+                  ? 'scale-110 text-white drop-shadow-lg'
+                  : 'scale-100 text-white/70'
                   }`}
               >
                 {slide.icon}
               </span>
               <span
                 className={`font-medium text-xs sm:text-sm md:text-base text-center transition-all duration-500 leading-tight ${activeIndex === index
-                    ? 'text-white font-semibold drop-shadow-md'
-                    : 'text-white/70'
+                  ? 'text-white font-semibold drop-shadow-md'
+                  : 'text-white/70'
                   }`}
               >
                 {slide.tabTitle}

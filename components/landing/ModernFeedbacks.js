@@ -3,9 +3,11 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { RiArrowRightLine } from "react-icons/ri";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { useTranslations } from 'next-intl';
 
 const ModernFeedbacks = () => {
   const [activeTestimonial, setActiveTestimonial] = useState(0);
+  const t = useTranslations('testimonials');
 
   const testimonials = [
     {
@@ -92,12 +94,12 @@ const ModernFeedbacks = () => {
               {/* Professional badge */}
               <div className="inline-flex items-center space-x-2 sm:space-x-3 bg-gradient-to-r from-sky-100 to-blue-100 border border-sky-200 shadow-sm rounded-lg px-4 sm:px-6 py-2 sm:py-3 mb-6 sm:mb-8">
                 <div className="w-2 h-2 bg-sky-600 rounded-full"></div>
-                <span className="text-sky-700 font-semibold font-montserrat text-xs tracking-wide uppercase">Client Testimonials</span>
+                <span className="text-sky-700 font-semibold font-montserrat text-xs tracking-wide uppercase">{t('badge')}</span>
               </div>
 
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 sm:mb-8 font-sora leading-tight">
-                Enterprise Leaders <br className="hidden sm:block" />
-                <span className="text-sky-600">Trust Our Expertise</span>
+                {t('title')} <br className="hidden sm:block" />
+                <span className="text-sky-600">{t('subtitle')}</span>
               </h2>
 
               {/* Professional Navigation Controls */}
@@ -133,7 +135,7 @@ const ModernFeedbacks = () => {
 
               {/* Professional CTA Button */}
               <button className="group inline-flex items-center space-x-2 sm:space-x-3 bg-gradient-to-r from-sky-600 to-blue-600 text-white px-6 sm:px-8 py-3 sm:py-4 font-semibold hover:from-sky-700 hover:to-blue-700 transition-all duration-200 font-montserrat shadow-md hover:shadow-lg w-full sm:w-auto justify-center sm:justify-start">
-                <span className="text-sm sm:text-base">View All Case Studies</span>
+                <span className="text-sm sm:text-base">{t('viewAllCaseStudies')}</span>
                 <RiArrowRightLine className="text-base sm:text-lg group-hover:translate-x-1 transition-transform duration-200" />
               </button>
             </div>
@@ -152,7 +154,7 @@ const ModernFeedbacks = () => {
                   {/* Company verification badge */}
                   <div className="absolute top-4 right-4 sm:top-6 sm:right-6 flex items-center space-x-2 text-xs text-sky-600">
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    <span className="font-montserrat font-semibold">Verified Client</span>
+                    <span className="font-montserrat font-semibold">{t('verifiedClient')}</span>
                   </div>
 
                   {/* Professional rating */}
@@ -160,7 +162,7 @@ const ModernFeedbacks = () => {
                     {[...Array(currentTestimonial.rating)].map((_, i) => (
                       <div key={i} className="w-2 h-2 bg-sky-600 rounded-full"></div>
                     ))}
-                    <span className="ml-3 text-xs text-sky-600 font-montserrat font-semibold">Excellent</span>
+                    <span className="ml-3 text-xs text-sky-600 font-montserrat font-semibold">{t('excellent')}</span>
                   </div>
 
                   {/* Professional testimonial text */}

@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
+import { useTranslations } from 'next-intl';
 import {
   FaPhone,
   FaEnvelope,
@@ -9,50 +10,52 @@ import {
 import ContactForm from "./ContactForm";
 
 const Contact = () => {
+  const t = useTranslations('contact');
+  const tCommon = useTranslations('common');
 
   const contactInfo = [
     {
       icon: <FaMapMarkerAlt />,
-      label: "Our Location",
-      value: "United States",
-      description: "Nationwide SAP consulting services",
+      label: t('info.location.label'),
+      value: t('info.location.value'),
+      description: t('info.location.description'),
     },
     {
       icon: <FaPhone />,
-      label: "Phone Number",
-      value: "+1 202 555 0100",
-      description: "Available Mon-Fri, 9AM-6PM EST",
+      label: t('info.phone.label'),
+      value: t('info.phone.value'),
+      description: t('info.phone.description'),
     },
     {
       icon: <FaEnvelope />,
-      label: "Email Address",
-      value: "info@esmbt.com",
-      description: "We respond within 24 hours",
+      label: t('info.email.label'),
+      value: t('info.email.value'),
+      description: t('info.email.description'),
     },
   ];
 
   const processSteps = [
     {
       number: "1",
-      title: "Expert will reach out",
-      description: "An expert will reach out to you to discuss your specific needs and requirements.",
+      title: t('process.steps.step1.title'),
+      description: t('process.steps.step1.description'),
     },
     {
       number: "2",
-      title: "Sign NDA",
-      description: "We'll sign an NDA to ensure any sensitive information is kept secure and confidential.",
+      title: t('process.steps.step2.title'),
+      description: t('process.steps.step2.description'),
     },
     {
       number: "3",
-      title: "Customized proposal",
-      description: "We'll work with you to prepare a customized proposal based on the project's scope, timeline, and budget.",
+      title: t('process.steps.step3.title'),
+      description: t('process.steps.step3.description'),
     },
   ];
 
   const stats = [
-    { number: "20+", label: "years of expertise" },
-    { number: "950+", label: "projects" },
-    { number: "500+", label: "professionals" },
+    { number: "20+", label: tCommon('yearsOfExpertise') },
+    { number: "950+", label: tCommon('projects') },
+    { number: "500+", label: tCommon('professionals') },
   ];
 
   return (
@@ -61,11 +64,10 @@ const Contact = () => {
         {/* Section Header */}
         <div className="text-center mb-16 sm:mb-24 lg:mb-36 px-4">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 font-sora leading-tight">
-            Let&apos;s Transform Your Business Together
+            {t('subtitle')}
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed font-montserrat">
-            Ready to modernize your SAP operations? Our experts are here to guide
-            you through every step of your digital transformation journey.
+            {t('description')}
           </p>
         </div>
 
@@ -90,7 +92,7 @@ const Contact = () => {
             {/* Contact Information */}
             <div className="bg-gray-50/95 backdrop-blur-sm rounded-tr-none md:rounded-tr-[76px] rounded-br-[76px] md:rounded-br-none p-4 sm:p-6 border border-gray-200">
               <h3 className="text-base sm:text-lg font-bold text-gray-900 font-sora mb-4 sm:mb-6">
-                Get in Touch
+                {t('title')}
               </h3>
               <div className="space-y-3 sm:space-y-4">
                 {contactInfo.map((info, index) => (
@@ -117,7 +119,7 @@ const Contact = () => {
             {/* Process Steps */}
             <div className="bg-gray-900/95 backdrop-blur-sm rounded-br-[76px] p-4 sm:p-6">
               <h3 className="text-base sm:text-lg font-bold text-white font-sora mb-4 sm:mb-6">
-                What Happens Next?
+                {t('process.title')}
               </h3>
               <div className="space-y-3 sm:space-y-4">
                 {processSteps.map((step, index) => (

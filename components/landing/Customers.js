@@ -1,70 +1,72 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 import { RiStarLine, RiTrophyLine, RiShieldCheckLine } from "react-icons/ri";
 import ModernFeedbacks from "./ModernFeedbacks";
 
 const Customers = () => {
+  const t = useTranslations('customers');
   const customers = [
     {
       name: "Turkcell",
       logo: "/customers/turkcell.png",
-      industry: "Telecommunications",
+      industry: t('industries.telecommunications'),
     },
     {
       name: "Vodafone",
       logo: "/customers/vodafone.png",
-      industry: "Telecommunications",
+      industry: t('industries.telecommunications'),
     },
     {
       name: "Getir",
       logo: "/customers/getir.png",
-      industry: "E-commerce & Delivery",
+      industry: t('industries.ecommerceDelivery'),
     },
     {
       name: "Hakmar",
       logo: "/customers/Hakmar.png",
-      industry: "Retail",
+      industry: t('industries.retail'),
     },
     {
       name: "İstaç",
       logo: "/customers/İstaç.png",
-      industry: "Municipal Services",
+      industry: t('industries.municipalServices'),
     },
     {
       name: "Innova",
       logo: "/customers/innova.png",
-      industry: "Technology",
+      industry: t('industries.technology'),
     },
     {
       name: "İDO",
       logo: "/customers/ido.png",
-      industry: "Transportation",
+      industry: t('industries.transportation'),
     },
     {
       name: "Natura",
       logo: "/customers/natura.png",
-      industry: "Cosmetics",
+      industry: t('industries.cosmetics'),
     },
     {
       name: "Bizerba",
       logo: "/customers/Bizerba.png",
-      industry: "Industrial Technology",
+      industry: t('industries.industrialTechnology'),
     },
     {
       name: "Varian",
       logo: "/customers/varian.png",
-      industry: "Medical Technology",
+      industry: t('industries.medicalTechnology'),
     },
     {
       name: "Wahl",
       logo: "/customers/Wahl.jpg",
-      industry: "Consumer Products",
+      industry: t('industries.consumerProducts'),
     },
     {
       name: "Frimpeks",
       logo: "/customers/Frimpeks.png",
-      industry: "Textiles",
+      industry: t('industries.textiles'),
     },
   ];
 
@@ -95,12 +97,10 @@ const Customers = () => {
         {/* Section Header */}
         <div className="text-left mb-12">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 font-sora">
-            Trusted by Industry Leaders
+            {t('subtitle')}
           </h2>
           <p className="text-sm text-gray-600 max-w-2xl leading-relaxed font-montserrat">
-            From telecommunications giants to innovative startups, enterprises
-            across industries trust ESM for their SAP and digital transformation
-            needs.
+            {t('description')}
           </p>
         </div>
 

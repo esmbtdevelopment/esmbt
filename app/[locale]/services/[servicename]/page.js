@@ -1,12 +1,10 @@
 "use client";
 import React, { use } from "react";
 import { notFound } from "next/navigation";
+import { useTranslations } from 'next-intl';
 import {
     FaFileInvoiceDollar,
-    FaArchive,
     FaGlobe,
-    FaShoppingCart,
-    FaTruck,
     FaBook,
     FaReceipt,
     FaCashRegister,
@@ -15,12 +13,9 @@ import {
     FaCloud,
     FaChartLine,
     FaCheck,
-    FaClock,
     FaUsers,
     FaCogs,
-    FaLightbulb,
     FaArrowLeft,
-    FaStar
 } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
@@ -414,8 +409,63 @@ const serviceData = {
 };
 
 export default function ServiceDetailPage({ params }) {
-    const { servicename } = use(params);
-    const service = serviceData[servicename];
+    const { locale, servicename } = use(params);
+    const t = useTranslations('serviceDetails');
+    const tNav = useTranslations('navigation');
+
+    // Get service data with translations
+    const getServiceData = (serviceName) => {
+        const baseService = serviceData[serviceName];
+        if (!baseService) return null;
+
+        // Apply translations for e-invoice service
+        if (serviceName === 'e-invoice') {
+            return {
+                ...baseService,
+                title: t('eInvoice.title'),
+                subtitle: t('eInvoice.subtitle'),
+                heroDescription: t('eInvoice.heroDescription'),
+                fullDescription: t('eInvoice.fullDescription'),
+                benefits: [
+                    t('eInvoice.benefits.0'),
+                    t('eInvoice.benefits.1'),
+                    t('eInvoice.benefits.2'),
+                    t('eInvoice.benefits.3'),
+                    t('eInvoice.benefits.4'),
+                    t('eInvoice.benefits.5')
+                ],
+                features: [
+                    {
+                        title: t('eInvoice.features.automatedProcessing.title'),
+                        description: t('eInvoice.features.automatedProcessing.description'),
+                        icon: baseService.features[0].icon
+                    },
+                    {
+                        title: t('eInvoice.features.legalCompliance.title'),
+                        description: t('eInvoice.features.legalCompliance.description'),
+                        icon: baseService.features[1].icon
+                    },
+                    {
+                        title: t('eInvoice.features.realTimeTracking.title'),
+                        description: t('eInvoice.features.realTimeTracking.description'),
+                        icon: baseService.features[2].icon
+                    }
+                ],
+                implementation: [
+                    t('eInvoice.implementation.0'),
+                    t('eInvoice.implementation.1'),
+                    t('eInvoice.implementation.2'),
+                    t('eInvoice.implementation.3'),
+                    t('eInvoice.implementation.4'),
+                    t('eInvoice.implementation.5')
+                ]
+            };
+        }
+
+        return baseService;
+    };
+
+    const service = getServiceData(servicename);
 
     if (!service) {
         notFound();
@@ -429,11 +479,11 @@ export default function ServiceDetailPage({ params }) {
                     <div className="max-w-6xl mx-auto relative z-10">
                         {/* Back Button */}
                         <Link
-                            href="/services"
+                            href={`/${locale}/services`}
                             className="inline-flex items-center text-sky-400 hover:text-sky-300 mb-6 sm:mb-8 transition-colors duration-300"
                         >
                             <FaArrowLeft className="mr-2 text-sm" />
-                            <span className="text-sm sm:text-base">Back to Services</span>
+                            <span className="text-sm sm:text-base">{tNav('backToServices')}</span>
                         </Link>
 
                         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">

@@ -1,0 +1,631 @@
+{
+  "partners": {
+    "title": "Our Partners",
+    "subtitle": "Strategic Partnerships",
+    "description": "We collaborate with industry leaders to deliver exceptional solutions",
+    "partnersList": {
+      "turkcell": "Leading telecommunications partner",
+      "sovos": "Global tax compliance solutions", 
+      "uyumsoft": "Enterprise software solutions",
+      "payflex": "Payment and financial technology",
+      "nesBilgi": "Information technology services",
+      "ideaTeknoloji": "Technology innovation partner",
+      "eplatform": "Digital platform solutions",
+      "edoksis": "Document management systems"
+    }
+  },
+  "customers": {
+    "title": "Our Customers",
+    "subtitle": "Trusted by Industry Leaders",
+    "description": "We serve clients across various industries with our comprehensive solutions",
+    "industries": {
+      "telecommunications": "Telecommunications",
+      "ecommerceDelivery": "E-commerce & Delivery",
+      "retail": "Retail",
+      "municipalServices": "Municipal Services",
+      "technology": "Technology",
+      "transportation": "Transportation",
+      "cosmetics": "Cosmetics",
+      "industrialTechnology": "Industrial Technology",
+      "medicalTechnology": "Medical Technology",
+      "consumerProducts": "Consumer Products",
+      "textiles": "Textiles"
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Let's Transform Your Business Together",
+    "description": "Ready to modernize your SAP operations? Our experts are here to guide you through every step of your digital transformation journey.",
+    "info": {
+      "location": {
+        "label": "Our Location",
+        "value": "United States",
+        "description": "Nationwide SAP consulting services"
+      },
+      "phone": {
+        "label": "Phone Number",
+        "value": "+1 202 555 0100",
+        "description": "Available Mon-Fri, 9AM-6PM EST"
+      },
+      "email": {
+        "label": "Email Address",
+        "value": "info@esmbt.com",
+        "description": "We respond within 24 hours"
+      }
+    },
+    "process": {
+      "title": "Our Process",
+      "steps": {
+        "step1": {
+          "title": "Expert will reach out",
+          "description": "An expert will reach out to you to discuss your specific needs and requirements."
+        },
+        "step2": {
+          "title": "Sign NDA",
+          "description": "We'll sign an NDA to ensure any sensitive information is kept secure and confidential."
+        },
+        "step3": {
+          "title": "Customized proposal",
+          "description": "We'll work with you to prepare a customized proposal based on the project's scope, timeline, and budget."
+        }
+      }
+    },
+    "form": {
+      "title": "Request a Consultation",
+      "fields": {
+        "name": {
+          "label": "Full Name",
+          "placeholder": "Enter your full name"
+        },
+        "company": {
+          "label": "Company",
+          "placeholder": "Enter your company name"
+        },
+        "email": {
+          "label": "Email Address",
+          "placeholder": "Enter your email address"
+        },
+        "phone": {
+          "label": "Phone Number",
+          "placeholder": "Enter your phone number"
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Tell us about your project requirements..."
+        },
+        "attachment": {
+          "label": "Attach Files (Optional)",
+          "placeholder": "Choose files..."
+        }
+      },
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again.",
+      "privacyNotice": "By clicking Confirm, you confirm that you have read and understood the Privacy Policy. This site is protected by reCAPTCHA, the Google Privacy Policy, and the Terms of Service applied.",
+      "description": "Connect with our SAP specialists for enterprise solutions",
+      "errorRequiredFields": "Please fill in all required fields",
+      "errorInvalidEmail": "Please enter a valid email address"
+    }
+  },
+  "footer": {
+    "quickLinks": {
+      "title": "Quick Links",
+      "aboutUs": "About Us",
+      "services": "Our Services",
+      "partners": "Partners",
+      "customers": "Customers",
+      "contact": "Contact"
+    },
+    "services": {
+      "title": "Services",
+      "sapConsulting": "SAP Consulting",
+      "eTransformation": "E-Transformation",
+      "financialManagement": "Financial Management",
+      "bankingSolutions": "Banking Solutions",
+      "digitalCompliance": "Digital Compliance"
+    },
+    "solutions": {
+      "title": "Solutions",
+      "eInvoice": "e-Invoice",
+      "eArchive": "e-Archive",
+      "eLedger": "e-Ledger",
+      "ifrs16": "IFRS 16",
+      "vatProcessing": "VAT Processing"
+    },
+    "contact": {
+      "title": "Contact Information",
+      "phone": "+1 202 555 0100",
+      "email": "info@esmbt.com",
+      "address": "United States"
+    },
+    "newsletter": {
+      "title": "Stay Updated",
+      "subtitle": "Get the latest updates on SAP solutions and digital transformation trends.",
+      "placeholder": "Enter your email",
+      "button": "Subscribe"
+    },
+    "copyright": "© 2024 ESM Information Technologies. All rights reserved.",
+    "description": "Leading provider of SAP consulting and digital transformation solutions.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy"
+  },
+  "corporate": {
+    "title": "Corporate",
+    "aboutUs": {
+      "title": "About Us",
+      "subtitle": "Leading SAP Solutions Provider",
+      "description": "Learn more about our company, our mission, and our commitment to excellence in SAP consulting and digital transformation."
+    },
+    "team": {
+      "title": "Our Team",
+      "subtitle": "Expert Professionals",
+      "description": "Meet our experienced team of SAP consultants and digital transformation experts.",
+      "leadership": {
+        "ceo": {
+          "name": "Mehmet Özkan",
+          "position": "Chief Executive Officer & Founder",
+          "bio": "With over 20 years of experience in enterprise software and SAP consulting, Mehmet founded ESM with the vision of transforming businesses through innovative SAP solutions.",
+          "expertise": ["Strategic Leadership", "SAP Architecture", "Business Transformation"],
+          "education": "MBA in Business Administration, BSc in Computer Engineering",
+          "certifications": ["SAP Certified Solution Architect", "PMP Certified"]
+        },
+        "cto": {
+          "name": "Ayşe Demir",
+          "position": "Chief Technology Officer",
+          "bio": "Ayşe leads our technical vision with 15+ years in SAP development and system integration. She specializes in complex SAP implementations and digital transformation projects.",
+          "expertise": ["SAP Development", "System Integration", "Technical Architecture"],
+          "education": "MSc in Software Engineering, BSc in Computer Science",
+          "certifications": ["SAP Certified Development Professional", "TOGAF Certified"]
+        },
+        "cfo": {
+          "name": "Ahmet Yılmaz",
+          "position": "Chief Financial Officer",
+          "bio": "Ahmet brings extensive financial expertise and deep understanding of regulatory compliance, leading our financial transformation initiatives.",
+          "expertise": ["Financial Management", "Regulatory Compliance", "IFRS Implementation"],
+          "education": "MBA in Finance, BSc in Economics",
+          "certifications": ["CPA Certified", "IFRS Specialist"]
+        }
+      }
+    },
+    "vision": {
+      "title": "Vision & Mission",
+      "subtitle": "Our Purpose",
+      "description": "Discover our mission, vision, and the goals that guide our company",
+      "features": {
+        "mission": "Company Mission",
+        "future": "Future Vision",
+        "goals": "Strategic Goals"
+      },
+      "mission": {
+        "title": "Our Mission",
+        "description": "To empower enterprises through innovative SAP solutions and digital transformation, ensuring compliance while driving operational excellence.",
+        "points": {
+          "sapExcellence": {
+            "title": "SAP Excellence",
+            "description": "Deliver world-class SAP consulting and implementation services that transform business operations"
+          },
+          "regulatoryCompliance": {
+            "title": "Regulatory Compliance",
+            "description": "Ensure our clients meet all digital compliance requirements through innovative e-transformation solutions"
+          },
+          "clientPartnership": {
+            "title": "Client Partnership",
+            "description": "Build lasting partnerships by understanding unique business needs and delivering tailored solutions"
+          },
+          "businessGrowth": {
+            "title": "Business Growth",
+            "description": "Enable sustainable growth through technology-driven solutions and strategic digital transformation"
+          }
+        }
+      },
+      "vision": {
+        "title": "Our Vision",
+        "description": "To be the leading SAP consulting partner in the region, recognized for innovation, excellence, and transformative digital solutions.",
+        "goals": {
+          "innovation": {
+            "title": "Innovation Leadership",
+            "description": "Pioneer cutting-edge SAP solutions and digital transformation methodologies"
+          },
+          "excellence": {
+            "title": "Service Excellence",
+            "description": "Maintain the highest standards of service delivery and client satisfaction"
+          },
+          "growth": {
+            "title": "Sustainable Growth",
+            "description": "Expand our impact while maintaining our commitment to quality and innovation"
+          },
+          "partnership": {
+            "title": "Strategic Partnerships",
+            "description": "Build strong alliances with technology leaders and industry experts"
+          }
+        }
+      }
+    },
+    "badge": "Corporate Information",
+    "hero": {
+      "title": "Welcome to",
+      "companyName": "ESM Information Technologies",
+      "description": "Discover our company, meet our team, and learn about the vision that drives our commitment to SAP excellence and digital transformation."
+    },
+    "explore": {
+      "title": "Explore Our Company",
+      "description": "Get to know ESM Information Technologies through our comprehensive corporate information"
+    },
+    "aboutUs": {
+      "features": {
+        "overview": "Company Overview",
+        "values": "Our Values",
+        "principles": "Core Principles"
+      },
+      "values": {
+        "excellence": {
+          "title": "Excellence",
+          "description": "We are committed to delivering the highest quality SAP solutions and services, ensuring exceptional results for our clients."
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "We continuously embrace new technologies and methodologies to provide cutting-edge solutions that drive business growth."
+        },
+        "partnership": {
+          "title": "Partnership",
+          "description": "We build lasting partnerships with our clients, working collaboratively to achieve their business objectives and long-term success."
+        }
+      },
+      "achievements": {
+        "sapPartner": {
+          "title": "SAP Certified Partner",
+          "description": "Official SAP partner status with certified consultants and proven track record"
+        },
+        "international": {
+          "title": "International Presence",
+          "description": "Serving clients globally with localized expertise and support"
+        },
+        "experience": {
+          "title": "15+ Years Experience",
+          "description": "Decade and a half of expertise in SAP consulting and digital transformation"
+        }
+      },
+      "services": {
+        "sapConsulting": {
+          "title": "SAP Consulting & Implementation",
+          "description": "Comprehensive SAP solutions from planning to deployment and optimization"
+        },
+        "compliance": {
+          "title": "Digital Compliance Solutions",
+          "description": "E-Invoice, E-Archive, E-Ledger, and regulatory compliance automation"
+        },
+        "financial": {
+          "title": "Financial Management",
+          "description": "Advanced financial tools including VAT processing and IFRS solutions"
+        },
+        "transformation": {
+          "title": "Digital Transformation",
+          "description": "Complete business digitalization and process automation services"
+        }
+      },
+      "timeline": {
+        "founded": {
+          "year": "2008",
+          "title": "Company Founded",
+          "description": "ESM Information Technologies established with a vision to transform businesses through technology"
+        },
+        "partnership": {
+          "year": "2012",
+          "title": "SAP Partnership",
+          "description": "Became an official SAP partner, expanding our capabilities in enterprise solutions"
+        },
+        "compliance": {
+          "year": "2016",
+          "title": "Digital Compliance Leader",
+          "description": "Pioneered e-transformation solutions in Turkey, becoming a market leader"
+        },
+        "expansion": {
+          "year": "2020",
+          "title": "International Expansion",
+          "description": "Extended services globally, serving clients across multiple countries"
+        },
+        "innovation": {
+          "year": "2024",
+          "title": "Innovation Hub",
+          "description": "Established as a leading innovation hub for SAP-native digital solutions"
+        }
+      }
+    },
+    "team": {
+      "features": {
+        "leadership": "Leadership Team",
+        "specialists": "SAP Specialists",
+        "experts": "Technical Experts"
+      }
+    },
+    "stats": {
+      "yearsOfExcellence": "Years of Excellence",
+      "successfulProjects": "Successful Projects",
+      "enterpriseClients": "Enterprise Clients",
+      "expertTeamMembers": "Expert Team Members"
+    },
+    "viewOurServices": "View Our Services",
+    "description": "Ready to transform your business with our SAP expertise? Contact us today to discuss your digital transformation needs."
+  },
+  "metadata": {
+    "title": "ESM - Digital Transformation & Technology Solutions",
+    "description": "SAP solutions, digital transformation consultancy and enterprise software development services."
+  },
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "corporate": "Corporate",
+    "about": "About Us",
+    "team": "Our Team",
+    "vision": "Vision & Mission",
+    "contact": "Contact",
+    "backToServices": "Back to Services",
+    "references": "References",
+    "products": "Products",
+    "enterpriseSolutions": "Enterprise Solutions",
+    "cloudPlatform": "Cloud Platform",
+    "customDevelopment": "Custom Development",
+    "eInvoiceSolutions": "E-Invoice Solutions",
+    "eCommercePlatform": "E-Commerce Platform",
+    "digitalTransformation": "Digital Transformation",
+    "viewAllServices": "View All Services",
+    "dropdown": {
+      "corporate": {
+        "aboutDescription": "Learn about our company",
+        "teamDescription": "Meet our experts",
+        "visionDescription": "Our goals and values"
+      },
+      "products": {
+        "enterpriseDescription": "Comprehensive business tools",
+        "cloudDescription": "Scalable cloud services",
+        "customDescription": "Tailored software solutions"
+      },
+      "services": {
+        "eInvoiceDescription": "Digital invoicing and compliance",
+        "eCommerceDescription": "Complete online business tools",
+        "digitalTransformationDescription": "Full business digitalization",
+        "viewAllDescription": "Explore our complete service portfolio"
+      }
+    }
+  },
+  "common": {
+    "hearFromUs": "Hear from us",
+    "learnMore": "Learn More",
+    "getFreeConsultation": "Get Free Consultation",
+    "startWithEInvoice": "Start with E-Invoice",
+    "contactUsToday": "Contact Us Today",
+    "expertiseWeBring": "Expertise We Bring To The Table",
+    "yearsOfExpertise": "years of expertise",
+    "projects": "projects",
+    "professionals": "professionals",
+    "readyToWorkWithUs": "Ready to Work With Us?",
+    "whoWeAre": "Who We Are",
+    "ourExpertise": "Our Expertise",
+    "bonusExpertise": "BONUS EXPERTISE",
+    "evenMoreWaysWeCanHelp": "Even More Ways We Can Help",
+    "sapNative": "100% SAP-Native",
+    "everythingWeBuild": "Everything we build works natively with SAP - no awkward integrations needed"
+  },
+  "hero": {
+    "title": "Digital Transformation & Technology Solutions",
+    "subtitle": "SAP solutions, digital transformation consultancy and enterprise software development services.",
+    "cta": {
+      "consultation": "Schedule SAP Consultation",
+      "solutions": "View Our Solutions"
+    },
+    "slides": {
+      "products": {
+        "title": "ESMBT Products",
+        "tabTitle": "ESMBT Products",
+        "description": "Professional and reliable solutions for your business"
+      },
+      "sap": {
+        "title": "SAP Solutions",
+        "tabTitle": "SAP Solutions",
+        "description": "We serve as a trusted partner for SAP solutions, providing comprehensive support and implementation services to businesses across various industries."
+      },
+      "mobile": {
+        "title": "Mobile Solutions",
+        "tabTitle": "Mobile Solutions",
+        "description": "We offer a range of mobile solutions to help businesses streamline their operations and improve efficiency."
+      },
+      "eadisyon": {
+        "title": "E-Order Receipt",
+        "description": "E-Adisyon revolutionizes restaurant order management with digital receipt solutions. Streamline your food service operations with electronic order receipts that improve efficiency, reduce waste, and provide better customer service experience.",
+        "features": {
+          "digitalReceipts": "Digital Receipts",
+          "orderManagement": "Order Management",
+          "customerExperience": "Customer Experience",
+          "costEfficiency": "Cost Efficiency"
+        }
+      },
+      "corporate": {
+        "title": "Corporate Solutions",
+        "tabTitle": "Corporate Solutions",
+        "description": "Make your business more efficient and effective with our corporate solutions."
+      }
+    }
+  },
+  "serviceDetails": {
+    "eInvoice": {
+      "title": "E-Invoice",
+      "subtitle": "Digital Invoice Solutions",
+      "heroDescription": "Transform your invoicing process with secure, automated digital solutions that ensure compliance while reducing costs and improving efficiency.",
+      "fullDescription": "E-Invoice is not just a digital transformation tool, but also an investment in the future of your business. Our comprehensive e-invoicing solution ensures seamless compliance with local and international regulations while dramatically reducing processing time and operational costs. Built with enterprise-grade security and scalability in mind.",
+      "benefits": {
+        "0": "Reduce invoice processing time by up to 80%",
+        "1": "Ensure 100% legal compliance with tax regulations",
+        "2": "Lower operational costs through automation",
+        "3": "Real-time invoice tracking and status updates",
+        "4": "Seamless integration with existing ERP systems",
+        "5": "Enhanced security with digital signatures"
+      },
+      "features": {
+        "automatedProcessing": {
+          "title": "Automated Processing",
+          "description": "Intelligent automation handles invoice generation, validation, and submission without manual intervention."
+        },
+        "legalCompliance": {
+          "title": "Legal Compliance",
+          "description": "Built-in compliance checks ensure all invoices meet local tax authority requirements and regulations."
+        },
+        "realTimeTracking": {
+          "title": "Real-time Tracking",
+          "description": "Monitor invoice status in real-time with detailed tracking and delivery confirmations."
+        }
+      },
+      "implementation": {
+        "0": "Initial consultation and requirement analysis",
+        "1": "System integration planning and setup",
+        "2": "Data migration and testing phase",
+        "3": "Staff training and knowledge transfer",
+        "4": "Go-live support and monitoring",
+        "5": "Ongoing maintenance and updates"
+      }
+    }
+  },
+  "about": {
+    "title": "Specialized SAP Consulting for",
+    "subtitle": "Financial Transformation",
+    "description": "ESM Information Technologies is a specialized SAP consulting and technology firm focused on driving financial transformation and digital compliance for enterprises.",
+    "teamImageAlt": "ESM SAP Consulting Team",
+    "mainTitle": "Empowering Enterprises Through SAP Excellence",
+    "paragraph1": "We deliver end-to-end SAP integration and optimization services, empowering organizations to streamline financial operations, enhance regulatory compliance, and digitize core processes with confidence.",
+    "paragraph2": "Our expertise spans expert SAP consulting, implementation, and support tailored to financial transformation, IFRS adaptation, and process automation. We provide comprehensive SAP-native solutions that simplify complex financial tasks and reduce operational costs.",
+    "paragraph3": "With a deep focus on automation, compliance, and SAP-native design, we enable enterprises to meet evolving digital and regulatory demands while maintaining the highest standards of data security and operational efficiency.",
+    "stats": {
+      "experience": "Years Experience",
+      "implementations": "SAP Implementations", 
+      "clients": "Enterprise Clients",
+      "specialists": "SAP Specialists"
+    },
+    "values": {
+      "sapNative": {
+        "title": "SAP-Native Design",
+        "description": "All solutions built specifically for SAP environments with seamless integration"
+      },
+      "compliance": {
+        "title": "Regulatory Compliance", 
+        "description": "Expert guidance on digital tax requirements and evolving regulatory demands"
+      },
+      "transformation": {
+        "title": "Financial Transformation",
+        "description": "Specialized focus on streamlining financial operations and process automation"
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "Client Testimonials",
+    "title": "Enterprise Leaders",
+    "subtitle": "Trust Our Expertise",
+    "excellent": "Excellent",
+    "verifiedClient": "Verified Client",
+    "viewAllCaseStudies": "View All Case Studies"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive SAP Solutions",
+    "description": "We provide end-to-end SAP consulting and digital transformation services tailored to your business needs.",
+    "landing": {
+      "ecommerce": {
+        "title": "E-Commerce",
+        "description": "E-Commerce solutions that power your online business growth with integrated digital sales platforms. From inventory management to customer experience, our comprehensive e-commerce tools help you build, manage, and scale your online presence effectively.",
+        "features": {
+          "storeManagement": "Online Store Management",
+          "paymentIntegration": "Payment Integration",
+          "inventoryControl": "Inventory Control",
+          "customerAnalytics": "Customer Analytics"
+        }
+      },
+      "earchive": {
+        "title": "E-Archive Invoice",
+        "description": "E-Archive Invoice provides secure, long-term storage solutions for your digital invoices with full legal compliance. Never worry about document retention again - our robust archiving system ensures your invoices are safely stored, easily accessible, and always audit-ready.",
+        "features": {
+          "secureStorage": "Secure Storage",
+          "legalCompliance": "Legal Compliance",
+          "easyRetrieval": "Easy Retrieval",
+          "auditReady": "Audit Ready"
+        }
+      },
+      "einvoice": {
+        "title": "E-Invoice",
+        "description": "E-Invoice is not just a digital transformation tool, but also an investment in the future of your business. It ensures seamless compliance while saving time and costs. Transform your invoicing process with secure, automated digital solutions that streamline operations and enhance business efficiency.",
+        "features": {
+          "legalCompliance": "Legal Compliance",
+          "costReduction": "Cost Reduction",
+          "automatedProcessing": "Automated Processing",
+          "realTimeTracking": "Real-time Tracking"
+        }
+      },
+      "eexport": {
+        "title": "E-Export",
+        "description": "E-Export simplifies international trade with digital export documentation and compliance solutions. Expand your global reach with confidence, knowing that all export procedures are digitally managed, compliant, and efficient for seamless international business operations.",
+        "features": {
+          "exportDocumentation": "Export Documentation",
+          "complianceManagement": "Compliance Management",
+          "internationalStandards": "International Standards",
+          "processAutomation": "Process Automation"
+        }
+      },
+      "edelivery": {
+        "title": "E-Delivery Note",
+        "description": "Digitize your delivery process with electronic delivery notes that ensure accurate tracking, reduce paperwork, and improve logistics efficiency. Our e-delivery solution provides real-time visibility into your supply chain operations.",
+        "features": {
+          "digitalTracking": "Digital Tracking",
+          "logisticsOptimization": "Logistics Optimization",
+          "paperlessProcess": "Paperless Process",
+          "realTimeUpdates": "Real-time Updates"
+        }
+      },
+      "eledger": {
+        "title": "E-Ledger",
+        "description": "Maintain comprehensive digital ledgers with our advanced e-ledger system. Ensure accurate financial record-keeping, streamline accounting processes, and maintain full audit trails with automated ledger management.",
+        "features": {
+          "financialReporting": "Financial Reporting",
+          "auditTrails": "Audit Trails",
+          "automatedEntries": "Automated Entries",
+          "complianceManagement": "Compliance Management"
+        }
+      },
+      "restaurant": {
+        "title": "Restaurant Management",
+        "description": "Complete restaurant management solution that covers everything from order taking to inventory management. Optimize your restaurant operations with integrated POS systems, kitchen management, and customer service tools.",
+        "features": {
+          "posSystem": "POS System",
+          "kitchenManagement": "Kitchen Management",
+          "inventoryTracking": "Inventory Tracking",
+          "customerService": "Customer Service"
+        }
+      }
+    },
+    "categories": {
+      "consulting": {
+        "title": "SAP Consulting & Implementation",
+        "description": "End-to-end SAP integration, optimization, and expert consulting services"
+      },
+      "transformation": {
+        "title": "E-Transformation Solutions",
+        "description": "SAP-native e-Invoice, e-Archive, e-Ledger, and e-Declaration compliance"
+      },
+      "financial": {
+        "title": "Financial Management Tools",
+        "description": "VAT processing, IFRS 16, loan tracking, and inflation accounting solutions"
+      },
+      "banking": {
+        "title": "Banking & Treasury Operations",
+        "description": "Bulk payments, e-Account statements, virtual POS, and stock financing"
+      }
+    },
+    "additionalServices": {
+      "title": "Additional Services",
+      "description": "Our expert team is ready to help you implement the right digital solutions for your business needs. Get started with a free consultation today.",
+      "item1": "IFRS 16 Compliance & Adaptation",
+      "item2": "Collateral Management Systems",
+      "item3": "SAP Data Masking & Protection",
+      "item4": "Inflation Accounting Solutions",
+      "item5": "Loan & Collection Tracking"
+    }
+  }
+}

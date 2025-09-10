@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { useTranslations } from 'next-intl';
 import Image from "next/image";
 import {
     FaUsers,
@@ -18,37 +19,39 @@ import {
 import { goToContact, goToReferences } from "@/utils/navigation";
 
 export default function OurTeamPage() {
+    const t = useTranslations('corporate.team');
+
     const leadership = [
         {
-            name: "Mehmet Özkan",
-            position: "Chief Executive Officer & Founder",
+            name: t('leadership.ceo.name'),
+            position: t('leadership.ceo.position'),
             image: "/images/team/ceo.jpg", // Placeholder - you can add actual images
-            bio: "With over 20 years of experience in enterprise software and SAP consulting, Mehmet founded ESM with the vision of transforming businesses through innovative SAP solutions.",
-            expertise: ["Strategic Leadership", "SAP Architecture", "Business Transformation"],
-            education: "MBA in Business Administration, BSc in Computer Engineering",
-            certifications: ["SAP Certified Solution Architect", "PMP Certified"],
+            bio: t('leadership.ceo.bio'),
+            expertise: t('leadership.ceo.expertise'),
+            education: t('leadership.ceo.education'),
+            certifications: t('leadership.ceo.certifications'),
             linkedin: "#",
             email: "mehmet.ozkan@esmbt.com"
         },
         {
-            name: "Ayşe Demir",
-            position: "Chief Technology Officer",
+            name: t('leadership.cto.name'),
+            position: t('leadership.cto.position'),
             image: "/images/team/cto.jpg",
-            bio: "Ayşe leads our technical vision with 15+ years in SAP development and system integration. She specializes in complex SAP implementations and digital transformation projects.",
-            expertise: ["SAP Development", "System Integration", "Technical Architecture"],
-            education: "MSc in Software Engineering, BSc in Computer Science",
-            certifications: ["SAP Certified Development Professional", "TOGAF Certified"],
+            bio: t('leadership.cto.bio'),
+            expertise: t('leadership.cto.expertise'),
+            education: t('leadership.cto.education'),
+            certifications: t('leadership.cto.certifications'),
             linkedin: "#",
             email: "ayse.demir@esmbt.com"
         },
         {
-            name: "Ahmet Yılmaz",
-            position: "Chief Financial Officer",
+            name: t('leadership.cfo.name'),
+            position: t('leadership.cfo.position'),
             image: "/images/team/cfo.jpg",
-            bio: "Ahmet brings extensive financial expertise and deep understanding of regulatory compliance, leading our financial transformation initiatives.",
-            expertise: ["Financial Management", "Regulatory Compliance", "IFRS Implementation"],
-            education: "CPA, MSc in Finance, BSc in Accounting",
-            certifications: ["Certified Public Accountant", "SAP FI/CO Certified"],
+            bio: t('leadership.cfo.bio'),
+            expertise: t('leadership.cfo.expertise'),
+            education: t('leadership.cfo.education'),
+            certifications: t('leadership.cfo.certifications'),
             linkedin: "#",
             email: "ahmet.yilmaz@esmbt.com"
         }

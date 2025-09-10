@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
+import { useTranslations, useLocale } from 'next-intl';
+import { useRouter } from 'next/navigation';
 import {
   FaPhone,
   FaEnvelope,
@@ -21,18 +23,8 @@ import {
   FaShieldAlt,
   FaChartLine,
 } from "react-icons/fa";
-import { goToContact, goToReferences } from "@/utils/navigation";
-
-// Custom hook to check if we're on the client side
-const useIsClient = () => {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  return isClient;
-};
+import { goToContact, goToReferences, getCurrentLocale } from "@/utils/navigation";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -41,7 +33,10 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const navRef = useRef(null);
   const dropdownTimeoutRef = useRef(null);
-  const isClient = useIsClient();
+
+  const t = useTranslations('navigation');
+  const locale = useLocale();
+  const router = useRouter();
 
   const handleMouseEnter = (dropdown) => {
     // Clear any existing timeout
@@ -65,8 +60,6 @@ const Navbar = () => {
 
   // Handle scroll for sticky navbar background
   useEffect(() => {
-    if (!isClient) return;
-
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       setIsScrolled(scrollPosition > 50);
@@ -76,7 +69,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [isClient]);
+  }, []);
 
   // Cleanup timeout on component unmount
   useEffect(() => {
@@ -89,8 +82,6 @@ const Navbar = () => {
 
   // Close mobile menu when switching to desktop view
   useEffect(() => {
-    if (!isClient) return;
-
     const handleResize = () => {
       if (window.innerWidth >= 768) {
         setIsMobileMenuOpen(false);
@@ -102,26 +93,27 @@ const Navbar = () => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, [isClient]);
+  }, []);
 
   const dropdownContent = {
     corporate: [
-      { title: "About Us", description: "Learn about our company", icon: FaBuilding, link: "/corporate/about-us" },
-      { title: "Our Team", description: "Meet our experts", icon: FaUsers, link: "/corporate/our-team" },
-      { title: "Mission & Vision", description: "Our goals and values", icon: FaHandshake, link: "/corporate/vision-and-mission" },
+      { title: t('about'), description: t('dropdown.corporate.aboutDescription'), icon: FaBuilding, link: `/${locale}/corporate/about-us` },
+      { title: t('team'), description: t('dropdown.corporate.teamDescription'), icon: FaUsers, link: `/${locale}/corporate/our-team` },
+      { title: t('vision'), description: t('dropdown.corporate.visionDescription'), icon: FaHandshake, link: `/${locale}/corporate/vision-and-mission` },
     ],
     products: [
-      { title: "Enterprise Solutions", description: "Comprehensive business tools", icon: FaCogs },
-      { title: "Cloud Platform", description: "Scalable cloud services", icon: FaCloud },
-      { title: "Custom Development", description: "Tailored software solutions", icon: FaCode },
+      { title: t('enterpriseSolutions'), description: t('dropdown.products.enterpriseDescription'), icon: FaCogs },
+      { title: t('cloudPlatform'), description: t('dropdown.products.cloudDescription'), icon: FaCloud },
+      { title: t('customDevelopment'), description: t('dropdown.products.customDescription'), icon: FaCode },
     ],
     services: [
-      { title: "E-Invoice Solutions", description: "Digital invoicing and compliance", icon: FaChartLine, link: "/services/e-invoice" },
-      { title: "E-Commerce Platform", description: "Complete online business tools", icon: FaCogs, link: "/services/e-commerce" },
-      { title: "Digital Transformation", description: "Full business digitalization", icon: FaShieldAlt, link: "/services/services" },
-      { title: "View All Services", description: "Explore our complete service portfolio", icon: FaChartLine, link: "/services", highlight: true },
+      { title: t('eInvoiceSolutions'), description: t('dropdown.services.eInvoiceDescription'), icon: FaChartLine, link: `/${locale}/services/e-invoice` },
+      { title: t('eCommercePlatform'), description: t('dropdown.services.eCommerceDescription'), icon: FaCogs, link: `/${locale}/services/e-commerce` },
+      { title: t('digitalTransformation'), description: t('dropdown.services.digitalTransformationDescription'), icon: FaShieldAlt, link: `/${locale}/services/services` },
+      { title: t('viewAllServices'), description: t('dropdown.services.viewAllDescription'), icon: FaChartLine, link: `/${locale}/services`, highlight: true },
     ],
   };
+
   return (
     <nav ref={navRef} className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-gray-900/95 backdrop-blur-lg shadow-lg' : 'bg-transparent'
       }`}>
@@ -131,7 +123,7 @@ const Navbar = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <div className="flex items-center space-x-3 hover:cursor-pointer" onClick={() => window.location.href = '/'}>
+            <div className="flex items-center space-x-3 hover:cursor-pointer" onClick={() => router.push(`/${locale}`)}>
               <Image
                 src="/images/logo.webp"
                 alt="ESMBT"
@@ -152,7 +144,7 @@ const Navbar = () => {
                 onMouseLeave={() => handleMouseLeave('corporate')}
               >
                 <button className="relative flex items-center space-x-1 text-white hover:cursor-pointer transition-all duration-300 px-4 py-2 rounded-lg hover:bg-white/10 hover:backdrop-blur-sm">
-                  <span className="uppercase tracking-widest text-xs md:text-sm">Corporate</span>
+                  <span className="uppercase tracking-widest text-xs md:text-sm">{t('corporate')}</span>
                   <FaChevronDown
                     className={`text-xs transition-transform duration-200 ${activeDropdown === 'corporate' ? 'rotate-180' : 'rotate-0'
                       }`}
@@ -190,7 +182,7 @@ const Navbar = () => {
                 onMouseLeave={() => handleMouseLeave('products')}
               >
                 <button className="relative flex items-center space-x-1 text-white hover:cursor-pointer transition-all duration-300 px-4 py-2 rounded-lg hover:bg-white/10 hover:backdrop-blur-sm">
-                  <span className="uppercase tracking-widest text-xs md:text-sm">Products</span>
+                  <span className="uppercase tracking-widest text-xs md:text-sm">{t('products')}</span>
                   <FaChevronDown
                     className={`text-xs transition-transform duration-200 ${activeDropdown === 'products' ? 'rotate-180' : 'rotate-0'
                       }`}
@@ -228,7 +220,7 @@ const Navbar = () => {
                 onMouseLeave={() => handleMouseLeave('services')}
               >
                 <button className="relative flex items-center space-x-1 text-white hover:cursor-pointer transition-all duration-300 px-4 py-2 rounded-lg hover:bg-white/10 hover:backdrop-blur-sm">
-                  <span className="uppercase tracking-widest text-xs md:text-sm">Services</span>
+                  <span className="uppercase tracking-widest text-xs md:text-sm">{t('services')}</span>
                   <FaChevronDown
                     className={`text-xs transition-transform duration-200 ${activeDropdown === 'services' ? 'rotate-180' : 'rotate-0'
                       }`}
@@ -264,15 +256,18 @@ const Navbar = () => {
                 onClick={goToReferences}
                 className="text-white hover:cursor-pointer uppercase tracking-widest transition-all duration-300 px-4 py-2 rounded-lg hover:bg-white/10 hover:backdrop-blur-sm text-xs md:text-sm"
               >
-                References
+                {t('references')}
               </button>
+
+              {/* Language Switcher */}
+              <LanguageSwitcher />
 
               {/* Modern Contact Button with Darker Gradient */}
               <button
                 onClick={goToContact}
                 className="relative px-4 py-2 text-xs md:text-sm bg-gradient-to-r from-slate-700 to-slate-900 hover:from-slate-800 hover:to-black text-white rounded-full shadow-lg hover:shadow-xl transform transition-all duration-300 uppercase tracking-widest font-semibold border border-slate-600"
               >
-                <span className="relative z-10 text-xs">Contact Us</span>
+                <span className="relative z-10 text-xs">{t('contact')}</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-slate-600 to-slate-800 rounded-full opacity-0 hover:opacity-30 transition-opacity duration-300"></div>
               </button>
 

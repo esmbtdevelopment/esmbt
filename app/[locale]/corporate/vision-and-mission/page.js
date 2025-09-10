@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { useTranslations } from 'next-intl';
 import Image from "next/image";
 import {
     FaHandshake,
@@ -28,49 +29,51 @@ import {
 import { goToContact, goToReferences } from "@/utils/navigation";
 
 export default function VisionMissionPage() {
+    const t = useTranslations('corporate.vision');
+
     const missionPoints = [
         {
             icon: <FaCogs className="text-xl" />,
-            title: "SAP Excellence",
-            description: "Deliver world-class SAP consulting and implementation services that transform business operations"
+            title: t('mission.points.sapExcellence.title'),
+            description: t('mission.points.sapExcellence.description')
         },
         {
             icon: <FaShieldAlt className="text-xl" />,
-            title: "Regulatory Compliance",
-            description: "Ensure our clients meet all digital compliance requirements through innovative e-transformation solutions"
+            title: t('mission.points.regulatoryCompliance.title'),
+            description: t('mission.points.regulatoryCompliance.description')
         },
         {
             icon: <FaUsers className="text-xl" />,
-            title: "Client Partnership",
-            description: "Build lasting partnerships by understanding unique business needs and delivering tailored solutions"
+            title: t('mission.points.clientPartnership.title'),
+            description: t('mission.points.clientPartnership.description')
         },
         {
             icon: <FaChartLine className="text-xl" />,
-            title: "Business Growth",
-            description: "Enable sustainable business growth through digital transformation and process optimization"
+            title: t('mission.points.businessGrowth.title'),
+            description: t('mission.points.businessGrowth.description')
         }
     ];
 
     const visionElements = [
         {
             icon: <FaGlobe className="text-xl" />,
-            title: "Global Leadership",
-            description: "To be the leading SAP consulting firm recognized worldwide for innovation and excellence"
+            title: t('vision.goals.innovation.title'),
+            description: t('vision.goals.innovation.description')
         },
         {
             icon: <FaRocket className="text-xl" />,
-            title: "Technology Pioneer",
-            description: "Pioneer cutting-edge SAP-native solutions that set industry standards"
+            title: t('vision.goals.excellence.title'),
+            description: t('vision.goals.excellence.description')
         },
         {
             icon: <FaLightbulb className="text-xl" />,
-            title: "Innovation Hub",
-            description: "Create an ecosystem where innovation thrives and transforms business landscapes"
+            title: t('vision.goals.growth.title'),
+            description: t('vision.goals.growth.description')
         },
         {
             icon: <FaHeart className="text-xl" />,
-            title: "Trusted Partner",
-            description: "Be the most trusted partner for enterprises embarking on digital transformation journeys"
+            title: t('vision.goals.partnership.title'),
+            description: t('vision.goals.partnership.description')
         }
     ];
 

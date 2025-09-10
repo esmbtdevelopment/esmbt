@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { useTranslations } from 'next-intl';
 import { toast } from "react-hot-toast";
 import {
     FaPhone,
@@ -10,6 +11,7 @@ import {
 } from "react-icons/fa";
 
 const ContactForm = () => {
+    const t = useTranslations('contact.form');
     const [formData, setFormData] = useState({
         name: "",
         company: "",
@@ -39,7 +41,7 @@ const ContactForm = () => {
 
         // Basic validation
         if (!formData.name || !formData.email) {
-            toast.error("Please fill in all required fields");
+            toast.error(t('errorRequiredFields'));
             setIsSubmitting(false);
             return;
         }
@@ -47,7 +49,7 @@ const ContactForm = () => {
         // Email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(formData.email)) {
-            toast.error("Please enter a valid email address");
+            toast.error(t('errorInvalidEmail'));
             setIsSubmitting(false);
             return;
         }
@@ -82,10 +84,10 @@ const ContactForm = () => {
         <div className="bg-white/95 backdrop-blur-sm rounded-tl-[76px] rounded-box shadow-lg p-8 lg:p-10 border border-gray-200">
             <div className="mb-6 sm:mb-8">
                 <h3 className="text-base sm:text-lg font-bold text-gray-900 font-sora mb-2">
-                    Request a Consultation
+                    {t('title')}
                 </h3>
                 <p className="text-gray-600 font-montserrat text-xs sm:text-sm">
-                    Connect with our SAP specialists for enterprise solutions
+                    {t('description')}
                 </p>
             </div>
 
@@ -102,7 +104,7 @@ const ContactForm = () => {
                                 name="name"
                                 value={formData.name}
                                 onChange={handleInputChange}
-                                placeholder="Enter your full name"
+                                placeholder={t('fields.name.placeholder')}
                                 className="w-full pl-10 sm:pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-sky-500 font-montserrat text-sm"
                                 required
                             />
@@ -120,7 +122,7 @@ const ContactForm = () => {
                                 name="company"
                                 value={formData.company}
                                 onChange={handleInputChange}
-                                placeholder="Your company name"
+                                placeholder={t('fields.company.placeholder')}
                                 className="w-full pl-10 sm:pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-sky-500 font-montserrat text-sm"
                             />
                         </div>
@@ -147,7 +149,7 @@ const ContactForm = () => {
 
                 <div className="relative">
                     <label className="block text-xs font-semibold text-gray-700 mb-2 font-montserrat">
-                        Phone Number
+                        {t('fields.phone.label')}
                     </label>
                     <div className="relative">
                         <FaPhone className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm" />
@@ -156,7 +158,7 @@ const ContactForm = () => {
                             name="phone"
                             value={formData.phone}
                             onChange={handleInputChange}
-                            placeholder="+1 (555) 000-0000"
+                            placeholder={t('fields.phone.placeholder')}
                             className="w-full pl-10 sm:pl-12 pr-4 py-3 sm:py-4 border-2 text-sm border-gray-200 rounded-xl focus:ring-4 focus:ring-sky-200 focus:border-sky-500 transition-all duration-300 font-montserrat hover:border-sky-300 bg-white/50 backdrop-blur-sm"
                         />
                     </div>
@@ -164,13 +166,13 @@ const ContactForm = () => {
 
                 <div className="relative">
                     <label className="block text-xs font-semibold text-gray-700 mb-2 font-montserrat">
-                        Project Details
+                        {t('fields.message.label')}
                     </label>
                     <textarea
                         name="message"
                         value={formData.message}
                         onChange={handleInputChange}
-                        placeholder="Tell us about your project requirements, SAP modules involved, timeline, and any specific challenges you&apos;re facing..."
+                        placeholder={t('fields.message.placeholder')}
                         rows="4"
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-sky-500 resize-none font-montserrat text-sm"
                     />
@@ -179,20 +181,7 @@ const ContactForm = () => {
                 {/* Privacy Notice */}
                 <div className="bg-gray-50 rounded-lg p-4 text-xs text-gray-600 font-montserrat">
                     <p>
-                        By clicking Confirm, you confirm that you have read and
-                        understood the{" "}
-                        <a href="#privacy" className="text-sky-600 hover:text-sky-700">
-                            Privacy Policy
-                        </a>
-                        . This site is protected by reCAPTCHA, the{" "}
-                        <a href="#privacy" className="text-sky-600 hover:text-sky-700">
-                            Google Privacy Policy
-                        </a>
-                        , and the{" "}
-                        <a href="#terms" className="text-sky-600 hover:text-sky-700">
-                            Terms of Service
-                        </a>{" "}
-                        applied.
+                        {t('privacyNotice')}
                     </p>
                 </div>
 
@@ -204,12 +193,12 @@ const ContactForm = () => {
                     {isSubmitting ? (
                         <>
                             <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                            <span>Sending...</span>
+                            <span>{t('submitting')}</span>
                         </>
                     ) : (
                         <>
                             <FaPaperPlane className="text-sm" />
-                            <span>Send Message</span>
+                            <span>{t('submit')}</span>
                         </>
                     )}
                 </button>

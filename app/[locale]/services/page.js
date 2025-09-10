@@ -11,72 +11,116 @@ import {
     FaChevronRight,
 } from "react-icons/fa";
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 function ServicesPage() {
+    const t = useTranslations('services');
+    const tCommon = useTranslations('common');
+
     const services = [
         {
             id: 1,
             slug: "e-invoice",
             icon: <Image src="/images/services/invoice.webp" alt="E-Invoice" className='size-28 md:size-32 -rotate-10 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5' width={500} height={500} />,
-            title: "E-Invoice",
-            description: "E-Invoice is not just a digital transformation tool, but also an investment in the future of your business. It ensures seamless compliance while saving time and costs. Transform your invoicing process with secure, automated digital solutions that streamline operations and enhance business efficiency.",
-            features: ["Legal Compliance", "Cost Reduction", "Automated Processing", "Real-time Tracking"]
+            title: t('landing.einvoice.title'),
+            description: t('landing.einvoice.description'),
+            features: [
+                t('landing.einvoice.features.legalCompliance'),
+                t('landing.einvoice.features.costReduction'),
+                t('landing.einvoice.features.automatedProcessing'),
+                t('landing.einvoice.features.realTimeTracking')
+            ]
         },
         {
             id: 2,
             slug: "e-ledger",
             icon: <Image src="/images/services/ledger.webp" alt="E-Invoice" className='size-28 md:size-36 -rotate-10 translate-y-10 md:translate-y-14 translate-x-10 md:translate-x-5' width={500} height={500} />,
-            title: "E-Ledger",
-            description: "E-Ledger transforms your financial record-keeping with digital ledger solutions that ensure legal compliance and financial transparency. Maintain accurate, auditable financial records with automated bookkeeping that meets all regulatory requirements.",
-            features: ["Digital Bookkeeping", "Regulatory Compliance", "Automated Reports", "Audit Trail"]
+            title: t('landing.eledger.title'),
+            description: t('landing.eledger.description'),
+            features: [
+                t('landing.eledger.features.financialReporting'),
+                t('landing.eledger.features.complianceManagement'),
+                t('landing.eledger.features.automatedEntries'),
+                t('landing.eledger.features.auditTrails')
+            ]
         },
         {
             id: 3,
             slug: "e-export",
             icon: <Image src="/images/services/export.webp" alt="E-Invoice" className='size-28 md:size-32 -rotate-15 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5' width={500} height={500} />,
-            title: "E-Export",
-            description: "E-Export simplifies international trade with digital export documentation and compliance solutions. Expand your global reach with confidence, knowing that all export procedures are digitally managed, compliant, and efficient for seamless international business operations.",
-            features: ["Export Documentation", "Compliance Management", "International Standards", "Process Automation"]
+            title: t('landing.eexport.title'),
+            description: t('landing.eexport.description'),
+            features: [
+                t('landing.eexport.features.exportDocumentation'),
+                t('landing.eexport.features.complianceManagement'),
+                t('landing.eexport.features.internationalStandards'),
+                t('landing.eexport.features.processAutomation')
+            ]
         },
         {
             id: 4,
             slug: "digigarson-pos",
             icon: <Image src="/images/services/digi-garson.webp" alt="E-Invoice" className='size-28 md:size-32 -rotate-15 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5' width={500} height={500} />,
-            title: "DigiGarson",
-            description: "DigiGarson provides comprehensive POS and management solutions specifically designed for food & beverage businesses. From order taking to inventory management, our integrated platform helps restaurants operate more efficiently and profitably.",
-            features: ["POS System", "Inventory Management", "Staff Management", "Sales Analytics"]
+            title: t('landing.restaurant.title'),
+            description: t('landing.restaurant.description'),
+            features: [
+                t('landing.restaurant.features.posSystem'),
+                t('landing.restaurant.features.inventoryTracking'),
+                t('landing.restaurant.features.kitchenManagement'),
+                t('landing.restaurant.features.customerService')
+            ]
         },
         {
             id: 5,
             slug: "e-commerce",
             icon: <Image src="/images/services/e-commerce.webp" alt="E-Invoice" className='size-28 md:size-32 -rotate-15 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5' width={500} height={500} />,
-            title: "E-Commerce",
-            description: "E-Commerce solutions that power your online business growth with integrated digital sales platforms. From inventory management to customer experience, our comprehensive e-commerce tools help you build, manage, and scale your online presence effectively.",
-            features: ["Online Store Management", "Payment Integration", "Inventory Control", "Customer Analytics"]
+            title: t('landing.ecommerce.title'),
+            description: t('landing.ecommerce.description'),
+            features: [
+                t('landing.ecommerce.features.storeManagement'),
+                t('landing.ecommerce.features.paymentIntegration'),
+                t('landing.ecommerce.features.inventoryControl'),
+                t('landing.ecommerce.features.customerAnalytics')
+            ]
         },
         {
             id: 6,
             slug: "e-delivery-note",
             icon: <Image src="/images/services/delivery note.webp" alt="E-Invoice" className='size-28 md:size-32 -rotate-15 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5' width={500} height={500} />,
-            title: "E-Delivery Note",
-            description: "E-Delivery Note digitizes your delivery documentation process, ensuring accurate tracking and legal compliance. Eliminate paper-based delivery notes and embrace digital efficiency with real-time delivery confirmation and automated record-keeping.",
-            features: ["Digital Documentation", "Real-time Tracking", "Delivery Confirmation", "Legal Compliance"]
+            title: t('landing.edelivery.title'),
+            description: t('landing.edelivery.description'),
+            features: [
+                t('landing.edelivery.features.digitalTracking'),
+                t('landing.edelivery.features.logisticsOptimization'),
+                t('landing.edelivery.features.paperlessProcess'),
+                t('landing.edelivery.features.realTimeUpdates')
+            ]
         },
         {
             id: 7,
             slug: "e-archive-invoice",
             icon: <Image src="/images/services/archive.webp" alt="E-Archive Invoice" className='size-28 md:size-32 -rotate-15 translate-y-8 translate-x-8' width={500} height={500} />,
-            title: "E-Archive Invoice",
-            description: "E-Archive Invoice provides secure, long-term storage solutions for your digital invoices with full legal compliance. Never worry about document retention again - our robust archiving system ensures your invoices are safely stored, easily accessible, and always audit-ready.",
-            features: ["Secure Storage", "Legal Compliance", "Easy Retrieval", "Audit Ready"]
+            title: t('landing.earchive.title'),
+            description: t('landing.earchive.description'),
+            features: [
+                t('landing.earchive.features.secureStorage'),
+                t('landing.earchive.features.legalCompliance'),
+                t('landing.earchive.features.easyRetrieval'),
+                t('landing.earchive.features.auditReady')
+            ]
         },
         {
             id: 8,
             slug: "e-adisyon",
             icon: <Image src="/images/services/adisyon.webp" alt="E-Invoice" className='size-32 -rotate-15 translate-y-9 translate-x-7' width={500} height={500} />,
-            title: "E-Order Receipt",
-            description: "E-Adisyon revolutionizes restaurant order management with digital receipt solutions. Streamline your food service operations with electronic order receipts that improve efficiency, reduce waste, and provide better customer service experience.",
-            features: ["Digital Receipts", "Order Management", "Customer Experience", "Cost Efficiency"]
+            title: t('landing.eadisyon.title'),
+            description: t('landing.eadisyon.description'),
+            features: [
+                t('landing.eadisyon.features.digitalReceipts'),
+                t('landing.eadisyon.features.orderManagement'),
+                t('landing.eadisyon.features.customerExperience'),
+                t('landing.eadisyon.features.costEfficiency')
+            ]
         },
     ];
 
@@ -151,7 +195,7 @@ function ServicesPage() {
                                     <div className="mt-auto">
                                         <Link href={`/services/${service.slug}`}>
                                             <button className="w-full cursor-pointer bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 hover:from-gray-800 hover:via-gray-700 hover:to-gray-800 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 group">
-                                                <span className="text-sm">Learn More</span>
+                                                <span className="text-sm">{tCommon('learnMore')}</span>
                                                 <FaChevronRight className="text-xs group-hover:translate-x-1 transition-transform duration-300" />
                                             </button>
                                         </Link>
@@ -165,22 +209,21 @@ function ServicesPage() {
                     <div className="mt-12 sm:mt-16 lg:mt-20 bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl p-6 sm:p-8 md:p-12 text-white text-center">
                         <div className="max-w-3xl mx-auto">
                             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold font-sora mb-4">
-                                Ready to Transform Your Business?
+                                {tCommon('readyToWorkWithUs')}
                             </h3>
                             <p className="text-gray-300 font-montserrat text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed px-4">
-                                Our expert team is ready to help you implement the right digital solutions for your business needs.
-                                Get started with a free consultation today.
+                                {t('additionalServices.description')}
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <Link href="/contact">
                                     <button className="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 w-full sm:w-auto">
-                                        <span className="text-sm sm:text-base">Get Free Consultation</span>
+                                        <span className="text-sm sm:text-base">{tCommon('getFreeConsultation')}</span>
                                         <FaChevronRight className="text-sm" />
                                     </button>
                                 </Link>
                                 <Link href="/services/e-invoice">
                                     <button className="border-2 border-sky-500 text-sky-400 hover:bg-sky-500 hover:text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 w-full sm:w-auto">
-                                        <span className="text-sm sm:text-base">Start with E-Invoice</span>
+                                        <span className="text-sm sm:text-base">{tCommon('startWithEInvoice')}</span>
                                     </button>
                                 </Link>
                             </div>

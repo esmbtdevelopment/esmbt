@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from 'next-intl';
 import {
     FaBuilding,
     FaUsers,
@@ -22,38 +23,41 @@ import {
 import { goToContact } from "@/utils/navigation";
 
 export default function CorporatePage() {
+    const t = useTranslations('corporate');
+    const tCommon = useTranslations('common');
+
     const corporatePages = [
         {
-            title: "About Us",
-            description: "Learn about ESM Information Technologies, our journey, and what drives us forward",
+            title: t('aboutUs.title'),
+            description: t('aboutUs.description'),
             icon: <FaBuilding className="text-3xl" />,
             link: "/corporate/about-us",
             gradient: "from-blue-500 to-sky-500",
-            features: ["Company Overview", "Our Values", "Core Principles"]
+            features: [t('aboutUs.features.overview'), t('aboutUs.features.values'), t('aboutUs.features.principles')]
         },
         {
-            title: "Our Team",
-            description: "Meet the talented professionals behind our success and innovation",
+            title: t('team.title'),
+            description: t('team.description'),
             icon: <FaUsers className="text-3xl" />,
             link: "/corporate/our-team",
             gradient: "from-purple-500 to-indigo-500",
-            features: ["Leadership Team", "SAP Specialists", "Technical Experts"]
+            features: [t('team.features.leadership'), t('team.features.specialists'), t('team.features.experts')]
         },
         {
-            title: "Vision & Mission",
-            description: "Discover our mission, vision, and the goals that guide our company",
+            title: t('vision.title'),
+            description: t('vision.description'),
             icon: <FaHandshake className="text-3xl" />,
             link: "/corporate/vision-and-mission",
             gradient: "from-green-500 to-emerald-500",
-            features: ["Company Mission", "Future Vision", "Strategic Goals"]
+            features: [t('vision.features.mission'), t('vision.features.future'), t('vision.features.goals')]
         },
     ];
 
     const stats = [
-        { number: "15+", label: "Years of Excellence", icon: <RiAwardLine /> },
-        { number: "500+", label: "Successful Projects", icon: <RiRocketLine /> },
-        { number: "200+", label: "Enterprise Clients", icon: <FaHandshake /> },
-        { number: "50+", label: "Expert Team Members", icon: <FaUsers /> },
+        { number: "15+", label: t('stats.yearsOfExcellence'), icon: <RiAwardLine /> },
+        { number: "500+", label: t('stats.successfulProjects'), icon: <RiRocketLine /> },
+        { number: "200+", label: t('stats.enterpriseClients'), icon: <FaHandshake /> },
+        { number: "50+", label: t('stats.expertTeamMembers'), icon: <FaUsers /> },
     ];
 
     return (
@@ -70,17 +74,16 @@ export default function CorporatePage() {
                     <div className="text-center max-w-4xl mx-auto">
                         <div className="inline-flex items-center space-x-2 bg-sky-100 border border-sky-200 rounded-full px-4 sm:px-6 py-2 mb-6 sm:mb-8">
                             <div className="w-2 h-2 bg-sky-500 rounded-full animate-pulse"></div>
-                            <span className="text-sky-700 font-semibold font-montserrat text-xs sm:text-sm">Corporate Information</span>
+                            <span className="text-sky-700 font-semibold font-montserrat text-xs sm:text-sm">{t('badge')}</span>
                         </div>
 
                         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 font-sora leading-tight px-2">
-                            Welcome to
-                            <span className="block text-sky-400">ESM Information Technologies</span>
+                            {t('hero.title')}
+                            <span className="block text-sky-400">{t('hero.companyName')}</span>
                         </h1>
 
                         <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-300 mb-8 sm:mb-12 font-montserrat leading-relaxed max-w-3xl mx-auto px-4">
-                            Discover our company, meet our team, and learn about the vision that drives our
-                            commitment to SAP excellence and digital transformation.
+                            {t('hero.description')}
                         </p>
 
                         {/* Stats Grid */}
@@ -111,10 +114,10 @@ export default function CorporatePage() {
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12 sm:mb-16">
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora px-2">
-                            Explore Our Company
+                            {t('explore.title')}
                         </h2>
                         <p className="text-base sm:text-lg text-gray-600 font-montserrat max-w-2xl mx-auto px-4">
-                            Get to know ESM Information Technologies through our comprehensive corporate information
+                            {t('explore.description')}
                         </p>
                     </div>
 
@@ -159,7 +162,7 @@ export default function CorporatePage() {
 
                                     {/* CTA */}
                                     <div className="flex items-center space-x-2 text-sky-600 font-semibold group-hover:text-sky-700 transition-colors text-sm sm:text-base">
-                                        <span>Learn More</span>
+                                        <span>{tCommon('learnMore')}</span>
                                         <FaArrowRight className="text-xs sm:text-sm group-hover:translate-x-1 transition-transform" />
                                     </div>
                                 </div>
@@ -187,11 +190,11 @@ export default function CorporatePage() {
                         {/* Content */}
                         <div className="relative p-8 sm:p-12 lg:p-16 text-white text-center">
                             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 font-sora">
-                                Ready to Work With Us?
+                                {tCommon('readyToWorkWithUs')}
                             </h3>
 
                             <p className="text-base sm:text-lg lg:text-xl mb-8 sm:mb-10 opacity-90 font-montserrat max-w-2xl mx-auto leading-relaxed">
-                                Discover how ESM Information Technologies can transform your business with our SAP expertise and innovative solutions.
+                                {t('description')}
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
@@ -200,7 +203,7 @@ export default function CorporatePage() {
                                     className="group relative bg-white text-sky-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-bold hover:bg-gray-50 transition-all duration-300 font-montserrat shadow-2xl hover:scale-105 text-sm sm:text-base"
                                 >
                                     <span className="flex items-center justify-center space-x-2">
-                                        <span>Contact Us Today</span>
+                                        <span>{tCommon('contactUsToday')}</span>
                                         <FaArrowRight className="text-xs sm:text-sm group-hover:translate-x-1 transition-transform" />
                                     </span>
                                 </button>
@@ -210,7 +213,7 @@ export default function CorporatePage() {
                                     className="group relative border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-bold hover:bg-white hover:text-sky-600 transition-all duration-300 font-montserrat hover:scale-105 text-sm sm:text-base"
                                 >
                                     <span className="flex items-center justify-center space-x-2">
-                                        <span>View Our Services</span>
+                                        <span>{t('viewOurServices')}</span>
                                         <FaArrowRight className="text-xs sm:text-sm group-hover:translate-x-1 transition-transform" />
                                     </span>
                                 </Link>

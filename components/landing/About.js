@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 import {
   RiTeamLine,
   RiLightbulbLine,
@@ -21,58 +22,54 @@ import {
 } from "react-icons/fa";
 
 const About = () => {
+  const t = useTranslations('about');
+  const tServices = useTranslations('services');
+
   const stats = [
-    { number: "15+", label: "Years Experience", icon: <RiAwardLine /> },
-    { number: "500+", label: "SAP Implementations", icon: <RiRocketLine /> },
-    { number: "200+", label: "Enterprise Clients", icon: <FaHandshake /> },
-    { number: "50+", label: "SAP Specialists", icon: <FaUsers /> },
+    { number: "15+", label: t('stats.experience'), icon: <RiAwardLine /> },
+    { number: "500+", label: t('stats.implementations'), icon: <RiRocketLine /> },
+    { number: "200+", label: t('stats.clients'), icon: <FaHandshake /> },
+    { number: "50+", label: t('stats.specialists'), icon: <FaUsers /> },
   ];
 
   const services = [
     {
       icon: <FaCogs className="text-3xl" />,
-      title: "SAP Consulting & Implementation",
-      description:
-        "End-to-end SAP integration, optimization, and expert consulting services",
+      title: t('values.sapNative.title'),
+      description: t('values.sapNative.description'),
     },
     {
       icon: <FaFileInvoiceDollar className="text-3xl" />,
-      title: "E-Transformation Solutions",
-      description:
-        "SAP-native e-Invoice, e-Archive, e-Ledger, and e-Declaration compliance",
+      title: tServices('categories.transformation.title'),
+      description: tServices('categories.transformation.description'),
     },
     {
       icon: <FaChartLine className="text-3xl" />,
-      title: "Financial Management Tools",
-      description:
-        "VAT processing, IFRS 16, loan tracking, and inflation accounting solutions",
+      title: tServices('categories.financial.title'),
+      description: tServices('categories.financial.description'),
     },
     {
       icon: <FaUniversity className="text-3xl" />,
-      title: "Banking & Treasury Operations",
-      description:
-        "Bulk payments, e-Account statements, virtual POS, and stock financing",
+      title: tServices('categories.banking.title'),
+      description: tServices('categories.banking.description'),
     },
   ];
 
   const values = [
     {
       icon: <RiLightbulbLine className="text-xl" />,
-      title: "SAP-Native Design",
-      description:
-        "All solutions built specifically for SAP environments with seamless integration",
+      title: t('values.sapNative.title'),
+      description: t('values.sapNative.description'),
     },
     {
       icon: <RiShieldCheckLine className="text-xl" />,
-      title: "Regulatory Compliance",
-      description:
-        "Expert guidance on digital tax requirements and evolving regulatory demands",
+      title: t('values.compliance.title'),
+      description: t('values.compliance.description'),
     },
     {
       icon: <RiTeamLine className="text-xl" />,
-      title: "Financial Transformation",
-      description:
-        "Specialized focus on streamlining financial operations and process automation",
+      title: t('values.transformation.title'),
+      description: t('values.transformation.description'),
     },
   ];
 
@@ -108,17 +105,15 @@ const About = () => {
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16 lg:mb-20 relative">
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 lg:mb-8 font-sora leading-tight">
-            Specialized SAP Consulting for <br className="hidden sm:block" />
+            {t('title')} <br className="hidden sm:block" />
             <span className="relative inline-block">
-              <span className="text-sky-600 block">Financial Transformation</span>
+              <span className="text-sky-600 block">{t('subtitle')}</span>
             </span>
           </h2>
 
           <div className="relative max-w-4xl mx-auto">
             <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed font-montserrat px-4">
-              ESM Information Technologies is a specialized SAP consulting and
-              technology firm focused on driving financial transformation and
-              digital compliance for enterprises.
+              {t('description')}
             </p>
             {/* Decorative elements - hidden on mobile */}
             <div className="hidden sm:block absolute -top-4 -left-4 w-8 h-8 border-l-4 border-t-4 border-sky-400 opacity-30"></div>
@@ -132,27 +127,17 @@ const About = () => {
           {/* Left Content */}
           <div className="px-4 lg:px-0">
             <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora">
-              Empowering Enterprises Through SAP Excellence
+              {t('mainTitle')}
             </h3>
             <div className="space-y-3 sm:space-y-4 lg:space-y-6 text-gray-600 font-montserrat">
               <p className="text-sm sm:text-base leading-relaxed">
-                We deliver end-to-end SAP integration and optimization services,
-                empowering organizations to streamline financial operations,
-                enhance regulatory compliance, and digitize core processes with
-                confidence.
+                {t('paragraph1')}
               </p>
               <p className="text-sm sm:text-base leading-relaxed">
-                Our expertise spans expert SAP consulting, implementation, and
-                support tailored to financial transformation, IFRS adaptation,
-                and process automation. We provide comprehensive SAP-native
-                solutions that simplify complex financial tasks and reduce
-                operational costs.
+                {t('paragraph2')}
               </p>
               <p className="text-sm sm:text-base leading-relaxed">
-                With a deep focus on automation, compliance, and SAP-native
-                design, we enable enterprises to meet evolving digital and
-                regulatory demands while maintaining the highest standards of
-                data security and operational efficiency.
+                {t('paragraph3')}
               </p>
             </div>
 
@@ -186,7 +171,7 @@ const About = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src="/images/teamwork.jpg"
-                alt="ESM SAP Consulting Team"
+                alt={t('teamImageAlt')}
                 width={600}
                 height={400}
                 className="w-full h-auto object-cover"
