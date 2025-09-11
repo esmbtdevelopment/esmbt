@@ -1,14 +1,13 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 import {
     FaBuilding,
-    FaHandshake,
     FaChartLine,
     FaUsers,
     FaAward,
     FaGlobe,
-    FaRocket,
     FaShieldAlt,
     FaCogs,
     FaLightbulb,
@@ -16,10 +15,8 @@ import {
 import {
     RiTeamLine,
     RiLightbulbLine,
-    RiRocketLine,
     RiShieldCheckLine,
     RiGlobalLine,
-    RiAwardLine,
 } from "react-icons/ri";
 import { goToContact, goToReferences } from "@/utils/navigation";
 

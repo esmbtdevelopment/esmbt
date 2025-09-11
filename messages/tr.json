@@ -74,7 +74,7 @@
       "title": "Danışmanlık Talebi",
       "fields": {
         "name": {
-          "label": "Ad Soyad",
+          "label": "Ad Soyad *",
           "placeholder": "Adınızı ve soyadınızı girin"
         },
         "company": {
@@ -82,8 +82,8 @@
           "placeholder": "Şirket adınızı girin"
         },
         "email": {
-          "label": "E-posta Adresi",
-          "placeholder": "E-posta adresinizi girin"
+          "label": "E-posta Adresi *",
+          "placeholder": "sirket@eposta.com"
         },
         "phone": {
           "label": "Telefon Numarası",
@@ -109,6 +109,8 @@
     }
   },
   "footer": {
+    "companyDescription": "Finansal dönüşüm ve dijital uyumluluğu teşvik eden uzmanlaşmış bir SAP danışmanlığı ve teknoloji firmasıdır.",
+    "logoAlt": "ESM Bilgi Teknolojileri",
     "quickLinks": {
       "title": "Hızlı Erişim",
       "aboutUs": "Hakkımızda",
@@ -154,6 +156,7 @@
   "corporate": {
     "title": "Kurumsal",
     "aboutUs": {
+      "description": "Şirketimiz hakkında bilgi edinin, misyonumuzu ve vizyonumuzu keşfedin",
       "features": {
         "overview": "Şirket Genel Bakışı",
         "values": "Değerlerimiz",
@@ -335,6 +338,7 @@
     "eCommercePlatform": "E-Ticaret Platformu",
     "digitalTransformation": "Dijital Dönüşüm",
     "viewAllServices": "Tüm Hizmetleri Görüntüle",
+    "cloudPortal": "Bulut Portalı",
     "dropdown": {
       "corporate": {
         "aboutDescription": "Şirketimiz hakkında bilgi edinin",
@@ -412,44 +416,6 @@
       }
     }
   },
-  "serviceDetails": {
-    "eInvoice": {
-      "title": "E-Fatura",
-      "subtitle": "Dijital Fatura Çözümleri",
-      "heroDescription": "Güvenli, otomatik dijital çözümlerle faturalama sürecinizi dönüştürün; uyumluluğu sağlarken maliyetleri azaltır ve verimliliği artırır.",
-      "fullDescription": "E-Fatura yalnızca bir dijital dönüşüm aracı değil, aynı zamanda işletmenizin geleceğine yapılan bir yatırımdır. Kapsamlı e-fatura çözümümüz, yerel ve uluslararası düzenlemelerle sorunsuz uyumluluk sağlar ve işlem süresini ve operasyonel maliyetleri önemli ölçüde azaltır. Kurumsal düzeyde güvenlik ve ölçeklenebilirlik gözetilerek geliştirilmiştir.",
-      "benefits": {
-        "0": "Fatura işleme süresini %80'e kadar azaltın",
-        "1": "Vergi düzenlemelerine %100 uyumluluk sağlayın",
-        "2": "Otomasyon ile operasyonel maliyetleri düşürün",
-        "3": "Gerçek zamanlı fatura takibi ve durum güncellemeleri",
-        "4": "Mevcut ERP sistemleri ile sorunsuz entegrasyon",
-        "5": "Dijital imzalarla artırılmış güvenlik"
-      },
-      "features": {
-        "automatedProcessing": {
-          "title": "Otomatik İşlem",
-          "description": "Akıllı otomasyon, fatura oluşturma, doğrulama ve gönderimi manuel müdahale olmadan yönetir."
-        },
-        "legalCompliance": {
-          "title": "Yasal Uyum",
-          "description": "Dahili uyum kontrolleri, tüm faturaların yerel vergi otoritelerinin gereksinimlerini karşılamasını sağlar."
-        },
-        "realTimeTracking": {
-          "title": "Gerçek Zamanlı Takip",
-          "description": "Detaylı takip ve teslimat onayları ile fatura durumunu gerçek zamanlı izleyin."
-        }
-      },
-      "implementation": {
-        "0": "İlk danışmanlık ve gereksinim analizi",
-        "1": "Sistem entegrasyon planlaması ve kurulum",
-        "2": "Veri göçü ve test aşaması",
-        "3": "Personel eğitimi ve bilgi transferi",
-        "4": "Canlıya alma desteği ve izleme",
-        "5": "Sürekli bakım ve güncellemeler"
-      }
-    }
-  },
   "about": {
     "title": "Finansal Dönüşüm için Uzman SAP Danışmanlığı",
     "subtitle": "Finansal Dönüşüm",
@@ -478,6 +444,18 @@
         "title": "Finansal Dönüşüm",
         "description": "Finansal operasyonların ve süreç otomasyonunun kolaylaştırılmasına odaklanmış uzmanlık"
       }
+    },
+    "cta": {
+      "badge": "Dönüşmeye Hazır mısınız?",
+      "title": "Finansal Operasyonlarınızı Bugün Dönüştürün",
+      "description": "SAP uzmanlığımızın uyumluluk ve otomasyon ihtiyaçlarınızı nasıl kolaylaştırabileceğini keşfedin",
+      "consultationButton": "SAP Danışmanlığı Planla",
+      "solutionsButton": "Çözümlerimizi Görüntüle",
+      "trustIndicators": {
+        "projects": "500+ Proje",
+        "response": "24 Saat Yanıt",
+        "certified": "SAP Sertifikalı"
+      }
     }
   },
   "testimonials": {
@@ -492,6 +470,12 @@
     "title": "Hizmetlerimiz",
     "subtitle": "Kapsamlı SAP Çözümleri",
     "description": "İş ihtiyaçlarınıza göre özelleştirilmiş uçtan uca SAP danışmanlığı ve dijital dönüşüm hizmetleri sunuyoruz.",
+    "hero": {
+      "title": "Dijital İş Çözümleri",
+      "subtitle": "İşletmenizi modern işletmeler için tasarlanmış kapsamlı dijital çözümler paketiyle dönüştürün",
+      "sectionTitle": "Hizmetlerimiz",
+      "sectionDescription": "İş ihtiyaçlarınıza özel kapsamlı dijital dönüşüm çözümleri. Uyumluluktan ticarete kadar her ihtiyacınız karşılandı."
+    },
     "landing": {
       "ecommerce": {
         "title": "E-Ticaret",
@@ -600,6 +584,418 @@
       "item3": "SAP Veri Maskeleme & Koruma",
       "item4": "Enflasyon Muhasebesi Çözümleri",
       "item5": "Kredi & Tahsilat Takibi"
+    }
+  },
+  "serviceDetails": {
+    "services": {
+      "e-invoice": {
+        "title": "E-Fatura",
+        "subtitle": "Dijital Fatura Çözümleri",
+        "heroDescription": "Uyumluluğu sağlarken maliyetleri azaltan ve verimliliği artıran güvenli, otomatik dijital çözümlerle faturalama sürecinizi dönüştürün.",
+        "fullDescription": "E-Fatura sadece bir dijital dönüşüm aracı değil, aynı zamanda işletmenizin geleceğine yapılan bir yatırımdır. Kapsamlı e-fatura çözümümüz, yerel ve uluslararası düzenlemelerle sorunsuz uyumluluk sağlar ve işlem süresini ve operasyonel maliyetleri önemli ölçüde azaltır. Kurumsal düzeyde güvenlik ve ölçeklenebilirlik gözetilerek geliştirilmiştir.",
+        "benefits": {
+          "0": "Fatura işleme süresini %80'e kadar azaltın",
+          "1": "Vergi düzenlemelerine %100 uyumluluk sağlayın",
+          "2": "Otomasyon ile operasyonel maliyetleri düşürün",
+          "3": "Gerçek zamanlı fatura takibi ve durum güncellemeleri",
+          "4": "Mevcut ERP sistemleri ile sorunsuz entegrasyon",
+          "5": "Dijital imzalarla artırılmış güvenlik"
+        },
+        "features": {
+          "0": {
+            "title": "Otomatik İşlem",
+            "description": "Akıllı otomasyon, fatura oluşturma, doğrulama ve gönderimi manuel müdahale olmadan yönetir."
+          },
+          "1": {
+            "title": "Yasal Uyum",
+            "description": "Dahili uyum kontrolleri, tüm faturaların yerel vergi otoritelerinin gereksinimlerini karşılamasını sağlar."
+          },
+          "2": {
+            "title": "Gerçek Zamanlı Takip",
+            "description": "Detaylı takip ve teslimat onayları ile fatura durumunu gerçek zamanlı izleyin."
+          },
+          "3": {
+            "title": "Bulut Tabanlı Platform",
+            "description": "Güvenli bulut altyapısı %99.9 çalışma süresi ve işiniz büyüdükçe sorunsuz ölçeklenebilirlik sağlar."
+          }
+        },
+        "implementation": {
+          "0": "İlk danışmanlık ve gereksinim analizi",
+          "1": "Sistem entegrasyon planlaması ve kurulum",
+          "2": "Veri göçü ve test aşaması",
+          "3": "Personel eğitimi ve bilgi transferi",
+          "4": "Go-live destek ve izleme",
+          "5": "Sürekli bakım ve güncellemeler"
+        },
+        "industries": {
+          "0": "İmalat",
+          "1": "Perakende",
+          "2": "Sağlık",
+          "3": "Finans",
+          "4": "Lojistik",
+          "5": "Teknoloji"
+        },
+        "roi": "İlk yıl içinde ortalama %300 yatırım getirisi"
+      },
+      "e-archive-invoice": {
+        "title": "E-Arşiv Fatura",
+        "subtitle": "Güvenli Fatura Depolama Çözümleri",
+        "heroDescription": "Tam yasal uyumluluğa sahip dijital faturalarınız için güvenli, uzun süreli depolama ve kolay erişim olanakları.",
+        "fullDescription": "E-Arşiv Fatura, dijital faturalarınızın güvenli bir şekilde depolanmasını, yasal uyumluluğunu ve her zaman erişilebilir olmasını sağlayan kapsamlı bir dijital arşivleme çözümü sunar. Sağlam arşivleme sistemimiz, fiziksel belge depolamaya olan ihtiyacı ortadan kaldırırken tam denetim izlerini ve yasal uyumluluğu korur.",
+        "benefits": {
+          "0": "Güvenli uzun süreli belge depolama",
+          "1": "Saklama gereksinimleri ile tam yasal uyumluluk",
+          "2": "Anında belge erişimi ve arama",
+          "3": "Otomatik yedekleme ve felaket kurtarma",
+          "4": "Fiziksel depolama maliyetlerinin azaltılması",
+          "5": "Tam denetim izi bakımı"
+        },
+        "features": {
+          "0": {
+            "title": "Güvenli Depolama",
+            "description": "Kurumsal düzeyde şifreleme, arşivlenmiş faturalarınızın güvenli kalmasını ve yetkisiz erişimden korunmasını sağlar."
+          },
+          "1": {
+            "title": "Kolay Erişim",
+            "description": "Gelişmiş arama yetenekleri, birden fazla arama kriteri kullanarak herhangi bir arşivlenmiş faturaya anında erişim sağlar."
+          },
+          "2": {
+            "title": "Yasal Uyum",
+            "description": "Otomatik uyumluluk yönetimi, tüm arşivlenmiş belgelerin yasal saklama gereksinimlerini karşılamasını sağlar."
+          },
+          "3": {
+            "title": "Denetime Hazır",
+            "description": "Tam denetim izleri ve kurcalamaya dayanıklı depolama, arşivinizi her zaman düzenleyici denetimler için hazır tutar."
+          }
+        },
+        "implementation": {
+          "0": "Arşiv gereksinim değerlendirmesi",
+          "1": "Veri göçü planlama ve yürütme",
+          "2": "Güvenlik yapılandırması ve test",
+          "3": "Kullanıcı erişim kontrolü kurulumu",
+          "4": "Sistem entegrasyonu ve test",
+          "5": "Sürekli izleme ve bakım"
+        },
+        "industries": {
+          "0": "Tüm Sektörler",
+          "1": "Devlet",
+          "2": "Sağlık",
+          "3": "Finans",
+          "4": "Hukuk Hizmetleri",
+          "5": "İmalat"
+        },
+        "roi": "Belge depolama maliyetlerini %70'e kadar azaltın"
+      },
+      "e-export": {
+        "title": "E-Export",
+        "subtitle": "Dijital İhracat Çözümleri",
+        "heroDescription": "Uluslararası ticareti kolaylaştırmak için kapsamlı dijital ihracat dokümantasyonu ve uyum yönetimi çözümleri.",
+        "fullDescription": "E-Export, dijital ihracat dokümantasyonu, otomatik uyum kontrolleri ve gümrük otoriteleri ile sorunsuz entegrasyon ile uluslararası ticaret operasyonlarınızı kolaylaştırır. Tüm ihracat prosedürlerinin dijital olarak yönetildiği ve uyumlu olduğu bilgisiyle küresel erişiminizi güvenle genişletin.",
+        "benefits": {
+          "0": "Kolaylaştırılmış ihracat dokümantasyon süreci",
+          "1": "Uluslararası düzenlemelerle otomatik uyum",
+          "2": "Daha hızlı gümrük işlemleri ve işlem",
+          "3": "İhracatla ilgili hata ve gecikmelerin azaltılması",
+          "4": "Gerçek zamanlı sevkiyat takibi ve güncellemeler",
+          "5": "Küresel ticaret platformları ile entegrasyon"
+        },
+        "features": {
+          "0": {
+            "title": "İhracat Dokümantasyonu",
+            "description": "Sertifikalar, izinler ve beyannameler dahil olmak üzere gerekli tüm ihracat belgelerinin otomatik oluşturulması."
+          },
+          "1": {
+            "title": "Uyum Yönetimi",
+            "description": "Dahili uyum kontrolleri, tüm ihracatların hedef ülke gereksinimlerini ve düzenlemelerini karşılamasını sağlar."
+          },
+          "2": {
+            "title": "Uluslararası Standartlar",
+            "description": "Birden fazla yargı alanında uluslararası ticaret standartları ve gümrük gereksinimlerine tam uyumluluk."
+          },
+          "3": {
+            "title": "Süreç Otomasyonu",
+            "description": "Uçtan uca otomasyon manuel işi azaltır ve yaygın ihracat işleme hatalarını ortadan kaldırır."
+          }
+        },
+        "implementation": {
+          "0": "İhracat süreci analizi ve haritalama",
+          "1": "Hedef pazarlar için sistem yapılandırması",
+          "2": "Gümrük platformları ile entegrasyon",
+          "3": "Belge şablonu özelleştirmesi",
+          "4": "İhracat prosedürleri konusunda personel eğitimi",
+          "5": "Go-live destek ve optimizasyon"
+        },
+        "industries": {
+          "0": "İmalat",
+          "1": "Tarım",
+          "2": "Teknoloji",
+          "3": "Otomotiv",
+          "4": "Tekstil",
+          "5": "Kimya"
+        },
+        "roi": "İhracat işleme süresini %60'a kadar azaltın"
+      },
+      "e-commerce": {
+        "title": "E-Ticaret",
+        "subtitle": "Çevrimiçi Ticaret Platformu",
+        "heroDescription": "Entegre dijital satış platformlarıyla çevrimiçi iş büyümenizi güçlendiren kapsamlı e-ticaret çözümleri.",
+        "fullDescription": "E-Ticaret platformumuz, çevrimiçi işinizi kurmak, yönetmek ve ölçeklendirmek için ihtiyacınız olan her şeyi sağlar. Envanter yönetiminden müşteri deneyimi optimizasyonuna kadar, kapsamlı araçlarımız profesyonel düzeyde özellikler ve sorunsuz entegrasyonlarla dijital pazarda başarılı olmanıza yardımcı olur.",
+        "benefits": {
+          "0": "Tam çevrimiçi mağaza yönetimi",
+          "1": "Entegre ödeme işleme",
+          "2": "Gelişmiş envanter kontrolü",
+          "3": "Müşteri analitikleri ve içgörüleri",
+          "4": "Mobil uyumlu tasarım",
+          "5": "SEO optimizasyon araçları"
+        },
+        "features": {
+          "0": {
+            "title": "Mağaza Yönetimi",
+            "description": "Ürünleri, siparişleri, müşterileri ve içeriği tek bir kontrol panelinden yönetmek için kapsamlı araçlar."
+          },
+          "1": {
+            "title": "Ödeme Entegrasyonu",
+            "description": "Birden fazla ödeme yöntemi ve para birimi desteği ile güvenli ödeme işleme."
+          },
+          "2": {
+            "title": "Envanter Kontrolü",
+            "description": "Otomatik yeniden sipariş noktaları ve tedarikçi yönetimi ile gerçek zamanlı envanter takibi."
+          },
+          "3": {
+            "title": "Müşteri Analitiği",
+            "description": "Satışları optimize etmek ve müşteri deneyimini iyileştirmek için detaylı müşteri davranış analitiği."
+          }
+        },
+        "implementation": {
+          "0": "İş gereksinimi analizi",
+          "1": "Platform kurulumu ve özelleştirme",
+          "2": "Ödeme ağ geçidi entegrasyonu",
+          "3": "Ürün katalogu göçü",
+          "4": "Tasarım ve UX optimizasyonu",
+          "5": "Başlatma ve sürekli destek"
+        },
+        "industries": {
+          "0": "Perakende",
+          "1": "Moda",
+          "2": "Elektronik",
+          "3": "Ev & Bahçe",
+          "4": "Spor",
+          "5": "Güzellik"
+        },
+        "roi": "Çevrimiçi satışları %250'ye kadar artırın"
+      },
+      "e-delivery-note": {
+        "title": "E-Teslimat Notu",
+        "subtitle": "Dijital Teslimat Dokümantasyonu",
+        "heroDescription": "Gerçek zamanlı takip ve yasal uyumluluk için otomatik kayıt tutma ile teslimat dokümantasyon sürecinizi dijitalleştirin.",
+        "fullDescription": "E-Teslimat Notu, kağıt tabanlı teslimat dokümantasyonunu ortadan kaldırır ve dijital verimliliği benimser. Çözümümüz gerçek zamanlı teslimat onayı, otomatik kayıt tutma sağlar ve idari yükü azaltırken teslimat doğruluğunu artırarak yasal uyumluluğu sağlar.",
+        "benefits": {
+          "0": "Kağıt tabanlı teslimat notlarını ortadan kaldırın",
+          "1": "Gerçek zamanlı teslimat onayı",
+          "2": "Otomatik kayıt tutma",
+          "3": "Yasal uyumluluk güvencesi",
+          "4": "Azaltılmış idari maliyetler",
+          "5": "İyileştirilmiş teslimat doğruluğu"
+        },
+        "features": {
+          "0": {
+            "title": "Dijital Dokümantasyon",
+            "description": "Elektronik imzalar ve zaman damgası doğrulaması ile teslimat notlarının tam dijitalleştirilmesi."
+          },
+          "1": {
+            "title": "Gerçek Zamanlı Takip",
+            "description": "GPS entegrasyonu ve teslimat süreci boyunca durum güncellemeleri ile teslimatların canlı takibi."
+          },
+          "2": {
+            "title": "Teslimat Onayı",
+            "description": "Alıcı imzaları ve fotoğraf onay yetenekleri ile dijital teslimat kanıtı."
+          },
+          "3": {
+            "title": "Yasal Uyumluluk",
+            "description": "Kurcalamaya dayanıklı dijital kayıtlarla tüm teslimat dokümantasyonunun yasal gereksinimleri karşılamasını sağlar."
+          }
+        },
+        "implementation": {
+          "0": "Teslimat süreci değerlendirmesi",
+          "1": "Mobil uygulama dağıtımı",
+          "2": "Sürücü eğitimi ve işe alım",
+          "3": "Sistem entegrasyon testi",
+          "4": "Go-live destek ve izleme",
+          "5": "Performans optimizasyonu"
+        },
+        "industries": {
+          "0": "Lojistik",
+          "1": "Perakende",
+          "2": "İmalat",
+          "3": "Gıda & İçecek",
+          "4": "İlaç",
+          "5": "E-ticaret"
+        },
+        "roi": "Teslimat dokümantasyon maliyetlerini %85 azaltın"
+      },
+      "e-ledger": {
+        "title": "E-Defter",
+        "subtitle": "Dijital Finansal Defter",
+        "heroDescription": "Yasal uyumluluk ve finansal şeffaflık sağlayan dijital defter çözümleriyle finansal kayıt tutmayı dönüştürün.",
+        "fullDescription": "E-Defter, otomatik süreçlerle doğru, denetlenebilir finansal kayıtları sürdüren kapsamlı bir dijital defter tutma çözümü sağlar. Sistemimiz, finansal yönetimin karmaşıklığını azaltırken gerçek zamanlı finansal içgörüler sağlayarak düzenleyici uyumluluğu garanti eder.",
+        "benefits": {
+          "0": "Otomatik dijital defter tutma",
+          "1": "Tam düzenleyici uyumluluk",
+          "2": "Gerçek zamanlı finansal raporlama",
+          "3": "Tam denetim izi",
+          "4": "Azaltılmış muhasebe hataları",
+          "5": "Muhasebe sistemleri ile entegrasyon"
+        },
+        "features": {
+          "0": {
+            "title": "Dijital Defter Tutma",
+            "description": "Akıllı kategorizasyon ve mutabakat yetenekleri ile otomatik işlem kaydı."
+          },
+          "1": {
+            "title": "Düzenleyici Uyumluluk",
+            "description": "Dahili uyumluluk özellikleri, tüm kayıtların yerel ve uluslararası muhasebe standartlarını karşılamasını sağlar."
+          },
+          "2": {
+            "title": "Otomatik Raporlar",
+            "description": "Özelleştirilebilir şablonlar ve zamanlama ile kapsamlı finansal raporları otomatik olarak oluşturun."
+          },
+          "3": {
+            "title": "Denetim İzi",
+            "description": "Şeffaflık için zaman damgası doğrulaması ve kullanıcı etkinlik takibi ile tam denetim izi."
+          }
+        },
+        "implementation": {
+          "0": "Finansal süreç analizi",
+          "1": "Hesap planı kurulumu",
+          "2": "Veri göçü ve doğrulama",
+          "3": "Kullanıcı eğitimi ve sertifikasyon",
+          "4": "Sistem entegrasyon testi",
+          "5": "Sürekli destek ve güncellemeler"
+        },
+        "industries": {
+          "0": "Tüm Sektörler",
+          "1": "Muhasebe Firmaları",
+          "2": "KOBİ'ler",
+          "3": "Kar Amacı Gütmeyenler",
+          "4": "Devlet",
+          "5": "Sağlık"
+        },
+        "roi": "Muhasebe işleme süresini %75 azaltın"
+      },
+      "e-adisyon": {
+        "title": "E-Adisyon (E-Sipariş Fişi)",
+        "subtitle": "Dijital Restoran Fişleri",
+        "heroDescription": "Verimliliği artırmak ve müşteri deneyimini iyileştirmek için dijital sipariş fişi çözümleriyle restoran operasyonlarını dönüştürün.",
+        "fullDescription": "E-Adisyon, restoran sipariş yönetimini elektronik fiş çözümleriyle dönüştürür. Yemek hizmeti operasyonlarınızı kolaylaştırın, israfı azaltın, müşteri hizmetlerini iyileştirin ve misafirperverlik sektörü için özel olarak tasarlanmış dijital fiş sistemleriyle uyumluluğu sağlayın.",
+        "benefits": {
+          "0": "Dijital sipariş fişi yönetimi",
+          "1": "İyileştirilmiş müşteri deneyimi",
+          "2": "Azaltılmış kağıt israfı ve maliyetler",
+          "3": "Artırılmış sipariş doğruluğu",
+          "4": "Gerçek zamanlı sipariş takibi",
+          "5": "POS sistemleri ile entegrasyon"
+        },
+        "features": {
+          "0": {
+            "title": "Dijital Fişler",
+            "description": "Özelleştirilebilir şablonlar ve müşterilere otomatik teslimat ile elektronik fiş oluşturma."
+          },
+          "1": {
+            "title": "Sipariş Yönetimi",
+            "description": "Gerçek zamanlı durum güncellemeleri ile siparişin verilmesinden tamamlanmasına kadar kapsamlı sipariş takibi."
+          },
+          "2": {
+            "title": "Müşteri Deneyimi",
+            "description": "Dijital fişler, sadakat entegrasyonu ve geri bildirim toplama ile gelişmiş müşteri deneyimi."
+          },
+          "3": {
+            "title": "Maliyet Verimliliği",
+            "description": "Azaltılmış kağıt kullanımı ve kolaylaştırılmış fiş işleme ile önemli maliyet tasarrufu."
+          }
+        },
+        "implementation": {
+          "0": "Restoran operasyon değerlendirmesi",
+          "1": "POS sistem entegrasyonu",
+          "2": "Personel eğitimi ve kurulum",
+          "3": "Müşteri iletişim kurulumu",
+          "4": "Test ve optimizasyon",
+          "5": "Sürekli destek ve güncellemeler"
+        },
+        "industries": {
+          "0": "Restoranlar",
+          "1": "Kafeler",
+          "2": "Fast Food",
+          "3": "Catering",
+          "4": "Yemek Kamyonları",
+          "5": "Oteller"
+        },
+        "roi": "Fiş işleme maliyetlerini %90 azaltın"
+      },
+      "digigarson-pos": {
+        "title": "DigiGarson Restoran&Cafe POS Yazılımı",
+        "subtitle": "Kapsamlı Restoran Yönetimi",
+        "heroDescription": "Yiyecek ve içecek işletmeleri için özel olarak tasarlanmış kapsamlı POS ve yönetim çözümleri.",
+        "fullDescription": "DigiGarson, satış noktası işlevselliğini kapsamlı iş yönetimi araçlarıyla birleştiren hepsi bir arada restoran yönetim platformu sağlar. Sipariş almadan envanter yönetimine kadar, entegre platformumuz restoranların daha verimli ve karlı çalışmasına yardımcı olur.",
+        "benefits": {
+          "0": "Tam POS işlevselliği",
+          "1": "Entegre envanter yönetimi",
+          "2": "Personel çizelgeleme ve yönetimi",
+          "3": "Detaylı satış analitiği",
+          "4": "Müşteri ilişkileri yönetimi",
+          "5": "Çok lokasyon desteği"
+        },
+        "features": {
+          "0": {
+            "title": "POS Sistemi",
+            "description": "Sipariş yönetimi, ödeme işleme ve fiş oluşturma ile tam özellikli satış noktası sistemi."
+          },
+          "1": {
+            "title": "Envanter Yönetimi",
+            "description": "Otomatik yeniden sipariş uyarıları ve tedarikçi yönetimi entegrasyonu ile gerçek zamanlı envanter takibi."
+          },
+          "2": {
+            "title": "Personel Yönetimi",
+            "description": "Optimal personel kullanımı için çalışan çizelgeleme, zaman takibi ve performans yönetimi araçları."
+          },
+          "3": {
+            "title": "Satış Analitiği",
+            "description": "Performansı takip etmek, eğilimleri belirlemek ve operasyonları optimize etmek için kapsamlı raporlama ve analitik."
+          }
+        },
+        "implementation": {
+          "0": "Restoran ihtiyaç değerlendirmesi",
+          "1": "Donanım kurulumu ve yapılandırması",
+          "2": "Menü ve fiyatlandırma yapılandırması",
+          "3": "Personel eğitimi ve sertifikasyon",
+          "4": "Entegrasyon testi ve optimizasyon",
+          "5": "Sürekli destek ve bakım"
+        },
+        "industries": {
+          "0": "Restoranlar",
+          "1": "Kafeler",
+          "2": "Barlar",
+          "3": "Oteller",
+          "4": "Catering",
+          "5": "Yemek Alanları"
+        },
+        "roi": "Operasyonel verimliliği %40 artırın"
+      }
+    },
+    "ui": {
+      "getStarted": "Başlayın",
+      "requestDemo": "Demo Talep Edin",
+      "startFreeTrial": "Ücretsiz Deneme Başlatın",
+      "contactSales": "Satış Ekibiyle İletişime Geçin",
+      "whyChoose": "Neden Seçmelisiniz",
+      "keyFeatures": "Temel Özellikler",
+      "implementationProcess": "Uygulama Süreci",
+      "perfectForYourIndustry": "Sektörünüz İçin Mükemmel",
+      "readyToGetStarted": "Başlamaya Hazır mısınız?",
+      "joinThousands": "operasyonlarını dönüştüren binlerce işletmeye katılın",
+      "getFreeConsultation": "Bugün ücretsiz danışmanlık alarak başlayın.",
+      "trustedByBusinesses": "Birçok sektördeki işletmelerin güvendiği",
+      "comprehensiveFeatures": "İş operasyonlarınızı dönüştürmek ve büyümeyi artırmak için tasarlanmış kapsamlı özellikler.",
+      "provenMethodology": "Kanıtlanmış uygulama metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar."
     }
   }
 }

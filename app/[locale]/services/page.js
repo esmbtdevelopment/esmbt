@@ -131,11 +131,10 @@ function ServicesPage() {
                 <div className="container mx-auto px-4 sm:px-6 md:px-12">
                     <div className="max-w-4xl mx-auto text-center">
                         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 font-sora leading-tight">
-                            Digital Business
-                            <span className="block text-sky-400">Solutions</span>
+                            {t('hero.title')}
                         </h1>
                         <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 font-montserrat leading-relaxed">
-                            Transform your business with our comprehensive suite of digital solutions designed for modern enterprises
+                            {t('hero.subtitle')}
                         </p>
                     </div>
                 </div>
@@ -148,7 +147,7 @@ function ServicesPage() {
                     <div className="text-center mb-12 sm:mb-16">
                         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora">
                             <span className="relative inline-block text-sky-600">
-                                Our Services
+                                {t('hero.sectionTitle')}
                                 <div className="absolute -bottom-1 left-0 right-0 h-1 bg-sky-600"></div>
                             </span>
                         </h2>

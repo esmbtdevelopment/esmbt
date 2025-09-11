@@ -56,8 +56,7 @@ const Footer = () => {
           {/* Left side - Description */}
           <div className="max-w-md text-center lg:text-left order-2 lg:order-1 space-y-4">
             <p className="text-sm md:text-base text-gray-300 leading-relaxed font-montserrat">
-              Specialized SAP consulting and technology firm focused on driving
-              financial transformation and digital compliance for enterprises.
+              {t('companyDescription')}
             </p>
           </div>
 
@@ -65,7 +64,7 @@ const Footer = () => {
           <div className="flex justify-center items-center order-1 lg:order-2">
             <Image
               src="/images/outlined-logo.webp"
-              alt="ESM Information Technologies"
+              alt={t('logoAlt')}
               width={100}
               height={100}
               className="md:w-[125px] md:h-[125px]"
@@ -79,19 +78,19 @@ const Footer = () => {
                 <div className="flex items-center justify-center lg:justify-start space-x-3 text-gray-300">
                   <FaMapMarkerAlt className="text-sky-400 flex-shrink-0" />
                   <span className="font-montserrat text-sm md:text-base">
-                    United States
+                    {t('contact.address')}
                   </span>
                 </div>
                 <div className="flex items-center justify-center lg:justify-start space-x-3 text-gray-300">
                   <FaPhone className="text-sky-400 flex-shrink-0" />
                   <span className="font-montserrat text-sm md:text-base">
-                    +1 202 555 0100
+                    {t('contact.phone')}
                   </span>
                 </div>
                 <div className="flex items-center justify-center lg:justify-start space-x-3 text-gray-300">
                   <FaEnvelope className="text-sky-400 flex-shrink-0" />
                   <span className="font-montserrat text-sm md:text-base">
-                    info@esmbt.com
+                    {t('contact.email')}
                   </span>
                 </div>
               </div>

@@ -5,7 +5,7 @@
     "description": "We collaborate with industry leaders to deliver exceptional solutions",
     "partnersList": {
       "turkcell": "Leading telecommunications partner",
-      "sovos": "Global tax compliance solutions", 
+      "sovos": "Global tax compliance solutions",
       "uyumsoft": "Enterprise software solutions",
       "payflex": "Payment and financial technology",
       "nesBilgi": "Information technology services",
@@ -74,7 +74,7 @@
       "title": "Request a Consultation",
       "fields": {
         "name": {
-          "label": "Full Name",
+          "label": "Full Name *",
           "placeholder": "Enter your full name"
         },
         "company": {
@@ -82,8 +82,8 @@
           "placeholder": "Enter your company name"
         },
         "email": {
-          "label": "Email Address",
-          "placeholder": "Enter your email address"
+          "label": "Email Address *",
+          "placeholder": "your.email@company.com"
         },
         "phone": {
           "label": "Phone Number",
@@ -109,6 +109,8 @@
     }
   },
   "footer": {
+    "companyDescription": "Specialized SAP consulting and technology firm focused on driving financial transformation and digital compliance for enterprises.",
+    "logoAlt": "ESM Information Technologies",
     "quickLinks": {
       "title": "Quick Links",
       "aboutUs": "About Us",
@@ -153,11 +155,6 @@
   },
   "corporate": {
     "title": "Corporate",
-    "aboutUs": {
-      "title": "About Us",
-      "subtitle": "Leading SAP Solutions Provider",
-      "description": "Learn more about our company, our mission, and our commitment to excellence in SAP consulting and digital transformation."
-    },
     "team": {
       "title": "Our Team",
       "subtitle": "Expert Professionals",
@@ -254,6 +251,7 @@
       "description": "Get to know ESM Information Technologies through our comprehensive corporate information"
     },
     "aboutUs": {
+      "description": "Learn more about our company, our mission, and our commitment to excellence in SAP consulting and digital transformation.",
       "features": {
         "overview": "Company Overview",
         "values": "Our Values",
@@ -333,13 +331,6 @@
         }
       }
     },
-    "team": {
-      "features": {
-        "leadership": "Leadership Team",
-        "specialists": "SAP Specialists",
-        "experts": "Technical Experts"
-      }
-    },
     "stats": {
       "yearsOfExcellence": "Years of Excellence",
       "successfulProjects": "Successful Projects",
@@ -388,7 +379,8 @@
         "digitalTransformationDescription": "Full business digitalization",
         "viewAllDescription": "Explore our complete service portfolio"
       }
-    }
+    },
+    "cloudPortal": "Cloud Portal"
   },
   "common": {
     "hearFromUs": "Hear from us",
@@ -449,41 +441,415 @@
     }
   },
   "serviceDetails": {
-    "eInvoice": {
-      "title": "E-Invoice",
-      "subtitle": "Digital Invoice Solutions",
-      "heroDescription": "Transform your invoicing process with secure, automated digital solutions that ensure compliance while reducing costs and improving efficiency.",
-      "fullDescription": "E-Invoice is not just a digital transformation tool, but also an investment in the future of your business. Our comprehensive e-invoicing solution ensures seamless compliance with local and international regulations while dramatically reducing processing time and operational costs. Built with enterprise-grade security and scalability in mind.",
-      "benefits": {
-        "0": "Reduce invoice processing time by up to 80%",
-        "1": "Ensure 100% legal compliance with tax regulations",
-        "2": "Lower operational costs through automation",
-        "3": "Real-time invoice tracking and status updates",
-        "4": "Seamless integration with existing ERP systems",
-        "5": "Enhanced security with digital signatures"
-      },
-      "features": {
-        "automatedProcessing": {
-          "title": "Automated Processing",
-          "description": "Intelligent automation handles invoice generation, validation, and submission without manual intervention."
+    "services": {
+      "e-invoice": {
+        "title": "E-Invoice",
+        "subtitle": "Digital Invoice Solutions",
+        "heroDescription": "Transform your invoicing process with secure, automated digital solutions that ensure compliance while reducing costs and improving efficiency.",
+        "fullDescription": "E-Invoice is not just a digital transformation tool, but also an investment in the future of your business. Our comprehensive e-invoicing solution ensures seamless compliance with local and international regulations while dramatically reducing processing time and operational costs. Built with enterprise-grade security and scalability in mind.",
+        "benefits": {
+          "0": "Reduce invoice processing time by up to 80%",
+          "1": "Ensure 100% legal compliance with tax regulations",
+          "2": "Lower operational costs through automation",
+          "3": "Real-time invoice tracking and status updates",
+          "4": "Seamless integration with existing ERP systems",
+          "5": "Enhanced security with digital signatures"
         },
-        "legalCompliance": {
-          "title": "Legal Compliance",
-          "description": "Built-in compliance checks ensure all invoices meet local tax authority requirements and regulations."
+        "features": {
+          "0": {
+            "title": "Automated Processing",
+            "description": "Intelligent automation handles invoice generation, validation, and submission without manual intervention."
+          },
+          "1": {
+            "title": "Legal Compliance",
+            "description": "Built-in compliance checks ensure all invoices meet local tax authority requirements and regulations."
+          },
+          "2": {
+            "title": "Real-time Tracking",
+            "description": "Monitor invoice status in real-time with detailed tracking and delivery confirmations."
+          },
+          "3": {
+            "title": "Cloud-Based Platform",
+            "description": "Secure cloud infrastructure ensures 99.9% uptime and seamless scalability as your business grows."
+          }
         },
-        "realTimeTracking": {
-          "title": "Real-time Tracking",
-          "description": "Monitor invoice status in real-time with detailed tracking and delivery confirmations."
-        }
+        "implementation": {
+          "0": "Initial consultation and requirement analysis",
+          "1": "System integration planning and setup",
+          "2": "Data migration and testing phase",
+          "3": "Staff training and knowledge transfer",
+          "4": "Go-live support and monitoring",
+          "5": "Ongoing maintenance and updates"
+        },
+        "industries": {
+          "0": "Manufacturing",
+          "1": "Retail",
+          "2": "Healthcare",
+          "3": "Finance",
+          "4": "Logistics",
+          "5": "Technology"
+        },
+        "roi": "Average ROI of 300% within first year of implementation"
       },
-      "implementation": {
-        "0": "Initial consultation and requirement analysis",
-        "1": "System integration planning and setup",
-        "2": "Data migration and testing phase",
-        "3": "Staff training and knowledge transfer",
-        "4": "Go-live support and monitoring",
-        "5": "Ongoing maintenance and updates"
+      "e-archive-invoice": {
+        "title": "E-Archive Invoice",
+        "subtitle": "Secure Invoice Storage Solutions",
+        "heroDescription": "Secure, long-term storage solutions for your digital invoices with full legal compliance and easy retrieval capabilities.",
+        "fullDescription": "E-Archive Invoice provides a comprehensive digital archiving solution that ensures your invoices are securely stored, legally compliant, and always accessible. Our robust archiving system eliminates the need for physical document storage while maintaining full audit trails and regulatory compliance.",
+        "benefits": {
+          "0": "Secure long-term document storage",
+          "1": "Full legal compliance with retention requirements",
+          "2": "Instant document retrieval and search",
+          "3": "Automated backup and disaster recovery",
+          "4": "Reduced physical storage costs",
+          "5": "Complete audit trail maintenance"
+        },
+        "features": {
+          "0": {
+            "title": "Secure Storage",
+            "description": "Enterprise-grade encryption ensures your archived invoices remain secure and protected from unauthorized access."
+          },
+          "1": {
+            "title": "Easy Retrieval",
+            "description": "Advanced search capabilities allow instant retrieval of any archived invoice using multiple search criteria."
+          },
+          "2": {
+            "title": "Legal Compliance",
+            "description": "Automated compliance management ensures all archived documents meet legal retention requirements."
+          },
+          "3": {
+            "title": "Audit Ready",
+            "description": "Complete audit trails and tamper-proof storage make your archive always ready for regulatory inspections."
+          }
+        },
+        "implementation": {
+          "0": "Archive requirement assessment",
+          "1": "Data migration planning and execution",
+          "2": "Security configuration and testing",
+          "3": "User access control setup",
+          "4": "System integration and testing",
+          "5": "Ongoing monitoring and maintenance"
+        },
+        "industries": {
+          "0": "All Industries",
+          "1": "Government",
+          "2": "Healthcare",
+          "3": "Finance",
+          "4": "Legal Services",
+          "5": "Manufacturing"
+        },
+        "roi": "Reduce document storage costs by up to 70%"
+      },
+      "e-export": {
+        "title": "E-Export",
+        "subtitle": "Digital Export Solutions",
+        "heroDescription": "Simplify international trade with comprehensive digital export documentation and compliance management solutions.",
+        "fullDescription": "E-Export streamlines your international trade operations with digital export documentation, automated compliance checks, and seamless integration with customs authorities. Expand your global reach with confidence, knowing all export procedures are digitally managed and compliant.",
+        "benefits": {
+          "0": "Streamlined export documentation process",
+          "1": "Automated compliance with international regulations",
+          "2": "Faster customs clearance and processing",
+          "3": "Reduced export-related errors and delays",
+          "4": "Real-time shipment tracking and updates",
+          "5": "Integration with global trade platforms"
+        },
+        "features": {
+          "0": {
+            "title": "Export Documentation",
+            "description": "Automated generation of all required export documents including certificates, permits, and declarations."
+          },
+          "1": {
+            "title": "Compliance Management",
+            "description": "Built-in compliance checks ensure all exports meet destination country requirements and regulations."
+          },
+          "2": {
+            "title": "International Standards",
+            "description": "Full compliance with international trade standards and customs requirements across multiple jurisdictions."
+          },
+          "3": {
+            "title": "Process Automation",
+            "description": "End-to-end automation reduces manual work and eliminates common export processing errors."
+          }
+        },
+        "implementation": {
+          "0": "Export process analysis and mapping",
+          "1": "System configuration for target markets",
+          "2": "Integration with customs platforms",
+          "3": "Document template customization",
+          "4": "Staff training on export procedures",
+          "5": "Go-live support and optimization"
+        },
+        "industries": {
+          "0": "Manufacturing",
+          "1": "Agriculture",
+          "2": "Technology",
+          "3": "Automotive",
+          "4": "Textiles",
+          "5": "Chemicals"
+        },
+        "roi": "Reduce export processing time by up to 60%"
+      },
+      "e-commerce": {
+        "title": "E-Commerce",
+        "subtitle": "Online Commerce Platform",
+        "heroDescription": "Comprehensive e-commerce solutions that power your online business growth with integrated digital sales platforms.",
+        "fullDescription": "Our E-Commerce platform provides everything you need to build, manage, and scale your online business. From inventory management to customer experience optimization, our comprehensive tools help you succeed in the digital marketplace with professional-grade features and seamless integrations.",
+        "benefits": {
+          "0": "Complete online store management",
+          "1": "Integrated payment processing",
+          "2": "Advanced inventory control",
+          "3": "Customer analytics and insights",
+          "4": "Mobile-responsive design",
+          "5": "SEO optimization tools"
+        },
+        "features": {
+          "0": {
+            "title": "Store Management",
+            "description": "Comprehensive tools for managing products, orders, customers, and content from a single dashboard."
+          },
+          "1": {
+            "title": "Payment Integration",
+            "description": "Secure payment processing with support for multiple payment methods and currencies."
+          },
+          "2": {
+            "title": "Inventory Control",
+            "description": "Real-time inventory tracking with automated reorder points and supplier management."
+          },
+          "3": {
+            "title": "Customer Analytics",
+            "description": "Detailed customer behavior analytics to optimize sales and improve customer experience."
+          }
+        },
+        "implementation": {
+          "0": "Business requirement analysis",
+          "1": "Platform setup and customization",
+          "2": "Payment gateway integration",
+          "3": "Product catalog migration",
+          "4": "Design and UX optimization",
+          "5": "Launch and ongoing support"
+        },
+        "industries": {
+          "0": "Retail",
+          "1": "Fashion",
+          "2": "Electronics",
+          "3": "Home & Garden",
+          "4": "Sports",
+          "5": "Beauty"
+        },
+        "roi": "Increase online sales by up to 250%"
+      },
+      "e-delivery-note": {
+        "title": "E-Delivery Note",
+        "subtitle": "Digital Delivery Documentation",
+        "heroDescription": "Digitize your delivery documentation process with real-time tracking and automated record-keeping for legal compliance.",
+        "fullDescription": "E-Delivery Note eliminates paper-based delivery documentation and embraces digital efficiency. Our solution provides real-time delivery confirmation, automated record-keeping, and ensures legal compliance while reducing administrative overhead and improving delivery accuracy.",
+        "benefits": {
+          "0": "Eliminate paper-based delivery notes",
+          "1": "Real-time delivery confirmation",
+          "2": "Automated record-keeping",
+          "3": "Legal compliance assurance",
+          "4": "Reduced administrative costs",
+          "5": "Improved delivery accuracy"
+        },
+        "features": {
+          "0": {
+            "title": "Digital Documentation",
+            "description": "Complete digitization of delivery notes with electronic signatures and timestamp verification."
+          },
+          "1": {
+            "title": "Real-time Tracking",
+            "description": "Live tracking of deliveries with GPS integration and status updates throughout the delivery process."
+          },
+          "2": {
+            "title": "Delivery Confirmation",
+            "description": "Digital proof of delivery with recipient signatures and photo confirmation capabilities."
+          },
+          "3": {
+            "title": "Legal Compliance",
+            "description": "Ensures all delivery documentation meets legal requirements with tamper-proof digital records."
+          }
+        },
+        "implementation": {
+          "0": "Delivery process assessment",
+          "1": "Mobile app deployment",
+          "2": "Driver training and onboarding",
+          "3": "System integration testing",
+          "4": "Go-live support and monitoring",
+          "5": "Performance optimization"
+        },
+        "industries": {
+          "0": "Logistics",
+          "1": "Retail",
+          "2": "Manufacturing",
+          "3": "Food & Beverage",
+          "4": "Pharmaceuticals",
+          "5": "E-commerce"
+        },
+        "roi": "Reduce delivery documentation costs by 85%"
+      },
+      "e-ledger": {
+        "title": "E-Ledger",
+        "subtitle": "Digital Financial Ledger",
+        "heroDescription": "Transform financial record-keeping with digital ledger solutions ensuring legal compliance and financial transparency.",
+        "fullDescription": "E-Ledger provides a comprehensive digital bookkeeping solution that maintains accurate, auditable financial records with automated processes. Our system ensures regulatory compliance while providing real-time financial insights and reducing the complexity of financial management.",
+        "benefits": {
+          "0": "Automated digital bookkeeping",
+          "1": "Full regulatory compliance",
+          "2": "Real-time financial reporting",
+          "3": "Complete audit trail",
+          "4": "Reduced accounting errors",
+          "5": "Integration with accounting systems"
+        },
+        "features": {
+          "0": {
+            "title": "Digital Bookkeeping",
+            "description": "Automated transaction recording with intelligent categorization and reconciliation capabilities."
+          },
+          "1": {
+            "title": "Regulatory Compliance",
+            "description": "Built-in compliance features ensure all records meet local and international accounting standards."
+          },
+          "2": {
+            "title": "Automated Reports",
+            "description": "Generate comprehensive financial reports automatically with customizable templates and scheduling."
+          },
+          "3": {
+            "title": "Audit Trail",
+            "description": "Complete audit trail with timestamp verification and user activity tracking for transparency."
+          }
+        },
+        "implementation": {
+          "0": "Financial process analysis",
+          "1": "Chart of accounts setup",
+          "2": "Data migration and validation",
+          "3": "User training and certification",
+          "4": "System integration testing",
+          "5": "Ongoing support and updates"
+        },
+        "industries": {
+          "0": "All Industries",
+          "1": "Accounting Firms",
+          "2": "SMEs",
+          "3": "Non-profits",
+          "4": "Government",
+          "5": "Healthcare"
+        },
+        "roi": "Reduce accounting processing time by 75%"
+      },
+      "e-adisyon": {
+        "title": "E-Adisyon (E-Order Receipt)",
+        "subtitle": "Digital Restaurant Receipts",
+        "heroDescription": "Revolutionize restaurant operations with digital order receipt solutions that improve efficiency and customer experience.",
+        "fullDescription": "E-Adisyon transforms restaurant order management with electronic receipt solutions. Streamline your food service operations, reduce waste, improve customer service, and ensure compliance with digital receipt systems designed specifically for the hospitality industry.",
+        "benefits": {
+          "0": "Digital order receipt management",
+          "1": "Improved customer experience",
+          "2": "Reduced paper waste and costs",
+          "3": "Enhanced order accuracy",
+          "4": "Real-time order tracking",
+          "5": "Integration with POS systems"
+        },
+        "features": {
+          "0": {
+            "title": "Digital Receipts",
+            "description": "Electronic receipt generation with customizable templates and automatic delivery to customers."
+          },
+          "1": {
+            "title": "Order Management",
+            "description": "Comprehensive order tracking from placement to completion with real-time status updates."
+          },
+          "2": {
+            "title": "Customer Experience",
+            "description": "Enhanced customer experience with digital receipts, loyalty integration, and feedback collection."
+          },
+          "3": {
+            "title": "Cost Efficiency",
+            "description": "Significant cost savings through reduced paper usage and streamlined receipt processing."
+          }
+        },
+        "implementation": {
+          "0": "Restaurant operation assessment",
+          "1": "POS system integration",
+          "2": "Staff training and setup",
+          "3": "Customer communication setup",
+          "4": "Testing and optimization",
+          "5": "Ongoing support and updates"
+        },
+        "industries": {
+          "0": "Restaurants",
+          "1": "Cafes",
+          "2": "Fast Food",
+          "3": "Catering",
+          "4": "Food Trucks",
+          "5": "Hotels"
+        },
+        "roi": "Reduce receipt processing costs by 90%"
+      },
+      "digigarson-pos": {
+        "title": "DigiGarson Cafe&Restaurant POS Software",
+        "subtitle": "Complete Restaurant Management",
+        "heroDescription": "Comprehensive POS and management solutions specifically designed for food & beverage businesses.",
+        "fullDescription": "DigiGarson provides an all-in-one restaurant management platform that combines point-of-sale functionality with comprehensive business management tools. From order taking to inventory management, our integrated platform helps restaurants operate more efficiently and profitably.",
+        "benefits": {
+          "0": "Complete POS functionality",
+          "1": "Integrated inventory management",
+          "2": "Staff scheduling and management",
+          "3": "Detailed sales analytics",
+          "4": "Customer relationship management",
+          "5": "Multi-location support"
+        },
+        "features": {
+          "0": {
+            "title": "POS System",
+            "description": "Full-featured point-of-sale system with order management, payment processing, and receipt generation."
+          },
+          "1": {
+            "title": "Inventory Management",
+            "description": "Real-time inventory tracking with automated reorder alerts and supplier management integration."
+          },
+          "2": {
+            "title": "Staff Management",
+            "description": "Employee scheduling, time tracking, and performance management tools for optimal staff utilization."
+          },
+          "3": {
+            "title": "Sales Analytics",
+            "description": "Comprehensive reporting and analytics to track performance, identify trends, and optimize operations."
+          }
+        },
+        "implementation": {
+          "0": "Restaurant needs assessment",
+          "1": "Hardware setup and configuration",
+          "2": "Menu and pricing configuration",
+          "3": "Staff training and certification",
+          "4": "Integration testing and optimization",
+          "5": "Ongoing support and maintenance"
+        },
+        "industries": {
+          "0": "Restaurants",
+          "1": "Cafes",
+          "2": "Bars",
+          "3": "Hotels",
+          "4": "Catering",
+          "5": "Food Courts"
+        },
+        "roi": "Improve operational efficiency by 40%"
       }
+    },
+    "ui": {
+      "getStarted": "Get Started",
+      "requestDemo": "Request Demo",
+      "startFreeTrial": "Start Free Trial",
+      "contactSales": "Contact Sales",
+      "whyChoose": "Why Choose",
+      "keyFeatures": "Key Features",
+      "implementationProcess": "Implementation Process",
+      "perfectForYourIndustry": "Perfect for Your Industry",
+      "readyToGetStarted": "Ready to Get Started?",
+      "joinThousands": "Join thousands of businesses that have transformed their operations with",
+      "getFreeConsultation": "Get started with a free consultation today.",
+      "trustedByBusinesses": "Trusted by businesses across multiple industries",
+      "comprehensiveFeatures": "Comprehensive features designed to transform your business operations and drive growth.",
+      "provenMethodology": "Our proven implementation methodology ensures smooth deployment and maximum ROI."
     }
   },
   "about": {
@@ -497,7 +863,7 @@
     "paragraph3": "With a deep focus on automation, compliance, and SAP-native design, we enable enterprises to meet evolving digital and regulatory demands while maintaining the highest standards of data security and operational efficiency.",
     "stats": {
       "experience": "Years Experience",
-      "implementations": "SAP Implementations", 
+      "implementations": "SAP Implementations",
       "clients": "Enterprise Clients",
       "specialists": "SAP Specialists"
     },
@@ -507,12 +873,24 @@
         "description": "All solutions built specifically for SAP environments with seamless integration"
       },
       "compliance": {
-        "title": "Regulatory Compliance", 
+        "title": "Regulatory Compliance",
         "description": "Expert guidance on digital tax requirements and evolving regulatory demands"
       },
       "transformation": {
         "title": "Financial Transformation",
         "description": "Specialized focus on streamlining financial operations and process automation"
+      }
+    },
+    "cta": {
+      "badge": "Ready to Transform?",
+      "title": "Transform Your Financial Operations Today",
+      "description": "Discover how our SAP expertise can streamline your compliance and automation needs with cutting-edge solutions",
+      "consultationButton": "Schedule SAP Consultation",
+      "solutionsButton": "View Our Solutions",
+      "trustIndicators": {
+        "projects": "500+ Projects",
+        "response": "24h Response",
+        "certified": "SAP Certified"
       }
     }
   },
@@ -528,6 +906,12 @@
     "title": "Our Services",
     "subtitle": "Comprehensive SAP Solutions",
     "description": "We provide end-to-end SAP consulting and digital transformation services tailored to your business needs.",
+    "hero": {
+      "title": "Digital Business Solutions",
+      "subtitle": "Transform your business with our comprehensive suite of digital solutions designed for modern enterprises",
+      "sectionTitle": "Our Services",
+      "sectionDescription": "Comprehensive digital transformation solutions tailored for your business needs. From compliance to commerce, we've got you covered."
+    },
     "landing": {
       "ecommerce": {
         "title": "E-Commerce",

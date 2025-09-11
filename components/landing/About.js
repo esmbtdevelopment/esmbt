@@ -205,17 +205,15 @@ const About = () => {
             {/* Floating badge */}
             <div className="inline-flex items-center space-x-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 mb-6 backdrop-blur-sm">
               <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
-              <span className="text-white/90 font-semibold font-montserrat text-sm">Ready to Transform?</span>
+              <span className="text-white/90 font-semibold font-montserrat text-sm">{t('cta.badge')}</span>
             </div>
 
             <h3 className="text-4xl md:text-5xl font-bold mb-6 font-sora leading-tight">
-              Transform Your Financial
-              <span className="block text-yellow-400">Operations Today</span>
+              {t('cta.title')}
             </h3>
 
             <p className="text-xl md:text-2xl mb-10 opacity-90 font-montserrat max-w-2xl mx-auto leading-relaxed">
-              Discover how our SAP expertise can streamline your compliance and
-              automation needs with cutting-edge solutions
+              {t('cta.description')}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -223,7 +221,7 @@ const About = () => {
                 {/* Shine effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000"></div>
                 <span className="relative flex items-center space-x-2">
-                  <span>Schedule SAP Consultation</span>
+                  <span>{t('cta.consultationButton')}</span>
                   <span className="text-xl group-hover:translate-x-1 transition-transform">→</span>
                 </span>
               </button>
@@ -232,7 +230,7 @@ const About = () => {
                 {/* Background slide effect */}
                 <div className="absolute inset-0 bg-white transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500"></div>
                 <span className="relative flex items-center space-x-2">
-                  <span>View Our Solutions</span>
+                  <span>{t('cta.solutionsButton')}</span>
                   <span className="text-xl group-hover:translate-x-1 transition-transform">→</span>
                 </span>
               </button>
@@ -244,19 +242,19 @@ const About = () => {
                 <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center">
                   <span className="text-white text-sm">✓</span>
                 </div>
-                <span className="text-white/80 font-montserrat text-sm">500+ Projects</span>
+                <span className="text-white/80 font-montserrat text-sm">{t('cta.trustIndicators.projects')}</span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center">
                   <span className="text-white text-sm">⚡</span>
                 </div>
-                <span className="text-white/80 font-montserrat text-sm">24h Response</span>
+                <span className="text-white/80 font-montserrat text-sm">{t('cta.trustIndicators.response')}</span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center">
                   <span className="text-white text-sm">★</span>
                 </div>
-                <span className="text-white/80 font-montserrat text-sm">SAP Certified</span>
+                <span className="text-white/80 font-montserrat text-sm">{t('cta.trustIndicators.certified')}</span>
               </div>
             </div>
           </div>

@@ -410,7 +410,8 @@ const serviceData = {
 
 export default function ServiceDetailPage({ params }) {
     const { locale, servicename } = use(params);
-    const t = useTranslations('serviceDetails');
+    const t = useTranslations('serviceDetails.services');
+    const tUI = useTranslations('serviceDetails.ui');
     const tNav = useTranslations('navigation');
 
     // Get service data with translations
@@ -418,51 +419,72 @@ export default function ServiceDetailPage({ params }) {
         const baseService = serviceData[serviceName];
         if (!baseService) return null;
 
-        // Apply translations for e-invoice service
-        if (serviceName === 'e-invoice') {
-            return {
-                ...baseService,
-                title: t('eInvoice.title'),
-                subtitle: t('eInvoice.subtitle'),
-                heroDescription: t('eInvoice.heroDescription'),
-                fullDescription: t('eInvoice.fullDescription'),
-                benefits: [
-                    t('eInvoice.benefits.0'),
-                    t('eInvoice.benefits.1'),
-                    t('eInvoice.benefits.2'),
-                    t('eInvoice.benefits.3'),
-                    t('eInvoice.benefits.4'),
-                    t('eInvoice.benefits.5')
-                ],
-                features: [
-                    {
-                        title: t('eInvoice.features.automatedProcessing.title'),
-                        description: t('eInvoice.features.automatedProcessing.description'),
-                        icon: baseService.features[0].icon
-                    },
-                    {
-                        title: t('eInvoice.features.legalCompliance.title'),
-                        description: t('eInvoice.features.legalCompliance.description'),
-                        icon: baseService.features[1].icon
-                    },
-                    {
-                        title: t('eInvoice.features.realTimeTracking.title'),
-                        description: t('eInvoice.features.realTimeTracking.description'),
-                        icon: baseService.features[2].icon
-                    }
-                ],
-                implementation: [
-                    t('eInvoice.implementation.0'),
-                    t('eInvoice.implementation.1'),
-                    t('eInvoice.implementation.2'),
-                    t('eInvoice.implementation.3'),
-                    t('eInvoice.implementation.4'),
-                    t('eInvoice.implementation.5')
-                ]
-            };
-        }
+        // Check if translations exist for this service
+        try {
+            // Handle arrays by accessing individual elements
+            const benefits = [];
+            const features = [];
+            const implementation = [];
+            const industries = [];
 
-        return baseService;
+            // Get benefits array
+            try {
+                for (let i = 0; i < baseService.benefits.length; i++) {
+                    benefits.push(t(`${serviceName}.benefits.${i}`));
+                }
+            } catch (e) {
+                benefits.push(...baseService.benefits);
+            }
+
+            // Get features array
+            try {
+                for (let i = 0; i < baseService.features.length; i++) {
+                    features.push({
+                        title: t(`${serviceName}.features.${i}.title`),
+                        description: t(`${serviceName}.features.${i}.description`),
+                        icon: baseService.features[i].icon
+                    });
+                }
+            } catch (e) {
+                features.push(...baseService.features);
+            }
+
+            // Get implementation array
+            try {
+                for (let i = 0; i < baseService.implementation.length; i++) {
+                    implementation.push(t(`${serviceName}.implementation.${i}`));
+                }
+            } catch (e) {
+                implementation.push(...baseService.implementation);
+            }
+
+            // Get industries array
+            try {
+                for (let i = 0; i < baseService.industries.length; i++) {
+                    industries.push(t(`${serviceName}.industries.${i}`));
+                }
+            } catch (e) {
+                industries.push(...baseService.industries);
+            }
+
+            const translatedService = {
+                ...baseService,
+                title: t(`${serviceName}.title`),
+                subtitle: t(`${serviceName}.subtitle`),
+                heroDescription: t(`${serviceName}.heroDescription`),
+                fullDescription: t(`${serviceName}.fullDescription`),
+                benefits: benefits,
+                features: features,
+                implementation: implementation,
+                industries: industries,
+                roi: t(`${serviceName}.roi`)
+            };
+            return translatedService;
+        } catch (error) {
+            // Fallback to base service data if translations are missing
+            console.warn(`Translations missing for service: ${serviceName}, falling back to base data`);
+            return baseService;
+        }
     };
 
     const service = getServiceData(servicename);
@@ -503,11 +525,11 @@ export default function ServiceDetailPage({ params }) {
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4">
                                     <button className="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
-                                        <span className="text-sm sm:text-base">Get Started</span>
+                                        <span className="text-sm sm:text-base">{tUI('getStarted')}</span>
                                         <FaChevronRight className="text-sm" />
                                     </button>
                                     <button className="border-2 border-sky-500 text-sky-400 hover:bg-sky-500 hover:text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
-                                        <span className="text-sm sm:text-base">Request Demo</span>
+                                        <span className="text-sm sm:text-base">{tUI('requestDemo')}</span>
                                     </button>
                                 </div>
                             </div>
@@ -533,7 +555,7 @@ export default function ServiceDetailPage({ params }) {
                         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                             <div>
                                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora">
-                                    Why Choose {service.title}?
+                                    {tUI('whyChoose')} {service.title}?
                                 </h2>
                                 <p className="text-base sm:text-lg text-gray-600 font-montserrat leading-relaxed mb-6 sm:mb-8">
                                     {service.fullDescription}
@@ -559,12 +581,12 @@ export default function ServiceDetailPage({ params }) {
                         <div className="text-center mb-12 sm:mb-16">
                             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora">
                                 <span className="relative inline-block text-sky-600">
-                                    Key Features
+                                    {tUI('keyFeatures')}
                                     <div className="absolute -bottom-1 left-0 right-0 h-1 bg-sky-600"></div>
                                 </span>
                             </h2>
                             <p className="text-base sm:text-lg text-gray-600 font-montserrat leading-relaxed max-w-3xl mx-auto px-4">
-                                Comprehensive features designed to transform your business operations and drive growth.
+                                {tUI('comprehensiveFeatures')}
                             </p>
                         </div>
 
@@ -593,10 +615,10 @@ export default function ServiceDetailPage({ params }) {
                     <div className="max-w-6xl mx-auto">
                         <div className="text-center mb-12 sm:mb-16">
                             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora">
-                                Implementation Process
+                                {tUI('implementationProcess')}
                             </h2>
                             <p className="text-base sm:text-lg text-gray-600 font-montserrat leading-relaxed max-w-3xl mx-auto px-4">
-                                Our proven implementation methodology ensures smooth deployment and maximum ROI.
+                                {tUI('provenMethodology')}
                             </p>
                         </div>
 
@@ -619,10 +641,10 @@ export default function ServiceDetailPage({ params }) {
                 <div className="container mx-auto px-4 sm:px-6 md:px-12">
                     <div className="max-w-6xl mx-auto text-center text-white">
                         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 font-sora">
-                            Perfect for Your Industry
+                            {tUI('perfectForYourIndustry')}
                         </h2>
                         <p className="text-lg sm:text-xl text-gray-300 mb-6 sm:mb-8 font-montserrat px-4">
-                            Trusted by businesses across multiple industries
+                            {tUI('trustedByBusinesses')}
                         </p>
 
                         <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8 sm:mb-12 px-4">
@@ -635,19 +657,18 @@ export default function ServiceDetailPage({ params }) {
 
                         <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 md:p-12">
                             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 font-sora">
-                                Ready to Get Started?
+                                {tUI('readyToGetStarted')}
                             </h3>
                             <p className="text-gray-300 font-montserrat text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed px-4">
-                                Join thousands of businesses that have transformed their operations with {service.title}.
-                                Get started with a free consultation today.
+                                {tUI('joinThousands')} {service.title}. {tUI('getFreeConsultation')}
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <button className="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
-                                    <span className="text-sm sm:text-base">Start Free Trial</span>
+                                    <span className="text-sm sm:text-base">{tUI('startFreeTrial')}</span>
                                     <FaChevronRight className="text-sm" />
                                 </button>
                                 <button className="border-2 border-sky-500 text-sky-400 hover:bg-sky-500 hover:text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
-                                    <span className="text-sm sm:text-base">Contact Sales</span>
+                                    <span className="text-sm sm:text-base">{tUI('contactSales')}</span>
                                 </button>
                             </div>
                         </div>

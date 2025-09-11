@@ -280,7 +280,7 @@ const Navbar = () => {
                 rel="noopener noreferrer"
                 className="relative px-4 py-2 text-xs md:text-sm bg-gradient-to-r from-slate-700 to-slate-900 hover:from-slate-800 hover:to-black text-white rounded-full shadow-lg hover:shadow-xl transform transition-all duration-300 uppercase tracking-widest font-semibold border border-slate-600"
               >
-                <span className="relative z-10 text-xs">Cloud Portal</span>
+                <span className="relative z-10 text-xs">{t('cloudPortal')}</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-slate-600 to-slate-800 rounded-full opacity-0 hover:opacity-30 transition-opacity duration-300"></div>
               </a>
             </div>
@@ -432,7 +432,6 @@ const Navbar = () => {
                 className="relative mt-2 px-6 py-3 bg-gradient-to-r from-slate-700 to-slate-900 hover:from-slate-800 hover:to-black text-white rounded-full text-center font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 uppercase tracking-wide border border-slate-600"
               >
                 <span className="relative z-10">{t('contact')}</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-slate-600 to-slate-800 rounded-full opacity-0 hover:opacity-30 transition-opacity duration-300"></div>
               </button>
 
               {/* Mobile Cloud Portal Button with Same Styling */}
@@ -442,7 +441,7 @@ const Navbar = () => {
                 rel="noopener noreferrer"
                 className="relative mt-2 px-6 py-3 bg-gradient-to-r from-slate-700 to-slate-900 hover:from-slate-800 hover:to-black text-white rounded-full text-center font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 uppercase tracking-wide border border-slate-600"
               >
-                <span className="relative z-10">Cloud Portal</span>
+                <span className="relative z-10">{t('cloudPortal')}</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-slate-600 to-slate-800 rounded-full opacity-0 hover:opacity-30 transition-opacity duration-300"></div>
               </a>
 
@@ -456,11 +455,11 @@ const Navbar = () => {
                 <div className="flex flex-col space-y-3 text-sm text-gray-300">
                   <div className="flex items-center space-x-2">
                     <FaPhone className="text-xs text-sky-400" />
-                    <span>+1 234 567 890</span>
+                    <span>{tCommon('contact.phone')}</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <FaEnvelope className="text-xs text-sky-400" />
-                    <span>info@esmbt.com</span>
+                    <span>{tCommon('contact.email')}</span>
                   </div>
                 </div>
 

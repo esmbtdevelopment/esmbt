@@ -95,7 +95,7 @@ const ContactForm = () => {
                 <div className="grid sm:grid-cols-2 gap-4">
                     <div className="relative">
                         <label className="block text-xs font-semibold text-gray-700 mb-2 font-montserrat">
-                            Full Name *
+                            {t('fields.name.label')}
                         </label>
                         <div className="relative">
                             <FaUser className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm" />
@@ -113,7 +113,7 @@ const ContactForm = () => {
 
                     <div className="relative">
                         <label className="block text-xs font-semibold text-gray-700 mb-2 font-montserrat">
-                            Company
+                            {t('fields.company.label')}
                         </label>
                         <div className="relative">
                             <FaBuilding className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm" />
@@ -131,7 +131,7 @@ const ContactForm = () => {
 
                 <div className="relative">
                     <label className="block text-xs font-semibold text-gray-700 mb-2 font-montserrat">
-                        Email Address *
+                        {t('fields.email.label')}
                     </label>
                     <div className="relative">
                         <FaEnvelope className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm" />
@@ -140,7 +140,7 @@ const ContactForm = () => {
                             name="email"
                             value={formData.email}
                             onChange={handleInputChange}
-                            placeholder="your.email@company.com"
+                            placeholder={t('fields.email.placeholder')}
                             className="w-full pl-10 sm:pl-12 pr-4 py-3 border-2 text-sm border-gray-200 rounded-xl focus:ring-4 focus:ring-sky-200 focus:border-sky-500 transition-all duration-300 font-montserrat hover:border-sky-300 bg-white/50 backdrop-blur-sm"
                             required
                         />
