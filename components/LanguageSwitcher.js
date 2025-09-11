@@ -84,11 +84,13 @@ export default function LanguageSwitcher() {
             <div className="md:hidden relative">
                 <button
                     onClick={() => setIsOpen(!isOpen)}
-                    className="flex items-center space-x-2 px-3 py-2 text-gray-600 hover:text-sky-600 transition-colors"
+                    className="flex items-center space-x-2 px-3 py-2 text-white hover:text-sky-400 transition-colors w-full justify-between"
                     disabled={isPending}
                 >
-                    <FaGlobe className="text-sm" />
-                    <span className="text-sm font-medium">{currentLanguage?.code.toUpperCase()}</span>
+                    <div className="flex items-center space-x-2">
+                        <FaGlobe className="text-sm" />
+                        <span className="text-sm font-medium">{currentLanguage?.name}</span>
+                    </div>
                     <svg
                         className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`}
                         fill="none"
@@ -101,12 +103,12 @@ export default function LanguageSwitcher() {
 
                 {/* Dropdown Menu */}
                 {isOpen && (
-                    <div className="absolute right-0 top-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg z-50 min-w-[120px]">
+                    <div className="absolute right-0 top-full mt-1 bg-gray-800 border border-gray-600 rounded-lg shadow-lg z-50 min-w-[140px]">
                         {languages.map((language) => (
                             <button
                                 key={language.code}
                                 onClick={() => handleLanguageChange(language.code)}
-                                className={`w-full flex items-center space-x-3 px-4 py-2 text-sm text-left hover:bg-gray-50 transition-colors first:rounded-t-lg last:rounded-b-lg ${detectedLocale === language.code ? 'bg-sky-50 text-sky-600 font-medium' : 'text-gray-700'
+                                className={`w-full flex items-center space-x-3 px-4 py-3 text-sm text-left hover:bg-gray-700 transition-colors first:rounded-t-lg last:rounded-b-lg ${detectedLocale === language.code ? 'bg-sky-600 text-white font-medium' : 'text-gray-300'
                                     }`}
                                 disabled={isPending}
                             >

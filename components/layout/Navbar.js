@@ -6,7 +6,6 @@ import { useRouter } from 'next/navigation';
 import {
   FaPhone,
   FaEnvelope,
-  FaMapMarkerAlt,
   FaFacebookF,
   FaTwitter,
   FaInstagram,
@@ -23,7 +22,7 @@ import {
   FaShieldAlt,
   FaChartLine,
 } from "react-icons/fa";
-import { goToContact, goToReferences, getCurrentLocale } from "@/utils/navigation";
+import { goToContact, goToReferences } from "@/utils/navigation";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const Navbar = () => {
@@ -109,7 +108,7 @@ const Navbar = () => {
     services: [
       { title: t('eInvoiceSolutions'), description: t('dropdown.services.eInvoiceDescription'), icon: FaChartLine, link: `/${locale}/services/e-invoice` },
       { title: t('eCommercePlatform'), description: t('dropdown.services.eCommerceDescription'), icon: FaCogs, link: `/${locale}/services/e-commerce` },
-      { title: t('digitalTransformation'), description: t('dropdown.services.digitalTransformationDescription'), icon: FaShieldAlt, link: `/${locale}/services/services` },
+      { title: t('digitalTransformation'), description: t('dropdown.services.digitalTransformationDescription'), icon: FaShieldAlt, link: `/${locale}/services` },
       { title: t('viewAllServices'), description: t('dropdown.services.viewAllDescription'), icon: FaChartLine, link: `/${locale}/services`, highlight: true },
     ],
   };
@@ -130,9 +129,12 @@ const Navbar = () => {
                 width={80}
                 height={80}
               />
-              <span className="text-2xl from-sky-400 to-sky-600 bg-clip-text text-transparent bg-gradient-to-r font-extrabold tracking-widest">
-                ESM
-              </span>
+              <Image
+                src="/images/logo-text.webp"
+                alt="ESMBT"
+                width={80}
+                height={80}
+              />
             </div>
 
             {/* Navigation Menu */}
@@ -323,7 +325,7 @@ const Navbar = () => {
                   onClick={() => toggleMobileDropdown('corporate')}
                   className="flex items-center justify-between w-full text-white font-semibold py-2"
                 >
-                  <span>Corporate</span>
+                  <span>{t('corporate')}</span>
                   <FaChevronDown
                     className={`text-xs transition-transform duration-200 ${mobileActiveDropdown === 'corporate' ? 'rotate-180' : 'rotate-0'
                       }`}
@@ -354,7 +356,7 @@ const Navbar = () => {
                   onClick={() => toggleMobileDropdown('products')}
                   className="flex items-center justify-between w-full text-white font-semibold py-2"
                 >
-                  <span>Products</span>
+                  <span>{t('products')}</span>
                   <FaChevronDown
                     className={`text-xs transition-transform duration-200 ${mobileActiveDropdown === 'products' ? 'rotate-180' : 'rotate-0'
                       }`}
@@ -385,7 +387,7 @@ const Navbar = () => {
                   onClick={() => toggleMobileDropdown('services')}
                   className="flex items-center justify-between w-full text-white font-semibold py-2"
                 >
-                  <span>Services</span>
+                  <span>{t('services')}</span>
                   <FaChevronDown
                     className={`text-xs transition-transform duration-200 ${mobileActiveDropdown === 'services' ? 'rotate-180' : 'rotate-0'
                       }`}
@@ -418,7 +420,7 @@ const Navbar = () => {
                 }}
                 className="text-white py-3 transition-colors text-left w-full"
               >
-                References
+                {t('references')}
               </button>
 
               {/* Mobile Contact Button with Darker Gradient */}
@@ -429,7 +431,7 @@ const Navbar = () => {
                 }}
                 className="relative mt-2 px-6 py-3 bg-gradient-to-r from-slate-700 to-slate-900 hover:from-slate-800 hover:to-black text-white rounded-full text-center font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 uppercase tracking-wide border border-slate-600"
               >
-                <span className="relative z-10">Contact Us</span>
+                <span className="relative z-10">{t('contact')}</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-slate-600 to-slate-800 rounded-full opacity-0 hover:opacity-30 transition-opacity duration-300"></div>
               </button>
 
@@ -443,6 +445,11 @@ const Navbar = () => {
                 <span className="relative z-10">Cloud Portal</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-slate-600 to-slate-800 rounded-full opacity-0 hover:opacity-30 transition-opacity duration-300"></div>
               </a>
+
+              {/* Mobile Language Switcher */}
+              <div className="border-t border-gray-700 pt-4 mt-4">
+                <LanguageSwitcher />
+              </div>
 
               {/* Mobile Contact Info */}
               <div className="border-t border-gray-700 pt-4 mt-4">
