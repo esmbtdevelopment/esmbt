@@ -12,6 +12,30 @@
       "ideaTeknoloji": "Technology innovation partner",
       "eplatform": "Digital platform solutions",
       "edoksis": "Document management systems"
+    },
+    "benefits": {
+      "title": "Why We Partner",
+      "enhancedCapabilities": {
+        "title": "Enhanced Capabilities",
+        "description": "Access to cutting-edge technologies and specialized expertise"
+      },
+      "comprehensiveSolutions": {
+        "title": "Comprehensive Solutions",
+        "description": "End-to-end solutions through strategic collaborations"
+      },
+      "globalReach": {
+        "title": "Global Reach",
+        "description": "International standards and best practices"
+      },
+      "excellence": {
+        "title": "Partnership Excellence",
+        "description": "Building success through collaboration"
+      }
+    },
+    "stats": {
+      "strategicPartners": "Strategic Partners",
+      "yearsCollaboration": "Years Collaboration",
+      "certifiedSolutions": "Certified Solutions"
     }
   },
   "customers": {
@@ -159,31 +183,145 @@
       "title": "Our Team",
       "subtitle": "Expert Professionals",
       "description": "Meet our experienced team of SAP consultants and digital transformation experts.",
+      "hero": {
+        "badge": "Our Team",
+        "title": "Meet the Experts Behind",
+        "titleHighlight": "Our Success",
+        "description": "Our diverse team of SAP specialists, developers, and consultants brings together decades of experience to deliver exceptional results for our clients."
+      },
+      "stats": {
+        "teamMembers": "Team Members",
+        "sapCertifiedExperts": "SAP Certified Experts",
+        "yearsAverageExperience": "Years Average Experience",
+        "languagesSpoken": "Languages Spoken"
+      },
       "leadership": {
+        "title": "Leadership Team",
+        "description": "Meet the visionary leaders who guide ESM Information Technologies toward excellence and innovation",
+        "expertiseLabel": "Expertise",
+        "educationLabel": "Education",
+        "certificationsLabel": "Certifications",
         "ceo": {
           "name": "Mehmet Özkan",
           "position": "Chief Executive Officer & Founder",
           "bio": "With over 20 years of experience in enterprise software and SAP consulting, Mehmet founded ESM with the vision of transforming businesses through innovative SAP solutions.",
-          "expertise": ["Strategic Leadership", "SAP Architecture", "Business Transformation"],
+          "expertise": {
+            "0": "Strategic Leadership",
+            "1": "SAP Architecture", 
+            "2": "Business Transformation"
+          },
           "education": "MBA in Business Administration, BSc in Computer Engineering",
-          "certifications": ["SAP Certified Solution Architect", "PMP Certified"]
+          "certifications": {
+            "0": "SAP Certified Solution Architect",
+            "1": "PMP Certified"
+          }
         },
         "cto": {
           "name": "Ayşe Demir",
           "position": "Chief Technology Officer",
           "bio": "Ayşe leads our technical vision with 15+ years in SAP development and system integration. She specializes in complex SAP implementations and digital transformation projects.",
-          "expertise": ["SAP Development", "System Integration", "Technical Architecture"],
+          "expertise": {
+            "0": "SAP Development",
+            "1": "System Integration",
+            "2": "Technical Architecture"
+          },
           "education": "MSc in Software Engineering, BSc in Computer Science",
-          "certifications": ["SAP Certified Development Professional", "TOGAF Certified"]
+          "certifications": {
+            "0": "SAP Certified Development Professional",
+            "1": "TOGAF Certified"
+          }
         },
         "cfo": {
           "name": "Ahmet Yılmaz",
           "position": "Chief Financial Officer",
           "bio": "Ahmet brings extensive financial expertise and deep understanding of regulatory compliance, leading our financial transformation initiatives.",
-          "expertise": ["Financial Management", "Regulatory Compliance", "IFRS Implementation"],
+          "expertise": {
+            "0": "Financial Management",
+            "1": "Regulatory Compliance",
+            "2": "IFRS Implementation"
+          },
           "education": "MBA in Finance, BSc in Economics",
-          "certifications": ["CPA Certified", "IFRS Specialist"]
+          "certifications": {
+            "0": "CPA Certified",
+            "1": "IFRS Specialist"
+          }
         }
+      },
+      "departments": {
+        "title": "Our Departments",
+        "description": "Specialized teams working together to deliver comprehensive SAP solutions and services",
+        "specialistsLabel": "specialists",
+        "specialtiesLabel": "Specialties",
+        "teams": {
+          "sapConsulting": {
+            "name": "SAP Consulting",
+            "description": "Our SAP experts deliver end-to-end consulting services",
+            "teamSize": "15+",
+            "specialties": {
+              "0": "SAP Implementation",
+              "1": "System Optimization", 
+              "2": "Process Design"
+            }
+          },
+          "development": {
+            "name": "Development Team",
+            "description": "Skilled developers creating custom SAP solutions",
+            "teamSize": "12+",
+            "specialties": {
+              "0": "Custom Development",
+              "1": "Integration",
+              "2": "API Development"
+            }
+          },
+          "financial": {
+            "name": "Financial Solutions",
+            "description": "Specialists in financial compliance and transformation",
+            "teamSize": "10+",
+            "specialties": {
+              "0": "E-Transformation",
+              "1": "Compliance",
+              "2": "Financial Reporting"
+            }
+          },
+          "support": {
+            "name": "Support & Training",
+            "description": "Dedicated team for ongoing support and user training",
+            "teamSize": "8+",
+            "specialties": {
+              "0": "User Training",
+              "1": "Technical Support",
+              "2": "Documentation"
+            }
+          }
+        }
+      },
+      "values": {
+        "title": "Our Team Values",
+        "description": "The principles that guide our team culture and drive our commitment to excellence",
+        "items": {
+          "continuousLearning": {
+            "title": "Continuous Learning",
+            "description": "We invest in our team's growth through ongoing training and certification programs"
+          },
+          "collaborativeCulture": {
+            "title": "Collaborative Culture",
+            "description": "We foster an environment where teamwork and knowledge sharing drive innovation"
+          },
+          "excellenceFocus": {
+            "title": "Excellence Focus",
+            "description": "We maintain the highest standards in everything we do, from code quality to client service"
+          },
+          "innovationMindset": {
+            "title": "Innovation Mindset",
+            "description": "We encourage creative thinking and embrace new technologies to solve complex challenges"
+          }
+        }
+      },
+      "cta": {
+        "title": "Join Our Growing Team",
+        "description": "Are you passionate about SAP and digital transformation? We're always looking for talented individuals to join our team of experts.",
+        "contactButton": "Contact Us",
+        "referencesButton": "View Our References"
       }
     },
     "vision": {
@@ -195,9 +333,18 @@
         "future": "Future Vision",
         "goals": "Strategic Goals"
       },
+      "hero": {
+        "badge": "Vision & Mission",
+        "title": "Our Vision, Mission &",
+        "titleHighlight": "Core Values",
+        "description": "Discover the fundamental principles, ambitious goals, and unwavering values that guide ESM Information Technologies toward excellence and innovation."
+      },
       "mission": {
         "title": "Our Mission",
-        "description": "To empower enterprises through innovative SAP solutions and digital transformation, ensuring compliance while driving operational excellence.",
+        "badge": "Our Mission",
+        "sectionTitle": "Transforming Businesses Through SAP Excellence",
+        "description": "Our mission is to empower enterprises with world-class SAP solutions and digital transformation services that drive operational excellence, ensure regulatory compliance, and unlock sustainable growth.",
+        "imageAlt": "ESM Mission",
         "points": {
           "sapExcellence": {
             "title": "SAP Excellence",
@@ -219,7 +366,11 @@
       },
       "vision": {
         "title": "Our Vision",
-        "description": "To be the leading SAP consulting partner in the region, recognized for innovation, excellence, and transformative digital solutions.",
+        "badge": "Our Vision",
+        "sectionTitle": "Leading the Digital Transformation Era",
+        "description": "We envision a future where ESM Information Technologies is recognized globally as the premier SAP consulting partner, setting industry standards for innovation, quality, and client success.",
+        "visionYear": "Vision 2030",
+        "visionSubtitle": "Leading the Future",
         "goals": {
           "innovation": {
             "title": "Innovation Leadership",
@@ -238,6 +389,81 @@
             "description": "Build strong alliances with technology leaders and industry experts"
           }
         }
+      },
+      "coreValues": {
+        "title": "Our Core Values",
+        "description": "These fundamental values shape our culture, guide our decisions, and define who we are as a company",
+        "values": {
+          "innovation": {
+            "title": "Innovation",
+            "description": "We continuously push boundaries to create innovative solutions that solve complex business challenges"
+          },
+          "excellence": {
+            "title": "Excellence",
+            "description": "We maintain the highest standards in everything we do, from code quality to client service"
+          },
+          "collaboration": {
+            "title": "Collaboration",
+            "description": "We believe in the power of teamwork and build strong partnerships with our clients and colleagues"
+          },
+          "integrity": {
+            "title": "Integrity",
+            "description": "We operate with complete transparency and honesty in all our business relationships"
+          },
+          "agility": {
+            "title": "Agility",
+            "description": "We adapt quickly to changing market demands and embrace new technologies and methodologies"
+          },
+          "quality": {
+            "title": "Quality",
+            "description": "We are committed to delivering superior quality solutions that exceed client expectations"
+          }
+        }
+      },
+      "strategicGoals": {
+        "title": "Strategic Goals",
+        "description": "Our ambitious roadmap for growth, innovation, and market leadership in the coming years",
+        "targetLabel": "Target:",
+        "goals": {
+          "marketExpansion": {
+            "title": "Market Expansion",
+            "description": "Expand our global presence and establish ESM as a leading SAP partner in key international markets",
+            "target": "2025"
+          },
+          "innovationLeadership": {
+            "title": "Innovation Leadership",
+            "description": "Lead the industry in developing next-generation SAP-native solutions for digital transformation",
+            "target": "2024"
+          },
+          "teamGrowth": {
+            "title": "Team Growth",
+            "description": "Build a world-class team of 100+ certified SAP specialists and technology experts",
+            "target": "2026"
+          },
+          "sustainabilityFocus": {
+            "title": "Sustainability Focus",
+            "description": "Integrate sustainability practices into all our solutions and business operations",
+            "target": "2024"
+          }
+        }
+      },
+      "guidingPrinciples": {
+        "title": "Our Guiding Principles",
+        "description": "The fundamental beliefs that guide our everyday actions and long-term strategy",
+        "principles": {
+          "0": "Client success is our primary measure of success",
+          "1": "Continuous learning and improvement drive our growth",
+          "2": "Innovation should solve real business problems",
+          "3": "Quality and reliability are non-negotiable",
+          "4": "Transparency builds trust and lasting relationships",
+          "5": "Sustainable practices benefit everyone"
+        }
+      },
+      "cta": {
+        "title": "Share Our Vision",
+        "description": "Join us on our mission to transform businesses and lead the digital transformation era. Let's build the future together.",
+        "partnerButton": "Partner With Us",
+        "referencesButton": "View Our References"
       }
     },
     "badge": "Corporate Information",
@@ -251,13 +477,24 @@
       "description": "Get to know ESM Information Technologies through our comprehensive corporate information"
     },
     "aboutUs": {
-      "description": "Learn more about our company, our mission, and our commitment to excellence in SAP consulting and digital transformation.",
-      "features": {
-        "overview": "Company Overview",
-        "values": "Our Values",
-        "principles": "Core Principles"
+      "description": "ESM Information Technologies is a leading SAP consulting firm with over 15 years of experience in digital transformation, compliance solutions, and enterprise software implementations. We specialize in helping businesses streamline operations and achieve sustainable growth through innovative SAP solutions.",
+      "hero": {
+        "badge": "About ESM",
+        "title": "Transforming Businesses Through",
+        "titleHighlight": "SAP Excellence",
+        "description": "For over 15 years, ESM Information Technologies has been at the forefront of SAP consulting and digital transformation, helping enterprises streamline operations, ensure compliance, and achieve sustainable growth through innovative technology solutions.",
+        "stats": {
+          "projectsDelivered": "Projects Delivered",
+          "enterpriseClients": "Enterprise Clients"
+        }
+      },
+      "overview": {
+        "title": "Our Expertise",
+        "achievementsTitle": "Our Achievements"
       },
       "values": {
+        "title": "Our Core Values",
+        "description": "These fundamental principles guide everything we do and shape our commitment to excellence",
         "excellence": {
           "title": "Excellence",
           "description": "We are committed to delivering the highest quality SAP solutions and services, ensuring exceptional results for our clients."
@@ -269,12 +506,20 @@
         "partnership": {
           "title": "Partnership",
           "description": "We build lasting partnerships with our clients, working collaboratively to achieve their business objectives and long-term success."
+        },
+        "integrity": {
+          "title": "Integrity",
+          "description": "We operate with complete transparency and integrity, building trust through honest communication and ethical business practices."
         }
       },
       "achievements": {
         "sapPartner": {
           "title": "SAP Certified Partner",
           "description": "Official SAP partner status with certified consultants and proven track record"
+        },
+        "successfulImplementations": {
+          "title": "500+ Successful Implementations",
+          "description": "Over 500 successful SAP implementations across various industries"
         },
         "international": {
           "title": "International Presence",
@@ -304,31 +549,36 @@
         }
       },
       "timeline": {
-        "founded": {
-          "year": "2008",
-          "title": "Company Founded",
-          "description": "ESM Information Technologies established with a vision to transform businesses through technology"
-        },
-        "partnership": {
-          "year": "2012",
-          "title": "SAP Partnership",
-          "description": "Became an official SAP partner, expanding our capabilities in enterprise solutions"
-        },
-        "compliance": {
-          "year": "2016",
-          "title": "Digital Compliance Leader",
-          "description": "Pioneered e-transformation solutions in Turkey, becoming a market leader"
-        },
-        "expansion": {
-          "year": "2020",
-          "title": "International Expansion",
-          "description": "Extended services globally, serving clients across multiple countries"
-        },
-        "innovation": {
-          "year": "2024",
-          "title": "Innovation Hub",
-          "description": "Established as a leading innovation hub for SAP-native digital solutions"
+        "title": "Our Journey",
+        "description": "From our founding to becoming a leading SAP consulting firm, explore the key milestones that shaped our company",
+        "milestones": {
+          "2008": {
+            "title": "Company Founded",
+            "description": "ESM Information Technologies established with a vision to transform businesses through technology"
+          },
+          "2012": {
+            "title": "SAP Partnership",
+            "description": "Became an official SAP partner, expanding our capabilities in enterprise solutions"
+          },
+          "2016": {
+            "title": "Digital Compliance Leader",
+            "description": "Pioneered e-transformation solutions in Turkey, becoming a market leader"
+          },
+          "2020": {
+            "title": "International Expansion",
+            "description": "Extended services globally, serving clients across multiple countries"
+          },
+          "2024": {
+            "title": "Innovation Hub",
+            "description": "Established as a leading innovation hub for SAP-native digital solutions"
+          }
         }
+      },
+      "cta": {
+        "title": "Ready to Transform Your Business?",
+        "description": "Join hundreds of enterprises that have chosen ESM Information Technologies for their SAP transformation journey.",
+        "contactButton": "Contact Our Team",
+        "referencesButton": "View Our References"
       }
     },
     "stats": {

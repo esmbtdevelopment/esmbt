@@ -12,6 +12,30 @@
       "ideaTeknoloji": "Teknoloji inovasyon ortağı",
       "eplatform": "Dijital platform çözümleri",
       "edoksis": "Belge yönetim sistemleri"
+    },
+    "benefits": {
+      "title": "Neden Ortaklık Yapıyoruz?",
+      "enhancedCapabilities": {
+        "title": "Gelişmiş Yetenekler",
+        "description": "En son teknolojilere ve uzmanlaşmış uzmanlığa erişim"
+      },
+      "comprehensiveSolutions": {
+        "title": "Kapsamlı Çözümler",
+        "description": "Stratejik iş birlikleri ile uçtan uca çözümler"
+      },
+      "globalReach": {
+        "title": "Küresel Erişim",
+        "description": "Uluslararası standartlar ve en iyi uygulamalar"
+      },
+      "excellence": {
+        "title": "Mükemmel Ortaklık",
+        "description": "İş birliği ile başarı inşa ediyoruz."
+      }
+    },
+    "stats": {
+      "strategicPartners": "Stratejik Ortaklar",
+      "yearsCollaboration": "Yıllık İş Birliği",
+      "certifiedSolutions": "Sertifikalı Çözümler"
     }
   },
   "customers": {
@@ -156,13 +180,24 @@
   "corporate": {
     "title": "Kurumsal",
     "aboutUs": {
-      "description": "Şirketimiz hakkında bilgi edinin, misyonumuzu ve vizyonumuzu keşfedin",
-      "features": {
-        "overview": "Şirket Genel Bakışı",
-        "values": "Değerlerimiz",
-        "principles": "Temel İlkeler"
+      "description": "ESM Bilgi Teknolojileri, 15 yılı aşkın dijital dönüşüm, uyum çözümleri ve kurumsal yazılım uygulamaları deneyimine sahip lider SAP danışmanlık firmasıdır. İşletmelerin operasyonlarını düzenleme ve yenilikçi SAP çözümleriyle sürdürülebilir büyüme elde etmesinde uzmanlaşmıştır.",
+      "hero": {
+        "badge": "ESM Hakkında",
+        "title": "İşletmeleri",
+        "titleHighlight": "SAP Mükemmelliği ile Dönüştürüyoruz",
+        "description": "15 yılı aşkın süredir ESM Bilgi Teknolojileri, SAP danışmanlığı ve dijital dönüşümün ön saflarında yer alarak, işletmelerin operasyonlarını düzenlemesine, uyumu sağlamasına ve yenilikçi teknoloji çözümleriyle sürdürülebilir büyüme elde etmesine yardımcı olmaktadır.",
+        "stats": {
+          "projectsDelivered": "Teslim Edilen Proje",
+          "enterpriseClients": "Kurumsal Müşteri"
+        }
+      },
+      "overview": {
+        "title": "Uzmanlığımız",
+        "achievementsTitle": "Başarılarımız"
       },
       "values": {
+        "title": "Temel Değerlerimiz",
+        "description": "Bu temel ilkeler yaptığımız her şeye rehberlik eder ve mükemmellik taahhüdümüzü şekillendirir",
         "excellence": {
           "title": "Mükemmellik",
           "description": "Müşterilerimize olağanüstü sonuçlar sunmak için en yüksek kalite SAP çözümleri ve hizmetleri sağlamaya kararlıyız."
@@ -174,12 +209,20 @@
         "partnership": {
           "title": "İş Ortaklığı",
           "description": "Müşterilerimizle kalıcı ortaklıklar kuruyor, iş hedeflerine ve uzun vadeli başarıya birlikte ulaşıyoruz."
+        },
+        "integrity": {
+          "title": "Dürüstlük",
+          "description": "Tam şeffaflık ve dürüstlükle çalışıyor, dürüst iletişim ve etik iş uygulamalarıyla güven inşa ediyoruz."
         }
       },
       "achievements": {
         "sapPartner": {
           "title": "SAP Sertifikalı İş Ortağı",
           "description": "Sertifikalı danışmanlar ve kanıtlanmış başarı geçmişiyle resmi SAP iş ortağı"
+        },
+        "successfulImplementations": {
+          "title": "500+ Başarılı Uygulama",
+          "description": "Çeşitli endüstrilerde 500'den fazla başarılı SAP uygulaması"
         },
         "international": {
           "title": "Uluslararası Varlık",
@@ -209,34 +252,182 @@
         }
       },
       "timeline": {
-        "founded": {
-          "year": "2008",
-          "title": "Kuruluş",
-          "description": "ESM Bilgi Teknolojileri, işletmeleri teknoloji ile dönüştürme vizyonuyla kuruldu"
-        },
-        "partnership": {
-          "year": "2012",
-          "title": "SAP İş Ortaklığı",
-          "description": "Resmi SAP iş ortağı olduk, kurumsal çözümler alanında yetkinliğimizi genişlettik"
-        },
-        "compliance": {
-          "year": "2016",
-          "title": "Dijital Uyum Lideri",
-          "description": "Türkiye’de e-dönüşüm çözümlerine öncülük ederek pazar lideri olduk"
-        },
-        "expansion": {
-          "year": "2020",
-          "title": "Uluslararası Büyüme",
-          "description": "Hizmetlerimizi küresel ölçekte genişlettik, birçok ülkede müşteri edindik"
-        },
-        "innovation": {
-          "year": "2024",
-          "title": "İnovasyon Merkezi",
-          "description": "SAP-yerel dijital çözümler için lider inovasyon merkezi olarak konumlandık"
+        "title": "Yolculuğumuz",
+        "description": "Kuruluşumuzdan lider SAP danışmanlık firması olmaya kadar şirketimizi şekillendiren önemli kilometre taşlarını keşfedin",
+        "milestones": {
+          "2008": {
+            "title": "Kuruluş",
+            "description": "ESM Bilgi Teknolojileri, işletmeleri teknoloji ile dönüştürme vizyonuyla kuruldu"
+          },
+          "2012": {
+            "title": "SAP İş Ortaklığı",
+            "description": "Resmi SAP iş ortağı olduk, kurumsal çözümler alanında yetkinliğimizi genişlettik"
+          },
+          "2016": {
+            "title": "Dijital Uyum Lideri",
+            "description": "Türkiye'de e-dönüşüm çözümlerine öncülük ederek pazar lideri olduk"
+          },
+          "2020": {
+            "title": "Uluslararası Büyüme",
+            "description": "Hizmetlerimizi küresel ölçekte genişlettik, birçok ülkede müşteri edindik"
+          },
+          "2024": {
+            "title": "İnovasyon Merkezi",
+            "description": "SAP-yerel dijital çözümler için lider inovasyon merkezi olarak konumlandık"
+          }
         }
+      },
+      "cta": {
+        "title": "İşletmenizi Dönüştürmeye Hazır mısınız?",
+        "description": "SAP dönüşüm yolculukları için ESM Bilgi Teknolojilerini seçen yüzlerce işletmeye katılın.",
+        "contactButton": "Ekibimizle İletişime Geçin",
+        "referencesButton": "Referanslarımızı Görüntüleyin"
       }
     },
     "team": {
+      "title": "Ekibimiz",
+      "subtitle": "Uzman Profesyoneller",
+      "description": "Deneyimli SAP danışmanları ve dijital dönüşüm uzmanlarından oluşan ekibimizle tanışın.",
+      "hero": {
+        "badge": "Ekibimiz",
+        "title": "Başarımızın Arkasındaki",
+        "titleHighlight": "Uzmanlarla Tanışın",
+        "description": "SAP uzmanları, geliştiriciler ve danışmanlardan oluşan çeşitli ekibimiz, müşterilerimize olağanüstü sonuçlar sunmak için on yıllık deneyimi bir araya getiriyor."
+      },
+      "stats": {
+        "teamMembers": "Ekip Üyeleri",
+        "sapCertifiedExperts": "SAP Sertifikalı Uzmanlar",
+        "yearsAverageExperience": "Yıllık Ortalama Deneyim",
+        "languagesSpoken": "Konuşulan Diller"
+      },
+      "leadership": {
+        "title": "Liderlik Ekibi",
+        "description": "ESM Bilgi Teknolojilerini mükemmellik ve yeniliğe yönlendiren vizyoner liderleri tanıyın",
+        "expertiseLabel": "Uzmanlık",
+        "educationLabel": "Eğitim",
+        "certificationsLabel": "Sertifikalar",
+        "ceo": {
+          "name": "Mehmet Özkan",
+          "position": "İcra Kurulu Başkanı ve Kurucu",
+          "bio": "20 yılı aşkın kurumsal yazılım ve SAP danışmanlığı deneyimiyle Mehmet, işletmeleri yenilikçi SAP çözümleriyle dönüştürme vizyonuyla ESM'yi kurdu.",
+          "expertise": {
+            "0": "Stratejik Liderlik",
+            "1": "SAP Mimarisi",
+            "2": "İş Dönüşümü"
+          },
+          "education": "İşletme Yüksek Lisansı, Bilgisayar Mühendisliği Lisansı",
+          "certifications": {
+            "0": "SAP Sertifikalı Çözüm Mimarı",
+            "1": "PMP Sertifikalı"
+          }
+        },
+        "cto": {
+          "name": "Ayşe Demir",
+          "position": "Teknoloji Direktörü",
+          "bio": "Ayşe, SAP geliştirme ve sistem entegrasyonunda 15+ yıllık deneyimiyle teknik vizyonumuza liderlik ediyor. Karmaşık SAP uygulamaları ve dijital dönüşüm projelerinde uzmanlaşmıştır.",
+          "expertise": {
+            "0": "SAP Geliştirme",
+            "1": "Sistem Entegrasyonu",
+            "2": "Teknik Mimari"
+          },
+          "education": "Yazılım Mühendisliği Yüksek Lisansı, Bilgisayar Bilimleri Lisansı",
+          "certifications": {
+            "0": "SAP Sertifikalı Geliştirme Uzmanı",
+            "1": "TOGAF Sertifikalı"
+          }
+        },
+        "cfo": {
+          "name": "Ahmet Yılmaz",
+          "position": "Mali İşler Direktörü",
+          "bio": "Ahmet, kapsamlı finansal uzmanlığı ve yasal uyum konusundaki derin anlayışıyla finansal dönüşüm girişimlerimize liderlik ediyor.",
+          "expertise": {
+            "0": "Finansal Yönetim",
+            "1": "Yasal Uyum",
+            "2": "IFRS Uygulama"
+          },
+          "education": "Finans Yüksek Lisansı, Ekonomi Lisansı",
+          "certifications": {
+            "0": "CPA Sertifikalı",
+            "1": "IFRS Uzmanı"
+          }
+        }
+      },
+      "departments": {
+        "title": "Departmanlarımız",
+        "description": "Kapsamlı SAP çözümleri ve hizmetleri sunmak için birlikte çalışan uzman ekipler",
+        "specialistsLabel": "uzman",
+        "specialtiesLabel": "Uzmanlık Alanları",
+        "teams": {
+          "sapConsulting": {
+            "name": "SAP Danışmanlığı",
+            "description": "SAP uzmanlarımız uçtan uca danışmanlık hizmetleri sunar",
+            "teamSize": "15+",
+            "specialties": {
+              "0": "SAP Uygulaması",
+              "1": "Sistem Optimizasyonu",
+              "2": "Süreç Tasarımı"
+            }
+          },
+          "development": {
+            "name": "Geliştirme Ekibi",
+            "description": "Özel SAP çözümleri oluşturan yetenekli geliştiriciler",
+            "teamSize": "12+",
+            "specialties": {
+              "0": "Özel Geliştirme",
+              "1": "Entegrasyon",
+              "2": "API Geliştirme"
+            }
+          },
+          "financial": {
+            "name": "Finansal Çözümler",
+            "description": "Finansal uyum ve dönüşümde uzman personel",
+            "teamSize": "10+",
+            "specialties": {
+              "0": "E-Dönüşüm",
+              "1": "Uyum",
+              "2": "Finansal Raporlama"
+            }
+          },
+          "support": {
+            "name": "Destek & Eğitim",
+            "description": "Sürekli destek ve kullanıcı eğitimi için özel ekip",
+            "teamSize": "8+",
+            "specialties": {
+              "0": "Kullanıcı Eğitimi",
+              "1": "Teknik Destek",
+              "2": "Dokümantasyon"
+            }
+          }
+        }
+      },
+      "values": {
+        "title": "Ekip Değerlerimiz",
+        "description": "Ekip kültürümüze rehberlik eden ve mükemmellik taahhüdümüzü yönlendiren ilkeler",
+        "items": {
+          "continuousLearning": {
+            "title": "Sürekli Öğrenme",
+            "description": "Sürekli eğitim ve sertifika programları aracılığıyla ekibimizin gelişimine yatırım yapıyoruz"
+          },
+          "collaborativeCulture": {
+            "title": "İş Birliği Kültürü",
+            "description": "Ekip çalışması ve bilgi paylaşımının yeniliği yönlendirdiği bir ortam yaratıyoruz"
+          },
+          "excellenceFocus": {
+            "title": "Mükemmellik Odağı",
+            "description": "Kod kalitesinden müşteri hizmetlerine kadar yaptığımız her şeyde en yüksek standartları koruyoruz"
+          },
+          "innovationMindset": {
+            "title": "İnovasyon Zihniyeti",
+            "description": "Yaratıcı düşünceyi teşvik ediyor ve karmaşık zorlukları çözmek için yeni teknolojileri benimsiyoruz"
+          }
+        }
+      },
+      "cta": {
+        "title": "Büyüyen Ekibimize Katılın",
+        "description": "SAP ve dijital dönüşüm konusunda tutkulu musunuz? Uzman ekibimize katılacak yetenekli bireyler arıyoruz.",
+        "contactButton": "Bizimle İletişime Geçin",
+        "referencesButton": "Referanslarımızı Görüntüleyin"
+      },
       "features": {
         "leadership": "Liderlik Ekibi",
         "specialists": "SAP Uzmanları",
@@ -252,9 +443,18 @@
         "future": "Gelecek Vizyonu",
         "goals": "Stratejik Hedefler"
       },
+      "hero": {
+        "badge": "Vizyon & Misyon",
+        "title": "Vizyonumuz, Misyonumuz &",
+        "titleHighlight": "Temel Değerlerimiz",
+        "description": "ESM Bilgi Teknolojilerini mükemmellik ve yeniliğe yönlendiren temel ilkeleri, iddialı hedefleri ve değişmez değerleri keşfedin."
+      },
       "mission": {
         "title": "Misyonumuz",
-        "description": "Şirketleri yenilikçi SAP çözümleri ve dijital dönüşümle güçlendirmek, uyumu sağlarken operasyonel mükemmelliği artırmak.",
+        "badge": "Misyonumuz",
+        "sectionTitle": "SAP Mükemmelliği ile İşletmeleri Dönüştürmek",
+        "description": "Misyonumuz, işletmeleri operasyonel mükemmelliği artıran, yasal uyumu sağlayan ve sürdürülebilir büyümeyi açığa çıkaran dünya standartlarında SAP çözümleri ve dijital dönüşüm hizmetleriyle güçlendirmektir.",
+        "imageAlt": "ESM Misyonu",
         "points": {
           "sapExcellence": {
             "title": "SAP Mükemmelliği",
@@ -276,7 +476,11 @@
       },
       "vision": {
         "title": "Vizyonumuz",
-        "description": "Bölgede yenilik, mükemmellik ve dönüştürücü dijital çözümlerle tanınan lider SAP danışmanlık ortağı olmak.",
+        "badge": "Vizyonumuz",
+        "sectionTitle": "Dijital Dönüşüm Çağında Liderlik",
+        "description": "ESM Bilgi Teknolojilerinin dünya çapında önde gelen SAP danışmanlık ortağı olarak tanındığı, yenilik, kalite ve müşteri başarısında sektör standartları belirlediği bir gelecek hayal ediyoruz.",
+        "visionYear": "Vizyon 2030",
+        "visionSubtitle": "Geleceği Yönlendirmek",
         "goals": {
           "innovation": {
             "title": "İnovasyon Liderliği",
@@ -295,6 +499,81 @@
             "description": "Teknoloji liderleri ve sektör uzmanlarıyla güçlü iş birlikleri kurmak"
           }
         }
+      },
+      "coreValues": {
+        "title": "Temel Değerlerimiz",
+        "description": "Bu temel değerler kültürümüzü şekillendirir, kararlarımıza rehberlik eder ve bir şirket olarak kim olduğumuzu tanımlar",
+        "values": {
+          "innovation": {
+            "title": "İnovasyon",
+            "description": "Karmaşık iş zorluklarını çözen yenilikçi çözümler yaratmak için sürekli sınırları zorluyoruz"
+          },
+          "excellence": {
+            "title": "Mükemmellik",
+            "description": "Kod kalitesinden müşteri hizmetine kadar yaptığımız her şeyde en yüksek standartları koruyoruz"
+          },
+          "collaboration": {
+            "title": "İş Birliği",
+            "description": "Ekip çalışmasının gücüne inanıyor, müşterilerimiz ve meslektaşlarımızla güçlü ortaklıklar kuruyoruz"
+          },
+          "integrity": {
+            "title": "Dürüstlük",
+            "description": "Tüm iş ilişkilerimizde tam şeffaflık ve dürüstlükle hareket ediyoruz"
+          },
+          "agility": {
+            "title": "Çeviklik",
+            "description": "Değişen pazar taleplerine hızla uyum sağlıyor, yeni teknolojileri ve metodolojileri benimsiyoruz"
+          },
+          "quality": {
+            "title": "Kalite",
+            "description": "Müşteri beklentilerini aşan üstün kaliteli çözümler sunmaya kararlıyız"
+          }
+        }
+      },
+      "strategicGoals": {
+        "title": "Stratejik Hedefler",
+        "description": "Önümüzdeki yıllarda büyüme, yenilik ve pazar liderliği için iddialı yol haritamız",
+        "targetLabel": "Hedef:",
+        "goals": {
+          "marketExpansion": {
+            "title": "Pazar Genişlemesi",
+            "description": "Küresel varlığımızı genişletmek ve ESM'yi kilit uluslararası pazarlarda lider SAP ortağı olarak konumlandırmak",
+            "target": "2025"
+          },
+          "innovationLeadership": {
+            "title": "İnovasyon Liderliği",
+            "description": "Dijital dönüşüm için yeni nesil SAP-native çözümlerin geliştirilmesinde sektöre liderlik etmek",
+            "target": "2024"
+          },
+          "teamGrowth": {
+            "title": "Ekip Büyümesi",
+            "description": "100+ sertifikalı SAP uzmanı ve teknoloji uzmanından oluşan dünya standartlarında bir ekip oluşturmak",
+            "target": "2026"
+          },
+          "sustainabilityFocus": {
+            "title": "Sürdürülebilirlik Odağı",
+            "description": "Sürdürülebilirlik uygulamalarını tüm çözümlerimize ve iş operasyonlarımıza entegre etmek",
+            "target": "2024"
+          }
+        }
+      },
+      "guidingPrinciples": {
+        "title": "Rehber İlkelerimiz",
+        "description": "Günlük eylemlerimizi ve uzun vadeli stratejimizi yönlendiren temel inançlar",
+        "principles": {
+          "0": "Müşteri başarısı bizim birincil başarı ölçümüzdür",
+          "1": "Sürekli öğrenme ve gelişim büyümemizi yönlendirir",
+          "2": "İnovasyon gerçek iş problemlerini çözmelidir",
+          "3": "Kalite ve güvenilirlik pazarlık konusu değildir",
+          "4": "Şeffaflık güven ve kalıcı ilişkiler inşa eder",
+          "5": "Sürdürülebilir uygulamalar herkese fayda sağlar"
+        }
+      },
+      "cta": {
+        "title": "Vizyonumuzu Paylaşın",
+        "description": "İşletmeleri dönüştürme ve dijital dönüşüm çağına liderlik etme misyonumuzda bize katılın. Geleceği birlikte inşa edelim.",
+        "partnerButton": "Bizimle Ortaklık Kurun",
+        "referencesButton": "Referanslarımızı Görüntüleyin"
       }
     },
     "badge": "Kurumsal Bilgi",

@@ -80,76 +80,76 @@ export default function VisionMissionPage() {
     const coreValues = [
         {
             icon: <RiLightbulbLine className="text-2xl" />,
-            title: "Innovation",
-            description: "We continuously push boundaries to create innovative solutions that solve complex business challenges",
+            title: t('coreValues.values.innovation.title'),
+            description: t('coreValues.values.innovation.description'),
             color: "from-yellow-400 to-orange-500"
         },
         {
             icon: <RiShieldCheckLine className="text-2xl" />,
-            title: "Excellence",
-            description: "We maintain the highest standards in everything we do, from code quality to client service",
+            title: t('coreValues.values.excellence.title'),
+            description: t('coreValues.values.excellence.description'),
             color: "from-blue-500 to-sky-500"
         },
         {
             icon: <RiTeamLine className="text-2xl" />,
-            title: "Collaboration",
-            description: "We believe in the power of teamwork and build strong partnerships with our clients and colleagues",
+            title: t('coreValues.values.collaboration.title'),
+            description: t('coreValues.values.collaboration.description'),
             color: "from-purple-500 to-indigo-500"
         },
         {
             icon: <RiGlobalLine className="text-2xl" />,
-            title: "Integrity",
-            description: "We operate with complete transparency and honesty in all our business relationships",
+            title: t('coreValues.values.integrity.title'),
+            description: t('coreValues.values.integrity.description'),
             color: "from-green-500 to-emerald-500"
         },
         {
             icon: <RiRocketLine className="text-2xl" />,
-            title: "Agility",
-            description: "We adapt quickly to changing market demands and embrace new technologies and methodologies",
+            title: t('coreValues.values.agility.title'),
+            description: t('coreValues.values.agility.description'),
             color: "from-red-500 to-pink-500"
         },
         {
             icon: <RiAwardLine className="text-2xl" />,
-            title: "Quality",
-            description: "We are committed to delivering superior quality solutions that exceed client expectations",
+            title: t('coreValues.values.quality.title'),
+            description: t('coreValues.values.quality.description'),
             color: "from-indigo-500 to-purple-500"
         }
     ];
 
     const strategicGoals = [
         {
-            title: "Market Expansion",
-            description: "Expand our global presence and establish ESM as a leading SAP partner in key international markets",
-            target: "2025",
+            title: t('strategicGoals.goals.marketExpansion.title'),
+            description: t('strategicGoals.goals.marketExpansion.description'),
+            target: t('strategicGoals.goals.marketExpansion.target'),
             icon: <FaGlobe className="text-xl" />
         },
         {
-            title: "Innovation Leadership",
-            description: "Lead the industry in developing next-generation SAP-native solutions for digital transformation",
-            target: "2024",
+            title: t('strategicGoals.goals.innovationLeadership.title'),
+            description: t('strategicGoals.goals.innovationLeadership.description'),
+            target: t('strategicGoals.goals.innovationLeadership.target'),
             icon: <FaLightbulb className="text-xl" />
         },
         {
-            title: "Team Growth",
-            description: "Build a world-class team of 100+ certified SAP specialists and technology experts",
-            target: "2026",
+            title: t('strategicGoals.goals.teamGrowth.title'),
+            description: t('strategicGoals.goals.teamGrowth.description'),
+            target: t('strategicGoals.goals.teamGrowth.target'),
             icon: <FaUsers className="text-xl" />
         },
         {
-            title: "Sustainability Focus",
-            description: "Integrate sustainability practices into all our solutions and business operations",
-            target: "2024",
+            title: t('strategicGoals.goals.sustainabilityFocus.title'),
+            description: t('strategicGoals.goals.sustainabilityFocus.description'),
+            target: t('strategicGoals.goals.sustainabilityFocus.target'),
             icon: <FaLeaf className="text-xl" />
         }
     ];
 
     const principles = [
-        "Client success is our primary measure of success",
-        "Continuous learning and improvement drive our growth",
-        "Innovation should solve real business problems",
-        "Quality and reliability are non-negotiable",
-        "Transparency builds trust and lasting relationships",
-        "Sustainable practices benefit everyone"
+        t('guidingPrinciples.principles.0'),
+        t('guidingPrinciples.principles.1'),
+        t('guidingPrinciples.principles.2'),
+        t('guidingPrinciples.principles.3'),
+        t('guidingPrinciples.principles.4'),
+        t('guidingPrinciples.principles.5')
     ];
 
     return (
@@ -166,17 +166,16 @@ export default function VisionMissionPage() {
                     <div className="text-center max-w-4xl mx-auto">
                         <div className="hidden md:inline-flex items-center space-x-2 bg-sky-100 border border-sky-200 rounded-full px-6 py-2 mb-8">
                             <FaHandshake className="text-sky-600" />
-                            <span className="text-sky-700 font-semibold font-montserrat text-sm">Vision & Mission</span>
+                            <span className="text-sky-700 font-semibold font-montserrat text-sm">{t('hero.badge')}</span>
                         </div>
 
                         <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6 font-sora leading-tight">
-                            Our Vision, Mission &
-                            <span className="block text-sky-600">Core Values</span>
+                            {t('hero.title')}
+                            <span className="block text-sky-600">{t('hero.titleHighlight')}</span>
                         </h1>
 
                         <p className="text-lg lg:text-xl text-gray-400 mb-12 font-montserrat leading-relaxed">
-                            Discover the fundamental principles, ambitious goals, and unwavering values that guide
-                            ESM Information Technologies toward excellence and innovation.
+                            {t('hero.description')}
                         </p>
                     </div>
                 </div>
@@ -190,16 +189,15 @@ export default function VisionMissionPage() {
                         <div className="order-2 lg:order-1">
                             <div className="inline-flex items-center space-x-2 bg-blue-100 text-blue-700 rounded-full px-3 sm:px-4 py-2 mb-4 sm:mb-6">
                                 <FaBullseye className="text-sm sm:text-base" />
-                                <span className="font-semibold font-montserrat text-xs sm:text-sm">Our Mission</span>
+                                <span className="font-semibold font-montserrat text-xs sm:text-sm">{t('mission.badge')}</span>
                             </div>
 
                             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora">
-                                Transforming Businesses Through SAP Excellence
+                                {t('mission.sectionTitle')}
                             </h2>
 
                             <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8 font-montserrat leading-relaxed">
-                                Our mission is to empower enterprises with world-class SAP solutions and digital transformation
-                                services that drive operational excellence, ensure regulatory compliance, and unlock sustainable growth.
+                                {t('mission.description')}
                             </p>
 
                             <div className="space-y-4 sm:space-y-6">
@@ -228,14 +226,14 @@ export default function VisionMissionPage() {
                             <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl">
                                 <Image
                                     src="/images/teamwork.jpg"
-                                    alt="ESM Mission"
+                                    alt={t('mission.imageAlt')}
                                     width={600}
                                     height={400}
                                     className="w-full h-auto object-cover"
                                 />
                             </div>
                             {/* Floating Elements - hidden on mobile */}
-                            <div className="hidden sm:block absolute -top-4 -right-4 sm:-top-6 sm:-right-6 w-16 h-16 sm:w-24 sm:h-24 bg-blue-500 rounded-xl sm:rounded-2xl flex items-center justify-center text-white shadow-xl animate-bounce">
+                            <div className="hidden sm:block absolute -top-4 -right-4 sm:-top-6 sm:-right-6 w-16 h-16 sm:w-24 sm:h-24 bg-blue-500 rounded-xl sm:rounded-2xl items-center justify-center text-white shadow-xl animate-bounce">
                                 <FaBullseye className="text-lg sm:text-2xl" />
                             </div>
                         </div>
@@ -253,8 +251,8 @@ export default function VisionMissionPage() {
                                 <div className="h-96 bg-gradient-to-br from-sky-400 via-blue-500 to-indigo-600 flex items-center justify-center">
                                     <div className="text-center text-white">
                                         <FaEye className="text-6xl mb-6 mx-auto opacity-80" />
-                                        <h3 className="text-2xl font-bold font-sora">Vision 2030</h3>
-                                        <p className="font-montserrat opacity-90">Leading the Future</p>
+                                        <h3 className="text-2xl font-bold font-sora">{t('vision.visionYear')}</h3>
+                                        <p className="font-montserrat opacity-90">{t('vision.visionSubtitle')}</p>
                                     </div>
                                 </div>
                             </div>
@@ -268,16 +266,15 @@ export default function VisionMissionPage() {
                         <div className="order-1 lg:order-2">
                             <div className="inline-flex items-center space-x-2 bg-sky-100 text-sky-700 rounded-full px-4 py-2 mb-6">
                                 <FaEye />
-                                <span className="font-semibold font-montserrat text-sm">Our Vision</span>
+                                <span className="font-semibold font-montserrat text-sm">{t('vision.badge')}</span>
                             </div>
 
                             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 font-sora">
-                                Leading the Digital Transformation Era
+                                {t('vision.sectionTitle')}
                             </h2>
 
                             <p className="text-lg text-gray-600 mb-8 font-montserrat leading-relaxed">
-                                We envision a future where ESM Information Technologies is recognized globally as the premier
-                                SAP consulting partner, setting industry standards for innovation, quality, and client success.
+                                {t('vision.description')}
                             </p>
 
                             <div className="space-y-6">
@@ -307,10 +304,10 @@ export default function VisionMissionPage() {
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 font-sora">
-                            Our Core Values
+                            {t('coreValues.title')}
                         </h2>
                         <p className="text-lg text-gray-600 font-montserrat max-w-2xl mx-auto">
-                            These fundamental values shape our culture, guide our decisions, and define who we are as a company
+                            {t('coreValues.description')}
                         </p>
                     </div>
 
@@ -337,10 +334,10 @@ export default function VisionMissionPage() {
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 font-sora">
-                            Strategic Goals
+                            {t('strategicGoals.title')}
                         </h2>
                         <p className="text-lg text-gray-600 font-montserrat max-w-2xl mx-auto">
-                            Our ambitious roadmap for growth, innovation, and market leadership in the coming years
+                            {t('strategicGoals.description')}
                         </p>
                     </div>
 
@@ -351,7 +348,7 @@ export default function VisionMissionPage() {
                                     {goal.icon}
                                 </div>
                                 <div className="text-sky-600 font-bold text-sm mb-2 font-montserrat">
-                                    Target: {goal.target}
+                                    {t('strategicGoals.targetLabel')} {goal.target}
                                 </div>
                                 <h3 className="text-lg font-bold text-gray-900 mb-4 font-sora">
                                     {goal.title}
@@ -371,10 +368,10 @@ export default function VisionMissionPage() {
                     <div className="max-w-4xl mx-auto">
                         <div className="text-center mb-16">
                             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 font-sora">
-                                Our Guiding Principles
+                                {t('guidingPrinciples.title')}
                             </h2>
                             <p className="text-lg text-gray-600 font-montserrat">
-                                The fundamental beliefs that guide our everyday actions and long-term strategy
+                                {t('guidingPrinciples.description')}
                             </p>
                         </div>
 
@@ -398,11 +395,10 @@ export default function VisionMissionPage() {
             <section className="py-16 lg:py-20 bg-gradient-to-br from-sky-600 via-blue-700 to-sky-800">
                 <div className="container mx-auto px-4 text-center text-white">
                     <h2 className="text-3xl lg:text-4xl font-bold mb-6 font-sora">
-                        Share Our Vision
+                        {t('cta.title')}
                     </h2>
                     <p className="text-lg lg:text-xl mb-10 opacity-90 font-montserrat max-w-2xl mx-auto">
-                        Join us on our mission to transform businesses and lead the digital transformation era.
-                        Let&apos;s build the future together.
+                        {t('cta.description')}
                     </p>
                     <div className="flex flex-col sm:flex-row gap-6 justify-center">
                         <button
@@ -410,7 +406,7 @@ export default function VisionMissionPage() {
                             className="group bg-white text-sky-600 px-8 py-4 rounded-2xl font-bold hover:bg-gray-50 transition-all duration-300 font-montserrat shadow-2xl hover:scale-105"
                         >
                             <span className="flex items-center space-x-2">
-                                <span>Partner With Us</span>
+                                <span>{t('cta.partnerButton')}</span>
                                 <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
                             </span>
                         </button>
@@ -419,7 +415,7 @@ export default function VisionMissionPage() {
                             className="group border-2 border-white text-white px-8 py-4 rounded-2xl font-bold hover:bg-white hover:text-sky-600 transition-all duration-300 font-montserrat hover:scale-105"
                         >
                             <span className="flex items-center space-x-2">
-                                <span>View Our References</span>
+                                <span>{t('cta.referencesButton')}</span>
                                 <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
                             </span>
                         </button>

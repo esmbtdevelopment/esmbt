@@ -116,7 +116,7 @@ const Partners = () => {
               8+
             </div>
             <div className="text-gray-600 font-montserrat">
-              Strategic Partners
+              {t('stats.strategicPartners')}
             </div>
           </div>
           <div className="text-center">
@@ -127,7 +127,7 @@ const Partners = () => {
               15+
             </div>
             <div className="text-gray-600 font-montserrat">
-              Years Collaboration
+              {t('stats.yearsCollaboration')}
             </div>
           </div>
           <div className="text-center col-span-2 md:col-span-1">
@@ -140,7 +140,7 @@ const Partners = () => {
               100%
             </div>
             <div className="text-gray-600 font-montserrat">
-              Certified Solutions
+              {t('stats.certifiedSolutions')}
             </div>
           </div>
         </div>
@@ -152,7 +152,7 @@ const Partners = () => {
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               <div>
                 <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora">
-                  Why We Partner
+                  {t('benefits.title')}
                 </h3>
                 <div className="space-y-4 sm:space-y-6">
                   <div className="flex items-start space-x-3 sm:space-x-4">
@@ -171,11 +171,10 @@ const Partners = () => {
                     </div>
                     <div>
                       <h4 className="text-base sm:text-lg font-semibold text-gray-900 mb-1 font-sora">
-                        Enhanced Capabilities
+                        {t('benefits.enhancedCapabilities.title')}
                       </h4>
                       <p className="text-sm sm:text-base text-gray-600 font-montserrat">
-                        Access to cutting-edge technologies and specialized
-                        expertise
+                        {t('benefits.enhancedCapabilities.description')}
                       </p>
                     </div>
                   </div>
@@ -195,10 +194,10 @@ const Partners = () => {
                     </div>
                     <div>
                       <h4 className="text-base sm:text-lg font-semibold text-gray-900 mb-1 font-sora">
-                        Comprehensive Solutions
+                        {t('benefits.comprehensiveSolutions.title')}
                       </h4>
                       <p className="text-sm sm:text-base text-gray-600 font-montserrat">
-                        End-to-end solutions through strategic collaborations
+                        {t('benefits.comprehensiveSolutions.description')}
                       </p>
                     </div>
                   </div>
@@ -218,10 +217,10 @@ const Partners = () => {
                     </div>
                     <div>
                       <h4 className="text-base sm:text-lg font-semibold text-gray-900 mb-1 font-sora">
-                        Global Reach
+                        {t('benefits.globalReach.title')}
                       </h4>
                       <p className="text-sm sm:text-base text-gray-600 font-montserrat">
-                        International standards and best practices
+                        {t('benefits.globalReach.description')}
                       </p>
                     </div>
                   </div>
@@ -233,10 +232,10 @@ const Partners = () => {
                     <RiHandHeartLine />
                   </div>
                   <h4 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 font-sora">
-                    Partnership Excellence
+                    {t('benefits.excellence.title')}
                   </h4>
                   <p className="text-sm sm:text-base text-gray-600 font-montserrat">
-                    Building success through collaboration
+                    {t('benefits.excellence.description')}
                   </p>
                 </div>
               </div>

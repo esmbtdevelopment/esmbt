@@ -27,9 +27,16 @@ export default function OurTeamPage() {
             position: t('leadership.ceo.position'),
             image: "/images/team/ceo.jpg", // Placeholder - you can add actual images
             bio: t('leadership.ceo.bio'),
-            expertise: t('leadership.ceo.expertise'),
+            expertise: [
+                t('leadership.ceo.expertise.0'),
+                t('leadership.ceo.expertise.1'),
+                t('leadership.ceo.expertise.2')
+            ],
             education: t('leadership.ceo.education'),
-            certifications: t('leadership.ceo.certifications'),
+            certifications: [
+                t('leadership.ceo.certifications.0'),
+                t('leadership.ceo.certifications.1')
+            ],
             linkedin: "#",
             email: "mehmet.ozkan@esmbt.com"
         },
@@ -38,9 +45,16 @@ export default function OurTeamPage() {
             position: t('leadership.cto.position'),
             image: "/images/team/cto.jpg",
             bio: t('leadership.cto.bio'),
-            expertise: t('leadership.cto.expertise'),
+            expertise: [
+                t('leadership.cto.expertise.0'),
+                t('leadership.cto.expertise.1'),
+                t('leadership.cto.expertise.2')
+            ],
             education: t('leadership.cto.education'),
-            certifications: t('leadership.cto.certifications'),
+            certifications: [
+                t('leadership.cto.certifications.0'),
+                t('leadership.cto.certifications.1')
+            ],
             linkedin: "#",
             email: "ayse.demir@esmbt.com"
         },
@@ -49,9 +63,16 @@ export default function OurTeamPage() {
             position: t('leadership.cfo.position'),
             image: "/images/team/cfo.jpg",
             bio: t('leadership.cfo.bio'),
-            expertise: t('leadership.cfo.expertise'),
+            expertise: [
+                t('leadership.cfo.expertise.0'),
+                t('leadership.cfo.expertise.1'),
+                t('leadership.cfo.expertise.2')
+            ],
             education: t('leadership.cfo.education'),
-            certifications: t('leadership.cfo.certifications'),
+            certifications: [
+                t('leadership.cfo.certifications.0'),
+                t('leadership.cfo.certifications.1')
+            ],
             linkedin: "#",
             email: "ahmet.yilmaz@esmbt.com"
         }
@@ -59,35 +80,51 @@ export default function OurTeamPage() {
 
     const departments = [
         {
-            name: "SAP Consulting",
-            description: "Our SAP experts deliver end-to-end consulting services",
+            name: t('departments.teams.sapConsulting.name'),
+            description: t('departments.teams.sapConsulting.description'),
             icon: <FaCogs className="text-2xl" />,
-            teamSize: "15+",
-            specialties: ["SAP Implementation", "System Optimization", "Process Design"],
+            teamSize: t('departments.teams.sapConsulting.teamSize'),
+            specialties: [
+                t('departments.teams.sapConsulting.specialties.0'),
+                t('departments.teams.sapConsulting.specialties.1'),
+                t('departments.teams.sapConsulting.specialties.2')
+            ],
             color: "from-blue-500 to-sky-500"
         },
         {
-            name: "Development Team",
-            description: "Skilled developers creating custom SAP solutions",
+            name: t('departments.teams.development.name'),
+            description: t('departments.teams.development.description'),
             icon: <FaCode className="text-2xl" />,
-            teamSize: "12+",
-            specialties: ["Custom Development", "Integration", "API Development"],
+            teamSize: t('departments.teams.development.teamSize'),
+            specialties: [
+                t('departments.teams.development.specialties.0'),
+                t('departments.teams.development.specialties.1'),
+                t('departments.teams.development.specialties.2')
+            ],
             color: "from-purple-500 to-indigo-500"
         },
         {
-            name: "Financial Solutions",
-            description: "Specialists in financial compliance and transformation",
+            name: t('departments.teams.financial.name'),
+            description: t('departments.teams.financial.description'),
             icon: <FaChartLine className="text-2xl" />,
-            teamSize: "10+",
-            specialties: ["E-Transformation", "Compliance", "Financial Reporting"],
+            teamSize: t('departments.teams.financial.teamSize'),
+            specialties: [
+                t('departments.teams.financial.specialties.0'),
+                t('departments.teams.financial.specialties.1'),
+                t('departments.teams.financial.specialties.2')
+            ],
             color: "from-green-500 to-emerald-500"
         },
         {
-            name: "Support & Training",
-            description: "Dedicated team for ongoing support and user training",
+            name: t('departments.teams.support.name'),
+            description: t('departments.teams.support.description'),
             icon: <FaGraduationCap className="text-2xl" />,
-            teamSize: "8+",
-            specialties: ["User Training", "Technical Support", "Documentation"],
+            teamSize: t('departments.teams.support.teamSize'),
+            specialties: [
+                t('departments.teams.support.specialties.0'),
+                t('departments.teams.support.specialties.1'),
+                t('departments.teams.support.specialties.2')
+            ],
             color: "from-orange-500 to-red-500"
         }
     ];
@@ -95,45 +132,45 @@ export default function OurTeamPage() {
     const stats = [
         {
             number: "50+",
-            label: "Team Members",
+            label: t('stats.teamMembers'),
             icon: <FaUsers className="text-2xl" />
         },
         {
             number: "25+",
-            label: "SAP Certified Experts",
+            label: t('stats.sapCertifiedExperts'),
             icon: <FaCertificate className="text-2xl" />
         },
         {
             number: "15+",
-            label: "Years Average Experience",
+            label: t('stats.yearsAverageExperience'),
             icon: <FaAward className="text-2xl" />
         },
         {
             number: "10+",
-            label: "Languages Spoken",
+            label: t('stats.languagesSpoken'),
             icon: <FaGlobe className="text-2xl" />
         }
     ];
 
     const values = [
         {
-            title: "Continuous Learning",
-            description: "We invest in our team's growth through ongoing training and certification programs",
+            title: t('values.items.continuousLearning.title'),
+            description: t('values.items.continuousLearning.description'),
             icon: <FaGraduationCap className="text-xl" />
         },
         {
-            title: "Collaborative Culture",
-            description: "We foster an environment where teamwork and knowledge sharing drive innovation",
+            title: t('values.items.collaborativeCulture.title'),
+            description: t('values.items.collaborativeCulture.description'),
             icon: <FaUsers className="text-xl" />
         },
         {
-            title: "Excellence Focus",
-            description: "We maintain the highest standards in everything we do, from code quality to client service",
+            title: t('values.items.excellenceFocus.title'),
+            description: t('values.items.excellenceFocus.description'),
             icon: <FaAward className="text-xl" />
         },
         {
-            title: "Innovation Mindset",
-            description: "We encourage creative thinking and embrace new technologies to solve complex challenges",
+            title: t('values.items.innovationMindset.title'),
+            description: t('values.items.innovationMindset.description'),
             icon: <FaCode className="text-xl" />
         }
     ];
@@ -152,17 +189,16 @@ export default function OurTeamPage() {
                     <div className="text-center max-w-4xl mx-auto">
                         <div className="hidden md:inline-flex items-center space-x-2 bg-sky-100 border border-sky-200 rounded-full px-6 py-2 mb-8">
                             <FaUsers className="text-sky-600" />
-                            <span className="text-sky-700 font-semibold font-montserrat text-sm">Our Team</span>
+                            <span className="text-sky-700 font-semibold font-montserrat text-sm">{t('hero.badge')}</span>
                         </div>
 
                         <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6 font-sora leading-tight">
-                            Meet the Experts Behind
-                            <span className="block text-sky-600">Our Success</span>
+                            {t('hero.title')}
+                            <span className="block text-sky-600">{t('hero.titleHighlight')}</span>
                         </h1>
 
                         <p className="text-lg lg:text-xl text-gray-400 mb-12 font-montserrat leading-relaxed">
-                            Our diverse team of SAP specialists, developers, and consultants brings together decades
-                            of experience to deliver exceptional results for our clients.
+                            {t('hero.description')}
                         </p>
 
                         {/* Stats */}
@@ -193,10 +229,10 @@ export default function OurTeamPage() {
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12 sm:mb-16">
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora px-2">
-                            Leadership Team
+                            {t('leadership.title')}
                         </h2>
                         <p className="text-base sm:text-lg text-gray-600 font-montserrat max-w-2xl mx-auto px-4 leading-relaxed">
-                            Meet the visionary leaders who guide ESM Information Technologies toward excellence and innovation
+                            {t('leadership.description')}
                         </p>
                     </div>
 
@@ -227,7 +263,7 @@ export default function OurTeamPage() {
 
                                     {/* Expertise */}
                                     <div className="mb-4 sm:mb-6">
-                                        <h4 className="font-semibold text-gray-900 mb-2 sm:mb-3 font-sora text-sm">Expertise</h4>
+                                        <h4 className="font-semibold text-gray-900 mb-2 sm:mb-3 font-sora text-sm">{t('leadership.expertiseLabel')}</h4>
                                         <div className="flex flex-wrap gap-1.5 sm:gap-2">
                                             {leader.expertise.map((skill, skillIndex) => (
                                                 <span
@@ -243,11 +279,11 @@ export default function OurTeamPage() {
                                     {/* Education & Certifications */}
                                     <div className="mb-4 sm:mb-6 space-y-2 sm:space-y-3">
                                         <div>
-                                            <h4 className="font-semibold text-gray-900 mb-1 font-sora text-xs sm:text-sm">Education</h4>
+                                            <h4 className="font-semibold text-gray-900 mb-1 font-sora text-xs sm:text-sm">{t('leadership.educationLabel')}</h4>
                                             <p className="text-gray-600 text-xs sm:text-sm font-montserrat leading-relaxed">{leader.education}</p>
                                         </div>
                                         <div>
-                                            <h4 className="font-semibold text-gray-900 mb-1 font-sora text-xs sm:text-sm">Certifications</h4>
+                                            <h4 className="font-semibold text-gray-900 mb-1 font-sora text-xs sm:text-sm">{t('leadership.certificationsLabel')}</h4>
                                             <p className="text-gray-600 text-xs sm:text-sm font-montserrat leading-relaxed">{leader.certifications.join(", ")}</p>
                                         </div>
                                     </div>
@@ -279,10 +315,10 @@ export default function OurTeamPage() {
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12 sm:mb-16">
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora px-2">
-                            Our Departments
+                            {t('departments.title')}
                         </h2>
                         <p className="text-base sm:text-lg text-gray-600 font-montserrat max-w-2xl mx-auto px-4 leading-relaxed">
-                            Specialized teams working together to deliver comprehensive SAP solutions and services
+                            {t('departments.description')}
                         </p>
                     </div>
 
@@ -308,12 +344,12 @@ export default function OurTeamPage() {
                                 <div className="flex items-center space-x-2 mb-3 sm:mb-4">
                                     <FaUsers className="text-sky-600 text-sm sm:text-base" />
                                     <span className="font-semibold text-gray-900 font-sora text-sm sm:text-base">{dept.teamSize}</span>
-                                    <span className="text-gray-600 font-montserrat text-sm sm:text-base">specialists</span>
+                                    <span className="text-gray-600 font-montserrat text-sm sm:text-base">{t('departments.specialistsLabel')}</span>
                                 </div>
 
                                 {/* Specialties */}
                                 <div>
-                                    <h4 className="font-semibold text-gray-900 mb-2 font-sora text-xs sm:text-sm">Specialties</h4>
+                                    <h4 className="font-semibold text-gray-900 mb-2 font-sora text-xs sm:text-sm">{t('departments.specialtiesLabel')}</h4>
                                     <div className="space-y-1">
                                         {dept.specialties.map((specialty, specialtyIndex) => (
                                             <div key={specialtyIndex} className="flex items-center space-x-2">
@@ -334,10 +370,10 @@ export default function OurTeamPage() {
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 font-sora">
-                            Our Team Values
+                            {t('values.title')}
                         </h2>
                         <p className="text-lg text-gray-600 font-montserrat max-w-2xl mx-auto">
-                            The principles that guide our team culture and drive our commitment to excellence
+                            {t('values.description')}
                         </p>
                     </div>
 
@@ -363,24 +399,23 @@ export default function OurTeamPage() {
             <section className="py-16 lg:py-20 bg-gradient-to-br from-sky-600 via-blue-700 to-sky-800">
                 <div className="container mx-auto px-4 text-center text-white">
                     <h2 className="text-3xl lg:text-4xl font-bold mb-6 font-sora">
-                        Join Our Growing Team
+                        {t('cta.title')}
                     </h2>
                     <p className="text-lg lg:text-xl mb-10 opacity-90 font-montserrat max-w-2xl mx-auto">
-                        Are you passionate about SAP and digital transformation? We&apos;re always looking for talented
-                        individuals to join our team of experts.
+                        {t('cta.description')}
                     </p>
                     <div className="flex flex-col sm:flex-row gap-6 justify-center">
                         <button
                             onClick={goToContact}
                             className="bg-white text-sky-600 px-8 py-4 rounded-2xl font-bold hover:bg-gray-50 transition-all duration-300 font-montserrat shadow-2xl hover:scale-105"
                         >
-                            Contact Us
+                            {t('cta.contactButton')}
                         </button>
                         <button
                             onClick={goToReferences}
                             className="border-2 border-white text-white px-8 py-4 rounded-2xl font-bold hover:bg-white hover:text-sky-600 transition-all duration-300 font-montserrat hover:scale-105"
                         >
-                            View Our References
+                            {t('cta.referencesButton')}
                         </button>
                     </div>
                 </div>

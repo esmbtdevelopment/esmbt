@@ -42,82 +42,82 @@ export default function AboutUsPage() {
         },
         {
             icon: <RiGlobalLine className="text-2xl" />,
-            title: "Integrity",
-            description: "We operate with complete transparency and integrity, building trust through honest communication and ethical business practices."
+            title: t('values.integrity.title'),
+            description: t('values.integrity.description')
         }
     ];
 
     const achievements = [
         {
             icon: <FaAward className="text-2xl" />,
-            title: "SAP Certified Partner",
-            description: "Official SAP partner status with certified consultants and proven track record"
+            title: t('achievements.sapPartner.title'),
+            description: t('achievements.sapPartner.description')
         },
         {
             icon: <FaUsers className="text-2xl" />,
-            title: "500+ Successful Implementations",
-            description: "Over 500 successful SAP implementations across various industries"
+            title: t('achievements.successfulImplementations.title'),
+            description: t('achievements.successfulImplementations.description')
         },
         {
             icon: <FaGlobe className="text-2xl" />,
-            title: "International Presence",
-            description: "Serving clients globally with localized expertise and support"
+            title: t('achievements.international.title'),
+            description: t('achievements.international.description')
         },
         {
             icon: <FaChartLine className="text-2xl" />,
-            title: "15+ Years Experience",
-            description: "Decade and a half of expertise in SAP consulting and digital transformation"
+            title: t('achievements.experience.title'),
+            description: t('achievements.experience.description')
         }
     ];
 
     const services = [
         {
             icon: <FaCogs className="text-xl" />,
-            title: "SAP Consulting & Implementation",
-            description: "Comprehensive SAP solutions from planning to deployment and optimization"
+            title: t('services.sapConsulting.title'),
+            description: t('services.sapConsulting.description')
         },
         {
             icon: <FaShieldAlt className="text-xl" />,
-            title: "Digital Compliance Solutions",
-            description: "E-Invoice, E-Archive, E-Ledger, and regulatory compliance automation"
+            title: t('services.compliance.title'),
+            description: t('services.compliance.description')
         },
         {
             icon: <FaChartLine className="text-xl" />,
-            title: "Financial Management",
-            description: "Advanced financial tools including VAT processing and IFRS solutions"
+            title: t('services.financial.title'),
+            description: t('services.financial.description')
         },
         {
             icon: <FaLightbulb className="text-xl" />,
-            title: "Digital Transformation",
-            description: "Complete business digitalization and process automation services"
+            title: t('services.transformation.title'),
+            description: t('services.transformation.description')
         }
     ];
 
     const timeline = [
         {
             year: "2008",
-            title: "Company Founded",
-            description: "ESM Information Technologies established with a vision to transform businesses through technology"
+            title: t('timeline.milestones.2008.title'),
+            description: t('timeline.milestones.2008.description')
         },
         {
             year: "2012",
-            title: "SAP Partnership",
-            description: "Became an official SAP partner, expanding our capabilities in enterprise solutions"
+            title: t('timeline.milestones.2012.title'),
+            description: t('timeline.milestones.2012.description')
         },
         {
             year: "2016",
-            title: "Digital Compliance Leader",
-            description: "Pioneered e-transformation solutions in Turkey, becoming a market leader"
+            title: t('timeline.milestones.2016.title'),
+            description: t('timeline.milestones.2016.description')
         },
         {
             year: "2020",
-            title: "International Expansion",
-            description: "Extended services globally, serving clients across multiple countries"
+            title: t('timeline.milestones.2020.title'),
+            description: t('timeline.milestones.2020.description')
         },
         {
             year: "2024",
-            title: "Innovation Hub",
-            description: "Established as a leading innovation hub for SAP-native digital solutions"
+            title: t('timeline.milestones.2024.title'),
+            description: t('timeline.milestones.2024.description')
         }
     ];
 
@@ -137,18 +137,16 @@ export default function AboutUsPage() {
                         <div>
                             <div className="hidden md:inline-flex items-center space-x-2 bg-sky-100 border border-sky-200 rounded-full px-6 py-2 mb-8">
                                 <FaBuilding className="text-sky-600" />
-                                <span className="text-sky-700 font-semibold font-montserrat text-sm">About ESM</span>
+                                <span className="text-sky-700 font-semibold font-montserrat text-sm">{t('hero.badge')}</span>
                             </div>
 
                             <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6 font-sora leading-tight">
-                                Transforming Businesses Through
-                                <span className="block text-sky-600">SAP Excellence</span>
+                                {t('hero.title')}
+                                <span className="block text-sky-600">{t('hero.titleHighlight')}</span>
                             </h1>
 
                             <p className="text-lg text-gray-400 mb-8 font-montserrat leading-relaxed">
-                                For over 15 years, ESM Information Technologies has been at the forefront of SAP consulting
-                                and digital transformation, helping enterprises streamline operations, ensure compliance,
-                                and achieve sustainable growth through innovative technology solutions.
+                                {t('hero.description')}
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4">
@@ -158,7 +156,7 @@ export default function AboutUsPage() {
                                     </div>
                                     <div>
                                         <div className="font-bold text-white font-sora">500+</div>
-                                        <div className="text-sm text-gray-400 font-montserrat">Projects Delivered</div>
+                                        <div className="text-sm text-gray-400 font-montserrat">{t('hero.stats.projectsDelivered')}</div>
                                     </div>
                                 </div>
                                 <div className="flex items-center space-x-3">
@@ -167,7 +165,7 @@ export default function AboutUsPage() {
                                     </div>
                                     <div>
                                         <div className="font-bold text-white font-sora">200+</div>
-                                        <div className="text-sm text-gray-400 font-montserrat">Enterprise Clients</div>
+                                        <div className="text-sm text-gray-400 font-montserrat">{t('hero.stats.enterpriseClients')}</div>
                                     </div>
                                 </div>
                             </div>
@@ -214,7 +212,7 @@ export default function AboutUsPage() {
                     <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
                         <div className="order-2 lg:order-1">
                             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora">
-                                {tCommon('ourExpertise')}
+                                {t('overview.title')}
                             </h3>
                             <div className="space-y-4 sm:space-y-6">
                                 {services.map((service, index) => (
@@ -237,7 +235,7 @@ export default function AboutUsPage() {
 
                         <div className="order-1 lg:order-2">
                             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora">
-                                Our Achievements
+                                {t('overview.achievementsTitle')}
                             </h3>
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                                 {achievements.map((achievement, index) => (
@@ -264,10 +262,10 @@ export default function AboutUsPage() {
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12 sm:mb-16">
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora px-2">
-                            Our Core Values
+                            {t('values.title')}
                         </h2>
                         <p className="text-base sm:text-lg text-gray-600 font-montserrat max-w-2xl mx-auto px-4 leading-relaxed">
-                            These fundamental principles guide everything we do and shape our commitment to excellence
+                            {t('values.description')}
                         </p>
                     </div>
 
@@ -296,10 +294,10 @@ export default function AboutUsPage() {
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12 sm:mb-16">
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora px-2">
-                            Our Journey
+                            {t('timeline.title')}
                         </h2>
                         <p className="text-base sm:text-lg text-gray-600 font-montserrat max-w-2xl mx-auto px-4 leading-relaxed">
-                            From our founding to becoming a leading SAP consulting firm, explore the key milestones that shaped our company
+                            {t('timeline.description')}
                         </p>
                     </div>
 
@@ -338,23 +336,23 @@ export default function AboutUsPage() {
             <section className="py-16 lg:py-20 bg-gradient-to-br from-sky-600 via-blue-700 to-sky-800">
                 <div className="container mx-auto px-4 text-center text-white">
                     <h2 className="text-3xl lg:text-4xl font-bold mb-6 font-sora">
-                        Ready to Transform Your Business?
+                        {t('cta.title')}
                     </h2>
                     <p className="text-lg lg:text-xl mb-10 opacity-90 font-montserrat max-w-2xl mx-auto">
-                        Join hundreds of enterprises that have chosen ESM Information Technologies for their SAP transformation journey.
+                        {t('cta.description')}
                     </p>
                     <div className="flex flex-col sm:flex-row gap-6 justify-center">
                         <button
                             onClick={goToContact}
                             className="bg-white text-sky-600 px-8 py-4 rounded-2xl font-bold hover:bg-gray-50 transition-all duration-300 font-montserrat shadow-2xl hover:scale-105"
                         >
-                            Contact Our Team
+                            {t('cta.contactButton')}
                         </button>
                         <button
                             onClick={goToReferences}
                             className="border-2 border-white text-white px-8 py-4 rounded-2xl font-bold hover:bg-white hover:text-sky-600 transition-all duration-300 font-montserrat hover:scale-105"
                         >
-                            View Our References
+                            {t('cta.referencesButton')}
                         </button>
                     </div>
                 </div>
