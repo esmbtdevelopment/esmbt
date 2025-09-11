@@ -653,7 +653,11 @@
     "bonusExpertise": "BONUS UZMANLIK",
     "evenMoreWaysWeCanHelp": "Size Daha Fazla Nasıl Yardımcı Olabiliriz",
     "sapNative": "100% SAP-Native",
-    "everythingWeBuild": "Yaptığımız her şey SAP ile doğal olarak çalışır - garip entegrasyonlara gerek yok"
+    "everythingWeBuild": "Yaptığımız her şey SAP ile doğal olarak çalışır - garip entegrasyonlara gerek yok",
+    "contact": {
+      "phone": "Telefon",
+      "email": "E-posta"
+    }
   },
   "hero": {
     "title": "Dijital Dönüşüm & Teknoloji Çözümleri",

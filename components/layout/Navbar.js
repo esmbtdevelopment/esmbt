@@ -34,6 +34,7 @@ const Navbar = () => {
   const dropdownTimeoutRef = useRef(null);
 
   const t = useTranslations('navigation');
+  const tCommon = useTranslations('common');
   const locale = useLocale();
   const router = useRouter();
 

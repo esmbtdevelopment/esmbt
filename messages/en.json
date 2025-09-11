@@ -648,7 +648,11 @@
     "bonusExpertise": "BONUS EXPERTISE",
     "evenMoreWaysWeCanHelp": "Even More Ways We Can Help",
     "sapNative": "100% SAP-Native",
-    "everythingWeBuild": "Everything we build works natively with SAP - no awkward integrations needed"
+    "everythingWeBuild": "Everything we build works natively with SAP - no awkward integrations needed",
+    "contact": {
+      "phone": "Phone",
+      "email": "Email"
+    }
   },
   "hero": {
     "title": "Digital Transformation & Technology Solutions",
