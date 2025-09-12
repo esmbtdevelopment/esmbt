@@ -608,8 +608,13 @@
     "vision": "Vizyon & Misyon",
     "contact": "İletişim",
     "backToServices": "Hizmetlere Geri Dön",
+    "backToProducts": "Ürünlere Geri Dön",
     "references": "Referanslar",
     "products": "Ürünler",
+    "strategicConsulting": "Stratejik SAP Danışmanlığı",
+    "erpImplementation": "ERP Uygulaması",
+    "cloudSolutions": "Bulut Çözümleri",
+    "viewAllProducts": "Tüm Ürünleri Görüntüle",
     "enterpriseSolutions": "Kurumsal Çözümler",
     "cloudPlatform": "Bulut Platformu",
     "customDevelopment": "Özel Geliştirme",
@@ -625,6 +630,10 @@
         "visionDescription": "Hedeflerimiz ve değerlerimiz"
       },
       "products": {
+        "strategicConsultingDescription": "SAP dönüşümü için uzman rehberliği",
+        "erpImplementationDescription": "Kapsamlı ERP uygulama hizmetleri",
+        "cloudSolutionsDescription": "Ölçeklenebilir SAP bulut çözümleri",
+        "viewAllDescription": "Tam ürün portföyümüzü keşfedin",
         "enterpriseDescription": "Kapsamlı iş araçları",
         "cloudDescription": "Ölçeklenebilir bulut hizmetleri",
         "customDescription": "Özel yazılım çözümleri"
@@ -650,6 +659,7 @@
     "readyToWorkWithUs": "Bizimle Çalışmaya Hazır mısınız?",
     "whoWeAre": "Biz Kimiz",
     "ourExpertise": "Uzmanlığımız",
+    "keyFeatures": "Temel Özellikler",
     "bonusExpertise": "BONUS UZMANLIK",
     "evenMoreWaysWeCanHelp": "Size Daha Fazla Nasıl Yardımcı Olabiliriz",
     "sapNative": "100% SAP-Native",
@@ -1279,6 +1289,451 @@
       "trustedByBusinesses": "Birçok sektördeki işletmelerin güvendiği",
       "comprehensiveFeatures": "İş operasyonlarınızı dönüştürmek ve büyümeyi artırmak için tasarlanmış kapsamlı özellikler.",
       "provenMethodology": "Kanıtlanmış uygulama metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar."
+    }
+  },
+  "products": {
+    "pageTitle": "Ürünlerimiz",
+    "pageSubtitle": "İş operasyonlarınızı dönüştürmek ve dijital mükemmelliği sağlamak için tasarlanmış kapsamlı SAP çözümleri.",
+    "sectionTitle": "SAP Ürün Portföyü",
+    "sectionDescription": "İş ihtiyaçlarınıza özel kapsamlı SAP çözümleri. Stratejik danışmanlıktan sürekli desteğe kadar her alanda yanınızdayız.",
+    "ctaDescription": "SAP ürünlerimizle işinizi dönüştürmeye hazır mısınız? Ücretsiz danışmanlık için bugün bizimle iletişime geçin.",
+    "startWithConsulting": "SAP Danışmanlığı ile Başlayın",
+    "landing": {
+      "strategicConsulting": {
+        "title": "Stratejik SAP Danışmanlığı",
+        "description": "Stratejik planlama ve iş süreci optimizasyonu ile SAP dönüşüm yolculuğunuz için uzman rehberliği.",
+        "features": {
+          "businessAnalysis": "Kapsamlı iş süreci analizi",
+          "roadmapDevelopment": "Stratejik uygulama yol haritası",
+          "processOptimization": "İş süreci optimizasyonu",
+          "changeManagement": "Değişim yönetimi desteği"
+        }
+      },
+      "erpImplementation": {
+        "title": "SAP ERP Uygulaması ve Geliştirme",
+        "description": "İş ihtiyaçlarınıza özel tam SAP ERP uygulama ve geliştirme hizmetleri.",
+        "features": {
+          "fullImplementation": "Uçtan uca ERP uygulaması",
+          "systemEnhancement": "Sistem geliştirme ve optimizasyon",
+          "dataIntegration": "Sorunsuz veri entegrasyonu",
+          "userTraining": "Kapsamlı kullanıcı eğitimi"
+        }
+      },
+      "technicalServices": {
+        "title": "SAP Teknik Hizmetleri",
+        "description": "SAP sistemlerinizin en yüksek performansta çalışmasını sağlayacak profesyonel teknik hizmetler.",
+        "features": {
+          "systemMaintenance": "Düzenli sistem bakımı",
+          "performanceOptimization": "Performans optimizasyonu",
+          "troubleshooting": "Uzman sorun giderme",
+          "upgrades": "Sistem yükseltmeleri ve yamalar"
+        }
+      },
+      "cloudSolutions": {
+        "title": "SAP Bulut Çözümleri",
+        "description": "İşiniz için esneklik, güvenlik ve maliyet etkinliği sağlayan ölçeklenebilir bulut çözümleri.",
+        "features": {
+          "cloudMigration": "Bulut taşıma hizmetleri",
+          "hybridSolutions": "Hibrit bulut çözümleri",
+          "cloudOptimization": "Bulut kaynak optimizasyonu",
+          "securityManagement": "Gelişmiş güvenlik yönetimi"
+        }
+      },
+      "analyticsIntelligence": {
+        "title": "SAP Analitik ve Zeka",
+        "description": "Gelişmiş analitik ve iş zekası çözümleri ile verilerinizi eyleme dönüştürülebilir içgörülere çevirin.",
+        "features": {
+          "businessIntelligence": "İş zekası çözümleri",
+          "dataVisualization": "Gelişmiş veri görselleştirme",
+          "predictiveAnalytics": "Tahmine dayalı analitik yetenekleri",
+          "realTimeReporting": "Gerçek zamanlı raporlama ve panolar"
+        }
+      },
+      "securityCompliance": {
+        "title": "SAP Güvenlik ve Uyumluluk",
+        "description": "SAP ortamınızı korumak ve düzenleyici uyumluluğu sağlamak için kapsamlı güvenlik ve uyumluluk çözümleri.",
+        "features": {
+          "accessManagement": "Kullanıcı erişim yönetimi",
+          "complianceAuditing": "Uyumluluk denetimi ve raporlama",
+          "riskAssessment": "Güvenlik risk değerlendirmesi",
+          "securityPolicies": "Güvenlik politikası geliştirme"
+        }
+      },
+      "ongoingSupport": {
+        "title": "Sürekli Destek ve Bakım",
+        "description": "SAP sistemlerinizin optimal performansını sağlamak için sürekli destek ve bakım hizmetleri.",
+        "features": {
+          "helpDesk": "7/24 yardım masası desteği",
+          "preventiveMaintenance": "Önleyici bakım programları",
+          "systemMonitoring": "Proaktif sistem izleme",
+          "continuousImprovement": "Sürekli iyileştirme girişimleri"
+        }
+      }
+    }
+  },
+  "productDetails": {
+    "ui": {
+      "getStarted": "Başlayın",
+      "requestDemo": "Demo Talep Edin",
+      "keyBenefits": "Temel Faydalar",
+      "features": "Özellikler ve Yetenekler",
+      "implementationProcess": "Uygulama Süreci",
+      "industries": "Hizmet Verdiğimiz Sektörler",
+      "roi": "Yatırım Getirisi",
+      "startYourProject": "Projenizi Başlatın",
+      "whyChoose": "Neden Seçmelisiniz",
+      "keyFeatures": "Temel Özellikler",
+      "comprehensiveFeatures": "İş operasyonlarınızı dönüştürmek ve büyümeyi artırmak için tasarlanmış kapsamlı özellikler.",
+      "provenMethodology": "Kanıtlanmış uygulama metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar.",
+      "perfectForYourIndustry": "Sektörünüz İçin Mükemmel",
+      "trustedByBusinesses": "Birçok sektördeki işletmelerin güvendiği",
+      "readyToGetStarted": "Başlamaya Hazır mısınız?",
+      "joinThousands": "operasyonlarını dönüştüren binlerce işletmeye katılın",
+      "getFreeConsultation": "Bugün ücretsiz danışmanlık alarak başlayın.",
+      "startFreeTrial": "Ücretsiz Deneme Başlatın",
+      "contactSales": "Satış Ekibiyle İletişime Geçin"
+    },
+    "products": {
+      "strategic-sap-consulting": {
+        "title": "Stratejik SAP Danışmanlığı",
+        "subtitle": "Uzman SAP Dönüşüm Rehberliği",
+        "heroDescription": "Stratejik planlama ve iş süreci optimizasyonu ile SAP dönüşüm yolculuğunuz için uzman rehberliği.",
+        "fullDescription": "Stratejik SAP Danışmanlık hizmetlerimiz, kapsamlı yol haritası geliştirme, iş süreci analizi ve değişim yönetimi desteği sağlayarak başarılı SAP uygulamalarını garanti eder. Sektör en iyi uygulamalarını benzersiz iş gereksinimlerinizle birleştirerek dönüşümsel sonuçlar sunarız.",
+        "description": "Stratejik planlama ve iş süreci optimizasyonu ile SAP dönüşüm yolculuğunuz için uzman rehberliği.",
+        "benefits": {
+          "0": "Uygulama maliyetlerinde %30 azalma",
+          "1": "Gelişmiş iş süreci verimliliği",
+          "2": "Dijital dönüşüm için stratejik yol haritası",
+          "3": "Risk azaltma ve uyumluluk güvencesi"
+        },
+        "features": {
+          "0": {
+            "title": "SAP Dijital Dönüşüm Stratejisi",
+            "description": "İş hedefleri ve sektör en iyi uygulamaları ile uyumlu SAP modernizasyonu için kapsamlı yol haritası geliştirme."
+          },
+          "1": {
+            "title": "SAP Manzara Değerlendirmesi ve Optimizasyonu",
+            "description": "Performans ve maliyet optimizasyonu için eyleme dönüştürülebilir önerilerle mevcut SAP ortamının derinlemesine analizi."
+          },
+          "2": {
+            "title": "SAP S/4HANA Hazırlık ve Göç Planlaması",
+            "description": "Eski SAP sistemlerinden S/4HANA'ya sorunsuz geçiş için stratejik planlama ve teknik değerlendirme."
+          },
+          "3": {
+            "title": "SAP Lisans Optimizasyonu ve Uyumluluk",
+            "description": "SAP yatırımları için lisans yönetimi, uyumluluk denetimleri ve maliyet azaltma stratejileri konusunda uzman rehberliği."
+          }
+        },
+        "implementation": {
+          "0": "İlk iş değerlendirmesi ve gereksinim toplama",
+          "1": "Mevcut durum analizi ve boşluk belirleme",
+          "2": "Gelecek durum tasarımı ve yol haritası oluşturma",
+          "3": "Uygulama planlama ve kaynak tahsisi",
+          "4": "Değişim yönetimi stratejisi geliştirme",
+          "5": "Canlıya geçiş desteği ve uygulama sonrası değerlendirme"
+        },
+        "industries": {
+          "0": "İmalat",
+          "1": "Perakende",
+          "2": "Sağlık",
+          "3": "Finansal Hizmetler",
+          "4": "Otomotiv",
+          "5": "Enerji"
+        },
+        "roi": "Stratejik planlama ile %30 daha hızlı SAP uygulaması gerçekleştirin"
+      },
+      "sap-erp-implementation": {
+        "title": "SAP ERP Uygulaması ve Geliştirme",
+        "subtitle": "Kapsamlı ERP Uygulama Hizmetleri",
+        "heroDescription": "İş ihtiyaçlarınıza özel tam SAP ERP uygulama ve geliştirme hizmetleri.",
+        "fullDescription": "SAP ERP Uygulama hizmetlerimiz, FI/CO, MM, SD, PP ve HCM dahil olmak üzere tüm ana modüllerin uçtan uca dağıtımını kapsar. Başarılı ERP dönüşümü için sorunsuz entegrasyon, veri göçü ve kullanıcı adaptasyonu sağlarız.",
+        "description": "İş ihtiyaçlarınıza özel tam SAP ERP uygulama ve geliştirme hizmetleri.",
+        "benefits": {
+          "0": "Tüm departmanlarda kolaylaştırılmış iş süreçleri",
+          "1": "İş operasyonlarına gerçek zamanlı görünürlük",
+          "2": "Gelişmiş veri doğruluğu ve raporlama yetenekleri",
+          "3": "Artırılmış operasyonel verimlilik ve maliyet azaltma"
+        },
+        "features": {
+          "0": {
+            "title": "SAP FI/CO (Finans ve Kontrolling) Uygulaması",
+            "description": "GL, AP, AR, varlık muhasebesi ve yönetim raporlaması dahil eksiksiz finansal yönetim çözümü uygulaması."
+          },
+          "1": {
+            "title": "SAP MM (Malzeme Yönetimi) Çözümleri",
+            "description": "Tedarikçi yönetimi ve satın alma optimizasyonu ile uçtan uca satın alma ve envanter yönetimi uygulaması."
+          },
+          "2": {
+            "title": "SAP SD (Satış ve Dağıtım) Konfigürasyonu",
+            "description": "Fiyatlandırma, faturalandırma ve müşteri ilişkileri optimizasyonu ile satış süreci otomasyonu ve dağıtım yönetimi."
+          },
+          "3": {
+            "title": "SAP PP (Üretim Planlama) Uygulaması",
+            "description": "Üretim planlama, çizelgeleme ve atölye kontrol entegrasyonu ile üretim yürütme sistemi kurulumu."
+          },
+          "4": {
+            "title": "SAP HCM/SuccessFactors İK Çözümleri",
+            "description": "Bordro, yetenek yönetimi ve çalışan self-servis portallarını kapsayan insan sermayesi yönetimi uygulaması."
+          }
+        },
+        "implementation": {
+          "0": "İş gereksinim analizi ve sistem tasarımı",
+          "1": "Modül konfigürasyonu ve özelleştirme",
+          "2": "Veri göçü ve sistem entegrasyonu",
+          "3": "Kullanıcı kabul testleri ve eğitim",
+          "4": "Canlıya geçiş desteği ve yoğun bakım",
+          "5": "Uygulama sonrası optimizasyon ve destek"
+        },
+        "industries": {
+          "0": "İmalat",
+          "1": "Perakende ve Dağıtım",
+          "2": "Petrol ve Gaz",
+          "3": "İlaç",
+          "4": "Tüketici Ürünleri",
+          "5": "Kamu Hizmetleri"
+        },
+        "roi": "Entegre ERP süreçleri ile operasyonel maliyetleri %25 azaltın"
+      },
+      "sap-technical-services": {
+        "title": "SAP Teknik Hizmetleri",
+        "subtitle": "Profesyonel Teknik Destek",
+        "heroDescription": "SAP sistemlerinizin en yüksek performansta çalışmasını sağlayacak profesyonel teknik hizmetler.",
+        "fullDescription": "SAP Teknik Hizmetlerimiz ABAP geliştirme, Basis yönetimi, sistem entegrasyonu ve modern UI geliştirmeyi kapsar. SAP ortamınızın optimal performans ve güvenlik ile verimli çalışmasını sağlarız.",
+        "description": "SAP sistemlerinizin en yüksek performansta çalışmasını sağlayacak profesyonel teknik hizmetler.",
+        "benefits": {
+          "0": "Maksimize edilmiş sistem performansı ve güvenilirliği",
+          "1": "Azaltılmış kesinti süresi ve teknik sorunlar",
+          "2": "Gelişmiş güvenlik ve uyumluluk",
+          "3": "Optimize edilmiş altyapı maliyetleri ve kaynak kullanımı"
+        },
+        "features": {
+          "0": {
+            "title": "SAP ABAP Geliştirme ve Özelleştirme",
+            "description": "ABAP programlama ve SAP geliştirme araçları kullanarak özel uygulama geliştirme, geliştirme ve entegrasyon."
+          },
+          "1": {
+            "title": "SAP Basis Yönetimi ve Altyapı",
+            "description": "SAP ortamları için sistem yönetimi, performans ayarlama, güvenlik yönetimi ve altyapı optimizasyonu."
+          },
+          "2": {
+            "title": "SAP Entegrasyon ve Middleware Çözümleri",
+            "description": "Sorunsuz veri akışı ve süreç otomasyonu için SAP PI/PO, CPI ve üçüncü taraf middleware kullanarak sistem entegrasyonu."
+          },
+          "3": {
+            "title": "SAP FIORI ve UI5 Geliştirme",
+            "description": "SAP FIORI ve UI5 çerçeveleri kullanarak modern kullanıcı arayüzü geliştirme ve mobil uygulama oluşturma."
+          }
+        },
+        "implementation": {
+          "0": "Teknik gereksinim analizi ve mimari tasarım",
+          "1": "Geliştirme ortamı kurulumu ve konfigürasyon",
+          "2": "Özel geliştirme ve sistem geliştirme",
+          "3": "Entegrasyon testi ve kalite güvencesi",
+          "4": "Dağıtım ve üretim desteği",
+          "5": "Sürekli bakım ve performans optimizasyonu"
+        },
+        "industries": {
+          "0": "Tüm Sektörler",
+          "1": "Teknoloji",
+          "2": "Finansal Hizmetler",
+          "3": "İmalat",
+          "4": "Sağlık",
+          "5": "Devlet"
+        },
+        "roi": "Optimize edilmiş teknik altyapı ile sistem performansını %40 artırın"
+      },
+      "sap-cloud-solutions": {
+        "title": "SAP Bulut Çözümleri",
+        "subtitle": "Ölçeklenebilir Bulut Hizmetleri",
+        "heroDescription": "İşiniz için esneklik, güvenlik ve maliyet etkinliği sağlayan ölçeklenebilir bulut çözümleri.",
+        "fullDescription": "SAP Bulut Çözümlerimiz S/4HANA Cloud, SuccessFactors, Ariba ve Concur uygulamalarını içerir. Gelişmiş ölçeklenebilirlik, azaltılmış altyapı maliyetleri ve gelişmiş iş çevikliği için bulut bilişimin gücünden yararlanmanıza yardımcı oluruz.",
+        "description": "İşiniz için esneklik, güvenlik ve maliyet etkinliği sağlayan ölçeklenebilir bulut çözümleri.",
+        "benefits": {
+          "0": "Azaltılmış altyapı maliyetleri ve bakım yükü",
+          "1": "Gelişmiş ölçeklenebilirlik ve iş çevikliği",
+          "2": "İyileştirilmiş güvenlik ve uyumluluk yetenekleri",
+          "3": "Bulut-native çözümlerle daha hızlı pazara çıkış"
+        },
+        "features": {
+          "0": {
+            "title": "SAP S/4HANA Bulut Uygulaması",
+            "description": "Sektör en iyi uygulamaları, hızlı uygulama metodolojisi ve değişim yönetimi ile bulut-native ERP dağıtımı."
+          },
+          "1": {
+            "title": "SAP SuccessFactors Bulut İK",
+            "description": "Yetenek edinimi, performans yönetimi, öğrenme ve ücret planlaması dahil eksiksiz bulut İK çözümü."
+          },
+          "2": {
+            "title": "SAP Ariba Satın Alma Bulutu",
+            "description": "Tedarikçi yönetimi ve harcama analitik yetenekleri ile bulut tabanlı satın alma ve tedarik zinciri çözümleri."
+          },
+          "3": {
+            "title": "SAP Concur Gider Yönetimi",
+            "description": "Otomatik iş akışları ve uyumluluk yönetimi özellikleri ile seyahat ve gider yönetimi bulut çözümü."
+          }
+        },
+        "implementation": {
+          "0": "Bulut hazırlık değerlendirmesi ve göç planlaması",
+          "1": "Bulut mimarisi tasarımı ve güvenlik konfigürasyonu",
+          "2": "Veri göçü ve sistem entegrasyonu",
+          "3": "Kullanıcı eğitimi ve değişim yönetimi",
+          "4": "Canlıya geçiş desteği ve optimizasyon",
+          "5": "Sürekli bulut yönetimi ve destek"
+        },
+        "industries": {
+          "0": "Teknoloji",
+          "1": "Finansal Hizmetler",
+          "2": "Sağlık",
+          "3": "Perakende",
+          "4": "İmalat",
+          "5": "Profesyonel Hizmetler"
+        },
+        "roi": "Bulut göçü ile BT altyapı maliyetlerinde %50 azalma sağlayın"
+      },
+      "sap-analytics-intelligence": {
+        "title": "SAP Analitik ve Zeka",
+        "subtitle": "Gelişmiş Veri Analitik Çözümleri",
+        "heroDescription": "Gelişmiş analitik ve iş zekası çözümleri ile verilerinizi eyleme dönüştürülebilir içgörülere çevirin.",
+        "fullDescription": "SAP Analitik ve Zeka hizmetlerimiz BusinessObjects, SAC, BW/4HANA ve HANA veritabanı optimizasyonunu içerir. Daha iyi karar verme ve iş performansı için verilerinizin gücünü açığa çıkarmanıza yardımcı oluruz.",
+        "description": "Gelişmiş analitik ve iş zekası çözümleri ile verilerinizi eyleme dönüştürülebilir içgörülere çevirin.",
+        "benefits": {
+          "0": "Organizasyon genelinde veriye dayalı karar verme",
+          "1": "Gerçek zamanlı içgörüler ve tahmine dayalı analitik yetenekleri",
+          "2": "Gelişmiş raporlama ile iyileştirilmiş operasyonel verimlilik",
+          "3": "Akıllı veri analizi ile gelişmiş iş performansı"
+        },
+        "features": {
+          "0": {
+            "title": "SAP BusinessObjects ve Crystal Reports",
+            "description": "Pano oluşturma ve self-servis analitik ile kurumsal raporlama ve iş zekası uygulaması."
+          },
+          "1": {
+            "title": "SAP Analytics Cloud (SAC) Çözümleri",
+            "description": "Tahmine dayalı analitik, planlama ve artırılmış analitik yetenekleri ile bulut tabanlı analitik platform uygulaması."
+          },
+          "2": {
+            "title": "SAP Veri Ambarı ve BW/4HANA",
+            "description": "Gerçek zamanlı analitik, veri modelleme ve gelişmiş raporlama yetenekleri ile veri ambarı çözümleri."
+          },
+          "3": {
+            "title": "SAP HANA Veritabanı Optimizasyonu",
+            "description": "Gerçek zamanlı içgörüler için bellek içi veritabanı performans ayarlama, veri modelleme ve gelişmiş analitik uygulaması."
+          }
+        },
+        "implementation": {
+          "0": "Veri ortamı değerlendirmesi ve analitik stratejisi",
+          "1": "Veri mimarisi tasarımı ve modelleme",
+          "2": "Analitik platform dağıtımı ve konfigürasyon",
+          "3": "Pano ve rapor geliştirme",
+          "4": "Kullanıcı eğitimi ve benimsetme desteği",
+          "5": "Performans optimizasyonu ve sürekli destek"
+        },
+        "industries": {
+          "0": "Finansal Hizmetler",
+          "1": "Perakende ve Tüketici Ürünleri",
+          "2": "İmalat",
+          "3": "Sağlık",
+          "4": "Telekomünikasyon",
+          "5": "Devlet"
+        },
+        "roi": "Gerçek zamanlı analitik ve zeka ile karar verme sürecini %60 hızlandırın"
+      },
+      "sap-security-compliance": {
+        "title": "SAP Güvenlik ve Uyumluluk",
+        "subtitle": "Kapsamlı Güvenlik Çözümleri",
+        "heroDescription": "SAP ortamınızı korumak ve düzenleyici uyumluluğu sağlamak için kapsamlı güvenlik ve uyumluluk çözümleri.",
+        "fullDescription": "SAP Güvenlik ve Uyumluluk hizmetlerimiz GRC uygulaması, güvenlik değerlendirmeleri, kimlik yönetimi ve denetim desteğini içerir. Düzenleyici uyumluluğu sağlarken en yüksek güvenlik standartlarını korumanıza yardımcı oluruz.",
+        "description": "SAP ortamınızı korumak ve düzenleyici uyumluluğu sağlamak için kapsamlı güvenlik ve uyumluluk çözümleri.",
+        "benefits": {
+          "0": "Gelişmiş güvenlik duruşu ve risk azaltma",
+          "1": "Düzenleyici uyumluluk ve denetim hazırlığı",
+          "2": "Kolaylaştırılmış erişim yönetimi ve yönetişim",
+          "3": "Azaltılmış güvenlik açıkları ve tehditler"
+        },
+        "features": {
+          "0": {
+            "title": "SAP GRC (Yönetişim, Risk ve Uyumluluk)",
+            "description": "Erişim kontrolleri, süreç kontrolleri ve uyumluluk izleme ile risk yönetimi çerçevesi uygulaması."
+          },
+          "1": {
+            "title": "SAP Güvenlik Değerlendirmesi ve Sertleştirme",
+            "description": "SAP ortamları için kapsamlı güvenlik denetimi, güvenlik açığı değerlendirmesi ve güvenlik sertleştirme."
+          },
+          "2": {
+            "title": "SAP Kimlik ve Erişim Yönetimi",
+            "description": "Kimlik yönetişimi çözümleri ile kullanıcı sağlama, rol yönetimi ve tek oturum açma uygulaması."
+          },
+          "3": {
+            "title": "SAP Denetim ve Uyumluluk Desteği",
+            "description": "Çeşitli sektörler için denetim hazırlığı, uyumluluk dokümantasyonu ve düzenleyici gereksinim uygulaması."
+          }
+        },
+        "implementation": {
+          "0": "Güvenlik değerlendirmesi ve uyumluluk boşluk analizi",
+          "1": "Risk çerçevesi tasarımı ve uygulaması",
+          "2": "Güvenlik kontrolleri dağıtımı ve konfigürasyonu",
+          "3": "Kimlik yönetim sistemi entegrasyonu",
+          "4": "Uyumluluk izleme kurulumu ve test",
+          "5": "Sürekli güvenlik yönetimi ve destek"
+        },
+        "industries": {
+          "0": "Finansal Hizmetler",
+          "1": "Sağlık",
+          "2": "Devlet",
+          "3": "İmalat",
+          "4": "Enerji ve Kamu Hizmetleri",
+          "5": "İlaç"
+        },
+        "roi": "Kapsamlı uyumluluk çerçevesi ile güvenlik risklerini %70 azaltın"
+      },
+      "ongoing-support-maintenance": {
+        "title": "Sürekli Destek ve Bakım",
+        "subtitle": "Sürekli Destek Hizmetleri",
+        "heroDescription": "SAP sistemlerinizin optimal performansını sağlamak için sürekli destek ve bakım hizmetleri.",
+        "fullDescription": "Sürekli Destek ve Bakım hizmetlerimiz 24/7 AMS, sistem yükseltmeleri, performans optimizasyonu ve eğitim programlarını içerir. SAP sistemlerinizin minimum kesinti süresiyle en yüksek performansta çalışmasını sağlarız.",
+        "description": "SAP sistemlerinizin optimal performansını sağlamak için sürekli destek ve bakım hizmetleri.",
+        "benefits": {
+          "0": "Maksimize edilmiş sistem çalışma süresi ve kullanılabilirlik",
+          "1": "Proaktif sorun önleme ve çözüm",
+          "2": "Sürekli performans optimizasyonu",
+          "3": "Gelişmiş kullanıcı verimliliği ve memnuniyeti"
+        },
+        "features": {
+          "0": {
+            "title": "SAP Uygulama Yönetim Hizmetleri (AMS)",
+            "description": "SLA tabanlı hizmet sunumu ve sürekli iyileştirme ile 7/24 destek, olay yönetimi ve proaktif izleme."
+          },
+          "1": {
+            "title": "SAP Sistem Yükseltmeleri ve Yamalar",
+            "description": "Minimum iş kesintisi ve kapsamlı test ile planlı sistem yükseltmeleri, güvenlik yamaları ve sürüm güncellemeleri."
+          },
+          "2": {
+            "title": "SAP Performans Optimizasyonu",
+            "description": "Optimal kullanıcı deneyimi ve verimlilik sağlamak için sürekli sistem performans izleme, ayarlama ve optimizasyon."
+          },
+          "3": {
+            "title": "SAP Eğitim ve Bilgi Transferi",
+            "description": "İç SAP yeteneklerini geliştirmek için kapsamlı kullanıcı eğitim programları, dokümantasyon ve bilgi transferi."
+          }
+        },
+        "implementation": {
+          "0": "Mevcut durum değerlendirmesi ve hizmet seviyesi tanımı",
+          "1": "Destek çerçevesi kurulumu ve ekip geçişi",
+          "2": "İzleme araçları dağıtımı ve konfigürasyon",
+          "3": "Hizmet sunumu süreçlerinin oluşturulması",
+          "4": "Bilgi transferi ve eğitim programları",
+          "5": "Sürekli iyileştirme ve optimizasyon"
+        },
+        "industries": {
+          "0": "Tüm Sektörler",
+          "1": "İmalat",
+          "2": "Finansal Hizmetler",
+          "3": "Perakende",
+          "4": "Sağlık",
+          "5": "Teknoloji"
+        },
+        "roi": "Proaktif destek ve bakım ile %99,9 sistem çalışma süresi sağlayın"
+      }
     }
   }
 }

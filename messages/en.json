@@ -603,8 +603,13 @@
     "vision": "Vision & Mission",
     "contact": "Contact",
     "backToServices": "Back to Services",
+    "backToProducts": "Back to Products",
     "references": "References",
     "products": "Products",
+    "strategicConsulting": "Strategic SAP Consulting",
+    "erpImplementation": "ERP Implementation",
+    "cloudSolutions": "Cloud Solutions",
+    "viewAllProducts": "View All Products",
     "enterpriseSolutions": "Enterprise Solutions",
     "cloudPlatform": "Cloud Platform",
     "customDevelopment": "Custom Development",
@@ -619,6 +624,10 @@
         "visionDescription": "Our goals and values"
       },
       "products": {
+        "strategicConsultingDescription": "Expert guidance for SAP transformation",
+        "erpImplementationDescription": "Complete ERP implementation services",
+        "cloudSolutionsDescription": "Scalable SAP cloud solutions",
+        "viewAllDescription": "Explore our complete product portfolio",
         "enterpriseDescription": "Comprehensive business tools",
         "cloudDescription": "Scalable cloud services",
         "customDescription": "Tailored software solutions"
@@ -645,6 +654,7 @@
     "readyToWorkWithUs": "Ready to Work With Us?",
     "whoWeAre": "Who We Are",
     "ourExpertise": "Our Expertise",
+    "keyFeatures": "Key Features",
     "bonusExpertise": "BONUS EXPERTISE",
     "evenMoreWaysWeCanHelp": "Even More Ways We Can Help",
     "sapNative": "100% SAP-Native",
@@ -1264,6 +1274,451 @@
       "item3": "SAP Data Masking & Protection",
       "item4": "Inflation Accounting Solutions",
       "item5": "Loan & Collection Tracking"
+    }
+  },
+  "products": {
+    "pageTitle": "Our Products",
+    "pageSubtitle": "Comprehensive SAP solutions designed to transform your business operations and drive digital excellence.",
+    "sectionTitle": "SAP Product Portfolio",
+    "sectionDescription": "Comprehensive SAP solutions tailored for your business needs. From strategic consulting to ongoing support, we've got you covered.",
+    "ctaDescription": "Ready to transform your business with our SAP products? Contact us today for a free consultation.",
+    "startWithConsulting": "Start with SAP Consulting",
+    "landing": {
+      "strategicConsulting": {
+        "title": "Strategic SAP Consulting",
+        "description": "Expert guidance for your SAP transformation journey with strategic planning and business process optimization.",
+        "features": {
+          "businessAnalysis": "Comprehensive business process analysis",
+          "roadmapDevelopment": "Strategic implementation roadmap",
+          "processOptimization": "Business process optimization",
+          "changeManagement": "Change management support"
+        }
+      },
+      "erpImplementation": {
+        "title": "SAP ERP Implementation & Enhancement",
+        "description": "Complete SAP ERP implementation and enhancement services tailored to your business needs.",
+        "features": {
+          "fullImplementation": "End-to-end ERP implementation",
+          "systemEnhancement": "System enhancement and optimization",
+          "dataIntegration": "Seamless data integration",
+          "userTraining": "Comprehensive user training"
+        }
+      },
+      "technicalServices": {
+        "title": "SAP Technical Services",
+        "description": "Professional technical services to keep your SAP systems running at peak performance.",
+        "features": {
+          "systemMaintenance": "Regular system maintenance",
+          "performanceOptimization": "Performance optimization",
+          "troubleshooting": "Expert troubleshooting",
+          "upgrades": "System upgrades and patches"
+        }
+      },
+      "cloudSolutions": {
+        "title": "SAP Cloud Solutions",
+        "description": "Scalable cloud solutions that provide flexibility, security, and cost-effectiveness for your business.",
+        "features": {
+          "cloudMigration": "Cloud migration services",
+          "hybridSolutions": "Hybrid cloud solutions",
+          "cloudOptimization": "Cloud resource optimization",
+          "securityManagement": "Advanced security management"
+        }
+      },
+      "analyticsIntelligence": {
+        "title": "SAP Analytics & Intelligence",
+        "description": "Transform your data into actionable insights with advanced analytics and business intelligence solutions.",
+        "features": {
+          "businessIntelligence": "Business intelligence solutions",
+          "dataVisualization": "Advanced data visualization",
+          "predictiveAnalytics": "Predictive analytics capabilities",
+          "realTimeReporting": "Real-time reporting and dashboards"
+        }
+      },
+      "securityCompliance": {
+        "title": "SAP Security & Compliance",
+        "description": "Comprehensive security and compliance solutions to protect your SAP environment and ensure regulatory adherence.",
+        "features": {
+          "accessManagement": "User access management",
+          "complianceAuditing": "Compliance auditing and reporting",
+          "riskAssessment": "Security risk assessment",
+          "securityPolicies": "Security policy development"
+        }
+      },
+      "ongoingSupport": {
+        "title": "Ongoing Support & Maintenance",
+        "description": "Continuous support and maintenance services to ensure optimal performance of your SAP systems.",
+        "features": {
+          "helpDesk": "24/7 helpdesk support",
+          "preventiveMaintenance": "Preventive maintenance programs",
+          "systemMonitoring": "Proactive system monitoring",
+          "continuousImprovement": "Continuous improvement initiatives"
+        }
+      }
+    }
+  },
+  "productDetails": {
+    "ui": {
+      "getStarted": "Get Started",
+      "requestDemo": "Request Demo",
+      "keyBenefits": "Key Benefits",
+      "features": "Features & Capabilities",
+      "implementationProcess": "Implementation Process",
+      "industries": "Industries We Serve",
+      "roi": "Return on Investment",
+      "startYourProject": "Start Your Project",
+      "whyChoose": "Why Choose",
+      "keyFeatures": "Key Features",
+      "comprehensiveFeatures": "Comprehensive features designed to transform your business operations and drive growth.",
+      "provenMethodology": "Our proven implementation methodology ensures smooth deployment and maximum ROI.",
+      "perfectForYourIndustry": "Perfect for Your Industry",
+      "trustedByBusinesses": "Trusted by businesses across multiple industries",
+      "readyToGetStarted": "Ready to Get Started?",
+      "joinThousands": "Join thousands of businesses that have transformed their operations with",
+      "getFreeConsultation": "Get started with a free consultation today.",
+      "startFreeTrial": "Start Free Trial",
+      "contactSales": "Contact Sales"
+    },
+    "products": {
+      "strategic-sap-consulting": {
+        "title": "Strategic SAP Consulting",
+        "subtitle": "Expert SAP Transformation Guidance",
+        "heroDescription": "Expert guidance for your SAP transformation journey with strategic planning and business process optimization.",
+        "fullDescription": "Our Strategic SAP Consulting services provide comprehensive roadmap development, business process analysis, and change management support to ensure successful SAP implementations. We combine industry best practices with your unique business requirements to deliver transformational results.",
+        "description": "Expert guidance for your SAP transformation journey with strategic planning and business process optimization.",
+        "benefits": {
+          "0": "Reduced implementation costs by 30%",
+          "1": "Improved business process efficiency",
+          "2": "Strategic roadmap for digital transformation",
+          "3": "Risk mitigation and compliance assurance"
+        },
+        "features": {
+          "0": {
+            "title": "SAP Digital Transformation Strategy",
+            "description": "Comprehensive roadmap development for SAP modernization aligned with business objectives and industry best practices."
+          },
+          "1": {
+            "title": "SAP Landscape Assessment & Optimization",
+            "description": "In-depth analysis of current SAP environment with actionable recommendations for performance and cost optimization."
+          },
+          "2": {
+            "title": "SAP S/4HANA Readiness & Migration Planning",
+            "description": "Strategic planning and technical assessment for seamless transition from legacy SAP systems to S/4HANA."
+          },
+          "3": {
+            "title": "SAP License Optimization & Compliance",
+            "description": "Expert guidance on license management, compliance audits, and cost reduction strategies for SAP investments."
+          }
+        },
+        "implementation": {
+          "0": "Initial business assessment and requirement gathering",
+          "1": "Current state analysis and gap identification",
+          "2": "Future state design and roadmap creation",
+          "3": "Implementation planning and resource allocation",
+          "4": "Change management strategy development",
+          "5": "Go-live support and post-implementation review"
+        },
+        "industries": {
+          "0": "Manufacturing",
+          "1": "Retail",
+          "2": "Healthcare",
+          "3": "Financial Services",
+          "4": "Automotive",
+          "5": "Energy"
+        },
+        "roi": "Achieve 30% faster SAP implementation with strategic planning"
+      },
+      "sap-erp-implementation": {
+        "title": "SAP ERP Implementation & Enhancement",
+        "subtitle": "Complete ERP Implementation Services",
+        "heroDescription": "Complete SAP ERP implementation and enhancement services tailored to your business needs.",
+        "fullDescription": "Our SAP ERP Implementation services cover end-to-end deployment of SAP systems, including all major modules like FI/CO, MM, SD, PP, and HCM. We ensure seamless integration, data migration, and user adoption for successful ERP transformation.",
+        "description": "Complete SAP ERP implementation and enhancement services tailored to your business needs.",
+        "benefits": {
+          "0": "Streamlined business processes across all departments",
+          "1": "Real-time visibility into business operations",
+          "2": "Improved data accuracy and reporting capabilities",
+          "3": "Enhanced operational efficiency and cost reduction"
+        },
+        "features": {
+          "0": {
+            "title": "SAP FI/CO (Finance & Controlling) Implementation",
+            "description": "Complete financial management solution implementation including GL, AP, AR, asset accounting, and management reporting."
+          },
+          "1": {
+            "title": "SAP MM (Materials Management) Solutions",
+            "description": "End-to-end procurement and inventory management implementation with vendor management and purchase optimization."
+          },
+          "2": {
+            "title": "SAP SD (Sales & Distribution) Configuration",
+            "description": "Sales process automation and distribution management with pricing, billing, and customer relationship optimization."
+          },
+          "3": {
+            "title": "SAP PP (Production Planning) Implementation",
+            "description": "Manufacturing execution system setup with production planning, scheduling, and shop floor control integration."
+          },
+          "4": {
+            "title": "SAP HCM/SuccessFactors HR Solutions",
+            "description": "Human capital management implementation covering payroll, talent management, and employee self-service portals."
+          }
+        },
+        "implementation": {
+          "0": "Business requirement analysis and system design",
+          "1": "Module configuration and customization",
+          "2": "Data migration and system integration",
+          "3": "User acceptance testing and training",
+          "4": "Go-live support and hypercare",
+          "5": "Post-implementation optimization and support"
+        },
+        "industries": {
+          "0": "Manufacturing",
+          "1": "Retail & Distribution",
+          "2": "Oil & Gas",
+          "3": "Pharmaceuticals",
+          "4": "Consumer Goods",
+          "5": "Utilities"
+        },
+        "roi": "Reduce operational costs by 25% through integrated ERP processes"
+      },
+      "sap-technical-services": {
+        "title": "SAP Technical Services",
+        "subtitle": "Professional Technical Support",
+        "heroDescription": "Professional technical services to keep your SAP systems running at peak performance.",
+        "fullDescription": "Our SAP Technical Services encompass ABAP development, Basis administration, system integration, and modern UI development. We ensure your SAP landscape operates efficiently with optimal performance and security.",
+        "description": "Professional technical services to keep your SAP systems running at peak performance.",
+        "benefits": {
+          "0": "Maximized system performance and reliability",
+          "1": "Reduced downtime and technical issues",
+          "2": "Enhanced security and compliance",
+          "3": "Optimized infrastructure costs and resource utilization"
+        },
+        "features": {
+          "0": {
+            "title": "SAP ABAP Development & Customization",
+            "description": "Custom application development, enhancement, and integration using ABAP programming and SAP development tools."
+          },
+          "1": {
+            "title": "SAP Basis Administration & Infrastructure",
+            "description": "System administration, performance tuning, security management, and infrastructure optimization for SAP landscapes."
+          },
+          "2": {
+            "title": "SAP Integration & Middleware Solutions",
+            "description": "System integration using SAP PI/PO, CPI, and third-party middleware for seamless data flow and process automation."
+          },
+          "3": {
+            "title": "SAP FIORI & UI5 Development",
+            "description": "Modern user interface development and mobile application creation using SAP FIORI and UI5 frameworks."
+          }
+        },
+        "implementation": {
+          "0": "Technical requirement analysis and architecture design",
+          "1": "Development environment setup and configuration",
+          "2": "Custom development and system enhancement",
+          "3": "Integration testing and quality assurance",
+          "4": "Deployment and production support",
+          "5": "Ongoing maintenance and performance optimization"
+        },
+        "industries": {
+          "0": "All Industries",
+          "1": "Technology",
+          "2": "Financial Services",
+          "3": "Manufacturing",
+          "4": "Healthcare",
+          "5": "Government"
+        },
+        "roi": "Improve system performance by 40% with optimized technical infrastructure"
+      },
+      "sap-cloud-solutions": {
+        "title": "SAP Cloud Solutions",
+        "subtitle": "Scalable Cloud Services",
+        "heroDescription": "Scalable cloud solutions that provide flexibility, security, and cost-effectiveness for your business.",
+        "fullDescription": "Our SAP Cloud Solutions include S/4HANA Cloud, SuccessFactors, Ariba, and Concur implementations. We help you leverage the power of cloud computing for enhanced scalability, reduced infrastructure costs, and improved business agility.",
+        "description": "Scalable cloud solutions that provide flexibility, security, and cost-effectiveness for your business.",
+        "benefits": {
+          "0": "Reduced infrastructure costs and maintenance overhead",
+          "1": "Enhanced scalability and business agility",
+          "2": "Improved security and compliance capabilities",
+          "3": "Faster time-to-market with cloud-native solutions"
+        },
+        "features": {
+          "0": {
+            "title": "SAP S/4HANA Cloud Implementation",
+            "description": "Cloud-native ERP deployment with industry best practices, rapid implementation methodology, and change management."
+          },
+          "1": {
+            "title": "SAP SuccessFactors Cloud HR",
+            "description": "Complete cloud HR solution including talent acquisition, performance management, learning, and compensation planning."
+          },
+          "2": {
+            "title": "SAP Ariba Procurement Cloud",
+            "description": "Cloud-based procurement and supply chain solutions with supplier management and spend analytics capabilities."
+          },
+          "3": {
+            "title": "SAP Concur Expense Management",
+            "description": "Travel and expense management cloud solution with automated workflows and compliance management features."
+          }
+        },
+        "implementation": {
+          "0": "Cloud readiness assessment and migration planning",
+          "1": "Cloud architecture design and security configuration",
+          "2": "Data migration and system integration",
+          "3": "User training and change management",
+          "4": "Go-live support and optimization",
+          "5": "Ongoing cloud management and support"
+        },
+        "industries": {
+          "0": "Technology",
+          "1": "Financial Services",
+          "2": "Healthcare",
+          "3": "Retail",
+          "4": "Manufacturing",
+          "5": "Professional Services"
+        },
+        "roi": "Achieve 50% reduction in IT infrastructure costs with cloud migration"
+      },
+      "sap-analytics-intelligence": {
+        "title": "SAP Analytics & Intelligence",
+        "subtitle": "Advanced Data Analytics Solutions",
+        "heroDescription": "Transform your data into actionable insights with advanced analytics and business intelligence solutions.",
+        "fullDescription": "Our SAP Analytics & Intelligence services include BusinessObjects, SAC, BW/4HANA, and HANA database optimization. We help you unlock the power of your data for better decision-making and business performance.",
+        "description": "Transform your data into actionable insights with advanced analytics and business intelligence solutions.",
+        "benefits": {
+          "0": "Data-driven decision making across the organization",
+          "1": "Real-time insights and predictive analytics capabilities",
+          "2": "Improved operational efficiency through advanced reporting",
+          "3": "Enhanced business performance with intelligent data analysis"
+        },
+        "features": {
+          "0": {
+            "title": "SAP BusinessObjects & Crystal Reports",
+            "description": "Enterprise reporting and business intelligence implementation with dashboard creation and self-service analytics."
+          },
+          "1": {
+            "title": "SAP Analytics Cloud (SAC) Solutions",
+            "description": "Cloud-based analytics platform implementation with predictive analytics, planning, and augmented analytics capabilities."
+          },
+          "2": {
+            "title": "SAP Data Warehouse & BW/4HANA",
+            "description": "Data warehousing solutions with real-time analytics, data modeling, and advanced reporting capabilities."
+          },
+          "3": {
+            "title": "SAP HANA Database Optimization",
+            "description": "In-memory database performance tuning, data modeling, and advanced analytics implementation for real-time insights."
+          }
+        },
+        "implementation": {
+          "0": "Data landscape assessment and analytics strategy",
+          "1": "Data architecture design and modeling",
+          "2": "Analytics platform deployment and configuration",
+          "3": "Dashboard and report development",
+          "4": "User training and adoption support",
+          "5": "Performance optimization and ongoing support"
+        },
+        "industries": {
+          "0": "Financial Services",
+          "1": "Retail & Consumer Goods",
+          "2": "Manufacturing",
+          "3": "Healthcare",
+          "4": "Telecommunications",
+          "5": "Government"
+        },
+        "roi": "Accelerate decision-making by 60% with real-time analytics and intelligence"
+      },
+      "sap-security-compliance": {
+        "title": "SAP Security & Compliance",
+        "subtitle": "Comprehensive Security Solutions",
+        "heroDescription": "Comprehensive security and compliance solutions to protect your SAP environment and ensure regulatory adherence.",
+        "fullDescription": "Our SAP Security & Compliance services include GRC implementation, security assessments, identity management, and audit support. We help you maintain the highest security standards while ensuring regulatory compliance.",
+        "description": "Comprehensive security and compliance solutions to protect your SAP environment and ensure regulatory adherence.",
+        "benefits": {
+          "0": "Enhanced security posture and risk mitigation",
+          "1": "Regulatory compliance and audit readiness",
+          "2": "Streamlined access management and governance",
+          "3": "Reduced security vulnerabilities and threats"
+        },
+        "features": {
+          "0": {
+            "title": "SAP GRC (Governance, Risk & Compliance)",
+            "description": "Risk management framework implementation with access controls, process controls, and compliance monitoring."
+          },
+          "1": {
+            "title": "SAP Security Assessment & Hardening",
+            "description": "Comprehensive security audit, vulnerability assessment, and security hardening for SAP landscapes."
+          },
+          "2": {
+            "title": "SAP Identity & Access Management",
+            "description": "User provisioning, role management, and single sign-on implementation with identity governance solutions."
+          },
+          "3": {
+            "title": "SAP Audit & Compliance Support",
+            "description": "Audit preparation, compliance documentation, and regulatory requirement implementation for various industries."
+          }
+        },
+        "implementation": {
+          "0": "Security assessment and compliance gap analysis",
+          "1": "Risk framework design and implementation",
+          "2": "Security controls deployment and configuration",
+          "3": "Identity management system integration",
+          "4": "Compliance monitoring setup and testing",
+          "5": "Ongoing security management and support"
+        },
+        "industries": {
+          "0": "Financial Services",
+          "1": "Healthcare",
+          "2": "Government",
+          "3": "Manufacturing",
+          "4": "Energy & Utilities",
+          "5": "Pharmaceuticals"
+        },
+        "roi": "Reduce security risks by 70% with comprehensive compliance framework"
+      },
+      "ongoing-support-maintenance": {
+        "title": "Ongoing Support & Maintenance",
+        "subtitle": "Continuous Support Services",
+        "heroDescription": "Continuous support and maintenance services to ensure optimal performance of your SAP systems.",
+        "fullDescription": "Our Ongoing Support & Maintenance services include 24/7 AMS, system upgrades, performance optimization, and training programs. We ensure your SAP systems operate at peak performance with minimal downtime.",
+        "description": "Continuous support and maintenance services to ensure optimal performance of your SAP systems.",
+        "benefits": {
+          "0": "Maximized system uptime and availability",
+          "1": "Proactive issue prevention and resolution",
+          "2": "Continuous performance optimization",
+          "3": "Enhanced user productivity and satisfaction"
+        },
+        "features": {
+          "0": {
+            "title": "SAP Application Management Services (AMS)",
+            "description": "24/7 support, incident management, and proactive monitoring with SLA-based service delivery and continuous improvement."
+          },
+          "1": {
+            "title": "SAP System Upgrades & Patches",
+            "description": "Planned system upgrades, security patches, and version updates with minimal business disruption and thorough testing."
+          },
+          "2": {
+            "title": "SAP Performance Optimization",
+            "description": "Ongoing system performance monitoring, tuning, and optimization to ensure optimal user experience and efficiency."
+          },
+          "3": {
+            "title": "SAP Training & Knowledge Transfer",
+            "description": "Comprehensive user training programs, documentation, and knowledge transfer to build internal SAP capabilities."
+          }
+        },
+        "implementation": {
+          "0": "Current state assessment and service level definition",
+          "1": "Support framework setup and team transition",
+          "2": "Monitoring tools deployment and configuration",
+          "3": "Service delivery processes establishment",
+          "4": "Knowledge transfer and training programs",
+          "5": "Continuous improvement and optimization"
+        },
+        "industries": {
+          "0": "All Industries",
+          "1": "Manufacturing",
+          "2": "Financial Services",
+          "3": "Retail",
+          "4": "Healthcare",
+          "5": "Technology"
+        },
+        "roi": "Achieve 99.9% system uptime with proactive support and maintenance"
+      }
     }
   }
 }

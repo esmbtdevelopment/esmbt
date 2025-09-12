@@ -18,7 +18,6 @@ import {
   FaHandshake,
   FaCogs,
   FaCloud,
-  FaCode,
   FaShieldAlt,
   FaChartLine,
 } from "react-icons/fa";
@@ -102,9 +101,10 @@ const Navbar = () => {
       { title: t('vision'), description: t('dropdown.corporate.visionDescription'), icon: FaHandshake, link: `/${locale}/corporate/vision-and-mission` },
     ],
     products: [
-      { title: t('enterpriseSolutions'), description: t('dropdown.products.enterpriseDescription'), icon: FaCogs },
-      { title: t('cloudPlatform'), description: t('dropdown.products.cloudDescription'), icon: FaCloud },
-      { title: t('customDevelopment'), description: t('dropdown.products.customDescription'), icon: FaCode },
+      { title: t('strategicConsulting'), description: t('dropdown.products.strategicConsultingDescription'), icon: FaChartLine, link: `/${locale}/products/strategic-sap-consulting` },
+      { title: t('erpImplementation'), description: t('dropdown.products.erpImplementationDescription'), icon: FaCogs, link: `/${locale}/products/sap-erp-implementation` },
+      { title: t('cloudSolutions'), description: t('dropdown.products.cloudSolutionsDescription'), icon: FaCloud, link: `/${locale}/products/sap-cloud-solutions` },
+      { title: t('viewAllProducts'), description: t('dropdown.products.viewAllDescription'), icon: FaChartLine, link: `/${locale}/products`, highlight: true },
     ],
     services: [
       { title: t('eInvoiceSolutions'), description: t('dropdown.services.eInvoiceDescription'), icon: FaChartLine, link: `/${locale}/services/e-invoice` },
@@ -202,7 +202,7 @@ const Navbar = () => {
                     {dropdownContent.products.map((item, index) => (
                       <a
                         key={index}
-                        href="#"
+                        href={item.link || "#"}
                         className="flex items-center p-4 hover:bg-sky-50 transition-colors border-b border-gray-100 last:border-b-0"
                       >
                         <item.icon className="text-sky-600 text-lg mr-3" />
