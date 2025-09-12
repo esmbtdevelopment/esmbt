@@ -368,7 +368,7 @@ const Navbar = () => {
                     {dropdownContent.products.map((item, index) => (
                       <a
                         key={index}
-                        href="#"
+                        href={item.link || "#"}
                         className="flex items-center p-3 text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-lg transition-colors"
                       >
                         <item.icon className="text-sky-400 text-sm mr-3" />
