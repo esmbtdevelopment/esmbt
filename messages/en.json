@@ -125,11 +125,14 @@
       "submit": "Send Message",
       "submitting": "Sending...",
       "success": "Message sent successfully!",
+      "errorRequiredFields": "This field is required",
+      "errorInvalidEmail": "Please enter a valid email address",
+      "errorInvalidPhone": "Please enter a valid phone number (at least 10 digits)",
+      "errorNameTooShort": "Name must be at least 2 characters long",
+      "errorMessageTooShort": "Message should be at least 10 characters long",
       "error": "Failed to send message. Please try again.",
       "privacyNotice": "By clicking Confirm, you confirm that you have read and understood the Privacy Policy. This site is protected by reCAPTCHA, the Google Privacy Policy, and the Terms of Service applied.",
-      "description": "Connect with our SAP specialists for enterprise solutions",
-      "errorRequiredFields": "Please fill in all required fields",
-      "errorInvalidEmail": "Please enter a valid email address"
+      "description": "Connect with our SAP specialists for enterprise solutions"
     }
   },
   "footer": {
