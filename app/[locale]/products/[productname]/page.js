@@ -3,362 +3,423 @@ import React, { use } from "react";
 import { notFound } from "next/navigation";
 import { useTranslations } from 'next-intl';
 import {
-    FaChartLine,
-    FaDatabase,
-    FaCogs,
-    FaCloud,
-    FaChartArea,
+    FaFileInvoiceDollar,
+    FaGlobe,
+    FaBook,
+    FaReceipt,
+    FaCashRegister,
+    FaChevronRight,
     FaShieldAlt,
-    FaLifeRing,
-    FaArrowLeft,
+    FaCloud,
+    FaChartLine,
     FaCheck,
     FaUsers,
-    FaClock,
-    FaRocket,
-    FaHandshake,
-    FaChevronRight
+    FaCogs,
+    FaArrowLeft,
 } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 
-// Detailed product data
-const productData = {
-    "strategic-sap-consulting": {
-        id: "strategic-sap-consulting",
-        title: "Strategic SAP Consulting",
-        subtitle: "Expert SAP Transformation Guidance",
-        icon: <Image src="/images/products/sap-consulting.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="Strategic SAP Consulting" width={1000} height={1000} />,
-        heroDescription: "Expert guidance for your SAP transformation journey with strategic planning and business process optimization.",
-        fullDescription: "Our Strategic SAP Consulting services provide comprehensive roadmap development, business process analysis, and change management support to ensure successful SAP implementations. We combine industry best practices with your unique business requirements to deliver transformational results.",
+// Detailed service data
+const serviceData = {
+    "e-invoice": {
+        id: "e-invoice",
+        title: "E-Invoice",
+        subtitle: "Digital Invoice Solutions",
+        icon: <Image src="/images/services/hero/invoice.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="E-Invoice" width={1000} height={1000} />,
+        heroDescription: "Transform your invoicing process with secure, automated digital solutions that ensure compliance while reducing costs and improving efficiency.",
+        fullDescription: "E-Invoice is not just a digital transformation tool, but also an investment in the future of your business. Our comprehensive e-invoicing solution ensures seamless compliance with local and international regulations while dramatically reducing processing time and operational costs. Built with enterprise-grade security and scalability in mind.",
         benefits: [
-            "Reduced implementation costs by 30%",
-            "Improved business process efficiency",
-            "Strategic roadmap for digital transformation",
-            "Risk mitigation and compliance assurance"
+            "Reduce invoice processing time by up to 80%",
+            "Ensure 100% legal compliance with tax regulations",
+            "Lower operational costs through automation",
+            "Real-time invoice tracking and status updates",
+            "Seamless integration with existing ERP systems",
+            "Enhanced security with digital signatures"
         ],
         features: [
             {
-                title: "Business Process Analysis",
-                description: "Comprehensive analysis of your current business processes to identify optimization opportunities",
-                icon: <FaChartLine />
+                title: "Automated Processing",
+                description: "Intelligent automation handles invoice generation, validation, and submission without manual intervention.",
+                icon: <FaCogs />
             },
             {
-                title: "Strategic Roadmap Development",
-                description: "Create a detailed implementation roadmap aligned with your business objectives",
-                icon: <FaRocket />
-            },
-            {
-                title: "Change Management",
-                description: "Guide your organization through digital transformation with proven methodologies",
-                icon: <FaUsers />
-            },
-            {
-                title: "Risk Assessment",
-                description: "Identify and mitigate potential risks before they impact your project",
+                title: "Legal Compliance",
+                description: "Built-in compliance checks ensure all invoices meet local tax authority requirements and regulations.",
                 icon: <FaShieldAlt />
-            }
-        ],
-        implementation: [
-            "Initial business assessment and requirement gathering",
-            "Current state analysis and gap identification",
-            "Future state design and roadmap creation",
-            "Implementation planning and resource allocation",
-            "Change management strategy development",
-            "Go-live support and post-implementation review"
-        ],
-        industries: ["Manufacturing", "Retail", "Healthcare", "Financial Services", "Automotive", "Energy"],
-        roi: "Achieve 30% faster SAP implementation with strategic planning"
-    },
-    "sap-erp-implementation": {
-        id: "sap-erp-implementation",
-        title: "SAP ERP Implementation & Enhancement",
-        subtitle: "Complete ERP Implementation Services",
-        icon: <Image src="/images/products/sap-erp.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="SAP ERP Implementation" width={1000} height={1000} />,
-        heroDescription: "Complete SAP ERP implementation and enhancement services tailored to your business needs.",
-        fullDescription: "Our SAP ERP Implementation services cover end-to-end deployment of SAP systems, including all major modules like FI/CO, MM, SD, PP, and HCM. We ensure seamless integration, data migration, and user adoption for successful ERP transformation.",
-        benefits: [
-            "Streamlined business processes across all departments",
-            "Real-time visibility into business operations",
-            "Improved data accuracy and reporting capabilities",
-            "Enhanced operational efficiency and cost reduction"
-        ],
-        features: [
-            {
-                title: "Full System Implementation",
-                description: "End-to-end SAP ERP implementation tailored to your business needs",
-                icon: <FaDatabase />
             },
             {
-                title: "Data Integration",
-                description: "Seamless integration of existing data sources and systems",
-                icon: <FaCogs />
-            },
-            {
-                title: "Process Optimization",
-                description: "Optimize business processes for maximum efficiency and productivity",
+                title: "Real-time Tracking",
+                description: "Monitor invoice status in real-time with detailed tracking and delivery confirmations.",
                 icon: <FaChartLine />
             },
             {
-                title: "User Training",
-                description: "Comprehensive training programs to ensure successful user adoption",
-                icon: <FaUsers />
-            }
-        ],
-        implementation: [
-            "Business requirement analysis and system design",
-            "Module configuration and customization",
-            "Data migration and system integration",
-            "User acceptance testing and training",
-            "Go-live support and hypercare",
-            "Post-implementation optimization and support"
-        ],
-        industries: ["Manufacturing", "Retail & Distribution", "Oil & Gas", "Pharmaceuticals", "Consumer Goods", "Utilities"],
-        roi: "Reduce operational costs by 25% through integrated ERP processes"
-    },
-    "sap-technical-services": {
-        id: "sap-technical-services",
-        title: "SAP Technical Services",
-        subtitle: "Professional Technical Support",
-        icon: <Image src="/images/products/sap-technical-services.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="SAP Technical Services" width={1000} height={1000} />,
-        heroDescription: "Professional technical services to keep your SAP systems running at peak performance.",
-        fullDescription: "Our SAP Technical Services encompass ABAP development, Basis administration, system integration, and modern UI development. We ensure your SAP landscape operates efficiently with optimal performance and security.",
-        benefits: [
-            "Maximized system performance and reliability",
-            "Reduced downtime and technical issues",
-            "Enhanced security and compliance",
-            "Optimized infrastructure costs and resource utilization"
-        ],
-        features: [
-            {
-                title: "System Maintenance",
-                description: "Regular maintenance and updates to keep your SAP system running smoothly",
-                icon: <FaCogs />
-            },
-            {
-                title: "Performance Optimization",
-                description: "Continuous monitoring and optimization of system performance",
-                icon: <FaChartLine />
-            },
-            {
-                title: "Technical Support",
-                description: "Expert technical support for all your SAP-related issues",
-                icon: <FaLifeRing />
-            },
-            {
-                title: "System Upgrades",
-                description: "Planned system upgrades and enhancement implementations",
-                icon: <FaRocket />
-            }
-        ],
-        implementation: [
-            "Technical requirement analysis and architecture design",
-            "Development environment setup and configuration",
-            "Custom development and system enhancement",
-            "Integration testing and quality assurance",
-            "Deployment and production support",
-            "Ongoing maintenance and performance optimization"
-        ],
-        industries: ["All Industries", "Technology", "Financial Services", "Manufacturing", "Healthcare", "Government"],
-        roi: "Improve system performance by 40% with optimized technical infrastructure"
-    },
-    "sap-cloud-solutions": {
-        id: "sap-cloud-solutions",
-        title: "SAP Cloud Solutions",
-        subtitle: "Scalable Cloud Services",
-        icon: <Image src="/images/products/sap-cloud.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="SAP Cloud Solutions" width={1000} height={1000} />,
-        heroDescription: "Scalable cloud solutions that provide flexibility, security, and cost-effectiveness for your business.",
-        fullDescription: "Our SAP Cloud Solutions include S/4HANA Cloud, SuccessFactors, Ariba, and Concur implementations. We help you leverage the power of cloud computing for enhanced scalability, reduced infrastructure costs, and improved business agility.",
-        benefits: [
-            "Reduced infrastructure costs and maintenance overhead",
-            "Enhanced scalability and business agility",
-            "Improved security and compliance capabilities",
-            "Faster time-to-market with cloud-native solutions"
-        ],
-        features: [
-            {
-                title: "Cloud Migration",
-                description: "Seamless migration of your SAP systems to the cloud",
+                title: "Cloud-Based Platform",
+                description: "Secure cloud infrastructure ensures 99.9% uptime and seamless scalability as your business grows.",
                 icon: <FaCloud />
-            },
-            {
-                title: "Hybrid Solutions",
-                description: "Flexible hybrid cloud solutions that meet your specific needs",
-                icon: <FaCogs />
-            },
-            {
-                title: "Security Management",
-                description: "Advanced security measures to protect your cloud-based systems",
-                icon: <FaShieldAlt />
-            },
-            {
-                title: "Cloud Optimization",
-                description: "Continuous optimization of cloud resources for cost efficiency",
-                icon: <FaChartLine />
             }
         ],
         implementation: [
-            "Cloud readiness assessment and migration planning",
-            "Cloud architecture design and security configuration",
-            "Data migration and system integration",
-            "User training and change management",
-            "Go-live support and optimization",
-            "Ongoing cloud management and support"
+            "Initial consultation and requirement analysis",
+            "System integration planning and setup",
+            "Data migration and testing phase",
+            "Staff training and knowledge transfer",
+            "Go-live support and monitoring",
+            "Ongoing maintenance and updates"
         ],
-        industries: ["Technology", "Financial Services", "Healthcare", "Retail", "Manufacturing", "Professional Services"],
-        roi: "Achieve 50% reduction in IT infrastructure costs with cloud migration"
+        industries: ["Manufacturing", "Retail", "Healthcare", "Finance", "Logistics", "Technology"],
+        roi: "Average ROI of 300% within first year of implementation"
     },
-    "sap-analytics-intelligence": {
-        id: "sap-analytics-intelligence",
-        title: "SAP Analytics & Intelligence",
-        subtitle: "Advanced Data Analytics Solutions",
-        icon: <Image src="/images/products/sap-analytics.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="SAP Analytics & Intelligence" width={1000} height={1000} />,
-        heroDescription: "Transform your data into actionable insights with advanced analytics and business intelligence solutions.",
-        fullDescription: "Our SAP Analytics & Intelligence services include BusinessObjects, SAC, BW/4HANA, and HANA database optimization. We help you unlock the power of your data for better decision-making and business performance.",
+    "e-archive-invoice": {
+        id: "e-archive-invoice",
+        title: "E-Archive Invoice",
+        subtitle: "Secure Invoice Storage Solutions",
+        icon: <Image src="/images/services/hero/archive.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="E-Invoice" width={1000} height={1000} />,
+        heroDescription: "Secure, long-term storage solutions for your digital invoices with full legal compliance and easy retrieval capabilities.",
+        fullDescription: "E-Archive Invoice provides a comprehensive digital archiving solution that ensures your invoices are securely stored, legally compliant, and always accessible. Our robust archiving system eliminates the need for physical document storage while maintaining full audit trails and regulatory compliance.",
         benefits: [
-            "Data-driven decision making across the organization",
-            "Real-time insights and predictive analytics capabilities",
-            "Improved operational efficiency through advanced reporting",
-            "Enhanced business performance with intelligent data analysis"
+            "Secure long-term document storage",
+            "Full legal compliance with retention requirements",
+            "Instant document retrieval and search",
+            "Automated backup and disaster recovery",
+            "Reduced physical storage costs",
+            "Complete audit trail maintenance"
         ],
         features: [
             {
-                title: "Business Intelligence",
-                description: "Comprehensive BI solutions for data-driven decision making",
-                icon: <FaChartArea />
-            },
-            {
-                title: "Data Visualization",
-                description: "Interactive dashboards and reports for better data understanding",
-                icon: <FaChartLine />
-            },
-            {
-                title: "Predictive Analytics",
-                description: "Advanced analytics to predict trends and business outcomes",
-                icon: <FaRocket />
-            },
-            {
-                title: "Real-time Reporting",
-                description: "Live reporting capabilities for immediate business insights",
-                icon: <FaClock />
-            }
-        ],
-        implementation: [
-            "Data landscape assessment and analytics strategy",
-            "Data architecture design and modeling",
-            "Analytics platform deployment and configuration",
-            "Dashboard and report development",
-            "User training and adoption support",
-            "Performance optimization and ongoing support"
-        ],
-        industries: ["Financial Services", "Retail & Consumer Goods", "Manufacturing", "Healthcare", "Telecommunications", "Government"],
-        roi: "Accelerate decision-making by 60% with real-time analytics and intelligence"
-    },
-    "sap-security-compliance": {
-        id: "sap-security-compliance",
-        title: "SAP Security & Compliance",
-        subtitle: "Comprehensive Security Solutions",
-        icon: <Image src="/images/products/sap-security.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="SAP Security & Compliance" width={1000} height={1000} />,
-        heroDescription: "Comprehensive security and compliance solutions to protect your SAP environment and ensure regulatory adherence.",
-        fullDescription: "Our SAP Security & Compliance services include GRC implementation, security assessments, identity management, and audit support. We help you maintain the highest security standards while ensuring regulatory compliance.",
-        benefits: [
-            "Enhanced security posture and risk mitigation",
-            "Regulatory compliance and audit readiness",
-            "Streamlined access management and governance",
-            "Reduced security vulnerabilities and threats"
-        ],
-        features: [
-            {
-                title: "Access Management",
-                description: "Comprehensive user access management and role-based security",
+                title: "Secure Storage",
+                description: "Enterprise-grade encryption ensures your archived invoices remain secure and protected from unauthorized access.",
                 icon: <FaShieldAlt />
             },
             {
-                title: "Compliance Auditing",
-                description: "Regular compliance audits to ensure regulatory adherence",
+                title: "Easy Retrieval",
+                description: "Advanced search capabilities allow instant retrieval of any archived invoice using multiple search criteria.",
+                icon: <FaChartLine />
+            },
+            {
+                title: "Legal Compliance",
+                description: "Automated compliance management ensures all archived documents meet legal retention requirements.",
                 icon: <FaCheck />
             },
             {
-                title: "Risk Assessment",
-                description: "Continuous risk assessment and mitigation strategies",
-                icon: <FaChartLine />
-            },
-            {
-                title: "Security Policies",
-                description: "Development and implementation of comprehensive security policies",
+                title: "Audit Ready",
+                description: "Complete audit trails and tamper-proof storage make your archive always ready for regulatory inspections.",
                 icon: <FaCogs />
             }
         ],
         implementation: [
-            "Security assessment and compliance gap analysis",
-            "Risk framework design and implementation",
-            "Security controls deployment and configuration",
-            "Identity management system integration",
-            "Compliance monitoring setup and testing",
-            "Ongoing security management and support"
+            "Archive requirement assessment",
+            "Data migration planning and execution",
+            "Security configuration and testing",
+            "User access control setup",
+            "System integration and testing",
+            "Ongoing monitoring and maintenance"
         ],
-        industries: ["Financial Services", "Healthcare", "Government", "Manufacturing", "Energy & Utilities", "Pharmaceuticals"],
-        roi: "Reduce security risks by 70% with comprehensive compliance framework"
+        industries: ["All Industries", "Government", "Healthcare", "Finance", "Legal Services", "Manufacturing"],
+        roi: "Reduce document storage costs by up to 70%"
     },
-    "ongoing-support-maintenance": {
-        id: "ongoing-support-maintenance",
-        title: "Ongoing Support & Maintenance",
-        subtitle: "Continuous Support Services",
-        icon: <Image src="/images/products/sap-support.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="Ongoing Support & Maintenance" width={1000} height={1000} />,
-        heroDescription: "Continuous support and maintenance services to ensure optimal performance of your SAP systems.",
-        fullDescription: "Our Ongoing Support & Maintenance services include 24/7 AMS, system upgrades, performance optimization, and training programs. We ensure your SAP systems operate at peak performance with minimal downtime.",
+    "e-export": {
+        id: "e-export",
+        title: "E-Export",
+        subtitle: "Digital Export Solutions",
+        icon: <Image src="/images/services/hero/export.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="E-Invoice" width={1000} height={1000} />,
+        heroDescription: "Simplify international trade with comprehensive digital export documentation and compliance management solutions.",
+        fullDescription: "E-Export streamlines your international trade operations with digital export documentation, automated compliance checks, and seamless integration with customs authorities. Expand your global reach with confidence, knowing all export procedures are digitally managed and compliant.",
         benefits: [
-            "Maximized system uptime and availability",
-            "Proactive issue prevention and resolution",
-            "Continuous performance optimization",
-            "Enhanced user productivity and satisfaction"
+            "Streamlined export documentation process",
+            "Automated compliance with international regulations",
+            "Faster customs clearance and processing",
+            "Reduced export-related errors and delays",
+            "Real-time shipment tracking and updates",
+            "Integration with global trade platforms"
         ],
         features: [
             {
-                title: "Help Desk Support",
-                description: "Round-the-clock support for all your SAP-related issues",
-                icon: <FaLifeRing />
+                title: "Export Documentation",
+                description: "Automated generation of all required export documents including certificates, permits, and declarations.",
+                icon: <FaFileInvoiceDollar />
             },
             {
-                title: "Preventive Maintenance",
-                description: "Regular maintenance to prevent issues before they occur",
+                title: "Compliance Management",
+                description: "Built-in compliance checks ensure all exports meet destination country requirements and regulations.",
+                icon: <FaShieldAlt />
+            },
+            {
+                title: "International Standards",
+                description: "Full compliance with international trade standards and customs requirements across multiple jurisdictions.",
+                icon: <FaGlobe />
+            },
+            {
+                title: "Process Automation",
+                description: "End-to-end automation reduces manual work and eliminates common export processing errors.",
                 icon: <FaCogs />
-            },
-            {
-                title: "System Monitoring",
-                description: "Continuous monitoring of system performance and health",
-                icon: <FaChartLine />
-            },
-            {
-                title: "Continuous Improvement",
-                description: "Ongoing optimization and enhancement of your SAP systems",
-                icon: <FaRocket />
             }
         ],
         implementation: [
-            "Current state assessment and service level definition",
-            "Support framework setup and team transition",
-            "Monitoring tools deployment and configuration",
-            "Service delivery processes establishment",
-            "Knowledge transfer and training programs",
-            "Continuous improvement and optimization"
+            "Export process analysis and mapping",
+            "System configuration for target markets",
+            "Integration with customs platforms",
+            "Document template customization",
+            "Staff training on export procedures",
+            "Go-live support and optimization"
         ],
-        industries: ["All Industries", "Manufacturing", "Financial Services", "Retail", "Healthcare", "Technology"],
-        roi: "Achieve 99.9% system uptime with proactive support and maintenance"
+        industries: ["Manufacturing", "Agriculture", "Technology", "Automotive", "Textiles", "Chemicals"],
+        roi: "Reduce export processing time by up to 60%"
+    },
+    "e-commerce": {
+        id: "e-commerce",
+        title: "E-Commerce",
+        subtitle: "Online Commerce Platform",
+        icon: <Image src="/images/services/hero/e-commerce.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="E-Invoice" width={1000} height={1000} />,
+        heroDescription: "Comprehensive e-commerce solutions that power your online business growth with integrated digital sales platforms.",
+        fullDescription: "Our E-Commerce platform provides everything you need to build, manage, and scale your online business. From inventory management to customer experience optimization, our comprehensive tools help you succeed in the digital marketplace with professional-grade features and seamless integrations.",
+        benefits: [
+            "Complete online store management",
+            "Integrated payment processing",
+            "Advanced inventory control",
+            "Customer analytics and insights",
+            "Mobile-responsive design",
+            "SEO optimization tools"
+        ],
+        features: [
+            {
+                title: "Store Management",
+                description: "Comprehensive tools for managing products, orders, customers, and content from a single dashboard.",
+                icon: <FaCogs />
+            },
+            {
+                title: "Payment Integration",
+                description: "Secure payment processing with support for multiple payment methods and currencies.",
+                icon: <FaShieldAlt />
+            },
+            {
+                title: "Inventory Control",
+                description: "Real-time inventory tracking with automated reorder points and supplier management.",
+                icon: <FaChartLine />
+            },
+            {
+                title: "Customer Analytics",
+                description: "Detailed customer behavior analytics to optimize sales and improve customer experience.",
+                icon: <FaUsers />
+            }
+        ],
+        implementation: [
+            "Business requirement analysis",
+            "Platform setup and customization",
+            "Payment gateway integration",
+            "Product catalog migration",
+            "Design and UX optimization",
+            "Launch and ongoing support"
+        ],
+        industries: ["Retail", "Fashion", "Electronics", "Home & Garden", "Sports", "Beauty"],
+        roi: "Increase online sales by up to 250%"
+    },
+    "e-delivery-note": {
+        id: "e-delivery-note",
+        title: "E-Delivery Note",
+        subtitle: "Digital Delivery Documentation",
+        icon: <Image src="/images/services/hero/digital-transformation.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="E-Invoice" width={1000} height={1000} />,
+        heroDescription: "Digitize your delivery documentation process with real-time tracking and automated record-keeping for legal compliance.",
+        fullDescription: "E-Delivery Note eliminates paper-based delivery documentation and embraces digital efficiency. Our solution provides real-time delivery confirmation, automated record-keeping, and ensures legal compliance while reducing administrative overhead and improving delivery accuracy.",
+        benefits: [
+            "Eliminate paper-based delivery notes",
+            "Real-time delivery confirmation",
+            "Automated record-keeping",
+            "Legal compliance assurance",
+            "Reduced administrative costs",
+            "Improved delivery accuracy"
+        ],
+        features: [
+            {
+                title: "Digital Documentation",
+                description: "Complete digitization of delivery notes with electronic signatures and timestamp verification.",
+                icon: <FaFileInvoiceDollar />
+            },
+            {
+                title: "Real-time Tracking",
+                description: "Live tracking of deliveries with GPS integration and status updates throughout the delivery process.",
+                icon: <FaChartLine />
+            },
+            {
+                title: "Delivery Confirmation",
+                description: "Digital proof of delivery with recipient signatures and photo confirmation capabilities.",
+                icon: <FaCheck />
+            },
+            {
+                title: "Legal Compliance",
+                description: "Ensures all delivery documentation meets legal requirements with tamper-proof digital records.",
+                icon: <FaShieldAlt />
+            }
+        ],
+        implementation: [
+            "Delivery process assessment",
+            "Mobile app deployment",
+            "Driver training and onboarding",
+            "System integration testing",
+            "Go-live support and monitoring",
+            "Performance optimization"
+        ],
+        industries: ["Logistics", "Retail", "Manufacturing", "Food & Beverage", "Pharmaceuticals", "E-commerce"],
+        roi: "Reduce delivery documentation costs by 85%"
+    },
+    "e-ledger": {
+        id: "e-ledger",
+        title: "E-Ledger",
+        subtitle: "Digital Financial Ledger",
+        icon: <Image src="/images/services/hero/ledger.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="E-Invoice" width={1000} height={1000} />,
+        heroDescription: "Transform financial record-keeping with digital ledger solutions ensuring legal compliance and financial transparency.",
+        fullDescription: "E-Ledger provides a comprehensive digital bookkeeping solution that maintains accurate, auditable financial records with automated processes. Our system ensures regulatory compliance while providing real-time financial insights and reducing the complexity of financial management.",
+        benefits: [
+            "Automated digital bookkeeping",
+            "Full regulatory compliance",
+            "Real-time financial reporting",
+            "Complete audit trail",
+            "Reduced accounting errors",
+            "Integration with accounting systems"
+        ],
+        features: [
+            {
+                title: "Digital Bookkeeping",
+                description: "Automated transaction recording with intelligent categorization and reconciliation capabilities.",
+                icon: <FaCogs />
+            },
+            {
+                title: "Regulatory Compliance",
+                description: "Built-in compliance features ensure all records meet local and international accounting standards.",
+                icon: <FaShieldAlt />
+            },
+            {
+                title: "Automated Reports",
+                description: "Generate comprehensive financial reports automatically with customizable templates and scheduling.",
+                icon: <FaChartLine />
+            },
+            {
+                title: "Audit Trail",
+                description: "Complete audit trail with timestamp verification and user activity tracking for transparency.",
+                icon: <FaCheck />
+            }
+        ],
+        implementation: [
+            "Financial process analysis",
+            "Chart of accounts setup",
+            "Data migration and validation",
+            "User training and certification",
+            "System integration testing",
+            "Ongoing support and updates"
+        ],
+        industries: ["All Industries", "Accounting Firms", "SMEs", "Non-profits", "Government", "Healthcare"],
+        roi: "Reduce accounting processing time by 75%"
+    },
+    "e-adisyon": {
+        id: "e-adisyon",
+        title: "E-Adisyon (E-Order Receipt)",
+        subtitle: "Digital Restaurant Receipts",
+        icon: <Image src="/images/services/hero/dashboard.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="E-Invoice" width={1000} height={1000} />,
+        heroDescription: "Revolutionize restaurant operations with digital order receipt solutions that improve efficiency and customer experience.",
+        fullDescription: "E-Adisyon transforms restaurant order management with electronic receipt solutions. Streamline your food service operations, reduce waste, improve customer service, and ensure compliance with digital receipt systems designed specifically for the hospitality industry.",
+        benefits: [
+            "Digital order receipt management",
+            "Improved customer experience",
+            "Reduced paper waste and costs",
+            "Enhanced order accuracy",
+            "Real-time order tracking",
+            "Integration with POS systems"
+        ],
+        features: [
+            {
+                title: "Digital Receipts",
+                description: "Electronic receipt generation with customizable templates and automatic delivery to customers.",
+                icon: <FaReceipt />
+            },
+            {
+                title: "Order Management",
+                description: "Comprehensive order tracking from placement to completion with real-time status updates.",
+                icon: <FaCogs />
+            },
+            {
+                title: "Customer Experience",
+                description: "Enhanced customer experience with digital receipts, loyalty integration, and feedback collection.",
+                icon: <FaUsers />
+            },
+            {
+                title: "Cost Efficiency",
+                description: "Significant cost savings through reduced paper usage and streamlined receipt processing.",
+                icon: <FaChartLine />
+            }
+        ],
+        implementation: [
+            "Restaurant operation assessment",
+            "POS system integration",
+            "Staff training and setup",
+            "Customer communication setup",
+            "Testing and optimization",
+            "Ongoing support and updates"
+        ],
+        industries: ["Restaurants", "Cafes", "Fast Food", "Catering", "Food Trucks", "Hotels"],
+        roi: "Reduce receipt processing costs by 90%"
+    },
+    "digigarson-pos": {
+        id: "digigarson-pos",
+        title: "DigiGarson Cafe&Restaurant POS Software",
+        subtitle: "Complete Restaurant Management",
+        icon: <Image src="/images/services/hero/restaurant.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="E-Invoice" width={1000} height={1000} />,
+        heroDescription: "Comprehensive POS and management solutions specifically designed for food & beverage businesses.",
+        fullDescription: "DigiGarson provides an all-in-one restaurant management platform that combines point-of-sale functionality with comprehensive business management tools. From order taking to inventory management, our integrated platform helps restaurants operate more efficiently and profitably.",
+        benefits: [
+            "Complete POS functionality",
+            "Integrated inventory management",
+            "Staff scheduling and management",
+            "Detailed sales analytics",
+            "Customer relationship management",
+            "Multi-location support"
+        ],
+        features: [
+            {
+                title: "POS System",
+                description: "Full-featured point-of-sale system with order management, payment processing, and receipt generation.",
+                icon: <FaCashRegister />
+            },
+            {
+                title: "Inventory Management",
+                description: "Real-time inventory tracking with automated reorder alerts and supplier management integration.",
+                icon: <FaBook />
+            },
+            {
+                title: "Staff Management",
+                description: "Employee scheduling, time tracking, and performance management tools for optimal staff utilization.",
+                icon: <FaUsers />
+            },
+            {
+                title: "Sales Analytics",
+                description: "Comprehensive reporting and analytics to track performance, identify trends, and optimize operations.",
+                icon: <FaChartLine />
+            }
+        ],
+        implementation: [
+            "Restaurant needs assessment",
+            "Hardware setup and configuration",
+            "Menu and pricing configuration",
+            "Staff training and certification",
+            "Integration testing and optimization",
+            "Ongoing support and maintenance"
+        ],
+        industries: ["Restaurants", "Cafes", "Bars", "Hotels", "Catering", "Food Courts"],
+        roi: "Improve operational efficiency by 40%"
     }
 };
 
-export default function ProductDetailPage({ params }) {
+export default function ServiceDetailPage({ params }) {
     const { locale, productname } = use(params);
-    const t = useTranslations('productDetails.products');
-    const tUI = useTranslations('productDetails.ui');
+    const t = useTranslations('serviceDetails.services');
+    const tUI = useTranslations('serviceDetails.ui');
     const tNav = useTranslations('navigation');
 
-    // Get product data with translations
-    const getProductData = (productName) => {
-        const baseProduct = productData[productName];
-        if (!baseProduct) return null;
+    // Get service data with translations
+    const getServiceData = (serviceName) => {
+        const baseService = serviceData[serviceName];
+        if (!baseService) return null;
 
-        // Check if translations exist for this product
+        // Check if translations exist for this service
         try {
             // Handle arrays by accessing individual elements
             const benefits = [];
@@ -368,67 +429,67 @@ export default function ProductDetailPage({ params }) {
 
             // Get benefits array
             try {
-                for (let i = 0; i < baseProduct.benefits.length; i++) {
-                    benefits.push(t(`${productName}.benefits.${i}`));
+                for (let i = 0; i < baseService.benefits.length; i++) {
+                    benefits.push(t(`${serviceName}.benefits.${i}`));
                 }
             } catch (e) {
-                benefits.push(...baseProduct.benefits);
+                benefits.push(...baseService.benefits);
             }
 
             // Get features array
             try {
-                for (let i = 0; i < baseProduct.features.length; i++) {
+                for (let i = 0; i < baseService.features.length; i++) {
                     features.push({
-                        title: t(`${productName}.features.${i}.title`),
-                        description: t(`${productName}.features.${i}.description`),
-                        icon: baseProduct.features[i].icon
+                        title: t(`${serviceName}.features.${i}.title`),
+                        description: t(`${serviceName}.features.${i}.description`),
+                        icon: baseService.features[i].icon
                     });
                 }
             } catch (e) {
-                features.push(...baseProduct.features);
+                features.push(...baseService.features);
             }
 
             // Get implementation array
             try {
-                for (let i = 0; i < baseProduct.implementation.length; i++) {
-                    implementation.push(t(`${productName}.implementation.${i}`));
+                for (let i = 0; i < baseService.implementation.length; i++) {
+                    implementation.push(t(`${serviceName}.implementation.${i}`));
                 }
             } catch (e) {
-                implementation.push(...baseProduct.implementation);
+                implementation.push(...baseService.implementation);
             }
 
             // Get industries array
             try {
-                for (let i = 0; i < baseProduct.industries.length; i++) {
-                    industries.push(t(`${productName}.industries.${i}`));
+                for (let i = 0; i < baseService.industries.length; i++) {
+                    industries.push(t(`${serviceName}.industries.${i}`));
                 }
             } catch (e) {
-                industries.push(...baseProduct.industries);
+                industries.push(...baseService.industries);
             }
 
-            const translatedProduct = {
-                ...baseProduct,
-                title: t(`${productName}.title`),
-                subtitle: t(`${productName}.subtitle`),
-                heroDescription: t(`${productName}.heroDescription`),
-                fullDescription: t(`${productName}.fullDescription`),
+            const translatedService = {
+                ...baseService,
+                title: t(`${serviceName}.title`),
+                subtitle: t(`${serviceName}.subtitle`),
+                heroDescription: t(`${serviceName}.heroDescription`),
+                fullDescription: t(`${serviceName}.fullDescription`),
                 benefits: benefits,
                 features: features,
                 implementation: implementation,
                 industries: industries,
-                roi: t(`${productName}.roi`)
+                roi: t(`${serviceName}.roi`)
             };
-            return translatedProduct;
+            return translatedService;
         } catch (error) {
-            // Fallback to base product data if translations are missing
-            console.warn(`Translations missing for product: ${productName}, falling back to base data`);
-            return baseProduct;
+            // Fallback to base service data if translations are missing
+            console.warn(`Translations missing for service: ${serviceName}, falling back to base data`);
+            return baseService;
         }
     };
 
-    const product = getProductData(productname);
+    const service = getServiceData(productname);
 
-    if (!product) {
+    if (!service) {
         notFound();
     }
 
@@ -452,15 +513,15 @@ export default function ProductDetailPage({ params }) {
                                 <div className="flex items-center mb-4 sm:mb-6">
                                     <div>
                                         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold font-sora mb-2 leading-tight">
-                                            {product.title}
+                                            {service.title}
                                         </h1>
                                         <p className="text-lg sm:text-xl text-sky-300 font-montserrat">
-                                            {product.subtitle}
+                                            {service.subtitle}
                                         </p>
                                     </div>
                                 </div>
                                 <p className="text-base sm:text-lg lg:text-xl text-gray-300 font-montserrat leading-relaxed mb-6 sm:mb-8">
-                                    {product.heroDescription}
+                                    {service.heroDescription}
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4">
                                     <button className="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
@@ -475,7 +536,7 @@ export default function ProductDetailPage({ params }) {
 
                             {/* Hero Visual */}
                             <div className="drop-shadow-4xl p-4 w-full h-full">
-                                {product.icon}
+                                {service.icon}
                             </div>
                         </div>
                     </div>
@@ -487,21 +548,21 @@ export default function ProductDetailPage({ params }) {
                 </div>
             </section>
 
-            {/* Product Overview */}
+            {/* Service Overview */}
             <section className="py-12 sm:py-16 md:py-24 bg-white">
                 <div className="container mx-auto px-4 sm:px-6 md:px-12">
                     <div className="max-w-6xl mx-auto">
                         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                             <div>
                                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora">
-                                    {tUI('whyChoose')} {product.title}?
+                                    {tUI('whyChoose')} {service.title}?
                                 </h2>
                                 <p className="text-base sm:text-lg text-gray-600 font-montserrat leading-relaxed mb-6 sm:mb-8">
-                                    {product.fullDescription}
+                                    {service.fullDescription}
                                 </p>
                             </div>
                             <div className="space-y-3 sm:space-y-4">
-                                {product.benefits.map((benefit, index) => (
+                                {service.benefits.map((benefit, index) => (
                                     <div key={index} className="flex items-start">
                                         <FaCheck className="text-sky-500 mt-1 mr-3 flex-shrink-0 text-sm" />
                                         <span className="text-gray-700 font-montserrat text-sm sm:text-base">{benefit}</span>
@@ -530,7 +591,7 @@ export default function ProductDetailPage({ params }) {
                         </div>
 
                         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-                            {product.features.map((feature, index) => (
+                            {service.features.map((feature, index) => (
                                 <div key={index} className="bg-white rounded-xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300">
                                     <div className="text-2xl sm:text-3xl text-sky-500 mb-3 sm:mb-4">
                                         {feature.icon}
@@ -562,7 +623,7 @@ export default function ProductDetailPage({ params }) {
                         </div>
 
                         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-                            {product.implementation.map((step, index) => (
+                            {service.implementation.map((step, index) => (
                                 <div key={index} className="flex items-center p-3 sm:p-4 bg-gray-50 rounded-lg hover:bg-sky-50 transition-colors duration-300">
                                     <div className="w-6 h-6 sm:w-8 sm:h-8 bg-sky-500 text-white rounded-full flex items-center justify-center font-bold mr-3 sm:mr-4 flex-shrink-0 text-sm">
                                         {index + 1}
@@ -587,7 +648,7 @@ export default function ProductDetailPage({ params }) {
                         </p>
 
                         <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8 sm:mb-12 px-4">
-                            {product.industries.map((industry, index) => (
+                            {service.industries.map((industry, index) => (
                                 <span key={index} className="bg-white/10 text-white px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-montserrat">
                                     {industry}
                                 </span>
@@ -599,7 +660,7 @@ export default function ProductDetailPage({ params }) {
                                 {tUI('readyToGetStarted')}
                             </h3>
                             <p className="text-gray-300 font-montserrat text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed px-4">
-                                {tUI('joinThousands')} {product.title}. {tUI('getFreeConsultation')}
+                                {tUI('joinThousands')} {service.title}. {tUI('getFreeConsultation')}
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <button className="border-2 border-sky-500 text-sky-400 hover:bg-sky-500 hover:text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
