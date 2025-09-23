@@ -63,13 +63,13 @@
     "info": {
       "location": {
         "label": "Konumumuz",
-        "value": "Amerika Birleşik Devletleri",
-        "description": "Ülke genelinde SAP danışmanlık hizmetleri"
+        "value": "CA, Irvine – Irvine Spectrum Drive",
+        "description": "300 Spectrum Center Drive, Suite 400, Irvine, 92618"
       },
       "phone": {
         "label": "Telefon Numarası",
-        "value": "+1 202 555 0100",
-        "description": "Pzt–Cuma, 09:00-18:00 EST arasında ulaşılabilir"
+        "value": "+1 949 740 79 79",
+        "description": "Pzt–Cuma, 09:00-18:00 PST arasında ulaşılabilir"
       },
       "email": {
         "label": "E-posta Adresi",
@@ -164,9 +164,9 @@
     },
     "contact": {
       "title": "İletişim Bilgileri",
-      "phone": "+1 202 555 0100",
+      "phone": "+1 949 740 79 79",
       "email": "info@esmbt.com",
-      "address": "Amerika Birleşik Devletleri"
+      "address": "300 Spectrum Center Drive, Suite 400, Irvine, CA 92618"
     },
     "newsletter": {
       "title": "Güncel Kalın",

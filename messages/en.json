@@ -63,13 +63,13 @@
     "info": {
       "location": {
         "label": "Our Location",
-        "value": "United States",
-        "description": "Nationwide SAP consulting services"
+        "value": "CA, Irvine – Irvine Spectrum Drive",
+        "description": "300 Spectrum Center Drive, Suite 400, Irvine, 92618"
       },
       "phone": {
         "label": "Phone Number",
-        "value": "+1 202 555 0100",
-        "description": "Available Mon-Fri, 9AM-6PM EST"
+        "value": "+1 949 740 79 79",
+        "description": "Available Mon-Fri, 9AM-6PM PST"
       },
       "email": {
         "label": "Email Address",
@@ -164,9 +164,9 @@
     },
     "contact": {
       "title": "Contact Information",
-      "phone": "+1 202 555 0100",
+      "phone": "+1 949 740 79 79",
       "email": "info@esmbt.com",
-      "address": "United States"
+      "address": "300 Spectrum Center Drive, Suite 400, Irvine, CA 92618"
     },
     "newsletter": {
       "title": "Stay Updated",
