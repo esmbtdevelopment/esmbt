@@ -174,7 +174,7 @@
       "placeholder": "E-posta adresinizi girin",
       "button": "Abone Ol"
     },
-    "copyright": "© 2024 ESM Bilgi Teknolojileri. Tüm hakları saklıdır.",
+    "copyright": "© 2025 ESM Bilgi Teknolojileri. Tüm hakları saklıdır.",
     "description": "SAP danışmanlık ve dijital dönüşüm çözümlerinde lider sağlayıcı.",
     "privacyPolicy": "Gizlilik Politikası",
     "termsOfService": "Hizmet Şartları",
@@ -274,7 +274,7 @@
             "title": "Uluslararası Büyüme",
             "description": "Hizmetlerimizi küresel ölçekte genişlettik, birçok ülkede müşteri edindik"
           },
-          "2024": {
+          "2025": {
             "title": "İnovasyon Merkezi",
             "description": "SAP-yerel dijital çözümler için lider inovasyon merkezi olarak konumlandık"
           }
@@ -310,7 +310,7 @@
         "educationLabel": "Eğitim",
         "certificationsLabel": "Sertifikalar",
         "ceo": {
-          "name": "Mehmet Özkan",
+          "name": "Sena Alkan",
           "position": "İcra Kurulu Başkanı ve Kurucu",
           "bio": "20 yılı aşkın kurumsal yazılım ve SAP danışmanlığı deneyimiyle Mehmet, işletmeleri yenilikçi SAP çözümleriyle dönüştürme vizyonuyla ESM'yi kurdu.",
           "expertise": {
@@ -322,36 +322,6 @@
           "certifications": {
             "0": "SAP Sertifikalı Çözüm Mimarı",
             "1": "PMP Sertifikalı"
-          }
-        },
-        "cto": {
-          "name": "Ayşe Demir",
-          "position": "Teknoloji Direktörü",
-          "bio": "Ayşe, SAP geliştirme ve sistem entegrasyonunda 15+ yıllık deneyimiyle teknik vizyonumuza liderlik ediyor. Karmaşık SAP uygulamaları ve dijital dönüşüm projelerinde uzmanlaşmıştır.",
-          "expertise": {
-            "0": "SAP Geliştirme",
-            "1": "Sistem Entegrasyonu",
-            "2": "Teknik Mimari"
-          },
-          "education": "Yazılım Mühendisliği Yüksek Lisansı, Bilgisayar Bilimleri Lisansı",
-          "certifications": {
-            "0": "SAP Sertifikalı Geliştirme Uzmanı",
-            "1": "TOGAF Sertifikalı"
-          }
-        },
-        "cfo": {
-          "name": "Ahmet Yılmaz",
-          "position": "Mali İşler Direktörü",
-          "bio": "Ahmet, kapsamlı finansal uzmanlığı ve yasal uyum konusundaki derin anlayışıyla finansal dönüşüm girişimlerimize liderlik ediyor.",
-          "expertise": {
-            "0": "Finansal Yönetim",
-            "1": "Yasal Uyum",
-            "2": "IFRS Uygulama"
-          },
-          "education": "Finans Yüksek Lisansı, Ekonomi Lisansı",
-          "certifications": {
-            "0": "CPA Sertifikalı",
-            "1": "IFRS Uzmanı"
           }
         }
       },
@@ -546,7 +516,7 @@
           "innovationLeadership": {
             "title": "İnovasyon Liderliği",
             "description": "Dijital dönüşüm için yeni nesil SAP-native çözümlerin geliştirilmesinde sektöre liderlik etmek",
-            "target": "2024"
+            "target": "2025"
           },
           "teamGrowth": {
             "title": "Ekip Büyümesi",
@@ -556,7 +526,7 @@
           "sustainabilityFocus": {
             "title": "Sürdürülebilirlik Odağı",
             "description": "Sürdürülebilirlik uygulamalarını tüm çözümlerimize ve iş operasyonlarımıza entegre etmek",
-            "target": "2024"
+            "target": "2025"
           }
         }
       },
@@ -632,7 +602,7 @@
         "teamDescription": "Uzmanlarımızla tanışın",
         "visionDescription": "Hedeflerimiz ve değerlerimiz"
       },
-      "products": {
+      "services": {
         "strategicConsultingDescription": "SAP dönüşümü için uzman rehberliği",
         "erpImplementationDescription": "Kapsamlı ERP uygulama hizmetleri",
         "cloudSolutionsDescription": "Ölçeklenebilir SAP bulut çözümleri",
@@ -641,7 +611,7 @@
         "cloudDescription": "Ölçeklenebilir bulut hizmetleri",
         "customDescription": "Özel yazılım çözümleri"
       },
-      "services": {
+      "products": {
         "eInvoiceDescription": "Dijital faturalama ve uyum",
         "eCommerceDescription": "Tam çevrimiçi iş araçları",
         "digitalTransformationDescription": "Tam iş dijitalleşmesi",
@@ -762,16 +732,11 @@
     "verifiedClient": "Doğrulanmış Müşteri",
     "viewAllCaseStudies": "Tüm Vaka Çalışmalarını Görüntüle"
   },
-  "services": {
-    "title": "Hizmetlerimiz",
-    "subtitle": "Kapsamlı SAP Çözümleri",
-    "description": "İş ihtiyaçlarınıza göre özelleştirilmiş uçtan uca SAP danışmanlığı ve dijital dönüşüm hizmetleri sunuyoruz.",
-    "hero": {
-      "title": "Dijital İş Çözümleri",
-      "subtitle": "İşletmenizi modern işletmeler için tasarlanmış kapsamlı dijital çözümler paketiyle dönüştürün",
-      "sectionTitle": "Hizmetlerimiz",
-      "sectionDescription": "İş ihtiyaçlarınıza özel kapsamlı dijital dönüşüm çözümleri. Uyumluluktan ticarete kadar her ihtiyacınız karşılandı."
-    },
+  "products": {
+    "pageTitle": "Ürünlerimiz",
+    "pageSubtitle": "İş operasyonlarınızı dönüştürmek ve dijital mükemmelliği sağlamak için tasarlanmış kapsamlı SAP çözümleri.",
+    "sectionTitle": "SAP Ürün Portföyü",
+    "sectionDescription": "İş ihtiyaçlarınıza özel kapsamlı SAP çözümleri. Stratejik danışmanlıktan sürekli desteğe kadar her alanda yanınızdayız.",
     "landing": {
       "ecommerce": {
         "title": "E-Ticaret",
@@ -854,33 +819,8 @@
         }
       }
     },
-    "categories": {
-      "consulting": {
-        "title": "SAP Danışmanlık & Uygulama",
-        "description": "Uçtan uca SAP entegrasyonu, optimizasyonu ve uzman danışmanlık hizmetleri"
-      },
-      "transformation": {
-        "title": "E-Dönüşüm Çözümleri",
-        "description": "SAP-yerel e-Fatura, e-Arşiv, e-Defter ve e-Beyan uyumluluğu"
-      },
-      "financial": {
-        "title": "Finansal Yönetim Araçları",
-        "description": "KDV süreçleri, IFRS 16, kredi takibi ve enflasyon muhasebesi çözümleri"
-      },
-      "banking": {
-        "title": "Bankacılık & Hazine Operasyonları",
-        "description": "Toplu ödemeler, e-Hesap ekstresi, sanal POS ve stok finansmanı"
-      }
-    },
-    "additionalServices": {
-      "title": "Ek Hizmetler",
-      "description": "Uzman ekibimiz, işletmenizin ihtiyaçlarına uygun dijital çözümleri uygulamanıza yardımcı olmaya hazır. Ücretsiz danışmanlıkla başlayın.",
-      "item1": "IFRS 16 Uyum & Adaptasyon",
-      "item2": "Teminat Yönetim Sistemleri",
-      "item3": "SAP Veri Maskeleme & Koruma",
-      "item4": "Enflasyon Muhasebesi Çözümleri",
-      "item5": "Kredi & Tahsilat Takibi"
-    }
+    "ctaDescription": "SAP ürünlerimizle işinizi dönüştürmeye hazır mısınız? Ücretsiz danışmanlık için bugün bizimle iletişime geçin.",
+    "startWithConsulting": "SAP Danışmanlığı ile Başlayın"
   },
   "serviceDetails": {
     "services": {
@@ -1280,7 +1220,6 @@
     "ui": {
       "getStarted": "Başlayın",
       "requestDemo": "Demo Talep Edin",
-      "startFreeTrial": "Ücretsiz Deneme Başlatın",
       "contactSales": "Satış Ekibiyle İletişime Geçin",
       "whyChoose": "Neden Seçmelisiniz",
       "keyFeatures": "Temel Özellikler",
@@ -1294,13 +1233,34 @@
       "provenMethodology": "Kanıtlanmış uygulama metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar."
     }
   },
-  "products": {
-    "pageTitle": "Ürünlerimiz",
-    "pageSubtitle": "İş operasyonlarınızı dönüştürmek ve dijital mükemmelliği sağlamak için tasarlanmış kapsamlı SAP çözümleri.",
-    "sectionTitle": "SAP Ürün Portföyü",
-    "sectionDescription": "İş ihtiyaçlarınıza özel kapsamlı SAP çözümleri. Stratejik danışmanlıktan sürekli desteğe kadar her alanda yanınızdayız.",
-    "ctaDescription": "SAP ürünlerimizle işinizi dönüştürmeye hazır mısınız? Ücretsiz danışmanlık için bugün bizimle iletişime geçin.",
-    "startWithConsulting": "SAP Danışmanlığı ile Başlayın",
+  "services": {
+    "title": "Hizmetlerimiz",
+    "subtitle": "Kapsamlı SAP Çözümleri",
+    "description": "İş ihtiyaçlarınıza göre özelleştirilmiş uçtan uca SAP danışmanlığı ve dijital dönüşüm hizmetleri sunuyoruz.",
+    "hero": {
+      "title": "Dijital İş Çözümleri",
+      "subtitle": "İşletmenizi modern işletmeler için tasarlanmış kapsamlı dijital çözümler paketiyle dönüştürün",
+      "sectionTitle": "Hizmetlerimiz",
+      "sectionDescription": "İş ihtiyaçlarınıza özel kapsamlı dijital dönüşüm çözümleri. Uyumluluktan ticarete kadar her ihtiyacınız karşılandı."
+    },
+    "categories": {
+      "consulting": {
+        "title": "SAP Danışmanlık & Uygulama",
+        "description": "Uçtan uca SAP entegrasyonu, optimizasyonu ve uzman danışmanlık hizmetleri"
+      },
+      "transformation": {
+        "title": "E-Dönüşüm Çözümleri",
+        "description": "SAP-yerel e-Fatura, e-Arşiv, e3-Defter ve e-Beyan uyumluluğu"
+      },
+      "financial": {
+        "title": "Finansal Yönetim Araçları",
+        "description": "KDV süreçleri, IFRS 16, kredi takibi ve enflasyon muhasebesi çözümleri"
+      },
+      "banking": {
+        "title": "Bankacılık & Hazine Operasyonları",
+        "description": "Toplu ödemeler, e-Hesap ekstresi, sanal POS ve stok finansmanı"
+      }
+    },
     "landing": {
       "strategicConsulting": {
         "title": "Stratejik SAP Danışmanlığı",
@@ -1372,6 +1332,15 @@
           "continuousImprovement": "Sürekli iyileştirme girişimleri"
         }
       }
+    },
+    "additionalServices": {
+      "title": "Ek Hizmetler",
+      "description": "Uzman ekibimiz, işletmenizin ihtiyaçlarına uygun dijital çözümleri uygulamanıza yardımcı olmaya hazır. Ücretsiz danışmanlıkla başlayın.",
+      "item1": "IFRS 16 Uyum & Adaptasyon",
+      "item2": "Teminat Yönetim Sistemleri",
+      "item3": "SAP Veri Maskeleme & Koruma",
+      "item4": "Enflasyon Muhasebesi Çözümleri",
+      "item5": "Kredi & Tahsilat Takibi"
     }
   },
   "productDetails": {
@@ -1393,7 +1362,6 @@
       "readyToGetStarted": "Başlamaya Hazır mısınız?",
       "joinThousands": "operasyonlarını dönüştüren binlerce işletmeye katılın",
       "getFreeConsultation": "Bugün ücretsiz danışmanlık alarak başlayın.",
-      "startFreeTrial": "Ücretsiz Deneme Başlatın",
       "contactSales": "Satış Ekibiyle İletişime Geçin"
     },
     "products": {

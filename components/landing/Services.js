@@ -21,60 +21,61 @@ import Image from "next/image";
 
 function Services() {
   const t = useTranslations('services');
+  const tProducts = useTranslations('products');
   const tCommon = useTranslations('common');
   const locale = useLocale();
   const services = [
     {
       id: 1,
       slug: "e-commerce",
-      icon: <Image src="/images/services/landing/e-commerce.jpg" className="rounded-tr-3xl rounded-bl-3xl object-cover drop-shadow-2xl" alt={t('landing.ecommerce.title')} width={500} height={500} />,
-      title: t('landing.ecommerce.title'),
-      description: t('landing.ecommerce.description'),
+      icon: <Image src="/images/services/landing/e-commerce.jpg" className="rounded-tr-3xl rounded-bl-3xl object-cover drop-shadow-2xl" alt={tProducts('landing.ecommerce.title')} width={500} height={500} />,
+      title: tProducts('landing.ecommerce.title'),
+      description: tProducts('landing.ecommerce.description'),
       features: [
-        { name: t('landing.ecommerce.features.storeManagement'), icon: <FaCogs /> },
-        { name: t('landing.ecommerce.features.paymentIntegration'), icon: <FaCreditCard /> },
-        { name: t('landing.ecommerce.features.inventoryControl'), icon: <FaArchive /> },
-        { name: t('landing.ecommerce.features.customerAnalytics'), icon: <FaChartLine /> }
+        { name: tProducts('landing.ecommerce.features.storeManagement'), icon: <FaCogs /> },
+        { name: tProducts('landing.ecommerce.features.paymentIntegration'), icon: <FaCreditCard /> },
+        { name: tProducts('landing.ecommerce.features.inventoryControl'), icon: <FaArchive /> },
+        { name: tProducts('landing.ecommerce.features.customerAnalytics'), icon: <FaChartLine /> }
       ],
     },
 
     {
       id: 2,
       slug: "e-archive-invoice",
-      icon: <Image src="/images/services/landing/archive.jpg" className="rounded-tr-3xl rounded-bl-3xl object-cover drop-shadow-2xl" alt={t('landing.earchive.title')} width={500} height={500} />,
-      title: t('landing.earchive.title'),
-      description: t('landing.earchive.description'),
+      icon: <Image src="/images/services/landing/archive.jpg" className="rounded-tr-3xl rounded-bl-3xl object-cover drop-shadow-2xl" alt={tProducts('landing.earchive.title')} width={500} height={500} />,
+      title: tProducts('landing.earchive.title'),
+      description: tProducts('landing.earchive.description'),
       features: [
-        { name: t('landing.earchive.features.secureStorage'), icon: <FaShieldAlt /> },
-        { name: t('landing.earchive.features.legalCompliance'), icon: <FaBalanceScale /> },
-        { name: t('landing.earchive.features.easyRetrieval'), icon: <FaChartArea /> },
-        { name: t('landing.earchive.features.auditReady'), icon: <FaCogs /> }
+        { name: tProducts('landing.earchive.features.secureStorage'), icon: <FaShieldAlt /> },
+        { name: tProducts('landing.earchive.features.legalCompliance'), icon: <FaBalanceScale /> },
+        { name: tProducts('landing.earchive.features.easyRetrieval'), icon: <FaChartArea /> },
+        { name: tProducts('landing.earchive.features.auditReady'), icon: <FaCogs /> }
       ],
     },
     {
       id: 3,
       slug: "e-invoice",
-      icon: <Image src="/images/services/landing/invoice.jpg" className="rounded-tr-3xl rounded-bl-3xl object-cover drop-shadow-2xl" alt={t('landing.einvoice.title')} width={500} height={500} />,
-      title: t('landing.einvoice.title'),
-      description: t('landing.einvoice.description'),
+      icon: <Image src="/images/services/landing/invoice.jpg" className="rounded-tr-3xl rounded-bl-3xl object-cover drop-shadow-2xl" alt={tProducts('landing.einvoice.title')} width={500} height={500} />,
+      title: tProducts('landing.einvoice.title'),
+      description: tProducts('landing.einvoice.description'),
       features: [
-        { name: t('landing.einvoice.features.legalCompliance'), icon: <FaShieldAlt /> },
-        { name: t('landing.einvoice.features.costReduction'), icon: <FaCoins /> },
-        { name: t('landing.einvoice.features.automatedProcessing'), icon: <FaRobot /> },
-        { name: t('landing.einvoice.features.realTimeTracking'), icon: <FaChartLine /> }
+        { name: tProducts('landing.einvoice.features.legalCompliance'), icon: <FaShieldAlt /> },
+        { name: tProducts('landing.einvoice.features.costReduction'), icon: <FaCoins /> },
+        { name: tProducts('landing.einvoice.features.automatedProcessing'), icon: <FaRobot /> },
+        { name: tProducts('landing.einvoice.features.realTimeTracking'), icon: <FaChartLine /> }
       ],
     },
     {
       id: 4,
       slug: "e-export",
-      icon: <Image src="/images/services/landing/truck.jpg" className="rounded-tr-3xl rounded-bl-3xl object-cover drop-shadow-2xl" alt={t('landing.eexport.title')} width={500} height={500} />,
-      title: t('landing.eexport.title'),
-      description: t('landing.eexport.description'),
+      icon: <Image src="/images/services/landing/truck.jpg" className="rounded-tr-3xl rounded-bl-3xl object-cover drop-shadow-2xl" alt={tProducts('landing.eexport.title')} width={500} height={500} />,
+      title: tProducts('landing.eexport.title'),
+      description: tProducts('landing.eexport.description'),
       features: [
-        { name: t('landing.eexport.features.exportDocumentation'), icon: <FaFileInvoiceDollar /> },
-        { name: t('landing.eexport.features.complianceManagement'), icon: <FaShieldAlt /> },
-        { name: t('landing.eexport.features.internationalStandards'), icon: <FaUniversity /> },
-        { name: t('landing.eexport.features.processAutomation'), icon: <FaRobot /> }
+        { name: tProducts('landing.eexport.features.exportDocumentation'), icon: <FaFileInvoiceDollar /> },
+        { name: tProducts('landing.eexport.features.complianceManagement'), icon: <FaShieldAlt /> },
+        { name: tProducts('landing.eexport.features.internationalStandards'), icon: <FaUniversity /> },
+        { name: tProducts('landing.eexport.features.processAutomation'), icon: <FaRobot /> }
       ],
     }
   ];

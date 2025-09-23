@@ -115,9 +115,9 @@ export default function AboutUsPage() {
             description: t('timeline.milestones.2020.description')
         },
         {
-            year: "2024",
-            title: t('timeline.milestones.2024.title'),
-            description: t('timeline.milestones.2024.description')
+            year: "2025",
+            title: t('timeline.milestones.2025.title'),
+            description: t('timeline.milestones.2025.description')
         }
     ];
 

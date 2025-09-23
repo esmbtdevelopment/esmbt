@@ -40,42 +40,6 @@ export default function OurTeamPage() {
             linkedin: "#",
             email: "mehmet.ozkan@esmbt.com"
         },
-        {
-            name: t('leadership.cto.name'),
-            position: t('leadership.cto.position'),
-            image: "/images/team/cto.jpg",
-            bio: t('leadership.cto.bio'),
-            expertise: [
-                t('leadership.cto.expertise.0'),
-                t('leadership.cto.expertise.1'),
-                t('leadership.cto.expertise.2')
-            ],
-            education: t('leadership.cto.education'),
-            certifications: [
-                t('leadership.cto.certifications.0'),
-                t('leadership.cto.certifications.1')
-            ],
-            linkedin: "#",
-            email: "ayse.demir@esmbt.com"
-        },
-        {
-            name: t('leadership.cfo.name'),
-            position: t('leadership.cfo.position'),
-            image: "/images/team/cfo.jpg",
-            bio: t('leadership.cfo.bio'),
-            expertise: [
-                t('leadership.cfo.expertise.0'),
-                t('leadership.cfo.expertise.1'),
-                t('leadership.cfo.expertise.2')
-            ],
-            education: t('leadership.cfo.education'),
-            certifications: [
-                t('leadership.cfo.certifications.0'),
-                t('leadership.cfo.certifications.1')
-            ],
-            linkedin: "#",
-            email: "ahmet.yilmaz@esmbt.com"
-        }
     ];
 
     const departments = [
@@ -236,9 +200,9 @@ export default function OurTeamPage() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
+                    <div className="flex flex-row justify-center">
                         {leadership.map((leader, index) => (
-                            <div key={index} className="bg-white rounded-2xl sm:rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 overflow-hidden border border-gray-100">
+                            <div key={index} className="bg-white rounded-2xl sm:rounded-3xl max-w-md shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 overflow-hidden border border-gray-100">
                                 {/* Profile Image */}
                                 <div className="relative h-48 sm:h-56 lg:h-64 bg-gradient-to-br from-sky-400 to-blue-500">
                                     {/* Placeholder for actual image */}

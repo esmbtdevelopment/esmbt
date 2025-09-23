@@ -174,7 +174,7 @@
       "placeholder": "Enter your email",
       "button": "Subscribe"
     },
-    "copyright": "© 2024 ESM Information Technologies. All rights reserved.",
+    "copyright": "© 2025 ESM Information Technologies. All rights reserved.",
     "description": "Leading provider of SAP consulting and digital transformation solutions.",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
@@ -205,7 +205,7 @@
         "educationLabel": "Education",
         "certificationsLabel": "Certifications",
         "ceo": {
-          "name": "Mehmet Özkan",
+          "name": "Sena Alkan",
           "position": "Chief Executive Officer & Founder",
           "bio": "With over 20 years of experience in enterprise software and SAP consulting, Mehmet founded ESM with the vision of transforming businesses through innovative SAP solutions.",
           "expertise": {
@@ -217,36 +217,6 @@
           "certifications": {
             "0": "SAP Certified Solution Architect",
             "1": "PMP Certified"
-          }
-        },
-        "cto": {
-          "name": "Ayşe Demir",
-          "position": "Chief Technology Officer",
-          "bio": "Ayşe leads our technical vision with 15+ years in SAP development and system integration. She specializes in complex SAP implementations and digital transformation projects.",
-          "expertise": {
-            "0": "SAP Development",
-            "1": "System Integration",
-            "2": "Technical Architecture"
-          },
-          "education": "MSc in Software Engineering, BSc in Computer Science",
-          "certifications": {
-            "0": "SAP Certified Development Professional",
-            "1": "TOGAF Certified"
-          }
-        },
-        "cfo": {
-          "name": "Ahmet Yılmaz",
-          "position": "Chief Financial Officer",
-          "bio": "Ahmet brings extensive financial expertise and deep understanding of regulatory compliance, leading our financial transformation initiatives.",
-          "expertise": {
-            "0": "Financial Management",
-            "1": "Regulatory Compliance",
-            "2": "IFRS Implementation"
-          },
-          "education": "MBA in Finance, BSc in Economics",
-          "certifications": {
-            "0": "CPA Certified",
-            "1": "IFRS Specialist"
           }
         }
       },
@@ -436,17 +406,17 @@
           "innovationLeadership": {
             "title": "Innovation Leadership",
             "description": "Lead the industry in developing next-generation SAP-native solutions for digital transformation",
-            "target": "2024"
+            "target": "2025"
           },
           "teamGrowth": {
             "title": "Team Growth",
             "description": "Build a world-class team of 100+ certified SAP specialists and technology experts",
-            "target": "2026"
+            "target": "2025"
           },
           "sustainabilityFocus": {
             "title": "Sustainability Focus",
             "description": "Integrate sustainability practices into all our solutions and business operations",
-            "target": "2024"
+            "target": "2025"
           }
         }
       },
@@ -571,7 +541,7 @@
             "title": "International Expansion",
             "description": "Extended services globally, serving clients across multiple countries"
           },
-          "2024": {
+          "2025": {
             "title": "Innovation Hub",
             "description": "Established as a leading innovation hub for SAP-native digital solutions"
           }
@@ -626,7 +596,7 @@
         "teamDescription": "Meet our experts",
         "visionDescription": "Our goals and values"
       },
-      "products": {
+      "services": {
         "strategicConsultingDescription": "Expert guidance for SAP transformation",
         "erpImplementationDescription": "Complete ERP implementation services",
         "cloudSolutionsDescription": "Scalable SAP cloud solutions",
@@ -635,7 +605,7 @@
         "cloudDescription": "Scalable cloud services",
         "customDescription": "Tailored software solutions"
       },
-      "services": {
+      "products": {
         "eInvoiceDescription": "Digital invoicing and compliance",
         "eCommerceDescription": "Complete online business tools",
         "digitalTransformationDescription": "Full business digitalization",
@@ -1105,7 +1075,6 @@
     "ui": {
       "getStarted": "Get Started",
       "requestDemo": "Request Demo",
-      "startFreeTrial": "Start Free Trial",
       "contactSales": "Contact Sales",
       "whyChoose": "Why Choose",
       "keyFeatures": "Key Features",
@@ -1169,16 +1138,11 @@
     "verifiedClient": "Verified Client",
     "viewAllCaseStudies": "View All Case Studies"
   },
-  "services": {
-    "title": "Our Services",
-    "subtitle": "Comprehensive SAP Solutions",
-    "description": "We provide end-to-end SAP consulting and digital transformation services tailored to your business needs.",
-    "hero": {
-      "title": "Digital Business Solutions",
-      "subtitle": "Transform your business with our comprehensive suite of digital solutions designed for modern enterprises",
-      "sectionTitle": "Our Services",
-      "sectionDescription": "Comprehensive digital transformation solutions tailored for your business needs. From compliance to commerce, we've got you covered."
-    },
+  "products": {
+    "pageTitle": "Our Products",
+    "pageSubtitle": "Comprehensive SAP solutions designed to transform your business operations and drive digital excellence.",
+    "sectionTitle": "SAP Product Portfolio",
+    "sectionDescription": "Comprehensive SAP solutions tailored for your business needs. From strategic consulting to ongoing support, we've got you covered.",
     "landing": {
       "ecommerce": {
         "title": "E-Commerce",
@@ -1249,7 +1213,39 @@
           "inventoryTracking": "Inventory Tracking",
           "customerService": "Customer Service"
         }
+      },
+      "eadisyon": {
+        "title": "E-Adisyon",
+        "description": "E-Adisyon is a complete restaurant management solution that covers everything from order taking to inventory management. Optimize your restaurant operations with integrated POS systems, kitchen management, and customer service tools.",
+        "features": {
+          "digitalReceipts": "Digital Receipts",
+          "orderManagement": "Order Management",
+          "customerExperience": "Customer Experience",
+          "costEfficiency": "Cost Efficiency"
+        }
       }
+    },
+    "ctaDescription": "Ready to transform your business with our SAP products? Contact us today for a free consultation.",
+    "startWithConsulting": "Start with SAP Consulting",
+    "additionalServices": {
+      "title": "Additional Services",
+      "description": "Our expert team is ready to help you implement the right digital solutions for your business needs. Get started with a free consultation today.",
+      "item1": "IFRS 16 Compliance & Adaptation",
+      "item2": "Collateral Management Systems",
+      "item3": "SAP Data Masking & Protection",
+      "item4": "Inflation Accounting Solutions",
+      "item5": "Loan & Collection Tracking"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive SAP Solutions",
+    "description": "We provide end-to-end SAP consulting and digital transformation services tailored to your business needs.",
+    "hero": {
+      "title": "Digital Business Solutions",
+      "subtitle": "Transform your business with our comprehensive suite of digital solutions designed for modern enterprises",
+      "sectionTitle": "Our Services",
+      "sectionDescription": "Comprehensive digital transformation solutions tailored for your business needs. From compliance to commerce, we've got you covered."
     },
     "categories": {
       "consulting": {
@@ -1269,23 +1265,6 @@
         "description": "Bulk payments, e-Account statements, virtual POS, and stock financing"
       }
     },
-    "additionalServices": {
-      "title": "Additional Services",
-      "description": "Our expert team is ready to help you implement the right digital solutions for your business needs. Get started with a free consultation today.",
-      "item1": "IFRS 16 Compliance & Adaptation",
-      "item2": "Collateral Management Systems",
-      "item3": "SAP Data Masking & Protection",
-      "item4": "Inflation Accounting Solutions",
-      "item5": "Loan & Collection Tracking"
-    }
-  },
-  "products": {
-    "pageTitle": "Our Products",
-    "pageSubtitle": "Comprehensive SAP solutions designed to transform your business operations and drive digital excellence.",
-    "sectionTitle": "SAP Product Portfolio",
-    "sectionDescription": "Comprehensive SAP solutions tailored for your business needs. From strategic consulting to ongoing support, we've got you covered.",
-    "ctaDescription": "Ready to transform your business with our SAP products? Contact us today for a free consultation.",
-    "startWithConsulting": "Start with SAP Consulting",
     "landing": {
       "strategicConsulting": {
         "title": "Strategic SAP Consulting",
@@ -1357,6 +1336,15 @@
           "continuousImprovement": "Continuous improvement initiatives"
         }
       }
+    },
+    "additionalServices": {
+      "title": "Additional Services",
+      "description": "Our expert team is ready to help you implement the right digital solutions for your business needs. Get started with a free consultation today.",
+      "item1": "IFRS 16 Compliance & Adaptation",
+      "item2": "Collateral Management Systems",
+      "item3": "SAP Data Masking & Protection",
+      "item4": "Inflation Accounting Solutions",
+      "item5": "Loan & Collection Tracking"
     }
   },
   "productDetails": {
@@ -1378,7 +1366,6 @@
       "readyToGetStarted": "Ready to Get Started?",
       "joinThousands": "Join thousands of businesses that have transformed their operations with",
       "getFreeConsultation": "Get started with a free consultation today.",
-      "startFreeTrial": "Start Free Trial",
       "contactSales": "Contact Sales"
     },
     "products": {

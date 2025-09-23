@@ -2,15 +2,15 @@
 import React from "react";
 import Link from "next/link";
 import {
-    FaArchive,
-    FaGlobe,
-    FaShoppingCart,
-    FaTruck,
-    FaBook,
-    FaReceipt,
     FaChevronRight,
+    FaChartLine,
+    FaDatabase,
+    FaCogs,
+    FaChartArea,
+    FaShieldAlt,
+    FaLifeRing,
+    FaCloud,
 } from "react-icons/fa";
-import Image from "next/image";
 import { useTranslations } from 'next-intl';
 
 function ServicesPage() {
@@ -20,108 +20,95 @@ function ServicesPage() {
     const services = [
         {
             id: 1,
-            slug: "e-invoice",
-            icon: <Image src="/images/services/invoice.webp" alt="E-Invoice" className='size-28 md:size-32 -rotate-10 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5' width={500} height={500} />,
-            title: t('landing.einvoice.title'),
-            description: t('landing.einvoice.description'),
+            slug: "strategic-sap-consulting",
+            icon: <FaChartLine className='size-28 md:size-32 -rotate-10 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5 text-white' />,
+            title: t('landing.strategicConsulting.title'),
+            description: t('landing.strategicConsulting.description'),
             features: [
-                t('landing.einvoice.features.legalCompliance'),
-                t('landing.einvoice.features.costReduction'),
-                t('landing.einvoice.features.automatedProcessing'),
-                t('landing.einvoice.features.realTimeTracking')
+                t('landing.strategicConsulting.features.businessAnalysis'),
+                t('landing.strategicConsulting.features.roadmapDevelopment'),
+                t('landing.strategicConsulting.features.processOptimization'),
+                t('landing.strategicConsulting.features.changeManagement')
             ]
         },
         {
             id: 2,
-            slug: "e-ledger",
-            icon: <Image src="/images/services/ledger.webp" alt="E-Invoice" className='size-28 md:size-36 -rotate-10 translate-y-10 md:translate-y-14 translate-x-10 md:translate-x-5' width={500} height={500} />,
-            title: t('landing.eledger.title'),
-            description: t('landing.eledger.description'),
+            slug: "sap-erp-implementation",
+            icon: <FaDatabase className='size-28 md:size-36 -rotate-10 translate-y-10 md:translate-y-14 translate-x-10 md:translate-x-5 text-white' />,
+            title: t('landing.erpImplementation.title'),
+            description: t('landing.erpImplementation.description'),
             features: [
-                t('landing.eledger.features.financialReporting'),
-                t('landing.eledger.features.complianceManagement'),
-                t('landing.eledger.features.automatedEntries'),
-                t('landing.eledger.features.auditTrails')
+                t('landing.erpImplementation.features.fullImplementation'),
+                t('landing.erpImplementation.features.systemEnhancement'),
+                t('landing.erpImplementation.features.dataIntegration'),
+                t('landing.erpImplementation.features.userTraining')
             ]
         },
         {
             id: 3,
-            slug: "e-export",
-            icon: <Image src="/images/services/export.webp" alt="E-Invoice" className='size-28 md:size-32 -rotate-15 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5' width={500} height={500} />,
-            title: t('landing.eexport.title'),
-            description: t('landing.eexport.description'),
+            slug: "sap-technical-services",
+            icon: <FaCogs className='size-28 md:size-32 -rotate-15 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5 text-white' />,
+            title: t('landing.technicalServices.title'),
+            description: t('landing.technicalServices.description'),
             features: [
-                t('landing.eexport.features.exportDocumentation'),
-                t('landing.eexport.features.complianceManagement'),
-                t('landing.eexport.features.internationalStandards'),
-                t('landing.eexport.features.processAutomation')
+                t('landing.technicalServices.features.systemMaintenance'),
+                t('landing.technicalServices.features.performanceOptimization'),
+                t('landing.technicalServices.features.troubleshooting'),
+                t('landing.technicalServices.features.upgrades')
             ]
         },
         {
             id: 4,
-            slug: "digigarson-pos",
-            icon: <Image src="/images/services/digi-garson.webp" alt="E-Invoice" className='size-28 md:size-32 -rotate-15 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5' width={500} height={500} />,
-            title: t('landing.restaurant.title'),
-            description: t('landing.restaurant.description'),
+            slug: "sap-cloud-solutions",
+            icon: <FaCloud className='size-28 md:size-32 -rotate-15 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5 text-white' />,
+            title: t('landing.cloudSolutions.title'),
+            description: t('landing.cloudSolutions.description'),
             features: [
-                t('landing.restaurant.features.posSystem'),
-                t('landing.restaurant.features.inventoryTracking'),
-                t('landing.restaurant.features.kitchenManagement'),
-                t('landing.restaurant.features.customerService')
+                t('landing.cloudSolutions.features.cloudMigration'),
+                t('landing.cloudSolutions.features.hybridSolutions'),
+                t('landing.cloudSolutions.features.cloudOptimization'),
+                t('landing.cloudSolutions.features.securityManagement')
             ]
         },
         {
             id: 5,
-            slug: "e-commerce",
-            icon: <Image src="/images/services/e-commerce.webp" alt="E-Invoice" className='size-28 md:size-32 -rotate-15 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5' width={500} height={500} />,
-            title: t('landing.ecommerce.title'),
-            description: t('landing.ecommerce.description'),
+            slug: "sap-analytics-intelligence",
+            icon: <FaChartArea className='size-28 md:size-32 -rotate-15 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5 text-white' />,
+            title: t('landing.analyticsIntelligence.title'),
+            description: t('landing.analyticsIntelligence.description'),
             features: [
-                t('landing.ecommerce.features.storeManagement'),
-                t('landing.ecommerce.features.paymentIntegration'),
-                t('landing.ecommerce.features.inventoryControl'),
-                t('landing.ecommerce.features.customerAnalytics')
+                t('landing.analyticsIntelligence.features.businessIntelligence'),
+                t('landing.analyticsIntelligence.features.dataVisualization'),
+                t('landing.analyticsIntelligence.features.predictiveAnalytics'),
+                t('landing.analyticsIntelligence.features.realTimeReporting')
             ]
         },
         {
             id: 6,
-            slug: "e-delivery-note",
-            icon: <Image src="/images/services/delivery note.webp" alt="E-Invoice" className='size-28 md:size-32 -rotate-15 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5' width={500} height={500} />,
-            title: t('landing.edelivery.title'),
-            description: t('landing.edelivery.description'),
+            slug: "sap-security-compliance",
+            icon: <FaShieldAlt className='size-28 md:size-32 -rotate-15 translate-y-8 translate-x-8 text-white' />,
+            title: t('landing.securityCompliance.title'),
+            description: t('landing.securityCompliance.description'),
             features: [
-                t('landing.edelivery.features.digitalTracking'),
-                t('landing.edelivery.features.logisticsOptimization'),
-                t('landing.edelivery.features.paperlessProcess'),
-                t('landing.edelivery.features.realTimeUpdates')
+                t('landing.securityCompliance.features.accessManagement'),
+                t('landing.securityCompliance.features.complianceAuditing'),
+                t('landing.securityCompliance.features.riskAssessment'),
+                t('landing.securityCompliance.features.securityPolicies')
             ]
         },
         {
             id: 7,
-            slug: "e-archive-invoice",
-            icon: <Image src="/images/services/archive.webp" alt="E-Archive Invoice" className='size-28 md:size-32 -rotate-15 translate-y-8 translate-x-8' width={500} height={500} />,
-            title: t('landing.earchive.title'),
-            description: t('landing.earchive.description'),
+            slug: "ongoing-support-maintenance",
+            icon: <FaLifeRing className='size-32 -rotate-15 translate-y-9 translate-x-7 text-white' />,
+            title: t('landing.ongoingSupport.title'),
+            description: t('landing.ongoingSupport.description'),
             features: [
-                t('landing.earchive.features.secureStorage'),
-                t('landing.earchive.features.legalCompliance'),
-                t('landing.earchive.features.easyRetrieval'),
-                t('landing.earchive.features.auditReady')
+                t('landing.ongoingSupport.features.helpDesk'),
+                t('landing.ongoingSupport.features.preventiveMaintenance'),
+                t('landing.ongoingSupport.features.systemMonitoring'),
+                t('landing.ongoingSupport.features.continuousImprovement')
             ]
-        },
-        {
-            id: 8,
-            slug: "e-adisyon",
-            icon: <Image src="/images/services/adisyon.webp" alt="E-Invoice" className='size-32 -rotate-15 translate-y-9 translate-x-7' width={500} height={500} />,
-            title: t('landing.eadisyon.title'),
-            description: t('landing.eadisyon.description'),
-            features: [
-                t('landing.eadisyon.features.digitalReceipts'),
-                t('landing.eadisyon.features.orderManagement'),
-                t('landing.eadisyon.features.customerExperience'),
-                t('landing.eadisyon.features.costEfficiency')
-            ]
-        },
+        }
     ];
 
     return (
@@ -156,50 +143,77 @@ function ServicesPage() {
                             From compliance to commerce, we&apos;ve got you covered.
                         </p>
                     </div>
-
-                    {/* Services Grid */}
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
-                        {services.map((service) => (
+                    {/* Services  Grid */}
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
+                        {services.map((service, index) => (
                             <div
                                 key={service.id}
-                                className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 group hover:scale-105 flex flex-col h-full overflow-visible"
+                                className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 hover:border-sky-200"
                             >
-                                {/* Card Header */}
-                                <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 p-4 sm:p-6 text-white rounded-t-xl relative">
-                                    <div className="absolute bottom-6 sm:bottom-10 right-10 sm:right-5 drop-shadow-2xl">
-                                        {service.icon}
-                                    </div>
-                                    <h3 className="text-lg sm:text-xl font-bold font-sora mb-2 max-w-32">
-                                        {service.title}
-                                    </h3>
-                                </div>
+                                {/* Top Accent Line */}
+                                <div className="h-1 bg-gradient-to-r from-sky-500 to-sky-600"></div>
 
                                 {/* Card Content */}
-                                <div className="p-4 sm:p-6 flex flex-col flex-grow">
-                                    <p className="text-gray-600 font-montserrat text-sm leading-relaxed mb-4 sm:mb-6">
+                                <div className="p-6 sm:p-8">
+                                    {/* Icon Container */}
+                                    <div className="relative mb-6">
+                                        <div className="w-16 h-16 bg-gradient-to-br from-sky-50 to-sky-100 rounded-xl flex items-center justify-center group-hover:from-sky-100 group-hover:to-sky-200 transition-colors duration-300">
+                                            <div className="text-sky-600 text-2xl">
+                                                {React.cloneElement(service.icon, {
+                                                    className: 'w-8 h-8 text-sky-600'
+                                                })}
+                                            </div>
+                                        </div>
+                                        {/* Subtle background decoration */}
+                                        <div className="absolute -top-2 -right-2 w-6 h-6 bg-sky-100 rounded-full opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+                                    </div>
+
+                                    {/* Product Title */}
+                                    <h3 className="text-xl sm:text-2xl font-bold font-sora text-gray-900 mb-3 leading-tight group-hover:text-gray-800 transition-colors duration-300">
+                                        {service.title}
+                                    </h3>
+
+                                    {/* Product Description */}
+                                    <p className="text-gray-600 font-montserrat text-sm sm:text-base leading-relaxed mb-6">
                                         {service.description}
                                     </p>
 
-                                    {/* Features */}
-                                    <div className="space-y-2 mb-4 sm:mb-6 flex-grow">
-                                        {service.features.map((feature, index) => (
-                                            <div key={index} className="flex items-center text-sm">
-                                                <div className="w-2 h-2 bg-gray-500 rounded-full mr-3 flex-shrink-0"></div>
-                                                <span className="text-gray-700 font-montserrat">{feature}</span>
-                                            </div>
-                                        ))}
+                                    {/* Key Features */}
+                                    <div className="mb-8">
+                                        <h4 className="text-sm font-semibold text-gray-800 font-sora mb-3 uppercase tracking-wide">
+                                            Key Features
+                                        </h4>
+                                        <div className="space-y-2">
+                                            {service.features.slice(0, 3).map((feature, featureIndex) => (
+                                                <div key={featureIndex} className="flex items-start space-x-3">
+                                                    <div className="flex-shrink-0 w-1.5 h-1.5 bg-sky-600 rounded-full mt-2"></div>
+                                                    <span className="text-gray-700 font-montserrat text-sm leading-relaxed">
+                                                        {feature}
+                                                    </span>
+                                                </div>
+                                            ))}
+                                            {service.features.length > 3 && (
+                                                <div className="flex items-center space-x-3 mt-2">
+                                                    <div className="flex-shrink-0 w-1.5 h-1.5 bg-gray-400 rounded-full mt-2"></div>
+                                                    <span className="text-gray-500 font-montserrat text-sm italic">
+                                                        +{service.features.length - 3} more capabilities
+                                                    </span>
+                                                </div>
+                                            )}
+                                        </div>
                                     </div>
 
                                     {/* CTA Button */}
-                                    <div className="mt-auto">
-                                        <Link href={`/services/${service.slug}`}>
-                                            <button className="w-full cursor-pointer bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 hover:from-gray-800 hover:via-gray-700 hover:to-gray-800 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 group">
-                                                <span className="text-sm">{tCommon('learnMore')}</span>
-                                                <FaChevronRight className="text-xs group-hover:translate-x-1 transition-transform duration-300" />
-                                            </button>
-                                        </Link>
-                                    </div>
+                                    <Link href={`/services/${service.slug}`}>
+                                        <button className="w-full cursor-pointer bg-gray-900 hover:bg-gray-800 text-white font-semibold py-3.5 px-6 rounded-xl transition-all duration-300 flex items-center justify-center space-x-2 group/btn shadow-sm hover:shadow-md">
+                                            <span className="text-sm sm:text-base font-montserrat">{tCommon('learnMore')}</span>
+                                            <FaChevronRight className="text-sm group-hover/btn:translate-x-1 transition-transform duration-300" />
+                                        </button>
+                                    </Link>
                                 </div>
+
+                                {/* Hover Effect Overlay */}
+                                <div className="absolute inset-0 bg-gradient-to-br from-sky-500/5 to-blue-500/5 opacity-0 group-hover:opacity-30 transition-opacity duration-500 pointer-events-none rounded-2xl"></div>
                             </div>
                         ))}
                     </div>

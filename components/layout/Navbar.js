@@ -100,17 +100,17 @@ const Navbar = () => {
       { title: t('team'), description: t('dropdown.corporate.teamDescription'), icon: FaUsers, link: `/${locale}/corporate/our-team` },
       { title: t('vision'), description: t('dropdown.corporate.visionDescription'), icon: FaHandshake, link: `/${locale}/corporate/vision-and-mission` },
     ],
-    products: [
-      { title: t('strategicConsulting'), description: t('dropdown.products.strategicConsultingDescription'), icon: FaChartLine, link: `/${locale}/products/strategic-sap-consulting` },
-      { title: t('erpImplementation'), description: t('dropdown.products.erpImplementationDescription'), icon: FaCogs, link: `/${locale}/products/sap-erp-implementation` },
-      { title: t('cloudSolutions'), description: t('dropdown.products.cloudSolutionsDescription'), icon: FaCloud, link: `/${locale}/products/sap-cloud-solutions` },
-      { title: t('viewAllProducts'), description: t('dropdown.products.viewAllDescription'), icon: FaChartLine, link: `/${locale}/products`, highlight: true },
-    ],
     services: [
-      { title: t('eInvoiceSolutions'), description: t('dropdown.services.eInvoiceDescription'), icon: FaChartLine, link: `/${locale}/services/e-invoice` },
-      { title: t('eCommercePlatform'), description: t('dropdown.services.eCommerceDescription'), icon: FaCogs, link: `/${locale}/services/e-commerce` },
-      { title: t('digitalTransformation'), description: t('dropdown.services.digitalTransformationDescription'), icon: FaShieldAlt, link: `/${locale}/services` },
+      { title: t('strategicConsulting'), description: t('dropdown.services.strategicConsultingDescription'), icon: FaChartLine, link: `/${locale}/services/strategic-sap-consulting` },
+      { title: t('erpImplementation'), description: t('dropdown.services.erpImplementationDescription'), icon: FaCogs, link: `/${locale}/services/sap-erp-implementation` },
+      { title: t('cloudSolutions'), description: t('dropdown.services.cloudSolutionsDescription'), icon: FaCloud, link: `/${locale}/services/sap-cloud-solutions` },
       { title: t('viewAllServices'), description: t('dropdown.services.viewAllDescription'), icon: FaChartLine, link: `/${locale}/services`, highlight: true },
+    ],
+    products: [
+      { title: t('eInvoiceSolutions'), description: t('dropdown.products.eInvoiceDescription'), icon: FaChartLine, link: `/${locale}/products/e-invoice` },
+      { title: t('eCommercePlatform'), description: t('dropdown.products.eCommerceDescription'), icon: FaCogs, link: `/${locale}/products/e-commerce` },
+      { title: t('digitalTransformation'), description: t('dropdown.products.digitalTransformationDescription'), icon: FaShieldAlt, link: `/${locale}/products` },
+      { title: t('viewAllProducts'), description: t('dropdown.products.viewAllDescription'), icon: FaChartLine, link: `/${locale}/products`, highlight: true },
     ],
   };
 

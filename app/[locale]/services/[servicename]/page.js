@@ -663,10 +663,6 @@ export default function ServiceDetailPage({ params }) {
                                 {tUI('joinThousands')} {service.title}. {tUI('getFreeConsultation')}
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <button className="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
-                                    <span className="text-sm sm:text-base">{tUI('startFreeTrial')}</span>
-                                    <FaChevronRight className="text-sm" />
-                                </button>
                                 <button className="border-2 border-sky-500 text-sky-400 hover:bg-sky-500 hover:text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
                                     <span className="text-sm sm:text-base">{tUI('contactSales')}</span>
                                 </button>
