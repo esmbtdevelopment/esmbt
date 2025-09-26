@@ -15,9 +15,12 @@ import {
 import { RiSpaceShipFill } from "react-icons/ri";
 import { scrollToSection, isOnLandingPage } from "@/utils/navigation";
 import { useTranslations } from 'next-intl';
+import { useLocale } from 'next-intl';
+import Link from 'next/link';
 
 const Footer = () => {
   const t = useTranslations('footer');
+  const locale = useLocale();
 
   const handleSectionNavigation = (sectionId) => {
     const onLandingPage = isOnLandingPage();
@@ -25,27 +28,27 @@ const Footer = () => {
   };
 
   const quickLinks = [
-    { name: t('quickLinks.aboutUs'), sectionId: "about" },
-    { name: t('quickLinks.services'), href: "/services" }, // External page
+    { name: t('quickLinks.aboutUs'), href: `/${locale}/corporate/about-us` },
+    { name: t('quickLinks.services'), href: `/${locale}/services` },
     { name: t('quickLinks.partners'), sectionId: "partners" },
     { name: t('quickLinks.customers'), sectionId: "customers" },
     { name: t('quickLinks.contact'), sectionId: "contact" },
   ];
 
   const services = [
-    { name: t('services.sapConsulting'), href: "#sap-consulting" },
-    { name: t('services.eTransformation'), href: "#e-transformation" },
-    { name: t('services.financialManagement'), href: "#financial-management" },
-    { name: t('services.bankingSolutions'), href: "#banking-solutions" },
-    { name: t('services.digitalCompliance'), href: "#compliance" },
+    { name: t('services.sapConsulting'), href: `/${locale}/services/strategic-sap-consulting` },
+    { name: "SAP ERP Implementation", href: `/${locale}/services/sap-erp-implementation` },
+    { name: "SAP Technical Services", href: `/${locale}/services/sap-technical-services` },
+    { name: "SAP Cloud Solutions", href: `/${locale}/services/sap-cloud-solutions` },
+    { name: "SAP Analytics", href: `/${locale}/services/sap-analytics-intelligence` },
   ];
 
   const solutions = [
-    { name: t('solutions.eInvoice'), href: "#e-invoice" },
-    { name: t('solutions.eArchive'), href: "#e-archive" },
-    { name: t('solutions.eLedger'), href: "#e-ledger" },
-    { name: t('solutions.ifrs16'), href: "#ifrs-16" },
-    { name: t('solutions.vatProcessing'), href: "#vat-processing" },
+    { name: t('solutions.eInvoice'), href: `/${locale}/products/e-invoice` },
+    { name: t('solutions.eArchive'), href: `/${locale}/products/e-archive-invoice` },
+    { name: t('solutions.eLedger'), href: `/${locale}/products/e-ledger` },
+    { name: "E-Export", href: `/${locale}/products/e-export` },
+    { name: "E-Commerce", href: `/${locale}/products/e-commerce` },
   ];
 
   return (
@@ -137,7 +140,7 @@ const Footer = () => {
             <h3 className="text-lg md:text-xl font-bold mb-4 md:mb-6 font-sora">
               {t('quickLinks.title')}
             </h3>
-            <ul className="space-y-2 md:space-y-3">
+            <ul className="space-y-2 md:space-y-3 flex flex-col items-center justify-center md:justify-start md:items-start">
               {quickLinks.map((link, index) => (
                 <li key={index}>
                   {link.sectionId ? (
@@ -148,12 +151,12 @@ const Footer = () => {
                       {link.name}
                     </button>
                   ) : (
-                    <a
+                    <Link
                       href={link.href}
                       className="text-sm md:text-base text-gray-300 hover:text-sky-400 transition-colors duration-300 flex items-center justify-center md:justify-start group font-montserrat"
                     >
                       {link.name}
-                    </a>
+                    </Link>
                   )}
                 </li>
               ))}
@@ -168,12 +171,12 @@ const Footer = () => {
             <ul className="space-y-2 md:space-y-3">
               {solutions.map((solution, index) => (
                 <li key={index}>
-                  <a
+                  <Link
                     href={solution.href}
                     className="text-sm md:text-base text-gray-300 hover:text-sky-400 transition-colors duration-300 flex items-center justify-center md:justify-start group font-montserrat"
                   >
                     {solution.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -187,12 +190,12 @@ const Footer = () => {
             <ul className="space-y-2 md:space-y-3">
               {services.map((service, index) => (
                 <li key={index}>
-                  <a
+                  <Link
                     href={service.href}
                     className="text-sm md:text-base text-gray-300 hover:text-sky-400 transition-colors duration-300 flex items-center justify-center md:justify-start group font-montserrat"
                   >
                     {service.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

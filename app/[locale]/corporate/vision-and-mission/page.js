@@ -233,8 +233,8 @@ export default function VisionMissionPage() {
                                 />
                             </div>
                             {/* Floating Elements - hidden on mobile */}
-                            <div className="hidden sm:block absolute -top-4 -right-4 sm:-top-6 sm:-right-6 w-16 h-16 sm:w-24 sm:h-24 bg-blue-500 rounded-xl sm:rounded-2xl items-center justify-center text-white shadow-xl animate-bounce">
-                                <FaBullseye className="text-lg sm:text-2xl" />
+                            <div className="hidden sm:flex absolute -top-4 -right-4 sm:-top-6 sm:-right-6 w-16 h-16 sm:w-24 sm:h-24 bg-blue-500 rounded-xl sm:rounded-2xl items-center justify-center text-white shadow-xl animate-bounce">
+                                <FaBullseye className="text-lg sm:text-3xl" />
                             </div>
                         </div>
                     </div>
@@ -330,7 +330,7 @@ export default function VisionMissionPage() {
             </section>
 
             {/* Strategic Goals */}
-            <section className="py-16 lg:py-20 bg-gray-50">
+            <section className="py-16 lg:py-20 bg-gray-50 hidden">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 font-sora">

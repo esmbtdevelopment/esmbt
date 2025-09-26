@@ -462,7 +462,7 @@ export default function ProductDetailPage({ params }) {
                                 <p className="text-base sm:text-lg lg:text-xl text-gray-300 font-montserrat leading-relaxed mb-6 sm:mb-8">
                                     {product.heroDescription}
                                 </p>
-                                <div className="flex flex-col sm:flex-row gap-4">
+                                <div className="flex-col sm:flex-row gap-4 hidden">
                                     <button className="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
                                         <span className="text-sm sm:text-base">{tUI('getStarted')}</span>
                                         <FaChevronRight className="text-sm" />
