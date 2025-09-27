@@ -65,7 +65,7 @@ export default function PrivacyPolicy() {
                         <div>
                             <h4 className="font-semibold text-gray-900 mb-2 font-sora">C. Information from third parties</h4>
                             <ul className="list-disc pl-6 text-gray-700 font-montserrat space-y-1">
-                                <li>Social logins (if enabled): Google, Facebook, Instagram, X (Twitter), LinkedIn. If you sign in or link an account, we may receive your name, email, profile information, and contact list per that service's settings.</li>
+                                <li>Social logins (if enabled): Google, Facebook, Instagram, X (Twitter), LinkedIn. If you sign in or link an account, we may receive your name, email, profile information, and contact list per that service&apos;s settings.</li>
                                 <li>Service providers/partners (e.g., analytics, hosting, CRM) who help us operate and improve the Services.</li>
                             </ul>
                         </div>
@@ -116,7 +116,7 @@ export default function PrivacyPolicy() {
                         <li>With your direction or consent (e.g., social login linking, testimonials)</li>
                     </ul>
                     <p className="text-gray-700 leading-relaxed font-montserrat">
-                        We do not sell personal information and do not "share" it for cross-context behavioral advertising as defined by the California Consumer Privacy Act (as amended by CPRA). If this changes, we will update this Policy and provide a "Do Not Sell or Share My Personal Information" link.
+                        We do not sell personal information and do not &quot;share&quot; it for cross-context behavioral advertising as defined by the California Consumer Privacy Act (as amended by CPRA). If this changes, we will update this Policy and provide a &quot;Do Not Sell or Share My Personal Information&quot; link.
                     </p>
                 </div>
             )
@@ -139,7 +139,7 @@ export default function PrivacyPolicy() {
                         You can control cookies via your browser settings. If you disable cookies, some features may not function. For email, we may use pixels to understand open rates and improve content.
                     </p>
                     <p className="text-gray-700 leading-relaxed font-montserrat">
-                        <strong>Do Not Track:</strong> Your browser may send "DNT" signals. Because there is no industry standard, we currently do not respond to DNT.
+                        <strong>Do Not Track:</strong> Your browser may send &quot;DNT&quot; signals. Because there is no industry standard, we currently do not respond to DNT.
                     </p>
                 </div>
             )
@@ -204,7 +204,7 @@ export default function PrivacyPolicy() {
                             <strong>Sale/Share:</strong> We do not sell and do not share personal information for cross-context behavioral advertising.
                         </p>
                         <p className="text-gray-700 leading-relaxed font-montserrat">
-                            <strong>Sensitive personal information:</strong> We do not use or disclose SPI for purposes requiring a "limit use" link.
+                            <strong>Sensitive personal information:</strong> We do not use or disclose SPI for purposes requiring a &quot;limit use&quot; link.
                         </p>
                         <p className="text-gray-700 leading-relaxed font-montserrat">
                             <strong>Retention:</strong> See Data retention below.
@@ -279,7 +279,7 @@ export default function PrivacyPolicy() {
             title: "Changes to this Policy",
             content: (
                 <p className="text-gray-700 leading-relaxed font-montserrat">
-                    We may update this Policy from time to time. We will post the updated version with a new "Last updated" date and, where required, notify you by email or prominent notice before changes take effect. Please review this Policy periodically.
+                    We may update this Policy from time to time. We will post the updated version with a new &quot;Last updated&quot; date and, where required, notify you by email or prominent notice before changes take effect. Please review this Policy periodically.
                 </p>
             )
         },
@@ -348,7 +348,7 @@ export default function PrivacyPolicy() {
                         {/* Introduction */}
                         <div className="mb-12">
                             <p className="text-gray-700 leading-relaxed font-montserrat text-lg mb-6">
-                                This Privacy Policy explains how ESM Information Technologies ("ESM," "we," "us," or "our") collects, uses, discloses, and safeguards personal information when you use our website at www.esmbt.com (the "Website") and any related content, features, or services we provide (collectively, the "Services"). It also describes your privacy rights and choices.
+                                This Privacy Policy explains how ESM Information Technologies (&quot;ESM,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) collects, uses, discloses, and safeguards personal information when you use our website at www.esmbt.com (the &quot;Website&quot;) and any related content, features, or services we provide (collectively, the &quot;Services&quot;). It also describes your privacy rights and choices.
                             </p>
                             <p className="text-gray-700 leading-relaxed font-montserrat text-lg">
                                 By using the Services, you acknowledge this Privacy Policy. If you do not agree, please discontinue use.

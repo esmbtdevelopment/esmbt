@@ -29,7 +29,7 @@ export default function TermsOfService() {
             title: "Scope; Other Agreements",
             content: (
                 <p className="text-gray-700 leading-relaxed font-montserrat">
-                    These Terms apply to your use of the Site and any customer or partner portals we link to or provide access to through the Site (each, a "Portal"). If you purchase professional services, software, subscriptions, or support from us, those engagements may be governed by a separate Master Services Agreement (MSA), Statement of Work (SOW), order form, or license terms. If there is a conflict between these Terms and a signed MSA/SOW or specific license terms, the signed document controls.
+                    These Terms apply to your use of the Site and any customer or partner portals we link to or provide access to through the Site (each, a &quot;Portal&quot;). If you purchase professional services, software, subscriptions, or support from us, those engagements may be governed by a separate Master Services Agreement (MSA), Statement of Work (SOW), order form, or license terms. If there is a conflict between these Terms and a signed MSA/SOW or specific license terms, the signed document controls.
                 </p>
             )
         },
@@ -53,9 +53,9 @@ export default function TermsOfService() {
                     <ul className="list-disc pl-6 text-gray-700 font-montserrat space-y-2">
                         <li>Violate any applicable law, regulation, or third-party right;</li>
                         <li>Upload or transmit malware, malicious code, or spam;</li>
-                        <li>Attempt to gain unauthorized access to the Site, a Portal, our systems, or other users' accounts;</li>
+                        <li>Attempt to gain unauthorized access to the Site, a Portal, our systems, or other users&apos; accounts;</li>
                         <li>Copy, modify, reverse engineer, or create derivative works of the Site except as permitted by law;</li>
-                        <li>Interfere with or disrupt the Site's operation or the servers or networks used to make the Site available;</li>
+                        <li>Interfere with or disrupt the Site&apos;s operation or the servers or networks used to make the Site available;</li>
                         <li>Use the Site to collect or process personal data beyond the scope disclosed in our Privacy Policy.</li>
                     </ul>
                     <p className="text-gray-700 leading-relaxed font-montserrat">
@@ -89,10 +89,10 @@ export default function TermsOfService() {
             content: (
                 <div className="space-y-4">
                     <p className="text-gray-700 leading-relaxed font-montserrat">
-                        If you submit information through forms, uploads, or a Portal (collectively, "Your Content"), you represent and warrant that you have all rights necessary to do so, and that Your Content is accurate and lawful. You grant ESM a non-exclusive, worldwide, royalty-free license to use, reproduce, display, and process Your Content solely to provide and improve the Services, fulfill your requests, and as otherwise permitted by our Privacy Policy.
+                        If you submit information through forms, uploads, or a Portal (collectively, &quot;Your Content&quot;), you represent and warrant that you have all rights necessary to do so, and that Your Content is accurate and lawful. You grant ESM a non-exclusive, worldwide, royalty-free license to use, reproduce, display, and process Your Content solely to provide and improve the Services, fulfill your requests, and as otherwise permitted by our Privacy Policy.
                     </p>
                     <p className="text-gray-700 leading-relaxed font-montserrat">
-                        If you provide feedback, suggestions, or ideas ("Feedback"), we may use it without restriction or compensation.
+                        If you provide feedback, suggestions, or ideas (&quot;Feedback&quot;), we may use it without restriction or compensation.
                     </p>
                 </div>
             )
@@ -103,10 +103,10 @@ export default function TermsOfService() {
             content: (
                 <div className="space-y-4">
                     <p className="text-gray-700 leading-relaxed font-montserrat">
-                        The Site may reference or link to third-party websites, tools, or services (including Google reCAPTCHA used to protect forms from abuse). Your use of those services is governed by their own terms and privacy policies. We are not responsible for third-party services and provide them "as is."
+                        The Site may reference or link to third-party websites, tools, or services (including Google reCAPTCHA used to protect forms from abuse). Your use of those services is governed by their own terms and privacy policies. We are not responsible for third-party services and provide them &quot;as is.&quot;
                     </p>
                     <p className="text-gray-700 leading-relaxed font-montserrat">
-                        <strong>reCAPTCHA.</strong> Use of reCAPTCHA is subject to Google's Terms of Service and Privacy Policy; it evaluates certain device and usage data solely for security and fraud-prevention.
+                        <strong>reCAPTCHA.</strong> Use of reCAPTCHA is subject to Google&apos;s Terms of Service and Privacy Policy; it evaluates certain device and usage data solely for security and fraud-prevention.
                     </p>
                 </div>
             )
@@ -143,7 +143,7 @@ export default function TermsOfService() {
                         <strong>Informational Content.</strong> Content on the Site (including blog posts, whitepapers, brochures, and case studies) is for general informational purposes only and does not constitute professional advice or a binding offer. You should not rely on such content without obtaining appropriate professional guidance and entering into a formal agreement where applicable.
                     </p>
                     <p className="text-gray-700 leading-relaxed font-montserrat">
-                        <strong>"AS IS."</strong> THE SITE AND SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE." TO THE FULLEST EXTENT PERMITTED BY LAW, ESM AND ITS SUPPLIERS DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE SITE WILL BE UNINTERRUPTED, SECURE, OR ERROR-FREE, OR THAT DEFECTS WILL BE CORRECTED.
+                        <strong>&quot;AS IS.&quot;</strong> THE SITE AND SERVICES ARE PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE.&quot; TO THE FULLEST EXTENT PERMITTED BY LAW, ESM AND ITS SUPPLIERS DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE SITE WILL BE UNINTERRUPTED, SECURE, OR ERROR-FREE, OR THAT DEFECTS WILL BE CORRECTED.
                     </p>
                 </div>
             )
@@ -157,7 +157,7 @@ export default function TermsOfService() {
                         TO THE FULLEST EXTENT PERMITTED BY LAW, ESM AND ITS AFFILIATES, OFFICERS, EMPLOYEES, AGENTS, AND SUPPLIERS WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF PROFITS, REVENUE, DATA, GOODWILL, OR BUSINESS INTERRUPTION, ARISING OUT OF OR RELATED TO YOUR USE OF (OR INABILITY TO USE) THE SITE OR SERVICES, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
                     </p>
                     <p className="text-gray-700 leading-relaxed font-montserrat">
-                        IN NO EVENT WILL ESM'S TOTAL LIABILITY FOR ALL CLAIMS RELATING TO THE SITE OR THESE TERMS EXCEED THE GREATER OF (A) AMOUNTS YOU PAID US (IF ANY) FOR ACCESSING THE SPECIFIC FEATURE GIVING RISE TO THE CLAIM DURING THE 12 MONTHS BEFORE THE EVENT GIVING RISE TO LIABILITY; OR (B) USD $100.
+                        IN NO EVENT WILL ESM&apos;S TOTAL LIABILITY FOR ALL CLAIMS RELATING TO THE SITE OR THESE TERMS EXCEED THE GREATER OF (A) AMOUNTS YOU PAID US (IF ANY) FOR ACCESSING THE SPECIFIC FEATURE GIVING RISE TO THE CLAIM DURING THE 12 MONTHS BEFORE THE EVENT GIVING RISE TO LIABILITY; OR (B) USD $100.
                     </p>
                     <p className="text-gray-700 leading-relaxed font-montserrat">
                         Some jurisdictions do not allow certain limitations; in such cases, the above limits apply to the maximum extent permitted by law.
@@ -170,7 +170,7 @@ export default function TermsOfService() {
             title: "Indemnification",
             content: (
                 <p className="text-gray-700 leading-relaxed font-montserrat">
-                    You agree to defend, indemnify, and hold harmless ESM and its affiliates, officers, employees, and agents from and against any claims, liabilities, damages, losses, and expenses (including reasonable attorneys' fees) arising out of or related to: (a) Your Content; (b) your use of the Site or Services; (c) your violation of these Terms; or (d) your violation of any law or third-party right.
+                    You agree to defend, indemnify, and hold harmless ESM and its affiliates, officers, employees, and agents from and against any claims, liabilities, damages, losses, and expenses (including reasonable attorneys&apos; fees) arising out of or related to: (a) Your Content; (b) your use of the Site or Services; (c) your violation of these Terms; or (d) your violation of any law or third-party right.
                 </p>
             )
         },
@@ -206,7 +206,7 @@ export default function TermsOfService() {
             title: "Government Users",
             content: (
                 <p className="text-gray-700 leading-relaxed font-montserrat">
-                    If accessed by or on behalf of the U.S. Government, the Site is provided as "Commercial Computer Software" and "Commercial Computer Software Documentation," with only those rights as set forth in these Terms. Use, duplication, or disclosure by the Government is subject to restrictions set forth in FAR 12.212 and DFARS 227.7202.
+                    If accessed by or on behalf of the U.S. Government, the Site is provided as &quot;Commercial Computer Software&quot; and &quot;Commercial Computer Software Documentation,&quot; with only those rights as set forth in these Terms. Use, duplication, or disclosure by the Government is subject to restrictions set forth in FAR 12.212 and DFARS 227.7202.
                 </p>
             )
         },
@@ -219,7 +219,7 @@ export default function TermsOfService() {
                         These Terms are governed by the laws of the State of California, without regard to its conflicts-of-laws principles, and the federal laws of the United States.
                     </p>
                     <p className="text-gray-700 leading-relaxed font-montserrat">
-                        <strong>Informal Resolution.</strong> Before filing a claim, you agree to try to resolve the dispute informally by contacting us at info@esmbt.com. We'll try to resolve the dispute within 30 days.
+                        <strong>Informal Resolution.</strong> Before filing a claim, you agree to try to resolve the dispute informally by contacting us at info@esmbt.com. We&apos;ll try to resolve the dispute within 30 days.
                     </p>
                     <p className="text-gray-700 leading-relaxed font-montserrat">
                         <strong>Arbitration & Class-Action Waiver (Business Users).</strong> Except for claims seeking injunctive relief or relating to intellectual property, any dispute between you (acting in a business capacity) and ESM arising from or relating to these Terms or the Site will be resolved by binding arbitration administered by JAMS under its Streamlined Arbitration Rules in Orange County, California, in English, before a single arbitrator. You waive any right to participate in a class action or class-wide arbitration. If you are a consumer with non-business use and mandatory local law prohibits arbitration/class-action waiver, this paragraph does not apply to you, and disputes will be resolved in the state and federal courts located in Orange County, California, and you consent to their jurisdiction.
@@ -304,7 +304,7 @@ export default function TermsOfService() {
                         {/* Introduction */}
                         <div className="mb-12">
                             <p className="text-gray-700 leading-relaxed font-montserrat text-lg mb-6">
-                                These Terms of Service ("Terms") govern your access to and use of esmbt.com (the "Site") and any related content, portals, or services we make available through the Site (collectively, the "Services"). The Site is operated by ESM Information Technologies ("ESM," "we," "us," or "our").
+                                These Terms of Service (&quot;Terms&quot;) govern your access to and use of esmbt.com (the &quot;Site&quot;) and any related content, portals, or services we make available through the Site (collectively, the &quot;Services&quot;). The Site is operated by ESM Information Technologies (&quot;ESM,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;).
                             </p>
                             <p className="text-gray-700 leading-relaxed font-montserrat text-lg">
                                 By accessing or using the Site or Services, you agree to these Terms and our Privacy Policy. If you are using the Services on behalf of an organization, you represent that you have authority to bind that organization to these Terms. If you do not agree, do not use the Site or Services.
