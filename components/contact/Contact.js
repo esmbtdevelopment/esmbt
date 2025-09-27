@@ -66,14 +66,14 @@ const Contact = () => {
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 font-sora leading-tight">
             {t('subtitle')}
           </h2>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed font-montserrat">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed font-montserrat">
             {t('description')}
           </p>
         </div>
 
         <div className="flex flex-col lg:flex-row justify-center lg:justify-end gap-6 lg:gap-8 pb-6 sm:pb-10 px-4 lg:pr-10 relative">
           {/* Background Image */}
-          <div className="w-full absolute bottom-full md:bottom-0 left-0 -z-10 opacity-80 lg:opacity-100">
+          <div className="w-full absolute bottom-full md:bottom-0 left-0 -z-10 filter brightness-75 md:brightness-100">
             <Image
               src="/images/contact.jpg"
               alt="Contact"

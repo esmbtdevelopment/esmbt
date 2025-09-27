@@ -27,7 +27,7 @@ function Services() {
   const services = [
     {
       id: 1,
-      slug: "e-commerce",
+      slug: "strategic-sap-consulting",
       icon: <Image src="/images/services/landing/e-commerce.jpg" className="rounded-tr-3xl rounded-bl-3xl object-cover drop-shadow-2xl" alt={tProducts('landing.ecommerce.title')} width={500} height={500} />,
       title: tProducts('landing.ecommerce.title'),
       description: tProducts('landing.ecommerce.description'),
@@ -41,7 +41,7 @@ function Services() {
 
     {
       id: 2,
-      slug: "e-archive-invoice",
+      slug: "sap-erp-implementation",
       icon: <Image src="/images/services/landing/archive.jpg" className="rounded-tr-3xl rounded-bl-3xl object-cover drop-shadow-2xl" alt={tProducts('landing.earchive.title')} width={500} height={500} />,
       title: tProducts('landing.earchive.title'),
       description: tProducts('landing.earchive.description'),
@@ -54,7 +54,7 @@ function Services() {
     },
     {
       id: 3,
-      slug: "e-invoice",
+      slug: "sap-technical-services",
       icon: <Image src="/images/services/landing/invoice.jpg" className="rounded-tr-3xl rounded-bl-3xl object-cover drop-shadow-2xl" alt={tProducts('landing.einvoice.title')} width={500} height={500} />,
       title: tProducts('landing.einvoice.title'),
       description: tProducts('landing.einvoice.description'),
@@ -67,7 +67,7 @@ function Services() {
     },
     {
       id: 4,
-      slug: "e-export",
+      slug: "sap-cloud-solutions",
       icon: <Image src="/images/services/landing/truck.jpg" className="rounded-tr-3xl rounded-bl-3xl object-cover drop-shadow-2xl" alt={tProducts('landing.eexport.title')} width={500} height={500} />,
       title: tProducts('landing.eexport.title'),
       description: tProducts('landing.eexport.description'),

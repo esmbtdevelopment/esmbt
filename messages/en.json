@@ -561,7 +561,31 @@
       "expertTeamMembers": "Expert Team Members"
     },
     "viewOurServices": "View Our Services",
-    "description": "Ready to transform your business with our SAP expertise? Contact us today to discuss your digital transformation needs."
+    "description": "Ready to transform your business with our SAP expertise? Contact us today to discuss your digital transformation needs.",
+    "termsOfService": {
+      "title": "Terms of Service",
+      "subtitle": "Legal Terms & Conditions",
+      "description": "Please read these terms carefully before using our services. These terms govern your use of our website and services.",
+      "hero": {
+        "badge": "Legal Information",
+        "title": "Terms of",
+        "titleHighlight": "Service",
+        "description": "These Terms of Service govern your access to and use of esmbt.com and any related content, portals, or services we make available through the Site.",
+        "effectiveDate": "Effective Date: September 26, 2025"
+      }
+    },
+    "privacyPolicy": {
+      "title": "Privacy Policy",
+      "subtitle": "Privacy Protection & Data Handling",
+      "description": "Learn how we collect, use, and protect your personal information in compliance with privacy laws.",
+      "hero": {
+        "badge": "Privacy Protection",
+        "title": "Privacy",
+        "titleHighlight": "Policy",
+        "description": "Your privacy matters to us. Learn how we collect, use, and protect your personal information.",
+        "effectiveDate": "Last updated: September 26, 2025"
+      }
+    }
   },
   "metadata": {
     "title": "ESM - Digital Transformation & Technology Solutions",

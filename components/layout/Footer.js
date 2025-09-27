@@ -78,7 +78,7 @@ const Footer = () => {
           <div className="flex justify-center lg:justify-end order-3">
             <div>
               <div className="space-y-3 md:space-y-4">
-                <div className="flex items-center justify-center lg:justify-start space-x-3 text-gray-300">
+                <div className="flex flex-col md:flex-row text-center md:text-left gap-2 md:gap-0 items-center justify-center lg:justify-start space-x-3 text-gray-300">
                   <FaMapMarkerAlt className="text-sky-400 flex-shrink-0" />
                   <span className="font-montserrat text-sm md:text-base">
                     {t('contact.address')}
@@ -213,17 +213,17 @@ const Footer = () => {
             </div>
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-xs md:text-sm">
               <a
-                href="#privacy"
+                href={`/${locale}/corporate/privacy-policy`}
                 className="text-gray-400 hover:text-sky-400 transition-colors duration-300 font-montserrat"
               >
                 {t('privacyPolicy')}
               </a>
-              <a
-                href="#terms"
+              <Link
+                href={`/${locale}/corporate/terms-of-service`}
                 className="text-gray-400 hover:text-sky-400 transition-colors duration-300 font-montserrat"
               >
                 {t('termsOfService')}
-              </a>
+              </Link>
               <a
                 href="#cookies"
                 className="text-gray-400 hover:text-sky-400 transition-colors duration-300 font-montserrat"

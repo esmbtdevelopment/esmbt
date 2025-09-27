@@ -20,6 +20,7 @@ import {
 } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
+import { isOnLandingPage, scrollToSection } from "@/utils/navigation";
 
 // Detailed product data
 const productData = {
@@ -353,6 +354,11 @@ export default function ProductDetailPage({ params }) {
     const tUI = useTranslations('productDetails.ui');
     const tNav = useTranslations('navigation');
 
+    const goToContact = () => {
+        const onLandingPage = isOnLandingPage();
+        scrollToSection('contact', onLandingPage);
+    };
+
     // Get product data with translations
     const getProductData = (productName) => {
         const baseProduct = productData[productName];
@@ -602,7 +608,7 @@ export default function ProductDetailPage({ params }) {
                                 {tUI('joinThousands')} {product.title}. {tUI('getFreeConsultation')}
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <button className="border-2 border-sky-500 text-sky-400 hover:bg-sky-500 hover:text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
+                                <button className="border-2 border-sky-500 text-sky-400 hover:bg-sky-500 hover:text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105" onClick={() => goToContact()}>
                                     <span className="text-sm sm:text-base">{tUI('contactSales')}</span>
                                 </button>
                             </div>

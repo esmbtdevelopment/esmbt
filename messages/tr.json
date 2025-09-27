@@ -63,12 +63,12 @@
     "info": {
       "location": {
         "label": "Konumumuz",
-        "value": "CA, Irvine – Irvine Spectrum Drive",
-        "description": "300 Spectrum Center Drive, Suite 400, Irvine, 92618"
+        "value": "Eğitim Mah. Fahrettin Kerim Gökay Cd. No:151",
+        "description": "Kadıköy, İstanbul"
       },
       "phone": {
         "label": "Telefon Numarası",
-        "value": "+1 949 740 79 79",
+        "value": "+90 553 394 93 79",
         "description": "Pzt–Cuma, 09:00-18:00 PST arasında ulaşılabilir"
       },
       "email": {
@@ -164,9 +164,9 @@
     },
     "contact": {
       "title": "İletişim Bilgileri",
-      "phone": "+1 949 740 79 79",
+      "phone": "+90 553 394 93 79",
       "email": "info@esmbt.com",
-      "address": "300 Spectrum Center Drive, Suite 400, Irvine, CA 92618"
+      "address": "Eğitim Mah. Fahrettin Kerim Gökay Cd. No:151, Kadıköy, İstanbul"
     },
     "newsletter": {
       "title": "Güncel Kalın",
@@ -566,7 +566,31 @@
       "expertTeamMembers": "Uzman Ekip Üyeleri"
     },
     "viewOurServices": "Hizmetlerimizi Görüntüle",
-    "description": "İşinizi SAP uzmanlığımızla dönüştürmeye hazır mısınız? Dijital dönüşüm ihtiyaçlarınızı görüşmek için bugün bizimle iletişime geçin."
+    "description": "İşinizi SAP uzmanlığımızla dönüştürmeye hazır mısınız? Dijital dönüşüm ihtiyaçlarınızı görüşmek için bugün bizimle iletişime geçin.",
+    "termsOfService": {
+      "title": "Hizmet Şartları",
+      "subtitle": "Yasal Şartlar ve Koşullar",
+      "description": "Hizmetlerimizi kullanmadan önce lütfen bu şartları dikkatle okuyun. Bu şartlar web sitemizi ve hizmetlerimizi kullanımınızı yönetir.",
+      "hero": {
+        "badge": "Yasal Bilgiler",
+        "title": "Hizmet",
+        "titleHighlight": "Şartları",
+        "description": "Bu Hizmet Şartları, esmbt.com'a erişiminizi ve kullanımınızı ve Site aracılığıyla sunduğumuz ilgili içerik, portallar veya hizmetleri yönetir.",
+        "effectiveDate": "Yürürlük Tarihi: 26 Eylül 2025"
+      }
+    },
+    "privacyPolicy": {
+      "title": "Gizlilik Politikası",
+      "subtitle": "Gizlilik Koruması ve Veri İşleme",
+      "description": "Kişisel bilgilerinizi gizlilik yasalarına uygun olarak nasıl topladığımızı, kullandığımızı ve koruduğumuzu öğrenin.",
+      "hero": {
+        "badge": "Gizlilik Koruması",
+        "title": "Gizlilik",
+        "titleHighlight": "Politikası",
+        "description": "Gizliliğiniz bizim için önemli. Kişisel bilgilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu öğrenin.",
+        "effectiveDate": "Son güncelleme: 26 Eylül 2025"
+      }
+    }
   },
   "metadata": {
     "title": "ESM - Dijital Dönüşüm & Teknoloji Çözümleri",
