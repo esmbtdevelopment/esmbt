@@ -1399,6 +1399,240 @@
         "heroDescription": "Expert guidance for your SAP transformation journey with strategic planning and business process optimization.",
         "fullDescription": "Our Strategic SAP Consulting services provide comprehensive roadmap development, business process analysis, and change management support to ensure successful SAP implementations. We combine industry best practices with your unique business requirements to deliver transformational results.",
         "description": "Expert guidance for your SAP transformation journey with strategic planning and business process optimization.",
+        "digitalTransformation": {
+          "title": "SAP Digital Transformation Strategy",
+          "description": "In today's rapidly evolving digital landscape, businesses must leverage SAP technologies to stay competitive. Our SAP Digital Transformation Strategy service helps you navigate this complex journey with confidence.",
+          "ourApproach": {
+            "title": "Our Approach",
+            "description": "We employ a proven methodology that combines technical expertise with deep business process knowledge to create a transformation roadmap that delivers measurable results:",
+            "currentState": {
+              "title": "Current State Assessment",
+              "description": "Comprehensive analysis of your existing SAP landscape, business processes, and pain points."
+            },
+            "futureVision": {
+              "title": "Future Vision Workshop",
+              "description": "Collaborative sessions to define your digital transformation objectives and success metrics."
+            },
+            "techBlueprint": {
+              "title": "Technology Blueprint",
+              "description": "Detailed architecture design for your future SAP ecosystem including S/4HANA, cloud solutions, and integrations."
+            },
+            "roadmap": {
+              "title": "Roadmap Development",
+              "description": "Phased implementation plan with milestones, resource requirements, and ROI analysis."
+            }
+          },
+          "keyBenefits": {
+            "title": "Key Benefits",
+            "strategicAlignment": {
+              "title": "Strategic Alignment:",
+              "description": "Ensure your SAP strategy supports overall business objectives"
+            },
+            "innovationAdoption": {
+              "title": "Innovation Adoption:",
+              "description": "Leverage emerging SAP technologies like AI, ML, and IoT"
+            },
+            "processOptimization": {
+              "title": "Process Optimization:",
+              "description": "Streamline operations with intelligent automation"
+            },
+            "riskMitigation": {
+              "title": "Risk Mitigation:",
+              "description": "Minimize disruption through careful planning and execution"
+            }
+          }
+        },
+        "landscapeAssessment": {
+          "title": "SAP Landscape Assessment & Optimization",
+          "description": "Many organizations struggle with complex, fragmented SAP landscapes that have evolved organically over time. Our SAP Landscape Assessment service provides a clear picture of your current environment and actionable recommendations for optimization.",
+          "didYouKnow": {
+            "title": "Did You Know?",
+            "description": "Our assessments typically identify 20-35% cost savings opportunities through:",
+            "licenseOptimization": "License optimization",
+            "infrastructureConsolidation": "Infrastructure consolidation",
+            "processEfficiency": "Process efficiency gains"
+          },
+          "methodology": {
+            "title": "Our Assessment Methodology",
+            "step1": {
+              "title": "Current State Analysis",
+              "description": "Detailed inventory of your SAP systems, modules, customizations, and integrations."
+            },
+            "step2": {
+              "title": "Technical Health Check",
+              "description": "Evaluation of system performance, stability, security, and compliance with SAP best practices."
+            },
+            "step3": {
+              "title": "Business Process Alignment",
+              "description": "Assessment of how well your SAP landscape supports current business requirements."
+            },
+            "step4": {
+              "title": "Optimization Opportunities",
+              "description": "Identification of consolidation, upgrade, and modernization possibilities."
+            },
+            "step5": {
+              "title": "Roadmap Development",
+              "description": "Prioritized recommendations with business case and implementation plan."
+            }
+          },
+          "focusAreas": {
+            "title": "Key Focus Areas",
+            "systemArchitecture": {
+              "title": "System Architecture",
+              "description": "Evaluate system landscape design, integration points, and technical debt."
+            },
+            "performance": {
+              "title": "Performance & Scalability",
+              "description": "Analyze system performance metrics and scalability limitations."
+            },
+            "security": {
+              "title": "Security & Compliance",
+              "description": "Review security configurations, authorization concepts, and compliance."
+            },
+            "costOptimization": {
+              "title": "Cost Optimization",
+              "description": "Identify opportunities to reduce TCO through license and infrastructure optimization."
+            }
+          }
+        },
+        "s4hanaReadiness": {
+          "title": "Your Path to S/4HANA Success",
+          "description": "The transition to SAP S/4HANA represents a significant opportunity to transform your business operations. Our comprehensive approach ensures you maximize the value of your investment while minimizing risk and disruption.",
+          "whyMigrate": {
+            "title": "Why Migrate to S/4HANA?",
+            "description": "SAP has announced that mainstream maintenance for ECC will end in 2027. Early movers to S/4HANA gain competitive advantages:",
+            "benefit1": "Simplified data model with 10x faster analytics",
+            "benefit2": "Embedded AI and machine learning capabilities",
+            "benefit3": "Cloud-ready architecture with hybrid deployment options",
+            "benefit4": "Modern user experience with Fiori UX"
+          },
+          "migrationApproach": {
+            "title": "Our Migration Approach",
+            "step1": {
+              "title": "Readiness Assessment",
+              "description": "Comprehensive evaluation of your current SAP environment to identify gaps and requirements for S/4HANA."
+            },
+            "step2": {
+              "title": "Strategy Definition",
+              "description": "Selection of the optimal migration path (greenfield, brownfield, or hybrid) based on your business needs."
+            },
+            "step3": {
+              "title": "Custom Code Analysis",
+              "description": "Identification and remediation of custom code that may require modification for S/4HANA compatibility."
+            },
+            "step4": {
+              "title": "Data Migration Planning",
+              "description": "Development of a comprehensive data migration strategy including data cleansing and transformation."
+            },
+            "step5": {
+              "title": "Process Redesign",
+              "description": "Adaptation of business processes to leverage S/4HANA innovations and best practices."
+            },
+            "step6": {
+              "title": "Implementation Roadmap",
+              "description": "Detailed project plan with milestones, resource requirements, and risk mitigation strategies."
+            }
+          },
+          "migrationPaths": {
+            "title": "Migration Path Options",
+            "bestFor": "Best for:",
+            "greenfield": {
+              "title": "Greenfield",
+              "description": "Complete reimplementation with clean optimization.",
+              "bestFor": "Organizations seeking radical change"
+            },
+            "brownfield": {
+              "title": "Brownfield",
+              "description": "Technical conversion of existing system.",
+              "bestFor": "Businesses wanting minimal process change"
+            },
+            "hybrid": {
+              "title": "Hybrid",
+              "description": "Selective approach combining both methods.",
+              "bestFor": "Organizations with complex landscapes"
+            }
+          }
+        },
+        "licenseOptimization": {
+          "title": "Optimize Your SAP Licensing Costs",
+          "description": "Many organizations unknowingly overspend on SAP licenses due to inefficient usage tracking, incorrect license type assignments, and lack of optimization strategies. Our SAP License Optimization service helps you regain control and reduce costs.",
+          "costOfNonCompliance": {
+            "title": "The Cost of Non-Compliance",
+            "description": "SAP audits can result in significant unbudgeted expenses. Our clients typically see:",
+            "stat1": {
+              "title": "20-40%",
+              "description": "Of users may be incorrectly classified"
+            },
+            "stat2": {
+              "title": "15-30%",
+              "description": "Potential overspending on licenses"
+            }
+          },
+          "optimizationProcess": {
+            "title": "Our License Optimization Process",
+            "step1": {
+              "title": "License Inventory",
+              "description": "Comprehensive audit of all SAP licenses including types, quantities, and assignments."
+            },
+            "step2": {
+              "title": "Usage Analysis",
+              "description": "Detailed tracking of actual system usage to identify optimization opportunities."
+            },
+            "step3": {
+              "title": "Classification Review",
+              "description": "Verification of user classifications to ensure appropriate license types are assigned."
+            },
+            "step4": {
+              "title": "Optimization Plan",
+              "description": "Actionable recommendations to reduce costs while maintaining compliance."
+            }
+          },
+          "savingsOpportunities": {
+            "title": "Potential Savings Opportunities",
+            "table": {
+              "area": "Area",
+              "savings": "Potential Savings",
+              "action": "Action",
+              "row1": {
+                "area": "User Reclassification",
+                "savings": "Up to 40%",
+                "action": "Move users to appropriate license types"
+              },
+              "row2": {
+                "area": "Unused Licenses",
+                "savings": "15-25%",
+                "action": "Identify and eliminate unused licenses"
+              },
+              "row3": {
+                "area": "Package Optimization",
+                "savings": "10-20%",
+                "action": "Right-size SAP packages to actual needs"
+              },
+              "row4": {
+                "area": "Indirect Access",
+                "savings": "Varies",
+                "action": "Mitigate risks of non-compliance"
+              }
+            }
+          },
+          "complianceAssurance": {
+            "title": "Compliance Assurance",
+            "description": "Beyond cost savings, our service ensures your organization remains compliant with SAP's licensing terms, protecting you from audit risks and potential penalties.",
+            "item1": {
+              "title": "Audit Preparation:",
+              "description": "Be ready for SAP audits with complete documentation"
+            },
+            "item2": {
+              "title": "License Documentation:",
+              "description": "Maintain accurate records of all licenses"
+            },
+            "item3": {
+              "title": "Risk Mitigation:",
+              "description": "Identify and address potential compliance issues"
+            }
+          }
+        },
+        "learnMore": "Learn More",
         "benefits": {
           "0": "Reduced implementation costs by 30%",
           "1": "Improved business process efficiency",

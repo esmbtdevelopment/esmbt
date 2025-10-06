@@ -1395,6 +1395,240 @@
         "heroDescription": "Stratejik planlama ve iş süreci optimizasyonu ile SAP dönüşüm yolculuğunuz için uzman rehberliği.",
         "fullDescription": "Stratejik SAP Danışmanlık hizmetlerimiz, kapsamlı yol haritası geliştirme, iş süreci analizi ve değişim yönetimi desteği sağlayarak başarılı SAP uygulamalarını garanti eder. Sektör en iyi uygulamalarını benzersiz iş gereksinimlerinizle birleştirerek dönüşümsel sonuçlar sunarız.",
         "description": "Stratejik planlama ve iş süreci optimizasyonu ile SAP dönüşüm yolculuğunuz için uzman rehberliği.",
+        "digitalTransformation": {
+          "title": "SAP Dijital Dönüşüm Stratejisi",
+          "description": "Günümüzün hızla gelişen dijital ortamında, işletmeler rekabetçi kalmak için SAP teknolojilerinden yararlanmalıdır. SAP Dijital Dönüşüm Stratejisi hizmetimiz, bu karmaşık yolculukta size güvenle rehberlik eder.",
+          "ourApproach": {
+            "title": "Yaklaşımımız",
+            "description": "Ölçülebilir sonuçlar veren bir dönüşüm yol haritası oluşturmak için teknik uzmanlığı derin iş süreci bilgisiyle birleştiren kanıtlanmış bir metodoloji kullanıyoruz:",
+            "currentState": {
+              "title": "Mevcut Durum Değerlendirmesi",
+              "description": "Mevcut SAP ortamınızın, iş süreçlerinizin ve sorunlu noktalarınızın kapsamlı analizi."
+            },
+            "futureVision": {
+              "title": "Gelecek Vizyon Çalıştayı",
+              "description": "Dijital dönüşüm hedeflerinizi ve başarı ölçütlerinizi tanımlamak için işbirlikçi oturumlar."
+            },
+            "techBlueprint": {
+              "title": "Teknoloji Planı",
+              "description": "S/4HANA, bulut çözümleri ve entegrasyonlar dahil olmak üzere gelecekteki SAP ekosisteминiz için detaylı mimari tasarım."
+            },
+            "roadmap": {
+              "title": "Yol Haritası Geliştirme",
+              "description": "Kilometre taşları, kaynak gereksinimleri ve yatırım getirisi analizi ile aşamalı uygulama planı."
+            }
+          },
+          "keyBenefits": {
+            "title": "Temel Faydalar",
+            "strategicAlignment": {
+              "title": "Stratejik Uyum:",
+              "description": "SAP stratejinizin genel iş hedeflerini desteklediğinden emin olun"
+            },
+            "innovationAdoption": {
+              "title": "İnovasyon Benimseme:",
+              "description": "AI, ML ve IoT gibi yeni SAP teknolojilerinden yararlanın"
+            },
+            "processOptimization": {
+              "title": "Süreç Optimizasyonu:",
+              "description": "Akıllı otomasyon ile operasyonları kolaylaştırın"
+            },
+            "riskMitigation": {
+              "title": "Risk Azaltma:",
+              "description": "Dikkatli planlama ve yürütme ile kesinti süresini minimize edin"
+            }
+          }
+        },
+        "landscapeAssessment": {
+          "title": "SAP Ortam Değerlendirmesi ve Optimizasyonu",
+          "description": "Birçok organizasyon, zamanla organik olarak gelişen karmaşık, parçalanmış SAP ortamlarıyla mücadele ediyor. SAP Ortam Değerlendirme hizmetimiz, mevcut ortamınızın net bir resmini ve optimizasyon için uygulanabilir öneriler sunar.",
+          "didYouKnow": {
+            "title": "Biliyor musunuz?",
+            "description": "Değerlendirmelerimiz tipik olarak aşağıdaki yöntemlerle %20-35 maliyet tasarrufu fırsatları belirler:",
+            "licenseOptimization": "Lisans optimizasyonu",
+            "infrastructureConsolidation": "Altyapı konsolidasyonu",
+            "processEfficiency": "Süreç verimlilik kazanımları"
+          },
+          "methodology": {
+            "title": "Değerlendirme Metodolojimiz",
+            "step1": {
+              "title": "Mevcut Durum Analizi",
+              "description": "SAP sistemlerinizin, modüllerinizin, özelleştirmelerinizin ve entegrasyonlarınızın detaylı envanteri."
+            },
+            "step2": {
+              "title": "Teknik Sağlık Kontrolü",
+              "description": "Sistem performansı, istikrarı, güvenliği ve SAP en iyi uygulamalarına uygunluğun değerlendirilmesi."
+            },
+            "step3": {
+              "title": "İş Süreci Uyumu",
+              "description": "SAP ortamınızın mevcut iş gereksinimlerini ne kadar iyi desteklediğinin değerlendirilmesi."
+            },
+            "step4": {
+              "title": "Optimizasyon Fırsatları",
+              "description": "Konsolidasyon, yükseltme ve modernizasyon olanaklarının belirlenmesi."
+            },
+            "step5": {
+              "title": "Yol Haritası Geliştirme",
+              "description": "İş gerekçesi ve uygulama planı ile önceliklendirilmiş öneriler."
+            }
+          },
+          "focusAreas": {
+            "title": "Temel Odak Alanları",
+            "systemArchitecture": {
+              "title": "Sistem Mimarisi",
+              "description": "Sistem ortam tasarımını, entegrasyon noktalarını ve teknik borcu değerlendirin."
+            },
+            "performance": {
+              "title": "Performans ve Ölçeklenebilirlik",
+              "description": "Sistem performans metriklerini ve ölçeklenebilirlik sınırlamalarını analiz edin."
+            },
+            "security": {
+              "title": "Güvenlik ve Uyumluluk",
+              "description": "Güvenlik yapılandırmalarını, yetkilendirme kavramlarını ve uyumluluğu inceleyin."
+            },
+            "costOptimization": {
+              "title": "Maliyet Optimizasyonu",
+              "description": "Lisans ve altyapı optimizasyonu yoluyla TCO'yu azaltma fırsatlarını belirleyin."
+            }
+          }
+        },
+        "s4hanaReadiness": {
+          "title": "S/4HANA Başarıya Giden Yolunuz",
+          "description": "SAP S/4HANA'ya geçiş, iş operasyonlarınızı dönüştürmek için önemli bir fırsat sunar. Kapsamlı yaklaşımımız, riski ve kesintileri minimize ederken yatırımınızın değerini maksimize etmenizi sağlar.",
+          "whyMigrate": {
+            "title": "Neden S/4HANA'ya Geçilmeli?",
+            "description": "SAP, ECC için ana bakımın 2027'de sona ereceğini duyurdu. S/4HANA'ya erken geçenler rekabet avantajları kazanır:",
+            "benefit1": "10 kat daha hızlı analitik ile basitleştirilmiş veri modeli",
+            "benefit2": "Gömülü yapay zeka ve makine öğrenmesi yetenekleri",
+            "benefit3": "Hibrit dağıtım seçenekleri ile buluta hazır mimari",
+            "benefit4": "Fiori UX ile modern kullanıcı deneyimi"
+          },
+          "migrationApproach": {
+            "title": "Göç Yaklaşımımız",
+            "step1": {
+              "title": "Hazırlık Değerlendirmesi",
+              "description": "S/4HANA için boşlukları ve gereksinimleri belirlemek üzere mevcut SAP ortamınızın kapsamlı değerlendirmesi."
+            },
+            "step2": {
+              "title": "Strateji Tanımı",
+              "description": "İş ihtiyaçlarınıza göre optimal göç yolunun (greenfield, brownfield veya hibrit) seçimi."
+            },
+            "step3": {
+              "title": "Özel Kod Analizi",
+              "description": "S/4HANA uyumluluğu için değişiklik gerektirebilecek özel kodun belirlenmesi ve düzeltilmesi."
+            },
+            "step4": {
+              "title": "Veri Göçü Planlaması",
+              "description": "Veri temizleme ve dönüştürmeyi içeren kapsamlı veri göçü stratejisinin geliştirilmesi."
+            },
+            "step5": {
+              "title": "Süreç Yeniden Tasarımı",
+              "description": "S/4HANA yeniliklerinden ve en iyi uygulamalarından yararlanmak için iş süreçlerinin adaptasyonu."
+            },
+            "step6": {
+              "title": "Uygulama Yol Haritası",
+              "description": "Kilometre taşları, kaynak gereksinimleri ve risk azaltma stratejileri ile detaylı proje planı."
+            }
+          },
+          "migrationPaths": {
+            "title": "Göç Yolu Seçenekleri",
+            "bestFor": "En uygun:",
+            "greenfield": {
+              "title": "Greenfield",
+              "description": "Temiz optimizasyon ile tam yeniden uygulama.",
+              "bestFor": "Radikal değişim arayan organizasyonlar"
+            },
+            "brownfield": {
+              "title": "Brownfield",
+              "description": "Mevcut sistemin teknik dönüşümü.",
+              "bestFor": "Minimum süreç değişikliği isteyen işletmeler"
+            },
+            "hybrid": {
+              "title": "Hibrit",
+              "description": "Her iki yöntemi birleştiren seçici yaklaşım.",
+              "bestFor": "Karmaşık ortamlara sahip organizasyonlar"
+            }
+          }
+        },
+        "licenseOptimization": {
+          "title": "SAP Lisans Maliyetlerinizi Optimize Edin",
+          "description": "Birçok organizasyon, verimsiz kullanım takibi, yanlış lisans türü atamaları ve optimizasyon stratejilerinin eksikliği nedeniyle farkında olmadan SAP lisanslarına fazla harcama yapar. SAP Lisans Optimizasyon hizmetimiz, kontrolü yeniden kazanmanıza ve maliyetleri azaltmanıza yardımcı olur.",
+          "costOfNonCompliance": {
+            "title": "Uyumsuzluğun Maliyeti",
+            "description": "SAP denetimleri, önemli bütçe dışı giderlere neden olabilir. Müşterilerimiz tipik olarak şunları görür:",
+            "stat1": {
+              "title": "20-40%",
+              "description": "Kullanıcılar yanlış sınıflandırılmış olabilir"
+            },
+            "stat2": {
+              "title": "15-30%",
+              "description": "Lisanslarda potansiyel fazla harcama"
+            }
+          },
+          "optimizationProcess": {
+            "title": "Lisans Optimizasyon Sürecimiz",
+            "step1": {
+              "title": "Lisans Envanteri",
+              "description": "Türleri, miktarları ve atamaları dahil olmak üzere tüm SAP lisanslarının kapsamlı denetimi."
+            },
+            "step2": {
+              "title": "Kullanım Analizi",
+              "description": "Optimizasyon fırsatlarını belirlemek için gerçek sistem kullanımının detaylı takibi."
+            },
+            "step3": {
+              "title": "Sınıflandırma İncelemesi",
+              "description": "Uygun lisans türlerinin atandığından emin olmak için kullanıcı sınıflandırmalarının doğrulanması."
+            },
+            "step4": {
+              "title": "Optimizasyon Planı",
+              "description": "Uyumluluğu korurken maliyetleri azaltmak için uygulanabilir öneriler."
+            }
+          },
+          "savingsOpportunities": {
+            "title": "Potansiyel Tasarruf Fırsatları",
+            "table": {
+              "area": "Alan",
+              "savings": "Potansiyel Tasarruf",
+              "action": "Aksiyon",
+              "row1": {
+                "area": "Kullanıcı Yeniden Sınıflandırması",
+                "savings": "%40'a kadar",
+                "action": "Kullanıcıları uygun lisans türlerine taşıma"
+              },
+              "row2": {
+                "area": "Kullanılmayan Lisanslar",
+                "savings": "%15-25",
+                "action": "Kullanılmayan lisansları belirleme ve ortadan kaldırma"
+              },
+              "row3": {
+                "area": "Paket Optimizasyonu",
+                "savings": "%10-20",
+                "action": "SAP paketlerini gerçek ihtiyaçlara göre boyutlandırma"
+              },
+              "row4": {
+                "area": "Dolaylı Erişim",
+                "savings": "Değişken",
+                "action": "Uyumsuzluk risklerini azaltma"
+              }
+            }
+          },
+          "complianceAssurance": {
+            "title": "Uyumluluk Güvencesi",
+            "description": "Maliyet tasarrufunun ötesinde, hizmetimiz organizasyonunuzun SAP'nin lisanslama koşullarına uygun kalmasını sağlar, sizi denetim risklerinden ve potansiyel cezalardan korur.",
+            "item1": {
+              "title": "Denetim Hazırlığı:",
+              "description": "Eksiksiz dokümantasyonla SAP denetimlerine hazır olun"
+            },
+            "item2": {
+              "title": "Lisans Dokümantasyonu:",
+              "description": "Tüm lisansların doğru kayıtlarını tutun"
+            },
+            "item3": {
+              "title": "Risk Azaltma:",
+              "description": "Potansiyel uyumluluk sorunlarını belirleyin ve ele alın"
+            }
+          }
+        },
+        "learnMore": "Daha Fazla Bilgi",
         "benefits": {
           "0": "Uygulama maliyetlerinde %30 azalma",
           "1": "Gelişmiş iş süreci verimliliği",
