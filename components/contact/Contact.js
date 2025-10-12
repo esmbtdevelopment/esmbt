@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import { useTranslations } from 'next-intl';
+import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
 import {
   FaPhone,
   FaEnvelope,
@@ -10,8 +10,8 @@ import {
 import ContactForm from "./ContactForm";
 
 const Contact = () => {
-  const t = useTranslations('contact');
-  const tCommon = useTranslations('common');
+  const t = useDebugTranslations('contact');
+  const tCommon = useDebugTranslations('common');
 
   const contactInfo = [
     {

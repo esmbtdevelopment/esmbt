@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { useTranslations } from 'next-intl';
+import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
 import { toast } from "react-hot-toast";
 import emailjs from '@emailjs/browser';
 import {
@@ -12,7 +12,7 @@ import {
 } from "react-icons/fa";
 
 const ContactForm = () => {
-    const t = useTranslations('contact.form');
+    const t = useDebugTranslations('contact.form');
     const [formData, setFormData] = useState({
         name: "",
         company: "",

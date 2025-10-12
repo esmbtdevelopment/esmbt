@@ -1,7 +1,8 @@
 "use client";
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
-import { useTranslations, useLocale } from 'next-intl';
+import { useLocale } from 'next-intl';
+import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
 import { useRouter } from 'next/navigation';
 import {
   FaPhone,
@@ -32,8 +33,8 @@ const Navbar = () => {
   const navRef = useRef(null);
   const dropdownTimeoutRef = useRef(null);
 
-  const t = useTranslations('navigation');
-  const tCommon = useTranslations('common');
+  const t = useDebugTranslations('navigation');
+  const tCommon = useDebugTranslations('common');
   const locale = useLocale();
   const router = useRouter();
 

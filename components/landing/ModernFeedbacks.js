@@ -3,11 +3,11 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { RiArrowRightLine } from "react-icons/ri";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { useTranslations } from 'next-intl';
+import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
 
 const ModernFeedbacks = () => {
   const [activeTestimonial, setActiveTestimonial] = useState(0);
-  const t = useTranslations('testimonials');
+  const t = useDebugTranslations('testimonials');
 
   const testimonials = [
     {

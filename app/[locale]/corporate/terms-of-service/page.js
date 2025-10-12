@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { useTranslations } from 'next-intl';
+import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
 import {
     FaShieldAlt,
     FaGavel,
@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 
 export default function TermsOfService() {
-    const t = useTranslations('corporate.termsOfService');
+    const t = useDebugTranslations('corporate.termsOfService');
 
     const termsContent = [
         {

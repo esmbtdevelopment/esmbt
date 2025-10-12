@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useTranslations } from 'next-intl';
+import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
 import {
     FaBuilding,
     FaUsers,
@@ -23,8 +23,8 @@ import {
 import { goToContact } from "@/utils/navigation";
 
 export default function CorporatePage() {
-    const t = useTranslations('corporate');
-    const tCommon = useTranslations('common');
+    const t = useDebugTranslations('corporate');
+    const tCommon = useDebugTranslations('common');
 
     const corporatePages = [
         {

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { useTranslations } from 'next-intl';
+import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
 import {
     FaShieldAlt,
     FaUserShield,
@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 
 export default function PrivacyPolicy() {
-    const t = useTranslations('corporate.privacyPolicy');
+    const t = useDebugTranslations('corporate.privacyPolicy');
 
     const privacyContent = [
         {

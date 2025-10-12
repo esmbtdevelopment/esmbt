@@ -1,7 +1,7 @@
 "use client";
 import React, { use } from "react";
 import { notFound } from "next/navigation";
-import { useTranslations } from 'next-intl';
+import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
 import {
     FaChartLine,
     FaDatabase,
@@ -350,9 +350,9 @@ const productData = {
 
 export default function ProductDetailPage({ params }) {
     const { locale, servicename } = use(params);
-    const t = useTranslations('productDetails.products');
-    const tUI = useTranslations('productDetails.ui');
-    const tNav = useTranslations('navigation');
+    const t = useDebugTranslations('productDetails.products');
+    const tUI = useDebugTranslations('productDetails.ui');
+    const tNav = useDebugTranslations('navigation');
 
     const goToContact = () => {
         const onLandingPage = isOnLandingPage();

@@ -1,4 +1,6 @@
 import './globals.css';
+import { AuthProvider } from '@/lib/contexts/AuthContext';
+import { Toaster } from 'react-hot-toast';
 
 export const metadata = {
     title: "ESM - Digital Transformation & Technology Solutions",
@@ -32,7 +34,10 @@ export default function RootLayout({ children }) {
     return (
         <html suppressHydrationWarning={true} data-theme="light-esm">
             <body suppressHydrationWarning={true}>
-                {children}
+                <AuthProvider>
+                    {children}
+                    <Toaster position="top-right" />
+                </AuthProvider>
             </body>
         </html>
     );

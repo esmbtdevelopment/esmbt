@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { useTranslations } from 'next-intl';
+import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
 import { RiHandHeartLine, RiGlobalLine } from "react-icons/ri";
 import Slider from "../Slider";
 
 const Partners = () => {
-  const t = useTranslations('partners');
+  const t = useDebugTranslations('partners');
 
   const partners = [
     {

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { useTranslations } from 'next-intl';
+import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
 import Image from "next/image";
 import {
     FaHandshake,
@@ -29,7 +29,7 @@ import {
 import { goToContact, goToReferences } from "@/utils/navigation";
 
 export default function VisionMissionPage() {
-    const t = useTranslations('corporate.vision');
+    const t = useDebugTranslations('corporate.vision');
 
     const missionPoints = [
         {

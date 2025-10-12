@@ -11,11 +11,11 @@ import {
     FaLifeRing,
     FaCloud,
 } from "react-icons/fa";
-import { useTranslations } from 'next-intl';
+import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
 
 function ServicesPage() {
-    const t = useTranslations('services');
-    const tCommon = useTranslations('common');
+    const t = useDebugTranslations('services');
+    const tCommon = useDebugTranslations('common');
 
     const services = [
         {

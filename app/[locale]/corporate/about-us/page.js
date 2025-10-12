@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { useTranslations } from 'next-intl';
+import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
 import {
     FaBuilding,
     FaChartLine,
@@ -21,8 +21,8 @@ import {
 import { goToContact, goToReferences } from "@/utils/navigation";
 
 export default function AboutUsPage() {
-    const t = useTranslations('corporate.aboutUs');
-    const tCommon = useTranslations('common');
+    const t = useDebugTranslations('corporate.aboutUs');
+    const tCommon = useDebugTranslations('common');
 
     const values = [
         {

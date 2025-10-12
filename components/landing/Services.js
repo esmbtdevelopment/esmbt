@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { useTranslations, useLocale } from 'next-intl';
+import { useLocale } from 'next-intl';
+import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
 import {
   FaChartLine,
   FaUniversity,
@@ -20,9 +21,9 @@ import { RiTeamLine } from "react-icons/ri";
 import Image from "next/image";
 
 function Services() {
-  const t = useTranslations('services');
-  const tProducts = useTranslations('products');
-  const tCommon = useTranslations('common');
+  const t = useDebugTranslations('services');
+  const tProducts = useDebugTranslations('products');
+  const tCommon = useDebugTranslations('common');
   const locale = useLocale();
   const services = [
     {

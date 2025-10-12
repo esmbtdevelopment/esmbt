@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { useTranslations } from 'next-intl';
+import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
 import {
   RiTeamLine,
   RiLightbulbLine,
@@ -22,8 +22,8 @@ import {
 } from "react-icons/fa";
 
 const About = () => {
-  const t = useTranslations('about');
-  const tServices = useTranslations('services');
+  const t = useDebugTranslations('about');
+  const tServices = useDebugTranslations('services');
 
   const stats = [
     { number: "15+", label: t('stats.experience'), icon: <RiAwardLine /> },

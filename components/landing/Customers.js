@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { useTranslations } from 'next-intl';
+import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
 import { RiStarLine, RiTrophyLine, RiShieldCheckLine } from "react-icons/ri";
 import ModernFeedbacks from "./ModernFeedbacks";
 
 const Customers = () => {
-  const t = useTranslations('customers');
+  const t = useDebugTranslations('customers');
   const customers = [
     {
       name: "Turkcell",

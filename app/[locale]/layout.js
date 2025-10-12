@@ -6,6 +6,8 @@ import { getTranslations } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import { TranslationDebugProvider } from '@/lib/contexts/TranslationDebugContext';
+import TranslationDebugToggle from '@/components/TranslationDebugToggle';
 
 const locales = ['en', 'tr'];
 
@@ -54,31 +56,34 @@ export default async function LocaleLayout({ children, params }) {
 
   return (
     <NextIntlClientProvider messages={messages} locale={locale}>
-      <div className={`${sora.variable} ${manrope.variable} ${montserrat.variable} antialiased font-manrope`}>
-        <Navbar />
-        {children}
-        <Footer />
-        <Toaster
-          position="top-right"
-          toastOptions={{
-            duration: 4000,
-            style: {
-              background: "#363636",
-              color: "#fff",
-            },
-            success: {
+      <TranslationDebugProvider>
+        <div className={`${sora.variable} ${manrope.variable} ${montserrat.variable} antialiased font-manrope`}>
+          <Navbar />
+          {children}
+          <Footer />
+          <TranslationDebugToggle />
+          <Toaster
+            position="top-right"
+            toastOptions={{
+              duration: 4000,
               style: {
-                background: "#10b981",
+                background: "#363636",
+                color: "#fff",
               },
-            },
-            error: {
-              style: {
-                background: "#ef4444",
+              success: {
+                style: {
+                  background: "#10b981",
+                },
               },
-            },
-          }}
-        />
-      </div>
+              error: {
+                style: {
+                  background: "#ef4444",
+                },
+              },
+            }}
+          />
+        </div>
+      </TranslationDebugProvider>
     </NextIntlClientProvider>
   );
 }

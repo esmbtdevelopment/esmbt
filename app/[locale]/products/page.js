@@ -4,12 +4,12 @@ import Link from "next/link";
 import {
     FaChevronRight,
 } from "react-icons/fa";
-import { useTranslations } from 'next-intl';
+import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
 import Image from "next/image";
 
 function ProductsPage() {
-    const t = useTranslations('products');
-    const tCommon = useTranslations('common');
+    const t = useDebugTranslations('products');
+    const tCommon = useDebugTranslations('common');
 
     const products = [
         {

@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef, useState } from "react";
-import { useTranslations } from 'next-intl';
+import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { RiTeamLine } from "react-icons/ri";
@@ -20,8 +20,8 @@ import { PiChatTeardropTextThin } from "react-icons/pi";
 export default function Hero() {
   const [activeIndex, setActiveIndex] = useState(0);
   const swiperRef = useRef(null);
-  const t = useTranslations('hero');
-  const tCommon = useTranslations('common');
+  const t = useDebugTranslations('hero');
+  const tCommon = useDebugTranslations('common');
 
   const slides = [
     {

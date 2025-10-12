@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# translation backups (keep in .gitignore to avoid large commits)
+/messages/backups/
+
+# firebase service account (NEVER commit this!)
+service-account-key.json
+*-firebase-adminsdk-*.json

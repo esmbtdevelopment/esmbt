@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { useTranslations } from 'next-intl';
+import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
 import Image from "next/image";
 import {
     FaUsers,
@@ -19,7 +19,7 @@ import {
 import { goToContact, goToReferences } from "@/utils/navigation";
 
 export default function OurTeamPage() {
-    const t = useTranslations('corporate.team');
+    const t = useDebugTranslations('corporate.team');
 
     const leadership = [
         {

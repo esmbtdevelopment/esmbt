@@ -14,12 +14,12 @@ import {
 } from "react-icons/fa";
 import { RiSpaceShipFill } from "react-icons/ri";
 import { scrollToSection, isOnLandingPage } from "@/utils/navigation";
-import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
+import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
 import Link from 'next/link';
 
 const Footer = () => {
-  const t = useTranslations('footer');
+  const t = useDebugTranslations('footer');
   const locale = useLocale();
 
   const handleSectionNavigation = (sectionId) => {

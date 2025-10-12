@@ -1,7 +1,7 @@
 "use client";
 import React, { use } from "react";
 import { notFound } from "next/navigation";
-import { useTranslations } from 'next-intl';
+import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
 import {
     FaFileInvoiceDollar,
     FaGlobe,
@@ -411,9 +411,9 @@ const serviceData = {
 
 export default function ServiceDetailPage({ params }) {
     const { locale, productname } = use(params);
-    const t = useTranslations('serviceDetails.services');
-    const tUI = useTranslations('serviceDetails.ui');
-    const tNav = useTranslations('navigation');
+    const t = useDebugTranslations('serviceDetails.services');
+    const tUI = useDebugTranslations('serviceDetails.ui');
+    const tNav = useDebugTranslations('navigation');
 
     const goToContact = () => {
         const onLandingPage = isOnLandingPage();
