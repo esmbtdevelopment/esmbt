@@ -29,15 +29,53 @@ function TranslationsContent() {
         loadTranslations();
     }, []);
 
-    const loadTranslations = async () => {
+    const loadTranslations = async (forceRefresh = false) => {
         try {
             setLoading(true);
+
+            // Check session storage first (unless force refresh)
+            const cacheKey = 'translations:all';
+            if (!forceRefresh) {
+                try {
+                    const cached = sessionStorage.getItem(cacheKey);
+                    if (cached) {
+                        const { data: cachedData, timestamp } = JSON.parse(cached);
+                        const age = Date.now() - timestamp;
+
+                        // Use cache if less than 5 minutes old
+                        if (age < 5 * 60 * 1000) {
+                            console.log('[Cached] Translations loaded from session storage');
+                            setTranslations(cachedData);
+                            setEditedTranslations(cachedData);
+                            setLoading(false);
+                            return;
+                        }
+                    }
+                } catch (cacheError) {
+                    console.warn('Cache read error:', cacheError);
+                    sessionStorage.removeItem(cacheKey);
+                }
+            }
+
+            // Fetch from API
+            console.log('[API] Fetching fresh translations');
             const response = await fetch('/api/translations?locale=all');
             const data = await response.json();
 
             if (data.success) {
                 setTranslations(data.translations);
                 setEditedTranslations(data.translations);
+
+                // Cache the results
+                try {
+                    sessionStorage.setItem(cacheKey, JSON.stringify({
+                        data: data.translations,
+                        timestamp: Date.now()
+                    }));
+                    console.log('[Cached] Translations saved to session storage');
+                } catch (cacheError) {
+                    console.warn('Cache write error:', cacheError);
+                }
             } else {
                 toast.error('Failed to load translations');
             }
@@ -117,6 +155,10 @@ function TranslationsContent() {
                 toast.success(`${locale.toUpperCase()} translations saved successfully!`);
                 setTranslations(editedTranslations);
                 setHasChanges(false);
+
+                // Clear cache after saving
+                sessionStorage.removeItem('translations:all');
+                console.log('[Cache] Cleared translations cache after save');
             } else {
                 toast.error(data.error || 'Failed to save translations');
             }
@@ -151,6 +193,10 @@ function TranslationsContent() {
                 toast.success('All translations saved successfully!');
                 setTranslations(editedTranslations);
                 setHasChanges(false);
+
+                // Clear cache after saving
+                sessionStorage.removeItem('translations:all');
+                console.log('[Cache] Cleared translations cache after save');
             } else {
                 toast.error('Some translations failed to save');
             }
@@ -217,6 +263,10 @@ function TranslationsContent() {
                 setEditedTranslations({ en: newEnTranslations, tr: newTrTranslations });
                 setTranslations({ en: newEnTranslations, tr: newTrTranslations });
                 setHasChanges(false);
+
+                // Clear cache after deletion
+                sessionStorage.removeItem('translations:all');
+                console.log('[Cache] Cleared translations cache after delete');
             } else {
                 toast.error('Failed to delete translation key');
             }
@@ -579,7 +629,7 @@ function TranslationsContent() {
                                         <span>Save Turkish Only</span>
                                     </button>
                                     <button
-                                        onClick={loadTranslations}
+                                        onClick={() => loadTranslations(true)}
                                         className="flex items-center justify-center space-x-2 px-4 py-3 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                                         disabled={loading}
                                     >

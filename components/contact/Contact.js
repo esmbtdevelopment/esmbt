@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
 import {
   FaPhone,
@@ -8,31 +8,47 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 import ContactForm from "./ContactForm";
+import enMessages from '@/messages/en.json';
+import trMessages from '@/messages/tr.json';
 
 const Contact = () => {
   const t = useDebugTranslations('contact');
   const tCommon = useDebugTranslations('common');
 
-  const contactInfo = [
-    {
-      icon: <FaMapMarkerAlt />,
-      label: t('info.location.label'),
-      value: t('info.location.value'),
-      description: t('info.location.description'),
-    },
-    {
-      icon: <FaPhone />,
-      label: t('info.phone.label'),
-      value: t('info.phone.value'),
-      description: t('info.phone.description'),
-    },
-    {
-      icon: <FaEnvelope />,
-      label: t('info.email.label'),
-      value: t('info.email.value'),
-      description: t('info.email.description'),
-    },
-  ];
+  // For language tabs
+  const [selectedLang, setSelectedLang] = useState('tr');
+
+  // Get nested translation value
+  const getTranslation = (lang, path) => {
+    const messages = lang === 'en' ? enMessages : trMessages;
+    return path.split('.').reduce((obj, key) => obj?.[key], messages);
+  };
+
+  // Get contact info based on selected language
+  const getContactInfo = (lang) => {
+    return [
+      {
+        icon: <FaMapMarkerAlt />,
+        label: getTranslation(lang, 'contact.info.location.label'),
+        value: getTranslation(lang, 'contact.info.location.value'),
+        description: getTranslation(lang, 'contact.info.location.description'),
+      },
+      {
+        icon: <FaPhone />,
+        label: getTranslation(lang, 'contact.info.phone.label'),
+        value: getTranslation(lang, 'contact.info.phone.value'),
+        description: getTranslation(lang, 'contact.info.phone.description'),
+      },
+      {
+        icon: <FaEnvelope />,
+        label: getTranslation(lang, 'contact.info.email.label'),
+        value: getTranslation(lang, 'contact.info.email.value'),
+        description: getTranslation(lang, 'contact.info.email.description'),
+      },
+    ];
+  };
+
+  const contactInfo = getContactInfo(selectedLang);
 
   const processSteps = [
     {
@@ -91,9 +107,34 @@ const Contact = () => {
           <div className="flex flex-col gap-6 lg:gap-8 w-full max-w-md backdrop-blur-3xl shadow-lg">
             {/* Contact Information */}
             <div className="bg-gray-50/95 backdrop-blur-sm rounded-tr-none md:rounded-tr-[76px] rounded-br-[76px] md:rounded-br-none p-4 sm:p-6 border border-gray-200">
-              <h3 className="text-base sm:text-lg font-bold text-gray-900 font-sora mb-4 sm:mb-6">
-                {t('title')}
-              </h3>
+              <div className="flex items-center justify-between mb-4 sm:mb-6">
+                <h3 className="text-base sm:text-lg font-bold text-gray-900 font-sora">
+                  {t('title')}
+                </h3>
+
+                {/* Language Tabs */}
+                <div className="flex gap-1 bg-white rounded-lg p-1 border border-gray-200">
+                  <button
+                    onClick={() => setSelectedLang('tr')}
+                    className={`px-3 py-1 text-xs font-semibold rounded-md transition-all ${selectedLang === 'tr'
+                      ? 'bg-sky-600 text-white'
+                      : 'text-gray-600 hover:text-gray-900'
+                      }`}
+                  >
+                    🇹🇷
+                  </button>
+                  <button
+                    onClick={() => setSelectedLang('en')}
+                    className={`px-3 py-1 text-xs font-semibold rounded-md transition-all ${selectedLang === 'en'
+                      ? 'bg-sky-600 text-white'
+                      : 'text-gray-600 hover:text-gray-900'
+                      }`}
+                  >
+                    🇺🇸
+                  </button>
+                </div>
+              </div>
+
               <div className="space-y-3 sm:space-y-4">
                 {contactInfo.map((info, index) => (
                   <div key={index} className="flex items-start space-x-3">

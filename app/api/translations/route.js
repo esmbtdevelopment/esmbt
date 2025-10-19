@@ -5,11 +5,41 @@ import {
     saveTranslation,
     deleteTranslation,
     setNestedValue,
-    unflattenObject
+    flattenObject,
+    unflattenObject,
+    getCategoryFromKey
 } from '@/lib/translations/firestore';
-import { revalidateTag } from 'next/cache';
+import { revalidateTag, unstable_cache } from 'next/cache';
+import { db } from '@/lib/firebase';
+import { doc, Timestamp, writeBatch } from 'firebase/firestore';
 
-// GET - Read translations from Firestore
+// Cached function for getting all translations
+const getCachedAllTranslations = unstable_cache(
+    async (includeUnpublished) => {
+        console.log('[API Cache] Fetching all translations from Firestore...');
+        return await getAllTranslations(includeUnpublished);
+    },
+    ['translations-api', 'all'],
+    {
+        revalidate: 300, // Cache for 5 minutes
+        tags: ['translations']
+    }
+);
+
+// Cached function for getting translations by locale
+const getCachedTranslationsByLocale = unstable_cache(
+    async (locale) => {
+        console.log(`[API Cache] Fetching ${locale} translations from Firestore...`);
+        return await getTranslationsByLocale(locale);
+    },
+    ['translations-api', 'locale'],
+    {
+        revalidate: 300, // Cache for 5 minutes
+        tags: ['translations']
+    }
+);
+
+// GET - Read translations from Firestore with caching
 export async function GET(request) {
     try {
         const { searchParams } = new URL(request.url);
@@ -17,8 +47,8 @@ export async function GET(request) {
         const includeUnpublished = searchParams.get('includeUnpublished') === 'true';
 
         if (locale === 'all') {
-            // Get all translations from Firestore
-            const result = await getAllTranslations(includeUnpublished);
+            // Get all translations from Firestore (cached)
+            const result = await getCachedAllTranslations(includeUnpublished);
 
             if (!result.success) {
                 return NextResponse.json(
@@ -42,8 +72,8 @@ export async function GET(request) {
                 totalKeys: result.translations.length
             });
         } else {
-            // Get translations for specific locale
-            const result = await getTranslationsByLocale(locale);
+            // Get translations for specific locale (cached)
+            const result = await getCachedTranslationsByLocale(locale);
 
             if (!result.success) {
                 return NextResponse.json(
@@ -124,30 +154,86 @@ export async function POST(request) {
     }
 }
 
-// Handle bulk save for compatibility
+// Handle bulk save for compatibility - OPTIMIZED with batch writes
 async function handleBulkSave(locale, translations) {
     try {
-        const flatTranslations = unflattenObject(translations);
+        const flatTranslations = flattenObject(translations);
         const userId = 'admin'; // TODO: Get from auth session
 
+        console.log(`[API] Starting bulk save for ${locale}: ${Object.keys(flatTranslations).length} keys`);
+
+        // Get all existing translations first to preserve other locale values (use cached version)
+        const existingResult = await getCachedAllTranslations(false);
+        const existingMap = new Map();
+
+        if (existingResult.success) {
+            existingResult.translations.forEach(item => {
+                existingMap.set(item.key, {
+                    en: item.en,
+                    tr: item.tr,
+                    category: item.category,
+                    version: item.version
+                });
+            });
+        }
+
+        // Firestore batch write (max 500 operations per batch)
+        const BATCH_SIZE = 500;
+        let batch = writeBatch(db);
+        let operationCount = 0;
         let savedCount = 0;
         const errors = [];
 
-        // Process each translation
-        for (const [key, value] of Object.entries(flatTranslations)) {
+        const entries = Object.entries(flatTranslations);
+
+        for (const [key, value] of entries) {
             if (typeof value === 'string') {
-                const data = locale === 'en'
-                    ? { en: value, tr: '' }
-                    : { en: '', tr: value };
+                try {
+                    const docRef = doc(db, 'translations', key);
+                    const existing = existingMap.get(key) || { en: '', tr: '', category: null, version: 0 };
+                    const otherLocale = locale === 'en' ? 'tr' : 'en';
 
-                const result = await saveTranslation(key, data, userId);
+                    // Only update the specific locale being saved
+                    const updateData = {
+                        key,
+                        [locale]: value, // Update only this locale
+                        [otherLocale]: existing[otherLocale] || '', // Preserve other locale
+                        category: existing.category || getCategoryFromKey(key),
+                        status: 'published',
+                        lastModified: Timestamp.now(),
+                        modifiedBy: userId
+                    };
 
-                if (result.success) {
+                    // If document doesn't exist, add creation fields
+                    if (!existingMap.has(key)) {
+                        updateData.version = 1;
+                        updateData.createdAt = Timestamp.now();
+                        updateData.createdBy = userId;
+                    } else {
+                        updateData.version = (existing.version || 0) + 1;
+                    }
+
+                    batch.set(docRef, updateData, { merge: true });
+                    operationCount++;
                     savedCount++;
-                } else {
-                    errors.push({ key, error: result.error });
+
+                    // Commit batch when reaching limit
+                    if (operationCount >= BATCH_SIZE) {
+                        await batch.commit();
+                        console.log(`[API] Committed batch of ${operationCount} operations`);
+                        batch = writeBatch(db);
+                        operationCount = 0;
+                    }
+                } catch (error) {
+                    errors.push({ key, error: error.message });
                 }
             }
+        }
+
+        // Commit remaining operations
+        if (operationCount > 0) {
+            await batch.commit();
+            console.log(`[API] Committed final batch of ${operationCount} operations`);
         }
 
         // Invalidate cache

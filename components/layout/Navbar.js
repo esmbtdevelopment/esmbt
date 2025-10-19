@@ -22,7 +22,7 @@ import {
   FaShieldAlt,
   FaChartLine,
 } from "react-icons/fa";
-import { goToContact, goToReferences } from "@/utils/navigation";
+import { goToContact } from "@/utils/navigation";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const Navbar = () => {
@@ -257,10 +257,10 @@ const Navbar = () => {
               </div>
 
               <button
-                onClick={goToReferences}
+                onClick={() => router.push(`/${locale}/blog`)}
                 className="text-white hover:cursor-pointer uppercase tracking-widest transition-all duration-300 px-4 py-2 rounded-lg hover:bg-white/10 hover:backdrop-blur-sm text-xs md:text-sm"
               >
-                {t('references')}
+                {t('blog')}
               </button>
 
               {/* Language Switcher */}
@@ -418,11 +418,11 @@ const Navbar = () => {
               <button
                 onClick={() => {
                   setIsMobileMenuOpen(false);
-                  goToReferences();
+                  router.push(`/${locale}/blog`);
                 }}
                 className="text-white py-3 transition-colors text-left w-full"
               >
-                {t('references')}
+                {t('blog')}
               </button>
 
               {/* Mobile Contact Button with Darker Gradient */}
