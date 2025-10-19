@@ -598,7 +598,7 @@ export default function NavigationManagement() {
                     <div className="bg-white rounded-xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
                         <div className="p-6">
                             <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                                Add Dropdown Item to "{editingParent?.label}"
+                                Add Dropdown Item to &quot;{editingParent?.label}&quot;
                             </h2>
 
                             <div className="space-y-4">

@@ -108,8 +108,8 @@ export default function IconPicker({ selectedIcon, onSelect, onClose }) {
                                         key={category}
                                         onClick={() => setActiveCategory(category)}
                                         className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium transition-colors ${activeCategory === category
-                                                ? 'bg-indigo-50 text-indigo-700'
-                                                : 'text-gray-700 hover:bg-gray-100'
+                                            ? 'bg-indigo-50 text-indigo-700'
+                                            : 'text-gray-700 hover:bg-gray-100'
                                             }`}
                                     >
                                         {category}
@@ -123,7 +123,7 @@ export default function IconPicker({ selectedIcon, onSelect, onClose }) {
                     <div className="flex-1 overflow-y-auto p-6">
                         {availableIcons.length === 0 ? (
                             <div className="text-center py-12 text-gray-500">
-                                <p>No icons found matching "{searchTerm}"</p>
+                                <p>No icons found matching &quot;{searchTerm}&quot;</p>
                             </div>
                         ) : (
                             <div className="grid grid-cols-6 gap-4">
@@ -136,8 +136,8 @@ export default function IconPicker({ selectedIcon, onSelect, onClose }) {
                                             key={iconName}
                                             onClick={() => handleSelect(iconName)}
                                             className={`flex flex-col items-center justify-center p-4 rounded-lg border-2 transition-all hover:shadow-md ${selectedIcon === iconName
-                                                    ? 'border-indigo-500 bg-indigo-50'
-                                                    : 'border-gray-200 hover:border-indigo-300'
+                                                ? 'border-indigo-500 bg-indigo-50'
+                                                : 'border-gray-200 hover:border-indigo-300'
                                                 }`}
                                             title={iconName}
                                         >

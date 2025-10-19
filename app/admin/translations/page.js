@@ -409,11 +409,11 @@ function TranslationsContent() {
                                 </h3>
                                 <div className="text-sm text-gray-700 space-y-2">
                                     <p>
-                                        <strong>Daily editing:</strong> Edit translations below and click "Save All Changes".
+                                        <strong>Daily editing:</strong> Edit translations below and click &quot;Save All Changes&quot;.
                                         Changes are stored in Firestore and <strong>reflect on your website in ~5 seconds</strong> (no deployment needed).
                                     </p>
                                     <p>
-                                        <strong>Backup & Version Control:</strong> Click "Export to JSON" to save translations
+                                        <strong>Backup & Version Control:</strong> Click &quot;Export to JSON&quot; to save translations
                                         to JSON files in your project. This creates a backup and allows you to commit changes to Git.
                                         <em>Export periodically or before major updates.</em>
                                     </p>
