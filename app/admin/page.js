@@ -1,5 +1,6 @@
 'use client';
 import ProtectedRoute from '@/components/admin/ProtectedRoute';
+import CacheStatus from '@/components/admin/CacheStatus';
 import { useRouter } from 'next/navigation';
 
 export default function AdminDashboard() {
@@ -36,6 +37,9 @@ function AdminDashboardContent() {
 
                 {/* Dashboard Content */}
                 <div className="p-8">
+                    {/* Cache Status */}
+                    <CacheStatus />
+
                     {/* Stats Grid */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
                         <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
@@ -51,7 +55,10 @@ function AdminDashboardContent() {
                             <p className="text-sm text-green-600 mt-2">✓ All synced</p>
                         </div>
 
-                        <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                        <div
+                            onClick={() => router.push('/admin/services')}
+                            className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-all cursor-pointer hover:border-purple-300"
+                        >
                             <div className="flex items-center justify-between mb-4">
                                 <div className="p-3 bg-purple-50 rounded-lg">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-purple-600">
@@ -59,9 +66,9 @@ function AdminDashboardContent() {
                                     </svg>
                                 </div>
                             </div>
-                            <h3 className="text-gray-500 text-sm font-medium mb-1">Service Pages</h3>
-                            <p className="text-3xl font-bold text-gray-900">8</p>
-                            <p className="text-sm text-gray-400 mt-2">Coming soon</p>
+                            <h3 className="text-gray-500 text-sm font-medium mb-1">Services</h3>
+                            <p className="text-3xl font-bold text-gray-900">-</p>
+                            <p className="text-sm text-purple-600 mt-2">✓ Manage services</p>
                         </div>
 
                         <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
@@ -111,32 +118,32 @@ function AdminDashboardContent() {
                             </button>
 
                             <button
-                                disabled
-                                className="flex items-center space-x-4 p-4 rounded-lg border border-gray-200 opacity-50 cursor-not-allowed"
+                                onClick={() => router.push('/admin/services/edit/new')}
+                                className="flex items-center space-x-4 p-4 rounded-lg border border-gray-200 hover:border-purple-300 hover:bg-purple-50 transition-all group"
                             >
-                                <div className="p-2 bg-gray-100 rounded-lg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-gray-400">
+                                <div className="p-2 bg-purple-100 rounded-lg group-hover:bg-purple-200 transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-purple-600">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                                     </svg>
                                 </div>
                                 <div className="text-left">
                                     <p className="font-semibold text-gray-900 text-sm">New Service</p>
-                                    <p className="text-xs text-gray-500">Coming soon</p>
+                                    <p className="text-xs text-gray-500">Add service offering</p>
                                 </div>
                             </button>
 
                             <button
-                                disabled
-                                className="flex items-center space-x-4 p-4 rounded-lg border border-gray-200 opacity-50 cursor-not-allowed"
+                                onClick={() => router.push('/admin/navigation')}
+                                className="flex items-center space-x-4 p-4 rounded-lg border border-gray-200 hover:border-green-300 hover:bg-green-50 transition-all group"
                             >
-                                <div className="p-2 bg-gray-100 rounded-lg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-gray-400">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" />
+                                <div className="p-2 bg-green-100 rounded-lg group-hover:bg-green-200 transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-green-600">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                                     </svg>
                                 </div>
                                 <div className="text-left">
-                                    <p className="font-semibold text-gray-900 text-sm">Upload Media</p>
-                                    <p className="text-xs text-gray-500">Coming soon</p>
+                                    <p className="font-semibold text-gray-900 text-sm">Manage Navigation</p>
+                                    <p className="text-xs text-gray-500">Edit menu structure</p>
                                 </div>
                             </button>
                         </div>
@@ -153,8 +160,7 @@ function AdminDashboardContent() {
                             <div className="flex-1">
                                 <h3 className="text-lg font-bold text-gray-900 mb-1">System Status: All Systems Operational</h3>
                                 <p className="text-gray-600 text-sm">
-                                    Your admin panel is running smoothly. The Translation Management module is active and ready to use.
-                                    Additional content management features are under development.
+                                    Your admin panel is running smoothly. Translation Management, Services Management, and Navigation Management modules are active and ready to use.
                                 </p>
                             </div>
                         </div>

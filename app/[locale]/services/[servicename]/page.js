@@ -1,1442 +1,340 @@
 "use client";
-import React, { use } from "react";
-import { notFound } from "next/navigation";
-import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
-import {
-    FaChartLine,
-    FaDatabase,
-    FaCogs,
-    FaCloud,
-    FaChartArea,
-    FaShieldAlt,
-    FaLifeRing,
-    FaArrowLeft,
-    FaCheck,
-    FaUsers,
-    FaClock,
-    FaRocket,
-    FaHandshake,
-    FaChevronRight
-} from "react-icons/fa";
+import React, { useState, useEffect } from "react";
+import { useParams, useRouter } from "next/navigation";
+import { useLocale } from 'next-intl';
 import Link from "next/link";
-import Image from "next/image";
+import * as FaIcons from "react-icons/fa";
 import { isOnLandingPage, scrollToSection } from "@/utils/navigation";
+import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
 
-// Detailed product data
-const productData = {
-    "strategic-sap-consulting": {
-        id: "strategic-sap-consulting",
-        title: "Strategic SAP Consulting",
-        subtitle: "Expert SAP Transformation Guidance",
-        icon: <Image src="/images/products/sap-consulting.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="Strategic SAP Consulting" width={1000} height={1000} />,
-        heroDescription: "Expert guidance for your SAP transformation journey with strategic planning and business process optimization.",
-        fullDescription: "Our Strategic SAP Consulting services provide comprehensive roadmap development, business process analysis, and change management support to ensure successful SAP implementations. We combine industry best practices with your unique business requirements to deliver transformational results.",
-        benefits: [
-            "Reduced implementation costs by 30%",
-            "Improved business process efficiency",
-            "Strategic roadmap for digital transformation",
-            "Risk mitigation and compliance assurance"
-        ],
-        features: [
-            {
-                title: "Business Process Analysis",
-                description: "Comprehensive analysis of your current business processes to identify optimization opportunities",
-                icon: <FaChartLine />
-            },
-            {
-                title: "Strategic Roadmap Development",
-                description: "Create a detailed implementation roadmap aligned with your business objectives",
-                icon: <FaRocket />
-            },
-            {
-                title: "Change Management",
-                description: "Guide your organization through digital transformation with proven methodologies",
-                icon: <FaUsers />
-            },
-            {
-                title: "Risk Assessment",
-                description: "Identify and mitigate potential risks before they impact your project",
-                icon: <FaShieldAlt />
-            }
-        ],
-        implementation: [
-            "Initial business assessment and requirement gathering",
-            "Current state analysis and gap identification",
-            "Future state design and roadmap creation",
-            "Implementation planning and resource allocation",
-            "Change management strategy development",
-            "Go-live support and post-implementation review"
-        ],
-        industries: ["Manufacturing", "Retail", "Healthcare", "Financial Services", "Automotive", "Energy"],
-        roi: "Achieve 30% faster SAP implementation with strategic planning"
-    },
-    "sap-erp-implementation": {
-        id: "sap-erp-implementation",
-        title: "SAP ERP Implementation & Enhancement",
-        subtitle: "Complete ERP Implementation Services",
-        icon: <Image src="/images/products/sap-erp.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="SAP ERP Implementation" width={1000} height={1000} />,
-        heroDescription: "Complete SAP ERP implementation and enhancement services tailored to your business needs.",
-        fullDescription: "Our SAP ERP Implementation services cover end-to-end deployment of SAP systems, including all major modules like FI/CO, MM, SD, PP, and HCM. We ensure seamless integration, data migration, and user adoption for successful ERP transformation.",
-        benefits: [
-            "Streamlined business processes across all departments",
-            "Real-time visibility into business operations",
-            "Improved data accuracy and reporting capabilities",
-            "Enhanced operational efficiency and cost reduction"
-        ],
-        features: [
-            {
-                title: "Full System Implementation",
-                description: "End-to-end SAP ERP implementation tailored to your business needs",
-                icon: <FaDatabase />
-            },
-            {
-                title: "Data Integration",
-                description: "Seamless integration of existing data sources and systems",
-                icon: <FaCogs />
-            },
-            {
-                title: "Process Optimization",
-                description: "Optimize business processes for maximum efficiency and productivity",
-                icon: <FaChartLine />
-            },
-            {
-                title: "User Training",
-                description: "Comprehensive training programs to ensure successful user adoption",
-                icon: <FaUsers />
-            }
-        ],
-        implementation: [
-            "Business requirement analysis and system design",
-            "Module configuration and customization",
-            "Data migration and system integration",
-            "User acceptance testing and training",
-            "Go-live support and hypercare",
-            "Post-implementation optimization and support"
-        ],
-        industries: ["Manufacturing", "Retail & Distribution", "Oil & Gas", "Pharmaceuticals", "Consumer Goods", "Utilities"],
-        roi: "Reduce operational costs by 25% through integrated ERP processes"
-    },
-    "sap-technical-services": {
-        id: "sap-technical-services",
-        title: "SAP Technical Services",
-        subtitle: "Professional Technical Support",
-        icon: <Image src="/images/products/sap-technical-services.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="SAP Technical Services" width={1000} height={1000} />,
-        heroDescription: "Professional technical services to keep your SAP systems running at peak performance.",
-        fullDescription: "Our SAP Technical Services encompass ABAP development, Basis administration, system integration, and modern UI development. We ensure your SAP landscape operates efficiently with optimal performance and security.",
-        benefits: [
-            "Maximized system performance and reliability",
-            "Reduced downtime and technical issues",
-            "Enhanced security and compliance",
-            "Optimized infrastructure costs and resource utilization"
-        ],
-        features: [
-            {
-                title: "System Maintenance",
-                description: "Regular maintenance and updates to keep your SAP system running smoothly",
-                icon: <FaCogs />
-            },
-            {
-                title: "Performance Optimization",
-                description: "Continuous monitoring and optimization of system performance",
-                icon: <FaChartLine />
-            },
-            {
-                title: "Technical Support",
-                description: "Expert technical support for all your SAP-related issues",
-                icon: <FaLifeRing />
-            },
-            {
-                title: "System Upgrades",
-                description: "Planned system upgrades and enhancement implementations",
-                icon: <FaRocket />
-            }
-        ],
-        implementation: [
-            "Technical requirement analysis and architecture design",
-            "Development environment setup and configuration",
-            "Custom development and system enhancement",
-            "Integration testing and quality assurance",
-            "Deployment and production support",
-            "Ongoing maintenance and performance optimization"
-        ],
-        industries: ["All Industries", "Technology", "Financial Services", "Manufacturing", "Healthcare", "Government"],
-        roi: "Improve system performance by 40% with optimized technical infrastructure"
-    },
-    "sap-cloud-solutions": {
-        id: "sap-cloud-solutions",
-        title: "SAP Cloud Solutions",
-        subtitle: "Scalable Cloud Services",
-        icon: <Image src="/images/products/sap-cloud.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="SAP Cloud Solutions" width={1000} height={1000} />,
-        heroDescription: "Scalable cloud solutions that provide flexibility, security, and cost-effectiveness for your business.",
-        fullDescription: "Our SAP Cloud Solutions include S/4HANA Cloud, SuccessFactors, Ariba, and Concur implementations. We help you leverage the power of cloud computing for enhanced scalability, reduced infrastructure costs, and improved business agility.",
-        benefits: [
-            "Reduced infrastructure costs and maintenance overhead",
-            "Enhanced scalability and business agility",
-            "Improved security and compliance capabilities",
-            "Faster time-to-market with cloud-native solutions"
-        ],
-        features: [
-            {
-                title: "Cloud Migration",
-                description: "Seamless migration of your SAP systems to the cloud",
-                icon: <FaCloud />
-            },
-            {
-                title: "Hybrid Solutions",
-                description: "Flexible hybrid cloud solutions that meet your specific needs",
-                icon: <FaCogs />
-            },
-            {
-                title: "Security Management",
-                description: "Advanced security measures to protect your cloud-based systems",
-                icon: <FaShieldAlt />
-            },
-            {
-                title: "Cloud Optimization",
-                description: "Continuous optimization of cloud resources for cost efficiency",
-                icon: <FaChartLine />
-            }
-        ],
-        implementation: [
-            "Cloud readiness assessment and migration planning",
-            "Cloud architecture design and security configuration",
-            "Data migration and system integration",
-            "User training and change management",
-            "Go-live support and optimization",
-            "Ongoing cloud management and support"
-        ],
-        industries: ["Technology", "Financial Services", "Healthcare", "Retail", "Manufacturing", "Professional Services"],
-        roi: "Achieve 50% reduction in IT infrastructure costs with cloud migration"
-    },
-    "sap-analytics-intelligence": {
-        id: "sap-analytics-intelligence",
-        title: "SAP Analytics & Intelligence",
-        subtitle: "Advanced Data Analytics Solutions",
-        icon: <Image src="/images/products/sap-analytics.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="SAP Analytics & Intelligence" width={1000} height={1000} />,
-        heroDescription: "Transform your data into actionable insights with advanced analytics and business intelligence solutions.",
-        fullDescription: "Our SAP Analytics & Intelligence services include BusinessObjects, SAC, BW/4HANA, and HANA database optimization. We help you unlock the power of your data for better decision-making and business performance.",
-        benefits: [
-            "Data-driven decision making across the organization",
-            "Real-time insights and predictive analytics capabilities",
-            "Improved operational efficiency through advanced reporting",
-            "Enhanced business performance with intelligent data analysis"
-        ],
-        features: [
-            {
-                title: "Business Intelligence",
-                description: "Comprehensive BI solutions for data-driven decision making",
-                icon: <FaChartArea />
-            },
-            {
-                title: "Data Visualization",
-                description: "Interactive dashboards and reports for better data understanding",
-                icon: <FaChartLine />
-            },
-            {
-                title: "Predictive Analytics",
-                description: "Advanced analytics to predict trends and business outcomes",
-                icon: <FaRocket />
-            },
-            {
-                title: "Real-time Reporting",
-                description: "Live reporting capabilities for immediate business insights",
-                icon: <FaClock />
-            }
-        ],
-        implementation: [
-            "Data landscape assessment and analytics strategy",
-            "Data architecture design and modeling",
-            "Analytics platform deployment and configuration",
-            "Dashboard and report development",
-            "User training and adoption support",
-            "Performance optimization and ongoing support"
-        ],
-        industries: ["Financial Services", "Retail & Consumer Goods", "Manufacturing", "Healthcare", "Telecommunications", "Government"],
-        roi: "Accelerate decision-making by 60% with real-time analytics and intelligence"
-    },
-    "sap-security-compliance": {
-        id: "sap-security-compliance",
-        title: "SAP Security & Compliance",
-        subtitle: "Comprehensive Security Solutions",
-        icon: <Image src="/images/products/sap-security.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="SAP Security & Compliance" width={1000} height={1000} />,
-        heroDescription: "Comprehensive security and compliance solutions to protect your SAP environment and ensure regulatory adherence.",
-        fullDescription: "Our SAP Security & Compliance services include GRC implementation, security assessments, identity management, and audit support. We help you maintain the highest security standards while ensuring regulatory compliance.",
-        benefits: [
-            "Enhanced security posture and risk mitigation",
-            "Regulatory compliance and audit readiness",
-            "Streamlined access management and governance",
-            "Reduced security vulnerabilities and threats"
-        ],
-        features: [
-            {
-                title: "Access Management",
-                description: "Comprehensive user access management and role-based security",
-                icon: <FaShieldAlt />
-            },
-            {
-                title: "Compliance Auditing",
-                description: "Regular compliance audits to ensure regulatory adherence",
-                icon: <FaCheck />
-            },
-            {
-                title: "Risk Assessment",
-                description: "Continuous risk assessment and mitigation strategies",
-                icon: <FaChartLine />
-            },
-            {
-                title: "Security Policies",
-                description: "Development and implementation of comprehensive security policies",
-                icon: <FaCogs />
-            }
-        ],
-        implementation: [
-            "Security assessment and compliance gap analysis",
-            "Risk framework design and implementation",
-            "Security controls deployment and configuration",
-            "Identity management system integration",
-            "Compliance monitoring setup and testing",
-            "Ongoing security management and support"
-        ],
-        industries: ["Financial Services", "Healthcare", "Government", "Manufacturing", "Energy & Utilities", "Pharmaceuticals"],
-        roi: "Reduce security risks by 70% with comprehensive compliance framework"
-    },
-    "ongoing-support-maintenance": {
-        id: "ongoing-support-maintenance",
-        title: "Ongoing Support & Maintenance",
-        subtitle: "Continuous Support Services",
-        icon: <Image src="/images/products/sap-support.jpg" className="rounded-tr-3xl rounded-bl-3xl w-full h-full object-cover" alt="Ongoing Support & Maintenance" width={1000} height={1000} />,
-        heroDescription: "Continuous support and maintenance services to ensure optimal performance of your SAP systems.",
-        fullDescription: "Our Ongoing Support & Maintenance services include 24/7 AMS, system upgrades, performance optimization, and training programs. We ensure your SAP systems operate at peak performance with minimal downtime.",
-        benefits: [
-            "Maximized system uptime and availability",
-            "Proactive issue prevention and resolution",
-            "Continuous performance optimization",
-            "Enhanced user productivity and satisfaction"
-        ],
-        features: [
-            {
-                title: "Help Desk Support",
-                description: "Round-the-clock support for all your SAP-related issues",
-                icon: <FaLifeRing />
-            },
-            {
-                title: "Preventive Maintenance",
-                description: "Regular maintenance to prevent issues before they occur",
-                icon: <FaCogs />
-            },
-            {
-                title: "System Monitoring",
-                description: "Continuous monitoring of system performance and health",
-                icon: <FaChartLine />
-            },
-            {
-                title: "Continuous Improvement",
-                description: "Ongoing optimization and enhancement of your SAP systems",
-                icon: <FaRocket />
-            }
-        ],
-        implementation: [
-            "Current state assessment and service level definition",
-            "Support framework setup and team transition",
-            "Monitoring tools deployment and configuration",
-            "Service delivery processes establishment",
-            "Knowledge transfer and training programs",
-            "Continuous improvement and optimization"
-        ],
-        industries: ["All Industries", "Manufacturing", "Financial Services", "Retail", "Healthcare", "Technology"],
-        roi: "Achieve 99.9% system uptime with proactive support and maintenance"
-    }
-};
+export default function ServiceDetailPage() {
+    const params = useParams();
+    const router = useRouter();
+    const locale = useLocale();
+    const serviceName = params.servicename;
 
-export default function ProductDetailPage({ params }) {
-    const { locale, servicename } = use(params);
-    const t = useDebugTranslations('productDetails.products');
-    const tUI = useDebugTranslations('productDetails.ui');
-    const tNav = useDebugTranslations('navigation');
+    const [service, setService] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [notFound, setNotFound] = useState(false);
 
-    const goToContact = () => {
+    const tCommon = useDebugTranslations('common');
+
+    useEffect(() => {
+        const fetchService = async () => {
+            try {
+                const response = await fetch(`/api/services?locale=${locale}&status=published`);
+                const data = await response.json();
+
+                if (data.success) {
+                    const foundService = data.services.find(s => s.slug === serviceName);
+                    if (foundService) {
+                        setService(foundService);
+                    } else {
+                        setNotFound(true);
+                    }
+                } else {
+                    setNotFound(true);
+                }
+            } catch (error) {
+                console.error('Error fetching service:', error);
+                setNotFound(true);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchService();
+    }, [serviceName, locale]);
+
+    const handleContactClick = () => {
         const onLandingPage = isOnLandingPage();
         scrollToSection('contact', onLandingPage);
     };
 
-    const smoothScrollToSection = (sectionId) => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-            const offset = 80; // Offset for fixed header
-            const elementPosition = element.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
+    // Render icon
+    const renderIcon = (iconName, className = "w-8 h-8") => {
+        if (iconName && FaIcons[iconName]) {
+            const IconComponent = FaIcons[iconName];
+            return <IconComponent className={className} />;
         }
+        return <FaIcons.FaCheck className={className} />;
     };
 
-    // Get product data with translations
-    const getProductData = (productName) => {
-        const baseProduct = productData[productName];
-        if (!baseProduct) return null;
+    if (loading) {
+        return (
+            <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+                <div className="w-12 h-12 border-4 border-sky-600 border-t-transparent rounded-full animate-spin"></div>
+            </div>
+        );
+    }
 
-        // Check if translations exist for this product
-        try {
-            // Handle arrays by accessing individual elements
-            const benefits = [];
-            const features = [];
-            const implementation = [];
-            const industries = [];
-
-            // Get benefits array
-            try {
-                for (let i = 0; i < baseProduct.benefits.length; i++) {
-                    benefits.push(t(`${productName}.benefits.${i}`));
-                }
-            } catch (e) {
-                benefits.push(...baseProduct.benefits);
-            }
-
-            // Get features array
-            try {
-                for (let i = 0; i < baseProduct.features.length; i++) {
-                    features.push({
-                        title: t(`${productName}.features.${i}.title`),
-                        description: t(`${productName}.features.${i}.description`),
-                        icon: baseProduct.features[i].icon
-                    });
-                }
-            } catch (e) {
-                features.push(...baseProduct.features);
-            }
-
-            // Get implementation array
-            try {
-                for (let i = 0; i < baseProduct.implementation.length; i++) {
-                    implementation.push(t(`${productName}.implementation.${i}`));
-                }
-            } catch (e) {
-                implementation.push(...baseProduct.implementation);
-            }
-
-            // Get industries array
-            try {
-                for (let i = 0; i < baseProduct.industries.length; i++) {
-                    industries.push(t(`${productName}.industries.${i}`));
-                }
-            } catch (e) {
-                industries.push(...baseProduct.industries);
-            }
-
-            const translatedProduct = {
-                ...baseProduct,
-                title: t(`${productName}.title`),
-                subtitle: t(`${productName}.subtitle`),
-                heroDescription: t(`${productName}.heroDescription`),
-                fullDescription: t(`${productName}.fullDescription`),
-                benefits: benefits,
-                features: features,
-                implementation: implementation,
-                industries: industries,
-                roi: t(`${productName}.roi`)
-            };
-            return translatedProduct;
-        } catch (error) {
-            // Fallback to base product data if translations are missing
-            console.warn(`Translations missing for product: ${productName}, falling back to base data`);
-            return baseProduct;
-        }
-    };
-
-    const product = getProductData(servicename);
-
-    if (!product) {
-        notFound();
+    if (notFound || !service) {
+        return (
+            <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+                <div className="text-center">
+                    <h1 className="text-4xl font-bold text-gray-900 mb-4">Service Not Found</h1>
+                    <p className="text-gray-600 mb-8">The service you&apos;re looking for doesn&apos;t exist.</p>
+                    <Link href={`/${locale}/services`}>
+                        <button className="px-6 py-3 bg-sky-600 text-white rounded-lg hover:bg-sky-700 transition-colors">
+                            View All Services
+                        </button>
+                    </Link>
+                </div>
+            </div>
+        );
     }
 
     return (
         <div className="min-h-screen bg-gray-50">
             {/* Hero Section */}
-            <section className="bg-gradient-to-r from-gray-900 via-gray-800 to-sky-900 text-white py-16 sm:py-20 pt-24 sm:pt-32 relative overflow-hidden">
-                <div className="container mx-auto px-4 sm:px-6 md:px-12">
-                    <div className="max-w-6xl mx-auto relative z-10">
-                        {/* Back Button */}
-                        <Link
-                            href={`/${locale}/services`}
-                            className="inline-flex items-center text-sky-400 hover:text-sky-300 mb-6 sm:mb-8 transition-colors duration-300"
-                        >
-                            <FaArrowLeft className="mr-2 text-sm" />
-                            <span className="text-sm sm:text-base">{tNav('backToServices')}</span>
-                        </Link>
+            <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-20 sm:py-32 lg:py-40 overflow-hidden">
+                {/* Background Pattern */}
+                <div className="absolute inset-0 opacity-5">
+                    <div className="absolute inset-0" style={{
+                        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+                    }} />
+                </div>
 
-                        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-                            <div>
-                                <div className="flex items-center mb-4 sm:mb-6">
-                                    <div>
-                                        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold font-sora mb-2 leading-tight">
-                                            {product.title}
-                                        </h1>
-                                        <p className="text-lg sm:text-xl text-sky-300 font-montserrat">
-                                            {product.subtitle}
-                                        </p>
-                                    </div>
-                                </div>
-                                <p className="text-base sm:text-lg lg:text-xl text-gray-300 font-montserrat leading-relaxed mb-6 sm:mb-8">
-                                    {product.heroDescription}
-                                </p>
-                                <div className="flex-col sm:flex-row gap-4 hidden">
-                                    <button className="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
-                                        <span className="text-sm sm:text-base">{tUI('getStarted')}</span>
-                                        <FaChevronRight className="text-sm" />
-                                    </button>
-                                    <button className="border-2 border-sky-500 text-sky-400 hover:bg-sky-500 hover:text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
-                                        <span className="text-sm sm:text-base">{tUI('requestDemo')}</span>
-                                    </button>
+                <div className="container mx-auto px-4 sm:px-6 md:px-12 relative z-10">
+                    {/* Back Button */}
+                    <Link href={`/${locale}/services`}>
+                        <button className="inline-flex items-center space-x-2 text-gray-300 hover:text-white transition-colors mb-8 group">
+                            <FaIcons.FaArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+                            <span>Back to Services</span>
+                        </button>
+                    </Link>
+
+                    <div className="max-w-4xl">
+                        {/* Service Icon/Image */}
+                        {service.iconType === 'image' && service.imageUrl ? (
+                            <div className="mb-8">
+                                <img
+                                    src={service.imageUrl}
+                                    alt={service.title}
+                                    className="w-24 h-24 rounded-2xl object-cover shadow-2xl"
+                                />
+                            </div>
+                        ) : (
+                            <div className="mb-8">
+                                <div className="w-24 h-24 bg-sky-600 bg-opacity-20 rounded-2xl flex items-center justify-center backdrop-blur-sm">
+                                    {renderIcon(service.iconName, "w-12 h-12 text-sky-400")}
                                 </div>
                             </div>
+                        )}
 
-                            {/* Hero Visual */}
-                            <div className="drop-shadow-4xl p-4 w-full h-full">
-                                {product.icon}
-                            </div>
+                        {/* Title and Subtitle */}
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 font-sora leading-tight">
+                            {service.title}
+                        </h1>
+                        {service.subtitle && (
+                            <p className="text-xl sm:text-2xl text-sky-400 font-semibold mb-6">
+                                {service.subtitle}
+                            </p>
+                        )}
+                        <p className="text-base sm:text-lg md:text-xl text-gray-300 font-montserrat leading-relaxed max-w-3xl">
+                            {service.heroDescription || service.description}
+                        </p>
+
+                        {/* CTA Buttons */}
+                        <div className="flex flex-col sm:flex-row gap-4 mt-8">
+                            <button
+                                onClick={handleContactClick}
+                                className="bg-sky-600 hover:bg-sky-700 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2"
+                            >
+                                <span>{tCommon('getFreeConsultation')}</span>
+                                <FaIcons.FaChevronRight className="w-4 h-4" />
+                            </button>
+                            <Link href={`/${locale}/services`}>
+                                <button className="border-2 border-sky-500 text-sky-400 hover:bg-sky-500 hover:text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 w-full sm:w-auto">
+                                    View All Services
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
-                {/* Background Elements */}
-                <div className="absolute inset-0 opacity-20">
-                    <div className="absolute -top-24 -right-24 w-96 h-96 bg-gradient-to-br from-sky-200/40 to-blue-300/30 rounded-full blur-3xl animate-pulse"></div>
-                    <div className="absolute -bottom-24 -left-24 w-80 h-80 bg-gradient-to-tr from-blue-200/40 to-sky-300/30 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
-                </div>
             </section>
 
-            {/* Product Overview */}
-            <section className="py-12 sm:py-16 md:py-24 bg-white">
-                <div className="container mx-auto px-4 sm:px-6 md:px-12">
-                    <div className="max-w-6xl mx-auto">
-                        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-                            <div>
-                                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora">
-                                    {tUI('whyChoose')} {product.title}?
+            {/* Overview Section */}
+            {service.fullDescription && (
+                <section className="py-12 sm:py-16 md:py-20 bg-white">
+                    <div className="container mx-auto px-4 sm:px-6 md:px-12">
+                        <div className="max-w-4xl mx-auto">
+                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-sora">
+                                Overview
+                            </h2>
+                            <p className="text-base sm:text-lg text-gray-700 leading-relaxed font-montserrat">
+                                {service.fullDescription}
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            )}
+
+            {/* Key Features */}
+            {service.features && service.features.length > 0 && (
+                <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
+                    <div className="container mx-auto px-4 sm:px-6 md:px-12">
+                        <div className="max-w-6xl mx-auto">
+                            <div className="text-center mb-12">
+                                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-sora">
+                                    Key Features
                                 </h2>
-                                <p className="text-base sm:text-lg text-gray-600 font-montserrat leading-relaxed mb-6 sm:mb-8">
-                                    {product.fullDescription}
+                                <p className="text-gray-600 font-montserrat">
+                                    Comprehensive capabilities tailored to your needs
                                 </p>
                             </div>
-                            <div className="space-y-3 sm:space-y-4">
-                                {product.benefits.map((benefit, index) => (
-                                    <div key={index} className="flex items-start">
-                                        <FaCheck className="text-sky-500 mt-1 mr-3 flex-shrink-0 text-sm" />
-                                        <span className="text-gray-700 font-montserrat text-sm sm:text-base">{benefit}</span>
+
+                            <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
+                                {service.features.map((feature, index) => {
+                                    const isObject = typeof feature === 'object';
+                                    const title = isObject ? feature.title : feature;
+                                    const description = isObject ? feature.description : '';
+                                    const icon = isObject ? feature.icon : 'FaCheck';
+
+                                    return (
+                                        <div
+                                            key={index}
+                                            className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow border border-gray-100"
+                                        >
+                                            <div className="flex items-start space-x-4">
+                                                <div className="flex-shrink-0">
+                                                    <div className="w-12 h-12 bg-sky-50 rounded-lg flex items-center justify-center">
+                                                        {renderIcon(icon, "w-6 h-6 text-sky-600")}
+                                                    </div>
+                                                </div>
+                                                <div className="flex-1">
+                                                    <h3 className="text-lg font-semibold text-gray-900 mb-2 font-sora">
+                                                        {title}
+                                                    </h3>
+                                                    {description && (
+                                                        <p className="text-gray-600 text-sm font-montserrat leading-relaxed">
+                                                            {description}
+                                                        </p>
+                                                    )}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            )}
+
+            {/* Benefits */}
+            {service.benefits && service.benefits.length > 0 && (
+                <section className="py-12 sm:py-16 md:py-20 bg-white">
+                    <div className="container mx-auto px-4 sm:px-6 md:px-12">
+                        <div className="max-w-4xl mx-auto">
+                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-8 font-sora">
+                                Benefits
+                            </h2>
+                            <div className="space-y-4">
+                                {service.benefits.map((benefit, index) => (
+                                    <div key={index} className="flex items-start space-x-4">
+                                        <div className="flex-shrink-0 mt-1">
+                                            <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                                                <FaIcons.FaCheck className="w-3 h-3 text-green-600" />
+                                            </div>
+                                        </div>
+                                        <p className="text-gray-700 font-montserrat text-base sm:text-lg">
+                                            {benefit}
+                                        </p>
                                     </div>
                                 ))}
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            {/* Features Grid */}
-            <section className="py-12 sm:py-16 md:py-24 bg-gray-50" id="key-features">
-                <div className="container mx-auto px-4 sm:px-6 md:px-12">
-                    <div className="max-w-6xl mx-auto">
-                        <div className="text-center mb-12 sm:mb-16">
-                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora">
-                                <span className="relative inline-block text-sky-600">
-                                    {tUI('keyFeatures')}
-                                    <div className="absolute -bottom-1 left-0 right-0 h-1 bg-sky-600"></div>
-                                </span>
-                            </h2>
-                            <p className="text-base sm:text-lg text-gray-600 font-montserrat leading-relaxed max-w-3xl mx-auto px-4">
-                                {tUI('comprehensiveFeatures')}
-                            </p>
-                        </div>
-
-                        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-                            {product.features.map((feature, index) => (
-                                <div key={index} className="bg-white rounded-xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col">
-                                    <div className="text-2xl sm:text-3xl text-sky-500 mb-3 sm:mb-4">
-                                        {feature.icon}
-                                    </div>
-                                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3 font-sora">
-                                        {feature.title}
-                                    </h3>
-                                    <p className="text-gray-600 font-montserrat text-sm leading-relaxed mb-4 flex-grow">
-                                        {feature.description}
-                                    </p>
-                                    {servicename === 'strategic-sap-consulting' && (
-                                        <button
-                                            onClick={() => smoothScrollToSection(
-                                                index === 0 ? 'digital-transformation' :
-                                                    index === 1 ? 'landscape-assessment' :
-                                                        index === 2 ? 's4hana-readiness' :
-                                                            'license-optimization'
-                                            )}
-                                            className="inline-flex items-center text-sky-600 hover:text-sky-700 font-semibold text-sm transition-colors duration-300 group mt-auto"
-                                        >
-                                            {t('strategic-sap-consulting.learnMore')}
-                                            <FaChevronRight className="ml-1 text-xs group-hover:translate-x-1 transition-transform duration-300" />
-                                        </button>
-                                    )}
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* SAP Digital Transformation Strategy - Only for strategic-sap-consulting */}
-            {servicename === 'strategic-sap-consulting' && (
-                <>
-                    {/* SAP Digital Transformation Strategy Section */}
-                    <section className="py-12 sm:py-16 md:py-24 bg-white" id="digital-transformation">
-                        <div className="container mx-auto px-4 sm:px-6 md:px-12">
-                            <div className="max-w-6xl mx-auto">
-                                {/* Section Header */}
-                                <div className="text-center mb-12 sm:mb-16">
-                                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora">
-                                        {t('strategic-sap-consulting.digitalTransformation.title')}
-                                    </h2>
-                                    <p className="text-base sm:text-lg text-gray-600 font-montserrat leading-relaxed max-w-4xl mx-auto px-4">
-                                        {t('strategic-sap-consulting.digitalTransformation.description')}
-                                    </p>
-                                </div>
-
-                                {/* Our Approach */}
-                                <div className="mb-16">
-                                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-8 sm:mb-12 font-sora text-center">
-                                        {t('strategic-sap-consulting.digitalTransformation.ourApproach.title')}
-                                    </h3>
-                                    <p className="text-base sm:text-lg text-gray-600 font-montserrat leading-relaxed mb-8 sm:mb-12 text-center max-w-4xl mx-auto">
-                                        {t('strategic-sap-consulting.digitalTransformation.ourApproach.description')}
-                                    </p>
-
-                                    <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
-                                        {/* Current State Assessment */}
-                                        <div className="bg-gradient-to-br from-gray-50 to-sky-50 rounded-xl p-6 sm:p-8 border-l-4 border-sky-500 hover:shadow-xl transition-all duration-300">
-                                            <div className="flex items-start mb-4">
-                                                <div className="bg-sky-500 text-white p-3 rounded-lg mr-4">
-                                                    <FaChartLine className="text-2xl" />
-                                                </div>
-                                                <h4 className="text-lg sm:text-xl font-bold text-gray-900 font-sora mt-2">
-                                                    {t('strategic-sap-consulting.digitalTransformation.ourApproach.currentState.title')}
-                                                </h4>
-                                            </div>
-                                            <p className="text-gray-700 font-montserrat leading-relaxed">
-                                                {t('strategic-sap-consulting.digitalTransformation.ourApproach.currentState.description')}
-                                            </p>
-                                        </div>
-
-                                        {/* Future Vision Workshop */}
-                                        <div className="bg-gradient-to-br from-gray-50 to-sky-50 rounded-xl p-6 sm:p-8 border-l-4 border-sky-500 hover:shadow-xl transition-all duration-300">
-                                            <div className="flex items-start mb-4">
-                                                <div className="bg-sky-500 text-white p-3 rounded-lg mr-4">
-                                                    <FaUsers className="text-2xl" />
-                                                </div>
-                                                <h4 className="text-lg sm:text-xl font-bold text-gray-900 font-sora mt-2">
-                                                    {t('strategic-sap-consulting.digitalTransformation.ourApproach.futureVision.title')}
-                                                </h4>
-                                            </div>
-                                            <p className="text-gray-700 font-montserrat leading-relaxed">
-                                                {t('strategic-sap-consulting.digitalTransformation.ourApproach.futureVision.description')}
-                                            </p>
-                                        </div>
-
-                                        {/* Technology Blueprint */}
-                                        <div className="bg-gradient-to-br from-gray-50 to-sky-50 rounded-xl p-6 sm:p-8 border-l-4 border-sky-500 hover:shadow-xl transition-all duration-300">
-                                            <div className="flex items-start mb-4">
-                                                <div className="bg-sky-500 text-white p-3 rounded-lg mr-4">
-                                                    <FaCogs className="text-2xl" />
-                                                </div>
-                                                <h4 className="text-lg sm:text-xl font-bold text-gray-900 font-sora mt-2">
-                                                    {t('strategic-sap-consulting.digitalTransformation.ourApproach.techBlueprint.title')}
-                                                </h4>
-                                            </div>
-                                            <p className="text-gray-700 font-montserrat leading-relaxed">
-                                                {t('strategic-sap-consulting.digitalTransformation.ourApproach.techBlueprint.description')}
-                                            </p>
-                                        </div>
-
-                                        {/* Roadmap Development */}
-                                        <div className="bg-gradient-to-br from-gray-50 to-sky-50 rounded-xl p-6 sm:p-8 border-l-4 border-sky-500 hover:shadow-xl transition-all duration-300">
-                                            <div className="flex items-start mb-4">
-                                                <div className="bg-sky-500 text-white p-3 rounded-lg mr-4">
-                                                    <FaRocket className="text-2xl" />
-                                                </div>
-                                                <h4 className="text-lg sm:text-xl font-bold text-gray-900 font-sora mt-2">
-                                                    {t('strategic-sap-consulting.digitalTransformation.ourApproach.roadmap.title')}
-                                                </h4>
-                                            </div>
-                                            <p className="text-gray-700 font-montserrat leading-relaxed">
-                                                {t('strategic-sap-consulting.digitalTransformation.ourApproach.roadmap.description')}
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* Key Benefits */}
-                                <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 sm:p-12">
-                                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-8 sm:mb-12 font-sora text-center">
-                                        {t('strategic-sap-consulting.digitalTransformation.keyBenefits.title')}
-                                    </h3>
-
-                                    <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
-                                        {/* Strategic Alignment */}
-                                        <div className="flex items-start">
-                                            <div className="bg-sky-500 p-2 rounded-lg mr-4 flex-shrink-0">
-                                                <FaCheck className="text-white text-xl" />
-                                            </div>
-                                            <div>
-                                                <h4 className="text-lg font-bold text-white mb-2 font-sora">
-                                                    {t('strategic-sap-consulting.digitalTransformation.keyBenefits.strategicAlignment.title')}
-                                                </h4>
-                                                <p className="text-gray-300 font-montserrat">
-                                                    {t('strategic-sap-consulting.digitalTransformation.keyBenefits.strategicAlignment.description')}
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        {/* Innovation Adoption */}
-                                        <div className="flex items-start">
-                                            <div className="bg-sky-500 p-2 rounded-lg mr-4 flex-shrink-0">
-                                                <FaCheck className="text-white text-xl" />
-                                            </div>
-                                            <div>
-                                                <h4 className="text-lg font-bold text-white mb-2 font-sora">
-                                                    {t('strategic-sap-consulting.digitalTransformation.keyBenefits.innovationAdoption.title')}
-                                                </h4>
-                                                <p className="text-gray-300 font-montserrat">
-                                                    {t('strategic-sap-consulting.digitalTransformation.keyBenefits.innovationAdoption.description')}
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        {/* Process Optimization */}
-                                        <div className="flex items-start">
-                                            <div className="bg-sky-500 p-2 rounded-lg mr-4 flex-shrink-0">
-                                                <FaCheck className="text-white text-xl" />
-                                            </div>
-                                            <div>
-                                                <h4 className="text-lg font-bold text-white mb-2 font-sora">
-                                                    {t('strategic-sap-consulting.digitalTransformation.keyBenefits.processOptimization.title')}
-                                                </h4>
-                                                <p className="text-gray-300 font-montserrat">
-                                                    {t('strategic-sap-consulting.digitalTransformation.keyBenefits.processOptimization.description')}
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        {/* Risk Mitigation */}
-                                        <div className="flex items-start">
-                                            <div className="bg-sky-500 p-2 rounded-lg mr-4 flex-shrink-0">
-                                                <FaCheck className="text-white text-xl" />
-                                            </div>
-                                            <div>
-                                                <h4 className="text-lg font-bold text-white mb-2 font-sora">
-                                                    {t('strategic-sap-consulting.digitalTransformation.keyBenefits.riskMitigation.title')}
-                                                </h4>
-                                                <p className="text-gray-300 font-montserrat">
-                                                    {t('strategic-sap-consulting.digitalTransformation.keyBenefits.riskMitigation.description')}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    {/* SAP Landscape Assessment & Optimization Section */}
-                    <section className="py-12 sm:py-16 md:py-24 bg-gray-50" id="landscape-assessment">
-                        <div className="container mx-auto px-4 sm:px-6 md:px-12">
-                            <div className="max-w-6xl mx-auto">
-                                {/* Section Header */}
-                                <div className="text-center mb-12 sm:mb-16">
-                                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora">
-                                        {t('strategic-sap-consulting.landscapeAssessment.title')}
-                                    </h2>
-                                    <p className="text-base sm:text-lg text-gray-600 font-montserrat leading-relaxed max-w-4xl mx-auto px-4">
-                                        {t('strategic-sap-consulting.landscapeAssessment.description')}
-                                    </p>
-                                </div>
-
-                                {/* Did You Know? */}
-                                <div className="bg-gradient-to-br from-sky-50 to-blue-50 rounded-2xl p-6 sm:p-8 md:p-10 mb-12 sm:mb-16 border border-sky-100">
-                                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora">
-                                        {t('strategic-sap-consulting.landscapeAssessment.didYouKnow.title')}
-                                    </h3>
-                                    <p className="text-base sm:text-lg text-gray-700 font-montserrat mb-6 sm:mb-8">
-                                        {t('strategic-sap-consulting.landscapeAssessment.didYouKnow.description')}
-                                    </p>
-                                    <div className="grid sm:grid-cols-3 gap-4 sm:gap-6">
-                                        <div className="bg-white rounded-xl p-4 sm:p-6 flex items-start space-x-4 shadow-sm hover:shadow-md transition-shadow duration-300">
-                                            <div className="text-yellow-500 text-2xl sm:text-3xl flex-shrink-0">
-                                                <FaChartLine />
-                                            </div>
-                                            <span className="text-gray-800 font-montserrat text-sm sm:text-base font-medium">
-                                                {t('strategic-sap-consulting.landscapeAssessment.didYouKnow.licenseOptimization')}
-                                            </span>
-                                        </div>
-                                        <div className="bg-white rounded-xl p-4 sm:p-6 flex items-start space-x-4 shadow-sm hover:shadow-md transition-shadow duration-300">
-                                            <div className="text-yellow-500 text-2xl sm:text-3xl flex-shrink-0">
-                                                <FaCogs />
-                                            </div>
-                                            <span className="text-gray-800 font-montserrat text-sm sm:text-base font-medium">
-                                                {t('strategic-sap-consulting.landscapeAssessment.didYouKnow.infrastructureConsolidation')}
-                                            </span>
-                                        </div>
-                                        <div className="bg-white rounded-xl p-4 sm:p-6 flex items-start space-x-4 shadow-sm hover:shadow-md transition-shadow duration-300">
-                                            <div className="text-yellow-500 text-2xl sm:text-3xl flex-shrink-0">
-                                                <FaRocket />
-                                            </div>
-                                            <span className="text-gray-800 font-montserrat text-sm sm:text-base font-medium">
-                                                {t('strategic-sap-consulting.landscapeAssessment.didYouKnow.processEfficiency')}
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* Our Assessment Methodology */}
-                                <div className="mb-16">
-                                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-8 sm:mb-12 font-sora text-center">
-                                        {t('strategic-sap-consulting.landscapeAssessment.methodology.title')}
-                                    </h3>
-                                    <div className="space-y-6">
-                                        {/* Step 1 */}
-                                        <div className="flex items-start">
-                                            <div className="bg-yellow-500 text-white rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center font-bold text-lg sm:text-xl flex-shrink-0 mr-4 sm:mr-6">
-                                                1
-                                            </div>
-                                            <div>
-                                                <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 font-sora">
-                                                    {t('strategic-sap-consulting.landscapeAssessment.methodology.step1.title')}
-                                                </h4>
-                                                <p className="text-gray-600 font-montserrat leading-relaxed">
-                                                    {t('strategic-sap-consulting.landscapeAssessment.methodology.step1.description')}
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        {/* Step 2 */}
-                                        <div className="flex items-start">
-                                            <div className="bg-yellow-500 text-white rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center font-bold text-lg sm:text-xl flex-shrink-0 mr-4 sm:mr-6">
-                                                2
-                                            </div>
-                                            <div>
-                                                <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 font-sora">
-                                                    {t('strategic-sap-consulting.landscapeAssessment.methodology.step2.title')}
-                                                </h4>
-                                                <p className="text-gray-600 font-montserrat leading-relaxed">
-                                                    {t('strategic-sap-consulting.landscapeAssessment.methodology.step2.description')}
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        {/* Step 3 */}
-                                        <div className="flex items-start">
-                                            <div className="bg-yellow-500 text-white rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center font-bold text-lg sm:text-xl flex-shrink-0 mr-4 sm:mr-6">
-                                                3
-                                            </div>
-                                            <div>
-                                                <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 font-sora">
-                                                    {t('strategic-sap-consulting.landscapeAssessment.methodology.step3.title')}
-                                                </h4>
-                                                <p className="text-gray-600 font-montserrat leading-relaxed">
-                                                    {t('strategic-sap-consulting.landscapeAssessment.methodology.step3.description')}
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        {/* Step 4 */}
-                                        <div className="flex items-start">
-                                            <div className="bg-yellow-500 text-white rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center font-bold text-lg sm:text-xl flex-shrink-0 mr-4 sm:mr-6">
-                                                4
-                                            </div>
-                                            <div>
-                                                <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 font-sora">
-                                                    {t('strategic-sap-consulting.landscapeAssessment.methodology.step4.title')}
-                                                </h4>
-                                                <p className="text-gray-600 font-montserrat leading-relaxed">
-                                                    {t('strategic-sap-consulting.landscapeAssessment.methodology.step4.description')}
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        {/* Step 5 */}
-                                        <div className="flex items-start">
-                                            <div className="bg-yellow-500 text-white rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center font-bold text-lg sm:text-xl flex-shrink-0 mr-4 sm:mr-6">
-                                                5
-                                            </div>
-                                            <div>
-                                                <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 font-sora">
-                                                    {t('strategic-sap-consulting.landscapeAssessment.methodology.step5.title')}
-                                                </h4>
-                                                <p className="text-gray-600 font-montserrat leading-relaxed">
-                                                    {t('strategic-sap-consulting.landscapeAssessment.methodology.step5.description')}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* Key Focus Areas */}
-                                <div>
-                                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-8 sm:mb-12 font-sora text-center">
-                                        {t('strategic-sap-consulting.landscapeAssessment.focusAreas.title')}
-                                    </h3>
-                                    <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
-                                        {/* System Architecture */}
-                                        <div className="bg-white rounded-xl p-6 sm:p-8 border border-gray-200 hover:shadow-xl transition-all duration-300">
-                                            <div className="text-sky-500 text-3xl sm:text-4xl mb-4">
-                                                <FaDatabase />
-                                            </div>
-                                            <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 font-sora">
-                                                {t('strategic-sap-consulting.landscapeAssessment.focusAreas.systemArchitecture.title')}
-                                            </h4>
-                                            <p className="text-gray-600 font-montserrat leading-relaxed">
-                                                {t('strategic-sap-consulting.landscapeAssessment.focusAreas.systemArchitecture.description')}
-                                            </p>
-                                        </div>
-
-                                        {/* Performance & Scalability */}
-                                        <div className="bg-white rounded-xl p-6 sm:p-8 border border-gray-200 hover:shadow-xl transition-all duration-300">
-                                            <div className="text-sky-500 text-3xl sm:text-4xl mb-4">
-                                                <FaChartArea />
-                                            </div>
-                                            <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 font-sora">
-                                                {t('strategic-sap-consulting.landscapeAssessment.focusAreas.performance.title')}
-                                            </h4>
-                                            <p className="text-gray-600 font-montserrat leading-relaxed">
-                                                {t('strategic-sap-consulting.landscapeAssessment.focusAreas.performance.description')}
-                                            </p>
-                                        </div>
-
-                                        {/* Security & Compliance */}
-                                        <div className="bg-white rounded-xl p-6 sm:p-8 border border-gray-200 hover:shadow-xl transition-all duration-300">
-                                            <div className="text-sky-500 text-3xl sm:text-4xl mb-4">
-                                                <FaShieldAlt />
-                                            </div>
-                                            <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 font-sora">
-                                                {t('strategic-sap-consulting.landscapeAssessment.focusAreas.security.title')}
-                                            </h4>
-                                            <p className="text-gray-600 font-montserrat leading-relaxed">
-                                                {t('strategic-sap-consulting.landscapeAssessment.focusAreas.security.description')}
-                                            </p>
-                                        </div>
-
-                                        {/* Cost Optimization */}
-                                        <div className="bg-white rounded-xl p-6 sm:p-8 border border-gray-200 hover:shadow-xl transition-all duration-300">
-                                            <div className="text-sky-500 text-3xl sm:text-4xl mb-4">
-                                                <FaChartLine />
-                                            </div>
-                                            <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 font-sora">
-                                                {t('strategic-sap-consulting.landscapeAssessment.focusAreas.costOptimization.title')}
-                                            </h4>
-                                            <p className="text-gray-600 font-montserrat leading-relaxed">
-                                                {t('strategic-sap-consulting.landscapeAssessment.focusAreas.costOptimization.description')}
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    {/* SAP S/4HANA Readiness & Migration Planning Section */}
-                    <section className="py-12 sm:py-16 md:py-24 bg-white" id="s4hana-readiness">
-                        <div className="container mx-auto px-4 sm:px-6 md:px-12">
-                            <div className="max-w-6xl mx-auto">
-                                {/* Section Header */}
-                                <div className="text-center mb-12 sm:mb-16">
-                                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora">
-                                        {t('strategic-sap-consulting.s4hanaReadiness.title')}
-                                    </h2>
-                                    <p className="text-base sm:text-lg text-gray-600 font-montserrat leading-relaxed max-w-4xl mx-auto px-4">
-                                        {t('strategic-sap-consulting.s4hanaReadiness.description')}
-                                    </p>
-                                </div>
-
-                                {/* Why Migrate to S/4HANA? */}
-                                <div className="bg-gradient-to-br from-blue-50 to-sky-50 rounded-2xl p-6 sm:p-8 md:p-10 mb-12 sm:mb-16 border border-blue-100">
-                                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora">
-                                        {t('strategic-sap-consulting.s4hanaReadiness.whyMigrate.title')}
-                                    </h3>
-                                    <p className="text-base sm:text-lg text-gray-700 font-montserrat mb-6 sm:mb-8">
-                                        {t('strategic-sap-consulting.s4hanaReadiness.whyMigrate.description')}
-                                    </p>
-                                    <div className="space-y-3 sm:space-y-4">
-                                        <div className="flex items-start">
-                                            <div className="text-blue-500 mt-1 mr-3 flex-shrink-0">
-                                                <FaCheck className="text-lg" />
-                                            </div>
-                                            <span className="text-gray-800 font-montserrat text-sm sm:text-base">
-                                                {t('strategic-sap-consulting.s4hanaReadiness.whyMigrate.benefit1')}
-                                            </span>
-                                        </div>
-                                        <div className="flex items-start">
-                                            <div className="text-blue-500 mt-1 mr-3 flex-shrink-0">
-                                                <FaCheck className="text-lg" />
-                                            </div>
-                                            <span className="text-gray-800 font-montserrat text-sm sm:text-base">
-                                                {t('strategic-sap-consulting.s4hanaReadiness.whyMigrate.benefit2')}
-                                            </span>
-                                        </div>
-                                        <div className="flex items-start">
-                                            <div className="text-blue-500 mt-1 mr-3 flex-shrink-0">
-                                                <FaCheck className="text-lg" />
-                                            </div>
-                                            <span className="text-gray-800 font-montserrat text-sm sm:text-base">
-                                                {t('strategic-sap-consulting.s4hanaReadiness.whyMigrate.benefit3')}
-                                            </span>
-                                        </div>
-                                        <div className="flex items-start">
-                                            <div className="text-blue-500 mt-1 mr-3 flex-shrink-0">
-                                                <FaCheck className="text-lg" />
-                                            </div>
-                                            <span className="text-gray-800 font-montserrat text-sm sm:text-base">
-                                                {t('strategic-sap-consulting.s4hanaReadiness.whyMigrate.benefit4')}
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* Our Migration Approach */}
-                                <div className="mb-16">
-                                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-8 sm:mb-12 font-sora text-center">
-                                        {t('strategic-sap-consulting.s4hanaReadiness.migrationApproach.title')}
-                                    </h3>
-                                    <div className="space-y-6">
-                                        {/* Step 1 */}
-                                        <div className="flex items-start">
-                                            <div className="bg-yellow-500 text-white rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center font-bold text-lg sm:text-xl flex-shrink-0 mr-4 sm:mr-6">
-                                                1
-                                            </div>
-                                            <div>
-                                                <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 font-sora">
-                                                    {t('strategic-sap-consulting.s4hanaReadiness.migrationApproach.step1.title')}
-                                                </h4>
-                                                <p className="text-gray-600 font-montserrat leading-relaxed">
-                                                    {t('strategic-sap-consulting.s4hanaReadiness.migrationApproach.step1.description')}
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        {/* Step 2 */}
-                                        <div className="flex items-start">
-                                            <div className="bg-yellow-500 text-white rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center font-bold text-lg sm:text-xl flex-shrink-0 mr-4 sm:mr-6">
-                                                2
-                                            </div>
-                                            <div>
-                                                <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 font-sora">
-                                                    {t('strategic-sap-consulting.s4hanaReadiness.migrationApproach.step2.title')}
-                                                </h4>
-                                                <p className="text-gray-600 font-montserrat leading-relaxed">
-                                                    {t('strategic-sap-consulting.s4hanaReadiness.migrationApproach.step2.description')}
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        {/* Step 3 */}
-                                        <div className="flex items-start">
-                                            <div className="bg-yellow-500 text-white rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center font-bold text-lg sm:text-xl flex-shrink-0 mr-4 sm:mr-6">
-                                                3
-                                            </div>
-                                            <div>
-                                                <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 font-sora">
-                                                    {t('strategic-sap-consulting.s4hanaReadiness.migrationApproach.step3.title')}
-                                                </h4>
-                                                <p className="text-gray-600 font-montserrat leading-relaxed">
-                                                    {t('strategic-sap-consulting.s4hanaReadiness.migrationApproach.step3.description')}
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        {/* Step 4 */}
-                                        <div className="flex items-start">
-                                            <div className="bg-yellow-500 text-white rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center font-bold text-lg sm:text-xl flex-shrink-0 mr-4 sm:mr-6">
-                                                4
-                                            </div>
-                                            <div>
-                                                <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 font-sora">
-                                                    {t('strategic-sap-consulting.s4hanaReadiness.migrationApproach.step4.title')}
-                                                </h4>
-                                                <p className="text-gray-600 font-montserrat leading-relaxed">
-                                                    {t('strategic-sap-consulting.s4hanaReadiness.migrationApproach.step4.description')}
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        {/* Step 5 */}
-                                        <div className="flex items-start">
-                                            <div className="bg-yellow-500 text-white rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center font-bold text-lg sm:text-xl flex-shrink-0 mr-4 sm:mr-6">
-                                                5
-                                            </div>
-                                            <div>
-                                                <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 font-sora">
-                                                    {t('strategic-sap-consulting.s4hanaReadiness.migrationApproach.step5.title')}
-                                                </h4>
-                                                <p className="text-gray-600 font-montserrat leading-relaxed">
-                                                    {t('strategic-sap-consulting.s4hanaReadiness.migrationApproach.step5.description')}
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        {/* Step 6 */}
-                                        <div className="flex items-start">
-                                            <div className="bg-yellow-500 text-white rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center font-bold text-lg sm:text-xl flex-shrink-0 mr-4 sm:mr-6">
-                                                6
-                                            </div>
-                                            <div>
-                                                <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 font-sora">
-                                                    {t('strategic-sap-consulting.s4hanaReadiness.migrationApproach.step6.title')}
-                                                </h4>
-                                                <p className="text-gray-600 font-montserrat leading-relaxed">
-                                                    {t('strategic-sap-consulting.s4hanaReadiness.migrationApproach.step6.description')}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* Migration Path Options */}
-                                <div>
-                                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-8 sm:mb-12 font-sora text-center">
-                                        {t('strategic-sap-consulting.s4hanaReadiness.migrationPaths.title')}
-                                    </h3>
-                                    <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
-                                        {/* Greenfield */}
-                                        <div className="bg-gradient-to-br from-gray-50 to-white rounded-xl p-6 sm:p-8 border-2 border-gray-200 hover:border-sky-500 hover:shadow-xl transition-all duration-300">
-                                            <div className="text-sky-500 text-3xl sm:text-4xl mb-4">
-                                                <FaRocket />
-                                            </div>
-                                            <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 font-sora">
-                                                {t('strategic-sap-consulting.s4hanaReadiness.migrationPaths.greenfield.title')}
-                                            </h4>
-                                            <p className="text-gray-600 font-montserrat text-sm leading-relaxed mb-4">
-                                                {t('strategic-sap-consulting.s4hanaReadiness.migrationPaths.greenfield.description')}
-                                            </p>
-                                            <div className="space-y-2">
-                                                <p className="text-sm font-semibold text-gray-700 font-sora">
-                                                    {t('strategic-sap-consulting.s4hanaReadiness.migrationPaths.bestFor')}
-                                                </p>
-                                                <p className="text-sm text-gray-600 font-montserrat">
-                                                    {t('strategic-sap-consulting.s4hanaReadiness.migrationPaths.greenfield.bestFor')}
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        {/* Brownfield */}
-                                        <div className="bg-gradient-to-br from-gray-50 to-white rounded-xl p-6 sm:p-8 border-2 border-gray-200 hover:border-sky-500 hover:shadow-xl transition-all duration-300">
-                                            <div className="text-sky-500 text-3xl sm:text-4xl mb-4">
-                                                <FaCogs />
-                                            </div>
-                                            <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 font-sora">
-                                                {t('strategic-sap-consulting.s4hanaReadiness.migrationPaths.brownfield.title')}
-                                            </h4>
-                                            <p className="text-gray-600 font-montserrat text-sm leading-relaxed mb-4">
-                                                {t('strategic-sap-consulting.s4hanaReadiness.migrationPaths.brownfield.description')}
-                                            </p>
-                                            <div className="space-y-2">
-                                                <p className="text-sm font-semibold text-gray-700 font-sora">
-                                                    {t('strategic-sap-consulting.s4hanaReadiness.migrationPaths.bestFor')}
-                                                </p>
-                                                <p className="text-sm text-gray-600 font-montserrat">
-                                                    {t('strategic-sap-consulting.s4hanaReadiness.migrationPaths.brownfield.bestFor')}
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        {/* Hybrid */}
-                                        <div className="bg-gradient-to-br from-gray-50 to-white rounded-xl p-6 sm:p-8 border-2 border-gray-200 hover:border-sky-500 hover:shadow-xl transition-all duration-300">
-                                            <div className="text-sky-500 text-3xl sm:text-4xl mb-4">
-                                                <FaHandshake />
-                                            </div>
-                                            <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 font-sora">
-                                                {t('strategic-sap-consulting.s4hanaReadiness.migrationPaths.hybrid.title')}
-                                            </h4>
-                                            <p className="text-gray-600 font-montserrat text-sm leading-relaxed mb-4">
-                                                {t('strategic-sap-consulting.s4hanaReadiness.migrationPaths.hybrid.description')}
-                                            </p>
-                                            <div className="space-y-2">
-                                                <p className="text-sm font-semibold text-gray-700 font-sora">
-                                                    {t('strategic-sap-consulting.s4hanaReadiness.migrationPaths.bestFor')}
-                                                </p>
-                                                <p className="text-sm text-gray-600 font-montserrat">
-                                                    {t('strategic-sap-consulting.s4hanaReadiness.migrationPaths.hybrid.bestFor')}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    {/* SAP License Optimization & Compliance Section */}
-                    <section className="py-12 sm:py-16 md:py-24 bg-gray-50" id="license-optimization">
-                        <div className="container mx-auto px-4 sm:px-6 md:px-12">
-                            <div className="max-w-6xl mx-auto">
-                                {/* Section Header */}
-                                <div className="text-center mb-12 sm:mb-16">
-                                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora">
-                                        {t('strategic-sap-consulting.licenseOptimization.title')}
-                                    </h2>
-                                    <p className="text-base sm:text-lg text-gray-600 font-montserrat leading-relaxed max-w-4xl mx-auto px-4">
-                                        {t('strategic-sap-consulting.licenseOptimization.description')}
-                                    </p>
-                                </div>
-
-                                {/* The Cost of Non-Compliance */}
-                                <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-6 sm:p-8 md:p-10 mb-12 sm:mb-16 border-l-4 border-red-500">
-                                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora">
-                                        {t('strategic-sap-consulting.licenseOptimization.costOfNonCompliance.title')}
-                                    </h3>
-                                    <p className="text-base sm:text-lg text-gray-700 font-montserrat mb-6 sm:mb-8">
-                                        {t('strategic-sap-consulting.licenseOptimization.costOfNonCompliance.description')}
-                                    </p>
-                                    <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
-                                        <div className="bg-white rounded-xl p-6 shadow-sm">
-                                            <div className="flex items-center mb-3">
-                                                <div className="text-orange-500 text-2xl mr-3">
-                                                    ⚠️
-                                                </div>
-                                                <h4 className="text-lg font-bold text-gray-900 font-sora">
-                                                    {t('strategic-sap-consulting.licenseOptimization.costOfNonCompliance.stat1.title')}
-                                                </h4>
-                                            </div>
-                                            <p className="text-gray-600 font-montserrat text-sm">
-                                                {t('strategic-sap-consulting.licenseOptimization.costOfNonCompliance.stat1.description')}
-                                            </p>
-                                        </div>
-                                        <div className="bg-white rounded-xl p-6 shadow-sm">
-                                            <div className="flex items-center mb-3">
-                                                <div className="text-orange-500 text-2xl mr-3">
-                                                    💰
-                                                </div>
-                                                <h4 className="text-lg font-bold text-gray-900 font-sora">
-                                                    {t('strategic-sap-consulting.licenseOptimization.costOfNonCompliance.stat2.title')}
-                                                </h4>
-                                            </div>
-                                            <p className="text-gray-600 font-montserrat text-sm">
-                                                {t('strategic-sap-consulting.licenseOptimization.costOfNonCompliance.stat2.description')}
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* Our License Optimization Process */}
-                                <div className="mb-16">
-                                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-8 sm:mb-12 font-sora text-center">
-                                        {t('strategic-sap-consulting.licenseOptimization.optimizationProcess.title')}
-                                    </h3>
-                                    <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
-                                        {/* Step 1 */}
-                                        <div className="bg-white rounded-xl p-6 sm:p-8 border-l-4 border-yellow-500 hover:shadow-xl transition-all duration-300">
-                                            <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 font-sora">
-                                                {t('strategic-sap-consulting.licenseOptimization.optimizationProcess.step1.title')}
-                                            </h4>
-                                            <p className="text-gray-600 font-montserrat leading-relaxed">
-                                                {t('strategic-sap-consulting.licenseOptimization.optimizationProcess.step1.description')}
-                                            </p>
-                                        </div>
-
-                                        {/* Step 2 */}
-                                        <div className="bg-white rounded-xl p-6 sm:p-8 border-l-4 border-yellow-500 hover:shadow-xl transition-all duration-300">
-                                            <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 font-sora">
-                                                {t('strategic-sap-consulting.licenseOptimization.optimizationProcess.step2.title')}
-                                            </h4>
-                                            <p className="text-gray-600 font-montserrat leading-relaxed">
-                                                {t('strategic-sap-consulting.licenseOptimization.optimizationProcess.step2.description')}
-                                            </p>
-                                        </div>
-
-                                        {/* Step 3 */}
-                                        <div className="bg-white rounded-xl p-6 sm:p-8 border-l-4 border-yellow-500 hover:shadow-xl transition-all duration-300">
-                                            <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 font-sora">
-                                                {t('strategic-sap-consulting.licenseOptimization.optimizationProcess.step3.title')}
-                                            </h4>
-                                            <p className="text-gray-600 font-montserrat leading-relaxed">
-                                                {t('strategic-sap-consulting.licenseOptimization.optimizationProcess.step3.description')}
-                                            </p>
-                                        </div>
-
-                                        {/* Step 4 */}
-                                        <div className="bg-white rounded-xl p-6 sm:p-8 border-l-4 border-yellow-500 hover:shadow-xl transition-all duration-300">
-                                            <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 font-sora">
-                                                {t('strategic-sap-consulting.licenseOptimization.optimizationProcess.step4.title')}
-                                            </h4>
-                                            <p className="text-gray-600 font-montserrat leading-relaxed">
-                                                {t('strategic-sap-consulting.licenseOptimization.optimizationProcess.step4.description')}
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* Potential Savings Opportunities */}
-                                <div className="mb-16">
-                                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-8 sm:mb-12 font-sora text-center">
-                                        {t('strategic-sap-consulting.licenseOptimization.savingsOpportunities.title')}
-                                    </h3>
-                                    <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                                        <div className="overflow-x-auto">
-                                            <table className="w-full">
-                                                <thead className="bg-gray-900 text-white">
-                                                    <tr>
-                                                        <th className="px-6 py-4 text-left text-sm font-bold font-sora">
-                                                            {t('strategic-sap-consulting.licenseOptimization.savingsOpportunities.table.area')}
-                                                        </th>
-                                                        <th className="px-6 py-4 text-left text-sm font-bold font-sora">
-                                                            {t('strategic-sap-consulting.licenseOptimization.savingsOpportunities.table.savings')}
-                                                        </th>
-                                                        <th className="px-6 py-4 text-left text-sm font-bold font-sora">
-                                                            {t('strategic-sap-consulting.licenseOptimization.savingsOpportunities.table.action')}
-                                                        </th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody className="divide-y divide-gray-200">
-                                                    <tr className="hover:bg-gray-50">
-                                                        <td className="px-6 py-4 text-sm font-montserrat text-gray-900">
-                                                            {t('strategic-sap-consulting.licenseOptimization.savingsOpportunities.table.row1.area')}
-                                                        </td>
-                                                        <td className="px-6 py-4">
-                                                            <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-yellow-100 text-yellow-800">
-                                                                {t('strategic-sap-consulting.licenseOptimization.savingsOpportunities.table.row1.savings')}
-                                                            </span>
-                                                        </td>
-                                                        <td className="px-6 py-4 text-sm font-montserrat text-gray-600">
-                                                            {t('strategic-sap-consulting.licenseOptimization.savingsOpportunities.table.row1.action')}
-                                                        </td>
-                                                    </tr>
-                                                    <tr className="hover:bg-gray-50">
-                                                        <td className="px-6 py-4 text-sm font-montserrat text-gray-900">
-                                                            {t('strategic-sap-consulting.licenseOptimization.savingsOpportunities.table.row2.area')}
-                                                        </td>
-                                                        <td className="px-6 py-4">
-                                                            <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-yellow-100 text-yellow-800">
-                                                                {t('strategic-sap-consulting.licenseOptimization.savingsOpportunities.table.row2.savings')}
-                                                            </span>
-                                                        </td>
-                                                        <td className="px-6 py-4 text-sm font-montserrat text-gray-600">
-                                                            {t('strategic-sap-consulting.licenseOptimization.savingsOpportunities.table.row2.action')}
-                                                        </td>
-                                                    </tr>
-                                                    <tr className="hover:bg-gray-50">
-                                                        <td className="px-6 py-4 text-sm font-montserrat text-gray-900">
-                                                            {t('strategic-sap-consulting.licenseOptimization.savingsOpportunities.table.row3.area')}
-                                                        </td>
-                                                        <td className="px-6 py-4">
-                                                            <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-yellow-100 text-yellow-800">
-                                                                {t('strategic-sap-consulting.licenseOptimization.savingsOpportunities.table.row3.savings')}
-                                                            </span>
-                                                        </td>
-                                                        <td className="px-6 py-4 text-sm font-montserrat text-gray-600">
-                                                            {t('strategic-sap-consulting.licenseOptimization.savingsOpportunities.table.row3.action')}
-                                                        </td>
-                                                    </tr>
-                                                    <tr className="hover:bg-gray-50">
-                                                        <td className="px-6 py-4 text-sm font-montserrat text-gray-900">
-                                                            {t('strategic-sap-consulting.licenseOptimization.savingsOpportunities.table.row4.area')}
-                                                        </td>
-                                                        <td className="px-6 py-4">
-                                                            <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-yellow-100 text-yellow-800">
-                                                                {t('strategic-sap-consulting.licenseOptimization.savingsOpportunities.table.row4.savings')}
-                                                            </span>
-                                                        </td>
-                                                        <td className="px-6 py-4 text-sm font-montserrat text-gray-600">
-                                                            {t('strategic-sap-consulting.licenseOptimization.savingsOpportunities.table.row4.action')}
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* Compliance Assurance */}
-                                <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 sm:p-12">
-                                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-6 sm:mb-8 font-sora text-center">
-                                        {t('strategic-sap-consulting.licenseOptimization.complianceAssurance.title')}
-                                    </h3>
-                                    <p className="text-gray-300 font-montserrat text-center mb-8 sm:mb-10 leading-relaxed max-w-3xl mx-auto">
-                                        {t('strategic-sap-consulting.licenseOptimization.complianceAssurance.description')}
-                                    </p>
-                                    <div className="grid sm:grid-cols-3 gap-6 sm:gap-8">
-                                        <div className="flex items-start">
-                                            <div className="bg-yellow-500 p-2 rounded-lg mr-4 flex-shrink-0">
-                                                <FaCheck className="text-white text-xl" />
-                                            </div>
-                                            <div>
-                                                <h4 className="text-lg font-bold text-white mb-2 font-sora">
-                                                    {t('strategic-sap-consulting.licenseOptimization.complianceAssurance.item1.title')}
-                                                </h4>
-                                                <p className="text-gray-300 font-montserrat text-sm">
-                                                    {t('strategic-sap-consulting.licenseOptimization.complianceAssurance.item1.description')}
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div className="flex items-start">
-                                            <div className="bg-yellow-500 p-2 rounded-lg mr-4 flex-shrink-0">
-                                                <FaCheck className="text-white text-xl" />
-                                            </div>
-                                            <div>
-                                                <h4 className="text-lg font-bold text-white mb-2 font-sora">
-                                                    {t('strategic-sap-consulting.licenseOptimization.complianceAssurance.item2.title')}
-                                                </h4>
-                                                <p className="text-gray-300 font-montserrat text-sm">
-                                                    {t('strategic-sap-consulting.licenseOptimization.complianceAssurance.item2.description')}
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div className="flex items-start">
-                                            <div className="bg-yellow-500 p-2 rounded-lg mr-4 flex-shrink-0">
-                                                <FaCheck className="text-white text-xl" />
-                                            </div>
-                                            <div>
-                                                <h4 className="text-lg font-bold text-white mb-2 font-sora">
-                                                    {t('strategic-sap-consulting.licenseOptimization.complianceAssurance.item3.title')}
-                                                </h4>
-                                                <p className="text-gray-300 font-montserrat text-sm">
-                                                    {t('strategic-sap-consulting.licenseOptimization.complianceAssurance.item3.description')}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </>
+                </section>
             )}
 
-            {/* Industries & CTA */}
-            <section className="py-12 sm:py-16 md:py-24 bg-gradient-to-r from-gray-900 to-gray-800">
-                <div className="container mx-auto px-4 sm:px-6 md:px-12">
-                    <div className="max-w-6xl mx-auto text-center text-white">
-                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 font-sora">
-                            {tUI('perfectForYourIndustry')}
-                        </h2>
-                        <p className="text-lg sm:text-xl text-gray-300 mb-6 sm:mb-8 font-montserrat px-4">
-                            {tUI('trustedByBusinesses')}
-                        </p>
-
-                        <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8 sm:mb-12 px-4">
-                            {product.industries.map((industry, index) => (
-                                <span key={index} className="bg-white/10 text-white px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-montserrat">
-                                    {industry}
-                                </span>
-                            ))}
-                        </div>
-
-                        <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 md:p-12">
-                            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 font-sora">
-                                {tUI('readyToGetStarted')}
-                            </h3>
-                            <p className="text-gray-300 font-montserrat text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed px-4">
-                                {tUI('joinThousands')} {product.title}. {tUI('getFreeConsultation')}
-                            </p>
-                            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <button className="border-2 border-sky-500 text-sky-400 hover:bg-sky-500 hover:text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105" onClick={() => goToContact()}>
-                                    <span className="text-sm sm:text-base">{tUI('contactSales')}</span>
-                                </button>
+            {/* Implementation Process */}
+            {service.implementation && service.implementation.length > 0 && (
+                <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
+                    <div className="container mx-auto px-4 sm:px-6 md:px-12">
+                        <div className="max-w-4xl mx-auto">
+                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-8 font-sora">
+                                Implementation Process
+                            </h2>
+                            <div className="space-y-6">
+                                {service.implementation.map((step, index) => (
+                                    <div key={index} className="flex items-start space-x-4">
+                                        <div className="flex-shrink-0">
+                                            <div className="w-10 h-10 bg-sky-600 text-white rounded-full flex items-center justify-center font-bold">
+                                                {index + 1}
+                                            </div>
+                                        </div>
+                                        <div className="flex-1 pt-2">
+                                            <p className="text-gray-700 font-montserrat text-base sm:text-lg">
+                                                {step}
+                                            </p>
+                                        </div>
+                                    </div>
+                                ))}
                             </div>
                         </div>
+                    </div>
+                </section>
+            )}
+
+            {/* Industries */}
+            {service.industries && service.industries.length > 0 && (
+                <section className="py-12 sm:py-16 md:py-20 bg-white">
+                    <div className="container mx-auto px-4 sm:px-6 md:px-12">
+                        <div className="max-w-4xl mx-auto">
+                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-8 font-sora">
+                                Industries We Serve
+                            </h2>
+                            <div className="flex flex-wrap gap-3">
+                                {service.industries.map((industry, index) => (
+                                    <span
+                                        key={index}
+                                        className="px-4 py-2 bg-gray-100 text-gray-800 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors"
+                                    >
+                                        {industry}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            )}
+
+            {/* ROI Statement */}
+            {service.roi && (
+                <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-sky-600 to-sky-700 text-white">
+                    <div className="container mx-auto px-4 sm:px-6 md:px-12">
+                        <div className="max-w-4xl mx-auto text-center">
+                            <FaIcons.FaRocket className="w-12 h-12 mx-auto mb-6" />
+                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 font-sora">
+                                Expected Results
+                            </h2>
+                            <p className="text-xl sm:text-2xl font-montserrat leading-relaxed">
+                                {service.roi}
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            )}
+
+            {/* CTA Section */}
+            <section className="py-12 sm:py-16 md:py-20 bg-gray-900 text-white">
+                <div className="container mx-auto px-4 sm:px-6 md:px-12">
+                    <div className="max-w-4xl mx-auto text-center">
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 font-sora">
+                            Ready to Get Started?
+                        </h2>
+                        <p className="text-lg text-gray-300 mb-8 font-montserrat">
+                            Contact us today to discuss how we can help transform your business
+                        </p>
+                        <button
+                            onClick={handleContactClick}
+                            className="bg-sky-600 hover:bg-sky-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center space-x-2"
+                        >
+                            <span>{tCommon('getFreeConsultation')}</span>
+                            <FaIcons.FaChevronRight className="w-4 h-4" />
+                        </button>
                     </div>
                 </div>
             </section>

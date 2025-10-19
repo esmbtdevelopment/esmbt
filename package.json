@@ -8,9 +8,15 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "migrate:translations": "node scripts/migrate-to-firestore.js"
+    "migrate:translations": "node scripts/migrate-to-firestore.js",
+    "migrate:services": "node scripts/migrate-services-to-firestore.js",
+    "migrate:navigation": "node scripts/migrate-navigation-to-firestore.js",
+    "migrate:all": "npm run migrate:translations && npm run migrate:services && npm run migrate:navigation"
   },
   "dependencies": {
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
     "@emailjs/browser": "^4.4.1",
     "daisyui": "^5.0.50",
     "firebase": "^12.4.0",
