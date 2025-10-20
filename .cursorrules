@@ -1,0 +1,26 @@
+# Project Rules for AI Assistants
+
+## File Creation Rules
+- **Never create .md documentation files** without explicit permission
+- **Ask before creating any new files** (except when explicitly requested)
+- **Code changes only** - focus on implementation, not documentation
+- Keep root directory clean - no unnecessary files
+
+## Communication Style
+- Be concise and direct
+- Code-first approach
+- Explain changes in the response text, not in separate files
+- If documentation is needed, ask where to put it first
+
+## Acceptable Files
+- Code files (.js, .jsx, .ts, .tsx, etc.)
+- Configuration files (.json, .config.js, etc.)
+- Component files
+- Utility files
+
+## Unacceptable Without Permission
+- README files
+- Documentation files (.md)
+- Guide files
+- Summary files
+- Action plan files
