@@ -1,25 +1,19 @@
 import { NextResponse } from 'next/server';
 import { revalidateTag } from 'next/cache';
-import { getServiceById, saveService, deleteService } from '@/lib/services/firestore';
+
+// TODO: Implement services firestore functions
+// import { getServiceById, saveService, deleteService } from '@/lib/services/firestore';
 
 // GET - Fetch a single service by ID
 export async function GET(request, { params }) {
     try {
         const { id } = params;
 
-        const service = await getServiceById(id);
-
-        if (!service) {
-            return NextResponse.json(
-                { success: false, error: 'Service not found' },
-                { status: 404 }
-            );
-        }
-
+        // TODO: Implement service fetching
         return NextResponse.json({
-            success: true,
-            service
-        });
+            success: false,
+            error: 'Service GET API not fully implemented'
+        }, { status: 501 });
     } catch (error) {
         console.error('[API] Error fetching service:', error);
         return NextResponse.json(
@@ -35,32 +29,11 @@ export async function PUT(request, { params }) {
         const { id } = params;
         const serviceData = await request.json();
 
-        // Ensure the ID matches
-        serviceData.id = id;
-
-        // Get user ID from auth session (TODO: implement proper auth)
-        const userId = 'admin';
-
-        // Save to Firestore
-        const result = await saveService(serviceData, userId);
-
-        if (!result.success) {
-            return NextResponse.json(
-                { success: false, error: result.error },
-                { status: 500 }
-            );
-        }
-
-        // Invalidate Next.js cache
-        revalidateTag('services');
-
-        console.log(`[API] Successfully updated service: ${id}`);
-
+        // TODO: Implement service update
         return NextResponse.json({
-            success: true,
-            message: 'Service updated successfully',
-            id: result.id
-        });
+            success: false,
+            error: 'Service PUT API not fully implemented'
+        }, { status: 501 });
     } catch (error) {
         console.error('[API] Error updating service:', error);
         return NextResponse.json(
@@ -75,24 +48,11 @@ export async function DELETE(request, { params }) {
     try {
         const { id } = params;
 
-        const result = await deleteService(id);
-
-        if (!result.success) {
-            return NextResponse.json(
-                { success: false, error: result.error },
-                { status: 500 }
-            );
-        }
-
-        // Invalidate Next.js cache
-        revalidateTag('services');
-
-        console.log(`[API] Successfully deleted service: ${id}`);
-
+        // TODO: Implement service deletion
         return NextResponse.json({
-            success: true,
-            message: 'Service deleted successfully'
-        });
+            success: false,
+            error: 'Service DELETE API not fully implemented'
+        }, { status: 501 });
     } catch (error) {
         console.error('[API] Error deleting service:', error);
         return NextResponse.json(
@@ -101,4 +61,3 @@ export async function DELETE(request, { params }) {
         );
     }
 }
-

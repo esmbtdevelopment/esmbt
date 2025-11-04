@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import IconPicker from '@/components/admin/IconPicker';
-import ImageUpload from '@/components/admin/ImageUpload';
 import * as FaIcons from 'react-icons/fa';
 
 export default function ServiceEditor() {
@@ -425,13 +424,16 @@ export default function ServiceEditor() {
                             ) : (
                                 <div>
                                     <label className="block text-sm font-medium text-gray-700 mb-2">
-                                        Upload Image
+                                        Image URL
                                     </label>
-                                    <ImageUpload
-                                        currentImage={formData.imageUrl}
-                                        onImageUploaded={(url) => handleInputChange('imageUrl', url)}
-                                        folder="services"
+                                    <input
+                                        type="text"
+                                        value={formData.imageUrl}
+                                        onChange={(e) => handleInputChange('imageUrl', e.target.value)}
+                                        placeholder="https://example.com/image.jpg"
+                                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
                                     />
+                                    <p className="mt-1 text-xs text-gray-500">Enter the full URL of the image</p>
                                 </div>
                             )}
                         </div>

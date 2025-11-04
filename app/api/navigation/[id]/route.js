@@ -1,25 +1,21 @@
 import { NextResponse } from 'next/server';
 import { revalidateTag } from 'next/cache';
-import { getNavItemById, saveNavItem, deleteNavItem } from '@/lib/navigation/firestore';
+
+// TODO: Implement navigation firestore functions
+// import { getNavItemById, saveNavItem, deleteNavItem } from '@/lib/navigation/firestore';
 
 // GET - Fetch a single navigation item by ID
 export async function GET(request, { params }) {
     try {
         const { id } = params;
 
-        const navItem = await getNavItemById(id);
-
-        if (!navItem) {
-            return NextResponse.json(
-                { success: false, error: 'Navigation item not found' },
-                { status: 404 }
-            );
-        }
+        // TODO: Implement navigation item fetching
+        // const navItem = await getNavItemById(id);
 
         return NextResponse.json({
-            success: true,
-            navItem
-        });
+            success: false,
+            error: 'Navigation item GET API not fully implemented'
+        }, { status: 501 });
     } catch (error) {
         console.error('[API] Error fetching navigation item:', error);
         return NextResponse.json(
@@ -35,32 +31,11 @@ export async function PUT(request, { params }) {
         const { id } = params;
         const navData = await request.json();
 
-        // Ensure the ID matches
-        navData.id = id;
-
-        // Get user ID from auth session (TODO: implement proper auth)
-        const userId = 'admin';
-
-        // Save to Firestore
-        const result = await saveNavItem(navData, userId);
-
-        if (!result.success) {
-            return NextResponse.json(
-                { success: false, error: result.error },
-                { status: 500 }
-            );
-        }
-
-        // Invalidate Next.js cache
-        revalidateTag('navigation');
-
-        console.log(`[API] Successfully updated navigation item: ${id}`);
-
+        // TODO: Implement navigation item update
         return NextResponse.json({
-            success: true,
-            message: 'Navigation item updated successfully',
-            id: result.id
-        });
+            success: false,
+            error: 'Navigation item PUT API not fully implemented'
+        }, { status: 501 });
     } catch (error) {
         console.error('[API] Error updating navigation item:', error);
         return NextResponse.json(
@@ -75,24 +50,11 @@ export async function DELETE(request, { params }) {
     try {
         const { id } = params;
 
-        const result = await deleteNavItem(id);
-
-        if (!result.success) {
-            return NextResponse.json(
-                { success: false, error: result.error },
-                { status: 500 }
-            );
-        }
-
-        // Invalidate Next.js cache
-        revalidateTag('navigation');
-
-        console.log(`[API] Successfully deleted navigation item: ${id}`);
-
+        // TODO: Implement navigation item deletion
         return NextResponse.json({
-            success: true,
-            message: 'Navigation item deleted successfully'
-        });
+            success: false,
+            error: 'Navigation item DELETE API not fully implemented'
+        }, { status: 501 });
     } catch (error) {
         console.error('[API] Error deleting navigation item:', error);
         return NextResponse.json(
