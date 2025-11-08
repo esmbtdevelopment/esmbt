@@ -2,12 +2,13 @@ import { Sora, Manrope, Montserrat } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Toaster } from "react-hot-toast";
-import { getTranslations } from 'next-intl/server';
+import { getTranslations as getNextIntlTranslations } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { TranslationDebugProvider } from '@/lib/contexts/TranslationDebugContext';
-import TranslationDebugToggle from '@/components/TranslationDebugToggle';
+import { getTranslations } from '@/lib/translations/server';
+// TODO: Fix AuthContext provider before enabling
+// import TranslationDebugToggle from '@/components/TranslationDebugToggle';
 
 const locales = ['en', 'tr'];
 
@@ -37,7 +38,7 @@ const montserrat = Montserrat({
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'metadata' });
+  const t = await getNextIntlTranslations({ locale, namespace: 'metadata' });
 
   return {
     title: t('title'),
@@ -51,8 +52,8 @@ export default async function LocaleLayout({ children, params }) {
   // Validate that the incoming `locale` parameter is valid
   if (!locales.includes(locale)) notFound();
 
-  // Providing all messages to the client side
-  const messages = await getMessages({ locale });
+  // Providing all messages to the client side (from Firestore via our server function)
+  const messages = await getTranslations(locale);
 
   return (
     <NextIntlClientProvider messages={messages} locale={locale}>
@@ -61,7 +62,8 @@ export default async function LocaleLayout({ children, params }) {
           <Navbar />
           {children}
           <Footer />
-          <TranslationDebugToggle />
+          {/* TODO: Add AuthProvider before enabling TranslationDebugToggle */}
+          {/* <TranslationDebugToggle /> */}
           <Toaster
             position="top-right"
             toastOptions={{
