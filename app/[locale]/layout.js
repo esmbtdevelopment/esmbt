@@ -6,7 +6,6 @@ import { getTranslations as getNextIntlTranslations } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { TranslationDebugProvider } from '@/lib/contexts/TranslationDebugContext';
-import { getTranslations } from '@/lib/translations/server';
 // TODO: Fix AuthContext provider before enabling
 // import TranslationDebugToggle from '@/components/TranslationDebugToggle';
 
@@ -52,8 +51,8 @@ export default async function LocaleLayout({ children, params }) {
   // Validate that the incoming `locale` parameter is valid
   if (!locales.includes(locale)) notFound();
 
-  // Providing all messages to the client side (from Firestore via our server function)
-  const messages = await getTranslations(locale);
+  // Load messages directly from local JSON files
+  const messages = (await import(`@/messages/${locale}.json`)).default;
 
   return (
     <NextIntlClientProvider messages={messages} locale={locale}>

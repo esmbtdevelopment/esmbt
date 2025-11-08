@@ -845,7 +845,16 @@
       }
     },
     "ctaDescription": "SAP ürünlerimizle işinizi dönüştürmeye hazır mısınız? Ücretsiz danışmanlık için bugün bizimle iletişime geçin.",
-    "startWithConsulting": "SAP Danışmanlığı ile Başlayın"
+    "startWithConsulting": "SAP Danışmanlığı ile Başlayın",
+    "additionalServices": {
+      "description": "",
+      "item1": "",
+      "item2": "",
+      "item3": "",
+      "item4": "",
+      "item5": "",
+      "title": ""
+    }
   },
   "serviceDetails": {
     "services": {
@@ -1965,5 +1974,28 @@
         "roi": "Proaktif destek ve bakım ile %99,9 sistem çalışma süresi sağlayın"
       }
     }
+  },
+  "blog": {
+    "allCategories": "Tümü",
+    "backToBlog": "Bloga Dön",
+    "checkBackSoon": "Yeni içerik için yakında tekrar kontrol edin",
+    "exploreMore": "Blogumuzdaki daha fazla içgörü ve makaleyi keşfedin",
+    "filteredByTag": "Etikete göre filtrelendi",
+    "minRead": "dk okuma",
+    "noPostsFound": "Gönderi bulunamadı",
+    "popularTags": "Popüler Etiketler",
+    "post": "gönderi",
+    "postNotFound": "Gönderi Bulunamadı",
+    "postNotFoundDesc": "Aradığınız blog gönderisi mevcut değil.",
+    "posts": "gönderi",
+    "readMore": "Devamını Oku",
+    "relatedPosts": "İlgili Gönderiler",
+    "sharePost": "Bu gönderiyi paylaş",
+    "subtitle": "Ekibimizden içgörüler, haberler ve güncellemeler",
+    "tags": "Etiketler",
+    "title": "Blogumuz",
+    "tryDifferentFilter": "Farklı bir kategori veya etiket seçmeyi deneyin",
+    "viewAllPosts": "Tüm Gönderileri Görüntüle",
+    "wantReadMore": "Daha Fazla Okumak İster misiniz?"
   }
 }

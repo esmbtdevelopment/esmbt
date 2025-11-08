@@ -210,7 +210,7 @@
           "bio": "With over 20 years of experience in enterprise software and SAP consulting, Mehmet founded ESM with the vision of transforming businesses through innovative SAP solutions.",
           "expertise": {
             "0": "Strategic Leadership",
-            "1": "SAP Architecture", 
+            "1": "SAP Architecture",
             "2": "Business Transformation"
           },
           "education": "MBA in Business Administration, BSc in Computer Engineering",
@@ -232,7 +232,7 @@
             "teamSize": "15+",
             "specialties": {
               "0": "SAP Implementation",
-              "1": "System Optimization", 
+              "1": "System Optimization",
               "2": "Process Design"
             }
           },
@@ -295,6 +295,11 @@
         "description": "Are you passionate about SAP and digital transformation? We're always looking for talented individuals to join our team of experts.",
         "contactButton": "Contact Us",
         "referencesButton": "View Our References"
+      },
+      "features": {
+        "experts": "",
+        "leadership": "",
+        "specialists": ""
       }
     },
     "vision": {
@@ -1969,5 +1974,28 @@
         "roi": "Achieve 99.9% system uptime with proactive support and maintenance"
       }
     }
+  },
+  "blog": {
+    "allCategories": "All",
+    "backToBlog": "Back to Blog",
+    "checkBackSoon": "Check back soon for new content",
+    "exploreMore": "Explore more insights and articles from our blog",
+    "filteredByTag": "Filtered by tag",
+    "minRead": "min read",
+    "noPostsFound": "No posts found",
+    "popularTags": "Popular Tags",
+    "post": "post",
+    "postNotFound": "Post Not Found",
+    "postNotFoundDesc": "The blog post you're looking for doesn't exist.",
+    "posts": "posts",
+    "readMore": "Read More",
+    "relatedPosts": "Related Posts",
+    "sharePost": "Share this post",
+    "subtitle": "Insights, news, and updates from our team",
+    "tags": "Tags",
+    "title": "Our Blog",
+    "tryDifferentFilter": "Try selecting a different category or tag",
+    "viewAllPosts": "View All Posts",
+    "wantReadMore": "Want to Read More?"
   }
 }

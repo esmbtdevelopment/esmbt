@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "verify:translations": "node scripts/verify-translations-sync.js",
     "migrate:translations": "node scripts/migrate-to-firestore.js",
     "migrate:services": "node scripts/migrate-services-to-firestore.js",
     "migrate:navigation": "node scripts/migrate-navigation-to-firestore.js",
