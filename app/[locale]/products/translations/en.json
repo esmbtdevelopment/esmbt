@@ -1,0 +1,98 @@
+{
+  "hero": {
+    "title": "Digital Products",
+    "subtitle": "Transform your business with our comprehensive suite of digital products designed for modern enterprises",
+    "sectionTitle": "Our Products",
+    "sectionDescription": "Comprehensive digital transformation products tailored for your business needs. From invoicing to e-commerce, we've got you covered."
+  },
+  "landing": {
+    "einvoice": {
+      "title": "E-Invoice",
+      "description": "Transform your invoicing process with secure, automated digital solutions that ensure compliance while reducing costs and improving efficiency.",
+      "features": {
+        "legalCompliance": "100% legal compliance with tax regulations",
+        "costReduction": "Reduce invoice processing time by up to 80%",
+        "automatedProcessing": "Intelligent automation for invoice generation",
+        "realTimeTracking": "Real-time invoice tracking and status updates"
+      }
+    },
+    "eledger": {
+      "title": "E-Ledger",
+      "description": "Transform financial record-keeping with digital ledger solutions ensuring legal compliance and financial transparency.",
+      "features": {
+        "financialReporting": "Real-time financial reporting",
+        "complianceManagement": "Full regulatory compliance",
+        "automatedEntries": "Automated transaction recording",
+        "auditTrails": "Complete audit trail maintenance"
+      }
+    },
+    "eexport": {
+      "title": "E-Export",
+      "description": "Simplify international trade with comprehensive digital export documentation and compliance management solutions.",
+      "features": {
+        "exportDocumentation": "Automated export document generation",
+        "complianceManagement": "Automated compliance with international regulations",
+        "internationalStandards": "Full compliance with international trade standards",
+        "processAutomation": "End-to-end automation of export processes"
+      }
+    },
+    "restaurant": {
+      "title": "DigiGarson POS",
+      "description": "Comprehensive POS and management solutions specifically designed for food & beverage businesses.",
+      "features": {
+        "posSystem": "Complete POS functionality",
+        "inventoryTracking": "Integrated inventory management",
+        "kitchenManagement": "Staff scheduling and management",
+        "customerService": "Detailed sales analytics"
+      }
+    },
+    "ecommerce": {
+      "title": "E-Commerce",
+      "description": "Comprehensive e-commerce solutions that power your online business growth with integrated digital sales platforms.",
+      "features": {
+        "storeManagement": "Complete online store management",
+        "paymentIntegration": "Integrated payment processing",
+        "inventoryControl": "Advanced inventory control",
+        "customerAnalytics": "Customer analytics and insights"
+      }
+    },
+    "edelivery": {
+      "title": "E-Delivery Note",
+      "description": "Digitize your delivery documentation process with real-time tracking and automated record-keeping for legal compliance.",
+      "features": {
+        "digitalTracking": "Real-time delivery confirmation",
+        "logisticsOptimization": "Automated record-keeping",
+        "paperlessProcess": "Eliminate paper-based delivery notes",
+        "realTimeUpdates": "Improved delivery accuracy"
+      }
+    },
+    "earchive": {
+      "title": "E-Archive Invoice",
+      "description": "Secure, long-term storage solutions for your digital invoices with full legal compliance and easy retrieval capabilities.",
+      "features": {
+        "secureStorage": "Secure long-term document storage",
+        "legalCompliance": "Full legal compliance with retention requirements",
+        "easyRetrieval": "Instant document retrieval and search",
+        "auditReady": "Complete audit trail maintenance"
+      }
+    },
+    "eadisyon": {
+      "title": "E-Adisyon",
+      "description": "Revolutionize restaurant operations with digital order receipt solutions that improve efficiency and customer experience.",
+      "features": {
+        "digitalReceipts": "Digital order receipt management",
+        "orderManagement": "Real-time order tracking",
+        "customerExperience": "Improved customer experience",
+        "costEfficiency": "Reduced paper waste and costs"
+      }
+    }
+  },
+  "additionalProducts": {
+    "description": "Our expert team is ready to help you implement the right digital products for your business needs. Contact us today to discuss your requirements."
+  },
+  "navigation": {
+    "backToProducts": "Back to Products",
+    "keyFeatures": "Key Features"
+  }
+}
+

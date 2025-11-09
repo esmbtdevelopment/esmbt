@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "title": "E-Commerce",
+    "subtitle": "Online Commerce Platform",
+    "description": "Comprehensive e-commerce solutions that power your online business growth with integrated digital sales platforms.",
+    "image": "/images/services/hero/e-commerce.jpg",
+    "imageAlt": "E-Commerce"
+  },
+  "overview": {
+    "title": "Why Choose E-Commerce?",
+    "description": "Our E-Commerce platform provides everything you need to build, manage, and scale your online business. From inventory management to customer experience optimization, our comprehensive tools help you succeed in the digital marketplace with professional-grade features and seamless integrations."
+  },
+  "benefits": [
+    "Complete online store management",
+    "Integrated payment processing",
+    "Advanced inventory control",
+    "Customer analytics and insights",
+    "Mobile-responsive design",
+    "SEO optimization tools"
+  ],
+  "features": [
+    {
+      "title": "Store Management",
+      "description": "Comprehensive tools for managing products, orders, customers, and content from a single dashboard."
+    },
+    {
+      "title": "Payment Integration",
+      "description": "Secure payment processing with support for multiple payment methods and currencies."
+    },
+    {
+      "title": "Inventory Control",
+      "description": "Real-time inventory tracking with automated reorder points and supplier management."
+    },
+    {
+      "title": "Customer Analytics",
+      "description": "Detailed customer behavior analytics to optimize sales and improve customer experience."
+    }
+  ],
+  "implementation": {
+    "title": "Implementation Process",
+    "description": "Our proven methodology ensures smooth deployment and maximum ROI",
+    "steps": [
+      "Business requirement analysis",
+      "Platform setup and customization",
+      "Payment gateway integration",
+      "Product catalog migration",
+      "Design and UX optimization",
+      "Launch and ongoing support"
+    ]
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "list": [
+      "Retail",
+      "Fashion",
+      "Electronics",
+      "Home & Garden",
+      "Sports",
+      "Beauty"
+    ]
+  },
+  "roi": {
+    "title": "Return on Investment",
+    "description": "Increase online sales by up to 250%"
+  },
+  "cta": {
+    "title": "Ready to Grow Your Online Business?",
+    "description": "Let's discuss how our E-Commerce platform can help you build and scale your online presence.",
+    "primaryButton": "Contact Us",
+    "secondaryButton": "View All Products"
+  }
+}
+

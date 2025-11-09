@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "title": "E-Export",
+    "subtitle": "Digital Export Solutions",
+    "description": "Simplify international trade with comprehensive digital export documentation and compliance management solutions.",
+    "image": "/images/services/hero/export.jpg",
+    "imageAlt": "E-Export"
+  },
+  "overview": {
+    "title": "Why Choose E-Export?",
+    "description": "E-Export streamlines your international trade operations with digital export documentation, automated compliance checks, and seamless integration with customs authorities. Expand your global reach with confidence, knowing all export procedures are digitally managed and compliant."
+  },
+  "benefits": [
+    "Streamlined export documentation process",
+    "Automated compliance with international regulations",
+    "Faster customs clearance and processing",
+    "Reduced export-related errors and delays",
+    "Real-time shipment tracking and updates",
+    "Integration with global trade platforms"
+  ],
+  "features": [
+    {
+      "title": "Export Documentation",
+      "description": "Automated generation of all required export documents including certificates, permits, and declarations."
+    },
+    {
+      "title": "Compliance Management",
+      "description": "Built-in compliance checks ensure all exports meet destination country requirements and regulations."
+    },
+    {
+      "title": "International Standards",
+      "description": "Full compliance with international trade standards and customs requirements across multiple jurisdictions."
+    },
+    {
+      "title": "Process Automation",
+      "description": "End-to-end automation reduces manual work and eliminates common export processing errors."
+    }
+  ],
+  "implementation": {
+    "title": "Implementation Process",
+    "description": "Our proven methodology ensures smooth deployment and maximum ROI",
+    "steps": [
+      "Export process analysis and mapping",
+      "System configuration for target markets",
+      "Integration with customs platforms",
+      "Document template customization",
+      "Staff training on export procedures",
+      "Go-live support and optimization"
+    ]
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "list": [
+      "Manufacturing",
+      "Agriculture",
+      "Technology",
+      "Automotive",
+      "Textiles",
+      "Chemicals"
+    ]
+  },
+  "roi": {
+    "title": "Return on Investment",
+    "description": "Reduce export processing time by up to 60%"
+  },
+  "cta": {
+    "title": "Ready to Streamline Your Exports?",
+    "description": "Let's discuss how our E-Export solution can help your organization expand globally with confidence.",
+    "primaryButton": "Contact Us",
+    "secondaryButton": "View All Products"
+  }
+}
+

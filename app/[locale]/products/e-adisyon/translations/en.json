@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "title": "E-Adisyon (E-Order Receipt)",
+    "subtitle": "Digital Restaurant Receipts",
+    "description": "Revolutionize restaurant operations with digital order receipt solutions that improve efficiency and customer experience.",
+    "image": "/images/services/hero/dashboard.jpg",
+    "imageAlt": "E-Adisyon"
+  },
+  "overview": {
+    "title": "Why Choose E-Adisyon?",
+    "description": "E-Adisyon transforms restaurant order management with electronic receipt solutions. Streamline your food service operations, reduce waste, improve customer service, and ensure compliance with digital receipt systems designed specifically for the hospitality industry."
+  },
+  "benefits": [
+    "Digital order receipt management",
+    "Improved customer experience",
+    "Reduced paper waste and costs",
+    "Enhanced order accuracy",
+    "Real-time order tracking",
+    "Integration with POS systems"
+  ],
+  "features": [
+    {
+      "title": "Digital Receipts",
+      "description": "Electronic receipt generation with customizable templates and automatic delivery to customers."
+    },
+    {
+      "title": "Order Management",
+      "description": "Comprehensive order tracking from placement to completion with real-time status updates."
+    },
+    {
+      "title": "Customer Experience",
+      "description": "Enhanced customer experience with digital receipts, loyalty integration, and feedback collection."
+    },
+    {
+      "title": "Cost Efficiency",
+      "description": "Significant cost savings through reduced paper usage and streamlined receipt processing."
+    }
+  ],
+  "implementation": {
+    "title": "Implementation Process",
+    "description": "Our proven methodology ensures smooth deployment and maximum ROI",
+    "steps": [
+      "Restaurant operation assessment",
+      "POS system integration",
+      "Staff training and setup",
+      "Customer communication setup",
+      "Testing and optimization",
+      "Ongoing support and updates"
+    ]
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "list": [
+      "Restaurants",
+      "Cafes",
+      "Fast Food",
+      "Catering",
+      "Food Trucks",
+      "Hotels"
+    ]
+  },
+  "roi": {
+    "title": "Return on Investment",
+    "description": "Reduce receipt processing costs by 90%"
+  },
+  "cta": {
+    "title": "Ready to Transform Your Restaurant Operations?",
+    "description": "Let's discuss how our E-Adisyon solution can help your restaurant improve efficiency and customer satisfaction.",
+    "primaryButton": "Contact Us",
+    "secondaryButton": "View All Products"
+  }
+}
+

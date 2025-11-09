@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "title": "E-Fatura",
+    "subtitle": "Dijital Fatura Çözümleri",
+    "description": "Uyumluluğu sağlarken maliyetleri düşüren ve verimliliği artıran güvenli, otomatik dijital çözümlerle faturalama sürecinizi dönüştürün.",
+    "image": "/images/services/hero/invoice.jpg",
+    "imageAlt": "E-Fatura"
+  },
+  "overview": {
+    "title": "Neden E-Fatura Seçmelisiniz?",
+    "description": "E-Fatura sadece bir dijital dönüşüm aracı değil, aynı zamanda işletmenizin geleceğine yapılan bir yatırımdır. Kapsamlı e-faturalama çözümümüz, yerel ve uluslararası düzenlemelere sorunsuz uyumluluk sağlarken işleme süresini ve operasyonel maliyetleri önemli ölçüde azaltır. Kurumsal düzeyde güvenlik ve ölçeklenebilirlik düşünülerek tasarlanmıştır."
+  },
+  "benefits": [
+    "Fatura işleme süresini %80'e kadar azaltın",
+    "Vergi düzenlemeleri ile %100 yasal uyumluluk sağlayın",
+    "Otomasyon ile operasyonel maliyetleri düşürün",
+    "Gerçek zamanlı fatura takibi ve durum güncellemeleri",
+    "Mevcut ERP sistemleriyle sorunsuz entegrasyon",
+    "Dijital imzalarla gelişmiş güvenlik"
+  ],
+  "features": [
+    {
+      "title": "Otomatik İşleme",
+      "description": "Akıllı otomasyon, manuel müdahale olmadan fatura oluşturma, doğrulama ve gönderme işlemlerini gerçekleştirir."
+    },
+    {
+      "title": "Yasal Uyumluluk",
+      "description": "Yerleşik uyumluluk kontrolleri, tüm faturaların yerel vergi otoritesi gereksinimlerini ve düzenlemelerini karşılamasını sağlar."
+    },
+    {
+      "title": "Gerçek Zamanlı Takip",
+      "description": "Detaylı takip ve teslimat onayları ile fatura durumunu gerçek zamanlı olarak izleyin."
+    },
+    {
+      "title": "Bulut Tabanlı Platform",
+      "description": "Güvenli bulut altyapısı, işletmeniz büyüdükçe %99.9 çalışma süresi ve sorunsuz ölçeklenebilirlik sağlar."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "İlk danışmanlık ve gereksinim analizi",
+      "Sistem entegrasyon planlaması ve kurulumu",
+      "Veri taşıma ve test aşaması",
+      "Personel eğitimi ve bilgi transferi",
+      "Canlıya geçiş desteği ve izleme",
+      "Sürekli bakım ve güncellemeler"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Üretim",
+      "Perakende",
+      "Sağlık",
+      "Finans",
+      "Lojistik",
+      "Teknoloji"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Uygulamanın ilk yılında ortalama %300 yatırım getirisi"
+  },
+  "cta": {
+    "title": "Faturalamanızı Dönüştürmeye Hazır mısınız?",
+    "description": "E-Fatura çözümümüzün organizasyonunuzun operasyonlarını nasıl kolaylaştırabileceğini ve uyumluluğu nasıl sağlayabileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Ürünleri Görüntüle"
+  }
+}
+

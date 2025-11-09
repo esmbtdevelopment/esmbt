@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "title": "E-İrsaliye",
+    "subtitle": "Dijital Teslimat Belgelendirme",
+    "description": "Yasal uyumluluk için gerçek zamanlı takip ve otomatik kayıt tutma ile teslimat belgelendirme sürecinizi dijitalleştirin.",
+    "image": "/images/services/hero/digital-transformation.jpg",
+    "imageAlt": "E-İrsaliye"
+  },
+  "overview": {
+    "title": "Neden E-İrsaliye Seçmelisiniz?",
+    "description": "E-İrsaliye, kağıt tabanlı teslimat belgelendirmesini ortadan kaldırır ve dijital verimliliği benimser. Çözümümüz, gerçek zamanlı teslimat onayı, otomatik kayıt tutma sağlar ve idari yükü azaltırken teslimat doğruluğunu artırarak yasal uyumluluğu garanti eder."
+  },
+  "benefits": [
+    "Kağıt tabanlı teslimat notlarını ortadan kaldırın",
+    "Gerçek zamanlı teslimat onayı",
+    "Otomatik kayıt tutma",
+    "Yasal uyumluluk güvencesi",
+    "Azaltılmış idari maliyetler",
+    "Geliştirilmiş teslimat doğruluğu"
+  ],
+  "features": [
+    {
+      "title": "Dijital Belgelendirme",
+      "description": "Elektronik imzalar ve zaman damgası doğrulaması ile teslimat notlarının tam dijitalleştirilmesi."
+    },
+    {
+      "title": "Gerçek Zamanlı Takip",
+      "description": "GPS entegrasyonu ve teslimat süreci boyunca durum güncellemeleri ile canlı teslimat takibi."
+    },
+    {
+      "title": "Teslimat Onayı",
+      "description": "Alıcı imzaları ve fotoğraf onayı yetenekleri ile dijital teslimat kanıtı."
+    },
+    {
+      "title": "Yasal Uyumluluk",
+      "description": "Değiştirilemez dijital kayıtlarla tüm teslimat belgelendirmesinin yasal gereksinimleri karşılamasını sağlar."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "Teslimat süreci değerlendirmesi",
+      "Mobil uygulama dağıtımı",
+      "Sürücü eğitimi ve uyum süreci",
+      "Sistem entegrasyon testi",
+      "Canlıya geçiş desteği ve izleme",
+      "Performans optimizasyonu"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Lojistik",
+      "Perakende",
+      "Üretim",
+      "Yiyecek & İçecek",
+      "İlaç",
+      "E-ticaret"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Teslimat belgelendirme maliyetlerini %85 azaltın"
+  },
+  "cta": {
+    "title": "Teslimatlarınızı Dijitalleştirmeye Hazır mısınız?",
+    "description": "E-İrsaliye çözümümüzün organizasyonunuzun teslimat operasyonlarını nasıl kolaylaştırabileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Ürünleri Görüntüle"
+  }
+}
+

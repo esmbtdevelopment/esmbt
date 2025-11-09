@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "title": "E-Ledger",
+    "subtitle": "Digital Financial Ledger",
+    "description": "Transform financial record-keeping with digital ledger solutions ensuring legal compliance and financial transparency.",
+    "image": "/images/services/hero/ledger.jpg",
+    "imageAlt": "E-Ledger"
+  },
+  "overview": {
+    "title": "Why Choose E-Ledger?",
+    "description": "E-Ledger provides a comprehensive digital bookkeeping solution that maintains accurate, auditable financial records with automated processes. Our system ensures regulatory compliance while providing real-time financial insights and reducing the complexity of financial management."
+  },
+  "benefits": [
+    "Automated digital bookkeeping",
+    "Full regulatory compliance",
+    "Real-time financial reporting",
+    "Complete audit trail",
+    "Reduced accounting errors",
+    "Integration with accounting systems"
+  ],
+  "features": [
+    {
+      "title": "Digital Bookkeeping",
+      "description": "Automated transaction recording with intelligent categorization and reconciliation capabilities."
+    },
+    {
+      "title": "Regulatory Compliance",
+      "description": "Built-in compliance features ensure all records meet local and international accounting standards."
+    },
+    {
+      "title": "Automated Reports",
+      "description": "Generate comprehensive financial reports automatically with customizable templates and scheduling."
+    },
+    {
+      "title": "Audit Trail",
+      "description": "Complete audit trail with timestamp verification and user activity tracking for transparency."
+    }
+  ],
+  "implementation": {
+    "title": "Implementation Process",
+    "description": "Our proven methodology ensures smooth deployment and maximum ROI",
+    "steps": [
+      "Financial process analysis",
+      "Chart of accounts setup",
+      "Data migration and validation",
+      "User training and certification",
+      "System integration testing",
+      "Ongoing support and updates"
+    ]
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "list": [
+      "All Industries",
+      "Accounting Firms",
+      "SMEs",
+      "Non-profits",
+      "Government",
+      "Healthcare"
+    ]
+  },
+  "roi": {
+    "title": "Return on Investment",
+    "description": "Reduce accounting processing time by 75%"
+  },
+  "cta": {
+    "title": "Ready to Transform Your Financial Records?",
+    "description": "Let's discuss how our E-Ledger solution can help your organization maintain accurate financial records and ensure compliance.",
+    "primaryButton": "Contact Us",
+    "secondaryButton": "View All Products"
+  }
+}
+

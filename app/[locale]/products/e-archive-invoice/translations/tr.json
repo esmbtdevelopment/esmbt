@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "title": "E-Arşiv Fatura",
+    "subtitle": "Güvenli Fatura Depolama Çözümleri",
+    "description": "Tam yasal uyumluluk ve kolay erişim özellikleriyle dijital faturalarınız için güvenli, uzun vadeli depolama çözümleri.",
+    "image": "/images/services/hero/archive.jpg",
+    "imageAlt": "E-Arşiv Fatura"
+  },
+  "overview": {
+    "title": "Neden E-Arşiv Fatura Seçmelisiniz?",
+    "description": "E-Arşiv Fatura, faturalarınızın güvenli bir şekilde saklanmasını, yasal olarak uyumlu olmasını ve her zaman erişilebilir olmasını sağlayan kapsamlı bir dijital arşivleme çözümü sunar. Sağlam arşivleme sistemimiz, tam denetim izlerini ve düzenleyici uyumluluğu korurken fiziksel belge depolama ihtiyacını ortadan kaldırır."
+  },
+  "benefits": [
+    "Güvenli uzun vadeli belge depolama",
+    "Saklama gereksinimleriyle tam yasal uyumluluk",
+    "Anında belge erişimi ve arama",
+    "Otomatik yedekleme ve felaket kurtarma",
+    "Fiziksel depolama maliyetlerinde azalma",
+    "Tam denetim izi bakımı"
+  ],
+  "features": [
+    {
+      "title": "Güvenli Depolama",
+      "description": "Kurumsal düzeyde şifreleme, arşivlenmiş faturalarınızın güvenli kalmasını ve yetkisiz erişimden korunmasını sağlar."
+    },
+    {
+      "title": "Kolay Erişim",
+      "description": "Gelişmiş arama yetenekleri, birden fazla arama kriteri kullanarak herhangi bir arşivlenmiş faturaya anında erişim sağlar."
+    },
+    {
+      "title": "Yasal Uyumluluk",
+      "description": "Otomatik uyumluluk yönetimi, tüm arşivlenmiş belgelerin yasal saklama gereksinimlerini karşılamasını sağlar."
+    },
+    {
+      "title": "Denetime Hazır",
+      "description": "Tam denetim izleri ve değiştirilemez depolama, arşivinizin düzenleyici denetimler için her zaman hazır olmasını sağlar."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "Arşiv gereksinim değerlendirmesi",
+      "Veri taşıma planlaması ve yürütülmesi",
+      "Güvenlik yapılandırması ve testi",
+      "Kullanıcı erişim kontrolü kurulumu",
+      "Sistem entegrasyonu ve testi",
+      "Sürekli izleme ve bakım"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Tüm Sektörler",
+      "Kamu",
+      "Sağlık",
+      "Finans",
+      "Hukuk Hizmetleri",
+      "Üretim"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Belge depolama maliyetlerini %70'e kadar azaltın"
+  },
+  "cta": {
+    "title": "Faturalarınızı Güvence Altına Almaya Hazır mısınız?",
+    "description": "E-Arşiv Fatura çözümümüzün organizasyonunuzun uyumluluğu korumasına ve depolama maliyetlerini azaltmasına nasıl yardımcı olabileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Ürünleri Görüntüle"
+  }
+}
+

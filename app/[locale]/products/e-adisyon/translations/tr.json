@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "title": "E-Adisyon (E-Sipariş Makbuzu)",
+    "subtitle": "Dijital Restoran Makbuzları",
+    "description": "Verimliliği ve müşteri deneyimini artıran dijital sipariş makbuzu çözümleriyle restoran operasyonlarını devrimleştirin.",
+    "image": "/images/services/hero/dashboard.jpg",
+    "imageAlt": "E-Adisyon"
+  },
+  "overview": {
+    "title": "Neden E-Adisyon Seçmelisiniz?",
+    "description": "E-Adisyon, elektronik makbuz çözümleriyle restoran sipariş yönetimini dönüştürür. Yiyecek servisi operasyonlarınızı kolaylaştırın, israfı azaltın, müşteri hizmetini iyileştirin ve özellikle konaklama sektörü için tasarlanmış dijital makbuz sistemleriyle uyumluluğu sağlayın."
+  },
+  "benefits": [
+    "Dijital sipariş makbuzu yönetimi",
+    "Geliştirilmiş müşteri deneyimi",
+    "Kağıt israfı ve maliyetlerde azalma",
+    "Geliştirilmiş sipariş doğruluğu",
+    "Gerçek zamanlı sipariş takibi",
+    "POS sistemleriyle entegrasyon"
+  ],
+  "features": [
+    {
+      "title": "Dijital Makbuzlar",
+      "description": "Özelleştirilebilir şablonlar ve müşterilere otomatik teslimat ile elektronik makbuz oluşturma."
+    },
+    {
+      "title": "Sipariş Yönetimi",
+      "description": "Gerçek zamanlı durum güncellemeleri ile yerleştirmeden tamamlanmaya kadar kapsamlı sipariş takibi."
+    },
+    {
+      "title": "Müşteri Deneyimi",
+      "description": "Dijital makbuzlar, sadakat entegrasyonu ve geri bildirim toplama ile geliştirilmiş müşteri deneyimi."
+    },
+    {
+      "title": "Maliyet Verimliliği",
+      "description": "Azaltılmış kağıt kullanımı ve kolaylaştırılmış makbuz işleme ile önemli maliyet tasarrufları."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "Restoran operasyon değerlendirmesi",
+      "POS sistemi entegrasyonu",
+      "Personel eğitimi ve kurulum",
+      "Müşteri iletişim kurulumu",
+      "Test ve optimizasyon",
+      "Sürekli destek ve güncellemeler"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Restoranlar",
+      "Kafeler",
+      "Fast Food",
+      "Catering",
+      "Yemek Kamyonları",
+      "Oteller"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Makbuz işleme maliyetlerini %90 azaltın"
+  },
+  "cta": {
+    "title": "Restoran Operasyonlarınızı Dönüştürmeye Hazır mısınız?",
+    "description": "E-Adisyon çözümümüzün restoranınızın verimliliğini ve müşteri memnuniyetini nasıl artırabileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Ürünleri Görüntüle"
+  }
+}
+

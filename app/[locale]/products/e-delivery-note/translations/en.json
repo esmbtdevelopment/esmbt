@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "title": "E-Delivery Note",
+    "subtitle": "Digital Delivery Documentation",
+    "description": "Digitize your delivery documentation process with real-time tracking and automated record-keeping for legal compliance.",
+    "image": "/images/services/hero/digital-transformation.jpg",
+    "imageAlt": "E-Delivery Note"
+  },
+  "overview": {
+    "title": "Why Choose E-Delivery Note?",
+    "description": "E-Delivery Note eliminates paper-based delivery documentation and embraces digital efficiency. Our solution provides real-time delivery confirmation, automated record-keeping, and ensures legal compliance while reducing administrative overhead and improving delivery accuracy."
+  },
+  "benefits": [
+    "Eliminate paper-based delivery notes",
+    "Real-time delivery confirmation",
+    "Automated record-keeping",
+    "Legal compliance assurance",
+    "Reduced administrative costs",
+    "Improved delivery accuracy"
+  ],
+  "features": [
+    {
+      "title": "Digital Documentation",
+      "description": "Complete digitization of delivery notes with electronic signatures and timestamp verification."
+    },
+    {
+      "title": "Real-time Tracking",
+      "description": "Live tracking of deliveries with GPS integration and status updates throughout the delivery process."
+    },
+    {
+      "title": "Delivery Confirmation",
+      "description": "Digital proof of delivery with recipient signatures and photo confirmation capabilities."
+    },
+    {
+      "title": "Legal Compliance",
+      "description": "Ensures all delivery documentation meets legal requirements with tamper-proof digital records."
+    }
+  ],
+  "implementation": {
+    "title": "Implementation Process",
+    "description": "Our proven methodology ensures smooth deployment and maximum ROI",
+    "steps": [
+      "Delivery process assessment",
+      "Mobile app deployment",
+      "Driver training and onboarding",
+      "System integration testing",
+      "Go-live support and monitoring",
+      "Performance optimization"
+    ]
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "list": [
+      "Logistics",
+      "Retail",
+      "Manufacturing",
+      "Food & Beverage",
+      "Pharmaceuticals",
+      "E-commerce"
+    ]
+  },
+  "roi": {
+    "title": "Return on Investment",
+    "description": "Reduce delivery documentation costs by 85%"
+  },
+  "cta": {
+    "title": "Ready to Digitize Your Deliveries?",
+    "description": "Let's discuss how our E-Delivery Note solution can help your organization streamline delivery operations.",
+    "primaryButton": "Contact Us",
+    "secondaryButton": "View All Products"
+  }
+}
+

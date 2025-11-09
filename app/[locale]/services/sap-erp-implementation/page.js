@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useLocale } from 'next-intl';
 import { useLocalTranslations } from "@/lib/hooks/useLocalTranslations";
+import { goToContact } from "@/utils/navigation";
 import {
     FaDatabase,
     FaCogs,
@@ -63,12 +64,13 @@ export default function SAPERPImplementationPage() {
                                     {t('hero.description')}
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4">
-                                    <Link href={`/${locale}/contact`}>
-                                        <button className="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 w-full sm:w-auto">
-                                            <span className="text-sm sm:text-base">{t('cta.primaryButton')}</span>
-                                            <FaChevronRight className="text-sm" />
-                                        </button>
-                                    </Link>
+                                    <button 
+                                        onClick={goToContact}
+                                        className="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 w-full sm:w-auto"
+                                    >
+                                        <span className="text-sm sm:text-base">{t('cta.primaryButton')}</span>
+                                        <FaChevronRight className="text-sm" />
+                                    </button>
                                 </div>
                             </div>
 
@@ -242,12 +244,13 @@ export default function SAPERPImplementationPage() {
                             {t('cta.description')}
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link href={`/${locale}/contact`}>
-                                <button className="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 w-full sm:w-auto">
-                                    <span className="text-sm sm:text-base">{t('cta.primaryButton')}</span>
-                                    <FaChevronRight className="text-sm" />
-                                </button>
-                            </Link>
+                            <button 
+                                onClick={goToContact}
+                                className="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 w-full sm:w-auto"
+                            >
+                                <span className="text-sm sm:text-base">{t('cta.primaryButton')}</span>
+                                <FaChevronRight className="text-sm" />
+                            </button>
                             <Link href={`/${locale}/services`}>
                                 <button className="border-2 border-sky-500 text-sky-600 hover:bg-sky-500 hover:text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 w-full sm:w-auto">
                                     <span className="text-sm sm:text-base">{t('cta.secondaryButton')}</span>

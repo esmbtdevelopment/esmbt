@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "title": "DigiGarson Cafe&Restaurant POS Software",
+    "subtitle": "Complete Restaurant Management",
+    "description": "Comprehensive POS and management solutions specifically designed for food & beverage businesses.",
+    "image": "/images/services/hero/restaurant.jpg",
+    "imageAlt": "DigiGarson POS"
+  },
+  "overview": {
+    "title": "Why Choose DigiGarson POS?",
+    "description": "DigiGarson provides an all-in-one restaurant management platform that combines point-of-sale functionality with comprehensive business management tools. From order taking to inventory management, our integrated platform helps restaurants operate more efficiently and profitably."
+  },
+  "benefits": [
+    "Complete POS functionality",
+    "Integrated inventory management",
+    "Staff scheduling and management",
+    "Detailed sales analytics",
+    "Customer relationship management",
+    "Multi-location support"
+  ],
+  "features": [
+    {
+      "title": "POS System",
+      "description": "Full-featured point-of-sale system with order management, payment processing, and receipt generation."
+    },
+    {
+      "title": "Inventory Management",
+      "description": "Real-time inventory tracking with automated reorder alerts and supplier management integration."
+    },
+    {
+      "title": "Staff Management",
+      "description": "Employee scheduling, time tracking, and performance management tools for optimal staff utilization."
+    },
+    {
+      "title": "Sales Analytics",
+      "description": "Comprehensive reporting and analytics to track performance, identify trends, and optimize operations."
+    }
+  ],
+  "implementation": {
+    "title": "Implementation Process",
+    "description": "Our proven methodology ensures smooth deployment and maximum ROI",
+    "steps": [
+      "Restaurant needs assessment",
+      "Hardware setup and configuration",
+      "Menu and pricing configuration",
+      "Staff training and certification",
+      "Integration testing and optimization",
+      "Ongoing support and maintenance"
+    ]
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "list": [
+      "Restaurants",
+      "Cafes",
+      "Bars",
+      "Hotels",
+      "Catering",
+      "Food Courts"
+    ]
+  },
+  "roi": {
+    "title": "Return on Investment",
+    "description": "Improve operational efficiency by 40%"
+  },
+  "cta": {
+    "title": "Ready to Transform Your Restaurant?",
+    "description": "Let's discuss how DigiGarson POS can help your restaurant operate more efficiently and increase profitability.",
+    "primaryButton": "Contact Us",
+    "secondaryButton": "View All Products"
+  }
+}
+

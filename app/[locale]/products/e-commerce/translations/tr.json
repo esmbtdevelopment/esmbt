@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "title": "E-Ticaret",
+    "subtitle": "Çevrimiçi Ticaret Platformu",
+    "description": "Entegre dijital satış platformlarıyla çevrimiçi iş büyümenizi destekleyen kapsamlı e-ticaret çözümleri.",
+    "image": "/images/services/hero/e-commerce.jpg",
+    "imageAlt": "E-Ticaret"
+  },
+  "overview": {
+    "title": "Neden E-Ticaret Seçmelisiniz?",
+    "description": "E-Ticaret platformumuz, çevrimiçi işletmenizi oluşturmak, yönetmek ve ölçeklendirmek için ihtiyacınız olan her şeyi sağlar. Envanter yönetiminden müşteri deneyimi optimizasyonuna kadar kapsamlı araçlarımız, profesyonel düzeyde özellikler ve sorunsuz entegrasyonlarla dijital pazarda başarılı olmanıza yardımcı olur."
+  },
+  "benefits": [
+    "Tam çevrimiçi mağaza yönetimi",
+    "Entegre ödeme işleme",
+    "Gelişmiş envanter kontrolü",
+    "Müşteri analitiği ve içgörüleri",
+    "Mobil uyumlu tasarım",
+    "SEO optimizasyon araçları"
+  ],
+  "features": [
+    {
+      "title": "Mağaza Yönetimi",
+      "description": "Tek bir kontrol panelinden ürünleri, siparişleri, müşterileri ve içeriği yönetmek için kapsamlı araçlar."
+    },
+    {
+      "title": "Ödeme Entegrasyonu",
+      "description": "Birden fazla ödeme yöntemi ve para birimi desteği ile güvenli ödeme işleme."
+    },
+    {
+      "title": "Envanter Kontrolü",
+      "description": "Otomatik yeniden sipariş noktaları ve tedarikçi yönetimi ile gerçek zamanlı envanter takibi."
+    },
+    {
+      "title": "Müşteri Analitiği",
+      "description": "Satışları optimize etmek ve müşteri deneyimini iyileştirmek için detaylı müşteri davranış analitiği."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "İş gereksinim analizi",
+      "Platform kurulumu ve özelleştirme",
+      "Ödeme ağ geçidi entegrasyonu",
+      "Ürün kataloğu taşıma",
+      "Tasarım ve UX optimizasyonu",
+      "Lansman ve sürekli destek"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Perakende",
+      "Moda",
+      "Elektronik",
+      "Ev & Bahçe",
+      "Spor",
+      "Güzellik"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Çevrimiçi satışları %250'ye kadar artırın"
+  },
+  "cta": {
+    "title": "Çevrimiçi İşletmenizi Büyütmeye Hazır mısınız?",
+    "description": "E-Ticaret platformumuzun çevrimiçi varlığınızı nasıl oluşturmanıza ve ölçeklendirmenize yardımcı olabileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Ürünleri Görüntüle"
+  }
+}
+

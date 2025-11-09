@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "title": "DigiGarson Cafe&Restoran POS Yazılımı",
+    "subtitle": "Tam Restoran Yönetimi",
+    "description": "Yiyecek ve içecek işletmeleri için özel olarak tasarlanmış kapsamlı POS ve yönetim çözümleri.",
+    "image": "/images/services/hero/restaurant.jpg",
+    "imageAlt": "DigiGarson POS"
+  },
+  "overview": {
+    "title": "Neden DigiGarson POS Seçmelisiniz?",
+    "description": "DigiGarson, satış noktası işlevselliğini kapsamlı işletme yönetim araçlarıyla birleştiren hepsi bir arada bir restoran yönetim platformu sunar. Sipariş almaktan envanter yönetimine kadar entegre platformumuz, restoranların daha verimli ve karlı çalışmasına yardımcı olur."
+  },
+  "benefits": [
+    "Tam POS işlevselliği",
+    "Entegre envanter yönetimi",
+    "Personel planlama ve yönetimi",
+    "Detaylı satış analitiği",
+    "Müşteri ilişkileri yönetimi",
+    "Çoklu lokasyon desteği"
+  ],
+  "features": [
+    {
+      "title": "POS Sistemi",
+      "description": "Sipariş yönetimi, ödeme işleme ve makbuz oluşturma ile tam özellikli satış noktası sistemi."
+    },
+    {
+      "title": "Envanter Yönetimi",
+      "description": "Otomatik yeniden sipariş uyarıları ve tedarikçi yönetimi entegrasyonu ile gerçek zamanlı envanter takibi."
+    },
+    {
+      "title": "Personel Yönetimi",
+      "description": "Optimal personel kullanımı için çalışan planlama, zaman takibi ve performans yönetim araçları."
+    },
+    {
+      "title": "Satış Analitiği",
+      "description": "Performansı takip etmek, trendleri belirlemek ve operasyonları optimize etmek için kapsamlı raporlama ve analitik."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "Restoran ihtiyaç değerlendirmesi",
+      "Donanım kurulumu ve yapılandırması",
+      "Menü ve fiyatlandırma yapılandırması",
+      "Personel eğitimi ve sertifikasyon",
+      "Entegrasyon testi ve optimizasyon",
+      "Sürekli destek ve bakım"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Restoranlar",
+      "Kafeler",
+      "Barlar",
+      "Oteller",
+      "Catering",
+      "Yemek Alanları"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Operasyonel verimliliği %40 artırın"
+  },
+  "cta": {
+    "title": "Restoranınızı Dönüştürmeye Hazır mısınız?",
+    "description": "DigiGarson POS'un restoranınızın daha verimli çalışmasına ve karlılığını artırmasına nasıl yardımcı olabileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Ürünleri Görüntüle"
+  }
+}
+

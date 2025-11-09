@@ -4,11 +4,18 @@ import Link from "next/link";
 import {
     FaChevronRight,
 } from "react-icons/fa";
+import { useLocalTranslations } from '@/lib/hooks/useLocalTranslations';
 import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
+import { goToContact } from "@/utils/navigation";
 import Image from "next/image";
 
+import enTranslations from './translations/en.json';
+import trTranslations from './translations/tr.json';
+
+const translations = { en: enTranslations, tr: trTranslations };
+
 function ProductsPage() {
-    const t = useDebugTranslations('products');
+    const t = useLocalTranslations(translations);
     const tCommon = useDebugTranslations('common');
 
     const products = [
@@ -125,10 +132,10 @@ function ProductsPage() {
                 <div className="container mx-auto px-4 sm:px-6 md:px-12">
                     <div className="max-w-4xl mx-auto text-center">
                         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 font-sora leading-tight">
-                            {t('pageTitle')}
+                            {t('hero.title')}
                         </h1>
                         <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 font-montserrat leading-relaxed">
-                            {t('pageSubtitle')}
+                            {t('hero.subtitle')}
                         </p>
                     </div>
                 </div>
@@ -141,12 +148,12 @@ function ProductsPage() {
                     <div className="text-center mb-12 sm:mb-16">
                         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 font-sora">
                             <span className="relative inline-block text-sky-600">
-                                {t('sectionTitle')}
+                                {t('hero.sectionTitle')}
                                 <div className="absolute -bottom-1 left-0 right-0 h-1 bg-sky-600"></div>
                             </span>
                         </h2>
                         <p className="text-base sm:text-lg text-gray-600 font-montserrat leading-relaxed max-w-3xl mx-auto px-4">
-                            {t('sectionDescription')}
+                            {t('hero.sectionDescription')}
                         </p>
                     </div>
 
@@ -204,15 +211,16 @@ function ProductsPage() {
                                 {tCommon('readyToWorkWithUs')}
                             </h3>
                             <p className="text-gray-300 font-montserrat text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed px-4">
-                                {t('ctaDescription')}
+                                {t('additionalProducts.description')}
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Link href="/contact">
-                                    <button className="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 w-full sm:w-auto">
-                                        <span className="text-sm sm:text-base">{tCommon('getFreeConsultation')}</span>
-                                        <FaChevronRight className="text-sm" />
-                                    </button>
-                                </Link>
+                                <button
+                                    onClick={goToContact}
+                                    className="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 w-full sm:w-auto"
+                                >
+                                    <span className="text-sm sm:text-base">{tCommon('contactUs')}</span>
+                                    <FaChevronRight className="text-sm" />
+                                </button>
                                 <Link href="/products/strategic-sap-consulting">
                                     <button className="border-2 border-sky-500 text-sky-400 hover:bg-sky-500 hover:text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 w-full sm:w-auto">
                                         <span className="text-sm sm:text-base">{t('startWithConsulting')}</span>

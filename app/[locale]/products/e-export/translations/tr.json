@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "title": "E-İhracat",
+    "subtitle": "Dijital İhracat Çözümleri",
+    "description": "Kapsamlı dijital ihracat belgelendirme ve uyumluluk yönetimi çözümleriyle uluslararası ticareti kolaylaştırın.",
+    "image": "/images/services/hero/export.jpg",
+    "imageAlt": "E-İhracat"
+  },
+  "overview": {
+    "title": "Neden E-İhracat Seçmelisiniz?",
+    "description": "E-İhracat, dijital ihracat belgelendirme, otomatik uyumluluk kontrolleri ve gümrük makamlarıyla sorunsuz entegrasyon ile uluslararası ticaret operasyonlarınızı kolaylaştırır. Tüm ihracat prosedürlerinin dijital olarak yönetildiğini ve uyumlu olduğunu bilerek küresel erişiminizi güvenle genişletin."
+  },
+  "benefits": [
+    "Kolaylaştırılmış ihracat belgelendirme süreci",
+    "Uluslararası düzenlemelere otomatik uyumluluk",
+    "Daha hızlı gümrük işlemleri ve işleme",
+    "İhracatla ilgili hatalarda ve gecikmelerde azalma",
+    "Gerçek zamanlı sevkiyat takibi ve güncellemeleri",
+    "Küresel ticaret platformlarıyla entegrasyon"
+  ],
+  "features": [
+    {
+      "title": "İhracat Belgelendirme",
+      "description": "Sertifikalar, izinler ve beyannameler dahil tüm gerekli ihracat belgelerinin otomatik oluşturulması."
+    },
+    {
+      "title": "Uyumluluk Yönetimi",
+      "description": "Yerleşik uyumluluk kontrolleri, tüm ihracatların hedef ülke gereksinimlerini ve düzenlemelerini karşılamasını sağlar."
+    },
+    {
+      "title": "Uluslararası Standartlar",
+      "description": "Birden fazla yargı alanında uluslararası ticaret standartlarına ve gümrük gereksinimlerine tam uyumluluk."
+    },
+    {
+      "title": "Süreç Otomasyonu",
+      "description": "Uçtan uca otomasyon, manuel çalışmayı azaltır ve yaygın ihracat işleme hatalarını ortadan kaldırır."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "İhracat süreci analizi ve haritalama",
+      "Hedef pazarlar için sistem yapılandırması",
+      "Gümrük platformlarıyla entegrasyon",
+      "Belge şablonu özelleştirmesi",
+      "İhracat prosedürleri üzerine personel eğitimi",
+      "Canlıya geçiş desteği ve optimizasyon"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Üretim",
+      "Tarım",
+      "Teknoloji",
+      "Otomotiv",
+      "Tekstil",
+      "Kimya"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "İhracat işleme süresini %60'a kadar azaltın"
+  },
+  "cta": {
+    "title": "İhracatlarınızı Kolaylaştırmaya Hazır mısınız?",
+    "description": "E-İhracat çözümümüzün organizasyonunuzun küresel olarak güvenle genişlemesine nasıl yardımcı olabileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Ürünleri Görüntüle"
+  }
+}
+

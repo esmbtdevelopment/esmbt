@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "title": "E-Defter",
+    "subtitle": "Dijital Mali Defter",
+    "description": "Yasal uyumluluğu ve finansal şeffaflığı sağlayan dijital defter çözümleriyle finansal kayıt tutmayı dönüştürün.",
+    "image": "/images/services/hero/ledger.jpg",
+    "imageAlt": "E-Defter"
+  },
+  "overview": {
+    "title": "Neden E-Defter Seçmelisiniz?",
+    "description": "E-Defter, otomatik süreçlerle doğru, denetlenebilir finansal kayıtları koruyan kapsamlı bir dijital muhasebe çözümü sunar. Sistemimiz, gerçek zamanlı finansal içgörüler sağlarken ve finansal yönetimin karmaşıklığını azaltırken düzenleyici uyumluluğu garanti eder."
+  },
+  "benefits": [
+    "Otomatik dijital muhasebe",
+    "Tam düzenleyici uyumluluk",
+    "Gerçek zamanlı finansal raporlama",
+    "Tam denetim izi",
+    "Azaltılmış muhasebe hataları",
+    "Muhasebe sistemleriyle entegrasyon"
+  ],
+  "features": [
+    {
+      "title": "Dijital Muhasebe",
+      "description": "Akıllı kategorilendirme ve mutabakat yetenekleri ile otomatik işlem kaydı."
+    },
+    {
+      "title": "Düzenleyici Uyumluluk",
+      "description": "Yerleşik uyumluluk özellikleri, tüm kayıtların yerel ve uluslararası muhasebe standartlarını karşılamasını sağlar."
+    },
+    {
+      "title": "Otomatik Raporlar",
+      "description": "Özelleştirilebilir şablonlar ve zamanlama ile kapsamlı finansal raporları otomatik olarak oluşturun."
+    },
+    {
+      "title": "Denetim İzi",
+      "description": "Şeffaflık için zaman damgası doğrulaması ve kullanıcı aktivite takibi ile tam denetim izi."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "Finansal süreç analizi",
+      "Hesap planı kurulumu",
+      "Veri taşıma ve doğrulama",
+      "Kullanıcı eğitimi ve sertifikasyon",
+      "Sistem entegrasyon testi",
+      "Sürekli destek ve güncellemeler"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Tüm Sektörler",
+      "Muhasebe Firmaları",
+      "KOBİ'ler",
+      "Kar Amacı Gütmeyen Kuruluşlar",
+      "Kamu",
+      "Sağlık"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Muhasebe işleme süresini %75 azaltın"
+  },
+  "cta": {
+    "title": "Finansal Kayıtlarınızı Dönüştürmeye Hazır mısınız?",
+    "description": "E-Defter çözümümüzün organizasyonunuzun doğru finansal kayıtları korumasına ve uyumluluğu sağlamasına nasıl yardımcı olabileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Ürünleri Görüntüle"
+  }
+}
+

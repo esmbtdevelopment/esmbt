@@ -1,0 +1,98 @@
+{
+  "hero": {
+    "title": "Dijital Ürünler",
+    "subtitle": "İşletmenizi modern işletmeler için tasarlanmış kapsamlı dijital ürünler paketiyle dönüştürün",
+    "sectionTitle": "Ürünlerimiz",
+    "sectionDescription": "İş ihtiyaçlarınıza özel kapsamlı dijital dönüşüm ürünleri. Faturalamadan e-ticarete kadar her ihtiyacınız karşılandı."
+  },
+  "landing": {
+    "einvoice": {
+      "title": "E-Fatura",
+      "description": "Uyumluluğu sağlarken maliyetleri düşüren ve verimliliği artıran güvenli, otomatik dijital çözümlerle faturalama sürecinizi dönüştürün.",
+      "features": {
+        "legalCompliance": "Vergi düzenlemeleri ile %100 yasal uyumluluk",
+        "costReduction": "Fatura işleme süresini %80'e kadar azaltın",
+        "automatedProcessing": "Fatura oluşturma için akıllı otomasyon",
+        "realTimeTracking": "Gerçek zamanlı fatura takibi ve durum güncellemeleri"
+      }
+    },
+    "eledger": {
+      "title": "E-Defter",
+      "description": "Yasal uyumluluğu ve finansal şeffaflığı sağlayan dijital defter çözümleriyle finansal kayıt tutmayı dönüştürün.",
+      "features": {
+        "financialReporting": "Gerçek zamanlı finansal raporlama",
+        "complianceManagement": "Tam düzenleyici uyumluluk",
+        "automatedEntries": "Otomatik işlem kaydı",
+        "auditTrails": "Tam denetim izi bakımı"
+      }
+    },
+    "eexport": {
+      "title": "E-İhracat",
+      "description": "Kapsamlı dijital ihracat belgelendirme ve uyumluluk yönetimi çözümleriyle uluslararası ticareti kolaylaştırın.",
+      "features": {
+        "exportDocumentation": "Otomatik ihracat belgesi oluşturma",
+        "complianceManagement": "Uluslararası düzenlemelere otomatik uyumluluk",
+        "internationalStandards": "Uluslararası ticaret standartlarına tam uyumluluk",
+        "processAutomation": "İhracat süreçlerinin uçtan uca otomasyonu"
+      }
+    },
+    "restaurant": {
+      "title": "DigiGarson POS",
+      "description": "Yiyecek ve içecek işletmeleri için özel olarak tasarlanmış kapsamlı POS ve yönetim çözümleri.",
+      "features": {
+        "posSystem": "Tam POS işlevselliği",
+        "inventoryTracking": "Entegre envanter yönetimi",
+        "kitchenManagement": "Personel planlama ve yönetimi",
+        "customerService": "Detaylı satış analitiği"
+      }
+    },
+    "ecommerce": {
+      "title": "E-Ticaret",
+      "description": "Entegre dijital satış platformlarıyla çevrimiçi iş büyümenizi destekleyen kapsamlı e-ticaret çözümleri.",
+      "features": {
+        "storeManagement": "Tam çevrimiçi mağaza yönetimi",
+        "paymentIntegration": "Entegre ödeme işleme",
+        "inventoryControl": "Gelişmiş envanter kontrolü",
+        "customerAnalytics": "Müşteri analitiği ve içgörüleri"
+      }
+    },
+    "edelivery": {
+      "title": "E-İrsaliye",
+      "description": "Yasal uyumluluk için gerçek zamanlı takip ve otomatik kayıt tutma ile teslimat belgelendirme sürecinizi dijitalleştirin.",
+      "features": {
+        "digitalTracking": "Gerçek zamanlı teslimat onayı",
+        "logisticsOptimization": "Otomatik kayıt tutma",
+        "paperlessProcess": "Kağıt tabanlı teslimat notlarını ortadan kaldırın",
+        "realTimeUpdates": "Geliştirilmiş teslimat doğruluğu"
+      }
+    },
+    "earchive": {
+      "title": "E-Arşiv Fatura",
+      "description": "Tam yasal uyumluluk ve kolay erişim özellikleriyle dijital faturalarınız için güvenli, uzun vadeli depolama çözümleri.",
+      "features": {
+        "secureStorage": "Güvenli uzun vadeli belge depolama",
+        "legalCompliance": "Saklama gereksinimleriyle tam yasal uyumluluk",
+        "easyRetrieval": "Anında belge erişimi ve arama",
+        "auditReady": "Tam denetim izi bakımı"
+      }
+    },
+    "eadisyon": {
+      "title": "E-Adisyon",
+      "description": "Verimliliği ve müşteri deneyimini artıran dijital sipariş makbuzu çözümleriyle restoran operasyonlarını devrimleştirin.",
+      "features": {
+        "digitalReceipts": "Dijital sipariş makbuzu yönetimi",
+        "orderManagement": "Gerçek zamanlı sipariş takibi",
+        "customerExperience": "Geliştirilmiş müşteri deneyimi",
+        "costEfficiency": "Kağıt israfı ve maliyetlerde azalma"
+      }
+    }
+  },
+  "additionalProducts": {
+    "description": "Uzman ekibimiz, işletmenizin ihtiyaçlarına uygun dijital ürünleri uygulamanıza yardımcı olmaya hazır. Gereksinimlerinizi görüşmek için bugün bizimle iletişime geçin."
+  },
+  "navigation": {
+    "backToProducts": "Ürünlere Geri Dön",
+    "keyFeatures": "Temel Özellikler"
+  }
+}
+

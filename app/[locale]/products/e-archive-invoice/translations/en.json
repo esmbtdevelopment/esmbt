@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "title": "E-Archive Invoice",
+    "subtitle": "Secure Invoice Storage Solutions",
+    "description": "Secure, long-term storage solutions for your digital invoices with full legal compliance and easy retrieval capabilities.",
+    "image": "/images/services/hero/archive.jpg",
+    "imageAlt": "E-Archive Invoice"
+  },
+  "overview": {
+    "title": "Why Choose E-Archive Invoice?",
+    "description": "E-Archive Invoice provides a comprehensive digital archiving solution that ensures your invoices are securely stored, legally compliant, and always accessible. Our robust archiving system eliminates the need for physical document storage while maintaining full audit trails and regulatory compliance."
+  },
+  "benefits": [
+    "Secure long-term document storage",
+    "Full legal compliance with retention requirements",
+    "Instant document retrieval and search",
+    "Automated backup and disaster recovery",
+    "Reduced physical storage costs",
+    "Complete audit trail maintenance"
+  ],
+  "features": [
+    {
+      "title": "Secure Storage",
+      "description": "Enterprise-grade encryption ensures your archived invoices remain secure and protected from unauthorized access."
+    },
+    {
+      "title": "Easy Retrieval",
+      "description": "Advanced search capabilities allow instant retrieval of any archived invoice using multiple search criteria."
+    },
+    {
+      "title": "Legal Compliance",
+      "description": "Automated compliance management ensures all archived documents meet legal retention requirements."
+    },
+    {
+      "title": "Audit Ready",
+      "description": "Complete audit trails and tamper-proof storage make your archive always ready for regulatory inspections."
+    }
+  ],
+  "implementation": {
+    "title": "Implementation Process",
+    "description": "Our proven methodology ensures smooth deployment and maximum ROI",
+    "steps": [
+      "Archive requirement assessment",
+      "Data migration planning and execution",
+      "Security configuration and testing",
+      "User access control setup",
+      "System integration and testing",
+      "Ongoing monitoring and maintenance"
+    ]
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "list": [
+      "All Industries",
+      "Government",
+      "Healthcare",
+      "Finance",
+      "Legal Services",
+      "Manufacturing"
+    ]
+  },
+  "roi": {
+    "title": "Return on Investment",
+    "description": "Reduce document storage costs by up to 70%"
+  },
+  "cta": {
+    "title": "Ready to Secure Your Invoices?",
+    "description": "Let's discuss how our E-Archive Invoice solution can help your organization maintain compliance and reduce storage costs.",
+    "primaryButton": "Contact Us",
+    "secondaryButton": "View All Products"
+  }
+}
+

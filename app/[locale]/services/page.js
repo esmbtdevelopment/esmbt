@@ -13,6 +13,7 @@ import {
 } from "react-icons/fa";
 import { useLocalTranslations } from '@/lib/hooks/useLocalTranslations';
 import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
+import { goToContact } from "@/utils/navigation";
 
 import enTranslations from './translations/en.json';
 import trTranslations from './translations/tr.json';
@@ -233,12 +234,13 @@ function ServicesPage() {
                                 {t('additionalServices.description')}
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Link href="/contact">
-                                    <button className="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 w-full sm:w-auto">
-                                        <span className="text-sm sm:text-base">{tCommon('getFreeConsultation')}</span>
-                                        <FaChevronRight className="text-sm" />
-                                    </button>
-                                </Link>
+                                <button 
+                                    onClick={goToContact}
+                                    className="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 w-full sm:w-auto"
+                                >
+                                    <span className="text-sm sm:text-base">{tCommon('contactUs')}</span>
+                                    <FaChevronRight className="text-sm" />
+                                </button>
                                 <Link href="/services/sap-technical-services">
                                     <button className="border-2 border-sky-500 text-sky-400 hover:bg-sky-500 hover:text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 w-full sm:w-auto">
                                         <span className="text-sm sm:text-base">{tCommon('startWithEInvoice')}</span>
