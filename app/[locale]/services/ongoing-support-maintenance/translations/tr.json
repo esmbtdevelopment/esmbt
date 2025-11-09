@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "title": "Devam Eden Destek ve Bakım",
+    "subtitle": "Sürekli Destek Hizmetleri",
+    "description": "SAP sistemlerinizin optimal performansını sağlamak için sürekli destek ve bakım hizmetleri.",
+    "image": "/images/products/sap-support.jpg",
+    "imageAlt": "Devam Eden Destek ve Bakım"
+  },
+  "overview": {
+    "title": "Neden Devam Eden Destek ve Bakım Seçmelisiniz?",
+    "description": "Devam Eden Destek ve Bakım hizmetlerimiz 7/24 AMS, sistem yükseltmeleri, performans optimizasyonu ve eğitim programlarını içerir. SAP sistemlerinizin minimum kesinti süresi ile en yüksek performansta çalışmasını sağlarız."
+  },
+  "benefits": [
+    "Maksimize edilmiş sistem çalışma süresi ve kullanılabilirliği",
+    "Proaktif sorun önleme ve çözüm",
+    "Sürekli performans optimizasyonu",
+    "Gelişmiş kullanıcı üretkenliği ve memnuniyeti"
+  ],
+  "features": [
+    {
+      "title": "Yardım Masası Desteği",
+      "description": "Tüm SAP ile ilgili sorunlarınız için 7/24 destek"
+    },
+    {
+      "title": "Önleyici Bakım",
+      "description": "Sorunların oluşmadan önlenmesi için düzenli bakım"
+    },
+    {
+      "title": "Sistem İzleme",
+      "description": "Sistem performansı ve sağlığının sürekli izlenmesi"
+    },
+    {
+      "title": "Sürekli İyileştirme",
+      "description": "SAP sistemlerinizin devam eden optimizasyonu ve geliştirmesi"
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Yaklaşımı",
+    "description": "Kanıtlanmış metodolojimiz başarılı uygulamayı garanti eder",
+    "steps": [
+      "Mevcut durum değerlendirmesi ve hizmet seviyesi tanımı",
+      "Destek çerçevesi kurulumu ve ekip geçişi",
+      "İzleme araçları dağıtımı ve yapılandırması",
+      "Hizmet sunumu süreçlerinin oluşturulması",
+      "Bilgi transferi ve eğitim programları",
+      "Sürekli iyileştirme ve optimizasyon"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Tüm Sektörler",
+      "Üretim",
+      "Finans Hizmetleri",
+      "Perakende",
+      "Sağlık",
+      "Teknoloji"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Proaktif destek ve bakım ile %99.9 sistem çalışma süresine ulaşın",
+    "metrics": [
+      {
+        "value": "%99.9",
+        "label": "Sistem Çalışma Süresi"
+      },
+      {
+        "value": "< 2 saat",
+        "label": "Yanıt Süresi"
+      },
+      {
+        "value": "7/24",
+        "label": "Destek Kapsamı"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Optimal SAP Performansını Sağlamaya Hazır mısınız?",
+    "description": "Devam eden destek ve bakım hizmetlerimizin organizasyonunuzun en yüksek SAP sistem performansını ve güvenilirliğini korumasına nasıl yardımcı olabileceğini konuşalım.",
+    "primaryButton": "Ücretsiz Danışmanlık Alın",
+    "secondaryButton": "Daha Fazla Bilgi"
+  }
+}
+

@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "title": "SAP ERP Uygulama ve Geliştirme",
+    "subtitle": "Tam ERP Uygulama Hizmetleri",
+    "description": "İş ihtiyaçlarınıza göre uyarlanmış tam SAP ERP uygulama ve geliştirme hizmetleri.",
+    "image": "/images/products/sap-erp.jpg",
+    "imageAlt": "SAP ERP Uygulaması"
+  },
+  "overview": {
+    "title": "Neden SAP ERP Uygulaması Seçmelisiniz?",
+    "description": "SAP ERP Uygulama hizmetlerimiz, FI/CO, MM, SD, PP ve HCM gibi tüm ana modülleri içeren SAP sistemlerinin uçtan uca dağıtımını kapsar. Başarılı ERP dönüşümü için sorunsuz entegrasyon, veri geçişi ve kullanıcı kabulü sağlarız."
+  },
+  "benefits": [
+    "Tüm departmanlarda kolaylaştırılmış iş süreçleri",
+    "İş operasyonlarına gerçek zamanlı görünürlük",
+    "İyileştirilmiş veri doğruluğu ve raporlama yetenekleri",
+    "Gelişmiş operasyonel verimlilik ve maliyet azaltma"
+  ],
+  "features": [
+    {
+      "title": "Tam Sistem Uygulaması",
+      "description": "İş ihtiyaçlarınıza özel uçtan uca SAP ERP uygulaması"
+    },
+    {
+      "title": "Veri Entegrasyonu",
+      "description": "Mevcut veri kaynaklarının ve sistemlerin sorunsuz entegrasyonu"
+    },
+    {
+      "title": "Süreç Optimizasyonu",
+      "description": "Maksimum verimlilik ve üretkenlik için iş süreçlerini optimize edin"
+    },
+    {
+      "title": "Kullanıcı Eğitimi",
+      "description": "Başarılı kullanıcı kabulünü sağlamak için kapsamlı eğitim programları"
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Yaklaşımı",
+    "description": "Kanıtlanmış metodolojimiz başarılı uygulamayı garanti eder",
+    "steps": [
+      "İş gereksinimi analizi ve sistem tasarımı",
+      "Modül yapılandırması ve özelleştirme",
+      "Veri geçişi ve sistem entegrasyonu",
+      "Kullanıcı kabul testleri ve eğitim",
+      "Canlıya geçiş desteği ve hipercare",
+      "Uygulama sonrası optimizasyon ve destek"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Üretim",
+      "Perakende ve Dağıtım",
+      "Petrol ve Gaz",
+      "İlaç",
+      "Tüketim Malları",
+      "Kamu Hizmetleri"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Entegre ERP süreçleri ile operasyonel maliyetleri %25 azaltın",
+    "metrics": [
+      {
+        "value": "%25",
+        "label": "Maliyet Azaltma"
+      },
+      {
+        "value": "%50",
+        "label": "Süreç Verimliliği"
+      },
+      {
+        "value": "%100",
+        "label": "Veri Doğruluğu"
+      }
+    ]
+  },
+  "cta": {
+    "title": "İşinizi Dönüştürmeye Hazır mısınız?",
+    "description": "SAP ERP uygulama hizmetlerimizin organizasyonunuzun dijital dönüşüm hedeflerine ulaşmasına nasıl yardımcı olabileceğini konuşalım.",
+    "primaryButton": "Ücretsiz Danışmanlık Alın",
+    "secondaryButton": "Daha Fazla Bilgi"
+  }
+}
+

@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "title": "SAP Security & Compliance",
+    "subtitle": "Comprehensive Security Solutions",
+    "description": "Comprehensive security and compliance solutions to protect your SAP environment and ensure regulatory adherence.",
+    "image": "/images/products/sap-security.jpg",
+    "imageAlt": "SAP Security & Compliance"
+  },
+  "overview": {
+    "title": "Why Choose SAP Security & Compliance?",
+    "description": "Our SAP Security & Compliance services include GRC implementation, security assessments, identity management, and audit support. We help you maintain the highest security standards while ensuring regulatory compliance."
+  },
+  "benefits": [
+    "Enhanced security posture and risk mitigation",
+    "Regulatory compliance and audit readiness",
+    "Streamlined access management and governance",
+    "Reduced security vulnerabilities and threats"
+  ],
+  "features": [
+    {
+      "title": "Access Management",
+      "description": "Comprehensive user access management and role-based security"
+    },
+    {
+      "title": "Compliance Auditing",
+      "description": "Regular compliance audits to ensure regulatory adherence"
+    },
+    {
+      "title": "Risk Assessment",
+      "description": "Continuous risk assessment and mitigation strategies"
+    },
+    {
+      "title": "Security Policies",
+      "description": "Development and implementation of comprehensive security policies"
+    }
+  ],
+  "implementation": {
+    "title": "Implementation Approach",
+    "description": "Our proven methodology ensures successful implementation",
+    "steps": [
+      "Security assessment and compliance gap analysis",
+      "Risk framework design and implementation",
+      "Security controls deployment and configuration",
+      "Identity management system integration",
+      "Compliance monitoring setup and testing",
+      "Ongoing security management and support"
+    ]
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "list": [
+      "Financial Services",
+      "Healthcare",
+      "Government",
+      "Manufacturing",
+      "Energy & Utilities",
+      "Pharmaceuticals"
+    ]
+  },
+  "roi": {
+    "title": "Return on Investment",
+    "description": "Reduce security risks by 70% with comprehensive compliance framework",
+    "metrics": [
+      {
+        "value": "70%",
+        "label": "Risk Reduction"
+      },
+      {
+        "value": "100%",
+        "label": "Compliance Rate"
+      },
+      {
+        "value": "24/7",
+        "label": "Security Monitoring"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Secure Your SAP Environment?",
+    "description": "Let's discuss how our SAP security and compliance solutions can help your organization protect critical business data and meet regulatory requirements.",
+    "primaryButton": "Get Free Consultation",
+    "secondaryButton": "Learn More"
+  }
+}
+

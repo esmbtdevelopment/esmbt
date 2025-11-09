@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "title": "Strategic SAP Consulting",
+    "subtitle": "Expert SAP Transformation Guidance",
+    "description": "Expert guidance for your SAP transformation journey with strategic planning and business process optimization.",
+    "image": "/images/products/sap-consulting.jpg",
+    "imageAlt": "Strategic SAP Consulting"
+  },
+  "overview": {
+    "title": "Why Choose Strategic SAP Consulting?",
+    "description": "Our Strategic SAP Consulting services provide comprehensive roadmap development, business process analysis, and change management support to ensure successful SAP implementations. We combine industry best practices with your unique business requirements to deliver transformational results."
+  },
+  "benefits": [
+    "Reduced implementation costs by 30%",
+    "Improved business process efficiency",
+    "Strategic roadmap for digital transformation",
+    "Risk mitigation and compliance assurance"
+  ],
+  "features": [
+    {
+      "title": "Business Process Analysis",
+      "description": "Comprehensive analysis of your current business processes to identify optimization opportunities"
+    },
+    {
+      "title": "Strategic Roadmap Development",
+      "description": "Create a detailed implementation roadmap aligned with your business objectives"
+    },
+    {
+      "title": "Change Management",
+      "description": "Guide your organization through digital transformation with proven methodologies"
+    },
+    {
+      "title": "Risk Assessment",
+      "description": "Identify and mitigate potential risks before they impact your project"
+    }
+  ],
+  "implementation": {
+    "title": "Implementation Approach",
+    "description": "Our proven methodology ensures successful implementation",
+    "steps": [
+      "Initial business assessment and requirement gathering",
+      "Current state analysis and gap identification",
+      "Future state design and roadmap creation",
+      "Implementation planning and resource allocation",
+      "Change management strategy development",
+      "Go-live support and post-implementation review"
+    ]
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "list": [
+      "Manufacturing",
+      "Retail",
+      "Healthcare",
+      "Financial Services",
+      "Automotive",
+      "Energy"
+    ]
+  },
+  "roi": {
+    "title": "Return on Investment",
+    "description": "Achieve 30% faster SAP implementation with strategic planning",
+    "metrics": [
+      {
+        "value": "30%",
+        "label": "Faster Implementation"
+      },
+      {
+        "value": "40%",
+        "label": "Cost Reduction"
+      },
+      {
+        "value": "95%",
+        "label": "Success Rate"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Transform Your Business?",
+    "description": "Let's discuss how our strategic SAP consulting services can help your organization achieve its digital transformation goals.",
+    "primaryButton": "Get Free Consultation",
+    "secondaryButton": "Learn More"
+  }
+}
+

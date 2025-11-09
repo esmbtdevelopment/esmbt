@@ -1,0 +1,89 @@
+{
+  "hero": {
+    "title": "Dijital İş Çözümleri",
+    "subtitle": "İşletmenizi modern işletmeler için tasarlanmış kapsamlı dijital çözümler paketiyle dönüştürün",
+    "sectionTitle": "Hizmetlerimiz",
+    "sectionDescription": "İş ihtiyaçlarınıza özel kapsamlı dijital dönüşüm çözümleri. Uyumluluktan ticarete kadar her ihtiyacınız karşılandı."
+  },
+  "landing": {
+    "strategicConsulting": {
+      "title": "Stratejik SAP Danışmanlığı",
+      "description": "Stratejik planlama ve iş süreci optimizasyonu ile SAP dönüşüm yolculuğunuz için uzman rehberliği.",
+      "features": {
+        "businessAnalysis": "Kapsamlı iş süreci analizi",
+        "roadmapDevelopment": "Stratejik uygulama yol haritası",
+        "processOptimization": "İş süreci optimizasyonu",
+        "changeManagement": "Değişim yönetimi desteği"
+      }
+    },
+    "erpImplementation": {
+      "title": "SAP ERP Uygulaması ve Geliştirme",
+      "description": "İş ihtiyaçlarınıza özel tam SAP ERP uygulama ve geliştirme hizmetleri.",
+      "features": {
+        "fullImplementation": "Uçtan uca ERP uygulaması",
+        "systemEnhancement": "Sistem geliştirme ve optimizasyon",
+        "dataIntegration": "Sorunsuz veri entegrasyonu",
+        "userTraining": "Kapsamlı kullanıcı eğitimi"
+      }
+    },
+    "technicalServices": {
+      "title": "SAP Teknik Hizmetleri",
+      "description": "SAP sistemlerinizin en yüksek performansta çalışmasını sağlayacak profesyonel teknik hizmetler.",
+      "features": {
+        "systemMaintenance": "Düzenli sistem bakımı",
+        "performanceOptimization": "Performans optimizasyonu",
+        "troubleshooting": "Uzman sorun giderme",
+        "upgrades": "Sistem yükseltmeleri ve yamalar"
+      }
+    },
+    "cloudSolutions": {
+      "title": "SAP Bulut Çözümleri",
+      "description": "İşiniz için esneklik, güvenlik ve maliyet etkinliği sağlayan ölçeklenebilir bulut çözümleri.",
+      "features": {
+        "cloudMigration": "Bulut taşıma hizmetleri",
+        "hybridSolutions": "Hibrit bulut çözümleri",
+        "cloudOptimization": "Bulut kaynak optimizasyonu",
+        "securityManagement": "Gelişmiş güvenlik yönetimi"
+      }
+    },
+    "analyticsIntelligence": {
+      "title": "SAP Analitik ve Zeka",
+      "description": "Gelişmiş analitik ve iş zekası çözümleri ile verilerinizi eyleme dönüştürülebilir içgörülere çevirin.",
+      "features": {
+        "businessIntelligence": "İş zekası çözümleri",
+        "dataVisualization": "Gelişmiş veri görselleştirme",
+        "predictiveAnalytics": "Tahmine dayalı analitik yetenekleri",
+        "realTimeReporting": "Gerçek zamanlı raporlama ve panolar"
+      }
+    },
+    "securityCompliance": {
+      "title": "SAP Güvenlik ve Uyumluluk",
+      "description": "SAP ortamınızı korumak ve düzenleyici uyumluluğu sağlamak için kapsamlı güvenlik ve uyumluluk çözümleri.",
+      "features": {
+        "accessManagement": "Kullanıcı erişim yönetimi",
+        "complianceAuditing": "Uyumluluk denetimi ve raporlama",
+        "riskAssessment": "Güvenlik risk değerlendirmesi",
+        "securityPolicies": "Güvenlik politikası geliştirme"
+      }
+    },
+    "ongoingSupport": {
+      "title": "Sürekli Destek ve Bakım",
+      "description": "SAP sistemlerinizin optimal performansını sağlamak için sürekli destek ve bakım hizmetleri.",
+      "features": {
+        "helpDesk": "7/24 yardım masası desteği",
+        "preventiveMaintenance": "Önleyici bakım programları",
+        "systemMonitoring": "Proaktif sistem izleme",
+        "continuousImprovement": "Sürekli iyileştirme girişimleri"
+      }
+    }
+  },
+  "additionalServices": {
+    "description": "Uzman ekibimiz, işletmenizin ihtiyaçlarına uygun dijital çözümleri uygulamanıza yardımcı olmaya hazır. Ücretsiz danışmanlıkla başlayın."
+  },
+  "navigation": {
+    "backToServices": "Hizmetlere Geri Dön",
+    "keyFeatures": "Temel Özellikler",
+    "moreCapabilities": "+{count} daha fazla özellik"
+  }
+}
+

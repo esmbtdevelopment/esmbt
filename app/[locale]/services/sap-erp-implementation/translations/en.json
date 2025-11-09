@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "title": "SAP ERP Implementation & Enhancement",
+    "subtitle": "Complete ERP Implementation Services",
+    "description": "Complete SAP ERP implementation and enhancement services tailored to your business needs.",
+    "image": "/images/products/sap-erp.jpg",
+    "imageAlt": "SAP ERP Implementation"
+  },
+  "overview": {
+    "title": "Why Choose SAP ERP Implementation?",
+    "description": "Our SAP ERP Implementation services cover end-to-end deployment of SAP systems, including all major modules like FI/CO, MM, SD, PP, and HCM. We ensure seamless integration, data migration, and user adoption for successful ERP transformation."
+  },
+  "benefits": [
+    "Streamlined business processes across all departments",
+    "Real-time visibility into business operations",
+    "Improved data accuracy and reporting capabilities",
+    "Enhanced operational efficiency and cost reduction"
+  ],
+  "features": [
+    {
+      "title": "Full System Implementation",
+      "description": "End-to-end SAP ERP implementation tailored to your business needs"
+    },
+    {
+      "title": "Data Integration",
+      "description": "Seamless integration of existing data sources and systems"
+    },
+    {
+      "title": "Process Optimization",
+      "description": "Optimize business processes for maximum efficiency and productivity"
+    },
+    {
+      "title": "User Training",
+      "description": "Comprehensive training programs to ensure successful user adoption"
+    }
+  ],
+  "implementation": {
+    "title": "Implementation Approach",
+    "description": "Our proven methodology ensures successful implementation",
+    "steps": [
+      "Business requirement analysis and system design",
+      "Module configuration and customization",
+      "Data migration and system integration",
+      "User acceptance testing and training",
+      "Go-live support and hypercare",
+      "Post-implementation optimization and support"
+    ]
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "list": [
+      "Manufacturing",
+      "Retail & Distribution",
+      "Oil & Gas",
+      "Pharmaceuticals",
+      "Consumer Goods",
+      "Utilities"
+    ]
+  },
+  "roi": {
+    "title": "Return on Investment",
+    "description": "Reduce operational costs by 25% through integrated ERP processes",
+    "metrics": [
+      {
+        "value": "25%",
+        "label": "Cost Reduction"
+      },
+      {
+        "value": "50%",
+        "label": "Process Efficiency"
+      },
+      {
+        "value": "100%",
+        "label": "Data Accuracy"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Transform Your Business?",
+    "description": "Let's discuss how our SAP ERP implementation services can help your organization achieve its digital transformation goals.",
+    "primaryButton": "Get Free Consultation",
+    "secondaryButton": "Learn More"
+  }
+}
+

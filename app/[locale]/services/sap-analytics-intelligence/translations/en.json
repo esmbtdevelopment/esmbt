@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "title": "SAP Analytics & Intelligence",
+    "subtitle": "Advanced Data Analytics Solutions",
+    "description": "Transform your data into actionable insights with advanced analytics and business intelligence solutions.",
+    "image": "/images/products/sap-analytics.jpg",
+    "imageAlt": "SAP Analytics & Intelligence"
+  },
+  "overview": {
+    "title": "Why Choose SAP Analytics & Intelligence?",
+    "description": "Our SAP Analytics & Intelligence services include BusinessObjects, SAC, BW/4HANA, and HANA database optimization. We help you unlock the power of your data for better decision-making and business performance."
+  },
+  "benefits": [
+    "Data-driven decision making across the organization",
+    "Real-time insights and predictive analytics capabilities",
+    "Improved operational efficiency through advanced reporting",
+    "Enhanced business performance with intelligent data analysis"
+  ],
+  "features": [
+    {
+      "title": "Business Intelligence",
+      "description": "Comprehensive BI solutions for data-driven decision making"
+    },
+    {
+      "title": "Data Visualization",
+      "description": "Interactive dashboards and reports for better data understanding"
+    },
+    {
+      "title": "Predictive Analytics",
+      "description": "Advanced analytics to predict trends and business outcomes"
+    },
+    {
+      "title": "Real-time Reporting",
+      "description": "Live reporting capabilities for immediate business insights"
+    }
+  ],
+  "implementation": {
+    "title": "Implementation Approach",
+    "description": "Our proven methodology ensures successful implementation",
+    "steps": [
+      "Data landscape assessment and analytics strategy",
+      "Data architecture design and modeling",
+      "Analytics platform deployment and configuration",
+      "Dashboard and report development",
+      "User training and adoption support",
+      "Performance optimization and ongoing support"
+    ]
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "list": [
+      "Financial Services",
+      "Retail & Consumer Goods",
+      "Manufacturing",
+      "Healthcare",
+      "Telecommunications",
+      "Government"
+    ]
+  },
+  "roi": {
+    "title": "Return on Investment",
+    "description": "Accelerate decision-making by 60% with real-time analytics and intelligence",
+    "metrics": [
+      {
+        "value": "60%",
+        "label": "Faster Decisions"
+      },
+      {
+        "value": "85%",
+        "label": "Data Accuracy"
+      },
+      {
+        "value": "45%",
+        "label": "Efficiency Gain"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Unlock Your Data's Potential?",
+    "description": "Let's discuss how our SAP analytics and intelligence solutions can help your organization make better, data-driven decisions.",
+    "primaryButton": "Get Free Consultation",
+    "secondaryButton": "Learn More"
+  }
+}
+

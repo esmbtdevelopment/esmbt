@@ -1,0 +1,24 @@
+{
+  "title": "Our Blog",
+  "subtitle": "Insights, news, and updates from our team",
+  "allCategories": "All",
+  "posts": "posts",
+  "post": "post",
+  "minRead": "min read",
+  "readMore": "Read More",
+  "noPostsFound": "No posts found",
+  "tryDifferentFilter": "Try selecting a different category or tag",
+  "checkBackSoon": "Check back soon for new content",
+  "filteredByTag": "Filtered by tag",
+  "popularTags": "Popular Tags",
+  "exploreMore": "Explore more insights and articles from our blog",
+  "viewAllPosts": "View All Posts",
+  "wantReadMore": "Want to Read More?",
+  "backToBlog": "Back to Blog",
+  "relatedPosts": "Related Posts",
+  "sharePost": "Share this post",
+  "tags": "Tags",
+  "postNotFound": "Post Not Found",
+  "postNotFoundDesc": "The blog post you're looking for doesn't exist."
+}
+

@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "title": "Stratejik SAP Danışmanlığı",
+    "subtitle": "Uzman SAP Dönüşüm Rehberliği",
+    "description": "Stratejik planlama ve iş süreçleri optimizasyonu ile SAP dönüşüm yolculuğunuz için uzman rehberlik.",
+    "image": "/images/products/sap-consulting.jpg",
+    "imageAlt": "Stratejik SAP Danışmanlığı"
+  },
+  "overview": {
+    "title": "Neden Stratejik SAP Danışmanlığı Seçmelisiniz?",
+    "description": "Stratejik SAP Danışmanlık hizmetlerimiz, başarılı SAP implementasyonları sağlamak için kapsamlı yol haritası geliştirme, iş süreci analizi ve değişim yönetimi desteği sunar. Sektör en iyi uygulamalarını benzersiz iş gereksinimlerinizle birleştirerek dönüştürücü sonuçlar sunarız."
+  },
+  "benefits": [
+    "Uygulama maliyetlerinde %30 azalma",
+    "İyileştirilmiş iş süreci verimliliği",
+    "Dijital dönüşüm için stratejik yol haritası",
+    "Risk azaltma ve uyumluluk güvencesi"
+  ],
+  "features": [
+    {
+      "title": "İş Süreci Analizi",
+      "description": "Optimizasyon fırsatlarını belirlemek için mevcut iş süreçlerinizin kapsamlı analizi"
+    },
+    {
+      "title": "Stratejik Yol Haritası Geliştirme",
+      "description": "İş hedeflerinizle uyumlu detaylı bir uygulama yol haritası oluşturun"
+    },
+    {
+      "title": "Değişim Yönetimi",
+      "description": "Kanıtlanmış metodolojilerle organizasyonunuzu dijital dönüşüm sürecinde yönlendirin"
+    },
+    {
+      "title": "Risk Değerlendirmesi",
+      "description": "Potansiyel riskleri projenize etki etmeden önce belirleyin ve azaltın"
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Yaklaşımı",
+    "description": "Kanıtlanmış metodolojimiz başarılı uygulamayı garanti eder",
+    "steps": [
+      "İlk iş değerlendirmesi ve gereksinim toplama",
+      "Mevcut durum analizi ve boşluk tanımlama",
+      "Gelecek durum tasarımı ve yol haritası oluşturma",
+      "Uygulama planlaması ve kaynak tahsisi",
+      "Değişim yönetimi stratejisi geliştirme",
+      "Canlıya geçiş desteği ve uygulama sonrası inceleme"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Üretim",
+      "Perakende",
+      "Sağlık",
+      "Finans Hizmetleri",
+      "Otomotiv",
+      "Enerji"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Stratejik planlama ile SAP uygulamasında %30 daha hızlı sonuç alın",
+    "metrics": [
+      {
+        "value": "%30",
+        "label": "Daha Hızlı Uygulama"
+      },
+      {
+        "value": "%40",
+        "label": "Maliyet Azaltma"
+      },
+      {
+        "value": "%95",
+        "label": "Başarı Oranı"
+      }
+    ]
+  },
+  "cta": {
+    "title": "İşinizi Dönüştürmeye Hazır mısınız?",
+    "description": "Stratejik SAP danışmanlık hizmetlerimizin organizasyonunuzun dijital dönüşüm hedeflerine ulaşmasına nasıl yardımcı olabileceğini konuşalım.",
+    "primaryButton": "Ücretsiz Danışmanlık Alın",
+    "secondaryButton": "Daha Fazla Bilgi"
+  }
+}
+

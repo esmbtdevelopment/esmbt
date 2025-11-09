@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "title": "SAP Technical Services",
+    "subtitle": "Professional Technical Support",
+    "description": "Professional technical services to keep your SAP systems running at peak performance.",
+    "image": "/images/products/sap-technical-services.jpg",
+    "imageAlt": "SAP Technical Services"
+  },
+  "overview": {
+    "title": "Why Choose SAP Technical Services?",
+    "description": "Our SAP Technical Services encompass ABAP development, Basis administration, system integration, and modern UI development. We ensure your SAP landscape operates efficiently with optimal performance and security."
+  },
+  "benefits": [
+    "Maximized system performance and reliability",
+    "Reduced downtime and technical issues",
+    "Enhanced security and compliance",
+    "Optimized infrastructure costs and resource utilization"
+  ],
+  "features": [
+    {
+      "title": "System Maintenance",
+      "description": "Regular maintenance and updates to keep your SAP system running smoothly"
+    },
+    {
+      "title": "Performance Optimization",
+      "description": "Continuous monitoring and optimization of system performance"
+    },
+    {
+      "title": "Technical Support",
+      "description": "Expert technical support for all your SAP-related issues"
+    },
+    {
+      "title": "System Upgrades",
+      "description": "Planned system upgrades and enhancement implementations"
+    }
+  ],
+  "implementation": {
+    "title": "Implementation Approach",
+    "description": "Our proven methodology ensures successful implementation",
+    "steps": [
+      "Technical requirement analysis and architecture design",
+      "Development environment setup and configuration",
+      "Custom development and system enhancement",
+      "Integration testing and quality assurance",
+      "Deployment and production support",
+      "Ongoing maintenance and performance optimization"
+    ]
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "list": [
+      "All Industries",
+      "Technology",
+      "Financial Services",
+      "Manufacturing",
+      "Healthcare",
+      "Government"
+    ]
+  },
+  "roi": {
+    "title": "Return on Investment",
+    "description": "Improve system performance by 40% with optimized technical infrastructure",
+    "metrics": [
+      {
+        "value": "40%",
+        "label": "Performance Improvement"
+      },
+      {
+        "value": "60%",
+        "label": "Downtime Reduction"
+      },
+      {
+        "value": "99.9%",
+        "label": "System Availability"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Optimize Your SAP Systems?",
+    "description": "Let's discuss how our SAP technical services can help your organization achieve optimal system performance and reliability.",
+    "primaryButton": "Get Free Consultation",
+    "secondaryButton": "Learn More"
+  }
+}
+

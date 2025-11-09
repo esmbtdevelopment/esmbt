@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "title": "SAP Cloud Solutions",
+    "subtitle": "Scalable Cloud Services",
+    "description": "Scalable cloud solutions that provide flexibility, security, and cost-effectiveness for your business.",
+    "image": "/images/products/sap-cloud.jpg",
+    "imageAlt": "SAP Cloud Solutions"
+  },
+  "overview": {
+    "title": "Why Choose SAP Cloud Solutions?",
+    "description": "Our SAP Cloud Solutions include S/4HANA Cloud, SuccessFactors, Ariba, and Concur implementations. We help you leverage the power of cloud computing for enhanced scalability, reduced infrastructure costs, and improved business agility."
+  },
+  "benefits": [
+    "Reduced infrastructure costs and maintenance overhead",
+    "Enhanced scalability and business agility",
+    "Improved security and compliance capabilities",
+    "Faster time-to-market with cloud-native solutions"
+  ],
+  "features": [
+    {
+      "title": "Cloud Migration",
+      "description": "Seamless migration of your SAP systems to the cloud"
+    },
+    {
+      "title": "Hybrid Solutions",
+      "description": "Flexible hybrid cloud solutions that meet your specific needs"
+    },
+    {
+      "title": "Security Management",
+      "description": "Advanced security measures to protect your cloud-based systems"
+    },
+    {
+      "title": "Cloud Optimization",
+      "description": "Continuous optimization of cloud resources for cost efficiency"
+    }
+  ],
+  "implementation": {
+    "title": "Implementation Approach",
+    "description": "Our proven methodology ensures successful implementation",
+    "steps": [
+      "Cloud readiness assessment and migration planning",
+      "Cloud architecture design and security configuration",
+      "Data migration and system integration",
+      "User training and change management",
+      "Go-live support and optimization",
+      "Ongoing cloud management and support"
+    ]
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "list": [
+      "Technology",
+      "Financial Services",
+      "Healthcare",
+      "Retail",
+      "Manufacturing",
+      "Professional Services"
+    ]
+  },
+  "roi": {
+    "title": "Return on Investment",
+    "description": "Achieve 50% reduction in IT infrastructure costs with cloud migration",
+    "metrics": [
+      {
+        "value": "50%",
+        "label": "Cost Reduction"
+      },
+      {
+        "value": "3x",
+        "label": "Faster Deployment"
+      },
+      {
+        "value": "99.95%",
+        "label": "Uptime Guarantee"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Move to the Cloud?",
+    "description": "Let's discuss how our SAP cloud solutions can help your organization achieve greater flexibility, scalability, and cost savings.",
+    "primaryButton": "Get Free Consultation",
+    "secondaryButton": "Learn More"
+  }
+}
+

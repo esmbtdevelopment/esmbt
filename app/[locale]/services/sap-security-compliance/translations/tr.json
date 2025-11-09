@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "title": "SAP Güvenlik ve Uyumluluk",
+    "subtitle": "Kapsamlı Güvenlik Çözümleri",
+    "description": "SAP ortamınızı korumak ve düzenleyici uyumu sağlamak için kapsamlı güvenlik ve uyumluluk çözümleri.",
+    "image": "/images/products/sap-security.jpg",
+    "imageAlt": "SAP Güvenlik ve Uyumluluk"
+  },
+  "overview": {
+    "title": "Neden SAP Güvenlik ve Uyumluluk Seçmelisiniz?",
+    "description": "SAP Güvenlik ve Uyumluluk hizmetlerimiz GRC uygulaması, güvenlik değerlendirmeleri, kimlik yönetimi ve denetim desteğini içerir. Düzenleyici uyumu sağlarken en yüksek güvenlik standartlarını korumanıza yardımcı oluruz."
+  },
+  "benefits": [
+    "Geliştirilmiş güvenlik duruşu ve risk azaltma",
+    "Düzenleyici uyumluluk ve denetim hazırlığı",
+    "Kolaylaştırılmış erişim yönetimi ve yönetişim",
+    "Azaltılmış güvenlik açıkları ve tehditler"
+  ],
+  "features": [
+    {
+      "title": "Erişim Yönetimi",
+      "description": "Kapsamlı kullanıcı erişim yönetimi ve rol tabanlı güvenlik"
+    },
+    {
+      "title": "Uyumluluk Denetimi",
+      "description": "Düzenleyici uyumu sağlamak için düzenli uyumluluk denetimleri"
+    },
+    {
+      "title": "Risk Değerlendirmesi",
+      "description": "Sürekli risk değerlendirmesi ve azaltma stratejileri"
+    },
+    {
+      "title": "Güvenlik Politikaları",
+      "description": "Kapsamlı güvenlik politikalarının geliştirilmesi ve uygulanması"
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Yaklaşımı",
+    "description": "Kanıtlanmış metodolojimiz başarılı uygulamayı garanti eder",
+    "steps": [
+      "Güvenlik değerlendirmesi ve uyumluluk boşluk analizi",
+      "Risk çerçevesi tasarımı ve uygulaması",
+      "Güvenlik kontrollerinin dağıtımı ve yapılandırması",
+      "Kimlik yönetim sistemi entegrasyonu",
+      "Uyumluluk izleme kurulumu ve test",
+      "Devam eden güvenlik yönetimi ve destek"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Finans Hizmetleri",
+      "Sağlık",
+      "Kamu",
+      "Üretim",
+      "Enerji ve Kamu Hizmetleri",
+      "İlaç"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Kapsamlı uyumluluk çerçevesi ile güvenlik risklerini %70 azaltın",
+    "metrics": [
+      {
+        "value": "%70",
+        "label": "Risk Azaltma"
+      },
+      {
+        "value": "%100",
+        "label": "Uyumluluk Oranı"
+      },
+      {
+        "value": "7/24",
+        "label": "Güvenlik İzleme"
+      }
+    ]
+  },
+  "cta": {
+    "title": "SAP Ortamınızı Güvence Altına Almaya Hazır mısınız?",
+    "description": "SAP güvenlik ve uyumluluk çözümlerimizin organizasyonunuzun kritik iş verilerini korumasına ve düzenleyici gereksinimleri karşılamasına nasıl yardımcı olabileceğini konuşalım.",
+    "primaryButton": "Ücretsiz Danışmanlık Alın",
+    "secondaryButton": "Daha Fazla Bilgi"
+  }
+}
+

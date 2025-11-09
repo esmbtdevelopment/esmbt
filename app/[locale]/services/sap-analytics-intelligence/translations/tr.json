@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "title": "SAP Analitik ve İş Zekası",
+    "subtitle": "Gelişmiş Veri Analitik Çözümleri",
+    "description": "Gelişmiş analitik ve iş zekası çözümleri ile verilerinizi işlem yapılabilir içgörülere dönüştürün.",
+    "image": "/images/products/sap-analytics.jpg",
+    "imageAlt": "SAP Analitik ve İş Zekası"
+  },
+  "overview": {
+    "title": "Neden SAP Analitik ve İş Zekası Seçmelisiniz?",
+    "description": "SAP Analitik ve İş Zekası hizmetlerimiz BusinessObjects, SAC, BW/4HANA ve HANA veritabanı optimizasyonunu içerir. Daha iyi karar verme ve iş performansı için verilerinizin gücünü açığa çıkarmanıza yardımcı oluruz."
+  },
+  "benefits": [
+    "Organizasyon genelinde veriye dayalı karar verme",
+    "Gerçek zamanlı içgörüler ve tahmine dayalı analitik yetenekleri",
+    "Gelişmiş raporlama yoluyla iyileştirilmiş operasyonel verimlilik",
+    "Akıllı veri analizi ile geliştirilmiş iş performansı"
+  ],
+  "features": [
+    {
+      "title": "İş Zekası",
+      "description": "Veriye dayalı karar verme için kapsamlı BI çözümleri"
+    },
+    {
+      "title": "Veri Görselleştirme",
+      "description": "Daha iyi veri anlayışı için etkileşimli kontrol panelleri ve raporlar"
+    },
+    {
+      "title": "Tahmine Dayalı Analitik",
+      "description": "Trendleri ve iş sonuçlarını tahmin etmek için gelişmiş analitik"
+    },
+    {
+      "title": "Gerçek Zamanlı Raporlama",
+      "description": "Anında iş içgörüleri için canlı raporlama yetenekleri"
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Yaklaşımı",
+    "description": "Kanıtlanmış metodolojimiz başarılı uygulamayı garanti eder",
+    "steps": [
+      "Veri ortamı değerlendirmesi ve analitik stratejisi",
+      "Veri mimarisi tasarımı ve modelleme",
+      "Analitik platform dağıtımı ve yapılandırması",
+      "Kontrol paneli ve rapor geliştirme",
+      "Kullanıcı eğitimi ve benimseme desteği",
+      "Performans optimizasyonu ve devam eden destek"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Finans Hizmetleri",
+      "Perakende ve Tüketim Malları",
+      "Üretim",
+      "Sağlık",
+      "Telekomünikasyon",
+      "Kamu"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Gerçek zamanlı analitik ve iş zekası ile karar vermeyi %60 hızlandırın",
+    "metrics": [
+      {
+        "value": "%60",
+        "label": "Daha Hızlı Kararlar"
+      },
+      {
+        "value": "%85",
+        "label": "Veri Doğruluğu"
+      },
+      {
+        "value": "%45",
+        "label": "Verimlilik Kazancı"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Verilerinizin Potansiyelini Ortaya Çıkarmaya Hazır mısınız?",
+    "description": "SAP analitik ve iş zekası çözümlerimizin organizasyonunuzun daha iyi, veriye dayalı kararlar almasına nasıl yardımcı olabileceğini konuşalım.",
+    "primaryButton": "Ücretsiz Danışmanlık Alın",
+    "secondaryButton": "Daha Fazla Bilgi"
+  }
+}
+

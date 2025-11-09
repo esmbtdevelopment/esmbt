@@ -11,10 +11,16 @@ import {
     FaLifeRing,
     FaCloud,
 } from "react-icons/fa";
+import { useLocalTranslations } from '@/lib/hooks/useLocalTranslations';
 import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
 
+import enTranslations from './translations/en.json';
+import trTranslations from './translations/tr.json';
+
+const translations = { en: enTranslations, tr: trTranslations };
+
 function ServicesPage() {
-    const t = useDebugTranslations('services');
+    const t = useLocalTranslations(translations);
     const tCommon = useDebugTranslations('common');
 
     const services = [
@@ -139,8 +145,7 @@ function ServicesPage() {
                             </span>
                         </h2>
                         <p className="text-base sm:text-lg text-gray-600 font-montserrat leading-relaxed max-w-3xl mx-auto px-4">
-                            Comprehensive digital transformation solutions tailored for your business needs.
-                            From compliance to commerce, we&apos;ve got you covered.
+                            {t('hero.sectionDescription')}
                         </p>
                     </div>
                     {/* Services  Grid */}
@@ -181,7 +186,7 @@ function ServicesPage() {
                                     {/* Key Features */}
                                     <div className="mb-8">
                                         <h4 className="text-sm font-semibold text-gray-800 font-sora mb-3 uppercase tracking-wide">
-                                            Key Features
+                                            {t('navigation.keyFeatures')}
                                         </h4>
                                         <div className="space-y-2">
                                             {service.features.slice(0, 3).map((feature, featureIndex) => (
@@ -196,7 +201,7 @@ function ServicesPage() {
                                                 <div className="flex items-center space-x-3 mt-2">
                                                     <div className="flex-shrink-0 w-1.5 h-1.5 bg-gray-400 rounded-full mt-2"></div>
                                                     <span className="text-gray-500 font-montserrat text-sm italic">
-                                                        +{service.features.length - 3} more capabilities
+                                                        {t('navigation.moreCapabilities', { count: service.features.length - 3 })}
                                                     </span>
                                                 </div>
                                             )}

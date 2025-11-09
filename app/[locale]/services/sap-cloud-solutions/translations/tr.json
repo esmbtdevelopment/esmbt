@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "title": "SAP Bulut Çözümleri",
+    "subtitle": "Ölçeklenebilir Bulut Hizmetleri",
+    "description": "İşiniz için esneklik, güvenlik ve maliyet etkinliği sağlayan ölçeklenebilir bulut çözümleri.",
+    "image": "/images/products/sap-cloud.jpg",
+    "imageAlt": "SAP Bulut Çözümleri"
+  },
+  "overview": {
+    "title": "Neden SAP Bulut Çözümleri Seçmelisiniz?",
+    "description": "SAP Bulut Çözümlerimiz S/4HANA Cloud, SuccessFactors, Ariba ve Concur uygulamalarını içerir. Gelişmiş ölçeklenebilirlik, azaltılmış altyapı maliyetleri ve iyileştirilmiş iş çevikliği için bulut bilişimin gücünden yararlanmanıza yardımcı oluruz."
+  },
+  "benefits": [
+    "Azaltılmış altyapı maliyetleri ve bakım yükü",
+    "Gelişmiş ölçeklenebilirlik ve iş çevikliği",
+    "İyileştirilmiş güvenlik ve uyumluluk yetenekleri",
+    "Bulut-native çözümlerle daha hızlı piyasaya çıkış"
+  ],
+  "features": [
+    {
+      "title": "Bulut Geçişi",
+      "description": "SAP sistemlerinizin buluta sorunsuz geçişi"
+    },
+    {
+      "title": "Hibrit Çözümler",
+      "description": "Özel ihtiyaçlarınızı karşılayan esnek hibrit bulut çözümleri"
+    },
+    {
+      "title": "Güvenlik Yönetimi",
+      "description": "Bulut tabanlı sistemlerinizi korumak için gelişmiş güvenlik önlemleri"
+    },
+    {
+      "title": "Bulut Optimizasyonu",
+      "description": "Maliyet verimliliği için bulut kaynaklarının sürekli optimizasyonu"
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Yaklaşımı",
+    "description": "Kanıtlanmış metodolojimiz başarılı uygulamayı garanti eder",
+    "steps": [
+      "Bulut hazırlık değerlendirmesi ve geçiş planlaması",
+      "Bulut mimarisi tasarımı ve güvenlik yapılandırması",
+      "Veri geçişi ve sistem entegrasyonu",
+      "Kullanıcı eğitimi ve değişim yönetimi",
+      "Canlıya geçiş desteği ve optimizasyon",
+      "Devam eden bulut yönetimi ve destek"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Teknoloji",
+      "Finans Hizmetleri",
+      "Sağlık",
+      "Perakende",
+      "Üretim",
+      "Profesyonel Hizmetler"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Bulut geçişi ile BT altyapı maliyetlerinde %50 azalma sağlayın",
+    "metrics": [
+      {
+        "value": "%50",
+        "label": "Maliyet Azaltma"
+      },
+      {
+        "value": "3x",
+        "label": "Daha Hızlı Dağıtım"
+      },
+      {
+        "value": "%99.95",
+        "label": "Çalışma Süresi Garantisi"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Buluta Geçmeye Hazır mısınız?",
+    "description": "SAP bulut çözümlerimizin organizasyonunuzun daha fazla esneklik, ölçeklenebilirlik ve maliyet tasarrufu elde etmesine nasıl yardımcı olabileceğini konuşalım.",
+    "primaryButton": "Ücretsiz Danışmanlık Alın",
+    "secondaryButton": "Daha Fazla Bilgi"
+  }
+}
+

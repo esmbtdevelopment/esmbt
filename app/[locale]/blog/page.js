@@ -1,14 +1,20 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { useParams, useRouter } from "next/navigation";
-import { useLocale, useTranslations } from 'next-intl';
+import { useLocale } from 'next-intl';
 import Link from "next/link";
+import { useLocalTranslations } from "@/lib/hooks/useLocalTranslations";
+
+import enTranslations from './translations/en.json';
+import trTranslations from './translations/tr.json';
+
+const translations = { en: enTranslations, tr: trTranslations };
 
 export default function BlogListingPage() {
     const params = useParams();
     const router = useRouter();
     const locale = useLocale();
-    const t = useTranslations('blog');
+    const t = useLocalTranslations(translations);
 
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(true);

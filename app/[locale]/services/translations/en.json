@@ -1,0 +1,89 @@
+{
+  "hero": {
+    "title": "Digital Business Solutions",
+    "subtitle": "Transform your business with our comprehensive suite of digital solutions designed for modern enterprises",
+    "sectionTitle": "Our Services",
+    "sectionDescription": "Comprehensive digital transformation solutions tailored for your business needs. From compliance to commerce, we've got you covered."
+  },
+  "landing": {
+    "strategicConsulting": {
+      "title": "Strategic SAP Consulting",
+      "description": "Expert guidance for your SAP transformation journey with strategic planning and business process optimization.",
+      "features": {
+        "businessAnalysis": "Comprehensive business process analysis",
+        "roadmapDevelopment": "Strategic implementation roadmap",
+        "processOptimization": "Business process optimization",
+        "changeManagement": "Change management support"
+      }
+    },
+    "erpImplementation": {
+      "title": "SAP ERP Implementation & Enhancement",
+      "description": "Complete SAP ERP implementation and enhancement services tailored to your business needs.",
+      "features": {
+        "fullImplementation": "End-to-end ERP implementation",
+        "systemEnhancement": "System enhancement and optimization",
+        "dataIntegration": "Seamless data integration",
+        "userTraining": "Comprehensive user training"
+      }
+    },
+    "technicalServices": {
+      "title": "SAP Technical Services",
+      "description": "Professional technical services to keep your SAP systems running at peak performance.",
+      "features": {
+        "systemMaintenance": "Regular system maintenance",
+        "performanceOptimization": "Performance optimization",
+        "troubleshooting": "Expert troubleshooting",
+        "upgrades": "System upgrades and patches"
+      }
+    },
+    "cloudSolutions": {
+      "title": "SAP Cloud Solutions",
+      "description": "Scalable cloud solutions that provide flexibility, security, and cost-effectiveness for your business.",
+      "features": {
+        "cloudMigration": "Cloud migration services",
+        "hybridSolutions": "Hybrid cloud solutions",
+        "cloudOptimization": "Cloud resource optimization",
+        "securityManagement": "Advanced security management"
+      }
+    },
+    "analyticsIntelligence": {
+      "title": "SAP Analytics & Intelligence",
+      "description": "Transform your data into actionable insights with advanced analytics and business intelligence solutions.",
+      "features": {
+        "businessIntelligence": "Business intelligence solutions",
+        "dataVisualization": "Advanced data visualization",
+        "predictiveAnalytics": "Predictive analytics capabilities",
+        "realTimeReporting": "Real-time reporting and dashboards"
+      }
+    },
+    "securityCompliance": {
+      "title": "SAP Security & Compliance",
+      "description": "Comprehensive security and compliance solutions to protect your SAP environment and ensure regulatory adherence.",
+      "features": {
+        "accessManagement": "User access management",
+        "complianceAuditing": "Compliance auditing and reporting",
+        "riskAssessment": "Security risk assessment",
+        "securityPolicies": "Security policy development"
+      }
+    },
+    "ongoingSupport": {
+      "title": "Ongoing Support & Maintenance",
+      "description": "Continuous support and maintenance services to ensure optimal performance of your SAP systems.",
+      "features": {
+        "helpDesk": "24/7 helpdesk support",
+        "preventiveMaintenance": "Preventive maintenance programs",
+        "systemMonitoring": "Proactive system monitoring",
+        "continuousImprovement": "Continuous improvement initiatives"
+      }
+    }
+  },
+  "additionalServices": {
+    "description": "Our expert team is ready to help you implement the right digital solutions for your business needs. Get started with a free consultation today."
+  },
+  "navigation": {
+    "backToServices": "Back to Services",
+    "keyFeatures": "Key Features",
+    "moreCapabilities": "+{count} more capabilities"
+  }
+}
+

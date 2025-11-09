@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "title": "Ongoing Support & Maintenance",
+    "subtitle": "Continuous Support Services",
+    "description": "Continuous support and maintenance services to ensure optimal performance of your SAP systems.",
+    "image": "/images/products/sap-support.jpg",
+    "imageAlt": "Ongoing Support & Maintenance"
+  },
+  "overview": {
+    "title": "Why Choose Ongoing Support & Maintenance?",
+    "description": "Our Ongoing Support & Maintenance services include 24/7 AMS, system upgrades, performance optimization, and training programs. We ensure your SAP systems operate at peak performance with minimal downtime."
+  },
+  "benefits": [
+    "Maximized system uptime and availability",
+    "Proactive issue prevention and resolution",
+    "Continuous performance optimization",
+    "Enhanced user productivity and satisfaction"
+  ],
+  "features": [
+    {
+      "title": "Help Desk Support",
+      "description": "Round-the-clock support for all your SAP-related issues"
+    },
+    {
+      "title": "Preventive Maintenance",
+      "description": "Regular maintenance to prevent issues before they occur"
+    },
+    {
+      "title": "System Monitoring",
+      "description": "Continuous monitoring of system performance and health"
+    },
+    {
+      "title": "Continuous Improvement",
+      "description": "Ongoing optimization and enhancement of your SAP systems"
+    }
+  ],
+  "implementation": {
+    "title": "Implementation Approach",
+    "description": "Our proven methodology ensures successful implementation",
+    "steps": [
+      "Current state assessment and service level definition",
+      "Support framework setup and team transition",
+      "Monitoring tools deployment and configuration",
+      "Service delivery processes establishment",
+      "Knowledge transfer and training programs",
+      "Continuous improvement and optimization"
+    ]
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "list": [
+      "All Industries",
+      "Manufacturing",
+      "Financial Services",
+      "Retail",
+      "Healthcare",
+      "Technology"
+    ]
+  },
+  "roi": {
+    "title": "Return on Investment",
+    "description": "Achieve 99.9% system uptime with proactive support and maintenance",
+    "metrics": [
+      {
+        "value": "99.9%",
+        "label": "System Uptime"
+      },
+      {
+        "value": "< 2hrs",
+        "label": "Response Time"
+      },
+      {
+        "value": "24/7",
+        "label": "Support Coverage"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Ensure Optimal SAP Performance?",
+    "description": "Let's discuss how our ongoing support and maintenance services can help your organization maintain peak SAP system performance and reliability.",
+    "primaryButton": "Get Free Consultation",
+    "secondaryButton": "Learn More"
+  }
+}
+

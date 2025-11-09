@@ -1,0 +1,24 @@
+{
+  "title": "Blogumuz",
+  "subtitle": "Ekibimizden içgörüler, haberler ve güncellemeler",
+  "allCategories": "Tümü",
+  "posts": "gönderi",
+  "post": "gönderi",
+  "minRead": "dk okuma",
+  "readMore": "Devamını Oku",
+  "noPostsFound": "Gönderi bulunamadı",
+  "tryDifferentFilter": "Farklı bir kategori veya etiket seçmeyi deneyin",
+  "checkBackSoon": "Yeni içerik için yakında tekrar kontrol edin",
+  "filteredByTag": "Etikete göre filtrelendi",
+  "popularTags": "Popüler Etiketler",
+  "exploreMore": "Blogumuzdaki daha fazla içgörü ve makaleyi keşfedin",
+  "viewAllPosts": "Tüm Gönderileri Görüntüle",
+  "wantReadMore": "Daha Fazla Okumak İster misiniz?",
+  "backToBlog": "Bloga Dön",
+  "relatedPosts": "İlgili Gönderiler",
+  "sharePost": "Bu gönderiyi paylaş",
+  "tags": "Etiketler",
+  "postNotFound": "Gönderi Bulunamadı",
+  "postNotFoundDesc": "Aradığınız blog gönderisi mevcut değil."
+}
+
