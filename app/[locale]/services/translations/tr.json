@@ -75,6 +75,156 @@
         "systemMonitoring": "Proaktif sistem izleme",
         "continuousImprovement": "Sürekli iyileştirme girişimleri"
       }
+    },
+    "esmAIWork": {
+      "title": "ESM AI Work",
+      "description": "Marka iletişiminizi uçtan uca dijitalleştirin. Çok ajanlı yapay zekâ pazarlama otomasyon platformu ile iş akışlarını hızlandırın ve içerik üretimini otomatikleştirin.",
+      "features": {
+        "contentAutomation": "Otomatik içerik planlama ve oluşturma",
+        "aiAgents": "Çok ajanlı yapay zekâ orkestrasyonu",
+        "brandConsistency": "Marka sesi ve strateji öğrenme",
+        "analytics": "Gerçek zamanlı analitik ve içgörüler"
+      }
+    },
+    "esmAIR": {
+      "title": "ESM AIR",
+      "description": "Doğal dil etkileşimi ve gerçek zamanlı içgörülerle veriye dayalı karar alma süreçlerini hızlandıran yapay zekâ destekli karar destek asistanı.",
+      "features": {
+        "naturalLanguage": "Doğal dil işleme",
+        "predictiveAnalytics": "Tahmine dayalı analitik yetenekleri",
+        "dataIntegration": "Sorunsuz ERP ve CRM entegrasyonu",
+        "realTimeInsights": "Gerçek zamanlı eyleme dönüştürülebilir içgörüler"
+      }
+    },
+    "esmBudget": {
+      "title": "ESM Budget",
+      "description": "Kurumsal Bütçeleme, Tahminleme ve Finansal Konsolidasyon Çözümleri. Bütçeleme, tahminleme ve analitiği birleştiren entegre CPM sistemi.",
+      "features": {
+        "budgeting": "Dinamik bütçeleme ve planlama",
+        "forecasting": "Yapay zekâ destekli tahminleme",
+        "consolidation": "Finansal konsolidasyon",
+        "analytics": "Gelişmiş analitik ve raporlama"
+      }
+    },
+    "esmCDP": {
+      "title": "ESM CDP",
+      "description": "Akıllı segmentasyon ve gerçek zamanlı pazarlama yetenekleriyle birleşik müşteri veri platformu. Farklı sistemlerden dağınık verileri birleştirir.",
+      "features": {
+        "dataUnification": "Müşteri verisi birleştirme",
+        "smartSegmentation": "Akıllı hedef kitle segmentasyonu",
+        "realTimeMarketing": "Gerçek zamanlı pazarlama aktivasyonu",
+        "compliance": "GDPR ve veri gizliliği uyumluluğu"
+      }
+    },
+    "esmClick": {
+      "title": "ESM Click",
+      "description": "Kurumsal Performans Yönetimi, İş Analitiği ve Raporlama Platformu. Finansal, operasyonel ve yönetsel verileri tek arayüzde analiz edin.",
+      "features": {
+        "financialAnalysis": "Bütçe ve finansal analiz",
+        "dashboards": "Etkileşimli paneller",
+        "consolidatedReporting": "Konsolide raporlama",
+        "mobileAccess": "Mobil erişim ve gerçek zamanlı güncellemeler"
+      }
+    },
+    "esmCRMSuite": {
+      "title": "ESM CRM Suite",
+      "description": "Müşteri Deneyimi, Satış ve Pazarlama Süreçlerinde Akıllı Dönüşüm. Satış, pazarlama ve hizmeti entegre eden yeni nesil CRM platformu.",
+      "features": {
+        "salesManagement": "Satış fırsatı takibi",
+        "marketingAutomation": "Pazarlama kampanyası otomasyonu",
+        "customerService": "Müşteri hizmetleri yönetimi",
+        "analytics": "Analitik ve içgörüler"
+      }
+    },
+    "esmDetailerCRM": {
+      "title": "ESM Detailer CRM",
+      "description": "Saha Satış Yönetimi, Müşteri Takibi ve Dijital Etkileşim Çözümleri. Günlük ziyaretleri, siparişleri ve performans süreçlerini yönetin.",
+      "features": {
+        "visitManagement": "Ziyaret ve rota yönetimi",
+        "orderTracking": "Sipariş ve envanter takibi",
+        "performanceAnalytics": "Performans analitiği",
+        "mobileIntegration": "Mobil entegrasyon"
+      }
+    },
+    "esmGDSN": {
+      "title": "ESM GDSN Data Sync",
+      "description": "Küresel Veri Senkronizasyonu ve Ürün Bilgisi Yönetimi Çözümleri. GS1 GDSN uyumlu veri senkronizasyon platformu.",
+      "features": {
+        "dataSync": "Otomatik veri senkronizasyonu",
+        "gs1Compliance": "GS1 standart uyumluluğu",
+        "secureSharing": "Güvenli ve izlenebilir veri paylaşımı",
+        "integration": "ERP ve envanter entegrasyonu"
+      }
+    },
+    "esmInventory": {
+      "title": "ESM Inventory Management",
+      "description": "Akıllı Envanter Yönetimi, Talep Tahmini ve Tedarik Zinciri Optimizasyonu. Yapay zekâ destekli talep tahmini ve otomatik optimizasyon.",
+      "features": {
+        "realTimeTracking": "Gerçek zamanlı envanter takibi",
+        "demandForecasting": "Yapay zekâ destekli talep tahmini",
+        "automation": "Otomatik tedarik zinciri planlaması",
+        "reporting": "Raporlama ve analitik"
+      }
+    },
+    "esmLoyalty": {
+      "title": "ESM Loyalty & Engagement Suite",
+      "description": "Sadakat Yönetimi, Kampanya Otomasyonu ve Kişiselleştirilmiş Deneyim. Sadakat programlarını dijitalleştirin ve kampanya yönetimini otomatikleştirin.",
+      "features": {
+        "loyaltyPrograms": "Sadakat programı yönetimi",
+        "campaignAutomation": "Kampanya otomasyonu",
+        "personalization": "Kişiselleştirilmiş deneyimler",
+        "omnichannel": "Çok kanallı entegrasyon"
+      }
+    },
+    "esmQuickPick": {
+      "title": "ESM QuickPick",
+      "description": "Akıllı Depo Yönetimi ve Dijital Sipariş Toplama Çözümleri. Sipariş toplamayı dijitalleştirin, hataları minimize edin ve iş gücü verimliliğini artırın.",
+      "features": {
+        "intelligentRouting": "Akıllı sipariş yönlendirme",
+        "realTimeTracking": "Gerçek zamanlı depo takibi",
+        "integration": "ERP ve WMS entegrasyonu",
+        "performanceAnalytics": "Performans analitiği"
+      }
+    },
+    "esmReplenishment": {
+      "title": "ESM Replenishment",
+      "description": "Otomatik Stok Yenileme ve Talep Odaklı Tedarik Yönetimi. Optimum stok seviyeleri için yapay zekâ destekli tahminleme.",
+      "features": {
+        "automatedReplenishment": "Otomatik stok yenileme",
+        "demandAnalysis": "Talep analizi ve tahminleme",
+        "dataSync": "Entegrasyon ve veri senkronizasyonu",
+        "performanceMonitoring": "Performans izleme"
+      }
+    },
+    "esmSmartFind": {
+      "title": "ESM SmartFind",
+      "description": "Yapay Zekâ Destekli Site İçi Arama Motoru ve Dönüşüm Optimizasyonu. Yapay zekâ algoritmaları ve hata toleransı ile arama deneyimini geliştirin.",
+      "features": {
+        "typoTolerance": "Yazım hatası toleransı ve düzeltme",
+        "morphologicalAnalysis": "Morfolojik analiz",
+        "smartSorting": "Akıllı ürün sıralama",
+        "attributeSearch": "Özellik bazlı arama"
+      }
+    },
+    "esmSyncFlow": {
+      "title": "ESM SyncFlow",
+      "description": "Yapay Zekâ Destekli Sipariş ve Envanter Yönetimi Çözümleri. Sipariş sürecini sadeleştirin, envanteri optimize edin ve israfı azaltın.",
+      "features": {
+        "unifiedOrders": "Birleşik sipariş yönetimi",
+        "salesTracking": "Gerçek zamanlı satış takibi",
+        "aiForecasting": "Yapay zekâ tabanlı tahminleme",
+        "dashboards": "Yönetim panelleri"
+      }
+    },
+    "esmWorkforce": {
+      "title": "ESM Workforce Management",
+      "description": "Akıllı Vardiya Planlama, Optimizasyon ve Çalışan Yönetimi Çözümleri. Yapay zekâ destekli tahminleme ve vardiya planlama.",
+      "features": {
+        "demandForecasting": "Talep tahmini ve planlama",
+        "shiftManagement": "Vardiya ve takvim yönetimi",
+        "workforceTracking": "Gerçek zamanlı iş gücü yönetimi",
+        "optimization": "Raporlama ve optimizasyon"
+      }
     }
   },
   "additionalServices": {

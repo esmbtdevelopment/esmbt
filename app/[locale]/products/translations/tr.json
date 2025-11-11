@@ -85,6 +85,66 @@
         "customerExperience": "Geliştirilmiş müşteri deneyimi",
         "costEfficiency": "Kağıt israfı ve maliyetlerde azalma"
       }
+    },
+    "edeclaration": {
+      "title": "E-Beyanname",
+      "description": "Vergi beyannamelerinizi dijitalleştirerek süreci hızlandırın, hata riskini ortadan kaldırın ve tam yasal uyum sağlayın.",
+      "features": {
+        "electronicSubmission": "Elektronik vergi beyannamesi gönderimi",
+        "automatedValidation": "Otomatik doğrulama ve hata önleme",
+        "fullCompliance": "GİB standartlarına tam uyumluluk",
+        "seamlessIntegration": "Sorunsuz ERP ve muhasebe entegrasyonu"
+      }
+    },
+    "eexpensenote": {
+      "title": "E-Gider Pusulası",
+      "description": "Vergiye tabi olmayan kişi veya kuruluşlardan yapılan mal ve hizmet alımlarında gider pusulası düzenleme sürecinizi dijitalleştirin.",
+      "features": {
+        "electronicCreation": "Elektronik gider belgesi oluşturma",
+        "legalValidity": "Tam yasal geçerlilik ve uyumluluk",
+        "automatedIntegration": "Otomatik ERP entegrasyonu",
+        "secureArchiving": "Güvenli dijital arşivleme ve erişim"
+      }
+    },
+    "eproducerreceipt": {
+      "title": "E-Muhtahsil Makbuzu",
+      "description": "Tarım ve alım-satım işlemlerinizde belge düzenini dijitalleştirerek hız, güven ve mevzuat uyumu kazanın.",
+      "features": {
+        "electronicReceipts": "Elektronik makbuz oluşturma ve gönderim",
+        "agriculturalCompliance": "Tarımsal işlemler için tam uyumluluk",
+        "automatedWorkflows": "Otomatik tahsilat iş akışları",
+        "secureStorage": "Güvenli kayıt saklama ve izlenebilirlik"
+      }
+    },
+    "ereconciliation": {
+      "title": "E-Mutabakat",
+      "description": "Finansal mutabakat süreçlerinizi dijitalleştirerek hız, doğruluk ve kontrol kazanın.",
+      "features": {
+        "automatedReconciliation": "Otomatik hesap mutabakatı",
+        "realTimeNotifications": "Gerçek zamanlı bildirimler ve onaylar",
+        "fullTraceability": "Tam denetim izi ve izlenebilirlik",
+        "seamlessIntegration": "Sorunsuz ERP ve finans entegrasyonu"
+      }
+    },
+    "einventoryreturn": {
+      "title": "E-Envanter & E-İade",
+      "description": "Envanter ve iade süreçlerinizi dijitalleştirerek kontrol, hız ve doğruluk kazanın.",
+      "features": {
+        "digitalInventory": "Dijital envanter yönetimi",
+        "automatedReturns": "Otomatik iade iş akışları",
+        "realTimeTracking": "Gerçek zamanlı takip ve raporlama",
+        "fullCompliance": "Vergi düzenlemelerine tam uyumluluk"
+      }
+    },
+    "esignature": {
+      "title": "E-İmza & Mobil İmza",
+      "description": "Belgelerinizi, sözleşmelerinizi ve resmi işlemlerinizi dijital ortamda güvenle imzalayın.",
+      "features": {
+        "electronicSigning": "Yasal geçerliliğe sahip elektronik imzalama",
+        "mobileSignature": "Mobil imza entegrasyonu",
+        "secureVerification": "Güvenli kimlik doğrulama",
+        "compliance": "Dijital imza düzenlemelerine tam uyumluluk"
+      }
     }
   },
   "additionalProducts": {

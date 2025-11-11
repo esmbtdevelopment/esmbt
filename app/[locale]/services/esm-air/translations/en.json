@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "ESM AIR",
+    "subtitle": "AI-Powered Decision Intelligence and Analytics Assistant",
+    "description": "ESM AIR is a next-generation artificial intelligence assistant that accelerates data-driven decision making through natural language interaction and real-time insights. Powered by Generative AI, it transforms complex analytics into clear, actionable intelligence — enabling teams to make faster, smarter decisions without navigating complex dashboards.",
+    "image": "/images/services/hero/digital-transformation.jpg",
+    "imageAlt": "ESM AIR"
+  },
+  "overview": {
+    "title": "Why ESM AIR?",
+    "description": "ESM AIR bridges the gap between data and action. It allows users to ask business questions in natural language and instantly receive predictive, context-aware answers. Through AI-driven analytics, it delivers insights on sales performance, campaign optimization, stock management and operational efficiency."
+  },
+  "benefits": [
+    "Provides instant, actionable insights through natural language interaction",
+    "Optimizes sales, inventory and campaign performance with predictive analytics",
+    "Empowers non-technical users with intuitive, easy-to-understand intelligence",
+    "Incorporates enterprise data, business rules and industry standards",
+    "Seamlessly integrates with ERP, CRM and business intelligence platforms"
+  ],
+  "features": [
+    {
+      "title": "Natural Language Processing (NLP)",
+      "description": "Ask questions like \"What caused today's sales decline?\" AIR responds instantly with accurate, data-backed insights."
+    },
+    {
+      "title": "Trusted Data Foundation",
+      "description": "Built on company-specific rules and secure data models. Ensures reliable and consistent recommendations."
+    },
+    {
+      "title": "Predictive Analytics",
+      "description": "Anticipates trends and market changes. Enables proactive optimization for inventory and campaigns."
+    },
+    {
+      "title": "Seamless Integration",
+      "description": "Connects effortlessly with CRM, ERP, CDP and analytics systems. Delivers unified, real-time insights across all business units."
+    }
+  ],
+  "implementation": {
+    "title": "Implementation Process",
+    "description": "Our proven methodology ensures smooth deployment and maximum ROI",
+    "steps": [
+      "Initial consultation and requirement analysis",
+      "Data integration and system setup",
+      "AI model configuration and training",
+      "User training and knowledge transfer",
+      "Go-live support and monitoring",
+      "Ongoing optimization and updates"
+    ]
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "list": [
+      "All Industries",
+      "Retail",
+      "Manufacturing",
+      "Finance",
+      "Technology",
+      "Services"
+    ]
+  },
+  "roi": {
+    "title": "Return on Investment",
+    "description": "Accelerate decision-making by up to 90%"
+  },
+  "cta": {
+    "title": "Ready to Transform Your Decision-Making with AI?",
+    "description": "Let's discuss how ESM AIR can help your organization make faster, data-driven decisions.",
+    "primaryButton": "Contact Us",
+    "secondaryButton": "View All Services"
+  }
+}
+

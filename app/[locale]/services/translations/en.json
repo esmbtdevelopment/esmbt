@@ -75,6 +75,156 @@
         "systemMonitoring": "Proactive system monitoring",
         "continuousImprovement": "Continuous improvement initiatives"
       }
+    },
+    "esmAIWork": {
+      "title": "ESM AI Work",
+      "description": "Transform your brand communication with an intelligent AI-powered ecosystem. Multi-agent marketing automation platform designed to accelerate workflows and automate content creation.",
+      "features": {
+        "contentAutomation": "Automated content planning and creation",
+        "aiAgents": "Multi-agent AI orchestration",
+        "brandConsistency": "Brand voice and strategy learning",
+        "analytics": "Real-time analytics and insights"
+      }
+    },
+    "esmAIR": {
+      "title": "ESM AIR",
+      "description": "AI-powered decision intelligence assistant that accelerates data-driven decision making through natural language interaction and real-time insights.",
+      "features": {
+        "naturalLanguage": "Natural language processing",
+        "predictiveAnalytics": "Predictive analytics capabilities",
+        "dataIntegration": "Seamless ERP and CRM integration",
+        "realTimeInsights": "Real-time actionable insights"
+      }
+    },
+    "esmBudget": {
+      "title": "ESM Budget",
+      "description": "Corporate Budgeting, Forecasting and Financial Consolidation Solutions. Integrated CPM system that unifies budgeting, forecasting and analytics.",
+      "features": {
+        "budgeting": "Dynamic budgeting and planning",
+        "forecasting": "AI-driven forecasting",
+        "consolidation": "Financial consolidation",
+        "analytics": "Advanced analytics and reporting"
+      }
+    },
+    "esmCDP": {
+      "title": "ESM CDP",
+      "description": "Unified Customer Data Platform with smart segmentation and real-time marketing capabilities. Consolidates fragmented data from multiple systems.",
+      "features": {
+        "dataUnification": "Customer data unification",
+        "smartSegmentation": "Intelligent audience segmentation",
+        "realTimeMarketing": "Real-time marketing activation",
+        "compliance": "GDPR and data privacy compliance"
+      }
+    },
+    "esmClick": {
+      "title": "ESM Click",
+      "description": "Corporate Performance Management, Business Intelligence and Reporting Platform. Analyze financial, operational and managerial data on a single interface.",
+      "features": {
+        "financialAnalysis": "Budget and financial analysis",
+        "dashboards": "Interactive dashboards",
+        "consolidatedReporting": "Consolidated reporting",
+        "mobileAccess": "Mobile access and real-time updates"
+      }
+    },
+    "esmCRMSuite": {
+      "title": "ESM CRM Suite",
+      "description": "Smart Transformation in Customer Experience, Sales and Marketing. Next-generation CRM platform integrating sales, marketing and service.",
+      "features": {
+        "salesManagement": "Sales opportunity tracking",
+        "marketingAutomation": "Marketing campaign automation",
+        "customerService": "Customer service management",
+        "analytics": "Analytics and insights"
+      }
+    },
+    "esmDetailerCRM": {
+      "title": "ESM Detailer CRM",
+      "description": "Field Sales Management, Customer Tracking and Digital Engagement Solutions. Manage daily visits, orders and performance processes.",
+      "features": {
+        "visitManagement": "Visit and route management",
+        "orderTracking": "Order and inventory tracking",
+        "performanceAnalytics": "Performance analytics",
+        "mobileIntegration": "Mobile integration"
+      }
+    },
+    "esmGDSN": {
+      "title": "ESM GDSN Data Sync",
+      "description": "Global Data Synchronization and Product Information Management Solutions. GS1 GDSN compliant data synchronization platform.",
+      "features": {
+        "dataSync": "Automated data synchronization",
+        "gs1Compliance": "GS1 standard compliance",
+        "secureSharing": "Secure and traceable data sharing",
+        "integration": "ERP and inventory integration"
+      }
+    },
+    "esmInventory": {
+      "title": "ESM Inventory Management",
+      "description": "Smart Inventory Control, Demand Forecasting and Supply Chain Optimization. AI-powered demand forecasting and automated optimization.",
+      "features": {
+        "realTimeTracking": "Real-time inventory tracking",
+        "demandForecasting": "AI-powered demand forecasting",
+        "automation": "Automated supply chain planning",
+        "reporting": "Reporting and analytics"
+      }
+    },
+    "esmLoyalty": {
+      "title": "ESM Loyalty & Engagement Suite",
+      "description": "Loyalty Management, Campaign Automation and Personalized Experience. Digitalize loyalty programs and automate campaign management.",
+      "features": {
+        "loyaltyPrograms": "Loyalty program management",
+        "campaignAutomation": "Campaign automation",
+        "personalization": "Personalized experiences",
+        "omnichannel": "Omnichannel integration"
+      }
+    },
+    "esmQuickPick": {
+      "title": "ESM QuickPick",
+      "description": "Smart Warehouse and Digital Order Picking Solutions. Digitalize order picking, minimize errors and enhance workforce productivity.",
+      "features": {
+        "intelligentRouting": "Intelligent order routing",
+        "realTimeTracking": "Real-time warehouse tracking",
+        "integration": "ERP and WMS integration",
+        "performanceAnalytics": "Performance analytics"
+      }
+    },
+    "esmReplenishment": {
+      "title": "ESM Replenishment",
+      "description": "Automated Stock Replenishment and Demand-Driven Supply Management. AI-driven forecasting for optimal stock levels.",
+      "features": {
+        "automatedReplenishment": "Automated stock replenishment",
+        "demandAnalysis": "Demand analysis and forecasting",
+        "dataSync": "Integration and data synchronization",
+        "performanceMonitoring": "Performance monitoring"
+      }
+    },
+    "esmSmartFind": {
+      "title": "ESM SmartFind",
+      "description": "AI-Powered On-Site Search Engine and Conversion Optimization. Enhance search experience with AI algorithms and typo tolerance.",
+      "features": {
+        "typoTolerance": "Typo tolerance and correction",
+        "morphologicalAnalysis": "Morphological analysis",
+        "smartSorting": "Smart product sorting",
+        "attributeSearch": "Attribute-based search"
+      }
+    },
+    "esmSyncFlow": {
+      "title": "ESM SyncFlow",
+      "description": "AI-Powered Order and Inventory Management Solutions. Simplify ordering process, optimize inventory and reduce waste.",
+      "features": {
+        "unifiedOrders": "Unified order management",
+        "salesTracking": "Real-time sales tracking",
+        "aiForecasting": "AI-based forecasting",
+        "dashboards": "Executive dashboards"
+      }
+    },
+    "esmWorkforce": {
+      "title": "ESM Workforce Management",
+      "description": "Intelligent Scheduling, Optimization and Employee Management Solutions. AI-powered forecasting and shift planning.",
+      "features": {
+        "demandForecasting": "Demand forecasting and planning",
+        "shiftManagement": "Shift and calendar management",
+        "workforceTracking": "Real-time workforce management",
+        "optimization": "Reporting and optimization"
+      }
     }
   },
   "additionalServices": {

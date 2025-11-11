@@ -1,39 +1,38 @@
 {
   "hero": {
     "title": "E-Arşiv Fatura",
-    "subtitle": "Güvenli Fatura Depolama Çözümleri",
-    "description": "Tam yasal uyumluluk ve kolay erişim özellikleriyle dijital faturalarınız için güvenli, uzun vadeli depolama çözümleri.",
+    "subtitle": "Dijital Arşivleme ve Belge Yönetimi Çözümleri",
+    "description": "Faturalama süreçlerinizi dijitalleştirirken arşivleme yükünü ortadan kaldırın. ESM E-Arşiv Fatura, tüm faturaların güvenli şekilde oluşturulmasını, iletilmesini ve elektronik ortamda uzun süreli saklanmasını sağlar. Gelir İdaresi Başkanlığı (GİB) standartlarına tam uyumlu altyapısı ile manuel arşivlemeyi ortadan kaldırarak işletmelere zaman, maliyet ve operasyonel esneklik kazandırır.",
     "image": "/images/services/hero/archive.jpg",
     "imageAlt": "E-Arşiv Fatura"
   },
   "overview": {
-    "title": "Neden E-Arşiv Fatura Seçmelisiniz?",
-    "description": "E-Arşiv Fatura, faturalarınızın güvenli bir şekilde saklanmasını, yasal olarak uyumlu olmasını ve her zaman erişilebilir olmasını sağlayan kapsamlı bir dijital arşivleme çözümü sunar. Sağlam arşivleme sistemimiz, tam denetim izlerini ve düzenleyici uyumluluğu korurken fiziksel belge depolama ihtiyacını ortadan kaldırır."
+    "title": "Neden E-Arşiv Fatura'yı Tercih Etmelisiniz?",
+    "description": "E-Arşiv Fatura, dijitalleşme yolculuğunun en önemli adımlarından biridir. Kağıt, baskı ve fiziksel depolama maliyetlerini ortadan kaldırır; veriye anında erişim, yasal uyum ve denetlenebilirlik avantajı sunar. ESM E-Arşiv Fatura, yüksek güvenlik standartlarıyla tasarlanmış yapısı sayesinde faturaların her an erişilebilir, bütünlüğü korunmuş ve doğrulanabilir şekilde saklanmasını sağlar."
   },
   "benefits": [
-    "Güvenli uzun vadeli belge depolama",
-    "Saklama gereksinimleriyle tam yasal uyumluluk",
-    "Anında belge erişimi ve arama",
-    "Otomatik yedekleme ve felaket kurtarma",
-    "Fiziksel depolama maliyetlerinde azalma",
-    "Tam denetim izi bakımı"
+    "Kağıt, baskı ve arşivleme maliyetlerini ortadan kaldırır",
+    "GİB düzenlemelerine tam uyumluluk sunar",
+    "Faturaların elektronik ortamda hızlı ve güvenli şekilde gönderilmesini sağlar",
+    "Gerçek zamanlı erişim ile denetim süreçlerini kolaylaştırır",
+    "Bulut tabanlı yapı sayesinde güvenli ve esnek depolama alanı sunar"
   ],
   "features": [
     {
-      "title": "Güvenli Depolama",
-      "description": "Kurumsal düzeyde şifreleme, arşivlenmiş faturalarınızın güvenli kalmasını ve yetkisiz erişimden korunmasını sağlar."
+      "title": "Otomatik Fatura Oluşturma ve Gönderim",
+      "description": "Tüm satış faturaları elektronik ortamda oluşturulur, otomatik olarak müşterilere iletilir. Zaman kaybı olmadan faturalama süreçleri tamamlanır."
     },
     {
-      "title": "Kolay Erişim",
-      "description": "Gelişmiş arama yetenekleri, birden fazla arama kriteri kullanarak herhangi bir arşivlenmiş faturaya anında erişim sağlar."
+      "title": "Güvenli Dijital Arşivleme",
+      "description": "Faturalar yasal saklama süresi boyunca elektronik ortamda korunur. Veri kaybı ve erişim riski ortadan kalkar."
     },
     {
-      "title": "Yasal Uyumluluk",
-      "description": "Otomatik uyumluluk yönetimi, tüm arşivlenmiş belgelerin yasal saklama gereksinimlerini karşılamasını sağlar."
+      "title": "Uyumluluk ve Denetlenebilirlik",
+      "description": "Gelir İdaresi Başkanlığı gereklilikleriyle tam uyumludur. Tüm belgeler kolayca izlenebilir ve denetim raporları oluşturulabilir."
     },
     {
-      "title": "Denetime Hazır",
-      "description": "Tam denetim izleri ve değiştirilemez depolama, arşivinizin düzenleyici denetimler için her zaman hazır olmasını sağlar."
+      "title": "Bulut Tabanlı Erişim",
+      "description": "Yetkilendirilmiş kullanıcılar istedikleri zaman, istedikleri yerden güvenli erişim sağlar. %99,9 erişilebilirlik garantisiyle yüksek performans sunar."
     }
   ],
   "implementation": {

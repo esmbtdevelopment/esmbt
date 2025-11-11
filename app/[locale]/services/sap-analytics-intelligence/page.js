@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { useLocale } from 'next-intl';
+import { HeroImage } from '../components/HeroImage';
 import { useLocalTranslations } from "@/lib/hooks/useLocalTranslations";
 import { goToContact } from "@/utils/navigation";
 import {
@@ -76,7 +76,7 @@ export default function SAPAnalyticsIntelligencePage() {
 
                             {/* Right: Image */}
                             <div className="drop-shadow-2xl">
-                                <Image
+                                <HeroImage
                                     src={t('hero.image')}
                                     alt={t('hero.imageAlt')}
                                     width={1000}

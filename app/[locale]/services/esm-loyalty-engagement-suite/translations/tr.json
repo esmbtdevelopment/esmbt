@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "title": "ESM Loyalty & Engagement Suite",
+    "subtitle": "Sadakat Yönetimi, Kampanya Otomasyonu ve Kişiselleştirilmiş Deneyim",
+    "description": "Müşterilerinizle daha güçlü bağlar kurun, sadakati artırın ve her etkileşimi kişiselleştirilmiş bir deneyime dönüştürün.ESM Loyalty & Engagement Suite, markaların müşteri sadakat programlarını dijitalleştiren, kampanya yönetimini otomatikleştiren ve çok kanallı etkileşimleri tek platformda yöneten yenilikçi bir çözümdür.Müşteri verilerini analiz ederek doğru zamanda doğru teklifi sunar, sadakati ölçülebilir değere dönüştürür.",
+    "image": "/images/services/hero/loyalty.jpg",
+    "imageAlt": "ESM Loyalty & Engagement Suite"
+  },
+  "overview": {
+    "title": "Neden ESM Loyalty & Engagement Suite?",
+    "description": "ESM Loyalty & Engagement Suite, müşteri davranışlarını derinlemesine analiz eder ve markaların her temas noktasında tutarlı, anlamlı deneyimler sunmasını sağlar.Otomatik kampanya akışları, kişiselleştirilmiş ödül sistemleri ve segment bazlı promosyon yönetimi ile müşteri bağlılığını sürdürülebilir hale getirir.CRM ve CDP sistemleriyle tam entegre yapısı sayesinde markalar, müşteri etkileşimlerini stratejik bir avantaja dönüştürür."
+  },
+  "benefits": [
+    "Sadakat ve kampanya süreçlerini uçtan uca dijitalleştirir.",
+    "Müşteri segmentlerine göre kişiselleştirilmiş ödül ve teklif yönetimi sağlar.",
+    "Gerçek zamanlı kampanya takibiyle dönüşüm oranlarını artırır.",
+    "CRM, CDP ve satış kanallarıyla tam entegredir.",
+    "Müşteri sadakatini artırırken operasyonel maliyetleri düşürür."
+  ],
+  "features": [
+    {
+      "title": "Sadakat Programı Yönetimi",
+      "description": "Puan, hediye ve üyelik bazlı sadakat programlarını yönetir.Müşteri değerine göre özel statü ve ödüllendirme sistemleri sunar."
+    },
+    {
+      "title": "Kampanya Otomasyonu",
+      "description": "Promosyon ve indirim kampanyalarını otomatik olarak oluşturur, planlar ve yürütür.Gerçek zamanlı performans ölçümü sağlar."
+    },
+    {
+      "title": "Kişiselleştirilmiş Deneyim",
+      "description": "Davranışsal ve demografik veriye göre dinamik teklifler oluşturur.Her müşteriye özgü deneyimler sunarak memnuniyet ve bağlılığı artırır."
+    },
+    {
+      "title": "Çok Kanallı Entegrasyon",
+      "description": "Mobil uygulamalar, e-ticaret platformları, mağaza POS sistemleri ve CRM altyapılarıyla entegre çalışır.Tüm müşteri temas noktalarında tekil bir deneyim sağlar."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "İlk danışmanlık ve gereksinim analizi",
+      "Sistem entegrasyon planlaması ve kurulumu",
+      "Veri taşıma ve test aşaması",
+      "Personel eğitimi ve bilgi transferi",
+      "Canlıya geçiş desteği ve izleme",
+      "Sürekli bakım ve güncellemeler"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Tüm Sektörler",
+      "Teknoloji",
+      "Finans",
+      "Perakende",
+      "Üretim",
+      "Sağlık"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Çözümlerimizle önemli yatırım getirisi elde edin"
+  },
+  "cta": {
+    "title": "İşletmenizi Dönüştürmeye Hazır mısınız?",
+    "description": "Çözümümüzün organizasyonunuzu nasıl destekleyebileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Hizmetleri Görüntüle"
+  }
+}

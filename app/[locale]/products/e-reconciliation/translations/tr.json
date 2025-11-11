@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "E-Mutabakat",
+    "subtitle": "Dijital Mutabakat ve Finansal Uyum Çözümleri",
+    "description": "Finansal mutabakat süreçlerinizi dijitalleştirerek hız, doğruluk ve kontrol kazanın. ESM E-Mutabakat, cari hesap, bakiye ve ekstre mutabakatlarını elektronik ortamda otomatik olarak gerçekleştirir. Kağıt ve manuel işlem yükünü ortadan kaldırır, işletmelere tam şeffaflık ve denetlenebilirlik sağlar.",
+    "image": "/images/services/hero/invoice.jpg",
+    "imageAlt": "E-Mutabakat"
+  },
+  "overview": {
+    "title": "Neden E-Mutabakat'ı Tercih Etmelisiniz?",
+    "description": "E-Mutabakat, finansal ilişkilerde güvenilirliği ve doğruluğu artıran en etkin dijital çözümlerden biridir. ESM E-Mutabakat, işletmelerin tüm cari hesap mutabakatlarını tek bir platform üzerinden yönetmesini sağlar. Gerçek zamanlı bildirim sistemi, karşılıklı onay mekanizması ve yasal raporlama altyapısı ile hata riskini ortadan kaldırır."
+  },
+  "benefits": [
+    "Cari mutabakat süreçlerini otomatikleştirir ve hızlandırır",
+    "Kağıt, posta ve manuel takip maliyetlerini ortadan kaldırır",
+    "Hatalı kayıt ve yanlış mutabakat riskini minimuma indirir",
+    "Gerçek zamanlı onay ve bildirim sistemi sunar",
+    "ERP ve muhasebe sistemleriyle entegre çalışır"
+  ],
+  "features": [
+    {
+      "title": "Otomatik Mutabakat Süreci",
+      "description": "Cari hesaplar sistem üzerinden otomatik olarak eşleştirilir. Mutabakat talepleri anında gönderilir, yanıtlar gerçek zamanlı alınır."
+    },
+    {
+      "title": "Yasal Uyum ve Güvenilirlik",
+      "description": "Mevzuata uygun dijital onay yapısı sunar. Tüm kayıtlar elektronik ortamda saklanır ve denetime hazır hale gelir."
+    },
+    {
+      "title": "Entegrasyon ve Raporlama",
+      "description": "ERP ve finans sistemleriyle doğrudan entegredir. Mutabakat durumları detaylı raporlarla izlenebilir."
+    },
+    {
+      "title": "Kolay Erişim ve İzlenebilirlik",
+      "description": "Kullanıcılar yetkileri dâhilinde geçmiş tüm mutabakatlara erişebilir. Veri bütünlüğü korunur, işlemler izlenebilir şekilde kayıt altına alınır."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "İlk danışmanlık ve gereksinim analizi",
+      "Sistem entegrasyon planlaması ve kurulumu",
+      "Veri taşıma ve test aşaması",
+      "Personel eğitimi ve bilgi transferi",
+      "Canlıya geçiş desteği ve izleme",
+      "Sürekli bakım ve güncellemeler"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Tüm Sektörler",
+      "Finans",
+      "Üretim",
+      "Perakende",
+      "Hizmetler",
+      "Ticaret"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Mutabakat işleme süresini %80'e kadar azaltın"
+  },
+  "cta": {
+    "title": "Mutabakat Süreçlerinizi Dönüştürmeye Hazır mısınız?",
+    "description": "E-Mutabakat çözümümüzün organizasyonunuzun finansal mutabakat süreçlerini nasıl kolaylaştırabileceğini ve doğruluğu nasıl sağlayabileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Ürünleri Görüntüle"
+  }
+}
+

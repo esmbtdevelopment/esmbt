@@ -1,39 +1,38 @@
 {
   "hero": {
     "title": "E-Ledger",
-    "subtitle": "Digital Financial Ledger",
-    "description": "Transform financial record-keeping with digital ledger solutions ensuring legal compliance and financial transparency.",
+    "subtitle": "Digital Ledger and Financial Compliance Solutions",
+    "description": "Take your financial records into the digital era and manage all accounting processes in full legal compliance. ESM E-Ledger enables the creation, storage and submission of statutory ledgers (journal and general ledger) in electronic format according to the Turkish Revenue Administration (TRA) standards. It eliminates the burden of paper-based bookkeeping while ensuring complete data integrity, accuracy and audit readiness.",
     "image": "/images/services/hero/ledger.jpg",
     "imageAlt": "E-Ledger"
   },
   "overview": {
     "title": "Why Choose E-Ledger?",
-    "description": "E-Ledger provides a comprehensive digital bookkeeping solution that maintains accurate, auditable financial records with automated processes. Our system ensures regulatory compliance while providing real-time financial insights and reducing the complexity of financial management."
+    "description": "E-Ledger is a cornerstone of financial transparency and corporate sustainability in the digital transformation journey. It replaces manual bookkeeping, minimizes errors and guarantees full legal compliance. ESM E-Ledger provides a secure, standardized and audit-ready structure for businesses of all sizes, ensuring their financial data remains accurate and accessible."
   },
   "benefits": [
-    "Automated digital bookkeeping",
-    "Full regulatory compliance",
-    "Real-time financial reporting",
-    "Complete audit trail",
-    "Reduced accounting errors",
-    "Integration with accounting systems"
+    "Eliminates paper, printing and storage expenses",
+    "Ensures accurate, complete and timely creation of legal ledgers",
+    "Fully compliant with TRA regulations and standards",
+    "Simplifies and accelerates audit and review processes",
+    "Keeps financial data secure and easily accessible"
   ],
   "features": [
     {
-      "title": "Digital Bookkeeping",
-      "description": "Automated transaction recording with intelligent categorization and reconciliation capabilities."
+      "title": "Electronic Ledger Creation",
+      "description": "Automatically generates journal and general ledger records in digital format. Preserves data integrity and reduces manual workload."
     },
     {
-      "title": "Regulatory Compliance",
-      "description": "Built-in compliance features ensure all records meet local and international accounting standards."
+      "title": "Compliance and Security",
+      "description": "Fully aligned with national tax authority standards. Digital signatures and financial seals guarantee the authenticity of all records."
     },
     {
-      "title": "Automated Reports",
-      "description": "Generate comprehensive financial reports automatically with customizable templates and scheduling."
+      "title": "Automated Archiving and Access",
+      "description": "Ledgers are securely stored in the cloud for the entire legal retention period. Authorized users can access records instantly when needed."
     },
     {
-      "title": "Audit Trail",
-      "description": "Complete audit trail with timestamp verification and user activity tracking for transparency."
+      "title": "Audit and Reporting Efficiency",
+      "description": "All entries are prepared in standardized formats. Auditing, reporting and control processes become faster and error-free."
     }
   ],
   "implementation": {

@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "title": "ESM CRM Suite",
+    "subtitle": "Müşteri Deneyimi, Satış ve Pazarlama Süreçlerinde Akıllı Dönüşüm",
+    "description": "Müşteri ilişkilerinizi tek platformda yönetin, satış verimliliğinizi artırın ve pazarlama stratejilerinizi veriye dayalı hale getirin.ESM CRM Suite, satış, pazarlama, müşteri hizmetleri ve analitik süreçleri uçtan uca yöneten yeni nesil müşteri ilişkileri yönetimi platformudur.Gerçek zamanlı veri akışı, entegre iş zekâsı ve yapay zekâ destekli öngörüleriyle işletmelerin müşteriyle olan her temas noktasında fark yaratır.",
+    "image": "/images/services/hero/crm-suite.jpg",
+    "imageAlt": "ESM CRM Suite"
+  },
+  "overview": {
+    "title": "Neden ESM CRM Suite?",
+    "description": "ESM CRM Suite, müşteri yolculuğunu tek bir ekosistem üzerinden uçtan uca izlenebilir hale getirir.Satış fırsatlarını otomatik olarak takip eder, kampanyalarınızı ölçülebilir kılar ve müşteri sadakatini artırır.Yapay zekâ tabanlı öneri motoru, müşteri davranışlarını analiz ederek size en uygun aksiyonları sunar."
+  },
+  "benefits": [
+    "Satış, pazarlama ve müşteri hizmetlerini tek platformda birleştirir.",
+    "Gerçek zamanlı analizlerle müşteri davranışlarını anlamayı kolaylaştırır.",
+    "Otomasyon sayesinde satış döngüsünü hızlandırır ve maliyeti düşürür.",
+    "Mobil ve web tabanlı arayüzlerle erişimi her zaman mümkün kılar.",
+    "ERP, e-ticaret ve finans sistemleriyle entegre çalışır."
+  ],
+  "features": [
+    {
+      "title": "Satış Yönetimi (Sales Management)",
+      "description": "Satış fırsatlarını takip eder, teklif süreçlerini yönetir ve dönüşüm oranlarını artırır.Yapay zekâ destekli tahminleme sistemiyle gelir planlamasını optimize eder."
+    },
+    {
+      "title": "Pazarlama Yönetimi (Marketing Automation)",
+      "description": "Kampanyalarınızı hedef kitlenize özel hale getirir.Otomatik e-posta, SMS ve dijital kanal yönetimiyle dönüşüm oranlarını yükseltir."
+    },
+    {
+      "title": "Müşteri Hizmetleri (Customer Service)",
+      "description": "Tüm müşteri taleplerini tek noktadan yönetir.Çağrı merkezi, chatbot ve destek sistemleriyle müşteri memnuniyetini maksimize eder."
+    },
+    {
+      "title": "Analitik & Raporlama (Analytics & Insights)",
+      "description": "Veriye dayalı karar alma kültürünü destekler.Gerçek zamanlı dashboard’larla performans takibini kolaylaştırır."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "İlk danışmanlık ve gereksinim analizi",
+      "Sistem entegrasyon planlaması ve kurulumu",
+      "Veri taşıma ve test aşaması",
+      "Personel eğitimi ve bilgi transferi",
+      "Canlıya geçiş desteği ve izleme",
+      "Sürekli bakım ve güncellemeler"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Tüm Sektörler",
+      "Teknoloji",
+      "Finans",
+      "Perakende",
+      "Üretim",
+      "Sağlık"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Çözümlerimizle önemli yatırım getirisi elde edin"
+  },
+  "cta": {
+    "title": "İşletmenizi Dönüştürmeye Hazır mısınız?",
+    "description": "Çözümümüzün organizasyonunuzu nasıl destekleyebileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Hizmetleri Görüntüle"
+  }
+}

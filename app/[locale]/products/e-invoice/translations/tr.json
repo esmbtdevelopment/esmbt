@@ -1,39 +1,38 @@
 {
   "hero": {
     "title": "E-Fatura",
-    "subtitle": "Dijital Fatura Çözümleri",
-    "description": "Uyumluluğu sağlarken maliyetleri düşüren ve verimliliği artıran güvenli, otomatik dijital çözümlerle faturalama sürecinizi dönüştürün.",
+    "subtitle": "Dijital Faturalandırma Çözümleri",
+    "description": "Faturalama süreçlerinizi dijital çağa taşıyın. ESM E-Fatura, tüm mali işlemleri tek bir güvenli platformda toplayarak zaman, maliyet ve operasyon yükünü en aza indirir. Yasal düzenlemelere tam uyumlu, güvenli ve ölçeklenebilir altyapısı sayesinde finansal yönetimi yeniden tanımlar.",
     "image": "/images/services/hero/invoice.jpg",
     "imageAlt": "E-Fatura"
   },
   "overview": {
-    "title": "Neden E-Fatura Seçmelisiniz?",
-    "description": "E-Fatura sadece bir dijital dönüşüm aracı değil, aynı zamanda işletmenizin geleceğine yapılan bir yatırımdır. Kapsamlı e-faturalama çözümümüz, yerel ve uluslararası düzenlemelere sorunsuz uyumluluk sağlarken işleme süresini ve operasyonel maliyetleri önemli ölçüde azaltır. Kurumsal düzeyde güvenlik ve ölçeklenebilirlik düşünülerek tasarlanmıştır."
+    "title": "Neden E-Fatura'yı Tercih Etmelisiniz?",
+    "description": "E-Fatura, modern işletmeler için yalnızca dijital bir belge yönetim sistemi değil; verimlilik, güvenlik ve sürdürülebilirliğin temel bileşenidir. ESM E-Fatura, ulusal ve uluslararası mevzuatlara tam uyum sağlayarak faturalandırma süreçlerini uçtan uca dijital hale getirir. Kurumlara hız, denetlenebilirlik ve mali uyumluluk açısından en yüksek standardı sunar."
   },
   "benefits": [
-    "Fatura işleme süresini %80'e kadar azaltın",
-    "Vergi düzenlemeleri ile %100 yasal uyumluluk sağlayın",
-    "Otomasyon ile operasyonel maliyetleri düşürün",
-    "Gerçek zamanlı fatura takibi ve durum güncellemeleri",
-    "Mevcut ERP sistemleriyle sorunsuz entegrasyon",
-    "Dijital imzalarla gelişmiş güvenlik"
+    "Fatura oluşturma ve işleme sürelerini %80'e kadar azaltır",
+    "Vergi ve mali düzenlemelere tam uyumluluk sağlar",
+    "Otomasyon ile manuel hataları ortadan kaldırır",
+    "ERP ve finans sistemleriyle kesintisiz entegrasyon sağlar",
+    "Dijital imza altyapısıyla güvenli ve yasal geçerli işlemler sunar"
   ],
   "features": [
     {
-      "title": "Otomatik İşleme",
-      "description": "Akıllı otomasyon, manuel müdahale olmadan fatura oluşturma, doğrulama ve gönderme işlemlerini gerçekleştirir."
+      "title": "Otomatik Süreç Yönetimi",
+      "description": "Fatura oluşturma, onay ve arşivleme işlemlerini tamamen otomatikleştirir. Zaman tasarrufu sağlar, hata riskini ortadan kaldırır."
     },
     {
-      "title": "Yasal Uyumluluk",
-      "description": "Yerleşik uyumluluk kontrolleri, tüm faturaların yerel vergi otoritesi gereksinimlerini ve düzenlemelerini karşılamasını sağlar."
+      "title": "Yasal Uyum ve Güvenlik",
+      "description": "GİB standartlarına tam uyumludur. Tüm işlemler dijital imzalarla korunur, veriler güvenli şekilde saklanır."
     },
     {
       "title": "Gerçek Zamanlı Takip",
-      "description": "Detaylı takip ve teslimat onayları ile fatura durumunu gerçek zamanlı olarak izleyin."
+      "description": "Gelen ve giden faturaların durumu anlık olarak izlenebilir. Raporlama ve kontrol süreçlerini kolaylaştırır."
     },
     {
-      "title": "Bulut Tabanlı Platform",
-      "description": "Güvenli bulut altyapısı, işletmeniz büyüdükçe %99.9 çalışma süresi ve sorunsuz ölçeklenebilirlik sağlar."
+      "title": "Bulut Tabanlı Altyapı",
+      "description": "Güvenli, erişilebilir ve ölçeklenebilir bulut yapısıyla her yerden işlem imkânı sunar."
     }
   ],
   "implementation": {

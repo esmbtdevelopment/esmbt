@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "title": "ESM Replenishment",
+    "subtitle": "Otomatik Stok Yenileme ve Talep Odaklı Tedarik Yönetimi",
+    "description": "Stok yenileme süreçlerinizi dijitalleştirerek doğru zamanda, doğru miktarda ve doğru noktada ürün bulundurmayı garanti altına alın.ESM Replenishment, satış, stok ve talep verilerini analiz ederek optimum stok seviyelerini belirleyen, otomatik sipariş önerileri oluşturan akıllı bir tedarik yönetimi çözümüdür.Veri odaklı karar mekanizması sayesinde stok fazlası ve eksiklik risklerini ortadan kaldırır, operasyonel verimliliği en üst düzeye taşır.",
+    "image": "/images/services/hero/replenishment.jpg",
+    "imageAlt": "ESM Replenishment"
+  },
+  "overview": {
+    "title": "Neden ESM Replenishment?",
+    "description": "ESM Replenishment, perakende ve üretim işletmelerinin tedarik zinciri süreçlerini optimize etmek için geliştirilmiştir.Yapay zekâ destekli algoritmaları sayesinde stok tüketim hızını, satış trendlerini ve sezonluk değişimleri analiz eder.ERP ve depo sistemleriyle entegre yapısı sayesinde manuel müdahaleyi azaltır, karar süreçlerini hızlandırır."
+  },
+  "benefits": [
+    "Stok yenileme süreçlerini tamamen otomatikleştirir.",
+    "Gereksiz stok maliyetlerini azaltır, stokta kalmama riskini önler.",
+    "Satış ve talep verilerine göre akıllı sipariş önerileri oluşturur.",
+    "ERP, WMS ve tedarik sistemleriyle tam entegrasyon sağlar.",
+    "Operasyonel verimliliği artırır, insan hatasını minimize eder."
+  ],
+  "features": [
+    {
+      "title": "Otomatik Stok Yenileme",
+      "description": "Stok seviyesi belirlenen eşiğin altına düştüğünde otomatik sipariş önerisi oluşturur.Doğru miktarda ürün, doğru zamanda tedarik edilir."
+    },
+    {
+      "title": "Talep Analizi ve Tahminleme",
+      "description": "Yapay zekâ destekli modeller satış hızlarını, trendleri ve sezonluk talepleri analiz eder.Talep dalgalanmalarına karşı önceden aksiyon almayı sağlar."
+    },
+    {
+      "title": "Entegrasyon ve Veri Senkronizasyonu",
+      "description": "ERP, stok ve satış sistemleriyle tam entegre çalışır.Veriler otomatik olarak senkronize edilir, manuel işlem yükü azalır."
+    },
+    {
+      "title": "Performans ve Raporlama",
+      "description": "Stok devir oranları, satış başarımı ve tedarikçi performansları anlık olarak raporlanır.Yöneticiler için stratejik karar desteği sunar."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "İlk danışmanlık ve gereksinim analizi",
+      "Sistem entegrasyon planlaması ve kurulumu",
+      "Veri taşıma ve test aşaması",
+      "Personel eğitimi ve bilgi transferi",
+      "Canlıya geçiş desteği ve izleme",
+      "Sürekli bakım ve güncellemeler"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Tüm Sektörler",
+      "Teknoloji",
+      "Finans",
+      "Perakende",
+      "Üretim",
+      "Sağlık"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Çözümlerimizle önemli yatırım getirisi elde edin"
+  },
+  "cta": {
+    "title": "İşletmenizi Dönüştürmeye Hazır mısınız?",
+    "description": "Çözümümüzün organizasyonunuzu nasıl destekleyebileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Hizmetleri Görüntüle"
+  }
+}

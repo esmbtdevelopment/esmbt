@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "title": "ESM GDSN Data Sync",
+    "subtitle": "Global Data Synchronization and Product Information Management Solutions",
+    "description": "Ensure data consistency across your supply chain by aligning your product information with global standards.ESM GDSN Data Sync is a data synchronization and exchange platform fully compliant with the GS1 Global Data Synchronisation Network (GDSN) standards.It enables secure, accurate and up-to-date product data sharing between manufacturers, distributors and retailers worldwide.",
+    "image": "/images/services/hero/gdsn.jpg",
+    "imageAlt": "ESM GDSN Data Sync"
+  },
+  "overview": {
+    "title": "",
+    "description": ""
+  },
+  "benefits": [
+    "Synchronizes product data according to GS1 global standards.",
+    "Improves data accuracy and supply chain visibility.",
+    "Enables secure data exchange between suppliers, distributors and retailers.",
+    "Reduces manual data entry, saving time and cost.",
+    "Fully compatible with national and global GDSN networks."
+  ],
+  "features": [
+    {
+      "title": "Automated Data Synchronization",
+      "description": "Product information is updated in real time through GDSN data pools.All trading partners access the same accurate, synchronized data."
+    },
+    {
+      "title": "GS1 Standard Compliance",
+      "description": "Supports all data formats and validation rules defined by GS1.Enhances data quality and eliminates inconsistent information."
+    },
+    {
+      "title": "Secure and Traceable Data Exchange",
+      "description": "Provides encrypted, auditable data flow between all connected systems.Guarantees full traceability and accountability for every update."
+    },
+    {
+      "title": "Integration and Technical Support",
+      "description": "Integrates seamlessly with ERP, inventory and product information systems.ESM’s expert team offers full GDSN consulting, onboarding and maintenance services."
+    }
+  ],
+  "implementation": {
+    "title": "Implementation Process",
+    "description": "Our proven methodology ensures smooth deployment and maximum ROI",
+    "steps": [
+      "Initial consultation and requirement analysis",
+      "System integration planning and setup",
+      "Data migration and testing phase",
+      "Staff training and knowledge transfer",
+      "Go-live support and monitoring",
+      "Continuous maintenance and updates"
+    ]
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "list": [
+      "All Industries",
+      "Technology",
+      "Finance",
+      "Retail",
+      "Manufacturing",
+      "Healthcare"
+    ]
+  },
+  "roi": {
+    "title": "Return on Investment",
+    "description": "Achieve significant ROI with our solutions"
+  },
+  "cta": {
+    "title": "Ready to Transform Your Business?",
+    "description": "Let's discuss how our solution can help your organization.",
+    "primaryButton": "Contact Us",
+    "secondaryButton": "View All Services"
+  }
+}

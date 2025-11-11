@@ -1,39 +1,38 @@
 {
   "hero": {
     "title": "E-Delivery Note",
-    "subtitle": "Digital Delivery Documentation",
-    "description": "Digitize your delivery documentation process with real-time tracking and automated record-keeping for legal compliance.",
+    "subtitle": "Digital Shipment and Logistics Management Solutions",
+    "description": "Manage your delivery operations in a fully digital environment and maintain full control over every shipment. ESM E-Delivery Note enables the electronic creation, transmission and archiving of all delivery documents in a secure and compliant system. With its legally approved, traceable and scalable structure, it modernizes supply chain management and ensures seamless logistics operations.",
     "image": "/images/services/hero/digital-transformation.jpg",
     "imageAlt": "E-Delivery Note"
   },
   "overview": {
     "title": "Why Choose E-Delivery Note?",
-    "description": "E-Delivery Note eliminates paper-based delivery documentation and embraces digital efficiency. Our solution provides real-time delivery confirmation, automated record-keeping, and ensures legal compliance while reducing administrative overhead and improving delivery accuracy."
+    "description": "E-Delivery Note is a vital step in the digital transformation of logistics and operations management. It eliminates paper usage, accelerates delivery processes and improves data accuracy. ESM E-Delivery Note allows every stage, from dispatch to delivery, to be managed electronically, reducing errors, increasing transparency and ensuring full compliance with tax authority regulations."
   },
   "benefits": [
-    "Eliminate paper-based delivery notes",
-    "Real-time delivery confirmation",
-    "Automated record-keeping",
-    "Legal compliance assurance",
-    "Reduced administrative costs",
-    "Improved delivery accuracy"
+    "Removes paper, printing and physical document costs",
+    "Speeds up delivery operations while minimizing human error",
+    "Fully compliant with national tax authority standards",
+    "Enables real-time tracking of shipments and deliveries",
+    "Seamlessly integrates with ERP and inventory management systems"
   ],
   "features": [
     {
-      "title": "Digital Documentation",
-      "description": "Complete digitization of delivery notes with electronic signatures and timestamp verification."
+      "title": "Electronic Document Creation",
+      "description": "All delivery notes are created and transmitted digitally. Eliminates manual processing and increases operational speed."
     },
     {
-      "title": "Real-time Tracking",
-      "description": "Live tracking of deliveries with GPS integration and status updates throughout the delivery process."
+      "title": "Compliance and Security",
+      "description": "Fully compliant with tax authority regulations. All documents are digitally signed to ensure authenticity and legal validity."
     },
     {
-      "title": "Delivery Confirmation",
-      "description": "Digital proof of delivery with recipient signatures and photo confirmation capabilities."
+      "title": "Real-Time Tracking",
+      "description": "Monitor the status of each shipment instantly. Manage dispatch, delivery and confirmation processes from a single interface."
     },
     {
-      "title": "Legal Compliance",
-      "description": "Ensures all delivery documentation meets legal requirements with tamper-proof digital records."
+      "title": "Integration and Accessibility",
+      "description": "Integrates with ERP, logistics and inventory systems. Authorized users can access delivery data securely anytime and anywhere."
     }
   ],
   "implementation": {

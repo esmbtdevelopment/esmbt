@@ -85,6 +85,66 @@
         "customerExperience": "Improved customer experience",
         "costEfficiency": "Reduced paper waste and costs"
       }
+    },
+    "edeclaration": {
+      "title": "E-Declaration",
+      "description": "Accelerate your tax declaration processes, eliminate manual errors and ensure full legal compliance with automated tax filing solutions.",
+      "features": {
+        "electronicSubmission": "Electronic tax declaration submission",
+        "automatedValidation": "Automated validation and error prevention",
+        "fullCompliance": "Full compliance with TRA standards",
+        "seamlessIntegration": "Seamless ERP and accounting integration"
+      }
+    },
+    "eexpensenote": {
+      "title": "E-Expense Note",
+      "description": "Digitalize your expense documentation process for transactions with non-taxpayers to achieve speed, accuracy and compliance.",
+      "features": {
+        "electronicCreation": "Electronic expense receipt creation",
+        "legalValidity": "Full legal validity and compliance",
+        "automatedIntegration": "Automated ERP integration",
+        "secureArchiving": "Secure digital archiving and access"
+      }
+    },
+    "eproducerreceipt": {
+      "title": "E-Producer Receipt",
+      "description": "Digitalize your producer receipt processes to ensure speed, accuracy and full compliance with tax regulations.",
+      "features": {
+        "electronicReceipts": "Electronic receipt creation and transmission",
+        "agriculturalCompliance": "Full compliance for agricultural transactions",
+        "automatedWorkflows": "Automated collection workflows",
+        "secureStorage": "Secure record storage and traceability"
+      }
+    },
+    "ereconciliation": {
+      "title": "E-Reconciliation",
+      "description": "Digitalize your reconciliation processes to gain speed, accuracy and full control over financial reconciliations.",
+      "features": {
+        "automatedReconciliation": "Automated account reconciliation",
+        "realTimeNotifications": "Real-time notifications and approvals",
+        "fullTraceability": "Complete audit trail and traceability",
+        "seamlessIntegration": "Seamless ERP and finance integration"
+      }
+    },
+    "einventoryreturn": {
+      "title": "E-Inventory & E-Return",
+      "description": "Gain full control, speed and accuracy by digitalizing your inventory and return processes.",
+      "features": {
+        "digitalInventory": "Digital inventory management",
+        "automatedReturns": "Automated return workflows",
+        "realTimeTracking": "Real-time tracking and reporting",
+        "fullCompliance": "Full compliance with tax regulations"
+      }
+    },
+    "esignature": {
+      "title": "E-Signature & Mobile Signature",
+      "description": "Sign your documents, contracts and official records securely in a fully digital environment with legal validity.",
+      "features": {
+        "electronicSigning": "Legally valid electronic signing",
+        "mobileSignature": "Mobile signature integration",
+        "secureVerification": "Secure identity verification",
+        "compliance": "Full compliance with digital signature regulations"
+      }
     }
   },
   "additionalProducts": {

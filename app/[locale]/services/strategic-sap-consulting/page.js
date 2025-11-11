@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { useLocale } from 'next-intl';
+import { HeroImage } from '../components/HeroImage';
 import { useLocalTranslations } from "@/lib/hooks/useLocalTranslations";
 import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
 import { isOnLandingPage, scrollToSection } from "@/utils/navigation";
@@ -181,7 +181,7 @@ export default function StrategicSAPConsultingPage() {
                                 </p>
                             </div>
                             <div className="drop-shadow-4xl p-4 w-full h-full">
-                                <Image
+                                <HeroImage
                                     src={t('hero.image')}
                                     alt={t('hero.imageAlt')}
                                     width={1000}

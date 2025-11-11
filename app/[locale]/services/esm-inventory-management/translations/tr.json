@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "title": "ESM Inventory Management",
+    "subtitle": "Akıllı Envanter Yönetimi, Talep Tahmini ve Tedarik Zinciri Optimizasyonu",
+    "description": "Stok yönetiminde tahmine değil, veriye güvenin.ESM Inventory Management, stok, sipariş ve tedarik süreçlerini uçtan uca dijitalleştirerek işletmelere maksimum verimlilik sağlar.Gerçek zamanlı stok görünürlüğü, yapay zekâ tabanlı talep tahmini ve otomatik optimizasyon algoritmalarıyla maliyetleri düşürür, operasyonel performansı artırır.",
+    "image": "/images/services/hero/inventory.jpg",
+    "imageAlt": "ESM Inventory Management"
+  },
+  "overview": {
+    "title": "Neden ESM Inventory Management?",
+    "description": "ESM Inventory Management, işletmelerin stok dengesini korumasına, gereksiz maliyetleri azaltmasına ve müşteri taleplerine daha hızlı yanıt vermesine yardımcı olur.Yapay zekâ destekli öngörü modelleriyle talep dalgalanmalarını önceden tespit eder ve tedarik zinciri planlamasını optimize eder.ERP ve depo yönetim sistemleriyle entegre yapısı sayesinde tüm operasyonlar tek merkezden yönetilir."
+  },
+  "benefits": [
+    "Gerçek zamanlı stok görünürlüğü sağlar.",
+    "Talep tahminini yapay zekâ ile destekler.",
+    "Fazla stok ve eksik stok riskini ortadan kaldırır.",
+    "Tedarik zinciri planlamasını otomatik hale getirir.",
+    "ERP, CRM ve satış kanallarıyla tam entegredir."
+  ],
+  "features": [
+    {
+      "title": "Gerçek Zamanlı Envanter Takibi",
+      "description": "Tüm stok hareketleri anlık olarak izlenir.Depo, mağaza ve tedarik noktalarındaki veriler merkezi sistemde toplanır."
+    },
+    {
+      "title": "Talep Tahmini ve Otomatik Planlama",
+      "description": "Yapay zekâ algoritmaları geçmiş satış, mevsimsellik ve trend verilerini analiz eder.Doğru stok seviyeleri belirlenir, tedarik kararları optimize edilir."
+    },
+    {
+      "title": "Entegrasyon ve Uyum",
+      "description": "ERP, depo yönetimi (WMS) ve satış sistemleriyle entegre çalışır.Veri akışı otomatikleşir, manuel giriş hataları ortadan kalkar."
+    },
+    {
+      "title": "Raporlama ve Analitik",
+      "description": "Stok devir hızları, raf ömrü ve ürün performansları detaylı analiz edilir.Yönetim panelleri sayesinde stratejik karar süreçleri hızlanır."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "İlk danışmanlık ve gereksinim analizi",
+      "Sistem entegrasyon planlaması ve kurulumu",
+      "Veri taşıma ve test aşaması",
+      "Personel eğitimi ve bilgi transferi",
+      "Canlıya geçiş desteği ve izleme",
+      "Sürekli bakım ve güncellemeler"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Tüm Sektörler",
+      "Teknoloji",
+      "Finans",
+      "Perakende",
+      "Üretim",
+      "Sağlık"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Çözümlerimizle önemli yatırım getirisi elde edin"
+  },
+  "cta": {
+    "title": "İşletmenizi Dönüştürmeye Hazır mısınız?",
+    "description": "Çözümümüzün organizasyonunuzu nasıl destekleyebileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Hizmetleri Görüntüle"
+  }
+}

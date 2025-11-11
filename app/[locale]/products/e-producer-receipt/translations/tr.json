@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "E-Muhtahsil Makbuzu",
+    "subtitle": "Dijital Tahsilat ve Vergi Uyum Çözümleri",
+    "description": "Tarım ve alım-satım işlemlerinizde belge düzenini dijitalleştirerek hız, güven ve mevzuat uyumu kazanın. ESM E-Muhtahsil Makbuzu, çiftçilerden yapılan mal alımlarında düzenlenen muhtahsil makbuzlarını elektronik ortamda oluşturur, gönderir ve arşivler. Kâğıt kullanımını ortadan kaldırır, işlem süreçlerini hızlandırır ve tüm kayıtların güvenli şekilde saklanmasını sağlar.",
+    "image": "/images/services/hero/invoice.jpg",
+    "imageAlt": "E-Muhtahsil Makbuzu"
+  },
+  "overview": {
+    "title": "Neden E-Muhtahsil Makbuzu'nu Tercih Etmelisiniz?",
+    "description": "E-Muhtahsil Makbuzu, özellikle tarımsal faaliyet gösteren işletmeler için dijital dönüşümün temel adımlarından biridir. ESM E-Muhtahsil, üretici ve alıcı arasındaki tahsilat işlemlerini şeffaf, izlenebilir ve yasal uyumlu hale getirir. Kayıt süreçlerini otomatikleştirir, manuel hataları ortadan kaldırır ve Gelir İdaresi Başkanlığı (GİB) gereklilikleriyle tam uyum sağlar."
+  },
+  "benefits": [
+    "Kâğıt, baskı ve arşivleme maliyetlerini ortadan kaldırır",
+    "Tüm muhtahsil işlemlerini dijital ortamda yönetir",
+    "GİB düzenlemelerine tam uyumludur",
+    "Otomatik veri akışıyla işlem süresini azaltır",
+    "Belgelerin güvenli arşivlenmesini ve anlık erişimi sağlar"
+  ],
+  "features": [
+    {
+      "title": "Elektronik Makbuz Oluşturma",
+      "description": "Üreticiye yapılan her ödeme için muhtahsil makbuzu elektronik ortamda hazırlanır. Veri bütünlüğü ve yasal geçerlilik garanti altındadır."
+    },
+    {
+      "title": "Yasal Uyum ve Güvenlik",
+      "description": "Gelir İdaresi Başkanlığı standartlarına %100 uyumludur. Elektronik imza ve mali mühür ile belgelerin bütünlüğü korunur."
+    },
+    {
+      "title": "Otomatik Entegrasyon",
+      "description": "ERP ve muhasebe sistemleriyle entegre çalışır. İşlemler otomatik kaydedilir, veri giriş hataları ortadan kalkar."
+    },
+    {
+      "title": "Dijital Arşivleme ve Erişim",
+      "description": "Tüm makbuzlar güvenli şekilde saklanır, yetkili kullanıcılar her zaman erişebilir. Denetim ve raporlama süreçleri kolaylaşır."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "İlk danışmanlık ve gereksinim analizi",
+      "Sistem entegrasyon planlaması ve kurulumu",
+      "Veri taşıma ve test aşaması",
+      "Personel eğitimi ve bilgi transferi",
+      "Canlıya geçiş desteği ve izleme",
+      "Sürekli bakım ve güncellemeler"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Tarım",
+      "Yiyecek & İçecek",
+      "Ticaret",
+      "Üretim",
+      "Perakende",
+      "Tüm Sektörler"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Makbuz işleme süresini %70'e kadar azaltın"
+  },
+  "cta": {
+    "title": "Muhtahsil Makbuzlarınızı Dijitalleştirmeye Hazır mısınız?",
+    "description": "E-Muhtahsil Makbuzu çözümümüzün organizasyonunuzun tahsilat süreçlerini nasıl kolaylaştırabileceğini ve uyumluluğu nasıl sağlayabileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Ürünleri Görüntüle"
+  }
+}
+

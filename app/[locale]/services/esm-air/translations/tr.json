@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "ESM AIR",
+    "subtitle": "Yapay Zekâ Destekli Karar Destek ve Analitik Asistanı",
+    "description": "ESM AIR, işletmelerin veriye dayalı karar alma süreçlerini hızlandıran, doğal dilde etkileşim kurarak anlık içgörüler sunan yeni nesil bir yapay zekâ asistanıdır. Gelişmiş GenAI teknolojisiyle güçlendirilmiş ESM AIR, karmaşık veri analizlerini anlaşılır bilgilere dönüştürür; böylece ekipler karmaşık panellerle uğraşmadan doğru kararları saniyeler içinde alabilir.",
+    "image": "/images/services/hero/digital-transformation.jpg",
+    "imageAlt": "ESM AIR"
+  },
+  "overview": {
+    "title": "Neden ESM AIR?",
+    "description": "ESM AIR, veriden eyleme geçiş sürecini sadeleştirir. Kullanıcıların doğal dilde sorular sormasına olanak tanır ve tahmine dayalı analitikle desteklenmiş, duruma özel yanıtlar sunar. Yapay zekâ temelli öngörü sistemleri sayesinde stok yönetimi, kampanya performansı, satış düşüşü veya operasyonel verimlilik gibi konularda anında çözüm odaklı içgörüler sağlar."
+  },
+  "benefits": [
+    "Doğal dil ile anlık, eyleme dönüştürülebilir içgörüler sunar",
+    "Tahmine dayalı analitikle satış, stok ve kampanya performansını optimize eder",
+    "Teknik bilgiye gerek kalmadan hızlı, anlaşılır sonuçlar üretir",
+    "Şirket içi verileri, kurumsal kurallar ve sektör standartlarıyla entegre eder",
+    "ERP, CRM ve BI sistemleriyle kesintisiz çalışır"
+  ],
+  "features": [
+    {
+      "title": "Doğal Dil ile Etkileşim (NLP)",
+      "description": "Kullanıcılar \"Bugünkü satış düşüşünün nedeni ne?\" gibi sorular sorabilir. AIR, anında analiz ederek açık, net ve veri temelli yanıtlar verir."
+    },
+    {
+      "title": "Güvenilir Veri Altyapısı",
+      "description": "Kuruma özel kurallar ve veri standartlarıyla çalışır. Sonuçların doğruluğunu ve güvenilirliğini garanti eder."
+    },
+    {
+      "title": "Tahmine Dayalı Analitik",
+      "description": "Yapay zekâ modelleriyle gelecekteki trendleri öngörür. Stok, satış ve kampanya planlarını proaktif biçimde optimize eder."
+    },
+    {
+      "title": "Entegrasyon ve Esneklik",
+      "description": "ERP, CRM, CDP ve diğer iş sistemleriyle kolayca entegre olur. Kurumsal yapıya göre özelleştirilebilir bir yapay zekâ altyapısı sunar."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "İlk danışmanlık ve gereksinim analizi",
+      "Veri entegrasyonu ve sistem kurulumu",
+      "AI model yapılandırması ve eğitimi",
+      "Kullanıcı eğitimi ve bilgi transferi",
+      "Canlıya geçiş desteği ve izleme",
+      "Sürekli optimizasyon ve güncellemeler"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Tüm Sektörler",
+      "Perakende",
+      "Üretim",
+      "Finans",
+      "Teknoloji",
+      "Hizmetler"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Karar alma sürecini %90'a kadar hızlandırın"
+  },
+  "cta": {
+    "title": "Karar Alma Sürecinizi AI ile Dönüştürmeye Hazır mısınız?",
+    "description": "ESM AIR'ın organizasyonunuzun daha hızlı, veriye dayalı kararlar almasına nasıl yardımcı olabileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Hizmetleri Görüntüle"
+  }
+}
+

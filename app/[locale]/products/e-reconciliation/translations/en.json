@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "E-Reconciliation",
+    "subtitle": "Digital Reconciliation and Financial Compliance Solutions",
+    "description": "Digitalize your reconciliation processes to gain speed, accuracy and full control. ESM E-Reconciliation automates account balance and statement reconciliations in a secure electronic environment. It removes paper-based operations, enhances transparency and ensures full traceability across all financial processes.",
+    "image": "/images/services/hero/invoice.jpg",
+    "imageAlt": "E-Reconciliation"
+  },
+  "overview": {
+    "title": "Why Choose E-Reconciliation?",
+    "description": "E-Reconciliation strengthens financial reliability by ensuring complete accuracy and transparency between business partners. ESM E-Reconciliation allows companies to manage all customer and vendor reconciliations from a single platform. With instant notifications, dual confirmation mechanisms and audit-ready reporting, it minimizes errors and improves efficiency."
+  },
+  "benefits": [
+    "Automates and accelerates all account reconciliation workflows",
+    "Eliminates paper, mailing and manual follow-up costs",
+    "Minimizes the risk of incorrect or delayed reconciliations",
+    "Provides real-time notifications and approval tracking",
+    "Integrates seamlessly with ERP and accounting systems"
+  ],
+  "features": [
+    {
+      "title": "Automated Reconciliation Process",
+      "description": "Balances and transactions are automatically matched within the system. Requests are sent instantly, and confirmations are received in real time."
+    },
+    {
+      "title": "Compliance and Reliability",
+      "description": "Fully compliant with financial regulations and internal control standards. All records are securely stored and remain audit-ready."
+    },
+    {
+      "title": "Integration and Reporting",
+      "description": "Connects directly with ERP and finance systems. Reconciliation status can be monitored through detailed reports."
+    },
+    {
+      "title": "Accessibility and Traceability",
+      "description": "Authorized users can view all past reconciliations. Data integrity is preserved, and every action is fully traceable."
+    }
+  ],
+  "implementation": {
+    "title": "Implementation Process",
+    "description": "Our proven methodology ensures smooth deployment and maximum ROI",
+    "steps": [
+      "Initial consultation and requirement analysis",
+      "System integration planning and setup",
+      "Data migration and testing phase",
+      "Staff training and knowledge transfer",
+      "Go-live support and monitoring",
+      "Ongoing maintenance and updates"
+    ]
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "list": [
+      "All Industries",
+      "Finance",
+      "Manufacturing",
+      "Retail",
+      "Services",
+      "Trading"
+    ]
+  },
+  "roi": {
+    "title": "Return on Investment",
+    "description": "Reduce reconciliation processing time by up to 80%"
+  },
+  "cta": {
+    "title": "Ready to Transform Your Reconciliation Processes?",
+    "description": "Let's discuss how our E-Reconciliation solution can help your organization streamline financial reconciliation and ensure accuracy.",
+    "primaryButton": "Contact Us",
+    "secondaryButton": "View All Products"
+  }
+}
+

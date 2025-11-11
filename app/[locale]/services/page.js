@@ -10,6 +10,19 @@ import {
     FaShieldAlt,
     FaLifeRing,
     FaCloud,
+    FaRobot,
+    FaBrain,
+    FaDollarSign,
+    FaUsers,
+    FaMousePointer,
+    FaHandshake,
+    FaTruck,
+    FaSync,
+    FaBoxes,
+    FaGift,
+    FaSearch,
+    FaWarehouse,
+    FaUserTie,
 } from "react-icons/fa";
 import { useLocalTranslations } from '@/lib/hooks/useLocalTranslations';
 import { useDebugTranslations } from '@/lib/contexts/TranslationDebugContext';
@@ -114,6 +127,201 @@ function ServicesPage() {
                 t('landing.ongoingSupport.features.preventiveMaintenance'),
                 t('landing.ongoingSupport.features.systemMonitoring'),
                 t('landing.ongoingSupport.features.continuousImprovement')
+            ]
+        },
+        {
+            id: 8,
+            slug: "esm-ai-work",
+            icon: <FaRobot className='size-28 md:size-32 -rotate-10 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5 text-white' />,
+            title: t('landing.esmAIWork.title'),
+            description: t('landing.esmAIWork.description'),
+            features: [
+                t('landing.esmAIWork.features.contentAutomation'),
+                t('landing.esmAIWork.features.aiAgents'),
+                t('landing.esmAIWork.features.brandConsistency'),
+                t('landing.esmAIWork.features.analytics')
+            ]
+        },
+        {
+            id: 9,
+            slug: "esm-air",
+            icon: <FaBrain className='size-28 md:size-32 -rotate-10 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5 text-white' />,
+            title: t('landing.esmAIR.title'),
+            description: t('landing.esmAIR.description'),
+            features: [
+                t('landing.esmAIR.features.naturalLanguage'),
+                t('landing.esmAIR.features.predictiveAnalytics'),
+                t('landing.esmAIR.features.dataIntegration'),
+                t('landing.esmAIR.features.realTimeInsights')
+            ]
+        },
+        {
+            id: 10,
+            slug: "esm-budget",
+            icon: <FaDollarSign className='size-28 md:size-32 -rotate-10 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5 text-white' />,
+            title: t('landing.esmBudget.title'),
+            description: t('landing.esmBudget.description'),
+            features: [
+                t('landing.esmBudget.features.budgeting'),
+                t('landing.esmBudget.features.forecasting'),
+                t('landing.esmBudget.features.consolidation'),
+                t('landing.esmBudget.features.analytics')
+            ]
+        },
+        {
+            id: 11,
+            slug: "esm-cdp",
+            icon: <FaUsers className='size-28 md:size-32 -rotate-10 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5 text-white' />,
+            title: t('landing.esmCDP.title'),
+            description: t('landing.esmCDP.description'),
+            features: [
+                t('landing.esmCDP.features.dataUnification'),
+                t('landing.esmCDP.features.smartSegmentation'),
+                t('landing.esmCDP.features.realTimeMarketing'),
+                t('landing.esmCDP.features.compliance')
+            ]
+        },
+        {
+            id: 12,
+            slug: "esm-click",
+            icon: <FaMousePointer className='size-28 md:size-32 -rotate-10 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5 text-white' />,
+            title: t('landing.esmClick.title'),
+            description: t('landing.esmClick.description'),
+            features: [
+                t('landing.esmClick.features.financialAnalysis'),
+                t('landing.esmClick.features.dashboards'),
+                t('landing.esmClick.features.consolidatedReporting'),
+                t('landing.esmClick.features.mobileAccess')
+            ]
+        },
+        {
+            id: 13,
+            slug: "esm-crm-suite",
+            icon: <FaHandshake className='size-28 md:size-32 -rotate-10 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5 text-white' />,
+            title: t('landing.esmCRMSuite.title'),
+            description: t('landing.esmCRMSuite.description'),
+            features: [
+                t('landing.esmCRMSuite.features.salesManagement'),
+                t('landing.esmCRMSuite.features.marketingAutomation'),
+                t('landing.esmCRMSuite.features.customerService'),
+                t('landing.esmCRMSuite.features.analytics')
+            ]
+        },
+        {
+            id: 14,
+            slug: "esm-detailer-crm",
+            icon: <FaTruck className='size-28 md:size-32 -rotate-10 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5 text-white' />,
+            title: t('landing.esmDetailerCRM.title'),
+            description: t('landing.esmDetailerCRM.description'),
+            features: [
+                t('landing.esmDetailerCRM.features.visitManagement'),
+                t('landing.esmDetailerCRM.features.orderTracking'),
+                t('landing.esmDetailerCRM.features.performanceAnalytics'),
+                t('landing.esmDetailerCRM.features.mobileIntegration')
+            ]
+        },
+        {
+            id: 15,
+            slug: "esm-gdsn-data-sync",
+            icon: <FaSync className='size-28 md:size-32 -rotate-10 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5 text-white' />,
+            title: t('landing.esmGDSN.title'),
+            description: t('landing.esmGDSN.description'),
+            features: [
+                t('landing.esmGDSN.features.dataSync'),
+                t('landing.esmGDSN.features.gs1Compliance'),
+                t('landing.esmGDSN.features.secureSharing'),
+                t('landing.esmGDSN.features.integration')
+            ]
+        },
+        {
+            id: 16,
+            slug: "esm-inventory-management",
+            icon: <FaBoxes className='size-28 md:size-32 -rotate-10 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5 text-white' />,
+            title: t('landing.esmInventory.title'),
+            description: t('landing.esmInventory.description'),
+            features: [
+                t('landing.esmInventory.features.realTimeTracking'),
+                t('landing.esmInventory.features.demandForecasting'),
+                t('landing.esmInventory.features.automation'),
+                t('landing.esmInventory.features.reporting')
+            ]
+        },
+        {
+            id: 17,
+            slug: "esm-loyalty-engagement-suite",
+            icon: <FaGift className='size-28 md:size-32 -rotate-10 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5 text-white' />,
+            title: t('landing.esmLoyalty.title'),
+            description: t('landing.esmLoyalty.description'),
+            features: [
+                t('landing.esmLoyalty.features.loyaltyPrograms'),
+                t('landing.esmLoyalty.features.campaignAutomation'),
+                t('landing.esmLoyalty.features.personalization'),
+                t('landing.esmLoyalty.features.omnichannel')
+            ]
+        },
+        {
+            id: 18,
+            slug: "esm-quickpick",
+            icon: <FaWarehouse className='size-28 md:size-32 -rotate-10 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5 text-white' />,
+            title: t('landing.esmQuickPick.title'),
+            description: t('landing.esmQuickPick.description'),
+            features: [
+                t('landing.esmQuickPick.features.intelligentRouting'),
+                t('landing.esmQuickPick.features.realTimeTracking'),
+                t('landing.esmQuickPick.features.integration'),
+                t('landing.esmQuickPick.features.performanceAnalytics')
+            ]
+        },
+        {
+            id: 19,
+            slug: "esm-replenishment",
+            icon: <FaSync className='size-28 md:size-32 -rotate-10 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5 text-white' />,
+            title: t('landing.esmReplenishment.title'),
+            description: t('landing.esmReplenishment.description'),
+            features: [
+                t('landing.esmReplenishment.features.automatedReplenishment'),
+                t('landing.esmReplenishment.features.demandAnalysis'),
+                t('landing.esmReplenishment.features.dataSync'),
+                t('landing.esmReplenishment.features.performanceMonitoring')
+            ]
+        },
+        {
+            id: 20,
+            slug: "esm-smartfind",
+            icon: <FaSearch className='size-28 md:size-32 -rotate-10 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5 text-white' />,
+            title: t('landing.esmSmartFind.title'),
+            description: t('landing.esmSmartFind.description'),
+            features: [
+                t('landing.esmSmartFind.features.typoTolerance'),
+                t('landing.esmSmartFind.features.morphologicalAnalysis'),
+                t('landing.esmSmartFind.features.smartSorting'),
+                t('landing.esmSmartFind.features.attributeSearch')
+            ]
+        },
+        {
+            id: 21,
+            slug: "esm-syncflow",
+            icon: <FaSync className='size-28 md:size-32 -rotate-10 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5 text-white' />,
+            title: t('landing.esmSyncFlow.title'),
+            description: t('landing.esmSyncFlow.description'),
+            features: [
+                t('landing.esmSyncFlow.features.unifiedOrders'),
+                t('landing.esmSyncFlow.features.salesTracking'),
+                t('landing.esmSyncFlow.features.aiForecasting'),
+                t('landing.esmSyncFlow.features.dashboards')
+            ]
+        },
+        {
+            id: 22,
+            slug: "esm-workforce-management",
+            icon: <FaUserTie className='size-28 md:size-32 -rotate-10 translate-y-8 md:translate-y-10 translate-x-10 md:translate-x-5 text-white' />,
+            title: t('landing.esmWorkforce.title'),
+            description: t('landing.esmWorkforce.description'),
+            features: [
+                t('landing.esmWorkforce.features.demandForecasting'),
+                t('landing.esmWorkforce.features.shiftManagement'),
+                t('landing.esmWorkforce.features.workforceTracking'),
+                t('landing.esmWorkforce.features.optimization')
             ]
         }
     ];

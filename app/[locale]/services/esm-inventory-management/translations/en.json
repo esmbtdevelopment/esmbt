@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "title": "ESM Inventory Management",
+    "subtitle": "Smart Inventory Control, Demand Forecasting and Supply Chain Optimization",
+    "description": "Trust data, not assumptions, in inventory management.ESM Inventory Management digitalizes stock, order and supply operations end to end, enabling organizations to achieve maximum efficiency.With real-time visibility, AI-powered demand forecasting and automated optimization, it reduces costs and increases operational performance.",
+    "image": "/images/services/hero/inventory.jpg",
+    "imageAlt": "ESM Inventory Management"
+  },
+  "overview": {
+    "title": "",
+    "description": ""
+  },
+  "benefits": [
+    "Provides real-time visibility across all stock levels.",
+    "Uses artificial intelligence for demand forecasting.",
+    "Prevents overstocking and stockouts.",
+    "Automates supply chain planning and replenishment.",
+    "Integrates with ERP, CRM and sales systems seamlessly."
+  ],
+  "features": [
+    {
+      "title": "Real-Time Inventory Tracking",
+      "description": "Monitors all stock movements instantly across warehouses and stores.Centralizes data for accurate and efficient operations."
+    },
+    {
+      "title": "Demand Forecasting and Planning",
+      "description": "AI algorithms analyze past sales, trends and seasonality.Helps maintain optimal inventory levels and reduce costs."
+    },
+    {
+      "title": "Integration and Automation",
+      "description": "Integrates with ERP, WMS and order management systems.Automates data flow and eliminates manual input errors."
+    },
+    {
+      "title": "Reporting and Analytics",
+      "description": "Analyzes stock turnover, shelf life and product performance.Delivers actionable insights through real-time dashboards."
+    }
+  ],
+  "implementation": {
+    "title": "Implementation Process",
+    "description": "Our proven methodology ensures smooth deployment and maximum ROI",
+    "steps": [
+      "Initial consultation and requirement analysis",
+      "System integration planning and setup",
+      "Data migration and testing phase",
+      "Staff training and knowledge transfer",
+      "Go-live support and monitoring",
+      "Continuous maintenance and updates"
+    ]
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "list": [
+      "All Industries",
+      "Technology",
+      "Finance",
+      "Retail",
+      "Manufacturing",
+      "Healthcare"
+    ]
+  },
+  "roi": {
+    "title": "Return on Investment",
+    "description": "Achieve significant ROI with our solutions"
+  },
+  "cta": {
+    "title": "Ready to Transform Your Business?",
+    "description": "Let's discuss how our solution can help your organization.",
+    "primaryButton": "Contact Us",
+    "secondaryButton": "View All Services"
+  }
+}

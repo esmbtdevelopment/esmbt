@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "title": "ESM GDSN Data Sync",
+    "subtitle": "Küresel Veri Senkronizasyonu ve Ürün Bilgisi Yönetimi Çözümleri",
+    "description": "Ürün verilerinizi küresel standartlarla uyumlu hale getirerek tedarik zincirinde veri bütünlüğü sağlayın.ESM GDSN Data Sync, GS1 Global Data Synchronisation Network (GDSN) standartlarına uygun olarak geliştirilen bir veri paylaşım ve senkronizasyon platformudur.Üreticiler, distribütörler ve perakendeciler arasında güvenli, doğru ve güncel ürün bilgisinin otomatik olarak paylaşılmasını sağlar.",
+    "image": "/images/services/hero/gdsn.jpg",
+    "imageAlt": "ESM GDSN Data Sync"
+  },
+  "overview": {
+    "title": "Neden ESM GDSN Data Sync?",
+    "description": "Günümüzde ürün bilgilerinin %30’u hatalı, bu da satışların yaklaşık %3,5’inin kaybedilmesine neden oluyor.ESM GDSN Data Sync, bu sorunu ortadan kaldırarak doğru ürün bilgisinin doğru zamanda doğru noktaya ulaşmasını sağlar.Küresel GS1 standartlarına dayalı yapısı sayesinde işletmelere veri kalitesi, güvenilirlik ve operasyonel uyum kazandırır."
+  },
+  "benefits": [
+    "Ürün verilerini GS1 standartlarına göre senkronize eder.",
+    "Veri doğruluğunu ve tedarik zinciri görünürlüğünü artırır.",
+    "Perakendeci, üretici ve distribütörler arasında güvenli veri paylaşımı sağlar.",
+    "Manuel veri girişini ortadan kaldırarak zaman ve maliyet tasarrufu sağlar.",
+    "Ulusal ve uluslararası GDSN ağlarıyla uyumlu çalışır."
+  ],
+  "features": [
+    {
+      "title": "Otomatik Veri Senkronizasyonu",
+      "description": "Ürün verileri GDSN veri havuzları aracılığıyla anlık olarak güncellenir.Tüm ticari ortaklar aynı doğru veriye erişir."
+    },
+    {
+      "title": "GS1 Standartlarına Tam Uyum",
+      "description": "GDSN çerçevesinde tanımlanan global veri formatlarını destekler.Veri kalitesini artırır, hatalı bilgi akışını önler."
+    },
+    {
+      "title": "Güvenli ve İzlenebilir Veri Paylaşımı",
+      "description": "Veri akışı uçtan uca şifrelenir ve izlenebilir.Tüm değişiklikler denetlenebilir kayıtlarla korunur."
+    },
+    {
+      "title": "Entegrasyon ve Destek",
+      "description": "ERP, stok yönetimi ve ürün bilgi sistemleriyle entegre çalışır.ESM’in uzman ekibi, GDSN danışmanlığı ve teknik desteği sağlar."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "İlk danışmanlık ve gereksinim analizi",
+      "Sistem entegrasyon planlaması ve kurulumu",
+      "Veri taşıma ve test aşaması",
+      "Personel eğitimi ve bilgi transferi",
+      "Canlıya geçiş desteği ve izleme",
+      "Sürekli bakım ve güncellemeler"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Tüm Sektörler",
+      "Teknoloji",
+      "Finans",
+      "Perakende",
+      "Üretim",
+      "Sağlık"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Çözümlerimizle önemli yatırım getirisi elde edin"
+  },
+  "cta": {
+    "title": "İşletmenizi Dönüştürmeye Hazır mısınız?",
+    "description": "Çözümümüzün organizasyonunuzu nasıl destekleyebileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Hizmetleri Görüntüle"
+  }
+}

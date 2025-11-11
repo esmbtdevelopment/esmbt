@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "title": "ESM SmartFind",
+    "subtitle": "Akıllı Site İçi Arama Motoru ve Dönüşüm Optimizasyonu Çözümleri",
+    "description": "Müşterilerinizin aradıklarını saniyeler içinde bulmasını sağlayın.ESM SmartFind, gelişmiş yapay zekâ algoritmaları, morfolojik analiz ve otomatik hata toleransı özellikleriyle, web sitenizdeki arama deneyimini mükemmelleştirir.Ziyaretçilerin aradıkları ürünleri en hızlı ve en doğru şekilde bulmalarını sağlayarak dönüşüm oranlarını ve satış performansını artırır.",
+    "image": "/images/services/hero/smartfind.jpg",
+    "imageAlt": "ESM SmartFind"
+  },
+  "overview": {
+    "title": "Neden ESM SmartFind?",
+    "description": "Kullanıcıların %34’ü, aradıkları ürünü bulamadıklarında web sitesini terk ediyor.ESM SmartFind, bu sorunu ortadan kaldırarak arama sonuçlarında %99,5 doğruluk oranı sunar. Eksik veya yanlış yazılmış kelimelerde bile doğru ürünü tahmin eder, sonuçları en uygun kategori ve ilgili ürünlerle listeler.Bu sayede kullanıcı deneyimini güçlendirir, satış dönüşüm oranlarını yükseltir ve pazarlama yatırımlarınızın geri dönüşünü maksimize eder."
+  },
+  "benefits": [
+    "Arama sonuçlarında %99,5 doğruluk oranı sağlar.",
+    "Hatalı veya eksik yazılan kelimeleri otomatik olarak tanımlar.",
+    "Kullanıcı deneyimini artırarak satış dönüşüm oranlarını %30’a kadar yükseltir.",
+    "Pazarlama kampanyalarının ROI değerlerini güçlendirir.",
+    "E-ticaret ve kurumsal web altyapılarına tam entegredir."
+  ],
+  "features": [
+    {
+      "title": "Yazım Hatası Toleransı (Typo Tolerance)",
+      "description": "Kullanıcı yanlış yazsa bile, sistem neyi aradığını tahmin eder.Kök ve ek analizleriyle en doğru sonuçları sunar."
+    },
+    {
+      "title": "Morfolojik Analiz",
+      "description": "Arama kelimelerini anlamına göre analiz eder, yalnızca kelime eşleşmesiyle değil, anlam bütünlüğüyle sonuç üretir.Bu sayede benzer ürünleri ve alternatif seçenekleri de listeler."
+    },
+    {
+      "title": "Akıllı Sıralama (Smart Sorting)",
+      "description": "Ürünleri uygunluk, kategori ve kullanıcı davranışına göre sıralar.En doğru ve en ilgili sonuçları önceliklendirir."
+    },
+    {
+      "title": "Özellik Bazlı Arama (Attribute Search)",
+      "description": "Kullanıcıların ürün özelliklerine göre filtreleme yapmasına olanak tanır.Hedeflenen ürün veya kategoriye saniyeler içinde ulaşılmasını sağlar."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "İlk danışmanlık ve gereksinim analizi",
+      "Sistem entegrasyon planlaması ve kurulumu",
+      "Veri taşıma ve test aşaması",
+      "Personel eğitimi ve bilgi transferi",
+      "Canlıya geçiş desteği ve izleme",
+      "Sürekli bakım ve güncellemeler"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Tüm Sektörler",
+      "Teknoloji",
+      "Finans",
+      "Perakende",
+      "Üretim",
+      "Sağlık"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Çözümlerimizle önemli yatırım getirisi elde edin"
+  },
+  "cta": {
+    "title": "İşletmenizi Dönüştürmeye Hazır mısınız?",
+    "description": "Çözümümüzün organizasyonunuzu nasıl destekleyebileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Hizmetleri Görüntüle"
+  }
+}

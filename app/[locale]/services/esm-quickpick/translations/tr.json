@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "title": "ESM QuickPick",
+    "subtitle": "Akıllı Depo Yönetimi ve Dijital Sipariş Toplama Çözümleri",
+    "description": "Depo süreçlerinizi hızlandırın, sipariş doğruluğunu artırın ve operasyonel verimliliği en üst düzeye çıkarın.ESM QuickPick, sipariş toplama ve depo operasyonlarını dijitalleştiren, hataları en aza indiren ve çalışan verimliliğini artıran yeni nesil bir depo yönetim çözümüdür.Gerçek zamanlı yönlendirme, akıllı algoritmalar ve mobil arayüzlerle depo süreçlerinde tam kontrol sağlar.",
+    "image": "/images/services/hero/quickpick.jpg",
+    "imageAlt": "ESM QuickPick"
+  },
+  "overview": {
+    "title": "Neden ESM QuickPick?",
+    "description": "ESM QuickPick, lojistik ve depo operasyonlarını daha hızlı, hatasız ve maliyet etkin hale getirmek için geliştirilmiştir.Sistemin dinamik yönlendirme teknolojisi, çalışanlara en uygun toplama rotasını sunar; ürün bulunurluğu, sipariş önceliği ve stok yoğunluğunu analiz eder.Tam entegrasyon kabiliyeti sayesinde ERP, WMS ve stok yönetim sistemleriyle kesintisiz veri akışı sağlar."
+  },
+  "benefits": [
+    "Sipariş toplama süreçlerinde hız ve doğruluk sağlar.",
+    "Gerçek zamanlı yönlendirme ile verimliliği artırır.",
+    "ERP ve depo sistemleriyle tam entegrasyon sunar.",
+    "Hatalı toplama oranını en aza indirir.",
+    "Operasyonel maliyetleri düşürür, teslimat sürelerini kısaltır."
+  ],
+  "features": [
+    {
+      "title": "Akıllı Sipariş Yönlendirme",
+      "description": "Toplayıcıları en verimli rotaya yönlendirir.Ürün, raf ve sipariş bilgilerini gerçek zamanlı günceller."
+    },
+    {
+      "title": "Gerçek Zamanlı Takip",
+      "description": "Depo içindeki tüm işlemler anlık olarak izlenir.Sipariş durumu, ürün hareketi ve performans verileri merkezi olarak görüntülenir."
+    },
+    {
+      "title": "Entegrasyon ve Otomasyon",
+      "description": "ERP, WMS ve stok yönetim sistemleriyle tam entegredir.Sipariş akışını otomatik hale getirir, manuel işlem yükünü azaltır."
+    },
+    {
+      "title": "Performans ve Raporlama",
+      "description": "Toplama hızları, hata oranları ve teslimat performansları analiz edilir.Yönetim panelleriyle süreçler optimize edilir."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "İlk danışmanlık ve gereksinim analizi",
+      "Sistem entegrasyon planlaması ve kurulumu",
+      "Veri taşıma ve test aşaması",
+      "Personel eğitimi ve bilgi transferi",
+      "Canlıya geçiş desteği ve izleme",
+      "Sürekli bakım ve güncellemeler"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Tüm Sektörler",
+      "Teknoloji",
+      "Finans",
+      "Perakende",
+      "Üretim",
+      "Sağlık"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Çözümlerimizle önemli yatırım getirisi elde edin"
+  },
+  "cta": {
+    "title": "İşletmenizi Dönüştürmeye Hazır mısınız?",
+    "description": "Çözümümüzün organizasyonunuzu nasıl destekleyebileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Hizmetleri Görüntüle"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "title": "ESM Click",
+    "subtitle": "Kurumsal Performans Yönetimi, İş Analitiği ve Raporlama Platformu",
+    "description": "Verinizi stratejik güce dönüştürün.ESM Click, işletmelerin finansal, operasyonel ve yönetsel süreçlerini tek bir platformda analiz edebilmelerini sağlayan entegre bir Kurumsal Performans Yönetimi (CPM) ve İş Zekâsı çözümüdür.ERP sistemleriyle tam entegre yapısı sayesinde verilerinizin ne kadar büyük veya karmaşık olduğuna bakmaksızın, tüm kaynakları tek bir görünümde birleştirir ve eyleme dönüştürülebilir içgörüler sunar.",
+    "image": "/images/services/hero/business-intelligence.jpg",
+    "imageAlt": "ESM Click"
+  },
+  "overview": {
+    "title": "Neden ESM Click?",
+    "description": "ESM Click, işletmelerin yönetim muhasebesi, bütçeleme ve raporlama süreçlerini dijitalleştirir.Kurum genelinde veri odaklı karar alma kültürünü yaygınlaştırarak zaman tasarrufu sağlar, hataları minimize eder ve departmanlar arası koordinasyonu güçlendirir.Her sektöre özel dinamiklere ve yerel iş yapış şekillerine kolayca uyum sağlayan esnek yapısıyla, Türkiye ve Avrupa’daki yüzlerce kurumsal kullanıcıya güvenilir iş zekâsı çözümleri sunar."
+  },
+  "benefits": [
+    "ERP sistemleriyle tam entegre veri yönetimi.",
+    "Gerçek zamanlı finansal ve operasyonel raporlama.",
+    "Bütçe–fiili karşılaştırmaları ve sapma analizleri.",
+    "Konsolide maliyet, gelir ve kârlılık analizleri.",
+    "Web ve mobil uyumlu dashboard arayüzleri."
+  ],
+  "features": [
+    {
+      "title": "Bütçe ve Finansal Analiz",
+      "description": "Tüm bütçe, fiili ve tahmini verileri tek platformda karşılaştırır.Departman bazlı analizlerle mali performansı optimize eder."
+    },
+    {
+      "title": "Dinamik Dashboard ve Görselleştirme",
+      "description": "Zengin grafikler ve etkileşimli tablolarla veriyi anlaşılır hale getirir.Finansal tablolar, satış trendleri ve maliyet sapmalarını anlık olarak gösterir."
+    },
+    {
+      "title": "Konsolide Raporlama",
+      "description": "Farklı lokasyonlardan veya şirketlerden gelen verileri tek raporda birleştirir.Bölge, ürün, temsilci, müşteri ve marka bazında detaylı analizler sunar."
+    },
+    {
+      "title": "Mobil Erişim ve Güncel Veri Akışı",
+      "description": "Günlük veri aktarımlarıyla tüm raporlar sürekli güncel kalır.Mobil cihazlardan erişim imkânı sayesinde her an kontrol elinizdedir."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "İlk danışmanlık ve gereksinim analizi",
+      "Sistem entegrasyon planlaması ve kurulumu",
+      "Veri taşıma ve test aşaması",
+      "Personel eğitimi ve bilgi transferi",
+      "Canlıya geçiş desteği ve izleme",
+      "Sürekli bakım ve güncellemeler"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Tüm Sektörler",
+      "Teknoloji",
+      "Finans",
+      "Perakende",
+      "Üretim",
+      "Sağlık"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Çözümlerimizle önemli yatırım getirisi elde edin"
+  },
+  "cta": {
+    "title": "İşletmenizi Dönüştürmeye Hazır mısınız?",
+    "description": "Çözümümüzün organizasyonunuzu nasıl destekleyebileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Hizmetleri Görüntüle"
+  }
+}

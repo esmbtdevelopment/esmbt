@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "title": "ESM Workforce Management (WFM)",
+    "subtitle": "Akıllı Vardiya Planlama, Optimizasyon ve Çalışan Yönetimi Çözümleri",
+    "description": "İş gücünüzü veriye dayalı biçimde yönetin, operasyonel verimliliği artırın ve çalışan memnuniyetini güçlendirin.ESM Workforce Management, yapay zekâ destekli tahminleme, vardiya planlama ve optimizasyon kabiliyetleriyle işletmelerin tüm iş gücü süreçlerini dijitalleştirir.Bulut tabanlı yapısı sayesinde yöneticiler, planlama, izleme ve raporlama süreçlerini tek bir platformdan yönetebilir.",
+    "image": "/images/services/hero/wfm.jpg",
+    "imageAlt": "ESM Workforce Management (WFM)"
+  },
+  "overview": {
+    "title": "Neden ESM Workforce Management?",
+    "description": "ESM Workforce Management, kurumların kaynaklarını en verimli şekilde kullanmalarını sağlar.Matematiksel modeller ve veri analitiği altyapısı sayesinde doğru zamanda doğru çalışan planlaması yapılır.Bu sistem, fazla mesaiyi azaltırken müşteri memnuniyetini ve çalışan bağlılığını artırır."
+  },
+  "benefits": [
+    "Yapay zekâ destekli talep tahminleme ve vardiya planlama.",
+    "Gerçek zamanlı çalışan takibi ve performans izleme.",
+    "Operasyonel maliyetleri düşüren optimizasyon motoru.",
+    "Bulut tabanlı, mobil uyumlu ve role-based güvenli erişim.",
+    "Kapsamlı raporlama ve analitik yönetim panelleri."
+  ],
+  "features": [
+    {
+      "title": "Talep Tahmini ve Planlama",
+      "description": "AI tabanlı tahminleme algoritmalarıyla iş gücü talebi önceden belirlenir.Doğru sayıda personel, doğru zamanda planlanır."
+    },
+    {
+      "title": "Vardiya ve Takvim Yönetimi",
+      "description": "Çok lokasyonlu yapılarda vardiya planları tek merkezden oluşturulur.Kısa ve uzun vardiya kuralları kolayca özelleştirilebilir."
+    },
+    {
+      "title": "Gerçek Zamanlı Çalışan Yönetimi",
+      "description": "Anlık personel durumu, izinler ve değişiklikler sistem üzerinden takip edilir.Verimlilik artarken yönetimsel yük azalır."
+    },
+    {
+      "title": "Raporlama ve Optimizasyon",
+      "description": "Kapsamlı analiz ekranları sayesinde performans, maliyet ve iş gücü dağılımı kolayca izlenir.Optimizasyon motoru gereksiz maliyetleri önler."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "İlk danışmanlık ve gereksinim analizi",
+      "Sistem entegrasyon planlaması ve kurulumu",
+      "Veri taşıma ve test aşaması",
+      "Personel eğitimi ve bilgi transferi",
+      "Canlıya geçiş desteği ve izleme",
+      "Sürekli bakım ve güncellemeler"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Tüm Sektörler",
+      "Teknoloji",
+      "Finans",
+      "Perakende",
+      "Üretim",
+      "Sağlık"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Çözümlerimizle önemli yatırım getirisi elde edin"
+  },
+  "cta": {
+    "title": "İşletmenizi Dönüştürmeye Hazır mısınız?",
+    "description": "Çözümümüzün organizasyonunuzu nasıl destekleyebileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Hizmetleri Görüntüle"
+  }
+}

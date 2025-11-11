@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "E-Declaration",
+    "subtitle": "Digital Tax Declaration and Compliance Solutions",
+    "description": "Accelerate your tax declaration processes, eliminate manual errors and ensure full legal compliance. ESM E-Declaration enables the preparation, validation and secure electronic submission of all tax declarations to the Turkish Revenue Administration (TRA). With its automated data integration, it removes repetitive manual entries and provides centralized management of all tax filings.",
+    "image": "/images/services/hero/invoice.jpg",
+    "imageAlt": "E-Declaration"
+  },
+  "overview": {
+    "title": "Why Choose E-Declaration?",
+    "description": "E-Declaration modernizes tax processes by increasing accuracy, speed and compliance. ESM E-Declaration unifies all declaration types on a single platform, performing automatic validations to prevent errors before submission. Fully integrated with ERP and financial systems, it ensures your declarations are complete, compliant and delivered on time."
+  },
+  "benefits": [
+    "Submits tax declarations electronically with speed and accuracy",
+    "Eliminates manual data entry and repetitive tasks",
+    "Fully compliant with TRA systems and standards",
+    "Automates approval, monitoring and reporting workflows",
+    "Integrates seamlessly with ERP and accounting platforms"
+  ],
+  "features": [
+    {
+      "title": "Automated Declaration Preparation",
+      "description": "Retrieves data directly from financial systems and converts it into the required format. Saves time and ensures data accuracy."
+    },
+    {
+      "title": "Compliance and Security",
+      "description": "Fully aligned with national tax authority regulations. All declarations are digitally signed and securely transmitted."
+    },
+    {
+      "title": "Integration and Automation",
+      "description": "Connects directly with ERP and finance systems. Streamlines declaration workflows and minimizes human error."
+    },
+    {
+      "title": "Reporting and Traceability",
+      "description": "All submitted declarations can be tracked through a unified dashboard. Reports and approval histories are easily accessible for review."
+    }
+  ],
+  "implementation": {
+    "title": "Implementation Process",
+    "description": "Our proven methodology ensures smooth deployment and maximum ROI",
+    "steps": [
+      "Initial consultation and requirement analysis",
+      "System integration planning and setup",
+      "Data migration and testing phase",
+      "Staff training and knowledge transfer",
+      "Go-live support and monitoring",
+      "Ongoing maintenance and updates"
+    ]
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "list": [
+      "All Industries",
+      "Manufacturing",
+      "Retail",
+      "Finance",
+      "Services",
+      "Technology"
+    ]
+  },
+  "roi": {
+    "title": "Return on Investment",
+    "description": "Reduce declaration processing time by up to 75%"
+  },
+  "cta": {
+    "title": "Ready to Transform Your Tax Declarations?",
+    "description": "Let's discuss how our E-Declaration solution can help your organization streamline tax processes and ensure compliance.",
+    "primaryButton": "Contact Us",
+    "secondaryButton": "View All Products"
+  }
+}
+

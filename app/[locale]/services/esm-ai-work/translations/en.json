@@ -1,0 +1,80 @@
+{
+  "hero": {
+    "title": "ESM AI Work",
+    "subtitle": "AI-Driven Marketing Automation and Content Management Platform",
+    "description": "Transform your brand communication with an intelligent AI-powered ecosystem. ESM AI Work is a multi-agent marketing automation platform designed to accelerate workflows, automate content creation and maintain brand consistency across all channels. It integrates strategy planning, content generation, visual understanding, quality assurance, publishing and analytics — all in one seamless system.",
+    "image": "/images/services/hero/digital-transformation.jpg",
+    "imageAlt": "ESM AI Work"
+  },
+  "overview": {
+    "title": "Why ESM AI Work?",
+    "description": "ESM AI Work acts as a digital assistant composed of four AI agents — Marketing Manager, Content Creator, Content Reviewer and Community Manager. Each agent specializes in planning, creation, review and publishing, working together under a unified orchestration engine. The system learns your brand tone, target audience and historical engagement patterns to deliver adaptive, high-quality content."
+  },
+  "benefits": [
+    "Automates content planning, creation, approval and publishing workflows",
+    "AI learns your brand's voice and strategy for consistent communication",
+    "BLIP Vision integration enables visual-to-text understanding and caption generation",
+    "Supports automated LinkedIn posting and real-time analytics",
+    "Continuously improves campaign quality through adaptive learning"
+  ],
+  "features": [
+    {
+      "title": "Multi-Agent Orchestration (CrewAI Chain)",
+      "description": "Coordinates all four AI agents for synchronized content planning, writing, review and publishing. Manages branching logic and asynchronous scheduling automatically."
+    },
+    {
+      "title": "File Extraction & BLIP Vision Integration",
+      "description": "Extracts insights from PDFs, Excel, PowerPoint, DOCX and images. Uses BLIP to generate descriptive captions and contextual understanding from visuals."
+    },
+    {
+      "title": "Automated Publishing & Queue System",
+      "description": "Schedules posts through LinkedIn API with admin oversight or full automation. Enables timed publishing with cron-based queue management."
+    },
+    {
+      "title": "Memory & Personalization Engine",
+      "description": "Captures tone preferences, strategy patterns and engagement data. Feeds this intelligence back into AI agents for brand-consistent content."
+    },
+    {
+      "title": "Authentication & Integration",
+      "description": "Secured with Firebase Authentication and LinkedIn OAuth 2.0. Database automation via Postgres with observability and task monitoring."
+    },
+    {
+      "title": "User Interface & Experience",
+      "description": "Modern React + Tailwind UI for intuitive multi-agent visualization. Displays each agent's \"thinking-to-action\" process in a real-time collaborative view."
+    }
+  ],
+  "implementation": {
+    "title": "Implementation Process",
+    "description": "Our proven methodology ensures smooth deployment and maximum ROI",
+    "steps": [
+      "Initial consultation and requirement analysis",
+      "System integration planning and setup",
+      "AI agent configuration and training",
+      "Content strategy development",
+      "Go-live support and monitoring",
+      "Ongoing optimization and updates"
+    ]
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "list": [
+      "Marketing & Advertising",
+      "E-commerce",
+      "Retail",
+      "Technology",
+      "Services",
+      "All Industries"
+    ]
+  },
+  "roi": {
+    "title": "Return on Investment",
+    "description": "Reduce content creation time by up to 80%"
+  },
+  "cta": {
+    "title": "Ready to Transform Your Marketing with AI?",
+    "description": "Let's discuss how ESM AI Work can help your organization automate content creation and enhance brand communication.",
+    "primaryButton": "Contact Us",
+    "secondaryButton": "View All Services"
+  }
+}
+

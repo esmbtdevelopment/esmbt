@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "E-Gider Pusulası",
+    "subtitle": "Dijital Harcama ve Vergi Uyum Çözümleri",
+    "description": "Vergiye tabi olmayan kişi veya kuruluşlardan yapılan mal ve hizmet alımlarında gider pusulası düzenleme sürecinizi dijitalleştirin. ESM E-Gider Pusulası, bu işlemlere ait tüm belgelerin elektronik ortamda oluşturulmasını, imzalanmasını, gönderilmesini ve arşivlenmesini sağlar. Kağıt süreçlerini ortadan kaldırır, yasal uyumu garanti eder ve işlem verimliliğini en üst düzeye taşır.",
+    "image": "/images/services/hero/invoice.jpg",
+    "imageAlt": "E-Gider Pusulası"
+  },
+  "overview": {
+    "title": "Neden E-Gider Pusulası'nı Tercih Etmelisiniz?",
+    "description": "E-Gider Pusulası, serbest meslek veya bireysel tedarikçilerden yapılan alımların belge düzenini dijitalleştirerek işletmelere hız, doğruluk ve denetlenebilirlik kazandırır. ESM E-Gider Pusulası, tüm süreçleri elektronik ortama taşıyarak hem Gelir İdaresi Başkanlığı (GİB) standartlarıyla tam uyum sağlar hem de güvenli veri yönetimi sunar. Kullanıcı dostu arayüzü sayesinde belge oluşturma, onay ve gönderim işlemleri saniyeler içinde tamamlanır."
+  },
+  "benefits": [
+    "Kağıt, baskı ve arşivleme maliyetlerini ortadan kaldırır",
+    "Gider belgelerini otomatik olarak oluşturur ve gönderir",
+    "GİB düzenlemelerine tam uyumludur",
+    "İşlemleri hızlandırır, hata oranını düşürür",
+    "Belgelerin güvenli arşivlenmesini ve anında erişimi sağlar"
+  ],
+  "features": [
+    {
+      "title": "Elektronik Belge Oluşturma",
+      "description": "Tüm gider pusulaları elektronik ortamda hazırlanır ve dijital olarak imzalanır. İşlemler yasal geçerlilik kazanır, süreç verimliliği artar."
+    },
+    {
+      "title": "Yasal Uyum ve Güvenlik",
+      "description": "Gelir İdaresi Başkanlığı standartlarına %100 uyumludur. Elektronik imza ve mali mühür ile belge bütünlüğü korunur."
+    },
+    {
+      "title": "Otomatik Entegrasyon",
+      "description": "ERP ve muhasebe sistemleriyle tam entegre çalışır. Veri girişini otomatikleştirir, manuel hataları ortadan kaldırır."
+    },
+    {
+      "title": "Dijital Arşivleme ve Erişim",
+      "description": "Tüm gider belgeleri güvenli biçimde arşivlenir. Yetkili kullanıcılar her an, her yerden erişim sağlayabilir."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "İlk danışmanlık ve gereksinim analizi",
+      "Sistem entegrasyon planlaması ve kurulumu",
+      "Veri taşıma ve test aşaması",
+      "Personel eğitimi ve bilgi transferi",
+      "Canlıya geçiş desteği ve izleme",
+      "Sürekli bakım ve güncellemeler"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Tüm Sektörler",
+      "Hizmetler",
+      "Perakende",
+      "Üretim",
+      "Finans",
+      "Sağlık"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Gider işleme süresini %70'e kadar azaltın"
+  },
+  "cta": {
+    "title": "Gider Yönetiminizi Dijitalleştirmeye Hazır mısınız?",
+    "description": "E-Gider Pusulası çözümümüzün organizasyonunuzun gider süreçlerini nasıl kolaylaştırabileceğini ve uyumluluğu nasıl sağlayabileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Ürünleri Görüntüle"
+  }
+}
+

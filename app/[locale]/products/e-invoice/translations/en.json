@@ -1,39 +1,38 @@
 {
   "hero": {
     "title": "E-Invoice",
-    "subtitle": "Digital Invoice Solutions",
-    "description": "Transform your invoicing process with secure, automated digital solutions that ensure compliance while reducing costs and improving efficiency.",
+    "subtitle": "Digital Billing Solutions",
+    "description": "Bring your invoicing processes into the digital era. ESM E-Invoice unifies all financial operations on a single secure platform, minimizing time, cost, and operational workload. With its fully compliant, secure and scalable infrastructure, it redefines modern financial management.",
     "image": "/images/services/hero/invoice.jpg",
     "imageAlt": "E-Invoice"
   },
   "overview": {
     "title": "Why Choose E-Invoice?",
-    "description": "E-Invoice is not just a digital transformation tool, but also an investment in the future of your business. Our comprehensive e-invoicing solution ensures seamless compliance with local and international regulations while dramatically reducing processing time and operational costs. Built with enterprise-grade security and scalability in mind."
+    "description": "E-Invoice is more than a digital document system. It is the foundation of efficiency, compliance and sustainability in modern business. ESM E-Invoice ensures complete compliance with national and international regulations while digitalizing the entire invoicing cycle. It delivers speed, control and transparency across all financial processes, helping organizations achieve higher operational standards."
   },
   "benefits": [
-    "Reduce invoice processing time by up to 80%",
-    "Ensure 100% legal compliance with tax regulations",
-    "Lower operational costs through automation",
-    "Real-time invoice tracking and status updates",
-    "Seamless integration with existing ERP systems",
-    "Enhanced security with digital signatures"
+    "Reduces invoice creation and processing time by up to 80%",
+    "Ensures full compliance with tax and regulatory frameworks",
+    "Eliminates manual errors through process automation",
+    "Integrates seamlessly with ERP and financial systems",
+    "Provides legal validity and data security through digital signatures"
   ],
   "features": [
     {
-      "title": "Automated Processing",
-      "description": "Intelligent automation handles invoice generation, validation, and submission without manual intervention."
+      "title": "Automated Workflow",
+      "description": "Handles invoice creation, approval and archiving automatically. Saves time and eliminates processing errors."
     },
     {
-      "title": "Legal Compliance",
-      "description": "Built-in compliance checks ensure all invoices meet local tax authority requirements and regulations."
+      "title": "Compliance and Security",
+      "description": "Complies with national tax authorities and international e-document standards. All data is digitally signed and securely encrypted."
     },
     {
-      "title": "Real-time Tracking",
-      "description": "Monitor invoice status in real-time with detailed tracking and delivery confirmations."
+      "title": "Real-Time Monitoring",
+      "description": "Tracks all incoming and outgoing invoices instantly. Simplifies reporting, auditing and management processes."
     },
     {
-      "title": "Cloud-Based Platform",
-      "description": "Secure cloud infrastructure ensures 99.9% uptime and seamless scalability as your business grows."
+      "title": "Cloud-Based Infrastructure",
+      "description": "Secure, accessible and scalable cloud architecture allows safe access anytime and anywhere."
     }
   ],
   "implementation": {

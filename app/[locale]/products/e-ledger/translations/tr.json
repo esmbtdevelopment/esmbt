@@ -1,39 +1,38 @@
 {
   "hero": {
     "title": "E-Defter",
-    "subtitle": "Dijital Mali Defter",
-    "description": "Yasal uyumluluğu ve finansal şeffaflığı sağlayan dijital defter çözümleriyle finansal kayıt tutmayı dönüştürün.",
+    "subtitle": "Dijital Defter ve Finansal Uyum Çözümleri",
+    "description": "Finansal kayıtlarınızı dijital dünyaya taşıyın ve tüm muhasebe süreçlerinizi yasal standartlara uygun şekilde yönetin. ESM E-Defter, yasal defterlerin (yevmiye ve büyük defter) elektronik ortamda oluşturulmasını, saklanmasını ve Gelir İdaresi Başkanlığı (GİB) standartlarına uygun biçimde gönderilmesini sağlar. Kâğıt defter yükünü ortadan kaldırarak veri güvenliği, doğruluk ve denetlenebilirlik açısından kurumlara tam kontrol sunar.",
     "image": "/images/services/hero/ledger.jpg",
     "imageAlt": "E-Defter"
   },
   "overview": {
-    "title": "Neden E-Defter Seçmelisiniz?",
-    "description": "E-Defter, otomatik süreçlerle doğru, denetlenebilir finansal kayıtları koruyan kapsamlı bir dijital muhasebe çözümü sunar. Sistemimiz, gerçek zamanlı finansal içgörüler sağlarken ve finansal yönetimin karmaşıklığını azaltırken düzenleyici uyumluluğu garanti eder."
+    "title": "Neden E-Defter'i Tercih Etmelisiniz?",
+    "description": "E-Defter, dijital dönüşüm sürecinde finansal şeffaflığın ve kurumsal sürdürülebilirliğin temelidir. Manuel defter kayıtlarını ortadan kaldırır, hataları en aza indirir ve yasal uyumluluğu garanti altına alır. ESM E-Defter, her ölçekteki işletmenin finansal verilerini güvenli, standartlara uygun ve denetime hazır bir yapıya dönüştürür."
   },
   "benefits": [
-    "Otomatik dijital muhasebe",
-    "Tam düzenleyici uyumluluk",
-    "Gerçek zamanlı finansal raporlama",
-    "Tam denetim izi",
-    "Azaltılmış muhasebe hataları",
-    "Muhasebe sistemleriyle entegrasyon"
+    "Kâğıt, baskı ve saklama maliyetlerini ortadan kaldırır",
+    "Yasal defterlerin eksiksiz, hatasız ve zamanında oluşturulmasını sağlar",
+    "GİB düzenlemelerine tam uyumludur",
+    "Denetim süreçlerini hızlandırır ve kolaylaştırır",
+    "Finansal verilerin güvenli ve erişilebilir şekilde saklanmasını sağlar"
   ],
   "features": [
     {
-      "title": "Dijital Muhasebe",
-      "description": "Akıllı kategorilendirme ve mutabakat yetenekleri ile otomatik işlem kaydı."
+      "title": "Elektronik Defter Oluşturma",
+      "description": "Yevmiye ve büyük defter kayıtlarını elektronik ortamda otomatik oluşturur. Veri bütünlüğünü korur, manuel iş yükünü azaltır."
     },
     {
-      "title": "Düzenleyici Uyumluluk",
-      "description": "Yerleşik uyumluluk özellikleri, tüm kayıtların yerel ve uluslararası muhasebe standartlarını karşılamasını sağlar."
+      "title": "Yasal Uyum ve Güvenlik",
+      "description": "Gelir İdaresi Başkanlığı formatlarına %100 uyumludur. Elektronik imza ve mali mühür ile kayıtların bütünlüğü korunur."
     },
     {
-      "title": "Otomatik Raporlar",
-      "description": "Özelleştirilebilir şablonlar ve zamanlama ile kapsamlı finansal raporları otomatik olarak oluşturun."
+      "title": "Otomatik Arşivleme ve Erişim",
+      "description": "Defterler güvenli bulut ortamında yasal süre boyunca saklanır. Yetkilendirilmiş kullanıcılar diledikleri an erişim sağlayabilir."
     },
     {
-      "title": "Denetim İzi",
-      "description": "Şeffaflık için zaman damgası doğrulaması ve kullanıcı aktivite takibi ile tam denetim izi."
+      "title": "Denetim ve Raporlama Kolaylığı",
+      "description": "Tüm kayıtlar standart formatta hazırlanır. Denetim, kontrol ve raporlama süreçleri hızlı ve hatasız ilerler."
     }
   ],
   "implementation": {

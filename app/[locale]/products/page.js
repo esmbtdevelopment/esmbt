@@ -123,6 +123,78 @@ function ProductsPage() {
                 t('landing.eadisyon.features.costEfficiency')
             ]
         },
+        {
+            id: 9,
+            slug: "e-declaration",
+            title: t('landing.edeclaration.title'),
+            description: t('landing.edeclaration.description'),
+            features: [
+                t('landing.edeclaration.features.electronicSubmission'),
+                t('landing.edeclaration.features.automatedValidation'),
+                t('landing.edeclaration.features.fullCompliance'),
+                t('landing.edeclaration.features.seamlessIntegration')
+            ]
+        },
+        {
+            id: 10,
+            slug: "e-expense-note",
+            title: t('landing.eexpensenote.title'),
+            description: t('landing.eexpensenote.description'),
+            features: [
+                t('landing.eexpensenote.features.electronicCreation'),
+                t('landing.eexpensenote.features.legalValidity'),
+                t('landing.eexpensenote.features.automatedIntegration'),
+                t('landing.eexpensenote.features.secureArchiving')
+            ]
+        },
+        {
+            id: 11,
+            slug: "e-producer-receipt",
+            title: t('landing.eproducerreceipt.title'),
+            description: t('landing.eproducerreceipt.description'),
+            features: [
+                t('landing.eproducerreceipt.features.electronicReceipts'),
+                t('landing.eproducerreceipt.features.agriculturalCompliance'),
+                t('landing.eproducerreceipt.features.automatedWorkflows'),
+                t('landing.eproducerreceipt.features.secureStorage')
+            ]
+        },
+        {
+            id: 12,
+            slug: "e-reconciliation",
+            title: t('landing.ereconciliation.title'),
+            description: t('landing.ereconciliation.description'),
+            features: [
+                t('landing.ereconciliation.features.automatedReconciliation'),
+                t('landing.ereconciliation.features.realTimeNotifications'),
+                t('landing.ereconciliation.features.fullTraceability'),
+                t('landing.ereconciliation.features.seamlessIntegration')
+            ]
+        },
+        {
+            id: 13,
+            slug: "e-inventory-return",
+            title: t('landing.einventoryreturn.title'),
+            description: t('landing.einventoryreturn.description'),
+            features: [
+                t('landing.einventoryreturn.features.digitalInventory'),
+                t('landing.einventoryreturn.features.automatedReturns'),
+                t('landing.einventoryreturn.features.realTimeTracking'),
+                t('landing.einventoryreturn.features.fullCompliance')
+            ]
+        },
+        {
+            id: 14,
+            slug: "e-signature-mobile-signature",
+            title: t('landing.esignature.title'),
+            description: t('landing.esignature.description'),
+            features: [
+                t('landing.esignature.features.electronicSigning'),
+                t('landing.esignature.features.mobileSignature'),
+                t('landing.esignature.features.secureVerification'),
+                t('landing.esignature.features.compliance')
+            ]
+        },
     ];
 
     return (

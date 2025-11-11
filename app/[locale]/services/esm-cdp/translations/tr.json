@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "title": "ESM CDP (Customer Data Platform)",
+    "subtitle": "Tekilleştirilmiş Müşteri Verisi, Akıllı Segmentasyon ve Gerçek Zamanlı Pazarlama",
+    "description": "Tüm müşteri verilerinizi tek bir platformda birleştirerek markanızın iletişim gücünü artırın.ESM CDP, farklı sistemlerde dağınık halde bulunan müşteri verilerini tekilleştirir, analiz eder ve eyleme dönüştürülebilir içgörülere dönüştürür.Gerçek zamanlı veri akışı ve yapay zekâ destekli analiz kabiliyetiyle, işletmelerin her temas noktasında kişiselleştirilmiş deneyimler sunmasını sağlar.",
+    "image": "/images/services/hero/cdp.jpg",
+    "imageAlt": "ESM CDP (Customer Data Platform)"
+  },
+  "overview": {
+    "title": "Neden ESM CDP?",
+    "description": "ESM CDP, markaların müşteri yolculuğunu bütünsel olarak anlamasını ve yönetmesini sağlar.Veri kaynaklarını entegre eder, müşteri kimliklerini birleştirir ve hedef kitle segmentasyonunu akıllı algoritmalarla oluşturur.CRM, kampanya yönetimi, satış ve servis sistemleriyle tam uyumlu yapısı sayesinde, kurumlara veriye dayalı pazarlama stratejileri üretme gücü kazandırır."
+  },
+  "benefits": [
+    "Tüm müşteri verilerini tek bir merkezi platformda toplar.",
+    "Tekilleştirilmiş müşteri profilleri oluşturur.",
+    "Hedef kitle segmentasyonunu otomatik olarak gerçekleştirir.",
+    "Gerçek zamanlı analizlerle kişiselleştirilmiş pazarlama sağlar.",
+    "CRM, ERP ve dijital kanallarla entegre çalışır."
+  ],
+  "features": [
+    {
+      "title": "Veri Entegrasyonu ve Tekilleştirme",
+      "description": "Farklı kaynaklardaki müşteri verilerini birleştirir ve benzersiz müşteri profilleri oluşturur.Tekrarlayan kayıtları otomatik olarak tespit eder, veri kalitesini artırır."
+    },
+    {
+      "title": "Akıllı Segmentasyon",
+      "description": "Davranışsal, demografik ve işlem bazlı kriterlerle otomatik segmentler oluşturur.Doğru zamanda doğru müşteriye ulaşmanızı sağlar."
+    },
+    {
+      "title": "Gerçek Zamanlı Analiz ve Eylem",
+      "description": "Müşteri etkileşimlerini anlık olarak izler, yapay zekâ ile kişiselleştirilmiş öneriler sunar.Kampanya verimliliğini artırır, dönüşüm oranlarını yükseltir."
+    },
+    {
+      "title": "Entegrasyon ve Uyumluluk",
+      "description": "CRM, pazarlama otomasyonu, e-ticaret ve ERP sistemleriyle entegre çalışır.Tüm veriler ulusal ve uluslararası veri güvenliği standartlarına uygun biçimde işlenir."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "İlk danışmanlık ve gereksinim analizi",
+      "Sistem entegrasyon planlaması ve kurulumu",
+      "Veri taşıma ve test aşaması",
+      "Personel eğitimi ve bilgi transferi",
+      "Canlıya geçiş desteği ve izleme",
+      "Sürekli bakım ve güncellemeler"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Tüm Sektörler",
+      "Teknoloji",
+      "Finans",
+      "Perakende",
+      "Üretim",
+      "Sağlık"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Çözümlerimizle önemli yatırım getirisi elde edin"
+  },
+  "cta": {
+    "title": "İşletmenizi Dönüştürmeye Hazır mısınız?",
+    "description": "Çözümümüzün organizasyonunuzu nasıl destekleyebileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Hizmetleri Görüntüle"
+  }
+}

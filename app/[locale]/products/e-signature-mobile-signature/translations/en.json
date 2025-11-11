@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "E-Signature & Mobile Signature",
+    "subtitle": "Digital Identity Verification and Secure Approval Solutions",
+    "description": "Sign your documents, contracts and official records securely in a fully digital environment. ESM E-Signature & Mobile Signature enables users to verify their identities and approve documents electronically with full legal validity. All signature processes are executed securely, quickly and in compliance with national regulations.",
+    "image": "/images/services/hero/invoice.jpg",
+    "imageAlt": "E-Signature & Mobile Signature"
+  },
+  "overview": {
+    "title": "Why Choose E-Signature & Mobile Signature?",
+    "description": "E-Signature and Mobile Signature solutions establish a secure digital approval mechanism for businesses. ESM E-Signature & Mobile Signature allows all internal and external authorization, approval and contract processes to be completed electronically. Users can sign documents instantly from their computers or mobile devices, ensuring operational speed and legal security in every transaction."
+  },
+  "benefits": [
+    "Provides legally valid and secure electronic signing",
+    "Digitalizes identity verification and approval processes",
+    "Reduces time, paper and operational costs",
+    "Fully compliant with national digital signature regulations and ECA (Electronic Certificate Authority) standards",
+    "Enables instant signing through mobile devices anytime and anywhere"
+  ],
+  "features": [
+    {
+      "title": "Electronic Signature Infrastructure",
+      "description": "Uses certified digital certificates for signing documents. All signatures comply with the National Electronic Signature Law No. 5070."
+    },
+    {
+      "title": "Mobile Signature Integration",
+      "description": "Allows users to verify and sign documents directly via mobile devices. Integrates seamlessly with GSM operators and secure identity systems."
+    },
+    {
+      "title": "Compliance and Security",
+      "description": "Fully aligned with electronic signature legislation and data protection regulations. All signed documents are tamper-proof and verifiable."
+    },
+    {
+      "title": "Speed and Efficiency",
+      "description": "Completes signature workflows in seconds. Optimizes corporate approval chains through full digitalization."
+    }
+  ],
+  "implementation": {
+    "title": "Implementation Process",
+    "description": "Our proven methodology ensures smooth deployment and maximum ROI",
+    "steps": [
+      "Initial consultation and requirement analysis",
+      "System integration planning and setup",
+      "Data migration and testing phase",
+      "Staff training and knowledge transfer",
+      "Go-live support and monitoring",
+      "Ongoing maintenance and updates"
+    ]
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "list": [
+      "All Industries",
+      "Legal Services",
+      "Finance",
+      "Government",
+      "Healthcare",
+      "Real Estate"
+    ]
+  },
+  "roi": {
+    "title": "Return on Investment",
+    "description": "Reduce document signing time by up to 90%"
+  },
+  "cta": {
+    "title": "Ready to Digitize Your Signature Processes?",
+    "description": "Let's discuss how our E-Signature & Mobile Signature solution can help your organization streamline approval processes and ensure legal compliance.",
+    "primaryButton": "Contact Us",
+    "secondaryButton": "View All Products"
+  }
+}
+

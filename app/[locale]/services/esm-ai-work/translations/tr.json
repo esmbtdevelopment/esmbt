@@ -1,0 +1,80 @@
+{
+  "hero": {
+    "title": "ESM AI Work",
+    "subtitle": "Yapay Zekâ Destekli Pazarlama Otomasyonu ve İçerik Yönetimi Platformu",
+    "description": "Marka iletişiminizi uçtan uca dijitalleştirin. ESM AI Work, pazarlama ekiplerinin iş akışını hızlandırmak, içerik üretimini otomatikleştirmek ve marka tutarlılığını korumak için tasarlanmış çok ajanlı (multi-agent) bir yapay zekâ pazarlama otomasyon platformudur. Platform; içerik stratejisi, metin oluşturma, görsel yorumlama, kalite kontrol, paylaşım planlama ve performans analitiğini tek bir sistemde buluşturur.",
+    "image": "/images/services/hero/digital-transformation.jpg",
+    "imageAlt": "ESM AI Work"
+  },
+  "overview": {
+    "title": "Neden ESM AI Work?",
+    "description": "ESM AI Work, markalar için yapay zekâ tabanlı bir \"dijital ekip asistanı\" görevi görür. Marketing Manager, Content Creator, Content Reviewer ve Community Manager isimli dört özel yapay zekâ ajanı, markanız adına planlama, içerik üretimi, denetim ve yayın süreçlerini koordine eder. Her ajan, markanın sesi, hedef kitlesi ve geçmiş stratejileri doğrultusunda özelleştirilmiş bir şekilde çalışır."
+  },
+  "benefits": [
+    "İçerik üretimi, planlama, onay ve paylaşım süreçlerini otomatikleştirir",
+    "Markaya özel dil, ton ve stratejiyi öğrenen yapay zekâ altyapısı",
+    "BLIP Vision entegrasyonu sayesinde görsellerden metin ve bağlam analizi yapar",
+    "LinkedIn, web ve diğer dijital kanallar için otomatik paylaşım ve raporlama",
+    "Sürekli öğrenen yapay zekâ mimarisiyle kampanyalarınızı geliştirir"
+  ],
+  "features": [
+    {
+      "title": "Multi-Agent Orkestrasyon (CrewAI Chain)",
+      "description": "Marketing Manager, Content Creator, Reviewer ve Community Manager ajanları arasında görev akışını yönetir. Her bir içerik planlama, üretim ve onay adımı senkronize biçimde ilerler."
+    },
+    {
+      "title": "Dosya Entegrasyonu ve Görsel Analiz (BLIP Vision)",
+      "description": "PDF, Excel, Word, PowerPoint, CSV ve görsel dosyalardan otomatik veri çıkarımı sağlar. Görselleri tanır, açıklama (alt-text) üretir ve içerik bağlamını güçlendirir."
+    },
+    {
+      "title": "Otomatik Yayınlama ve Kuyruk Yönetimi",
+      "description": "LinkedIn API ve zamanlama altyapısı üzerinden paylaşımları planlar. Admin paneliyle manuel onay veya otomatik gönderim seçenekleri sunar."
+    },
+    {
+      "title": "Kişiselleştirme ve Hafıza Motoru",
+      "description": "Markanın geçmiş stratejilerini, ton tercihini ve etkileşim analizlerini hatırlayarak içerik önerilerini optimize eder."
+    },
+    {
+      "title": "Güvenli Kimlik Doğrulama ve Entegrasyon",
+      "description": "Firebase Auth ve LinkedIn OAuth altyapısıyla güvenli kullanıcı erişimi sağlar. Tüm süreçler Postgres tabanlı otomasyon ve Render cron yapısıyla desteklenir."
+    },
+    {
+      "title": "Kullanıcı Deneyimi ve Arayüz",
+      "description": "Modern React + Tailwind tabanlı arayüzü, çok ajanlı etkileşimleri \"Slack benzeri\" bir biçimde gösterir. Her ajanın düşünme ve görev tamamlama süreci kullanıcı tarafından izlenebilir."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "İlk danışmanlık ve gereksinim analizi",
+      "Sistem entegrasyon planlaması ve kurulumu",
+      "AI ajan yapılandırması ve eğitimi",
+      "İçerik stratejisi geliştirme",
+      "Canlıya geçiş desteği ve izleme",
+      "Sürekli optimizasyon ve güncellemeler"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Pazarlama & Reklam",
+      "E-ticaret",
+      "Perakende",
+      "Teknoloji",
+      "Hizmetler",
+      "Tüm Sektörler"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "İçerik oluşturma süresini %80'e kadar azaltın"
+  },
+  "cta": {
+    "title": "Pazarlamanızı AI ile Dönüştürmeye Hazır mısınız?",
+    "description": "ESM AI Work'ün organizasyonunuzun içerik oluşturmayı nasıl otomatikleştirebileceğini ve marka iletişimini nasıl geliştirebileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Hizmetleri Görüntüle"
+  }
+}
+

@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "E-Envanter & E-İade",
+    "subtitle": "Dijital Envanter ve İade Yönetimi Çözümleri",
+    "description": "Envanter ve iade süreçlerinizi dijitalleştirerek kontrol, hız ve doğruluk kazanın. ESM E-Envanter & E-İade, stok, malzeme ve iade yönetimi süreçlerinin tamamını elektronik ortama taşır. İşletmelere operasyonel şeffaflık, veri güvenliği ve yasal uyumluluk sağlar.",
+    "image": "/images/services/hero/invoice.jpg",
+    "imageAlt": "E-Envanter & E-İade"
+  },
+  "overview": {
+    "title": "Neden E-Envanter & E-İade'yi Tercih Etmelisiniz?",
+    "description": "E-Envanter ve E-İade sistemleri, işletmelerin stok ve iade yönetim süreçlerinde manuel hataları ortadan kaldırır, operasyonları optimize eder ve süreçleri denetlenebilir hale getirir. ESM E-Envanter & E-İade, envanter hareketlerini anlık olarak izleyebilmenizi, iade taleplerini dijital ortamda yönetebilmenizi ve tüm işlemleri GİB standartlarıyla uyumlu şekilde yürütmenizi sağlar. Böylece kurumlar; zamandan tasarruf eder, stok doğruluğunu artırır ve kaynaklarını daha verimli kullanır."
+  },
+  "benefits": [
+    "Stok ve iade süreçlerini uçtan uca dijitalleştirir",
+    "Manuel hataları ve belge karmaşasını ortadan kaldırır",
+    "GİB düzenlemeleriyle tam uyumluluk sağlar",
+    "Gerçek zamanlı envanter takibi ve raporlama imkânı sunar",
+    "ERP ve depo yönetim sistemleriyle tam entegredir"
+  ],
+  "features": [
+    {
+      "title": "Dijital Envanter Yönetimi",
+      "description": "Stok giriş-çıkış hareketleri elektronik ortamda kayıt altına alınır. Veri doğruluğu artar, süreçler hızlanır."
+    },
+    {
+      "title": "Otomatik İade Süreçleri",
+      "description": "İade talepleri elektronik olarak oluşturulur, onaylanır ve raporlanır. Tüm işlemler yasal mevzuata uygun biçimde yürütülür."
+    },
+    {
+      "title": "Entegrasyon ve Uyum",
+      "description": "ERP, muhasebe ve depo yönetim sistemleriyle tam entegrasyon sağlar. Tüm veriler GİB standartlarına uygun biçimde işlenir."
+    },
+    {
+      "title": "Raporlama ve Şeffaflık",
+      "description": "Envanter hareketleri ve iade durumları gerçek zamanlı izlenir. Yönetim panelleri aracılığıyla analiz ve raporlamalar kolayca yapılır."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "İlk danışmanlık ve gereksinim analizi",
+      "Sistem entegrasyon planlaması ve kurulumu",
+      "Veri taşıma ve test aşaması",
+      "Personel eğitimi ve bilgi transferi",
+      "Canlıya geçiş desteği ve izleme",
+      "Sürekli bakım ve güncellemeler"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Perakende",
+      "E-ticaret",
+      "Üretim",
+      "Lojistik",
+      "Toptan Ticaret",
+      "Tüm Sektörler"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Envanter işleme süresini %75'e kadar azaltın"
+  },
+  "cta": {
+    "title": "Envanter Yönetiminizi Dönüştürmeye Hazır mısınız?",
+    "description": "E-Envanter & E-İade çözümümüzün organizasyonunuzun envanter ve iade süreçlerini nasıl kolaylaştırabileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Ürünleri Görüntüle"
+  }
+}
+

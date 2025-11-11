@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "E-Beyanname",
+    "subtitle": "Dijital Beyan ve Vergi Uyum Çözümleri",
+    "description": "Vergi beyannamelerinizi dijitalleştirerek süreci hızlandırın, hata riskini ortadan kaldırın ve tam yasal uyum sağlayın. ESM E-Beyanname, vergiye tabi tüm beyannamelerin elektronik ortamda hazırlanmasını, doğrulanmasını ve Gelir İdaresi Başkanlığı (GİB) sistemine güvenli biçimde gönderilmesini sağlar. Otomatik entegrasyon yapısı sayesinde, manuel veri girişlerini ortadan kaldırır ve süreçleri tek merkezden yönetilebilir hale getirir.",
+    "image": "/images/services/hero/invoice.jpg",
+    "imageAlt": "E-Beyanname"
+  },
+  "overview": {
+    "title": "Neden E-Beyanname'yi Tercih Etmelisiniz?",
+    "description": "E-Beyanname, kurumların vergi süreçlerini modernleştirerek hız, doğruluk ve mevzuat uyumu kazandırır. ESM E-Beyanname, tüm beyan tiplerini tek platformda bir araya getirir, otomatik kontrollerle hataları önceden tespit eder ve beyan sürecini güvenli bir şekilde tamamlar. Finansal sistemlerle tam entegre yapısı sayesinde, beyanlarınız doğru ve zamanında iletilir."
+  },
+  "benefits": [
+    "Vergi beyannamelerini elektronik ortamda hızlı ve hatasız şekilde gönderir",
+    "Manuel veri girişini ve tekrarlayan işlemleri ortadan kaldırır",
+    "GİB sistemleriyle tam uyumludur",
+    "Onay, takip ve raporlama süreçlerini otomatikleştirir",
+    "ERP ve muhasebe sistemleriyle entegre çalışır"
+  ],
+  "features": [
+    {
+      "title": "Otomatik Beyan Hazırlama",
+      "description": "Beyanname verilerini sistemden otomatik olarak alır ve standart formata dönüştürür. Zaman kaybını önler, beyan doğruluğunu artırır."
+    },
+    {
+      "title": "Yasal Uyum ve Güvenlik",
+      "description": "Gelir İdaresi Başkanlığı standartlarına %100 uyumludur. Tüm belgeler elektronik imza ve mali mühürle korunur."
+    },
+    {
+      "title": "Entegrasyon ve Otomasyon",
+      "description": "ERP ve finans sistemleriyle doğrudan bağlantı kurar. Beyan süreçleri otomatikleşir, hata oranı minimuma iner."
+    },
+    {
+      "title": "Raporlama ve İzlenebilirlik",
+      "description": "Gönderilen tüm beyannameler tek ekrandan takip edilir. Raporlar ve onay geçmişi kolayca görüntülenebilir."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "İlk danışmanlık ve gereksinim analizi",
+      "Sistem entegrasyon planlaması ve kurulumu",
+      "Veri taşıma ve test aşaması",
+      "Personel eğitimi ve bilgi transferi",
+      "Canlıya geçiş desteği ve izleme",
+      "Sürekli bakım ve güncellemeler"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Tüm Sektörler",
+      "Üretim",
+      "Perakende",
+      "Finans",
+      "Hizmetler",
+      "Teknoloji"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Beyan işleme süresini %75'e kadar azaltın"
+  },
+  "cta": {
+    "title": "Vergi Beyannamelerinizi Dönüştürmeye Hazır mısınız?",
+    "description": "E-Beyanname çözümümüzün organizasyonunuzun vergi süreçlerini nasıl kolaylaştırabileceğini ve uyumluluğu nasıl sağlayabileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Ürünleri Görüntüle"
+  }
+}
+

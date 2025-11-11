@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "title": "ESM QuickPick",
+    "subtitle": "Smart Warehouse and Digital Order Picking Solutions",
+    "description": "Accelerate your warehouse operations, improve order accuracy and maximize efficiency. ESM QuickPick is a next-generation warehouse solution that digitalizes order picking, minimizes errors and enhances workforce productivity.With real-time guidance, smart algorithms and intuitive mobile interfaces, it ensures complete control over warehouse operations.",
+    "image": "/images/services/hero/quickpick.jpg",
+    "imageAlt": "ESM QuickPick"
+  },
+  "overview": {
+    "title": "",
+    "description": ""
+  },
+  "benefits": [
+    "Increases speed and accuracy in order picking processes.",
+    "Enhances efficiency through real-time task routing.",
+    "Provides full integration with ERP and warehouse systems.",
+    "Minimizes picking errors and rework rates.",
+    "Reduces operational costs and shortens delivery times."
+  ],
+  "features": [
+    {
+      "title": "Intelligent Order Routing",
+      "description": "Guides pickers through the most efficient routes.Updates product, shelf and order data in real time."
+    },
+    {
+      "title": "Real-Time Tracking",
+      "description": "Monitors all warehouse activities instantly.Tracks order status, product movement and employee performance."
+    },
+    {
+      "title": "Integration and Automation",
+      "description": "Integrates seamlessly with ERP, WMS and inventory systems.Automates order flow and reduces manual workload."
+    },
+    {
+      "title": "Performance Analytics",
+      "description": "Analyzes picking speed, accuracy and delivery efficiency.Helps managers optimize operations through actionable insights."
+    }
+  ],
+  "implementation": {
+    "title": "Implementation Process",
+    "description": "Our proven methodology ensures smooth deployment and maximum ROI",
+    "steps": [
+      "Initial consultation and requirement analysis",
+      "System integration planning and setup",
+      "Data migration and testing phase",
+      "Staff training and knowledge transfer",
+      "Go-live support and monitoring",
+      "Continuous maintenance and updates"
+    ]
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "list": [
+      "All Industries",
+      "Technology",
+      "Finance",
+      "Retail",
+      "Manufacturing",
+      "Healthcare"
+    ]
+  },
+  "roi": {
+    "title": "Return on Investment",
+    "description": "Achieve significant ROI with our solutions"
+  },
+  "cta": {
+    "title": "Ready to Transform Your Business?",
+    "description": "Let's discuss how our solution can help your organization.",
+    "primaryButton": "Contact Us",
+    "secondaryButton": "View All Services"
+  }
+}

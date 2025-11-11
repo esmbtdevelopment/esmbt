@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "title": "ESM Workforce Management (WFM)",
+    "subtitle": "Intelligent Scheduling, Optimization and Employee Management Solutions",
+    "description": "Manage your workforce intelligently with data-driven insights, increase operational efficiency and enhance employee satisfaction.ESM Workforce Management digitalizes all workforce processes with AI-powered forecasting, scheduling and optimization capabilities.Its cloud-based structure allows managers to plan, monitor and report from a single unified platform.",
+    "image": "/images/services/hero/wfm.jpg",
+    "imageAlt": "ESM Workforce Management (WFM)"
+  },
+  "overview": {
+    "title": "",
+    "description": ""
+  },
+  "benefits": [
+    "AI-driven demand forecasting and shift planning.",
+    "Real-time workforce tracking and performance monitoring.",
+    "Optimization engine that minimizes operational costs.",
+    "Cloud-based, mobile-friendly and role-based secure access.",
+    "Comprehensive reporting and analytics dashboards."
+  ],
+  "features": [
+    {
+      "title": "Demand Forecasting and Planning",
+      "description": "Uses AI-based models to predict labor demand accurately.Ensures optimal staffing levels for each time period."
+    },
+    {
+      "title": "Shift and Calendar Management",
+      "description": "Manages scheduling across multiple locations.Easily customize rules for long or short shifts."
+    },
+    {
+      "title": "Real-Time Workforce Management",
+      "description": "Tracks attendance, leave and workforce changes instantly.Improves visibility and simplifies daily operations."
+    },
+    {
+      "title": "Reporting and Optimization",
+      "description": "Provides detailed insights into performance, cost and efficiency.The optimization engine reduces waste and boosts productivity."
+    }
+  ],
+  "implementation": {
+    "title": "Implementation Process",
+    "description": "Our proven methodology ensures smooth deployment and maximum ROI",
+    "steps": [
+      "Initial consultation and requirement analysis",
+      "System integration planning and setup",
+      "Data migration and testing phase",
+      "Staff training and knowledge transfer",
+      "Go-live support and monitoring",
+      "Continuous maintenance and updates"
+    ]
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "list": [
+      "All Industries",
+      "Technology",
+      "Finance",
+      "Retail",
+      "Manufacturing",
+      "Healthcare"
+    ]
+  },
+  "roi": {
+    "title": "Return on Investment",
+    "description": "Achieve significant ROI with our solutions"
+  },
+  "cta": {
+    "title": "Ready to Transform Your Business?",
+    "description": "Let's discuss how our solution can help your organization.",
+    "primaryButton": "Contact Us",
+    "secondaryButton": "View All Services"
+  }
+}

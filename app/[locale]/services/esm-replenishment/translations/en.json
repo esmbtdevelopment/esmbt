@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "title": "ESM Replenishment",
+    "subtitle": "Automated Stock Replenishment and Demand-Driven Supply Management",
+    "description": "Digitalize your replenishment process to ensure the right product, at the right time, in the right place.ESM Replenishment analyzes sales, inventory and demand data to determine optimal stock levels and automatically generate purchase recommendations.With a data-driven decision engine, it eliminates stockouts and overstocks while maximizing operational efficiency.",
+    "image": "/images/services/hero/replenishment.jpg",
+    "imageAlt": "ESM Replenishment"
+  },
+  "overview": {
+    "title": "",
+    "description": ""
+  },
+  "benefits": [
+    "Automates replenishment and stock management workflows.",
+    "Reduces excess inventory costs and prevents stockouts.",
+    "Generates intelligent purchase recommendations based on demand data.",
+    "Seamlessly integrates with ERP, WMS and supplier systems.",
+    "Improves operational efficiency and minimizes human error."
+  ],
+  "features": [
+    {
+      "title": "Automated Stock Replenishment",
+      "description": "Automatically generates replenishment orders when stock levels drop below the threshold.Ensures the right quantity of products is always available."
+    },
+    {
+      "title": "Demand Analysis and Forecasting",
+      "description": "AI-driven models analyze sales velocity, market trends and seasonal demand.Helps businesses act proactively against fluctuations."
+    },
+    {
+      "title": "Integration and Data Synchronization",
+      "description": "Integrates with ERP, inventory and sales systems for end-to-end visibility.Ensures data accuracy and eliminates manual input processes."
+    },
+    {
+      "title": "Performance Monitoring and Reporting",
+      "description": "Tracks inventory turnover, sales performance and supplier efficiency.Provides actionable insights for data-driven strategic decisions."
+    }
+  ],
+  "implementation": {
+    "title": "Implementation Process",
+    "description": "Our proven methodology ensures smooth deployment and maximum ROI",
+    "steps": [
+      "Initial consultation and requirement analysis",
+      "System integration planning and setup",
+      "Data migration and testing phase",
+      "Staff training and knowledge transfer",
+      "Go-live support and monitoring",
+      "Continuous maintenance and updates"
+    ]
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "list": [
+      "All Industries",
+      "Technology",
+      "Finance",
+      "Retail",
+      "Manufacturing",
+      "Healthcare"
+    ]
+  },
+  "roi": {
+    "title": "Return on Investment",
+    "description": "Achieve significant ROI with our solutions"
+  },
+  "cta": {
+    "title": "Ready to Transform Your Business?",
+    "description": "Let's discuss how our solution can help your organization.",
+    "primaryButton": "Contact Us",
+    "secondaryButton": "View All Services"
+  }
+}

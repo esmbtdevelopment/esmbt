@@ -1,39 +1,38 @@
 {
   "hero": {
     "title": "E-İrsaliye",
-    "subtitle": "Dijital Teslimat Belgelendirme",
-    "description": "Yasal uyumluluk için gerçek zamanlı takip ve otomatik kayıt tutma ile teslimat belgelendirme sürecinizi dijitalleştirin.",
+    "subtitle": "Dijital Sevk ve Lojistik Yönetimi Çözümleri",
+    "description": "Sevk süreçlerinizi dijital ortamda yönetin, operasyonel kontrolü elinizde tutun. ESM E-İrsaliye, mal sevkiyatına ilişkin tüm belgelerin elektronik ortamda oluşturulmasını, gönderilmesini ve arşivlenmesini sağlar. Yasal gerekliliklere tam uyumlu, güvenli ve izlenebilir yapısıyla tedarik zinciri yönetimini modernleştirir.",
     "image": "/images/services/hero/digital-transformation.jpg",
     "imageAlt": "E-İrsaliye"
   },
   "overview": {
-    "title": "Neden E-İrsaliye Seçmelisiniz?",
-    "description": "E-İrsaliye, kağıt tabanlı teslimat belgelendirmesini ortadan kaldırır ve dijital verimliliği benimser. Çözümümüz, gerçek zamanlı teslimat onayı, otomatik kayıt tutma sağlar ve idari yükü azaltırken teslimat doğruluğunu artırarak yasal uyumluluğu garanti eder."
+    "title": "Neden E-İrsaliye'yi Tercih Etmelisiniz?",
+    "description": "E-İrsaliye, dijital dönüşüm sürecinde lojistik ve operasyon yönetiminin en kritik adımlarından biridir. Kâğıt kullanımını ortadan kaldırır, teslimat süreçlerini hızlandırır ve verinin doğruluğunu artırır. ESM E-İrsaliye, gönderimden teslimata kadar her adımı elektronik ortamda yöneterek hataları azaltır, şeffaflığı artırır ve yasal uyumluluğu garanti altına alır."
   },
   "benefits": [
-    "Kağıt tabanlı teslimat notlarını ortadan kaldırın",
-    "Gerçek zamanlı teslimat onayı",
-    "Otomatik kayıt tutma",
-    "Yasal uyumluluk güvencesi",
-    "Azaltılmış idari maliyetler",
-    "Geliştirilmiş teslimat doğruluğu"
+    "Kâğıt, baskı ve fiziksel belge masraflarını ortadan kaldırır",
+    "Teslimat süreçlerini hızlandırır, hata oranını düşürür",
+    "GİB standartlarıyla tam uyumludur",
+    "Gerçek zamanlı izleme ile sevkiyat süreçlerini şeffaf hale getirir",
+    "ERP ve stok yönetim sistemleriyle entegre çalışır"
   ],
   "features": [
     {
-      "title": "Dijital Belgelendirme",
-      "description": "Elektronik imzalar ve zaman damgası doğrulaması ile teslimat notlarının tam dijitalleştirilmesi."
+      "title": "Elektronik Belge Oluşturma",
+      "description": "Tüm sevk irsaliyeleri elektronik ortamda oluşturulur ve alıcılara güvenli biçimde iletilir. Manuel süreçleri ortadan kaldırır, işlem hızını artırır."
+    },
+    {
+      "title": "Yasal Uyum ve Güvenlik",
+      "description": "Gelir İdaresi Başkanlığı düzenlemelerine tam uyumludur. Tüm belgeler dijital imzalarla güvence altındadır."
     },
     {
       "title": "Gerçek Zamanlı Takip",
-      "description": "GPS entegrasyonu ve teslimat süreci boyunca durum güncellemeleri ile canlı teslimat takibi."
+      "description": "Sevkiyatların durumu anlık olarak izlenir. Gönderim, teslimat ve onay süreçleri tek ekrandan yönetilir."
     },
     {
-      "title": "Teslimat Onayı",
-      "description": "Alıcı imzaları ve fotoğraf onayı yetenekleri ile dijital teslimat kanıtı."
-    },
-    {
-      "title": "Yasal Uyumluluk",
-      "description": "Değiştirilemez dijital kayıtlarla tüm teslimat belgelendirmesinin yasal gereksinimleri karşılamasını sağlar."
+      "title": "Entegrasyon ve Erişilebilirlik",
+      "description": "ERP, stok ve lojistik sistemleriyle entegre çalışır. Yetkilendirilmiş kullanıcılar her yerden erişim sağlayabilir."
     }
   ],
   "implementation": {

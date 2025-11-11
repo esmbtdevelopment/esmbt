@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "E-İmza & Mobil İmza",
+    "subtitle": "Dijital Kimlik Doğrulama ve Güvenli Onay Çözümleri",
+    "description": "Belgelerinizi, sözleşmelerinizi ve resmi işlemlerinizi dijital ortamda güvenle imzalayın. ESM E-İmza & Mobil İmza, kullanıcıların kimlik doğrulama ve belge onay süreçlerini elektronik ortamda yasal geçerliliğe sahip şekilde gerçekleştirmelerini sağlar. Tüm imza işlemleri güvenli, hızlı ve tamamen mevzuata uygun bir şekilde yürütülür.",
+    "image": "/images/services/hero/invoice.jpg",
+    "imageAlt": "E-İmza & Mobil İmza"
+  },
+  "overview": {
+    "title": "Neden E-İmza & Mobil İmza'yı Tercih Etmelisiniz?",
+    "description": "E-İmza ve Mobil İmza, işletmelerin dijitalleşme süreçlerinde güvenli onay mekanizması oluşturur. ESM E-İmza & Mobil İmza, kurum içi ve kurum dışı tüm onay, sözleşme ve yetkilendirme işlemlerini dijital ortama taşır. Kullanıcılar belge imzalama işlemlerini bilgisayarlarından veya mobil cihazlarından saniyeler içinde tamamlayabilir. Bu sayede hem operasyonel hız hem de yasal güvenlik sağlanır."
+  },
+  "benefits": [
+    "Belgeleri elektronik ortamda güvenli ve yasal geçerli şekilde imzalar",
+    "Kimlik doğrulama ve onay süreçlerini dijitalleştirir",
+    "Zaman, kağıt ve operasyon maliyetlerini azaltır",
+    "GİB ve ESHS (Elektronik Sertifika Hizmet Sağlayıcı) standartlarına tam uyumludur",
+    "Mobil cihazlardan anında erişim ve imzalama kolaylığı sunar"
+  ],
+  "features": [
+    {
+      "title": "Elektronik İmza Altyapısı",
+      "description": "Belgelerin imzalanması için güvenli dijital sertifikalar kullanılır. İmzalar, 5070 Sayılı Elektronik İmza Kanunu'na uygun biçimde oluşturulur."
+    },
+    {
+      "title": "Mobil İmza Entegrasyonu",
+      "description": "Kullanıcılar kimlik doğrulama ve imzalama işlemlerini cep telefonları üzerinden gerçekleştirebilir. Mobil imza altyapısı GSM operatörleriyle entegre çalışır."
+    },
+    {
+      "title": "Yasal Uyum ve Güvenlik",
+      "description": "Tüm işlemler elektronik imza kanunu ve ulusal standartlarla uyumludur. Belgeler, değiştirilemez ve doğrulanabilir şekilde saklanır."
+    },
+    {
+      "title": "Hız ve Verimlilik",
+      "description": "İmza süreçlerini saniyeler içinde tamamlayarak iş akışlarını hızlandırır. Kurumsal onay zincirlerini dijital hale getirir."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "İlk danışmanlık ve gereksinim analizi",
+      "Sistem entegrasyon planlaması ve kurulumu",
+      "Veri taşıma ve test aşaması",
+      "Personel eğitimi ve bilgi transferi",
+      "Canlıya geçiş desteği ve izleme",
+      "Sürekli bakım ve güncellemeler"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Tüm Sektörler",
+      "Hukuk Hizmetleri",
+      "Finans",
+      "Kamu",
+      "Sağlık",
+      "Gayrimenkul"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Belge imzalama süresini %90'a kadar azaltın"
+  },
+  "cta": {
+    "title": "İmza Süreçlerinizi Dijitalleştirmeye Hazır mısınız?",
+    "description": "E-İmza & Mobil İmza çözümümüzün organizasyonunuzun onay süreçlerini nasıl kolaylaştırabileceğini ve yasal uyumluluğu nasıl sağlayabileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Ürünleri Görüntüle"
+  }
+}
+

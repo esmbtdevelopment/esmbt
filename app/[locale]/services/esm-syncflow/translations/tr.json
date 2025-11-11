@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "title": "ESM SyncFlow",
+    "subtitle": "Yapay Zekâ Destekli Sipariş ve Envanter Yönetimi Çözümleri",
+    "description": "Sipariş süreçlerinizi sadeleştirin, stok yönetimini optimize edin ve gıda israfını minimuma indirin.ESM SyncFlow, yapay zekâ destekli tahminleme algoritmalarıyla kafe, restoran ve tedarikçi ağlarının sipariş yönetimini tek merkezden dijitalleştirir.Gerçek zamanlı satış takibi, otomatik stok planlama ve talep öngörüleriyle işletmelere tam görünürlük ve maksimum verimlilik sağlar.",
+    "image": "/images/services/hero/syncflow.jpg",
+    "imageAlt": "ESM SyncFlow"
+  },
+  "overview": {
+    "title": "Neden ESM SyncFlow?",
+    "description": "ESM SyncFlow, restoran ve perakende sektöründe sipariş, stok ve tedarik süreçlerini tek bir entegre platformda birleştirir.Yapay zekâ destekli tahminleme araçlarıyla talebi önceden öngörür, fazla üretim ve stok kayıplarını azaltır.Farklı kanallardan (e-posta, WhatsApp, Excel vb.) gelen siparişleri tek noktada konsolide eder, böylece süreç yönetimini kolaylaştırır ve hatasız hale getirir."
+  },
+  "benefits": [
+    "Tüm sipariş kanallarını tek bir sistemde toplar.",
+    "Yapay zekâ tabanlı talep tahminleme ve stok planlama sunar.",
+    "Gıda israfını azaltır, kaynak kullanımını optimize eder.",
+    "Gerçek zamanlı satış verileriyle operasyonel şeffaflık sağlar.",
+    "Yöneticiler için performans raporları ve karar destek panelleri içerir."
+  ],
+  "features": [
+    {
+      "title": "Birleşik Sipariş Yönetimi",
+      "description": "Farklı kanallardan gelen siparişleri tek platformda toplar.Süreci standartlaştırır ve operasyonel yükü azaltır."
+    },
+    {
+      "title": "Gerçek Zamanlı Satış Takibi",
+      "description": "Anlık satış verilerini izler, trendleri analiz eder ve otomatik raporlar oluşturur.Karar süreçlerini hızlandırır, operasyonları optimize eder."
+    },
+    {
+      "title": "Yapay Zekâ ile Tahminleme",
+      "description": "Talep eğilimlerini öngörür, doğru stok miktarını belirler.Fazla üretim ve fire oranlarını minimuma indirir."
+    },
+    {
+      "title": "Yönetim Panelleri ve Raporlama",
+      "description": "Çok lokasyonlu işletmeler için merkezi görünürlük sağlar.Gerçek zamanlı raporlar ve öngörülerle stratejik karar desteği sunar."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "İlk danışmanlık ve gereksinim analizi",
+      "Sistem entegrasyon planlaması ve kurulumu",
+      "Veri taşıma ve test aşaması",
+      "Personel eğitimi ve bilgi transferi",
+      "Canlıya geçiş desteği ve izleme",
+      "Sürekli bakım ve güncellemeler"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Tüm Sektörler",
+      "Teknoloji",
+      "Finans",
+      "Perakende",
+      "Üretim",
+      "Sağlık"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Çözümlerimizle önemli yatırım getirisi elde edin"
+  },
+  "cta": {
+    "title": "İşletmenizi Dönüştürmeye Hazır mısınız?",
+    "description": "Çözümümüzün organizasyonunuzu nasıl destekleyebileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Hizmetleri Görüntüle"
+  }
+}

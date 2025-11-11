@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "ESM Budget",
+    "subtitle": "Kurumsal Bütçeleme, Tahminleme ve Finansal Konsolidasyon Çözümleri",
+    "description": "Finansal planlama süreçlerinizi dijitalleştirin, kaynaklarınızı verimli yönetin ve stratejik kararlarınızı veriye dayalı hale getirin. ESM Budget, şirketlerin bütçeleme, tahminleme (forecasting), finansal konsolidasyon ve analiz süreçlerini tek bir platformda yöneten bütünleşik bir Kurumsal Performans Yönetimi (CPM) sistemidir. Tüm departmanların dahil olduğu, dinamik ve şeffaf bir bütçeleme kültürü oluşturarak kurum genelinde finansal farkındalığı artırır.",
+    "image": "/images/services/hero/digital-transformation.jpg",
+    "imageAlt": "ESM Budget"
+  },
+  "overview": {
+    "title": "Neden ESM Budget?",
+    "description": "ESM Budget, 27 yıllık sektörel bilgi birikimi ve yüzlerce bütçe profesyonelinin deneyimiyle geliştirilmiş, hızlı uygulanabilir ve tam entegre bir bütçe yönetim sistemidir. ERP sistemleriyle entegre yapısı sayesinde tüm finansal verileri tek bir çatı altında toplar; VUK, UFRS, GAAP gibi ulusal ve uluslararası standartlara uygun solo ve konsolide bütçeler oluşturur."
+  },
+  "benefits": [
+    "Bütçeleme, tahminleme ve finansal konsolidasyonu tek sistemde birleştirir",
+    "Her departmanın bütçeleme sürecine aktif katılımını sağlar",
+    "Hızlı uyarlanabilen, esnek ve entegre altyapı sunar",
+    "VUK, UFRS, GAAP standartlarına tam uyumludur",
+    "Stratejik karar desteği ve detaylı raporlama sağlar"
+  ],
+  "features": [
+    {
+      "title": "Bütçeleme ve Planlama",
+      "description": "Departman bazlı bütçe planlarını dinamik şekilde oluşturur. Gelir, gider, yatırım, üretim ve personel bütçelerini entegre biçimde yönetir."
+    },
+    {
+      "title": "Tahminleme (Forecasting)",
+      "description": "Geçmiş performans verileriyle geleceğe yönelik finansal öngörüler oluşturur. Senaryo bazlı analizlerle farklı stratejik sonuçları değerlendirmenizi sağlar."
+    },
+    {
+      "title": "Finansal Konsolidasyon",
+      "description": "Farklı şirketlerden veya bölgelerden gelen finansal verileri tek raporda toplar. Solo ve konsolide bilanço, gelir tablosu ve nakit akışı oluşturur."
+    },
+    {
+      "title": "Analiz ve Raporlama",
+      "description": "Gerçek zamanlı dashboard'lar ve raporlar ile finansal performansın izlenmesini sağlar. Bütçe-fiili sapma analizleriyle hızlı ve doğru karar almayı destekler."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "İlk danışmanlık ve gereksinim analizi",
+      "Sistem entegrasyon planlaması ve kurulumu",
+      "Bütçe yapısı tasarımı ve yapılandırma",
+      "Kullanıcı eğitimi ve bilgi transferi",
+      "Canlıya geçiş desteği ve izleme",
+      "Sürekli optimizasyon ve güncellemeler"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Tüm Sektörler",
+      "Finans",
+      "Üretim",
+      "Perakende",
+      "Hizmetler",
+      "Teknoloji"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Bütçeleme döngü süresini %60'a kadar azaltın"
+  },
+  "cta": {
+    "title": "Finansal Planlamanızı Dönüştürmeye Hazır mısınız?",
+    "description": "ESM Budget'ın organizasyonunuzun bütçeleme ve finansal konsolidasyon süreçlerini nasıl kolaylaştırabileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Hizmetleri Görüntüle"
+  }
+}
+

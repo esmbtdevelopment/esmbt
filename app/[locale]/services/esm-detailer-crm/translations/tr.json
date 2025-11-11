@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "title": "ESM Detailer CRM",
+    "subtitle": "Saha Satış Yönetimi, Müşteri Takibi ve Dijital Etkileşim Çözümleri",
+    "description": "Saha satış operasyonlarınızı dijitalleştirin, müşteri etkileşimlerini güçlendirin ve satış verimliliğinizi artırın.ESM Detailer CRM, satış ekiplerinin günlük ziyaret, sipariş ve performans süreçlerini tek bir merkezi platform üzerinden yönetmesini sağlar.Gerçek zamanlı veri akışı, rota optimizasyonu ve müşteri içgörüleriyle saha operasyonlarını daha verimli, ölçülebilir ve yönetilebilir hale getirir.",
+    "image": "/images/services/hero/detailer-crm.jpg",
+    "imageAlt": "ESM Detailer CRM"
+  },
+  "overview": {
+    "title": "Neden ESM Detailer CRM?",
+    "description": "ESM Detailer CRM, saha satış ekiplerinin etkinliğini artırmak ve müşteri ilişkilerini güçlendirmek için tasarlanmıştır.Ziyaret planlaması, hedef takibi, satış geçmişi analizi ve anlık raporlama özellikleriyle kurumların karar alma süreçlerini hızlandırır.Kullanıcı dostu mobil arayüzü sayesinde saha personeli, tüm müşteri bilgilerine ve satış verilerine anında erişebilir."
+  },
+  "benefits": [
+    "Saha satış süreçlerini dijitalleştirir ve merkezi hale getirir.",
+    "Gerçek zamanlı raporlama ve performans izleme sunar.",
+    "Mobil cihazlar üzerinden anlık veri girişini destekler.",
+    "Müşteri ilişkilerini güçlendirir, satış dönüşüm oranlarını artırır.",
+    "ERP, CRM ve stok yönetim sistemleriyle tam entegredir."
+  ],
+  "features": [
+    {
+      "title": "Ziyaret ve Rota Yönetimi",
+      "description": "Satış temsilcilerinin günlük ziyaret planlarını optimize eder.Rotaları otomatik olarak oluşturur, zaman ve yakıt tasarrufu sağlar."
+    },
+    {
+      "title": "Sipariş ve Stok Takibi",
+      "description": "Sipariş girişleri ve stok bilgileri anlık olarak güncellenir.Saha personeli her müşteriye doğru ve hızlı hizmet sunar."
+    },
+    {
+      "title": "Performans Analizi",
+      "description": "Satış hedefleri, ziyaret sıklıkları ve dönüşüm oranları detaylı olarak izlenir.Gerçek zamanlı raporlar yöneticilere anlık karar desteği sunar."
+    },
+    {
+      "title": "Mobil Entegrasyon",
+      "description": "Tüm fonksiyonlar mobil cihazlardan erişilebilir.Saha ekipleri ofise dönmeden tüm işlemlerini dijital olarak tamamlar."
+    }
+  ],
+  "implementation": {
+    "title": "Uygulama Süreci",
+    "description": "Kanıtlanmış metodolojimiz sorunsuz dağıtım ve maksimum yatırım getirisi sağlar",
+    "steps": [
+      "İlk danışmanlık ve gereksinim analizi",
+      "Sistem entegrasyon planlaması ve kurulumu",
+      "Veri taşıma ve test aşaması",
+      "Personel eğitimi ve bilgi transferi",
+      "Canlıya geçiş desteği ve izleme",
+      "Sürekli bakım ve güncellemeler"
+    ]
+  },
+  "industries": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "list": [
+      "Tüm Sektörler",
+      "Teknoloji",
+      "Finans",
+      "Perakende",
+      "Üretim",
+      "Sağlık"
+    ]
+  },
+  "roi": {
+    "title": "Yatırım Getirisi",
+    "description": "Çözümlerimizle önemli yatırım getirisi elde edin"
+  },
+  "cta": {
+    "title": "İşletmenizi Dönüştürmeye Hazır mısınız?",
+    "description": "Çözümümüzün organizasyonunuzu nasıl destekleyebileceğini konuşalım.",
+    "primaryButton": "İletişime Geçin",
+    "secondaryButton": "Tüm Hizmetleri Görüntüle"
+  }
+}

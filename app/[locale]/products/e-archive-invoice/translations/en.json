@@ -1,39 +1,38 @@
 {
   "hero": {
     "title": "E-Archive Invoice",
-    "subtitle": "Secure Invoice Storage Solutions",
-    "description": "Secure, long-term storage solutions for your digital invoices with full legal compliance and easy retrieval capabilities.",
+    "subtitle": "Digital Archiving and Document Management Solutions",
+    "description": "Eliminate the burden of manual archiving while digitalizing your invoicing processes. ESM E-Archive Invoice enables the secure creation, delivery and long-term electronic storage of all invoices in full compliance with the Turkish Revenue Administration (TRA) standards. Its advanced infrastructure eliminates paper-based processes, reduces operational costs and ensures maximum accessibility and efficiency.",
     "image": "/images/services/hero/archive.jpg",
     "imageAlt": "E-Archive Invoice"
   },
   "overview": {
     "title": "Why Choose E-Archive Invoice?",
-    "description": "E-Archive Invoice provides a comprehensive digital archiving solution that ensures your invoices are securely stored, legally compliant, and always accessible. Our robust archiving system eliminates the need for physical document storage while maintaining full audit trails and regulatory compliance."
+    "description": "E-Archive Invoice is a key component of any organization's digital transformation journey. It removes paper, printing and storage costs while providing instant data access, legal compliance and full traceability. With ESM E-Archive Invoice, all invoices are stored in a secure digital environment, ensuring data integrity, accessibility and authenticity at all times."
   },
   "benefits": [
-    "Secure long-term document storage",
-    "Full legal compliance with retention requirements",
-    "Instant document retrieval and search",
-    "Automated backup and disaster recovery",
-    "Reduced physical storage costs",
-    "Complete audit trail maintenance"
+    "Eliminates paper, printing and archiving expenses",
+    "Ensures full compliance with TRA regulations",
+    "Enables fast and secure electronic invoice delivery",
+    "Simplifies audits through real-time data access",
+    "Provides secure and flexible storage with cloud-based architecture"
   ],
   "features": [
     {
-      "title": "Secure Storage",
-      "description": "Enterprise-grade encryption ensures your archived invoices remain secure and protected from unauthorized access."
+      "title": "Automated Creation and Delivery",
+      "description": "All sales invoices are generated and transmitted electronically. Processes are completed instantly without manual intervention."
     },
     {
-      "title": "Easy Retrieval",
-      "description": "Advanced search capabilities allow instant retrieval of any archived invoice using multiple search criteria."
+      "title": "Secure Digital Archiving",
+      "description": "Invoices are stored electronically for the entire legal retention period. Prevents data loss and ensures reliable access at any time."
     },
     {
-      "title": "Legal Compliance",
-      "description": "Automated compliance management ensures all archived documents meet legal retention requirements."
+      "title": "Compliance and Auditability",
+      "description": "Fully aligned with national tax authority requirements. All documents can be easily tracked and audited with detailed reports."
     },
     {
-      "title": "Audit Ready",
-      "description": "Complete audit trails and tamper-proof storage make your archive always ready for regulatory inspections."
+      "title": "Cloud-Based Access",
+      "description": "Authorized users can securely access the system anytime and anywhere. Offers 99.9% availability with a high-performance cloud infrastructure."
     }
   ],
   "implementation": {
